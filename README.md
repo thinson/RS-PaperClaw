@@ -15,7 +15,7 @@ RS-PaperClaw is an automated system that tracks, analyzes, and publishes daily r
 - 🔍 **Discover**: Automatically fetch the latest remote sensing papers from arXiv API
 - 📊 **Analyze**: Generate structured reading reports with 10-question deep analysis framework
 - 📤 **Publish**: Auto-create GitHub Issues with formatted reports
-- 🖼️ **Visualize**: Extract and embed paper figures (first 2 pages)
+- 🖼️ **Visualize**: Convert first 3 PDF pages to JPG previews and embed as 1x3 table
 
 **中文:**
 
@@ -24,7 +24,7 @@ RS-PaperClaw 是一个自动化系统，每日追踪、分析并发布 arXiv 遥
 - 🔍 **发现**：通过 arXiv API 自动获取最新遥感论文
 - 📊 **分析**：生成结构化阅读报告，包含 10 问题深度分析框架
 - 📤 **发布**：自动创建格式化的 GitHub Issues
-- 🖼️ **可视化**：提取并嵌入论文图表（前 2 页）
+- 🖼️ **可视化**：将 PDF 前 3 页转换为 JPG 预览并以 1x3 表格嵌入
 
 ---
 
@@ -37,7 +37,7 @@ RS-PaperClaw 是一个自动化系统，每日追踪、分析并发布 arXiv 遥
 | **Duplicate Detection / 去重检测** | Track processed papers to avoid duplicates / 记录已处理论文，避免重复 |
 | **Report Generation / 报告生成** | 10-question deep analysis framework / 10 问题深度分析框架 |
 | **Auto Publishing / 自动发布** | Create GitHub Issues via API / 通过 API 自动创建 Issues |
-| **Figure Extraction / 图表提取** | Extract first 2 pages as preview / 提取前 2 页作为预览 |
+| **PDF Preview / PDF 预览** | Convert first 3 PDF pages to JPG and render in 1x3 layout / 将 PDF 前 3 页转 JPG 并以 1x3 布局展示 |
 
 ---
 
@@ -50,8 +50,8 @@ Each paper report includes / 每篇论文报告包含：
 - Abstract Translation (Chinese) / 摘要翻译
 
 ### 📸 Paper Preview / 论文概览
-- Page 1: Title + Abstract
-- Page 2: Introduction + Method
+- PDF Page 1-3 preview (JPG)
+- Rendered as a single-row 3-column table
 
 ### ❓ 10-Question Analysis / 10 问题深度分析
 1. **Problem / 解决的问题** - What problem does this paper solve?
@@ -100,11 +100,11 @@ pip install PyGithub pymupdf pillow weasyprint
 ### Run / 运行
 
 ```bash
-# Track and process today's papers
+# Batch process papers
 python scripts/batch_process_papers.py
 
-# Process a single paper
-python scripts/process_single_paper.py
+# Process a single paper and update target issue
+python scripts/paper_processor.py <arxiv_id> <issue_number>
 ```
 
 ---
@@ -113,19 +113,17 @@ python scripts/process_single_paper.py
 
 ```
 RS-PaperClaw/
-├── papers/                      # Paper reports / 论文报告
-│   ├── 20260310_FedEU.md
-│   ├── 20260310_SIGMAE.md
-│   └── figures/                 # Extracted figures / 提取的图表
-│       ├── 20260310_FedEU_page-01.png
-│       └── ...
-├── scripts/                     # Automation scripts / 自动化脚本
-│   ├── arxiv_rs_tracker.py      # Fetch papers from arXiv
-│   ├── batch_process_papers.py  # Batch processing with deduplication
-│   ├── process_single_paper.py  # Single paper processing
-│   ├── upload_images_to_github.py
-│   └── create_github_issue.py
-├── processed_papers.txt         # Deduplication log / 去重记录
+├── papers/
+│   ├── figures/                 # legacy figure outputs
+│   └── previews/                # PDF page previews (jpg)
+├── scripts/
+│   ├── paper_processor.py       # Main single-paper pipeline
+│   ├── batch_process_papers.py  # Batch processing
+│   └── prompts/                 # LLM prompts (translate/tags/summarize)
+├── skills/
+│   └── rs-paper-pipeline/
+│       └── SKILL.md             # Reusable OpenClaw skill
+├── processed_papers.txt
 └── README.md
 ```
 
@@ -146,12 +144,10 @@ RS-PaperClaw/
 
 | Script / 脚本 | Description / 功能 |
 |--------------|-------------------|
-| `arxiv_rs_tracker.py` | Fetch and filter papers from arXiv API |
+| `paper_processor.py` | Main pipeline: abs+PDF+preview+LLM+quality gate+issue update |
 | `batch_process_papers.py` | Batch process with deduplication |
-| `process_single_paper.py` | Process a single paper |
-| `upload_images_to_github.py` | Upload extracted figures to repo |
-| `create_github_issue.py` | Create new GitHub Issue |
-| `update_github_issue.py` | Update existing Issue content |
+| `process_papers.sh` | Shell entrypoint for batch execution |
+| `scripts/prompts/*.md` | Prompt templates for translation/tags/summary |
 
 ---
 
@@ -159,20 +155,28 @@ RS-PaperClaw/
 
 ```mermaid
 graph LR
-    A[arXiv API] --> B[Fetch Papers]
-    B --> C[Filter & Deduplicate]
-    C --> D[Download PDF]
-    D --> E[Extract Figures]
-    E --> F[Generate Report]
-    F --> G[Upload to GitHub]
-    G --> H[Create Issue]
+    A[arXiv abs/API] --> B[Fetch Metadata]
+    B --> C[Download PDF]
+    C --> D[Convert PDF p1-p3 to JPG]
+    D --> E[LLM: translate/tags/10Q]
+    E --> F[Quality Gate]
+    F --> G[Update Target Issue]
 ```
+
+---
+
+## 🧩 OpenClaw Skill / 技能封装
+
+This repo now includes a reusable skill:
+
+- `skills/rs-paper-pipeline/SKILL.md`
+- Trigger: run/update RS paper issue pipeline with consistent output contract
 
 ---
 
 ## 🎯 Roadmap / 未来计划
 
-- [ ] **LLM-powered Analysis** - Auto-generate 10-question analysis with LLM
+- [x] **LLM-powered Analysis** - Auto-generate Chinese abstract + 10-question analysis with quality gate
 - [ ] **Daily Cron Job** - Automated daily execution at 10:00/12:00/15:00/17:00
 - [ ] **Multi-source Support** - Add IEEE TGRS, IGARSS, CVPR workshops
 - [ ] **PDF Export** - Generate PDF reports for archival
