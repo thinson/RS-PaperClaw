@@ -38,21 +38,21 @@ RS-PaperClaw 每天自动完成：
   <tr>
     <td align="center" width="50%">
       <b>🧭 可追踪</b><br/>
-      每篇论文一条 Issue，历史与改动可回溯
+      单论文单 Issue，记录可回溯
     </td>
     <td align="center" width="50%">
       <b>🤝 易协作</b><br/>
-      可直接评论、补充、纠错与讨论
+      评论即讨论，补充即沉淀
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
       <b>⚙️ 自动化友好</b><br/>
-      流水线稳定创建/更新，便于增量执行
+      稳定更新同一条，便于增量
     </td>
     <td align="center" width="50%">
       <b>🗂️ 归档闭环</b><br/>
-      Issue 动态协作 + daily_reports 静态沉淀
+      Issue 动态 + 日报静态归档
     </td>
   </tr>
 </table>
