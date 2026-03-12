@@ -107,6 +107,12 @@ CRON_TZ=Asia/Shanghai
 
 ---
 
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=thinson/RS-PaperClaw&type=Date)](https://star-history.com/#thinson/RS-PaperClaw&Date)
+
+---
+
 <div align="center">
 
 **Powered by OpenClaw🦞**
