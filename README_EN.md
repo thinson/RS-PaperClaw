@@ -32,11 +32,13 @@ RS-PaperClaw automates the daily workflow:
 
 ```text
 RS-PaperClaw/
-├── scripts/
 ├── daily_reports/
 ├── papers/previews/
 ├── skills/rs-paper-pipeline/
-└── public/rs-paper-pipeline/
+│   ├── README.md
+│   ├── SKILL.md
+│   └── scripts/
+└── README.md
 ```
 
 ---
@@ -63,7 +65,7 @@ export LLM_MODEL="MiniMax-M2.5"
 ### 3) Run today's workflow
 
 ```bash
-python3 scripts/run_rs_daily_workday.py
+python3 skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py
 ```
 
 ---
@@ -72,9 +74,9 @@ python3 scripts/run_rs_daily_workday.py
 
 ```cron
 CRON_TZ=Asia/Shanghai
-5 9 * * 1-5 /usr/bin/python3 /path/to/scripts/run_rs_daily_workday.py >> /path/to/logs/rs_daily_workday.log 2>&1
+5 9 * * 1-5 /usr/bin/python3 /path/to/skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py >> /path/to/logs/rs_daily_workday.log 2>&1
 ```
 
 ---
 
-For public sharing, use the sanitized bundle in `public/rs-paper-pipeline/`.
+All scripts are under `skills/rs-paper-pipeline/scripts/`.

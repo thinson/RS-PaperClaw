@@ -32,18 +32,20 @@ RS-PaperClaw 用于每天自动完成：
 
 ```text
 RS-PaperClaw/
-├── scripts/                     # 生产脚本
-│   ├── paper_processor.py
-│   ├── daily_arxiv_cross_filter.py
-│   ├── daily_digest_llm_upgrade.py
-│   ├── run_rs_daily_workday.py
-│   └── sync_daily_reports_to_repo.py
-├── daily_reports/               # 日报归档（按年月）
+├── daily_reports/                    # 日报归档（按年月）
 │   ├── README.md
 │   └── YYYYMM/YYYYMMDD.md
-├── papers/previews/             # 论文预览图（用于 Issue 展示）
-├── skills/rs-paper-pipeline/    # OpenClaw 技能定义
-└── public/rs-paper-pipeline/  # 脱敏可发布版本
+├── papers/previews/                  # 论文预览图（用于 Issue 展示）
+├── skills/rs-paper-pipeline/         # 技能与脚本
+│   ├── README.md
+│   ├── SKILL.md
+│   └── scripts/
+│       ├── paper_processor.py
+│       ├── daily_arxiv_cross_filter.py
+│       ├── daily_digest_llm_upgrade.py
+│       ├── run_rs_daily_workday.py
+│       └── sync_daily_reports_to_repo.py
+└── README_EN.md
 ```
 
 ---
@@ -70,7 +72,7 @@ export LLM_MODEL="MiniMax-M2.5"
 ### 3) 运行当天流程
 
 ```bash
-python3 scripts/run_rs_daily_workday.py
+python3 skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py
 ```
 
 ---
@@ -79,7 +81,7 @@ python3 scripts/run_rs_daily_workday.py
 
 ```cron
 CRON_TZ=Asia/Shanghai
-5 9 * * 1-5 /usr/bin/python3 /path/to/scripts/run_rs_daily_workday.py >> /path/to/logs/rs_daily_workday.log 2>&1
+5 9 * * 1-5 /usr/bin/python3 /path/to/skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py >> /path/to/logs/rs_daily_workday.log 2>&1
 ```
 
 ---
@@ -87,4 +89,4 @@ CRON_TZ=Asia/Shanghai
 ## 说明
 
 - 默认文档语言为中文；英文请看 [README_EN.md](./README_EN.md)
-- 对外发布建议使用：`public/rs-paper-pipeline/`
+- 所有脚本均位于 `skills/rs-paper-pipeline/scripts/`
