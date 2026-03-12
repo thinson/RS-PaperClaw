@@ -1,6 +1,6 @@
 ---
-name: rs-paper-pipeline-public
-description: Publish-ready RS paper pipeline (sanitized). Use when setting up or demonstrating the remote-sensing arXiv→GitHub issue→daily digest workflow without exposing secrets. Includes secure scripts that require environment variables for GitHub, LLM, and Feishu targets.
+name: rs-paper-pipeline
+description: RS paper pipeline skill bundle. Use when setting up or demonstrating the remote-sensing arXiv→GitHub issue→daily digest workflow without exposing secrets. Includes secure scripts that require environment variables for GitHub, LLM, and Feishu targets.
 ---
 
 Use bundled scripts in `scripts/` to run the full workflow with env-based credentials.

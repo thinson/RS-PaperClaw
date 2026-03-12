@@ -36,7 +36,7 @@ RS-PaperClaw/
 ├── daily_reports/
 ├── papers/previews/
 ├── skills/rs-paper-pipeline/
-└── public/rs-paper-pipeline-public/
+└── public/rs-paper-pipeline/
 ```
 
 ---
@@ -77,4 +77,4 @@ CRON_TZ=Asia/Shanghai
 
 ---
 
-For public sharing, use the sanitized bundle in `public/rs-paper-pipeline-public/`.
+For public sharing, use the sanitized bundle in `public/rs-paper-pipeline/`.

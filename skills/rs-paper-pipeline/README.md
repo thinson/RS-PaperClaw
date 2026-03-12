@@ -99,6 +99,6 @@ CRON_TZ=Asia/Shanghai
 
 ## 6) Notes
 
-- This public package is sanitized; no hardcoded secrets.
+- No hardcoded secrets in code; use environment variables.
 - If no papers match on a day, digest may be skipped and a notification is sent.
 - `paper_processor.py` includes TL;DR generation in the basic info table.

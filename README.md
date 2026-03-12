@@ -43,7 +43,7 @@ RS-PaperClaw/
 │   └── YYYYMM/YYYYMMDD.md
 ├── papers/previews/             # 论文预览图（用于 Issue 展示）
 ├── skills/rs-paper-pipeline/    # OpenClaw 技能定义
-└── public/rs-paper-pipeline-public/  # 脱敏可发布版本
+└── public/rs-paper-pipeline/  # 脱敏可发布版本
 ```
 
 ---
@@ -87,4 +87,4 @@ CRON_TZ=Asia/Shanghai
 ## 说明
 
 - 默认文档语言为中文；英文请看 [README_EN.md](./README_EN.md)
-- 对外发布建议使用：`public/rs-paper-pipeline-public/`
+- 对外发布建议使用：`public/rs-paper-pipeline/`
