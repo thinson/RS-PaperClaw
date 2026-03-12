@@ -32,29 +32,27 @@ RS-PaperClaw 每天自动完成：
 ---
 
 
-### 为什么以 Issue 为核心？
+## 🎯 为什么以 Issue 为核心？
 
 <table>
   <tr>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <b>🧭 可追踪</b><br/>
-      每篇论文一条 Issue，
-      历史与改动可回溯
+      每篇论文一条 Issue，历史与改动可回溯
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <b>🤝 易协作</b><br/>
-      可直接评论、补充、
-      纠错与讨论
+      可直接评论、补充、纠错与讨论
     </td>
-    <td align="center" width="25%">
+  </tr>
+  <tr>
+    <td align="center" width="50%">
       <b>⚙️ 自动化友好</b><br/>
-      流水线稳定创建/更新，
-      便于增量执行
+      流水线稳定创建/更新，便于增量执行
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <b>🗂️ 归档闭环</b><br/>
-      Issue 动态协作 +
-      daily_reports 静态沉淀
+      Issue 动态协作 + daily_reports 静态沉淀
     </td>
   </tr>
 </table>
