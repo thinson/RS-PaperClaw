@@ -16,7 +16,7 @@ English version: **[README_EN.md](./README_EN.md)**
 
 ---
 
-> 📌 **近期论文日报**：查看最近三天汇总与归档 → **[进入日报导航](https://thinson.github.io/RS-PaperClaw/)**
+📌 **近期论文日报**：查看最近三天汇总与归档 → **[进入日报导航](https://thinson.github.io/RS-PaperClaw/)**
 
 ## ✨ 项目定位
 
@@ -119,15 +119,6 @@ CRON_TZ=Asia/Shanghai
 
 [![Star History Chart](https://api.star-history.com/svg?repos=thinson/RS-PaperClaw&type=Date)](https://star-history.com/#thinson/RS-PaperClaw&Date)
 
----
-
-<div align="center">
-
-**Powered by OpenClaw🦞**
-
-</div>
-
-## GitHub Pages
 
 - 入口页面：`docs/index.html`
 - 访问地址（启用 Pages 后）：`https://thinson.github.io/RS-PaperClaw/`
