@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RS-PaperClaw🦞</title>
+    <title>RS-PaperClaw</title>
     <style>
       :root {
         --bg: #f4efe7;
@@ -60,6 +60,27 @@
 
       .hero-copy {
         min-width: 0;
+      }
+
+      .hero-title-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        min-width: 0;
+      }
+
+      .hero-brand {
+        display: flex;
+        align-items: center;
+        min-width: 0;
+      }
+
+      .hero-logo {
+        flex: 0 0 auto;
+        width: 68px;
+        height: 68px;
+        object-fit: contain;
+        filter: drop-shadow(0 12px 22px rgba(57, 41, 26, 0.14));
       }
 
       .hero-copy p {
@@ -181,6 +202,7 @@
         flex-direction: column;
         justify-content: center;
         text-decoration: none;
+        text-align: center;
       }
 
       .content {
@@ -318,22 +340,47 @@
         color: var(--muted);
       }
 
-      .paper-link {
-        padding: 0;
-        border: 0;
-        background: transparent;
-        color: var(--text);
-        font: inherit;
-        text-align: left;
+      .paper-row {
         cursor: pointer;
+        transition: background 160ms ease, transform 160ms ease;
       }
 
-      .paper-link:hover {
+      .paper-row:hover {
+        background: #fff7ee;
+      }
+
+      .paper-title {
+        display: grid;
+        gap: 6px;
+      }
+
+      .paper-title strong {
+        font-size: 0.98rem;
+        line-height: 1.45;
+      }
+
+      .paper-hint {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        padding: 4px 9px;
+        border-radius: 999px;
+        background: rgba(181, 95, 52, 0.1);
         color: var(--accent);
+        font-size: 0.78rem;
+        letter-spacing: 0.02em;
       }
 
-      .issue-link {
-        white-space: nowrap;
+      .paper-card.clickable {
+        cursor: pointer;
+        transition: transform 160ms ease, border-color 160ms ease,
+          background 160ms ease;
+      }
+
+      .paper-card.clickable:hover {
+        transform: translateY(-1px);
+        border-color: rgba(181, 95, 52, 0.34);
+        background: #fff7ee;
       }
 
       .overlay {
@@ -573,6 +620,9 @@
         border: 1px solid var(--line);
         border-radius: 20px;
         background: rgba(255, 253, 249, 0.92);
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
       }
 
       .analysis-item h5 {
@@ -601,6 +651,8 @@
         width: 100%;
         line-height: 1.7;
         text-align: left;
+        overflow-wrap: anywhere;
+        word-break: break-word;
       }
 
       .analysis-line.bullet {
@@ -701,6 +753,15 @@
           gap: 16px;
         }
 
+        .hero-brand {
+          width: 100%;
+        }
+
+        .hero-logo {
+          width: 60px;
+          height: 60px;
+        }
+
         .repo-link {
           width: 100%;
           justify-content: center;
@@ -760,6 +821,14 @@
 
         .hero h1 {
           font-size: 2.2rem;
+        }
+
+        .hero-brand {
+          width: 100%;
+        }
+
+        .hero-title-row {
+          gap: 12px;
         }
 
         .hero-copy p {
@@ -905,6 +974,12 @@
           width: 100%;
         }
 
+        .analysis-item,
+        .analysis-conclusion,
+        .analysis-points {
+          max-width: 100%;
+        }
+
         .analysis-line.indent-1 {
           padding-left: 22px;
         }
@@ -930,6 +1005,15 @@
         .sidebar,
         .content {
           border-radius: 18px;
+        }
+
+        .hero-brand {
+          width: 100%;
+        }
+
+        .hero-logo {
+          width: 52px;
+          height: 52px;
         }
 
         .layout {
@@ -975,12 +1059,24 @@
   <body>
     <main class="shell">
       <section class="hero">
-        <div class="hero-copy">
-          <h1>RS-PaperClaw🦞</h1>
-          <p>
-            Auto-tracks, auto-analyzes, and auto-digests remote sensing
-            papers.
-          </p>
+        <div class="hero-brand">
+          <div class="hero-copy">
+            <div class="hero-title-row">
+              <h1>RS-PaperClaw</h1>
+              <img
+                class="hero-logo"
+                src="./logo-220.png"
+                alt="RS-PaperClaw logo"
+                width="208"
+                height="220"
+                decoding="async"
+              />
+            </div>
+            <p>
+              Auto-tracks, auto-analyzes, and auto-digests remote sensing
+              papers.
+            </p>
+          </div>
         </div>
         <a
           id="repoLink"
@@ -1698,53 +1794,46 @@
           ? report.articles
               .map(
                 (item) => `
-                  <tr>
+                  <tr
+                    class="${item.issueUrl ? "paper-row" : ""}"
+                    ${item.issueUrl ? `data-issue-url="${escapeHtml(item.issueUrl)}" data-title="${escapeHtml(item.titleText)}" tabindex="0"` : ""}
+                  >
                     <td>
-                      ${
-                        item.issueUrl
-                          ? `
-                            <button
-                              class="paper-link"
-                              type="button"
-                              data-issue-url="${escapeHtml(item.issueUrl)}"
-                              data-title="${escapeHtml(item.titleText)}"
-                            >
-                              ${item.title || escapeHtml(item.titleText || "-")}
-                            </button>
-                          `
-                          : item.title || "-"
-                      }
+                      <div class="paper-title">
+                        <strong>${item.title || escapeHtml(item.titleText || "-")}</strong>
+                        ${
+                          item.issueUrl
+                            ? '<span class="paper-hint">Open detail</span>'
+                            : ""
+                        }
+                      </div>
                     </td>
                     <td>${escapeHtml(item.authors || "-")}</td>
                     <td>${escapeHtml(item.summary || "-")}</td>
-                    <td class="issue-link">${item.issue || "-"}</td>
                   </tr>
                 `
               )
               .join("")
-          : '<tr><td colspan="4">暂无文章列表。</td></tr>';
+          : '<tr><td colspan="3">暂无文章列表。</td></tr>';
         const articleCards = report.articles.length
           ? report.articles
               .map(
                 (item) => `
-                  <article class="paper-card">
+                  <article
+                    class="paper-card ${item.issueUrl ? "clickable" : ""}"
+                    ${item.issueUrl ? `data-issue-url="${escapeHtml(item.issueUrl)}" data-title="${escapeHtml(item.titleText)}" tabindex="0"` : ""}
+                  >
                     <div class="paper-card-row">
                       <span class="paper-card-label">标题</span>
                       <div class="paper-card-value">
-                        ${
-                          item.issueUrl
-                            ? `
-                              <button
-                                class="paper-link"
-                                type="button"
-                                data-issue-url="${escapeHtml(item.issueUrl)}"
-                                data-title="${escapeHtml(item.titleText)}"
-                              >
-                                ${item.title || escapeHtml(item.titleText || "-")}
-                              </button>
-                            `
-                            : item.title || "-"
-                        }
+                        <div class="paper-title">
+                          <strong>${item.title || escapeHtml(item.titleText || "-")}</strong>
+                          ${
+                            item.issueUrl
+                              ? '<span class="paper-hint">Open detail</span>'
+                              : ""
+                          }
+                        </div>
                       </div>
                     </div>
                     <div class="paper-card-row">
@@ -1754,10 +1843,6 @@
                     <div class="paper-card-row">
                       <span class="paper-card-label">一句话概括</span>
                       <div class="paper-card-value">${escapeHtml(item.summary || "-")}</div>
-                    </div>
-                    <div class="paper-card-row">
-                      <span class="paper-card-label">Issue</span>
-                      <div class="paper-card-value">${item.issue || "-"}</div>
                     </div>
                   </article>
                 `
@@ -1810,7 +1895,6 @@
                     <th>标题</th>
                     <th>作者</th>
                     <th>一句话概括</th>
-                    <th>Issue</th>
                   </tr>
                 </thead>
                 <tbody>${articleRows}</tbody>
@@ -1875,7 +1959,7 @@
             .filter((item) => item.report)
             .map((item) => item.report)
             .sort((left, right) => right.date.localeCompare(left.date));
-          const summaryText = `已加载 ${reports.length} / ${dates.length} 天，范围 ${formatDate(
+          const summaryText = `已展示 ${reports.length + 1} 项，其中 ${reports.length} 天日报，范围 ${formatDate(
             dates[0]
           )} 到 ${formatDate(dates[dates.length - 1])}。`;
 
@@ -1907,13 +1991,25 @@
         detailSheet.scrollTo({ top: 0, behavior: "smooth" });
       });
       reportDetail.addEventListener("click", (event) => {
-        const trigger = event.target.closest(".paper-link");
+        const trigger = event.target.closest("[data-issue-url]");
         if (!trigger) return;
 
         openPaperDetail(
           trigger.getAttribute("data-issue-url"),
           trigger.getAttribute("data-title")
         );
+      });
+      reportDetail.addEventListener("keydown", (event) => {
+        const trigger = event.target.closest("[data-issue-url]");
+        if (!trigger) return;
+
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openPaperDetail(
+            trigger.getAttribute("data-issue-url"),
+            trigger.getAttribute("data-title")
+          );
+        }
       });
       backButton.addEventListener("click", closePaperOverlay);
       paperOverlayBackdrop.addEventListener("click", closePaperOverlay);
