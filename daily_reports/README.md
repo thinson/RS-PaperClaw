@@ -5,31 +5,31 @@
 # [20260312](./202603/20260312.md)
 ## 📌 今日概况
 
-今日共检索候选论文 38 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+今日共检索候选论文 38 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 6 篇。
 
-今日遥感AI研究聚焦基础模型与语义通信两大方向。SAR领域推出十亿级基础模型CrossEarth-SAR，提升领域泛化能力；LEO卫星通信结合JSCC技术优化QoS感知。深度学习在多标签分类、显著目标检测、海底地形重建等细分任务持续深化，VLM与OSM数据的结合成为新趋势。
+今日遥感研究聚焦于基础模型与语义通信两大方向。SAR基础模型CrossEarth-SAR探索领域泛化能力，LEO卫星语义通信框架关注QoS保障。视觉语言模型的领域适应、层次化多标签分类、显著目标检测等任务持续推进，同时浅水方程的浴血测量重建等逆问题也有新进展。整体趋势表明，遥感AI正从单一任务向多任务协同、从传统方法向深度学习与物理模型融合的方向发展。
 
 ## ✨ 今日亮点
 
-- SAR基础模型CrossEarth-SAR发布，采用MoE架构实现十亿级参数与领域泛化
-- LEO卫星EO任务引入联合JSCC-资源分配框架，提升语义通信QoS
-- 遥感VLM结合OSM数据进行领域适应，图学习与Transformer持续赋能分类与检测
+- CrossEarth-SAR通过混合专家机制提升SAR图像语义分割的领域泛化能力
+- LEO卫星地球观测引入联合JSCC与资源分配，提升语义通信质量
+- 浴血测量重建结合最优控制与有限元方法，推动物理驱动深度学习
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260312] CrossEarth-SAR: A SAR-Centric and Billion-Scale Geospatial Foundation Model for Domain Generalizable Semantic Segmentation | Ye Ziqi, Gong Ziyang, Liao Ning, Hu Xiaoxing, Wang Di et al. | CrossEarth-SAR提出SAR中心化十亿级基础模型，通过MoE架构实现领域可泛化语义分割。 | [#58](https://github.com/thinson/RS-PaperClaw/issues/58) |
-| [20260312] A Joint JSCC-Resource Allocation Framework for QoS-Aware Semantic Communication in LEO Satellite-based EO Missions | Nguyen-Kha Hung, Ti Ti Nguyen, Vu Nguyen Ha, Lagunas Eva, Chatzinotas Symeon et al. | 联合JSCC-资源分配框架针对LEO卫星EO任务，优化语义通信的QoS与资源利用。 | [#59](https://github.com/thinson/RS-PaperClaw/issues/59) |
-| [20260312] OSM-based Domain Adaptation for Remote Sensing VLMs | Stefan Maria Ailuro, Markov Mario, Mahdi Mohammad, Boychev Delyan, Luc Van Gool et al. | OSM数据用于遥感VLM领域适应，提升模型在地理空间理解中的迁移能力。 | [#60](https://github.com/thinson/RS-PaperClaw/issues/60) |
-| [20260312] HELM: Hierarchical and Explicit Label Modeling with Graph Learning for Multi-Label Image Classification | Stoimchev Marjan, Koloski Boshko, Levatić Jurica, Kocev Dragi, Džeroski Sašo | HELM提出层次化显式标签建模方法，结合图学习与自监督提升多标签分类精度。 | [#61](https://github.com/thinson/RS-PaperClaw/issues/61) |
-| [20260312] RDNet: Region Proportion-Aware Dynamic Adaptive Salient Object Detection Network in Optical Remote Sensing Images | Wan Bin, Cong Runmin, Zhou Xiaofei, Fang Hao, Sun Yaoqi et al. | RDNet针对光学遥感显著目标检测，引入区域比例感知与动态自适应机制应对尺度变化。 | [#63](https://github.com/thinson/RS-PaperClaw/issues/63) |
-| [20260312] Bathymetry reconstruction via optimal control in well-balanced finite element methods for the shallow water equations | Ruppenthal Falko, Kuzmin Dmitri | 浅水方程平衡有限元方法结合最优控制，实现高精度海底地形重建与逆问题求解。 | [#64](https://github.com/thinson/RS-PaperClaw/issues/64) |
+| [20260312] CrossEarth-SAR: A SAR-Centric and Billion-Scale Geospatial Foundation Model for Domain Generalizable Semantic Segmentation | Ye Ziqi, Gong Ziyang, Liao Ning, Hu Xiaoxing, Wang Di et al. | CrossEarth-SAR提出面向SAR的十亿级地理空间基础模型，通过Mixture-of-Experts实现领域可泛化的语义分割 | [#58](https://github.com/thinson/RS-PaperClaw/issues/58) |
+| [20260312] A Joint JSCC-Resource Allocation Framework for QoS-Aware Semantic Communication in LEO Satellite-based EO Missions | Nguyen-Kha Hung, Ti Ti Nguyen, Vu Nguyen Ha, Lagunas Eva, Chatzinotas Symeon et al. | 联合JSCC-资源分配框架针对LEO卫星地球观测任务，优化语义通信的服务质量 | [#59](https://github.com/thinson/RS-PaperClaw/issues/59) |
+| [20260312] OSM-based Domain Adaptation for Remote Sensing VLMs | Stefan Maria Ailuro, Markov Mario, Mahdi Mohammad, Boychev Delyan, Luc Van Gool et al. | OSM数据助力遥感视觉语言模型的领域适应迁移 | [#60](https://github.com/thinson/RS-PaperClaw/issues/60) |
+| [20260312] HELM: Hierarchical and Explicit Label Modeling with Graph Learning for Multi-Label Image Classification | Stoimchev Marjan, Koloski Boshko, Levatić Jurica, Kocev Dragi, Džeroski Sašo | HELM通过层次化标签建模与图学习，提升遥感图像多标签分类性能 | [#61](https://github.com/thinson/RS-PaperClaw/issues/61) |
+| [20260312] RDNet: Region Proportion-Aware Dynamic Adaptive Salient Object Detection Network in Optical Remote Sensing Images | Wan Bin, Cong Runmin, Zhou Xiaofei, Fang Hao, Sun Yaoqi et al. | RDNet采用区域比例感知与动态自适应机制，增强光学遥感显著目标检测的尺度变化鲁棒性 | [#63](https://github.com/thinson/RS-PaperClaw/issues/63) |
+| [20260312] Bathymetry reconstruction via optimal control in well-balanced finite element methods for the shallow water equations | Ruppenthal Falko, Kuzmin Dmitri | 浴血测量重建利用浅水方程的最优控制与平衡有限元方法，实现高精度海底地形反演 | [#64](https://github.com/thinson/RS-PaperClaw/issues/64) |
 
 ## 🔎 观察
 
-- 基础模型从光学扩展至SAR领域，MoE架构成为提升领域泛化的主流选择，暗示遥感基础模型竞争加剧。
-- 语义通信与卫星任务深度融合，JSCC技术突破传统通信瓶颈，LEO星座部署将加速该方向落地应用。
+- 基础模型与语义通信的融合成为遥感AI新趋势，跨模态、跨领域泛化能力受关注
+- 物理驱动方法（如浅水方程、最优控制）与深度学习的结合，为逆问题提供新思路
 
 ---
 
