@@ -5,26 +5,31 @@
 # [20260314](./202603/20260314.md)
 ## 📌 今日概况
 
-今日共检索候选论文 25 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 1 篇。
+今日共检索候选论文 26 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 6 篇。
 
-今日遥感AI研究聚焦目标检测领域，YOLO系列持续迭代优化。单篇论文提出YOLOv11n双策略改进方案，针对遥感图像多尺度目标检测难题，兼顾小目标与多尺度场景，体现轻量化模型在遥感垂直领域的精细化调优趋势。
+今日遥感AI研究呈现多维度创新态势：目标检测领域持续优化YOLO系列架构以应对多尺度挑战；量子计算与视觉Transformer的融合探索为灾害监测开辟新路径；自监督学习与不确定性量化成为卫星影像超分辨率研究热点；空地协同感知、跨视角地理定位及多高度场景建模等方向亦取得显著进展。
 
 ## ✨ 今日亮点
 
-- YOLOv11n双策略改进，提升遥感多尺度目标检测性能
-- 针对遥感图像特性优化，强化小目标检测能力
-- 轻量化模型与遥感场景结合，平衡精度与效率
+- 量子增强视觉Transformer首次应用于遥感洪水检测，开创量子-经典混合架构新范式
+- YOLOv11n双策略改进方案针对性解决遥感影像多尺度与小目标检测难题
+- 视觉基础模型实现零样本跨视角地理定位，突破传统方法对标注数据的依赖
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260314] Dual-Strategy Improvement of YOLOv11n for Multi-Scale Object Detection in Remote Sensing Images | Zhu Shuaiyu, Ablameyko Sergey | 该研究通过双策略改进YOLOv11n，优化遥感图像多尺度目标检测，提升小目标识别精度。 | [#75](https://github.com/thinson/RS-PaperClaw/issues/75) |
+| [20260314] Dual-Strategy Improvement of YOLOv11n for Multi-Scale Object Detection in Remote Sensing Images | Zhu Shuaiyu, Ablameyko Sergey | 提出YOLOv11n双策略改进方法，通过优化网络结构提升遥感影像多尺度目标检测性能。 | [#75](https://github.com/thinson/RS-PaperClaw/issues/75) |
+| [20260314] Quantum-Enhanced Vision Transformer for Flood Detection using Remote Sensing Imagery | Maity Soumyajit, Ghanbarian Behzad | 构建量子增强视觉Transformer混合架构，探索量子计算在遥感洪水检测中的应用潜力。 | [#76](https://github.com/thinson/RS-PaperClaw/issues/76) |
+| [20260314] Self-Supervised Uncertainty Estimation For Super-Resolution of Satellite Images | Zheng Zhe, Dewil Valéry, Arias Pablo | 开发自监督不确定性估计框架，为卫星影像超分辨率重建提供可靠性度量。 | [#78](https://github.com/thinson/RS-PaperClaw/issues/78) |
+| [20260314] OpenCOOD-Air: Prompting Heterogeneous Ground-Air Collaborative Perception with Spatial Conversion and Offset Prediction | Wu Xianke, Bai Songlin, Li Chengxiang, Luo Zhiyao, Tian Yulin et al. | 设计空地协同感知系统OpenCOOD-Air，实现异构无人机与地面车辆的空间转换与偏移预测。 | [#79](https://github.com/thinson/RS-PaperClaw/issues/79) |
+| [20260314] VFM-Loc: Zero-Shot Cross-View Geo-Localization via Aligning Discriminative Visual Hierarchies | Lu Jun, Sang Zehao, Wei Haoqi, Liu Xiangyun, Zhu Kun et al. | 提出VFM-Loc零样本跨视角地理定位方法，通过对齐判别性视觉层次实现无需训练的地理定位。 | [#80](https://github.com/thinson/RS-PaperClaw/issues/80) |
+| [20260314] Sky2Ground: A Benchmark for Site Modeling under Varying Altitude | Wang Zengyan, Mitra Sirshapan, Modi Rajat, Lim Grace, Rawat Yogesh | 发布Sky2Ground基准数据集，支持变高度条件下的航拍、卫星与地面影像联合场景建模。 | [#81](https://github.com/thinson/RS-PaperClaw/issues/81) |
 
 ## 🔎 观察
 
-- YOLO系列在遥感领域的微创新持续活跃，轻量化改进成为主流技术路线
-- 多尺度与小目标检测仍是遥感目标检测的核心难点，需针对性架构设计
+- 量子计算与遥感AI的交叉研究尚处早期探索阶段，其实际算力优势与工程化落地路径仍需验证
+- 零样本学习与视觉基础模型的结合正重塑遥感下游任务范式，数据效率与泛化能力成为核心竞争点
 
 ---
 
