@@ -5,6 +5,7 @@ import json
 import re
 from pathlib import Path
 
+import daily_arxiv_cross_filter
 import daily_digest_llm_upgrade
 import sync_daily_reports_to_repo
 from clients.github_ops import extract_arxiv_id_from_issue
@@ -12,6 +13,19 @@ from pipeline_config import get_repo, load_config
 
 
 CONFIG = load_config()
+
+
+def ensure_stats(stats_json: str, date_str: str) -> dict:
+    path = Path(stats_json)
+    if not path.exists():
+        print(f"STATS_MISSING {stats_json} -> rebuilding via filter --dry-run")
+        daily_arxiv_cross_filter.main(
+            dry_run=True,
+            days_back=2,
+            stats_out=stats_json,
+            target_date=date_str,
+        )
+    return load_stats(stats_json, date_str)
 
 
 def load_stats(stats_json: str, date_str: str) -> dict:
@@ -48,7 +62,7 @@ def split_date_issues(issues):
 
 
 def reconcile(date_str: str, stats_json: str, dry_run: bool = False, skip_digest: bool = False, skip_sync: bool = False) -> int:
-    stats = load_stats(stats_json, date_str)
+    stats = ensure_stats(stats_json, date_str)
     expected_ids = set(stats["selected_arxiv_ids"])
     repo = get_repo(CONFIG)
     digest_issue, paper_issues = split_date_issues(get_open_date_issues(repo, date_str))
