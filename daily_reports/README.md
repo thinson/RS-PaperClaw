@@ -5,45 +5,33 @@
 # [20260317](./202603/20260317.md)
 ## 📌 今日概况
 
-今日共检索候选论文 31 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 20 篇。
+今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
 
-今日遥感AI研究聚焦高效感知与鲁棒学习两大主线。深度估计与目标检测持续追求实时性与精度平衡，神经符号AI与数据-centric方法为遥感任务注入新思路。同时，多模态融合（LiDAR-视觉-惯性）在定位导航领域取得进展，冻土监测等垂直结构敏感应用获得关注。
+今日遥感AI研究聚焦效率优化与任务拓展：扩散模型加速单目深度估计、多核卷积提升检测性能，同时神经符号推理、多智能体协同等新兴方向涌现。数据质量治理与域泛化方法持续受到关注，高光谱与点云处理技术亦有新进展。
 
 ## ✨ 今日亮点
 
-- D³-RSMDE实现40倍加速的高保真单目深度估计，推动实时遥感应用
-- PKINet-v2提出各向异性多核卷积，优化遥感目标检测效率与性能
-- NeSy-Route构建神经符号路径规划基准，融合推理与约束优化
+- D³-RSMDE实现40倍加速的单目深度估计，扩散模型与Transformer结合突破实时性瓶颈
+- PKINet-v2通过各向异性多核卷积优化遥感目标检测，兼顾精度与计算效率
+- NeSy-Route构建神经符号路由规划基准，推动遥感场景下的可解释约束求解
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260317] Age Predictors Through the Lens of Generalization, Bias Mitigation, and Interpretability: Reflections on Causal Implications | Paul Debdas, Ferrari Elisa, Gravili Irene, Cellerino Alessandro | 从因果推断视角审视年龄预测模型的泛化性、去偏与可解释性问题。 | [#115](https://github.com/thinson/RS-PaperClaw/issues/115) |
-| [20260317] Encoding Predictability and Legibility for Style-Conditioned Diffusion Policy | Adrien Jacquet Crétides, Abrini Mouad, Rahimi Hamed, Chetouani Mohamed | 将可预测性与可辨识性编码引入风格条件扩散策略，优化人机协作轨迹生成。 | [#116](https://github.com/thinson/RS-PaperClaw/issues/116) |
-| [20260317] $D^3$-RSMDE: 40$\times$ Faster and High-Fidelity Remote Sensing Monocular Depth Estimation | Wang Ruizhi, Li Weihan, Feng Zunlei, Zhang Haofei, Song Mingli et al. | D³-RSMDE结合Vision Transformer与扩散模型，实现40倍加速的遥感单目深度估计。 | [#117](https://github.com/thinson/RS-PaperClaw/issues/117) |
-| [20260317] PKINet-v2: Towards Powerful and Efficient Poly-Kernel Remote Sensing Object Detection | Cai Xinhao, Li Liulei, Pei Gensheng, Sun Zeren, Yao Yazhou et al. | PKINet-v2采用各向异性多核卷积，提升遥感目标检测的效能与多尺度特征提取能力。 | [#118](https://github.com/thinson/RS-PaperClaw/issues/118) |
-| [20260317] NeSy-Route: A Neuro-Symbolic Benchmark for Constrained Route Planning in Remote Sensing | Yang Ming, Zhou Zhi, Tian Shi-Yu, Yu Kun-Yang, Guo Lan-Zhe et al. | NeSy-Route构建神经符号基准，支持遥感场景中带约束的路径规划任务。 | [#119](https://github.com/thinson/RS-PaperClaw/issues/119) |
-| [20260317] GenZ-LIO: Generalizable LiDAR-Inertial Odometry Beyond Indoor--Outdoor Boundaries | Lee Daehan, Lim Hyungtae, Kim Seongjun, Rho Soonbin, Lee Changhyeon et al. | GenZ-LIO提出可泛化的激光雷达-惯性里程计，突破室内外边界限制。 | [#120](https://github.com/thinson/RS-PaperClaw/issues/120) |
-| [20260317] Neural Pushforward Samplers for the Fokker-Planck Equation on Embedded Riemannian Manifolds | Andrew Qing He, Cai Wei | 针对嵌入黎曼流形的Fokker-Planck方程，设计神经前推采样器与弱对抗方法。 | [#121](https://github.com/thinson/RS-PaperClaw/issues/121) |
-| [20260317] PA-LVIO: Real-Time LiDAR-Visual-Inertial Odometry and Mapping with Pose-Only Bundle Adjustment | Tang Hailiang, Zhang Tisheng, Wang Liqiang, Ding Xin, Yuan Man et al. | PA-LVIO采用纯姿态Bundle Adjustment，实现实时激光雷达-视觉-惯性里程计与建图。 | [#122](https://github.com/thinson/RS-PaperClaw/issues/122) |
-| [20260317] Rapid Worst-Case Gust Identification for Very Flexible Aircraft Using Reduced-Order Models | Nikolaos D. Tantaroudas, Andrea Da Ronch, Karachalios Ilias, Kenneth J. Badcock | 基于降阶模型快速识别超柔性飞行器最坏情况阵风，兼顾非线性流固耦合。 | [#123](https://github.com/thinson/RS-PaperClaw/issues/123) |
-| [20260317] A Candidate Open Cluster Pulsar: Timing Analysis of PSR J1922+3745 in NGC 6791 | Liu Xiao-Jin, Ralph P. Eatough, Pan Zhichen, Bailes Matthew, Jing Wei-Cong et al. | 对NGC 6791中脉冲星PSR J1922+3745进行时序分析，探索候选疏散星团脉冲星。 | [#124](https://github.com/thinson/RS-PaperClaw/issues/124) |
-| [20260317] Communication-Aware Multi-Agent Reinforcement Learning for Decentralized Cooperative UAV Deployment | Fan Enguang, Chen Yifan, Shan Zihan, Caesar Matthew, Kim Jae | 通信感知多智能体强化学习实现去中心化无人机集群协同部署。 | [#125](https://github.com/thinson/RS-PaperClaw/issues/125) |
-| [20260317] PathGLS: Evaluating Pathology Vision-Language Models without Ground Truth through Multi-Dimensional Consistency | Chen Minbing, Meng Zhu, Su Fei | PathGLS通过多维度一致性评估病理视觉语言模型，无需真值即可检测幻觉。 | [#126](https://github.com/thinson/RS-PaperClaw/issues/126) |
-| [20260317] A Binary Classifier-Based Wire Resistance Attack on the KLJN Secure Key Exchanger | Yildirim Mehmet, Ay Fahrettin, Laszlo B. Kish | 基于二元分类器的导线电阻攻击针对KLJN安全密钥交换器展开侧信道分析。 | [#127](https://github.com/thinson/RS-PaperClaw/issues/127) |
-| [20260317] Occupation-Measure Mean-Field Control: Optimization over Measures and Frank-Wolfe Methods | Yu Di, You Sixiong, Pei Chaoying |  occupation测度平均场控制结合Frank-Wolfe方法，优化测度空间上的多智能体控制。 | [#128](https://github.com/thinson/RS-PaperClaw/issues/128) |
-| [20260317] Adaptive regularization parameter selection for high-dimensional inverse problems: A Bayesian approach with Tucker low-rank constraints | Yang Qing-Mei, Zhang Da-Qing | 变分贝叶斯框架下Tucker低秩约束自适应选择高维反问题正则化参数。 | [#129](https://github.com/thinson/RS-PaperClaw/issues/129) |
-| [20260317] inference-fleet-sim: A Queueing-Theory-Grounded Fleet Capacity Planner for LLM Inference | Chen Huamin, Liu Xunzhuo, Liu Yuhan, Jiang Junchen, He Bowei et al. | inference-fleet-sim基于排队论为LLM推理GPU集群提供容量规划仿真工具。 | [#130](https://github.com/thinson/RS-PaperClaw/issues/130) |
-| [20260317] Transition path theory insights into hurricane rapid intensification | Beron-Vera F.J., Bonner G., Olascoaga M.J., Dong S., Lopez H. | 过渡路径理论揭示飓风快速增强机制，关联上层海洋热力学过程。 | [#131](https://github.com/thinson/RS-PaperClaw/issues/131) |
-| [20260317] An assessment of data-centric methods for label noise identification in remote sensing data sets | Kröber Felix, Hoxha Genc, Roscher Ribana | 系统评估数据-centric方法在遥感数据集标签噪声识别中的有效性。 | [#133](https://github.com/thinson/RS-PaperClaw/issues/133) |
-| [20260317] Preserving Vertical Structure in 3D-to-2D Projection for Permafrost Thaw Mapping | McMillen Justin, Robert Van Alphen, Taha Sadeghi Chorsi, Shabaga Jason, Rodgers Mel et al. | 保留垂直结构的3D-to-2D投影方法提升冻土融化监测与森林分层精度。 | [#134](https://github.com/thinson/RS-PaperClaw/issues/134) |
-| [20260317] Spectral Property-Driven Data Augmentation for Hyperspectral Single-Source Domain Generalization | Chen Taiqin, Wang Yifeng, Feng Xiaochen, Zhu Zhilin, Sha Hao et al. | 光谱属性驱动数据增强增强高光谱单源域泛化能力，缓解域偏移问题。 | [#135](https://github.com/thinson/RS-PaperClaw/issues/135) |
+| [20260317] $D^3$-RSMDE: 40$\times$ Faster and High-Fidelity Remote Sensing Monocular Depth Estimation | Wang Ruizhi, Li Weihan, Feng Zunlei, Zhang Haofei, Song Mingli et al. | D³-RSMDE将扩散模型与Vision Transformer结合，实现40倍加速的高保真遥感单目深度估计。 | [#117](https://github.com/thinson/RS-PaperClaw/issues/117) |
+| [20260317] PKINet-v2: Towards Powerful and Efficient Poly-Kernel Remote Sensing Object Detection | Cai Xinhao, Li Liulei, Pei Gensheng, Sun Zeren, Yao Yazhou et al. | PKINet-v2采用各向异性多核卷积设计，在遥感目标检测中平衡强大特征提取与计算效率。 | [#118](https://github.com/thinson/RS-PaperClaw/issues/118) |
+| [20260317] NeSy-Route: A Neuro-Symbolic Benchmark for Constrained Route Planning in Remote Sensing | Yang Ming, Zhou Zhi, Tian Shi-Yu, Yu Kun-Yang, Guo Lan-Zhe et al. | NeSy-Route建立首个神经符号遥感路由规划基准，支持约束优化与可解释推理评估。 | [#119](https://github.com/thinson/RS-PaperClaw/issues/119) |
+| [20260317] Communication-Aware Multi-Agent Reinforcement Learning for Decentralized Cooperative UAV Deployment | Fan Enguang, Chen Yifan, Shan Zihan, Caesar Matthew, Kim Jae | 基于图神经网络的多智能体强化学习方法，实现通信感知的去中心化无人机集群协同部署。 | [#125](https://github.com/thinson/RS-PaperClaw/issues/125) |
+| [20260317] An assessment of data-centric methods for label noise identification in remote sensing data sets | Kröber Felix, Hoxha Genc, Roscher Ribana | 系统评估数据为中心方法在遥感数据集标签噪声识别中的有效性与适用边界。 | [#133](https://github.com/thinson/RS-PaperClaw/issues/133) |
+| [20260317] Preserving Vertical Structure in 3D-to-2D Projection for Permafrost Thaw Mapping | McMillen Justin, Robert Van Alphen, Taha Sadeghi Chorsi, Shabaga Jason, Rodgers Mel et al. | 针对多年冻土融化制图，提出保持垂直结构的3D-to-2D投影方法以保留森林分层信息。 | [#134](https://github.com/thinson/RS-PaperClaw/issues/134) |
+| [20260317] Spectral Property-Driven Data Augmentation for Hyperspectral Single-Source Domain Generalization | Chen Taiqin, Wang Yifeng, Feng Xiaochen, Zhu Zhilin, Sha Hao et al. | 基于光谱属性的数据增强策略，提升高光谱图像单源域泛化能力。 | [#135](https://github.com/thinson/RS-PaperClaw/issues/135) |
+| [20260317] 3D Fourier-based Global Feature Extraction for Hyperspectral Image Classification | Ahmad Muhammad | 利用3D傅里叶变换提取全局特征，增强高光谱图像分类中的空谱相关性建模。 | [#136](https://github.com/thinson/RS-PaperClaw/issues/136) |
 
 ## 🔎 观察
 
-- 遥感实时处理需求催生轻量化架构创新，扩散模型与Transformer的融合成为深度估计新范式
-- 数据-centric理念向遥感渗透，标签噪声治理与域泛化增强成为提升模型鲁棒性的关键路径
+- 效率导向设计成为共识：两篇工作分别从模型架构（多核卷积）与采样策略（扩散加速）切入，反映遥感实时应用的迫切需求
+- 任务边界持续外扩：从传统感知任务延伸至路由规划、多智能体协同等决策层，神经符号与强化学习方法开始落地遥感场景
 
 ---
 
