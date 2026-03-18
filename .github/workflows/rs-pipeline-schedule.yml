@@ -1,6 +1,7 @@
 name: RS Pipeline Schedule
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "10 1 * * 1-5"
 
@@ -60,8 +61,10 @@ jobs:
         run: |
           set -euo pipefail
           if [[ -n "${DINGTALK_WEBHOOK:-}" || -n "${FEISHU_TARGET:-}" ]]; then
+            echo "MODE run"
             python3 scripts/cli.py run
           else
+            echo "MODE run --no-notify"
             python3 scripts/cli.py run --no-notify
           fi
 
