@@ -68,6 +68,19 @@ jobs:
             python3 scripts/cli.py run --no-notify
           fi
 
+      - name: Print pipeline state
+        if: always()
+        working-directory: skills/rs-paper-pipeline
+        run: |
+          if ls memory/pipeline_state/*.json >/dev/null 2>&1; then
+            for file in memory/pipeline_state/*.json; do
+              echo "===== ${file} ====="
+              cat "${file}"
+            done
+          else
+            echo "No pipeline_state json found"
+          fi
+
       - name: Upload runtime artifacts
         if: always()
         uses: actions/upload-artifact@v4
