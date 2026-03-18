@@ -33,6 +33,7 @@ def suggestion_for(binary: str) -> str:
 def main() -> int:
     checks: list[tuple[bool, str]] = []
     suggestions: list[str] = []
+    in_ci = os.environ.get("GITHUB_ACTIONS") == "true" or os.environ.get("CI") == "true"
 
     checks.append(
         (
@@ -42,10 +43,12 @@ def main() -> int:
     )
 
     env_path = next((path for path in DEFAULT_ENV_FILES if path.exists()), None)
+    env_ok = env_path is not None or in_ci
+    env_detail = str(env_path) if env_path else ("missing (.env), allowed in CI" if in_ci else "missing (.env)")
     checks.append(
         (
-            env_path is not None,
-            check_mark("env-file", env_path is not None, str(env_path) if env_path else "missing (.env)"),
+            env_ok,
+            check_mark("env-file", env_ok, env_detail),
         )
     )
 
