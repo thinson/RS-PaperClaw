@@ -21,17 +21,17 @@
 |---|---|---|---|
 | [20260317] $D^3$-RSMDE: 40$\times$ Faster and High-Fidelity Remote Sensing Monocular Depth Estimation | Wang Ruizhi, Li Weihan, Feng Zunlei, Zhang Haofei, Song Mingli et al. | D³-RSMDE提出基于扩散模型的遥感单目深度估计方法，速度提升40倍同时保持高保真度。 | [#117](https://github.com/thinson/RS-PaperClaw/issues/117) |
 | [20260317] PKINet-v2: Towards Powerful and Efficient Poly-Kernel Remote Sensing Object Detection | Cai Xinhao, Li Liulei, Pei Gensheng, Sun Zeren, Yao Yazhou et al. | PKINet-v2设计多核卷积网络，通过各向异性核实现高效多尺度特征提取用于遥感目标检测。 | [#118](https://github.com/thinson/RS-PaperClaw/issues/118) |
-| [20260317] NeSy-Route: A Neuro-Symbolic Benchmark for Constrained Route Planning in Remote Sensing | Yang Ming, Zhou Zhi, Tian Shi-Yu, Yu Kun-Yang, Guo Lan-Zhe et al. | NeSy-Route建立神经符号路由规划基准数据集，支持约束优化与可解释路径推理评估。 | [#119](https://github.com/thinson/RS-PaperClaw/issues/119) |
-| [20260317] Communication-Aware Multi-Agent Reinforcement Learning for Decentralized Cooperative UAV Deployment | Fan Enguang, Chen Yifan, Shan Zihan, Caesar Matthew, Kim Jae | 面向UAV集群部署，提出通信感知多智能体强化学习框架实现去中心化协同控制。 | [#125](https://github.com/thinson/RS-PaperClaw/issues/125) |
+| [20260317] NeSy-Route: A Neuro-Symbolic Benchmark for Constrained Route Planning in Remote Sensing | Yang Ming, Zhou Zhi, Tian Shi-Yu, Yu Kun-Yang, Guo Lan-Zhe et al. | NeSy-Route建立神经符号路由规划基准数据集，支持约束优化与可解释路径推理研究。 | [#119](https://github.com/thinson/RS-PaperClaw/issues/119) |
+| [20260317] Communication-Aware Multi-Agent Reinforcement Learning for Decentralized Cooperative UAV Deployment | Fan Enguang, Chen Yifan, Shan Zihan, Caesar Matthew, Kim Jae | 面向UAV集群部署，提出通信感知多智能体强化学习方法实现去中心化协同控制。 | [#125](https://github.com/thinson/RS-PaperClaw/issues/125) |
 | [20260317] An assessment of data-centric methods for label noise identification in remote sensing data sets | Kröber Felix, Hoxha Genc, Roscher Ribana | 系统评估数据-centric方法在遥感数据集标签噪声识别中的有效性与适用边界。 | [#133](https://github.com/thinson/RS-PaperClaw/issues/133) |
-| [20260317] Preserving Vertical Structure in 3D-to-2D Projection for Permafrost Thaw Mapping | McMillen Justin, Robert Van Alphen, Taha Sadeghi Chorsi, Shabaga Jason, Rodgers Mel et al. | 针对多年冻土融化制图，开发保持垂直结构的3D-to-2D投影方法保留森林分层信息。 | [#134](https://github.com/thinson/RS-PaperClaw/issues/134) |
+| [20260317] Preserving Vertical Structure in 3D-to-2D Projection for Permafrost Thaw Mapping | McMillen Justin, Robert Van Alphen, Taha Sadeghi Chorsi, Shabaga Jason, Rodgers Mel et al. | 针对多年冻土融化制图，开发保留垂直结构的3D-to-2D投影方法以维持森林分层信息。 | [#134](https://github.com/thinson/RS-PaperClaw/issues/134) |
 | [20260317] Spectral Property-Driven Data Augmentation for Hyperspectral Single-Source Domain Generalization | Chen Taiqin, Wang Yifeng, Feng Xiaochen, Zhu Zhilin, Sha Hao et al. | 基于光谱属性驱动设计数据增强策略，提升高光谱图像单源域泛化能力。 | [#135](https://github.com/thinson/RS-PaperClaw/issues/135) |
 | [20260317] 3D Fourier-based Global Feature Extraction for Hyperspectral Image Classification | Ahmad Muhammad | 利用3D傅里叶变换提取全局特征，增强高光谱图像分类中的空谱相关性建模。 | [#136](https://github.com/thinson/RS-PaperClaw/issues/136) |
 
 ## 🔎 观察
 
-- 扩散模型正从生成任务向判别式视觉任务渗透，实时性突破或加速其在遥感解析中的普及
-- 神经符号与多智能体等新型AI范式进入遥感领域，反映行业对可解释性与自主决策的迫切需求
+- 扩散模型正从生成任务向判别任务渗透，D³-RSMDE表明其在实时遥感深度估计中的潜力，但需关注推理效率与模型轻量化的进一步平衡
+- 神经符号AI与多智能体强化学习代表遥感智能化的新范式，前者解决可解释约束推理，后者应对动态协同决策，两者结合或成未来趋势
 
 ---
 
