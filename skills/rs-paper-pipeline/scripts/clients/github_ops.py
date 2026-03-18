@@ -49,6 +49,10 @@ def upsert_repo_file(repo, path: str, content: str, message: str) -> None:
     data = content.encode("utf-8")
     try:
         existing = repo.get_contents(path)
+        existing_text = existing.decoded_content.decode("utf-8")
+        if existing_text == content:
+            print(f"UNCHANGED {path}")
+            return
         repo.update_file(path=path, message=message, content=data, sha=existing.sha)
         print(f"UPDATED {path}")
     except Exception:
