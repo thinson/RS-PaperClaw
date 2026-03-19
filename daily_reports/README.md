@@ -5,29 +5,31 @@
 # [20260318](./202603/20260318.md)
 ## 📌 今日概况
 
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
 
-今日遥感AI研究聚焦多模态融合与高效学习范式。四篇论文涵盖RGB-T无人机检测、光学-SAR开放词汇分割、多模态语义分割及多智能体建筑年龄估计，体现频域特征增强、参数高效微调与视觉语言模型在遥感领域的深入应用，同时智能体系统开始介入城市能源规划决策支持。
+今日遥感AI研究呈现多模态融合与低空智能两大主线。视觉-语言模型向遥感开放词汇分割延伸，参数高效学习成为多模态语义分割新方向。同时，无人机检测、机群通信与柔性飞行器控制等低空技术密集涌现，频域特征提取与多智能体系统成为解决复杂场景的关键手段。
 
 ## ✨ 今日亮点
 
-- 局部频域桥接网络解决复杂背景下RGB-T无人机检测难题
-- 参数高效模态平衡融合策略降低多模态分割计算开销
-- 多智能体系统实现建筑年代分层映射支撑城市能源规划
+- MM-OVSeg实现光学-SAR跨模态开放词汇分割，突破遥感语义类别受限瓶颈
+- Local Frequency Bridge网络引入频域桥接机制，应对复杂背景无人机伪装检测
+- 多智能体系统首次用于建筑年代队列映射，支撑城市级能源规划决策
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260318] UAV-CB: A Complex-Background RGB-T Dataset and Local Frequency Bridge Network for UAV Detection | Huang Shenghui, Hu Menghao, Zou Longkun, Chi Hongyu, Li Zekai et al. | 提出UAV-CB数据集与局部频域桥接网络，针对复杂背景与伪装目标提升无人机检测性能。 | [#138](https://github.com/thinson/RS-PaperClaw/issues/138) |
-| [20260318] Parameter-Efficient Modality-Balanced Symmetric Fusion for Multimodal Remote Sensing Semantic Segmentation | Li Haocheng, Zheng Juepeng, Miao Shuangxi, Lu Ruibo, Cai Guosheng et al. | 设计参数高效模态平衡对称融合框架，缓解多模态遥感语义分割中的模态不平衡与计算冗余问题。 | [#139](https://github.com/thinson/RS-PaperClaw/issues/139) |
-| [20260318] A Multi-Agent System for Building-Age Cohort Mapping to Support Urban Energy Planning | Thota Kundan, Schlachter Thorsten, Hagenmeyer Veit | 构建多智能体协作系统，整合遥感影像与地理数据实现建筑年代分层估计以支持城市能源决策。 | [#140](https://github.com/thinson/RS-PaperClaw/issues/140) |
-| [20260318] MM-OVSeg:Multimodal Optical-SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing | Wei Yimin, Xiao Aoran, Chen Hongruixuan, Xia Junshi, Yokoya Naoto | 提出MM-OVSeg框架，融合光学-SAR数据与视觉语言模型实现遥感开放词汇语义分割。 | [#141](https://github.com/thinson/RS-PaperClaw/issues/141) |
+| [20260318] UAV-CB: A Complex-Background RGB-T Dataset and Local Frequency Bridge Network for UAV Detection | Huang Shenghui, Hu Menghao, Zou Longkun, Chi Hongyu, Li Zekai et al. | UAV-CB数据集与频域桥接网络协同，解决复杂背景下RGB-T无人机检测的伪装与背景干扰难题。 | [#138](https://github.com/thinson/RS-PaperClaw/issues/138) |
+| [20260318] Parameter-Efficient Modality-Balanced Symmetric Fusion for Multimodal Remote Sensing Semantic Segmentation | Li Haocheng, Zheng Juepeng, Miao Shuangxi, Lu Ruibo, Cai Guosheng et al. | 参数高效模态平衡对称融合方法，以可学习提示微调视觉基础模型实现遥感多模态语义分割。 | [#139](https://github.com/thinson/RS-PaperClaw/issues/139) |
+| [20260318] A Multi-Agent System for Building-Age Cohort Mapping to Support Urban Energy Planning | Thota Kundan, Schlachter Thorsten, Hagenmeyer Veit | 多智能体系统整合遥感与深度学习，完成建筑年代队列自动映射以支持城市能源规划。 | [#140](https://github.com/thinson/RS-PaperClaw/issues/140) |
+| [20260318] MM-OVSeg:Multimodal Optical-SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing | Wei Yimin, Xiao Aoran, Chen Hongruixuan, Xia Junshi, Yokoya Naoto | MM-OVSeg融合光学-SAR与视觉-语言模型，实现遥感图像的开放词汇语义分割。 | [#141](https://github.com/thinson/RS-PaperClaw/issues/141) |
+| [20260318] 3D Spherical Directly-Connected Antenna Array for Low-Altitude UAV Swarm ISAC | Jiang Haoyu, Dong Zhenjun, Zhou Zhiwen, Zeng Yong | 3D球面直连天线阵列支持低空无人机群通感一体化，实现三维波束赋形。 | [#143](https://github.com/thinson/RS-PaperClaw/issues/143) |
+| [20260318] H Infinity Robust Control for Gust Load Alleviation of Geometrically Nonlinear Flexible Aircraft | Nikolaos D. Tantaroudas, Andrea Da Ronch, Karachalios Ilias, Kenneth J. Badcock | H无穷鲁棒控制结合模型降阶，解决几何非线性柔性飞行器的阵风载荷减缓问题。 | [#144](https://github.com/thinson/RS-PaperClaw/issues/144) |
 
 ## 🔎 观察
 
-- 频域特征增强成为解决遥感目标伪装与背景干扰的新技术路线，RGB-T融合检测向更复杂场景延伸。
-- 参数高效学习与视觉语言模型正快速渗透遥感多模态任务，但模态对齐与开放词汇的域适应性仍是关键瓶颈。
+- 低空经济驱动遥感技术向实时感知-通信-控制闭环演进，ISAC与AI检测形成技术簇
+- 视觉-语言模型正从自然图像向遥感专属架构适配，模态对齐与参数效率成为落地关键
 
 ---
 
