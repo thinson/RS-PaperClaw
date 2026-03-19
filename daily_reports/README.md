@@ -7,27 +7,27 @@
 
 今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
 
-今日遥感AI研究聚焦多模态融合与高效学习范式。四篇论文涵盖RGB-T无人机检测、光学-SAR开放词汇分割、参数高效的多模态语义分割及多智能体建筑年龄估计，体现频域建模、视觉语言模型与智能体系统在遥感任务中的创新应用。
+今日遥感AI研究聚焦多模态融合与高效学习范式。四篇论文涵盖RGB-T无人机检测、光学-SAR开放词汇分割、多模态语义分割及多智能体建筑年龄估计，体现频域特征增强、参数高效微调与视觉语言模型在遥感领域的深入应用，同时智能体系统开始介入城市能源规划决策支持。
 
 ## ✨ 今日亮点
 
-- 频域桥接网络解决复杂背景下RGB-T无人机检测难题
-- 参数高效学习实现多模态遥感语义分割的模态平衡融合
-- 多智能体系统赋能建筑年龄推断，支撑城市能源规划决策
+- 局部频域桥接网络解决复杂背景下RGB-T无人机检测难题
+- 参数高效模态平衡融合策略降低多模态分割计算开销
+- 多智能体系统实现建筑年代分层映射支撑城市能源规划
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260318] UAV-CB: A Complex-Background RGB-T Dataset and Local Frequency Bridge Network for UAV Detection | Huang Shenghui, Hu Menghao, Zou Longkun, Chi Hongyu, Li Zekai et al. | 提出局部频域桥接网络与复杂背景RGB-T数据集，增强无人机目标在伪装场景下的检测能力。 | [#138](https://github.com/thinson/RS-PaperClaw/issues/138) |
-| [20260318] Parameter-Efficient Modality-Balanced Symmetric Fusion for Multimodal Remote Sensing Semantic Segmentation | Li Haocheng, Zheng Juepeng, Miao Shuangxi, Lu Ruibo, Cai Guosheng et al. | 设计参数高效的模态平衡对称融合框架，缓解多模态遥感分割中的模态偏置与计算开销。 | [#139](https://github.com/thinson/RS-PaperClaw/issues/139) |
-| [20260318] A Multi-Agent System for Building-Age Cohort Mapping to Support Urban Energy Planning | Thota Kundan, Schlachter Thorsten, Hagenmeyer Veit | 构建多智能体协作系统，整合多源遥感数据实现建筑年代分类，服务城市级能源规划需求。 | [#140](https://github.com/thinson/RS-PaperClaw/issues/140) |
-| [20260318] MM-OVSeg:Multimodal Optical-SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing | Wei Yimin, Xiao Aoran, Chen Hongruixuan, Xia Junshi, Yokoya Naoto | 开发光学-SAR多模态开放词汇分割模型，突破遥感图像语义分割的类别限制与模态壁垒。 | [#141](https://github.com/thinson/RS-PaperClaw/issues/141) |
+| [20260318] UAV-CB: A Complex-Background RGB-T Dataset and Local Frequency Bridge Network for UAV Detection | Huang Shenghui, Hu Menghao, Zou Longkun, Chi Hongyu, Li Zekai et al. | 提出UAV-CB数据集与局部频域桥接网络，针对复杂背景与伪装目标提升无人机检测性能。 | [#138](https://github.com/thinson/RS-PaperClaw/issues/138) |
+| [20260318] Parameter-Efficient Modality-Balanced Symmetric Fusion for Multimodal Remote Sensing Semantic Segmentation | Li Haocheng, Zheng Juepeng, Miao Shuangxi, Lu Ruibo, Cai Guosheng et al. | 设计参数高效模态平衡对称融合框架，缓解多模态遥感语义分割中的模态不平衡与计算冗余问题。 | [#139](https://github.com/thinson/RS-PaperClaw/issues/139) |
+| [20260318] A Multi-Agent System for Building-Age Cohort Mapping to Support Urban Energy Planning | Thota Kundan, Schlachter Thorsten, Hagenmeyer Veit | 构建多智能体协作系统，整合遥感影像与地理数据实现建筑年代分层估计以支持城市能源决策。 | [#140](https://github.com/thinson/RS-PaperClaw/issues/140) |
+| [20260318] MM-OVSeg:Multimodal Optical-SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing | Wei Yimin, Xiao Aoran, Chen Hongruixuan, Xia Junshi, Yokoya Naoto | 提出MM-OVSeg框架，融合光学-SAR数据与视觉语言模型实现遥感开放词汇语义分割。 | [#141](https://github.com/thinson/RS-PaperClaw/issues/141) |
 
 ## 🔎 观察
 
-- 多模态融合持续深化，从早期特征拼接转向频域、语义层面的精细化对齐机制设计。
-- 开放词汇与视觉语言模型正快速渗透遥感领域，传统闭集分割范式面临范式迁移压力。
+- 频域特征增强成为解决遥感目标伪装与背景干扰的新技术路线，RGB-T融合检测向更复杂场景延伸。
+- 参数高效学习与视觉语言模型正快速渗透遥感多模态任务，但模态对齐与开放词汇的域适应性仍是关键瓶颈。
 
 ---
 
