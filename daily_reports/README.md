@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260318](./202603/20260318.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦多模态融合与高效学习范式。四篇论文涵盖RGB-T无人机检测、光学-SAR开放词汇分割、参数高效的多模态语义分割及多智能体建筑年龄估计，体现频域建模、视觉语言模型与智能体系统在遥感任务中的创新应用。
+
+## ✨ 今日亮点
+
+- 频域桥接网络解决复杂背景下RGB-T无人机检测难题
+- 参数高效学习实现多模态遥感语义分割的模态平衡融合
+- 多智能体系统赋能建筑年龄推断，支撑城市能源规划决策
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260318] UAV-CB: A Complex-Background RGB-T Dataset and Local Frequency Bridge Network for UAV Detection | Huang Shenghui, Hu Menghao, Zou Longkun, Chi Hongyu, Li Zekai et al. | 提出局部频域桥接网络与复杂背景RGB-T数据集，增强无人机目标在伪装场景下的检测能力。 | [#138](https://github.com/thinson/RS-PaperClaw/issues/138) |
+| [20260318] Parameter-Efficient Modality-Balanced Symmetric Fusion for Multimodal Remote Sensing Semantic Segmentation | Li Haocheng, Zheng Juepeng, Miao Shuangxi, Lu Ruibo, Cai Guosheng et al. | 设计参数高效的模态平衡对称融合框架，缓解多模态遥感分割中的模态偏置与计算开销。 | [#139](https://github.com/thinson/RS-PaperClaw/issues/139) |
+| [20260318] A Multi-Agent System for Building-Age Cohort Mapping to Support Urban Energy Planning | Thota Kundan, Schlachter Thorsten, Hagenmeyer Veit | 构建多智能体协作系统，整合多源遥感数据实现建筑年代分类，服务城市级能源规划需求。 | [#140](https://github.com/thinson/RS-PaperClaw/issues/140) |
+| [20260318] MM-OVSeg:Multimodal Optical-SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing | Wei Yimin, Xiao Aoran, Chen Hongruixuan, Xia Junshi, Yokoya Naoto | 开发光学-SAR多模态开放词汇分割模型，突破遥感图像语义分割的类别限制与模态壁垒。 | [#141](https://github.com/thinson/RS-PaperClaw/issues/141) |
+
+## 🔎 观察
+
+- 多模态融合持续深化，从早期特征拼接转向频域、语义层面的精细化对齐机制设计。
+- 开放词汇与视觉语言模型正快速渗透遥感领域，传统闭集分割范式面临范式迁移压力。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260317](./202603/20260317.md)
 ## 📌 今日概况
 
@@ -72,43 +105,6 @@ Powered by OpenClaw🦞
 
 - 扩散模型已从生成任务向压缩、编辑等下游任务延伸，显示基础模型化趋势
 - KAN、量子计算等新型计算范式开始渗透遥感领域，架构创新进入活跃期
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260315](./202603/20260315.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究呈现两大主线：一是多模态大语言模型在低空无人机视觉理解、农业场景推理及地籍空间认知中的深度渗透；二是端到端自主导航与零样本泛化技术的突破，推动无人机从感知向决策闭环演进。点云实例分割与隐式神经表示等基础技术持续支撑垂直应用创新。
-
-## ✨ 今日亮点
-
-- 多模态大模型成为低空遥感理解的核心引擎，UAVBench与AerialVLA分别构建评测基准与端到端导航框架
-- 农业遥感进入感知-推理解耦新范式，AgroNVILA与无标签3D麦穗分割技术降低标注依赖
-- 零样本泛化与结构化提示工程突破，G-ZAP实现任意尺度全色锐化，AeroGen重构无人机编程范式
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260315] G-ZAP: A Generalizable Zero-Shot Framework for Arbitrary-Scale Pansharpening | Yang Zhiqi, Yin Shan, Liang Jingze, Deng Liang-Jian | G-ZAP提出可泛化的零样本任意尺度全色锐化框架，基于隐式神经表示实现多尺度融合 | [#82](https://github.com/thinson/RS-PaperClaw/issues/82) |
-| [20260315] Seeing Where to Deploy: Metric RGB-Based Traversability Analysis for Aerial-to-Ground Hidden Space Inspection | Lee Seoyoung, Shaekh Mohammad Shithil, Pushp Durgakant, Liu Lantao, Wang Zhangyang | 基于度量RGB的多视图重建方法，实现无人机-地面机器人协同的隐蔽空间可通行性分析 | [#97](https://github.com/thinson/RS-PaperClaw/issues/97) |
-| [20260315] GroundSet: A Cadastral-Grounded Dataset for Spatial Understanding with Vector Data | Ferrod Roger, Lecene Maël, Sapkota Krishna, Leifman George, Silverman Vered et al. | GroundSet构建首个地籍向量数据 grounding 数据集，支撑空间理解多模态大模型训练 | [#98](https://github.com/thinson/RS-PaperClaw/issues/98) |
-| [20260315] AerialVLA: A Vision-Language-Action Model for UAV Navigation via Minimalist End-to-End Control | Xu Peng, Deng Zhengnan, Deng Jiayan, Gu Zonghua, Wan Shaohua | AerialVLA开发极简端到端控制的无人机视觉-语言-动作模型，推进自主导航实用化 | [#99](https://github.com/thinson/RS-PaperClaw/issues/99) |
-| [20260315] AgroNVILA: Perception-Reasoning Decoupling for Multi-view Agricultural Multimodal Large Language Models | Zhang Jiarui, Hu Junqi, Mai Zurong, Chen Yuhang, Lou Shuohong et al. | AgroNVILA通过感知-推理解耦架构，提升农业多模态大模型的多视图空间拓扑理解能力 | [#100](https://github.com/thinson/RS-PaperClaw/issues/100) |
-| [20260315] UAVBench and UAVIT-1M: Benchmarking and Enhancing MLLMs for Low-Altitude UAV Vision-Language Understanding | Zhan Yang, Yuan Yuan | UAVBench与UAVIT-1M百万级数据集系统性评测低空无人机视觉-语言理解能力瓶颈 | [#101](https://github.com/thinson/RS-PaperClaw/issues/101) |
-| [20260315] In-Field 3D Wheat Head Instance Segmentation From TLS Point Clouds Using Deep Learning Without Manual Labels | Medic Tomislav, Nan Liangliang | 基于地面激光扫描点云与深度学习的无标签3D麦穗实例分割方法，助力田间表型分析 | [#102](https://github.com/thinson/RS-PaperClaw/issues/102) |
-| [20260315] AeroGen: Agentic Drone Autonomy through Single-Shot Structured Prompting &amp; Drone SDK | Astu Kautuk, Simmhan Yogesh | AeroGen以单次结构化提示调用无人机SDK，实现大模型驱动的自主飞行代码生成 | [#103](https://github.com/thinson/RS-PaperClaw/issues/103) |
-
-## 🔎 观察
-
-- 低空经济基础设施层趋于成熟：评测基准、专用数据集、端到端控制框架同步涌现，MLLM正成为无人机系统的标准感知接口
-- 农业遥感呈现'重推理轻标注'趋势：感知-解耦架构与无监督点云分割并行发展，缓解专业领域标注稀缺瓶颈
 
 ---
 
