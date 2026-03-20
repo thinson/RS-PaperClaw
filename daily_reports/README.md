@@ -2,6 +2,44 @@
 
 最近三天日报（最新在前）：
 
+# [20260319](./202603/20260319.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
+
+今日遥感AI研究呈现三大趋势：一是视觉-语言模型与地球观测深度融合，TerraScope实现像素级视觉推理；二是无人机网络与通信技术持续创新，涵盖NOMA、VANETs及故障检测；三是三维重建与变化检测技术迭代，SwiftGS和Multi-Modal Building Change Detection分别推动卫星表面恢复与建筑微变化监测。
+
+## ✨ 今日亮点
+
+- TerraScope构建像素级 grounding 视觉推理框架，突破遥感图像理解粒度
+- SwiftGS引入元学习先验，实现卫星影像即时三维表面重建
+- 移动无线电网络与天气雷达协同，开辟城市密集区降雨测量新路径
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260319] Outage Probability Analysis of NOMA Enabled Hierarchical UAV Networks with Non-Linear Energy Harvesting | Khennoufa Faicel, Abdellatif Khelil, Ozturk Metin, Yanikomeroglu Halim, Alfattani Safwan | 研究NOMA分层无人机网络在非线性能量采集条件下的中断概率理论分析。 | [#145](https://github.com/thinson/RS-PaperClaw/issues/145) |
+| [20260319] Mobile Radio Networks and Weather Radars Dualism: Rainfall Measurement Revolution in Densely Populated Areas | Davide Tornielli Bellini, Montopoli Mario, Tagliaferri Dario, Baldini Luca, Adirosi Elisa et al. | 提出移动无线电网络与天气雷达双模协同机制，革新人口密集区降雨测量方法。 | [#146](https://github.com/thinson/RS-PaperClaw/issues/146) |
+| [20260319] Multi-Modal Building Change Detection for Large-Scale Small Changes: Benchmark and Baseline | Wang Ye, Lu Wei, You Zhihui, Chen Keyan, Liu Tongfei et al. | 构建多模态建筑变化检测基准数据集，聚焦大规模场景下的微小变化识别。 | [#147](https://github.com/thinson/RS-PaperClaw/issues/147) |
+| [20260319] TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation | Shu Yan, Ren Bin, Xiong Zhitong, Xiao Xiang Zhu, Demir Begüm et al. | TerraScope实现像素级 grounding 的视觉语言推理，支持地球观测多时空分析。 | [#148](https://github.com/thinson/RS-PaperClaw/issues/148) |
+| [20260319] Bridging Network Fragmentation: A Semantic-Augmented DRL Framework for UAV-aided VANETs | Cao Gaoxiang, Yuan Wenke, He Huasen, Hou Yunpeng, Jiang Xiaofeng et al. | 融合语义增强与大语言模型，设计DRL框架解决无人机辅助VANETs网络碎片化问题。 | [#149](https://github.com/thinson/RS-PaperClaw/issues/149) |
+| [20260319] SwiftGS: Episodic Priors for Immediate Satellite Surface Recovery | Fu Rong, Wu Jiekai, Wei Haiyun, Ma Xiaowen, Lin Shiyin et al. | SwiftGS基于元学习 episodic 先验，实现卫星影像即时高斯溅射表面恢复。 | [#150](https://github.com/thinson/RS-PaperClaw/issues/150) |
+| [20260319] Model Reference Adaptive Control For Gust Load Allevation of Nonlinear Aeroelastic | Nikolaos D. Tantaroudas, Andrea Da Ronch, Gai Guanqun, Karachalios Ilias, Kenneth J. Badcock et al. | 针对非线性气动弹性系统，设计模型参考自适应控制实现阵风载荷减缓。 | [#151](https://github.com/thinson/RS-PaperClaw/issues/151) |
+| [20260319] HEP Statistical Inference for UAV Fault Detection: CLs, LRT, and SBI Applied to Blade Damage | Khushiyant | 将高能物理统计推断方法迁移至无人机故障检测，评估叶片损伤识别性能。 | [#152](https://github.com/thinson/RS-PaperClaw/issues/152) |
+| [20260319] iSatCR: Graph-Empowered Joint Onboard Computing and Routing for LEO Data Delivery | Luo Jiangtao, Xu Bingbing, Xia Shaohua, Ran Yongyi | iSatCR联合图神经网络与深度强化学习，优化低轨卫星星上计算与数据路由。 | [#153](https://github.com/thinson/RS-PaperClaw/issues/153) |
+
+## 🔎 观察
+
+- 视觉-语言模型正从场景级理解向像素级 grounding 演进，TerraScope标志着遥感AI精细化推理的重要转向
+- 无人机研究呈现通信-能量-控制多维度并进态势，但故障检测与统计推断的交叉仍属小众探索方向
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260318](./202603/20260318.md)
 ## 📌 今日概况
 
@@ -67,46 +105,6 @@ Powered by OpenClaw🦞
 
 - 实时性需求正深度重构遥感模型架构，扩散模型加速与卷积核优化成为并行技术路线。
 - 神经符号AI与多智能体系统进入遥感应用视野，标志着任务复杂度与系统自主性同步升级。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260316](./202603/20260316.md)
-## 📌 今日概况
-
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 11 篇。
-
-今日遥感AI研究呈现多模态融合与生成式AI深化趋势。扩散模型在图像生成与压缩领域持续渗透，SAR与光学遥感技术并行发展，世界模型、KAN网络等新架构开始落地。物理感知嵌入与域自适应方法提升了模型在复杂场景下的鲁棒性。
-
-## ✨ 今日亮点
-
-- 量子启发的酉池化方法首次用于多光谱卫星图像分类，实现降维与特征提取
-- RS-WorldModel统一遥感理解与未来场景预测，拓展时空推理新范式
-- PPO强化学习驱动的扩散模型实现遥感图像自适应码率分配压缩
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260316] Quantum-Inspired Unitary Pooling for Multispectral Satellite Image Classification | Maragkopoulos Georgios, Mandilara Aikaterini, Komini Ralntion, Syvridis Dimitris | 提出量子启发的酉池化算子，通过参数化酉矩阵实现多光谱数据降维与分类 | [#104](https://github.com/thinson/RS-PaperClaw/issues/104) |
-| [20260316] Real-Time Oriented Object Detection Transformer in Remote Sensing Images | Ding Zeyu, Zhou Yong, Zhao Jiaqi, Du Wen-Liang, Li Xixi et al. | 设计实时定向目标检测Transformer，引入角度分布细化机制处理遥感旋转目标 | [#105](https://github.com/thinson/RS-PaperClaw/issues/105) |
-| [20260316] RSGen: Enhancing Layout-Driven Remote Sensing Image Generation with Diverse Edge Guidance | Hou Xianbao, He Yonghao, Boukhers Zeyd, See John, Su Hu et al. | RSGen框架融合布局驱动生成与多样化边缘引导，提升遥感图像合成可控性 | [#106](https://github.com/thinson/RS-PaperClaw/issues/106) |
-| [20260316] A PPO-Based Bitrate Allocation Conditional Diffusion Model for Remote Sensing Image Compression | Han Yuming, Kim Jooho, Shakya Anish | 结合近端策略优化与条件扩散模型，实现码率自适应的遥感图像压缩 | [#107](https://github.com/thinson/RS-PaperClaw/issues/107) |
-| [20260316] A Tutorial on ALOS2 SAR Utilization: Dataset Preparation, Self-Supervised Pretraining, and Semantic Segmentation | Imamoglu Nevrez, Caglayan Ali, Kouyama Toru | 系统阐述ALOS-2 SAR数据准备、自监督预训练及语义分割完整技术流程 | [#108](https://github.com/thinson/RS-PaperClaw/issues/108) |
-| [20260316] PAKAN: Pixel Adaptive Kolmogorov-Arnold Network Modules for Pansharpening | Zhang Haoyu, Chen Haojing, Zhong Zhen, Deng Liangjian | 将Kolmogorov-Arnold网络引入全色锐化，设计像素自适应激活模块 | [#109](https://github.com/thinson/RS-PaperClaw/issues/109) |
-| [20260316] Pansharpening for Thin-Cloud Contaminated Remote Sensing Images: A Unified Framework and Benchmark Dataset | Du Songcheng, Zou Yang, Li Jiaxin, Liu Mingxuan, Li Ying et al. | 构建薄云污染遥感图像全色锐化统一框架，并发布配套基准数据集 | [#110](https://github.com/thinson/RS-PaperClaw/issues/110) |
-| [20260316] RS-WorldModel: a Unified Model for Remote Sensing Understanding and Future Sense Forecasting | Xu Linrui, Wang Zhongan, Shen Fei, Xu Gang, Zhuang Huiping et al. | RS-WorldModel实现遥感图像理解、变化检测与未来场景预测的联合建模 | [#111](https://github.com/thinson/RS-PaperClaw/issues/111) |
-| [20260316] PASTE: Physics-Aware Scattering Topology Embedding Framework for SAR Object Detection | Chen Jiacheng, Xiong Yuxuan, Wang Haipeng | PASTE框架嵌入物理感知的散射拓扑表征，增强SAR目标检测可解释性 | [#112](https://github.com/thinson/RS-PaperClaw/issues/112) |
-| [20260316] IntegratingWeather Foundation Model and Satellite to Enable Fine-Grained Solar Irradiance Forecasting | Ma Ziqing, Ying Kai, Gu Xinyue, Zhou Tian, Zhu Tianyu et al. | 融合气象基础模型与卫星观测，实现细粒度太阳辐照度预测 | [#113](https://github.com/thinson/RS-PaperClaw/issues/113) |
-| [20260316] Robust Building Damage Detection in Cross-Disaster Settings Using Domain Adaptation | Mouradi Asmae, Kshirsagar Shruti | 采用监督域自适应策略，提升跨灾害场景建筑损毁检测的泛化能力 | [#114](https://github.com/thinson/RS-PaperClaw/issues/114) |
-
-## 🔎 观察
-
-- 扩散模型已从生成任务向压缩、编辑等下游任务延伸，显示基础模型化趋势
-- KAN、量子计算等新型计算范式开始渗透遥感领域，架构创新进入活跃期
 
 ---
 
