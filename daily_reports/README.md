@@ -2,6 +2,43 @@
 
 最近三天日报（最新在前）：
 
+# [20260320](./202603/20260320.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+
+今日遥感AI研究聚焦模型轻量化与边缘部署，涵盖TinyML卫星应用、Transformer层剪枝、线性复杂度时序建模等方向。同时，多智能体协同推理、无人机视觉语言动作任务等前沿场景持续拓展，物理引导学习与提示驱动特征编码等新范式涌现。
+
+## ✨ 今日亮点
+
+- TinyML赋能立方星任务，推动星上智能计算能力边界
+- SIMPLER提出相似性引导层剪枝，实现基础模型高效适配
+- RWKV突破二次复杂度瓶颈，实现线性时间变化检测
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260320] TinyML Enhances CubeSat Mission Capabilities | Capogrosso Luigi, Magno Michele | TinyML技术增强立方星任务能力，优化CNN模型以适应星上资源约束。 | [#156](https://github.com/thinson/RS-PaperClaw/issues/156) |
+| [20260320] SIMPLER: Efficient Foundation Model Adaptation via Similarity-Guided Layer Pruning for Earth Observation | Barreiro Víctor, Jakubik Johannes, Argüello Francisco, Dora B. Heras | SIMPLER通过相似性引导层剪枝实现遥感基础模型的高效自适应压缩。 | [#157](https://github.com/thinson/RS-PaperClaw/issues/157) |
+| [20260320] Beyond detection: cooperative multi-agent reasoning for rapid onboard EO crisis response | Alejandro D. Mousist, Pedro Delgado de Robles Martín, Raquel Lladró Climent, Julian Cobos Aparicio | 多智能体协同推理框架支持星上地球观测危机快速响应决策。 | [#158](https://github.com/thinson/RS-PaperClaw/issues/158) |
+| [20260320] HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks | Guo Jingyu, Chen Ziye, Li Ziwen, Gao Zhengqing, Huang Jiaxin et al. | HUGE-Bench构建无人机高层视觉语言动作任务综合评测基准。 | [#159](https://github.com/thinson/RS-PaperClaw/issues/159) |
+| [20260320] Offshore oil and gas platform dynamics in the North Sea, Gulf of Mexico, and Persian Gulf: Exploiting the Sentinel-1 archive | Spanier Robin, Hoeser Thorsten, Truckenbrodt John, Bachofer Felix, Kuenzer Claudia | 利用Sentinel-1时序档案深度学习监测三大海域油气平台动态变化。 | [#160](https://github.com/thinson/RS-PaperClaw/issues/160) |
+| [20260320] Dual Prompt-Driven Feature Encoding for Nighttime UAV Tracking | Wang Yiheng, Fu Changhong, Yao Liangliang, Zuo Haobo, Zhang Zijie | 双提示驱动特征编码方法提升夜间无人机目标跟踪的照明适应能力。 | [#161](https://github.com/thinson/RS-PaperClaw/issues/161) |
+| [20260320] Beyond Quadratic: Linear-Time Change Detection with RWKV | Yang Zhenyu, Pei Gensheng, Chen Tao, Yuan Xia, Zhang Haofeng et al. | RWKV架构实现线性时间复杂度的遥感变化检测，突破传统二次瓶颈。 | [#162](https://github.com/thinson/RS-PaperClaw/issues/162) |
+| [20260320] PhyUnfold-Net: Advancing Remote Sensing Change Detection with Physics-Guided Deep Unfolding | Lei Zelin, Ren Yaoxing, Chang Jiaming | PhyUnfold-Net融合物理引导与深度展开网络推进遥感变化检测精度。 | [#163](https://github.com/thinson/RS-PaperClaw/issues/163) |
+
+## 🔎 观察
+
+- 模型压缩与边缘部署成为核心趋势，8篇中4篇直接涉及轻量化或星上处理，反映遥感AI从云端向端侧迁移的迫切需求。
+- 变化检测领域创新活跃，RWKV线性复杂度与物理引导深度展开两条技术路线并行，显示该任务对效率与可解释性的双重追求。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260319](./202603/20260319.md)
 ## 📌 今日概况
 
@@ -64,43 +101,6 @@ Powered by OpenClaw🦞
 
 - 低空经济驱动遥感技术向实时感知-通信-控制闭环演进，ISAC与AI检测形成技术簇
 - 视觉-语言模型正从自然图像向遥感专属架构适配，模态对齐与参数效率成为落地关键
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260317](./202603/20260317.md)
-## 📌 今日概况
-
-今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究呈现效率与精度并重趋势。单目深度估计与目标检测聚焦实时化与轻量化设计；神经符号AI、多智能体强化学习拓展应用边界；数据-centric方法、域泛化与噪声处理等基础问题持续受关注；高光谱与点云处理在特征提取与垂直结构保持方面有所推进。
-
-## ✨ 今日亮点
-
-- D³-RSMDE实现40倍加速的高保真单目深度估计，扩散模型与Transformer结合突破实时性瓶颈
-- PKINet-v2提出各向异性多核卷积架构，在遥感目标检测中平衡精度与计算效率
-- NeSy-Route构建神经符号路径规划基准，填补约束优化与深度学习融合评估空白
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260317] $D^3$-RSMDE: 40$\times$ Faster and High-Fidelity Remote Sensing Monocular Depth Estimation | Wang Ruizhi, Li Weihan, Feng Zunlei, Zhang Haofei, Song Mingli et al. | D³-RSMDE将扩散模型与Vision Transformer结合，实现40倍速度提升的高保真遥感单目深度估计。 | [#117](https://github.com/thinson/RS-PaperClaw/issues/117) |
-| [20260317] PKINet-v2: Towards Powerful and Efficient Poly-Kernel Remote Sensing Object Detection | Cai Xinhao, Li Liulei, Pei Gensheng, Sun Zeren, Yao Yazhou et al. | PKINet-v2通过各向异性多核卷积优化多尺度特征提取，提升遥感目标检测的精度与效率。 | [#118](https://github.com/thinson/RS-PaperClaw/issues/118) |
-| [20260317] NeSy-Route: A Neuro-Symbolic Benchmark for Constrained Route Planning in Remote Sensing | Yang Ming, Zhou Zhi, Tian Shi-Yu, Yu Kun-Yang, Guo Lan-Zhe et al. | NeSy-Route建立首个神经符号遥感路径规划基准，评估约束优化场景下的AI推理能力。 | [#119](https://github.com/thinson/RS-PaperClaw/issues/119) |
-| [20260317] Communication-Aware Multi-Agent Reinforcement Learning for Decentralized Cooperative UAV Deployment | Fan Enguang, Chen Yifan, Shan Zihan, Caesar Matthew, Kim Jae | 该研究提出通信感知的多智能体强化学习框架，实现去中心化UAV集群的协同部署控制。 | [#125](https://github.com/thinson/RS-PaperClaw/issues/125) |
-| [20260317] An assessment of data-centric methods for label noise identification in remote sensing data sets | Kröber Felix, Hoxha Genc, Roscher Ribana | 系统评估数据-centric方法在遥感标签噪声识别中的有效性，为数据质量提升提供参考。 | [#133](https://github.com/thinson/RS-PaperClaw/issues/133) |
-| [20260317] Preserving Vertical Structure in 3D-to-2D Projection for Permafrost Thaw Mapping | McMillen Justin, Robert Van Alphen, Taha Sadeghi Chorsi, Shabaga Jason, Rodgers Mel et al. | 针对多年冻土融化制图，提出保持垂直结构的3D-to-2D投影方法以保留森林分层信息。 | [#134](https://github.com/thinson/RS-PaperClaw/issues/134) |
-| [20260317] Spectral Property-Driven Data Augmentation for Hyperspectral Single-Source Domain Generalization | Chen Taiqin, Wang Yifeng, Feng Xiaochen, Zhu Zhilin, Sha Hao et al. | 基于光谱特性驱动的高光谱数据增强方法，提升单源域泛化场景下的模型鲁棒性。 | [#135](https://github.com/thinson/RS-PaperClaw/issues/135) |
-| [20260317] 3D Fourier-based Global Feature Extraction for Hyperspectral Image Classification | Ahmad Muhammad | 利用3D傅里叶变换提取高光谱图像全局特征，增强空谱相关性建模与分类性能。 | [#136](https://github.com/thinson/RS-PaperClaw/issues/136) |
-
-## 🔎 观察
-
-- 实时性需求正深度重构遥感模型架构，扩散模型加速与卷积核优化成为并行技术路线。
-- 神经符号AI与多智能体系统进入遥感应用视野，标志着任务复杂度与系统自主性同步升级。
 
 ---
 
