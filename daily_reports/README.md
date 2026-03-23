@@ -7,31 +7,31 @@
 
 今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
 
-今日遥感AI研究聚焦模型轻量化与边缘部署，涵盖TinyML卫星应用、Transformer层剪枝、线性复杂度时序建模等方向。同时，多智能体协同推理、无人机视觉语言动作任务等前沿场景持续拓展，物理引导学习与提示驱动特征编码等新范式涌现。
+今日遥感AI研究聚焦模型轻量化与星载智能两大方向。TinyML与层剪枝技术推动CubeSat等边缘设备部署；多智能体系统与视觉语言模型结合，提升灾害应急响应能力；RWKV线性复杂度架构与物理引导深度学习为变化检测开辟新路径。无人机视觉语言动作基准与夜间跟踪技术同步推进。
 
 ## ✨ 今日亮点
 
-- TinyML赋能立方星任务，推动星上智能计算能力边界
-- SIMPLER提出相似性引导层剪枝，实现基础模型高效适配
-- RWKV突破二次复杂度瓶颈，实现线性时间变化检测
+- TinyML赋能CubeSat任务，实现星载遥感模型优化部署
+- SIMPLER提出相似度引导层剪枝，高效适配遥感基础模型
+- 多智能体协同推理架构，支撑星上灾害快速应急响应
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260320] TinyML Enhances CubeSat Mission Capabilities | Capogrosso Luigi, Magno Michele | TinyML技术增强立方星任务能力，优化CNN模型以适应星上资源约束。 | [#156](https://github.com/thinson/RS-PaperClaw/issues/156) |
-| [20260320] SIMPLER: Efficient Foundation Model Adaptation via Similarity-Guided Layer Pruning for Earth Observation | Barreiro Víctor, Jakubik Johannes, Argüello Francisco, Dora B. Heras | SIMPLER通过相似性引导层剪枝实现遥感基础模型的高效自适应压缩。 | [#157](https://github.com/thinson/RS-PaperClaw/issues/157) |
-| [20260320] Beyond detection: cooperative multi-agent reasoning for rapid onboard EO crisis response | Alejandro D. Mousist, Pedro Delgado de Robles Martín, Raquel Lladró Climent, Julian Cobos Aparicio | 多智能体协同推理框架支持星上地球观测危机快速响应决策。 | [#158](https://github.com/thinson/RS-PaperClaw/issues/158) |
-| [20260320] HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks | Guo Jingyu, Chen Ziye, Li Ziwen, Gao Zhengqing, Huang Jiaxin et al. | HUGE-Bench构建无人机高层视觉语言动作任务综合评测基准。 | [#159](https://github.com/thinson/RS-PaperClaw/issues/159) |
-| [20260320] Offshore oil and gas platform dynamics in the North Sea, Gulf of Mexico, and Persian Gulf: Exploiting the Sentinel-1 archive | Spanier Robin, Hoeser Thorsten, Truckenbrodt John, Bachofer Felix, Kuenzer Claudia | 利用Sentinel-1时序档案深度学习监测三大海域油气平台动态变化。 | [#160](https://github.com/thinson/RS-PaperClaw/issues/160) |
-| [20260320] Dual Prompt-Driven Feature Encoding for Nighttime UAV Tracking | Wang Yiheng, Fu Changhong, Yao Liangliang, Zuo Haobo, Zhang Zijie | 双提示驱动特征编码方法提升夜间无人机目标跟踪的照明适应能力。 | [#161](https://github.com/thinson/RS-PaperClaw/issues/161) |
-| [20260320] Beyond Quadratic: Linear-Time Change Detection with RWKV | Yang Zhenyu, Pei Gensheng, Chen Tao, Yuan Xia, Zhang Haofeng et al. | RWKV架构实现线性时间复杂度的遥感变化检测，突破传统二次瓶颈。 | [#162](https://github.com/thinson/RS-PaperClaw/issues/162) |
-| [20260320] PhyUnfold-Net: Advancing Remote Sensing Change Detection with Physics-Guided Deep Unfolding | Lei Zelin, Ren Yaoxing, Chang Jiaming | PhyUnfold-Net融合物理引导与深度展开网络推进遥感变化检测精度。 | [#163](https://github.com/thinson/RS-PaperClaw/issues/163) |
+| [20260320] TinyML Enhances CubeSat Mission Capabilities | Capogrosso Luigi, Magno Michele | Capogrosso等将TinyML与CNN优化技术应用于CubeSat，提升微卫星地球观测任务的边缘智能能力。 | [#156](https://github.com/thinson/RS-PaperClaw/issues/156) |
+| [20260320] SIMPLER: Efficient Foundation Model Adaptation via Similarity-Guided Layer Pruning for Earth Observation | Barreiro Víctor, Jakubik Johannes, Argüello Francisco, Dora B. Heras | Barreiro等提出SIMPLER方法，通过相似度引导的层剪枝实现遥感基础模型的高效适配与压缩。 | [#157](https://github.com/thinson/RS-PaperClaw/issues/157) |
+| [20260320] Beyond detection: cooperative multi-agent reasoning for rapid onboard EO crisis response | Alejandro D. Mousist, Pedro Delgado de Robles Martín, Raquel Lladró Climent, Julian Cobos Aparicio | Mousist等构建多智能体协同推理框架，结合视觉语言模型实现星上灾害快速检测与响应决策。 | [#158](https://github.com/thinson/RS-PaperClaw/issues/158) |
+| [20260320] HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks | Guo Jingyu, Chen Ziye, Li Ziwen, Gao Zhengqing, Huang Jiaxin et al. | Guo等发布HUGE-Bench基准，系统评估无人机高层视觉语言动作任务能力。 | [#159](https://github.com/thinson/RS-PaperClaw/issues/159) |
+| [20260320] Offshore oil and gas platform dynamics in the North Sea, Gulf of Mexico, and Persian Gulf: Exploiting the Sentinel-1 archive | Spanier Robin, Hoeser Thorsten, Truckenbrodt John, Bachofer Felix, Kuenzer Claudia | Spanier等利用Sentinel-1档案数据与深度学习，分析北海、墨西哥湾及波斯湾海上油气平台动态变化。 | [#160](https://github.com/thinson/RS-PaperClaw/issues/160) |
+| [20260320] Dual Prompt-Driven Feature Encoding for Nighttime UAV Tracking | Wang Yiheng, Fu Changhong, Yao Liangliang, Zuo Haobo, Zhang Zijie | Wang等提出双提示驱动特征编码方法，增强夜间无人机目标跟踪的照明适应能力。 | [#161](https://github.com/thinson/RS-PaperClaw/issues/161) |
+| [20260320] Beyond Quadratic: Linear-Time Change Detection with RWKV | Yang Zhenyu, Pei Gensheng, Chen Tao, Yuan Xia, Zhang Haofeng et al. | Yang等将RWKV架构引入遥感变化检测，突破二次复杂度限制实现线性时间推理。 | [#162](https://github.com/thinson/RS-PaperClaw/issues/162) |
+| [20260320] PhyUnfold-Net: Advancing Remote Sensing Change Detection with Physics-Guided Deep Unfolding | Lei Zelin, Ren Yaoxing, Chang Jiaming | Lei等开发PhyUnfold-Net，融合物理引导与深度展开网络提升遥感变化检测精度。 | [#163](https://github.com/thinson/RS-PaperClaw/issues/163) |
 
 ## 🔎 观察
 
-- 模型压缩与边缘部署成为核心趋势，8篇中4篇直接涉及轻量化或星上处理，反映遥感AI从云端向端侧迁移的迫切需求。
-- 变化检测领域创新活跃，RWKV线性复杂度与物理引导深度展开两条技术路线并行，显示该任务对效率与可解释性的双重追求。
+- 模型压缩技术从传统剪枝量化向任务自适应层选择演进，SIMPLER的相似度引导策略或成为基础模型轻量化新范式
+- RWKV线性复杂度架构与物理可解释性方法的涌现，反映遥感领域对高效推理与模型可信性的双重追求
 
 ---
 
