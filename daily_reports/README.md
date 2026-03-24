@@ -49,25 +49,25 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
 
-今日遥感AI研究聚焦视觉-语言模型（VLM）与空间智能的深度融合。道路提取任务引入细粒度层次分类与VLM方法，提升路网语义理解能力；无人机导航领域探索几何引导的跨模态对齐，强化城市环境下的视觉-语言导航性能。两研究均体现多模态表征学习在遥感场景理解中的关键作用。
+今日遥感AI研究聚焦视觉语言模型与空间智能的深度融合。道路提取任务引入细粒度层级分类与VLM技术，无人机导航则探索几何引导的跨模态表征对齐，体现从静态地物识别向动态环境理解的范式演进。
 
 ## ✨ 今日亮点
 
-- 道路层次分类数据集与VLM算法结合，推动细粒度路网语义解析
-- 几何引导的表征对齐方法，优化无人机城市视觉-语言导航
-- 跨模态学习成为遥感智能体感知与决策的核心技术路径
+- 大规模道路数据集支撑VLM细粒度层级分类，提升路网语义理解能力
+- 几何引导的表征对齐机制优化无人机视觉语言导航性能
+- 跨模态空间推理成为城市环境智能体研究的核心方向
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260322] A Large-Scale Remote Sensing Dataset and VLM-based Algorithm for Fine-Grained Road Hierarchy Classification | Han Ting, Xie Xiangyi, Chen Yiping, Du Yumeng, Ma Jin et al. | 构建大规模遥感数据集，提出基于VLM的道路层次细分类算法，实现路网语义层级自动识别。 | [#171](https://github.com/thinson/RS-PaperClaw/issues/171) |
-| [20260322] SpatialFly: Geometry-Guided Representation Alignment for UAV Vision-and-Language Navigation in Urban Environments | Jiang Wen, Huang Kangyao, Wang Li, Xu Wang, Fan Wei et al. | 提出SpatialFly框架，通过几何引导的表征对齐增强无人机城市环境下视觉-语言导航能力。 | [#172](https://github.com/thinson/RS-PaperClaw/issues/172) |
+| [20260322] A Large-Scale Remote Sensing Dataset and VLM-based Algorithm for Fine-Grained Road Hierarchy Classification | Han Ting, Xie Xiangyi, Chen Yiping, Du Yumeng, Ma Jin et al. | 论文构建大规模遥感数据集，提出基于视觉语言模型的道路细粒度层级分类方法，实现路网语义层次化解析。 | [#171](https://github.com/thinson/RS-PaperClaw/issues/171) |
+| [20260322] SpatialFly: Geometry-Guided Representation Alignment for UAV Vision-and-Language Navigation in Urban Environments | Jiang Wen, Huang Kangyao, Wang Li, Xu Wang, Fan Wei et al. | 论文提出SpatialFly框架，通过几何引导的表征对齐机制，增强无人机在城市环境中的视觉语言导航能力。 | [#172](https://github.com/thinson/RS-PaperClaw/issues/172) |
 
 ## 🔎 观察
 
-- VLM正从通用视觉向遥感专用场景渗透，道路等基础设施的层次化语义理解成为新热点
-- 无人机导航研究从纯视觉感知转向视觉-语言融合，空间几何约束的引入提升导航可解释性
+- VLM正从通用视觉任务向遥感垂直领域渗透，层级化语义标注或成为下一代道路数据集标配
+- 无人机导航研究从端到端感知转向显式空间推理，几何先验与语言指令的联合建模值得持续关注
 
 ---
 
