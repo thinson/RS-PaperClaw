@@ -2,6 +2,42 @@
 
 最近三天日报（最新在前）：
 
+# [20260325](./202603/20260325.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日遥感AI研究呈现多模态融合与可解释性并重的趋势。时序分析持续深化，Transformer架构在卫星影像时间序列处理中占据主导；高光谱成像技术向月球探测与不确定性量化拓展；同时，空间-光谱联合建模与专家混合机制成为提升分类精度的关键路径。
+
+## ✨ 今日亮点
+
+- 多任务学习结合空间上下文提升Sentinel-2时序农业系统识别能力
+- Aitchison几何引入贝叶斯高光谱解混实现不确定性量化
+- 动态空间-光谱专家路由机制优化高光谱图像分类性能
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260325] The role of spatial context and multitask learning in the detection of organic and conventional farming systems based on Sentinel-2 time series | Hemmerling Jan, Schwieder Marcel, Rufin Philippe, Thomas Leon-Friedrich, Tulbure Mirela et al. | 该研究探索空间上下文与多任务学习在基于Sentinel-2时序的有机与常规农业系统检测中的作用。 | [#195](https://github.com/thinson/RS-PaperClaw/issues/195) |
+| [20260325] Connecting Meteorite Spectra to Lunar Surface Composition Using Hyperspectral Imaging and Machine Learning | Fatemeh Fazel Hesar, Raouf Mojtaba, Chegeni Amirmohammad, Soltani Peyman, Foing Bernard et al. | 利用高光谱成像与机器学习建立陨石光谱与月球表面成分的关联，实现矿物填图。 | [#196](https://github.com/thinson/RS-PaperClaw/issues/196) |
+| [20260325] Combi-CAM: A Novel Multi-Layer Approach for Explainable Image Geolocalization | Faget David, José Luis Lisani, Colom Miguel | 提出Combi-CAM多层方法，为基于CNN的图像地理定位提供可解释性分析。 | [#197](https://github.com/thinson/RS-PaperClaw/issues/197) |
+| [20260325] Comparative analysis of dual-form networks for live land monitoring using multi-modal satellite image time series | Dumeur Iris, Anger Jérémy, Facciolo Gabriele | 对比分析双形式网络在多模态卫星影像时间序列实时土地监测中的应用。 | [#198](https://github.com/thinson/RS-PaperClaw/issues/198) |
+| [20260325] LGEST: Dynamic Spatial-Spectral Expert Routing for Hyperspectral Image Classification | Wen Jiawen, Qiu Suixuan, Luo Zihang, Yang Xiaofei, Shi Haotian | LGEST方法通过动态空间-光谱专家路由机制实现高光谱图像分类。 | [#199](https://github.com/thinson/RS-PaperClaw/issues/199) |
+| [20260325] DB SwinT: A Dual-Branch Swin Transformer Network for Road Extraction in Optical Remote Sensing Imagery | He Zongyang, Yang Xiangli, Gao Xian, Wang Zhiguo | 构建双分支Swin Transformer网络DB SwinT用于光学遥感影像道路提取。 | [#200](https://github.com/thinson/RS-PaperClaw/issues/200) |
+| [20260325] Aitchison Geometry on the Simplex for Uncertainty Quantification in Bayesian Hyperspectral Image Unmixing | Blondel Hector, Drumetz Lucas, Chonavel Thierry | 将Aitchison几何引入单纯形空间，实现贝叶斯高光谱解混中的不确定性量化。 | [#201](https://github.com/thinson/RS-PaperClaw/issues/201) |
+
+## 🔎 观察
+
+- Transformer变体（Swin、线性注意力）正快速渗透遥感时序与分割任务，架构同质化风险需关注
+- 高光谱技术从地球观测向行星科学延伸，跨域知识迁移或成新增长点
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260324](./202603/20260324.md)
 ## 📌 今日概况
 
@@ -72,37 +108,6 @@ Powered by OpenClaw🦞
 
 - 跨视角地理定位研究密集涌现，反映无人机自主导航与拒止环境应用的迫切需求，技术路线从特征匹配向端到端流预测演进
 - 基础模型研究开始关注光谱物理约束与可信度问题，标志着遥感AI从性能优先向可解释、可信赖方向转型
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260322](./202603/20260322.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦视觉语言模型与空间智能的深度融合。道路提取任务引入细粒度层级分类与VLM技术，无人机导航则探索几何引导的跨模态表征对齐，体现从静态地物识别向动态环境理解的范式演进。
-
-## ✨ 今日亮点
-
-- 大规模道路数据集支撑VLM细粒度层级分类，提升路网语义理解能力
-- 几何引导的表征对齐机制优化无人机视觉语言导航性能
-- 跨模态空间推理成为城市环境智能体研究的核心方向
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260322] A Large-Scale Remote Sensing Dataset and VLM-based Algorithm for Fine-Grained Road Hierarchy Classification | Han Ting, Xie Xiangyi, Chen Yiping, Du Yumeng, Ma Jin et al. | 论文构建大规模遥感数据集，提出基于视觉语言模型的道路细粒度层级分类方法，实现路网语义层次化解析。 | [#171](https://github.com/thinson/RS-PaperClaw/issues/171) |
-| [20260322] SpatialFly: Geometry-Guided Representation Alignment for UAV Vision-and-Language Navigation in Urban Environments | Jiang Wen, Huang Kangyao, Wang Li, Xu Wang, Fan Wei et al. | 论文提出SpatialFly框架，通过几何引导的表征对齐机制，增强无人机在城市环境中的视觉语言导航能力。 | [#172](https://github.com/thinson/RS-PaperClaw/issues/172) |
-
-## 🔎 观察
-
-- VLM正从通用视觉任务向遥感垂直领域渗透，层级化语义标注或成为下一代道路数据集标配
-- 无人机导航研究从端到端感知转向显式空间推理，几何先验与语言指令的联合建模值得持续关注
 
 ---
 
