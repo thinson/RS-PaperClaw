@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260327](./202603/20260327.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦高光谱成像技术优化与边缘智能应用。两篇论文分别探索可学习量子效率滤波器用于城市场景分割，以及基于变分自编码器的空-谱联合压缩架构；第三篇则关注无人机实时感知，将DEFOM-Stereo立体匹配网络部署至Jetson平台实现自主修剪作业。
+
+## ✨ 今日亮点
+
+- 可学习量子效率滤波器实现高光谱降维与城市场景语义分割联合优化
+- HyVIC架构融合空-谱信息，以变分自编码器驱动高光谱图像压缩
+- DEFOM-Stereo五种变体经仿真到Jetson部署验证，支撑无人机实时修剪
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260327] Learnable Quantum Efficiency Filters for Urban Hyperspectral Segmentation | Imad Ali Shah, Li Jiarong, Delaney Ethan, Ward Enda, Glavin Martin et al. | 提出可学习量子效率滤波器，将高光谱降维与城市场景语义分割任务端到端联合优化。 | [#211](https://github.com/thinson/RS-PaperClaw/issues/211) |
+| [20260327] HyVIC: A Metric-Driven Spatio-Spectral Hyperspectral Image Compression Architecture Based on Variational Autoencoders | Martin Hermann Paul Fuchs, Rasti Behnood, Demir Begüm | 构建HyVIC变分自编码器架构，以度量驱动方式实现空-谱联合高光谱图像压缩。 | [#212](https://github.com/thinson/RS-PaperClaw/issues/212) |
+| [20260327] Real-Time Branch-to-Tool Distance Estimation for Autonomous UAV Pruning: Benchmarking Five DEFOM-Stereo Variants from Simulation to Jetson Deployment | Lin Yida, Xue Bing, Zhang Mengjie, Schofield Sam, Green Richard | 基准测试五种DEFOM-Stereo变体，完成从仿真到Jetson边缘部署的无人机实时修剪距离估计。 | [#213](https://github.com/thinson/RS-PaperClaw/issues/213) |
+
+## 🔎 观察
+
+- 高光谱成像研究正从单一任务处理转向降维-分析-压缩的联合优化范式，量子效率等物理可解释模块受关注
+- 农业机器人实时感知需求推动轻量立体匹配网络向边缘设备迁移，仿真到真实部署的系统性验证成为趋势
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260326](./202603/20260326.md)
 ## 📌 今日概况
 
@@ -67,41 +99,6 @@ Powered by OpenClaw🦞
 
 - Transformer架构持续主导遥感时序与空间建模，但线性注意力等效率优化方案开始涌现
 - 可解释AI与不确定性量化方法逐步从辅助工具转向核心研究议题，反映领域对模型可信度的需求提升
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260324](./202603/20260324.md)
-## 📌 今日概况
-
-今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究呈现多技术路线并进态势：基础模型层面探索模型权重融合而非数据驱动学习；应用层面覆盖光伏设施普查、雪崩灾害监测等垂直场景；方法层面持续深化对比学习、LSTM时序建模与不确定性量化等核心技术。
-
-## ✨ 今日亮点
-
-- GeoSANE开创性地从神经网络权重空间学习地理表征，突破传统数据驱动范式
-- 检索增强生成技术首次应用于卫星影像光伏设施清单估算，支撑配电网规划
-- SAR影像深度学习变化检测实现大规模雪崩制图，拓展灾害遥感监测能力
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260324] GeoSANE: Learning Geospatial Representations from Models, Not Data | Hanna Joelle, Falk Damian, Stella X. Yu, Borth Damian | GeoSANE提出从模型权重而非原始数据学习地理空间表征的新范式，为地理基础模型训练开辟替代路径。 | [#188](https://github.com/thinson/RS-PaperClaw/issues/188) |
-| [20260324] Dual Contrastive Network for Few-Shot Remote Sensing Image Scene Classification | Ji Zhong, Hou Liyuan, Wang Xuan, Wang Gang, Pang Yanwei | 双对比网络通过全局-局部特征协同对比学习，提升小样本遥感场景分类的泛化性能。 | [#189](https://github.com/thinson/RS-PaperClaw/issues/189) |
-| [20260324] Retrieval-Guided Photovoltaic Inventory Estimation from Satellite Imagery for Distribution Grid Planning | Guo Muhao, Mai Lihao, Blasch Erik, Parol Jafarali, Rakan Turki et al. | 检索增强生成框架结合卫星影像与外部知识库，实现分布式光伏设施的精准清估算。 | [#190](https://github.com/thinson/RS-PaperClaw/issues/190) |
-| [20260324] L-UNet: An LSTM Network for Remote Sensing Image Change Detection | Sun Shuting, Mu Lin, Wang Lizhe, Liu Peng | L-UNet将LSTM嵌入UNet架构，强化遥感影像变化检测的时序特征建模能力。 | [#191](https://github.com/thinson/RS-PaperClaw/issues/191) |
-| [20260324] Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis | Chamuditha Jayanga Galappaththige, Gottwald Thomas, Stehr Peter, Heinert Edgar, Suenderhauf Niko et al. | 高斯溅射光度不确定性预测方法，为神经辐射场新视角合成提供可靠性量化。 | [#192](https://github.com/thinson/RS-PaperClaw/issues/192) |
-| [20260324] Large-Scale Avalanche Mapping from SAR Images with Deep Learning-based Change Detection | Gatti Mattia, Mariani Alberto, Gallo Ignazio, Monti Fabiano | 基于SAR影像与深度学习的多时相变化检测，实现山区大范围雪崩事件的自动化制图。 | [#193](https://github.com/thinson/RS-PaperClaw/issues/193) |
-
-## 🔎 观察
-
-- 模型权重空间学习（GeoSANE）代表基础模型训练的新方向，可能降低对海量标注数据的依赖
-- 检索增强生成与遥感结合尚处早期，光伏设施估算案例显示其在结构化知识融合方面的潜力
 
 ---
 
