@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260330](./202603/20260330.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究呈现多模态融合与生成模型深化趋势。显著性检测引入矫正流生成框架，多模态检索聚焦噪声对应学习，合成数据与物理模型结合推动高光谱模拟发展，同时遥感数据向通信领域跨界应用拓展。
+
+## ✨ 今日亮点
+
+- ORSIFlow将矫正流生成模型引入光学遥感显著性检测，实现隐空间引导生成
+- 自旋转三旋翼无人机通过非线性动态逆与模型预测控制扩展视场范围
+- SVH-BD基于PROSAIL模型构建植被高光谱合成基准数据集
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260330] ORSIFlow: Saliency-Guided Rectified Flow for Optical Remote Sensing Salient Object Detection | Chen Haojing, Li Yutong, Liu Zhihang, Tan Tao, Bian Haoyu et al. | ORSIFlow提出显著性引导的矫正流框架，在隐扩散空间中实现光学遥感图像显著目标检测。 | [#225](https://github.com/thinson/RS-PaperClaw/issues/225) |
+| [20260330] A Self-Rotating Tri-Rotor UAV for Field of View Expansion and Autonomous Flight | Zhou Xiaobin, Zheng Zihao, Jin Aoxu, Qiang Lei, Zhu Bo | 自旋转三旋翼无人机采用非线性动态逆与模型预测控制，实现视场扩展与自主飞行。 | [#226](https://github.com/thinson/RS-PaperClaw/issues/226) |
+| [20260330] SVH-BD : Synthetic Vegetation Hyperspectral Benchmark Dataset for Emulation of Remote Sensing Images | Chedly Ben Azizi, Guilloteau Claire, Roussel Gilles, Puigt Matthieu | SVH-BD基于PROSAIL辐射传输模型构建合成植被高光谱数据集，用于遥感图像仿真。 | [#227](https://github.com/thinson/RS-PaperClaw/issues/227) |
+| [20260330] Robust Remote Sensing Image-Text Retrieval with Noisy Correspondence | Song Qiya, Xie Yiqiang, Sun Yuan, Dian Renwei, Kang Xudong | 针对噪声对应问题，提出自步学习策略提升遥感图像-文本检索的鲁棒性。 | [#228](https://github.com/thinson/RS-PaperClaw/issues/228) |
+| [20260330] Deep Learning Based Site-Specific Channel Inference Using Satellite Images | Song Junzhe, He Ruisi, Yang Mi, Zhang Zhengyu, Gao Shuaiqi et al. | 利用卫星图像与深度学习实现站点级无线信道推断，支持抽头延迟线建模。 | [#229](https://github.com/thinson/RS-PaperClaw/issues/229) |
+
+## 🔎 观察
+
+- 生成式AI正从图像合成向判别任务渗透，矫正流等新型扩散变体开始应用于遥感检测领域。
+- 遥感数据与无线通信的交叉研究显现，卫星图像作为先验信息支撑信道建模成为新方向。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260329](./202603/20260329.md)
 ## 📌 今日概况
 
@@ -61,38 +95,6 @@ Powered by OpenClaw🦞
 
 - 计算成像与AI的交叉持续深化，无透镜设计有望推动遥感载荷小型化与低成本化
 - 视觉语言模型的零样本迁移能力为地理空间智能开辟新路径，但鲁棒性仍需验证
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260327](./202603/20260327.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦高光谱成像技术优化与边缘智能应用。两篇论文分别探索可学习量子效率滤波器用于城市场景分割，以及基于变分自编码器的空-谱联合压缩架构；第三篇则关注无人机实时感知，将DEFOM-Stereo立体匹配网络部署至Jetson平台实现自主修剪作业。
-
-## ✨ 今日亮点
-
-- 可学习量子效率滤波器实现高光谱降维与城市场景语义分割联合优化
-- HyVIC架构融合空-谱信息，以变分自编码器驱动高光谱图像压缩
-- DEFOM-Stereo五种变体经仿真到Jetson部署验证，支撑无人机实时修剪
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260327] Learnable Quantum Efficiency Filters for Urban Hyperspectral Segmentation | Imad Ali Shah, Li Jiarong, Delaney Ethan, Ward Enda, Glavin Martin et al. | 提出可学习量子效率滤波器，将高光谱降维与城市场景语义分割任务端到端联合优化。 | [#211](https://github.com/thinson/RS-PaperClaw/issues/211) |
-| [20260327] HyVIC: A Metric-Driven Spatio-Spectral Hyperspectral Image Compression Architecture Based on Variational Autoencoders | Martin Hermann Paul Fuchs, Rasti Behnood, Demir Begüm | 构建HyVIC变分自编码器架构，以度量驱动方式实现空-谱联合高光谱图像压缩。 | [#212](https://github.com/thinson/RS-PaperClaw/issues/212) |
-| [20260327] Real-Time Branch-to-Tool Distance Estimation for Autonomous UAV Pruning: Benchmarking Five DEFOM-Stereo Variants from Simulation to Jetson Deployment | Lin Yida, Xue Bing, Zhang Mengjie, Schofield Sam, Green Richard | 基准测试五种DEFOM-Stereo变体，完成从仿真到Jetson边缘部署的无人机实时修剪距离估计。 | [#213](https://github.com/thinson/RS-PaperClaw/issues/213) |
-
-## 🔎 观察
-
-- 高光谱成像研究正从单一任务处理转向降维-分析-压缩的联合优化范式，量子效率等物理可解释模块受关注
-- 农业机器人实时感知需求推动轻量立体匹配网络向边缘设备迁移，仿真到真实部署的系统性验证成为趋势
 
 ---
 
