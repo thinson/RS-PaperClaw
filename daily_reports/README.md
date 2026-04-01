@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260331](./202603/20260331.md)
+## 📌 今日概况
+
+今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究呈现多模态融合与开放词汇理解两大主线。视觉-语言模型持续向地球观测领域渗透，涵盖图文数据集构建、跨模态检索及零样本分割等方向。同时，层次化多标签分类、高光谱解混等传统任务借助图网络与几何方法获得新进展，卫星单目深度估计等实用技术亦有新数据集发布。
+
+## ✨ 今日亮点
+
+- BigEarthNet.txt发布大规模多传感器图文数据集，填补遥感视觉-语言基准空白
+- ConInfer提出无需训练的上下文感知推理框架，推动开放词汇遥感分割实用化
+- EarthEmbeddingExplorer上线全球卫星影像跨模态检索平台，降低基础模型应用门槛
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260331] MAPLE: Multi-Path Adaptive Propagation with Level-Aware Embeddings for Hierarchical Multi-Label Image Classification | Koloski Boshko, Stoimchev Marjan, Levatić Jurica, Kocev Dragi, Džeroski Sašo | MAPLE通过层级感知嵌入与自适应图传播，解决遥感图像层次多标签分类中的标签稀疏与语义关联问题。 | [#233](https://github.com/thinson/RS-PaperClaw/issues/233) |
+| [20260331] BigEarthNet.txt: A Large-Scale Multi-Sensor Image-Text Dataset and Benchmark for Earth Observation | Herzog Johann-Ludwig, Mathis Jürgen Adler, Hackel Leonard, Shu Yan, Zavras Angelos et al. | BigEarthNet.txt整合Sentinel-1/2双模态数据与人工校验文本描述，构建百万级遥感图文对齐基准。 | [#234](https://github.com/thinson/RS-PaperClaw/issues/234) |
+| [20260331] EarthEmbeddingExplorer: A Web Application for Cross-Modal Retrieval of Global Satellite Images | Zheng Yijie, Wu Weijie, Wu Bingyue, Zhao Long, Li Guoqing et al. | EarthEmbeddingExplorer基于基础模型嵌入空间，实现文本-图像双向检索的交互式Web应用。 | [#235](https://github.com/thinson/RS-PaperClaw/issues/235) |
+| [20260331] Polyhedral Unmixing: Bridging Semantic Segmentation with Hyperspectral Unmixing via Polyhedral-Cone Partitioning | Bottenmuller Antoine, Decencière Etienne, Dokládal Petr | Polyhedral Unmixing将多面体锥划分引入高光谱解混，建立语义分割与端元提取的统一几何框架。 | [#236](https://github.com/thinson/RS-PaperClaw/issues/236) |
+| [20260331] ConInfer: Context-Aware Inference for Training-Free Open-Vocabulary Remote Sensing Segmentation | Chen Wenyang, Hu Zhanxuan, Zhang Yaping, Ning Hailong, Tai Yonghang | ConInfer利用CLIP上下文感知推理机制，无需微调即可实现遥感开放词汇语义分割。 | [#237](https://github.com/thinson/RS-PaperClaw/issues/237) |
+| [20260331] Monocular Building Height Estimation from PhiSat-2 Imagery: Dataset and Method | Song Yanjiao, Cai Bowen, Balz Timo, Shao Zhenfeng, Neema Simon Sumari et al. | 基于PhiSat-2卫星影像构建单目建筑高度估计数据集，支撑城市形态学定量分析。 | [#238](https://github.com/thinson/RS-PaperClaw/issues/238) |
+
+## 🔎 观察
+
+- 视觉-语言基础模型正加速重塑遥感下游任务范式，但领域适配性与推理效率仍是落地瓶颈
+- 多模态数据集的文本质量与传感器异质性对齐，将成为决定模型泛化能力的关键变量
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260330](./202603/20260330.md)
 ## 📌 今日概况
 
@@ -63,38 +98,6 @@ Powered by OpenClaw🦞
 
 - 大语言模型正从通用工具向遥感专用智能体演进，覆盖感知-认知-决策全链条。
 - 开放词汇与物理先验的结合，反映出遥感AI从数据驱动向知识增强的范式转变。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260328](./202603/20260328.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究呈现多模态融合与智能感知趋势：计算成像领域探索无透镜偏振成像新范式，视觉语言模型赋能跨视角地理定位，事件相机与深度融合推动高速无人机自主避障。三项研究均强调端到端学习与跨模态信息整合。
-
-## ✨ 今日亮点
-
-- 无透镜偏振成像突破传统光学限制，RGB引导重建降低硬件复杂度
-- 零样本视觉语言重排序实现跨视角地理定位，无需任务特定训练
-- 事件-深度融合网络以模仿学习实现高速无人机毫秒级避障响应
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260328] Guided Lensless Polarization Imaging | Kraicer Noa, Yosef Erez, Giryes Raja | 提出RGB引导的无透镜偏振成像方法，通过计算重建替代传统光学透镜，实现轻量化偏振信息采集。 | [#215](https://github.com/thinson/RS-PaperClaw/issues/215) |
-| [20260328] Zero-shot Vision-Language Reranking for Cross-View Geolocalization | Yunus Talha Erzurumlu, John E. Anderson, William J. Shuart, Toth Charles, Yilmaz Alper | 利用LLaVA等视觉语言模型进行零样本重排序，提升跨视角地理定位的泛化能力与检索精度。 | [#216](https://github.com/thinson/RS-PaperClaw/issues/216) |
-| [20260328] An End-to-end Flight Control Network for High-speed UAV Obstacle Avoidance based on Event-Depth Fusion | Shang Dikai, Zhao Jingyue, Xu Shi, Ye Nanyang, Wang Lei | 设计端到端飞行控制网络，融合事件相机与深度信息，基于模仿学习实现高速无人机实时避障。 | [#217](https://github.com/thinson/RS-PaperClaw/issues/217) |
-
-## 🔎 观察
-
-- 多模态融合成为核心趋势：三篇论文均涉及跨传感器或跨模态信息整合，反映遥感系统向异构数据协同演进
-- 零样本与端到端范式加速落地：视觉语言模型和模仿学习降低领域适配成本，推动技术从实验室向实际平台迁移
 
 ---
 
