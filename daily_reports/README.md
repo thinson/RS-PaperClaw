@@ -2,6 +2,48 @@
 
 最近三天日报（最新在前）：
 
+# [20260402](./202604/20260402.md)
+## 📌 今日概况
+
+今日共检索候选论文 18 篇；关键词+LLM 智能匹配遥感交叉论文 13 篇；最终纳入日报 13 篇。
+
+今日遥感AI研究聚焦三大方向：一是无人机-卫星跨视角感知成为热点，涉及跟踪、定位与基准测试；二是开放词汇学习持续演进，涵盖变化检测与语义分割；三是模型轻量化与专用架构创新，包括KAN网络、扩散模型及注意力机制改进。
+
+## ✨ 今日亮点
+
+- UAV-Track VLA首次将VLA模型引入无人机空中跟踪，实现具身智能与视觉跟踪融合
+- CoRegOVCD提出免训练一致性正则化方法，突破开放词汇变化检测瓶颈
+- Links²Bench构建首个无人机-卫星动态跨视角空间智能基准，评估VLM跨域能力
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260402] UAV-Track VLA: Embodied Aerial Tracking via Vision-Language-Action Models | Zhang Qiyao, Zheng Shuhua, Sun Jianli, Li Chengxiang, Wu Xianke et al. | UAV-Track VLA将视觉-语言-动作模型应用于无人机空中跟踪，实现具身化智能跟踪系统。 | [#247](https://github.com/thinson/RS-PaperClaw/issues/247) |
+| [20260402] CoRegOVCD: Consistency-Regularized Open-Vocabulary Change Detection | Tang Weidong, Sun Hanbin, Li Zihan, Wang Yikai, Zhang Feifan | CoRegOVCD通过一致性正则化实现免训练开放词汇变化检测，无需微调即可适应新类别。 | [#248](https://github.com/thinson/RS-PaperClaw/issues/248) |
+| [20260402] Are VLMs Lost Between Sky and Space? LinkS$^2$Bench for UAV-Satellite Dynamic Cross-View Spatial Intelligence | Liu Dian, Feng Jie, Li Di, Zheng Yuhui, Li Guanbin et al. | Links²Bench构建无人机-卫星动态跨视角基准，系统评估视觉语言模型的空间智能能力。 | [#249](https://github.com/thinson/RS-PaperClaw/issues/249) |
+| [20260402] Decouple and Rectify: Semantics-Preserving Structural Enhancement for Open-Vocabulary Remote Sensing Segmentation | Feng Jie, Li Fengze, Zhang Junpeng, Chen Siyu, Liang Yuping et al. | 提出解耦矫正框架，通过语义保持结构增强提升开放词汇遥感分割性能。 | [#250](https://github.com/thinson/RS-PaperClaw/issues/250) |
+| [20260402] Test-Time Adaptation for Height Completion via Self-Supervised ViT Features and Monocular Foundation Models | Rafaeli Osher, Svoray Tal, Nahlieli Ariel | 利用自监督ViT特征与单目基础模型，实现测试时自适应高度补全。 | [#251](https://github.com/thinson/RS-PaperClaw/issues/251) |
+| [20260402] Light-ResKAN: A Parameter-Sharing Lightweight KAN with Gram Polynomials for Efficient SAR Image Recognition | Yi Pan, Li Weijie, Chen Xiaodong, Zhang Jiehua, Liu Li et al. | Light-ResKAN结合Gram多项式与参数共享，构建轻量高效SAR图像识别网络。 | [#252](https://github.com/thinson/RS-PaperClaw/issues/252) |
+| [20260402] ProVG: Progressive Visual Grounding via Language Decoupling for Remote Sensing Imagery | Li Ke, Wang Ting, Wang Di, Zhu Yongshan, Zhang Yiming et al. | ProVG通过语言解耦渐进式视觉定位，优化遥感图像跨模态对齐。 | [#253](https://github.com/thinson/RS-PaperClaw/issues/253) |
+| [20260402] GeoAI Agency Primitives | Zaytar Akram, Sawahn Rohan, Robinson Caleb, Gilles Q. Hacheme, Girmaw A. Tadesse et al. | 定义GeoAI智能体原语框架，推动地理人工智能与人机协同决策融合。 | [#254](https://github.com/thinson/RS-PaperClaw/issues/254) |
+| [20260402] Cosine-Normalized Attention for Hyperspectral Image Classification | Ahmad Muhammad, Mazzara Manuel | 余弦归一化注意力机制优化高光谱分类，改善空间-光谱特征学习稳定性。 | [#255](https://github.com/thinson/RS-PaperClaw/issues/255) |
+| [20260402] Unifying UAV Cross-View Geo-Localization via 3D Geometric Perception | Li Haoyuan, Yang Wen, Xu Fang, Tan Hong, Zhang Haijian et al. | 基于3D几何感知统一无人机跨视角地理定位，结合重建与匹配提升定位精度。 | [#256](https://github.com/thinson/RS-PaperClaw/issues/256) |
+| [20260402] Satellite-Free Training for Drone-View Geo-Localization | Liu Tao, Zhang Yingzhi, Ren Kan, Zhao Xiaoqi | 无需卫星图像的无人机视角地理定位训练方法，依赖3D场景重建实现跨视角检索。 | [#257](https://github.com/thinson/RS-PaperClaw/issues/257) |
+| [20260402] Prototype-Based Low Altitude UAV Semantic Segmentation | Zhang Da, Junyu Gao, Zhiyuan Zhao | 原型学习驱动的低空无人机语义分割，面向边缘计算优化多尺度特征提取。 | [#258](https://github.com/thinson/RS-PaperClaw/issues/258) |
+| [20260402] A Conditional Denoising Diffusion Probabilistic Model for RFI Mitigation in Synthetic Aperture Interferometric Radiometer | Luo Yuankai, Zhou Han, Hao Jinlong, Zhu Dong, Hu Fei | 条件去噪扩散概率模型用于综合孔径干涉辐射计射频干扰抑制。 | [#259](https://github.com/thinson/RS-PaperClaw/issues/259) |
+
+## 🔎 观察
+
+- 无人机-卫星跨视角研究密集涌现，反映空天地一体化感知成为遥感AI核心赛道，3D几何与视觉语言模型成为关键使能技术
+- 开放词汇学习向训练-free方向演进，一致性正则化与语义结构增强成为降低标注依赖的重要技术路径
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260401](./202604/20260401.md)
 ## 📌 今日概况
 
@@ -65,40 +107,6 @@ Powered by OpenClaw🦞
 
 - 视觉-语言模型正成为遥感领域核心基础设施，数据集、算法与平台三层同步推进，生态构建加速
 - 训练-free或few-shot范式在遥感任务中占比上升，反映领域对降低标注成本与提升泛化性的迫切需求
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260330](./202603/20260330.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究呈现多维度交叉趋势：生成模型向显著性检测渗透，ORSIFlow将矫正流与潜扩散结合提升光学遥感目标检测精度；硬件层面，自旋三旋翼无人机通过非线性动态逆控制扩展视场；数据基建方面，PROSAIL驱动的合成高光谱植被数据集填补基准空白；多模态检索与无线通信信道推断则体现遥感向跨域应用的延伸。
-
-## ✨ 今日亮点
-
-- ORSIFlow首次将矫正流引入遥感显著性检测，以显著性引导生成机制优化边界感知
-- 自旋三旋翼无人机采用模型预测控制与非线性动态逆，实现360°视场自主飞行
-- SVH-BD基于PROSAIL辐射传输模型构建合成高光谱植被基准，支持遥感图像仿真
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260330] ORSIFlow: Saliency-Guided Rectified Flow for Optical Remote Sensing Salient Object Detection | Chen Haojing, Li Yutong, Liu Zhihang, Tan Tao, Bian Haoyu et al. | ORSIFlow提出显著性引导矫正流，结合潜扩散模型与边界感知损失，优化光学遥感显著目标检测的生成质量与效率。 | [#225](https://github.com/thinson/RS-PaperClaw/issues/225) |
-| [20260330] A Self-Rotating Tri-Rotor UAV for Field of View Expansion and Autonomous Flight | Zhou Xiaobin, Zheng Zihao, Jin Aoxu, Qiang Lei, Zhu Bo | 自旋三旋翼无人机通过模型预测控制与非线性动态逆实现自主飞行，以机械旋转扩展视场突破固定相机视角限制。 | [#226](https://github.com/thinson/RS-PaperClaw/issues/226) |
-| [20260330] SVH-BD : Synthetic Vegetation Hyperspectral Benchmark Dataset for Emulation of Remote Sensing Images | Chedly Ben Azizi, Guilloteau Claire, Roussel Gilles, Puigt Matthieu | SVH-BD基于PROSAIL辐射传输模型生成合成高光谱植被数据，为遥感图像仿真与植被性状反演提供标准化基准。 | [#227](https://github.com/thinson/RS-PaperClaw/issues/227) |
-| [20260330] Robust Remote Sensing Image-Text Retrieval with Noisy Correspondence | Song Qiya, Xie Yiqiang, Sun Yuan, Dian Renwei, Kang Xudong | 针对遥感图文检索中的噪声对应问题，提出自步课程学习策略，逐步过滤噪声样本以提升跨模态检索鲁棒性。 | [#228](https://github.com/thinson/RS-PaperClaw/issues/228) |
-| [20260330] Deep Learning Based Site-Specific Channel Inference Using Satellite Images | Song Junzhe, He Ruisi, Yang Mi, Zhang Zhengyu, Gao Shuaiqi et al. | 利用卫星图像与深度学习进行站点级无线信道推断，构建抽头延迟线模型辅助通信网络规划与频谱管理。 | [#229](https://github.com/thinson/RS-PaperClaw/issues/229) |
-
-## 🔎 观察
-
-- 生成式AI正从图像合成向判别任务回流，矫正流等高效生成模型开始服务于检测任务的特征增强与边界精细化
-- 遥感硬件创新与算法研究呈现并行态势，无人机平台动力学控制与上层视觉任务形成系统级闭环，但跨层协同优化尚待深入
 
 ---
 
