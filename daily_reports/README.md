@@ -2,6 +2,45 @@
 
 最近三天日报（最新在前）：
 
+# [20260403](./202604/20260403.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 10 篇。
+
+今日遥感AI研究呈现三大趋势：UAV智能感知与导航持续火热（5篇），涵盖检测、定位、导航与通感一体化；持续学习与基础模型等AI前沿方法向遥感渗透；多模态融合与物理感知增强成为技术突破口。火星遥感与SAR海冰等垂直领域亦获关注。
+
+## ✨ 今日亮点
+
+- 持续学习突破：ProtoFlow以低曲率原型流缓解类增量分割遗忘问题
+- UAV导航创新：视觉端到端学习与可微仿真结合实现不规则间隙穿越
+- 行星遥感里程碑：MOMO发布首个火星轨道基础模型，支持多传感器融合
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260403] ProtoFlow: Mitigating Forgetting in Class-Incremental Remote Sensing Segmentation via Low-Curvature Prototype Flow | Wu Jiekai, Fu Rong, Li Chuangqi, Zhang Zijian, Wu Guangxin et al. | ProtoFlow提出低曲率原型流方法，缓解遥感图像类增量语义分割中的灾难性遗忘问题。 | [#261](https://github.com/thinson/RS-PaperClaw/issues/261) |
+| [20260403] SFFNet: Synergistic Feature Fusion Network With Dual-Domain Edge Enhancement for UAV Image Object Detection | Zhang Wenfeng, Ni Jun, Meng Yue, Pei Xiaodong, Hu Wei et al. | SFFNet设计双域边缘增强的协同特征融合网络，提升无人机图像目标检测精度。 | [#262](https://github.com/thinson/RS-PaperClaw/issues/262) |
+| [20260403] SCC-Loc: A Unified Semantic Cascade Consensus Framework for UAV Thermal Geo-Localization | Zhang Xiaoran, Liu Yu, Liang Jinyu, Li Kangqiushi, Huang Zhiwei et al. | SCC-Loc构建语义级联共识框架，实现无人机热红外图像的跨模态地理定位。 | [#263](https://github.com/thinson/RS-PaperClaw/issues/263) |
+| [20260403] A Data-Centric Vision Transformer Baseline for SAR Sea Ice Classification | Mike-Ewewie David, Lim Panhapiseth, Kumar Priyanka | 该研究以数据为中心构建Vision Transformer基线，用于SAR海冰分类任务。 | [#264](https://github.com/thinson/RS-PaperClaw/issues/264) |
+| [20260403] Visual Prototype Conditioned Focal Region Generation for UAV-Based Object Detection | Li Wenhao, Wu Zimeng, Wu Yu, Fu Zehua, Chen Jiaxin | 基于视觉原型条件扩散模型，生成无人机检测的聚焦区域数据增强样本。 | [#265](https://github.com/thinson/RS-PaperClaw/issues/265) |
+| [20260403] Ground Reflection-Aided TomoSAR Imaging with 5G NR Signals | Yang Qiuyuan, Pan Cunhua, Ren Hong, Wang Jiangzhou | 利用5G NR信号地面反射辅助TomoSAR成像，结合NOMP算法抑制多径干扰。 | [#266](https://github.com/thinson/RS-PaperClaw/issues/266) |
+| [20260403] Vision-Based End-to-End Learning for UAV Traversal of Irregular Gaps via Differentiable Simulation | Zhang Linzuo, Hu Yu, Yu Feng, Deng Yang, Yu Wenxian et al. | 端到端视觉学习结合可微物理仿真，使无人机自主穿越不规则间隙。 | [#267](https://github.com/thinson/RS-PaperClaw/issues/267) |
+| [20260403] Task-Guided Prompting for Unified Remote Sensing Image Restoration | Huang Wenli, Wu Yang, Xin Xiaomeng, Liu Zhihong, Wang Jinjun et al. | 任务引导提示学习框架统一处理多类型遥感图像退化恢复任务。 | [#268](https://github.com/thinson/RS-PaperClaw/issues/268) |
+| [20260403] MOMO: Mars Orbital Model Foundation Model for Mars Orbital Applications | Purohit Mirali, Gajera Bimal, Mehta Irish, Tokas Bhanu, Adler Jacob et al. | MOMO通过模型融合构建首个火星轨道遥感基础模型，支持多源数据应用。 | [#269](https://github.com/thinson/RS-PaperClaw/issues/269) |
+| [20260403] MIMO OFDM-Enabled ISAC for Low-Altitude Non-Cooperative UAV Surveillance: A Survey | Bai Shiyu, Li Sijia, Yin Cunyi, Qu Wenqiu, Hsu Li-Ta et al. | 综述MIMO OFDM通感一体化技术在低空非合作无人机监视中的应用进展。 | [#270](https://github.com/thinson/RS-PaperClaw/issues/270) |
+
+## 🔎 观察
+
+- UAV研究占比过半且贯穿感知-认知-决策全链条，反映低空经济对智能遥感的强劲需求牵引。
+- 持续学习、基础模型、扩散模型等通用AI方法加速向遥感迁移，领域特异性改造成为创新关键。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260402](./202604/20260402.md)
 ## 📌 今日概况
 
@@ -72,41 +111,6 @@ Powered by OpenClaw🦞
 
 - SAM及其变体持续主导遥感交互式分割方向，但高分辨率适配与细粒度控制仍是待解难题
 - 多模态基准数据集建设加速，反映出遥感AI从算法创新向系统评估与可重复性研究的范式转移
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260331](./202603/20260331.md)
-## 📌 今日概况
-
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究呈现多模态融合与基础模型应用深化趋势。视觉-语言模型持续向地球观测领域渗透，涵盖文本-图像数据集构建、跨模态检索及开放词汇分割等方向。同时，层次化分类、高光谱解混与单目高度估计等经典任务在方法论上均有创新，体现遥感专用模型与通用AI技术的双向融合。
-
-## ✨ 今日亮点
-
-- BigEarthNet.txt发布大规模多传感器图文数据集，填补遥感视觉-语言基准空白
-- ConInfer提出无需训练的上下文感知推理框架，推动开放词汇遥感分割实用化
-- EarthEmbeddingExplorer上线全球卫星影像跨模态检索平台，加速基础模型落地
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260331] MAPLE: Multi-Path Adaptive Propagation with Level-Aware Embeddings for Hierarchical Multi-Label Image Classification | Koloski Boshko, Stoimchev Marjan, Levatić Jurica, Kocev Dragi, Džeroski Sašo | MAPLE提出多路径自适应传播与层级感知嵌入，用于遥感图像层次化多标签分类，结合图卷积网络处理标签层级关系。 | [#233](https://github.com/thinson/RS-PaperClaw/issues/233) |
-| [20260331] BigEarthNet.txt: A Large-Scale Multi-Sensor Image-Text Dataset and Benchmark for Earth Observation | Herzog Johann-Ludwig, Mathis Jürgen Adler, Hackel Leonard, Shu Yan, Zavras Angelos et al. | BigEarthNet.txt构建Sentinel-1/2多传感器图文数据集，为地球观测视觉-语言模型提供标准化训练与评测基准。 | [#234](https://github.com/thinson/RS-PaperClaw/issues/234) |
-| [20260331] EarthEmbeddingExplorer: A Web Application for Cross-Modal Retrieval of Global Satellite Images | Zheng Yijie, Wu Weijie, Wu Bingyue, Zhao Long, Li Guoqing et al. | EarthEmbeddingExplorer开发Web应用，实现基于基础模型的全球卫星影像跨模态检索与交互式探索。 | [#235](https://github.com/thinson/RS-PaperClaw/issues/235) |
-| [20260331] Polyhedral Unmixing: Bridging Semantic Segmentation with Hyperspectral Unmixing via Polyhedral-Cone Partitioning | Bottenmuller Antoine, Decencière Etienne, Dokládal Petr | Polyhedral Unmixing通过多面体锥分割桥接语义分割与高光谱解混，统一端元提取与亚像元丰度估计任务。 | [#236](https://github.com/thinson/RS-PaperClaw/issues/236) |
-| [20260331] ConInfer: Context-Aware Inference for Training-Free Open-Vocabulary Remote Sensing Segmentation | Chen Wenyang, Hu Zhanxuan, Zhang Yaping, Ning Hailong, Tai Yonghang | ConInfer设计上下文感知推理机制，无需微调即可实现开放词汇遥感语义分割，提升类别泛化能力。 | [#237](https://github.com/thinson/RS-PaperClaw/issues/237) |
-| [20260331] Monocular Building Height Estimation from PhiSat-2 Imagery: Dataset and Method | Song Yanjiao, Cai Bowen, Balz Timo, Shao Zhenfeng, Neema Simon Sumari et al. | 基于PhiSat-2卫星影像构建单目建筑高度估计数据集，提出面向城市形态分析的端到端深度估计方法。 | [#238](https://github.com/thinson/RS-PaperClaw/issues/238) |
-
-## 🔎 观察
-
-- 视觉-语言模型正成为遥感领域核心基础设施，数据集、算法与平台三层同步推进，生态构建加速
-- 训练-free或few-shot范式在遥感任务中占比上升，反映领域对降低标注成本与提升泛化性的迫切需求
 
 ---
 
