@@ -5,35 +5,34 @@
 # [20260403](./202604/20260403.md)
 ## 📌 今日概况
 
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 10 篇。
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
 
-今日遥感AI研究呈现三大趋势：UAV智能感知与导航持续火热（5篇），涵盖检测、定位、导航与通感一体化；持续学习与基础模型等AI前沿方法向遥感渗透；多模态融合与物理感知增强成为技术突破口。火星遥感与SAR海冰等垂直领域亦获关注。
+今日遥感AI研究呈现三大趋势：一是无人机应用持续火热，涵盖目标检测、导航定位与自主穿越；二是基础模型与持续学习成为热点，包括火星轨道基础模型和类增量分割；三是多模态融合与数据驱动方法受关注，如热红外地理定位、SAR海冰分类及图像复原等任务。
 
 ## ✨ 今日亮点
 
-- 持续学习突破：ProtoFlow以低曲率原型流缓解类增量分割遗忘问题
-- UAV导航创新：视觉端到端学习与可微仿真结合实现不规则间隙穿越
-- 行星遥感里程碑：MOMO发布首个火星轨道基础模型，支持多传感器融合
+- ProtoFlow提出低曲率原型流方法，缓解遥感分割中的灾难性遗忘问题
+- SCC-Loc构建语义级联共识框架，实现无人机热红外图像精准地理定位
+- MOMO发布首个火星轨道基础模型，支持多传感器融合与下游任务
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260403] ProtoFlow: Mitigating Forgetting in Class-Incremental Remote Sensing Segmentation via Low-Curvature Prototype Flow | Wu Jiekai, Fu Rong, Li Chuangqi, Zhang Zijian, Wu Guangxin et al. | ProtoFlow提出低曲率原型流方法，缓解遥感图像类增量语义分割中的灾难性遗忘问题。 | [#261](https://github.com/thinson/RS-PaperClaw/issues/261) |
+| [20260403] ProtoFlow: Mitigating Forgetting in Class-Incremental Remote Sensing Segmentation via Low-Curvature Prototype Flow | Wu Jiekai, Fu Rong, Li Chuangqi, Zhang Zijian, Wu Guangxin et al. | ProtoFlow通过低曲率原型流优化，有效缓解类增量遥感分割中的知识遗忘问题。 | [#261](https://github.com/thinson/RS-PaperClaw/issues/261) |
 | [20260403] SFFNet: Synergistic Feature Fusion Network With Dual-Domain Edge Enhancement for UAV Image Object Detection | Zhang Wenfeng, Ni Jun, Meng Yue, Pei Xiaodong, Hu Wei et al. | SFFNet设计双域边缘增强的协同特征融合网络，提升无人机图像目标检测精度。 | [#262](https://github.com/thinson/RS-PaperClaw/issues/262) |
-| [20260403] SCC-Loc: A Unified Semantic Cascade Consensus Framework for UAV Thermal Geo-Localization | Zhang Xiaoran, Liu Yu, Liang Jinyu, Li Kangqiushi, Huang Zhiwei et al. | SCC-Loc构建语义级联共识框架，实现无人机热红外图像的跨模态地理定位。 | [#263](https://github.com/thinson/RS-PaperClaw/issues/263) |
+| [20260403] SCC-Loc: A Unified Semantic Cascade Consensus Framework for UAV Thermal Geo-Localization | Zhang Xiaoran, Liu Yu, Liang Jinyu, Li Kangqiushi, Huang Zhiwei et al. | SCC-Loc提出语义级联共识框架，统一解决无人机热红外图像地理定位任务。 | [#263](https://github.com/thinson/RS-PaperClaw/issues/263) |
 | [20260403] A Data-Centric Vision Transformer Baseline for SAR Sea Ice Classification | Mike-Ewewie David, Lim Panhapiseth, Kumar Priyanka | 该研究以数据为中心构建Vision Transformer基线，用于SAR海冰分类任务。 | [#264](https://github.com/thinson/RS-PaperClaw/issues/264) |
-| [20260403] Visual Prototype Conditioned Focal Region Generation for UAV-Based Object Detection | Li Wenhao, Wu Zimeng, Wu Yu, Fu Zehua, Chen Jiaxin | 基于视觉原型条件扩散模型，生成无人机检测的聚焦区域数据增强样本。 | [#265](https://github.com/thinson/RS-PaperClaw/issues/265) |
-| [20260403] Ground Reflection-Aided TomoSAR Imaging with 5G NR Signals | Yang Qiuyuan, Pan Cunhua, Ren Hong, Wang Jiangzhou | 利用5G NR信号地面反射辅助TomoSAR成像，结合NOMP算法抑制多径干扰。 | [#266](https://github.com/thinson/RS-PaperClaw/issues/266) |
-| [20260403] Vision-Based End-to-End Learning for UAV Traversal of Irregular Gaps via Differentiable Simulation | Zhang Linzuo, Hu Yu, Yu Feng, Deng Yang, Yu Wenxian et al. | 端到端视觉学习结合可微物理仿真，使无人机自主穿越不规则间隙。 | [#267](https://github.com/thinson/RS-PaperClaw/issues/267) |
-| [20260403] Task-Guided Prompting for Unified Remote Sensing Image Restoration | Huang Wenli, Wu Yang, Xin Xiaomeng, Liu Zhihong, Wang Jinjun et al. | 任务引导提示学习框架统一处理多类型遥感图像退化恢复任务。 | [#268](https://github.com/thinson/RS-PaperClaw/issues/268) |
-| [20260403] MOMO: Mars Orbital Model Foundation Model for Mars Orbital Applications | Purohit Mirali, Gajera Bimal, Mehta Irish, Tokas Bhanu, Adler Jacob et al. | MOMO通过模型融合构建首个火星轨道遥感基础模型，支持多源数据应用。 | [#269](https://github.com/thinson/RS-PaperClaw/issues/269) |
-| [20260403] MIMO OFDM-Enabled ISAC for Low-Altitude Non-Cooperative UAV Surveillance: A Survey | Bai Shiyu, Li Sijia, Yin Cunyi, Qu Wenqiu, Hsu Li-Ta et al. | 综述MIMO OFDM通感一体化技术在低空非合作无人机监视中的应用进展。 | [#270](https://github.com/thinson/RS-PaperClaw/issues/270) |
+| [20260403] Visual Prototype Conditioned Focal Region Generation for UAV-Based Object Detection | Li Wenhao, Wu Zimeng, Wu Yu, Fu Zehua, Chen Jiaxin | 基于视觉原型条件扩散模型，生成无人机目标检测所需的焦点区域数据。 | [#265](https://github.com/thinson/RS-PaperClaw/issues/265) |
+| [20260403] Ground Reflection-Aided TomoSAR Imaging with 5G NR Signals | Yang Qiuyuan, Pan Cunhua, Ren Hong, Wang Jiangzhou | 利用5G NR信号与地面反射辅助，实现TomoSAR成像中的多径抑制。 | [#266](https://github.com/thinson/RS-PaperClaw/issues/266) |
+| [20260403] Vision-Based End-to-End Learning for UAV Traversal of Irregular Gaps via Differentiable Simulation | Zhang Linzuo, Hu Yu, Yu Feng, Deng Yang, Yu Wenxian et al. | 结合可微分仿真与端到端学习，使无人机具备不规则间隙穿越能力。 | [#267](https://github.com/thinson/RS-PaperClaw/issues/267) |
+| [20260403] Task-Guided Prompting for Unified Remote Sensing Image Restoration | Huang Wenli, Wu Yang, Xin Xiaomeng, Liu Zhihong, Wang Jinjun et al. | 任务引导的提示学习方法，构建统一的遥感图像复原框架。 | [#268](https://github.com/thinson/RS-PaperClaw/issues/268) |
+| [20260403] MOMO: Mars Orbital Model Foundation Model for Mars Orbital Applications | Purohit Mirali, Gajera Bimal, Mehta Irish, Tokas Bhanu, Adler Jacob et al. | MOMO作为首个火星轨道基础模型，通过模型融合支持多传感器火星遥感应用。 | [#269](https://github.com/thinson/RS-PaperClaw/issues/269) |
 
 ## 🔎 观察
 
-- UAV研究占比过半且贯穿感知-认知-决策全链条，反映低空经济对智能遥感的强劲需求牵引。
-- 持续学习、基础模型、扩散模型等通用AI方法加速向遥感迁移，领域特异性改造成为创新关键。
+- 无人机相关研究占比超四成，表明低空遥感正成为学术与产业共同关注的核心场景。
+- 基础模型与持续学习技术向垂直领域渗透，地球与行星遥感均出现专用大模型探索。
 
 ---
 
