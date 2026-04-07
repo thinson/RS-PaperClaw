@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260405](./202604/20260405.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究聚焦三大方向：基础模型构建、多模态融合与领域自适应。高频观测数据表征学习、跨域时空融合不确定性建模及视觉语言模型在能源预测中的应用成为热点，同时SAR目标检测与低空经济基础设施研究展现工程化落地趋势。
+
+## ✨ 今日亮点
+
+- HighFM构建高频地球观测基础模型，推动时序遥感表征学习标准化
+- Solar-VLM融合视觉语言模型与光伏功率预测，拓展多模态气象能源应用
+- SARES-DEIM将稀疏专家混合架构引入SAR舰船检测，提升复杂场景鲁棒性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260405] HighFM: Towards a Foundation Model for Learning Representations from High-Frequency Earth Observation Data | Girtsou Stella, Alexis Konstantinos, Giannopoulos Giorgos, Kontoes Harris | HighFM提出面向高频地球观测数据的基础模型，学习时空联合表征以支持下游遥感任务。 | [#276](https://github.com/thinson/RS-PaperClaw/issues/276) |
+| [20260405] Uncertainty-Aware Test-Time Adaptation for Cross-Region Spatio-Temporal Fusion of Land Surface Temperature | Bouaziz Sofiane, Hafiane Adel, Canals Raphael, Nedjai Rachid | 该研究引入不确定性感知测试时自适应方法，解决地表温度跨区域时空融合中的域偏移问题。 | [#277](https://github.com/thinson/RS-PaperClaw/issues/277) |
+| [20260405] Solar-VLM: Multimodal Vision-Language Models for Augmented Solar Power Forecasting | Fan Hang, Pei Haoran, Liang Runze, Liu Weican, Cheng Long et al. | Solar-VLM将多模态视觉语言模型应用于太阳能功率预测，融合卫星图像与气象文本信息。 | [#278](https://github.com/thinson/RS-PaperClaw/issues/278) |
+| [20260405] SARES-DEIM: Sparse Mixture-of-Experts Meets DETR for Robust SAR Ship Detection | Song Fenghao, Yang Shaojing, Zhou Xi | SARES-DEIM结合稀疏混合专家与DETR架构，针对SAR图像舰船检测任务提升计算效率与精度。 | [#279](https://github.com/thinson/RS-PaperClaw/issues/279) |
+| [20260405] UAV Control and Communication Enabled Low-Altitude Economy: Challenges, Resilient Architecture and Co-design Strategies | Liang Tianhao, Su Nanchi, Ping Yuqi, Lei Guangyu, Chen Xinglin et al. | 该综述探讨低空经济中无人机控制与通信协同设计，提出韧性架构应对城市复杂环境挑战。 | [#280](https://github.com/thinson/RS-PaperClaw/issues/280) |
+
+## 🔎 观察
+
+- 测试时自适应(TTA)技术正从计算机视觉向遥感时空预测迁移，反映领域对实时泛化能力的迫切需求
+- 低空经济与遥感AI的交叉研究涌现，通信-控制协同设计或成为智慧城市基础设施的关键技术栈
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260404](./202604/20260404.md)
 ## 📌 今日概况
 
@@ -65,48 +99,6 @@ Powered by OpenClaw🦞
 
 - 无人机遥感成为今日研究核心载体，检测、导航、定位等任务需求驱动算法创新密集涌现。
 - 持续学习与基础模型两大范式向垂直领域渗透，反映遥感AI从通用方法向场景专用化演进。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260402](./202604/20260402.md)
-## 📌 今日概况
-
-今日共检索候选论文 18 篇；关键词+LLM 智能匹配遥感交叉论文 13 篇；最终纳入日报 13 篇。
-
-今日遥感AI研究呈现三大趋势：一是视觉-语言-动作模型（VLA）向无人机具身智能延伸，二是开放词汇学习持续渗透变化检测与分割任务，三是跨视角地理定位成为热点，UAV-卫星/无人机-地面视角对齐技术密集涌现。此外，KAN网络轻量化、扩散模型RFI抑制等方向亦有新进展。
-
-## ✨ 今日亮点
-
-- UAV-Track VLA首次将VLA模型引入无人机空中跟踪，实现语言指令驱动的具身飞行控制
-- CoRegOVCD提出免训练一致性正则化策略，突破开放词汇变化检测的数据瓶颈
-- LinkS²Bench构建首个UAV-卫星动态跨视角基准，系统评估VLM空间推理能力边界
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260402] UAV-Track VLA: Embodied Aerial Tracking via Vision-Language-Action Models | Zhang Qiyao, Zheng Shuhua, Sun Jianli, Li Chengxiang, Wu Xianke et al. | UAV-Track VLA：基于视觉-语言-动作模型的无人机具身空中跟踪框架。 | [#247](https://github.com/thinson/RS-PaperClaw/issues/247) |
-| [20260402] CoRegOVCD: Consistency-Regularized Open-Vocabulary Change Detection | Tang Weidong, Sun Hanbin, Li Zihan, Wang Yikai, Zhang Feifan | CoRegOVCD：一致性正则化驱动的免训练开放词汇变化检测方法。 | [#248](https://github.com/thinson/RS-PaperClaw/issues/248) |
-| [20260402] Are VLMs Lost Between Sky and Space? LinkS$^2$Bench for UAV-Satellite Dynamic Cross-View Spatial Intelligence | Liu Dian, Feng Jie, Li Di, Zheng Yuhui, Li Guanbin et al. | LinkS²Bench：面向无人机-卫星跨视角空间智能的VLM评测基准。 | [#249](https://github.com/thinson/RS-PaperClaw/issues/249) |
-| [20260402] Decouple and Rectify: Semantics-Preserving Structural Enhancement for Open-Vocabulary Remote Sensing Segmentation | Feng Jie, Li Fengze, Zhang Junpeng, Chen Siyu, Liang Yuping et al. | 解耦-校正框架：面向开放词汇遥感分割的语义保持结构增强策略。 | [#250](https://github.com/thinson/RS-PaperClaw/issues/250) |
-| [20260402] Test-Time Adaptation for Height Completion via Self-Supervised ViT Features and Monocular Foundation Models | Rafaeli Osher, Svoray Tal, Nahlieli Ariel | 基于自监督ViT特征与单目基础模型的高程补全测试时自适应方法。 | [#251](https://github.com/thinson/RS-PaperClaw/issues/251) |
-| [20260402] Light-ResKAN: A Parameter-Sharing Lightweight KAN with Gram Polynomials for Efficient SAR Image Recognition | Yi Pan, Li Weijie, Chen Xiaodong, Zhang Jiehua, Liu Li et al. | Light-ResKAN：Gram多项式参数共享的轻量KAN网络用于SAR图像识别。 | [#252](https://github.com/thinson/RS-PaperClaw/issues/252) |
-| [20260402] ProVG: Progressive Visual Grounding via Language Decoupling for Remote Sensing Imagery | Li Ke, Wang Ting, Wang Di, Zhu Yongshan, Zhang Yiming et al. | ProVG：语言解耦驱动的渐进式视觉定位方法用于遥感影像。 | [#253](https://github.com/thinson/RS-PaperClaw/issues/253) |
-| [20260402] GeoAI Agency Primitives | Zaytar Akram, Sawahn Rohan, Robinson Caleb, Gilles Q. Hacheme, Girmaw A. Tadesse et al. | GeoAI智能体原语：面向地理空间基础模型的人机协同能力抽象框架。 | [#254](https://github.com/thinson/RS-PaperClaw/issues/254) |
-| [20260402] Cosine-Normalized Attention for Hyperspectral Image Classification | Ahmad Muhammad, Mazzara Manuel | 余弦归一化注意力机制用于高光谱图像分类。 | [#255](https://github.com/thinson/RS-PaperClaw/issues/255) |
-| [20260402] Unifying UAV Cross-View Geo-Localization via 3D Geometric Perception | Li Haoyuan, Yang Wen, Xu Fang, Tan Hong, Zhang Haijian et al. | 基于3D几何感知的无人机跨视角地理定位统一框架。 | [#256](https://github.com/thinson/RS-PaperClaw/issues/256) |
-| [20260402] Satellite-Free Training for Drone-View Geo-Localization | Liu Tao, Zhang Yingzhi, Ren Kan, Zhao Xiaoqi | 无卫星训练的无人机视角地理定位：纯3D场景重建驱动的跨视角检索。 | [#257](https://github.com/thinson/RS-PaperClaw/issues/257) |
-| [20260402] Prototype-Based Low Altitude UAV Semantic Segmentation | Zhang Da, Junyu Gao, Zhiyuan Zhao | 原型学习驱动的低空无人机语义分割方法。 | [#258](https://github.com/thinson/RS-PaperClaw/issues/258) |
-| [20260402] A Conditional Denoising Diffusion Probabilistic Model for RFI Mitigation in Synthetic Aperture Interferometric Radiometer | Luo Yuankai, Zhou Han, Hao Jinlong, Zhu Dong, Hu Fei | 条件去噪扩散概率模型用于综合孔径干涉辐射计的射频干扰抑制。 | [#259](https://github.com/thinson/RS-PaperClaw/issues/259) |
-
-## 🔎 观察
-
-- 跨视角地理定位（UAV-卫星/地面）今日集中出现4项研究，显示该方向正从2D图像匹配向3D几何感知演进，卫星-free训练范式或降低数据依赖
-- 开放词汇学习在遥感领域加速落地，但变化检测、分割等密集预测任务仍面临语义-空间对齐难题，一致性正则化与结构增强成为新解题思路
 
 ---
 
