@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260404](./202604/20260404.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦三大方向：表征学习、计算效率与成像重建。多任务学习框架优化遥感特征表示，异构计算加速SAR成像，物理驱动方法突破单像素高光谱超分辨瓶颈，体现算法创新与硬件协同的发展趋势。
+
+## ✨ 今日亮点
+
+- 多标注三元组学习框架通过互信息最大化实现任务导向的遥感表征学习
+- Apple Silicon架构下核融合FFT流水线将SAR成像耗时从8秒压缩至370毫秒
+- 物理约束无训练网络实现RGB引导的单像素高光谱超分辨重建
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260404] Task-Guided Multi-Annotation Triplet Learning for Remote Sensing Representations | Zhou Meilun, Zare Alina | 提出任务引导的多标注三元组学习框架，利用互信息最大化优化遥感图像表征的多任务适应性。 | [#272](https://github.com/thinson/RS-PaperClaw/issues/272) |
+| [20260404] From 8 Seconds to 370ms: Kernel-Fused SAR Imaging on Apple Silicon via Single-Dispatch FFT Pipelines | Mohamed Amine Bergach | 针对Apple Silicon设计单调度FFT流水线与核融合策略，实现SAR成像两个数量级的加速。 | [#273](https://github.com/thinson/RS-PaperClaw/issues/273) |
+| [20260404] Physics-Informed Untrained Learning for RGB-Guided Superresolution Single-Pixel Hyperspectral Imaging | Zhang Hao, Xu Bilige, Wei Lichen, Ma Xu, Ren Wenyi | 结合物理先验与无训练神经网络，以RGB图像为引导完成单像素高光谱成像的超分辨重建。 | [#274](https://github.com/thinson/RS-PaperClaw/issues/274) |
+
+## 🔎 观察
+
+- 边缘端高效计算成为SAR处理新焦点，专用硬件优化正从服务器向消费级芯片迁移
+- 无训练神经网络与物理模型融合为计算成像开辟新路径，降低对大规模标注数据的依赖
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260403](./202604/20260403.md)
 ## 📌 今日概况
 
@@ -75,41 +107,6 @@ Powered by OpenClaw🦞
 
 - 跨视角地理定位（UAV-卫星/地面）今日集中出现4项研究，显示该方向正从2D图像匹配向3D几何感知演进，卫星-free训练范式或降低数据依赖
 - 开放词汇学习在遥感领域加速落地，但变化检测、分割等密集预测任务仍面临语义-空间对齐难题，一致性正则化与结构增强成为新解题思路
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260401](./202604/20260401.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究呈现多模态融合与基础模型适配两大主线。高光谱非线性解混引入生成对抗框架，作物产量预测构建多模态基准，SAR对抗攻击探索物理层安全，全景视觉惯性SLAM拓展无人机感知边界，持续学习缓解视觉语言模型灾难性遗忘，SAM变体实现高分辨率道路交互分割。
-
-## ✨ 今日亮点
-
-- YieldSAT构建首个高分辨率作物产量预测多模态基准数据集
-- PC-SAM提出补丁约束机制优化SAM在高分辨率遥感道路分割中的交互能力
-- PanoAir发布跨时段真实世界无人机全景视觉惯性SLAM数据集
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260401] Looking into a Pixel by Nonlinear Unmixing -- A Generative Approach | Tang Maofeng, Qi Hairong | Tang等提出基于生成对抗网络与循环一致性的非线性高光谱解混方法，通过生成式建模实现像素级光谱分解。 | [#240](https://github.com/thinson/RS-PaperClaw/issues/240) |
-| [20260401] YieldSAT: A Multimodal Benchmark Dataset for High-Resolution Crop Yield Prediction | Miranda Miro, Pathak Deepak, Helber Patrick, Bischke Benjamin, Najjar Hiba et al. | Miranda等发布YieldSAT数据集，融合卫星影像与多源农业数据，建立高分辨率作物产量预测的多模态评估基准。 | [#241](https://github.com/thinson/RS-PaperClaw/issues/241) |
-| [20260401] Adversarial Attenuation Patch Attack for SAR Object Detection | Zhang Yiming, Qin Weibo, Wang Feng | Zhang等设计针对SAR目标检测的对抗衰减贴片攻击，模拟电子干扰场景下的物理层隐身攻击机制。 | [#242](https://github.com/thinson/RS-PaperClaw/issues/242) |
-| [20260401] PanoAir: A Panoramic Visual-Inertial SLAM with Cross-Time Real-World UAV Dataset | Wu Yiyang, Zhang Xiaohu, Du Yanjin, Zhang Tongsu, Li Chujun et al. | Wu等构建PanoAir数据集，支持全景相机与IMU融合的无人机全向感知定位及跨时段SLAM研究。 | [#243](https://github.com/thinson/RS-PaperClaw/issues/243) |
-| [20260401] Continual Vision-Language Learning for Remote Sensing: Benchmarking and Analysis | Weng Xingxing, Ni Ruifeng, Pang Chao, Hao XiangYu, Wang Yishan et al. | Weng等建立遥感视觉语言模型持续学习基准，系统分析增量训练中的灾难性遗忘问题与缓解策略。 | [#244](https://github.com/thinson/RS-PaperClaw/issues/244) |
-| [20260401] PC-SAM: Patch-Constrained Fine-Grained Interactive Road Segmentation in High-Resolution Remote Sensing Images | Lv Chengcheng, Li Rushi, Wu Mincheng, Shi Xiufang, Wen Zhenyu et al. | Lv等提出PC-SAM框架，以补丁约束机制引导SAM实现高分辨率遥感影像的细粒度交互式道路提取。 | [#245](https://github.com/thinson/RS-PaperClaw/issues/245) |
-
-## 🔎 观察
-
-- SAM及其变体持续主导遥感交互式分割方向，但高分辨率适配与细粒度控制仍是待解难题
-- 多模态基准数据集建设加速，反映出遥感AI从算法创新向系统评估与可重复性研究的范式转移
 
 ---
 
