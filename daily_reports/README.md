@@ -39,28 +39,28 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
 
-今日遥感AI研究呈现多模态融合与专业化基础模型并进的态势。高频地球观测数据表征学习、跨域时空融合的不确定性建模、以及视觉语言模型在能源预测中的应用成为焦点，同时SAR目标检测与低空经济基础设施也获得关注，体现从算法创新向场景落地的延伸。
+今日遥感AI研究呈现多模态融合与专业化模型并进的趋势。基础模型建设向高频时序数据延伸，视觉语言模型拓展至能源预测领域，SAR目标检测引入稀疏专家混合架构，同时低空经济基础设施研究关注通信控制协同设计。不确定性量化与跨域泛化成为时空融合任务的关键技术方向。
 
 ## ✨ 今日亮点
 
-- HighFM构建高频地球观测基础模型，填补时序密集遥感数据表征学习空白
-- 不确定性感知测试时自适应方法提升地表温度跨区域时空融合鲁棒性
-- Solar-VLM融合多模态视觉语言模型，增强光伏发电预测可解释性
+- HighFM构建面向高频地球观测数据的基础模型，强化时空表征学习能力
+- Solar-VLM将多模态视觉语言模型引入光伏功率预测，实现跨模态能源时序建模
+- SARES-DEIM在SAR舰船检测中融合稀疏混合专家与DETR架构，提升复杂场景鲁棒性
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260405] HighFM: Towards a Foundation Model for Learning Representations from High-Frequency Earth Observation Data | Girtsou Stella, Alexis Konstantinos, Giannopoulos Giorgos, Kontoes Harris | HighFM针对高频地球观测数据设计基础模型，学习时空联合表征以支持下游遥感任务。 | [#276](https://github.com/thinson/RS-PaperClaw/issues/276) |
-| [20260405] Uncertainty-Aware Test-Time Adaptation for Cross-Region Spatio-Temporal Fusion of Land Surface Temperature | Bouaziz Sofiane, Hafiane Adel, Canals Raphael, Nedjai Rachid | 提出不确定性感知的测试时自适应框架，缓解地表温度时空融合中的跨区域域偏移问题。 | [#277](https://github.com/thinson/RS-PaperClaw/issues/277) |
-| [20260405] Solar-VLM: Multimodal Vision-Language Models for Augmented Solar Power Forecasting | Fan Hang, Pei Haoran, Liang Runze, Liu Weican, Cheng Long et al. | Solar-VLM将视觉语言模型引入光伏功率预测，融合卫星图像、气象数据与自然语言信息。 | [#278](https://github.com/thinson/RS-PaperClaw/issues/278) |
-| [20260405] SARES-DEIM: Sparse Mixture-of-Experts Meets DETR for Robust SAR Ship Detection | Song Fenghao, Yang Shaojing, Zhou Xi | SARES-DEIM结合稀疏混合专家与DETR架构，提升SAR图像舰船检测的计算效率与精度。 | [#279](https://github.com/thinson/RS-PaperClaw/issues/279) |
-| [20260405] UAV Control and Communication Enabled Low-Altitude Economy: Challenges, Resilient Architecture and Co-design Strategies | Liang Tianhao, Su Nanchi, Ping Yuqi, Lei Guangyu, Chen Xinglin et al. | 探讨低空经济中无人机控制与通信的协同设计，提出韧性架构应对城市复杂环境挑战。 | [#280](https://github.com/thinson/RS-PaperClaw/issues/280) |
+| [20260405] HighFM: Towards a Foundation Model for Learning Representations from High-Frequency Earth Observation Data | Girtsou Stella, Alexis Konstantinos, Giannopoulos Giorgos, Kontoes Harris | HighFM针对高频卫星观测数据设计基础模型，学习细粒度时空表征以支撑下游遥感任务。 | [#276](https://github.com/thinson/RS-PaperClaw/issues/276) |
+| [20260405] Uncertainty-Aware Test-Time Adaptation for Cross-Region Spatio-Temporal Fusion of Land Surface Temperature | Bouaziz Sofiane, Hafiane Adel, Canals Raphael, Nedjai Rachid | 该研究提出不确定性感知的测试时自适应方法，解决地表温度跨区域时空融合中的域迁移问题。 | [#277](https://github.com/thinson/RS-PaperClaw/issues/277) |
+| [20260405] Solar-VLM: Multimodal Vision-Language Models for Augmented Solar Power Forecasting | Fan Hang, Pei Haoran, Liang Runze, Liu Weican, Cheng Long et al. | Solar-VLM整合视觉语言模型与多模态学习，增强光伏发电预测对气象条件的语义理解能力。 | [#278](https://github.com/thinson/RS-PaperClaw/issues/278) |
+| [20260405] SARES-DEIM: Sparse Mixture-of-Experts Meets DETR for Robust SAR Ship Detection | Song Fenghao, Yang Shaojing, Zhou Xi | SARES-DEIM将稀疏混合专家机制嵌入DETR检测框架，优化SAR图像舰船目标的复杂背景识别。 | [#279](https://github.com/thinson/RS-PaperClaw/issues/279) |
+| [20260405] UAV Control and Communication Enabled Low-Altitude Economy: Challenges, Resilient Architecture and Co-design Strategies | Liang Tianhao, Su Nanchi, Ping Yuqi, Lei Guangyu, Chen Xinglin et al. | 该综述探讨低空经济中无人机通信控制协同设计，提出韧性架构应对城市复杂环境挑战。 | [#280](https://github.com/thinson/RS-PaperClaw/issues/280) |
 
 ## 🔎 观察
 
-- 遥感基础模型正从通用向高频时序数据细分，时序密度与表征能力的平衡成为新挑战
-- 多模态大语言模型加速渗透垂直领域，能源预测等应用场景的可解释性需求驱动架构创新
+- 遥感基础模型正从静态图像向高频时序数据演进，时序分辨率成为新的技术竞争维度
+- 视觉语言模型的跨域迁移能力使其成为连接遥感数据与专业应用（如能源、交通）的桥梁
 
 ---
 
