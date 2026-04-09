@@ -7,30 +7,30 @@
 
 今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
 
-今日遥感AI研究呈现多元化趋势：空间智能数据引擎、星上实时处理架构、神经辐射场时空建模等方向并进。量子-经典混合计算首次进入遥感分割领域，不确定性量化与物理信息神经网络成为技术热点，体现领域向可解释性与高效推理的转型。
+今日遥感AI研究呈现三大趋势：一是空间智能与神经表示技术深度融合，OpenSpatial与NeRF类方法推动三维时空建模；二是星上实时处理与量子计算等新型计算范式兴起，拓展遥感系统边界；三是不确定性量化与物理约束嵌入成为提升模型可靠性的关键路径。
 
 ## ✨ 今日亮点
 
-- OpenSpatial构建空间智能数据引擎，支持3D边界框生成与空间理解任务
-- IRIDE HEO验证星上处理服务架构，推动对地观测实时化应用落地
-- HQF-Net首创量子-经典混合网络，探索量子机器学习在遥感分割的潜力
+- OpenSpatial构建空间智能数据引擎，系统化生成3D标注数据
+- 神经辐射场技术延伸至地球观测连续时空表示学习
+- 量子-经典混合网络首次应用于遥感图像分割任务
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260408] OpenSpatial: A Principled Data Engine for Empowering Spatial Intelligence | Liu Jianhui, Sun Haoze, Li Wenbo, Zhang Yanbing, Yang Rui et al. | OpenSpatial提出原则性空间智能数据引擎，通过结构化3D标注流程赋能空间推理能力。 | [#297](https://github.com/thinson/RS-PaperClaw/issues/297) |
-| [20260408] Assessing the Added Value of Onboard Earth Observation Processing with the IRIDE HEO Service Segment | Parampuneet Kaur Thind, Mwangi Charles, Varetto Giovanni, Sarti Lorenzo, Papa Andrea et al. | IRIDE HEO服务段评估星上对地观测处理增值效应，构建面向高椭圆轨道任务的服务化架构。 | [#298](https://github.com/thinson/RS-PaperClaw/issues/298) |
-| [20260408] Location Is All You Need: Continuous Spatiotemporal Neural Representations of Earth Observation Data | Madadikhaljan Mojgan, Prexl Jonathan, Wittmann Isabelle, Conrad M Albrecht, Schmitt Michael | 基于神经辐射场构建连续时空表征，以位置编码实现地球观测数据的高效隐式建模。 | [#299](https://github.com/thinson/RS-PaperClaw/issues/299) |
-| [20260408] Canopy Tree Height Estimation Using Quantile Regression: Modeling and Evaluating Uncertainty in Remote Sensing | Schrödter Karsten, Pauls Jan, Gieseke Fabian | 采用分位数回归估计冠层树高，系统建模遥感反演中的预测不确定性分布。 | [#300](https://github.com/thinson/RS-PaperClaw/issues/300) |
-| [20260408] SCT-MOT: Enhancing Air-to-Air Multiple UAVs Tracking with Swarm-Coupled Motion and Trajectory Guidance | Chu Zhaochen, Song Tao, Jin Ren, He Shaoming, Lin Defu et al. | SCT-MOT融合蜂群耦合运动与轨迹引导，提升空中对空中多无人机跟踪鲁棒性。 | [#301](https://github.com/thinson/RS-PaperClaw/issues/301) |
-| [20260408] HQF-Net: A Hybrid Quantum-Classical Multi-Scale Fusion Network for Remote Sensing Image Segmentation | Md Aminur Hossain, Ayush V. Patel, Gole Siddhant, Sanjay K. Singh, Banerjee Biplab | HQF-Net设计量子-经典混合多尺度融合网络，将变分量子电路嵌入遥感图像分割框架。 | [#302](https://github.com/thinson/RS-PaperClaw/issues/302) |
-| [20260408] Accelerating 4D Hyperspectral Imaging through Physics-Informed Neural Representation and Adaptive Sampling | Ho Chi-Jui, Bhakta Harsh, Xiong Wei, Antipa Nicholas | 物理信息神经表征结合自适应采样，实现高光谱四维成像的高效加速重建。 | [#303](https://github.com/thinson/RS-PaperClaw/issues/303) |
+| [20260408] OpenSpatial: A Principled Data Engine for Empowering Spatial Intelligence | Liu Jianhui, Sun Haoze, Li Wenbo, Zhang Yanbing, Yang Rui et al. | OpenSpatial提出原则性数据引擎，通过程序化生成与人工验证结合，构建大规模3D空间理解数据集。 | [#297](https://github.com/thinson/RS-PaperClaw/issues/297) |
+| [20260408] Assessing the Added Value of Onboard Earth Observation Processing with the IRIDE HEO Service Segment | Parampuneet Kaur Thind, Mwangi Charles, Varetto Giovanni, Sarti Lorenzo, Papa Andrea et al. | IRIDE高椭圆轨道服务段评估星上处理对地观测数据的增值效应，推动服务化架构在轨应用。 | [#298](https://github.com/thinson/RS-PaperClaw/issues/298) |
+| [20260408] Location Is All You Need: Continuous Spatiotemporal Neural Representations of Earth Observation Data | Madadikhaljan Mojgan, Prexl Jonathan, Wittmann Isabelle, Conrad M Albrecht, Schmitt Michael | 基于位置编码的连续时空神经表示方法，将NeRF技术扩展至不规则采样的地球观测数据建模。 | [#299](https://github.com/thinson/RS-PaperClaw/issues/299) |
+| [20260408] Canopy Tree Height Estimation Using Quantile Regression: Modeling and Evaluating Uncertainty in Remote Sensing | Schrödter Karsten, Pauls Jan, Gieseke Fabian | 分位数回归框架用于冠层树高估计，显式建模预测不确定性以提升遥感反演可靠性。 | [#300](https://github.com/thinson/RS-PaperClaw/issues/300) |
+| [20260408] SCT-MOT: Enhancing Air-to-Air Multiple UAVs Tracking with Swarm-Coupled Motion and Trajectory Guidance | Chu Zhaochen, Song Tao, Jin Ren, He Shaoming, Lin Defu et al. | SCT-MOT利用蜂群耦合运动与轨迹引导，解决空中对空中多无人机跟踪的密集遮挡难题。 | [#301](https://github.com/thinson/RS-PaperClaw/issues/301) |
+| [20260408] HQF-Net: A Hybrid Quantum-Classical Multi-Scale Fusion Network for Remote Sensing Image Segmentation | Md Aminur Hossain, Ayush V. Patel, Gole Siddhant, Sanjay K. Singh, Banerjee Biplab | HQF-Net设计混合量子-经典多尺度融合网络，探索量子机器学习在遥感语义分割中的潜力。 | [#302](https://github.com/thinson/RS-PaperClaw/issues/302) |
+| [20260408] Accelerating 4D Hyperspectral Imaging through Physics-Informed Neural Representation and Adaptive Sampling | Ho Chi-Jui, Bhakta Harsh, Xiong Wei, Antipa Nicholas | 物理信息神经表示结合自适应采样，实现四维高光谱成像的高效压缩与重建加速。 | [#303](https://github.com/thinson/RS-PaperClaw/issues/303) |
 
 ## 🔎 观察
 
-- 神经表征技术（NeRF/PINN）正从计算机视觉向遥感时空建模快速渗透，或重塑数据存储与传输范式。
-- 量子机器学习首次现身遥感分割任务，虽处探索阶段，但预示算力瓶颈下新型计算架构的尝试。
+- 神经表示技术正从计算机视觉向遥感专用化演进，时空连续建模成为地学基础模型的新基座。
+- 星上智能处理与量子计算等前沿范式同步涌现，暗示遥感系统架构可能面临代际变革窗口。
 
 ---
 
