@@ -78,28 +78,28 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
 
-今日遥感AI研究聚焦多模态融合与轻量化部署两大方向。Vision Transformer持续渗透卫星影像分析领域，涵盖多尺度表征、SAR-光学配准及高光谱甲烷检测等场景。同时，神经架构搜索与知识蒸馏推动边缘计算应用，红外超分辨率与跨模态匹配技术亦获关注。
+今日遥感AI研究聚焦多模态融合与轻量化部署两大方向。Vision Transformer持续渗透卫星影像分析领域，涵盖多尺度表征、SAR-光学配准及高光谱甲烷检测等场景。同时，神经架构搜索与知识蒸馏推动边缘计算应用，红外超分辨率则关注双分支架构设计。
 
 ## ✨ 今日亮点
 
 - ALiBi位置编码优化多模态多尺度卫星影像表征学习
-- SatReg以回归驱动NAS实现轻量化卫星图像分割
+- SatReg提出回归驱动NAS实现轻量化卫星图像分割
 - EMIT高光谱数据结合深度学习实现全球甲烷点源监测
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260411] Multi-modal, multi-scale representation learning for satellite imagery analysis just needs a good ALiBi | Kage Patrick, Andreadis Pavlos | 提出基于ALiBi位置编码的多模态多尺度卫星影像表征学习方法，优化Vision Transformer处理多尺度特征的能力。 | [#321](https://github.com/thinson/RS-PaperClaw/issues/321) |
-| [20260411] SatReg: Regression-based Neural Architecture Search for Lightweight Satellite Image Segmentation | Humes Edward, Mohsenin Tinoosh | SatReg采用回归驱动神经架构搜索，结合知识蒸馏开发轻量化卫星图像分割模型，适配边缘计算场景。 | [#322](https://github.com/thinson/RS-PaperClaw/issues/322) |
-| [20260411] Are Pretrained Image Matchers Good Enough for SAR-Optical Satellite Registration? | Corley Isaac, Stoken Alex, Berton Gabriele | 系统评估预训练图像匹配器在SAR-光学卫星配准中的零样本迁移性能，探讨跨模态匹配可行性。 | [#323](https://github.com/thinson/RS-PaperClaw/issues/323) |
-| [20260411] Dual-Branch Remote Sensing Infrared Image Super-Resolution | Ge Xining, Chang Gengjia, Yuan Weijun, Li Zhan, Chen Zhanglu et al. | 设计双分支网络架构用于遥感红外图像超分辨率，针对性处理热红外影像的空间细节恢复问题。 | [#324](https://github.com/thinson/RS-PaperClaw/issues/324) |
-| [20260411] Global monitoring of methane point sources using deep learning on hyperspectral radiance measurements from EMIT | Vishal V. Batchu, Conserva Michelangelo, Wilson Alex, Anna M. Michalak, Gulshan Varun et al. | 基于EMIT高光谱辐射测量数据，利用深度学习Vision Transformer实现全球甲烷点源排放的自动监测与定位。 | [#325](https://github.com/thinson/RS-PaperClaw/issues/325) |
+| [20260411] Multi-modal, multi-scale representation learning for satellite imagery analysis just needs a good ALiBi | Kage Patrick, Andreadis Pavlos | 论文提出基于ALiBi位置编码的多模态多尺度表征学习方法，优化卫星影像分析中的长距离依赖建模。 | [#321](https://github.com/thinson/RS-PaperClaw/issues/321) |
+| [20260411] SatReg: Regression-based Neural Architecture Search for Lightweight Satellite Image Segmentation | Humes Edward, Mohsenin Tinoosh | SatReg采用回归策略引导神经架构搜索，结合知识蒸馏构建面向边缘计算的轻量级卫星图像分割模型。 | [#322](https://github.com/thinson/RS-PaperClaw/issues/322) |
+| [20260411] Are Pretrained Image Matchers Good Enough for SAR-Optical Satellite Registration? | Corley Isaac, Stoken Alex, Berton Gabriele | 研究系统评估预训练图像匹配器在SAR-光学卫星配准中的零样本迁移能力，探讨跨模态匹配瓶颈。 | [#323](https://github.com/thinson/RS-PaperClaw/issues/323) |
+| [20260411] Dual-Branch Remote Sensing Infrared Image Super-Resolution | Ge Xining, Chang Gengjia, Yuan Weijun, Li Zhan, Chen Zhanglu et al. | 双分支网络架构针对遥感红外图像超分辨率任务，分别处理空间细节与热辐射特征以重建高分辨率影像。 | [#324](https://github.com/thinson/RS-PaperClaw/issues/324) |
+| [20260411] Global monitoring of methane point sources using deep learning on hyperspectral radiance measurements from EMIT | Vishal V. Batchu, Conserva Michelangelo, Wilson Alex, Anna M. Michalak, Gulshan Varun et al. | 基于EMIT传感器高光谱辐射测量数据，构建深度学习模型实现全球范围内甲烷点源排放的自动识别与量化。 | [#325](https://github.com/thinson/RS-PaperClaw/issues/325) |
 
 ## 🔎 观察
 
-- 位置编码技术（ALiBi）正成为优化卫星影像多尺度处理的新切入点，或替代传统插值与金字塔结构。
-- 轻量化NAS与知识蒸馏的组合范式，反映出遥感模型从云端向边缘端部署的产业化需求加速显现。
+- 位置编码技术正成为提升卫星影像Transformer性能的关键切入点，ALiBi的外推特性或缓解多尺度训练-推理不一致问题。
+- 遥感模型轻量化从单纯压缩向自动化架构设计演进，NAS与任务特定回归目标结合可能重塑边缘部署范式。
 
 ---
 
