@@ -7,28 +7,28 @@
 
 今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
 
-今日遥感AI研究呈现轻量化与智能化并进趋势。星载AI图像修复、多智能体事件检测等方向聚焦边缘计算与自主决策能力；高光谱去噪、梯田数据集构建等研究则深化多模态融合与农业遥感应用。无人机应急通信与路径规划协同亦受关注。
+今日遥感AI研究聚焦轻量化部署与多模态融合两大主线。星载边缘计算需求推动轻量图像修复网络发展，多智能体系统赋能卫星影像事件理解与描述。高光谱去噪、梯田地块提取及全色锐化等任务持续深化，数学物理方法（欧拉公式、全变分）与深度学习结合趋势明显。
 
 ## ✨ 今日亮点
 
-- 星载AI轻量化修复网络，解决卫星平台算力受限下的实时图像增强难题
-- 多智能体反馈系统实现卫星影像新闻事件的自动检测与描述生成
-- 全球多模态梯田地块边界数据集发布，支撑农业遥感精准提取研究
+- 星载AI轻量化：面向卫星在轨处理的轻量学习图像修复方法
+- 多智能体事件感知：卫星影像新闻事件检测与描述的反馈协作系统
+- 多模态农业数据：全球梯田地块边界数据集融合光学与高程信息
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260414] Rethinking Satellite Image Restoration for Onboard AI: A Lightweight Learning-Based Approach | Dorise Adrien, Bellizzi Marjorie, Hlimi Omar | 提出轻量学习型卫星图像修复方法，面向星载AI的算力约束优化卷积网络架构。 | [#343](https://github.com/thinson/RS-PaperClaw/issues/343) |
-| [20260414] A Multi-Agent Feedback System for Detecting and Describing News Events in Satellite Imagery | Anderson Madeline, Klassen Mikhail, Hoover Ash, Cahoy Kerri | 构建多智能体反馈系统，融合时序变化检测与事件描述生成，实现卫星影像新闻事件自动发现。 | [#344](https://github.com/thinson/RS-PaperClaw/issues/344) |
-| [20260414] Spatial-Spectral Adaptive Fidelity and Noise Prior Reduction Guided Hyperspectral Image Denoising | Xie Xuelin, Lu Xiliang, Wang Zhengshan, Zhang Yang, Chen Long | 设计空谱自适应保真与噪声先验降维引导的高光谱去噪框架，结合全变分正则化去除混合噪声。 | [#345](https://github.com/thinson/RS-PaperClaw/issues/345) |
-| [20260414] A Heterogeneous Dual-Network Framework for Emergency Delivery UAVs: Communication Assurance and Path Planning Coordination | Huang Ping, Duo Bin, Godfred Ziedor, Huo Liuwei, Ning Jin et al. | 提出异构双网络框架，协同优化应急配送无人机的通信保障与路径规划任务。 | [#346](https://github.com/thinson/RS-PaperClaw/issues/346) |
-| [20260414] GTPBD-MM: A Global Terraced Parcel and Boundary Dataset with Multi-Modality | Zhang Zhiwei, Zeng Xingyuan, Kong Xinkai, Zhang Kunquan, Liang Haoyuan et al. | 发布全球梯田地块与边界多模态数据集GTPBD-MM，整合遥感影像与高程模型支撑农业 parcel 提取。 | [#347](https://github.com/thinson/RS-PaperClaw/issues/347) |
+| [20260414] Rethinking Satellite Image Restoration for Onboard AI: A Lightweight Learning-Based Approach | Dorise Adrien, Bellizzi Marjorie, Hlimi Omar | 提出轻量学习网络实现卫星图像在轨修复，降低星载AI计算资源消耗。 | [#343](https://github.com/thinson/RS-PaperClaw/issues/343) |
+| [20260414] A Multi-Agent Feedback System for Detecting and Describing News Events in Satellite Imagery | Anderson Madeline, Klassen Mikhail, Hoover Ash, Cahoy Kerri | 构建多智能体反馈系统，实现卫星影像多时相变化检测与事件自动描述。 | [#344](https://github.com/thinson/RS-PaperClaw/issues/344) |
+| [20260414] Spatial-Spectral Adaptive Fidelity and Noise Prior Reduction Guided Hyperspectral Image Denoising | Xie Xuelin, Lu Xiliang, Wang Zhengshan, Zhang Yang, Chen Long | 设计空间-光谱自适应保真与噪声先验降维方法，提升高光谱混合噪声去除效果。 | [#345](https://github.com/thinson/RS-PaperClaw/issues/345) |
+| [20260414] GTPBD-MM: A Global Terraced Parcel and Boundary Dataset with Multi-Modality | Zhang Zhiwei, Zeng Xingyuan, Kong Xinkai, Zhang Kunquan, Liang Haoyuan et al. | 发布全球多模态梯田地块边界数据集，融合遥感影像与数字高程模型信息。 | [#347](https://github.com/thinson/RS-PaperClaw/issues/347) |
+| [20260414] Euler-inspired Decoupling Neural Operator for Efficient Pansharpening | Zhu Anqi, Ma Mengting, Jiang Yizhen, Li Xiangdong, Zheng Kai et al. | 基于欧拉公式解耦神经算子，实现高效全色锐化频率域处理。 | [#349](https://github.com/thinson/RS-PaperClaw/issues/349) |
 
 ## 🔎 观察
 
-- 星载AI与边缘智能成为热点，轻量化网络设计正从地面向在轨处理场景迁移
-- 多智能体架构与遥感结合显现新范式，事件驱动的智能解译或改变传统变化检测流程
+- 星载边缘智能成为新焦点，轻量化设计从模型压缩转向任务特定的网络架构重构。
+- 多智能体架构开始渗透遥感解译流程，人机协作范式或重塑卫星影像信息提取模式。
 
 ---
 
