@@ -7,30 +7,30 @@
 
 今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
 
-今日遥感AI研究呈现多模态融合与极端条件鲁棒性并重趋势。视觉基础模型持续向垂直领域渗透，SAM适配InSAR相位数据、CLIP驱动土地覆盖超分；同时关注恶劣天气成像质量，涵盖雾霾低光建筑提取与物理大气对抗攻击。跨模态创新显著，卫星图像生成声景开辟地理声学新方向。
+今日遥感AI研究呈现多模态融合与鲁棒性增强两大主线。视觉基础模型持续向垂直领域渗透，SAM适配、跨模态生成与弱监督学习成为热点；同时，恶劣天气与对抗攻击下的模型可靠性受到关注，数据集建设与物理仿真并重推进。
 
 ## ✨ 今日亮点
 
-- Geo2Sound构建首个地理对齐声景生成框架，实现卫星影像到环境音频的跨模态合成
-- WILD-SAM设计相位感知专家混合机制，破解InSAR干涉图 landslide 检测难题
-- Physically-Induced攻击引入大气物理约束，提升对抗样本在遥感分类中的迁移性
+- Geo2Sound开创卫星影像到声景的跨模态生成新方向，拓展遥感数据应用边界
+- WILD-SAM将SAM引入InSAR相位干涉图，专家混合架构适配地质灾害监测
+- MapSR探索视觉基础模型驱动的土地覆盖图超分辨率，降低标注依赖
 
 ## 🗂 今日文章列表
 
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260416] Building Extraction from Remote Sensing Imagery under Hazy and Low-light Conditions: Benchmark and Baseline | Sang Feifei, Lu Wei, Chen Hongruixuan, Chen Sibao, Luo Bin | 待提取 | 构建雾霾与低光照条件下的遥感建筑提取基准数据集，填补极端天气场景评估空白 | [#355](https://github.com/thinson/RS-PaperClaw/issues/355) |
-| [20260416] OmniGCD: Abstracting Generalized Category Discovery for Modality Agnosticism | Shipard Jordan, Wiliem Arnold, Kien Nguyen Thanh, Xiang Wei, Fookes Clinton | 待提取 | 提出模态无关的广义类别发现框架OmniGCD，统一处理视觉、文本等多模态零样本识别 | [#356](https://github.com/thinson/RS-PaperClaw/issues/356) |
-| [20260416] Geo2Sound: A Scalable Geo-Aligned Framework for Soundscape Generation from Satellite Imagery | Wu Kunlin, Wang Yanning, Tan Haofeng, Chen Boyi, Fei Teng, Ma Xianping, Yue Yang, Zhou Zan, Liu Xiaofeng | 待提取 | Geo2Sound建立可扩展的地理-声学对齐框架，首次实现卫星影像驱动的声景生成 | [#357](https://github.com/thinson/RS-PaperClaw/issues/357) |
-| [20260416] Physically-Induced Atmospheric Adversarial Perturbations: Enhancing Transferability and Robustness in Remote Sensing Image Classification | Zhuang Weiwei, Xie Wangze, Zhang Qi, Du Xia, Lin Zihan, Lin Zheng, Cai Hanlin, Zhou Jizhe, Fang Zihan, Pun Chi-man, Ni Wei, Luo Jun | 待提取 | 设计物理诱导的大气对抗扰动方法，通过雾模拟增强遥感图像分类攻击的迁移性与鲁棒性 | [#358](https://github.com/thinson/RS-PaperClaw/issues/358) |
-| [20260416] A multi-platform LiDAR dataset for standardized forest inventory measurement at long term ecological monitoring sites | Michael R. Chang, Candotti Anna, Karl von Ellenrieder, Tomelleri Enrico, Camurri Marco | 待提取 | 发布多平台激光雷达森林清查数据集，整合无人机、移动与地基扫描标准化生态监测 | [#359](https://github.com/thinson/RS-PaperClaw/issues/359) |
-| [20260416] MapSR: Prompt-Driven Land Cover Map Super-Resolution via Vision Foundation Models | Wang Ruiqi, Yu Qi, Ma Jie, Wu Hanlin | 待提取 | MapSR利用视觉基础模型与提示驱动策略，实现弱监督土地覆盖地图超分辨率重建 | [#360](https://github.com/thinson/RS-PaperClaw/issues/360) |
-| [20260416] WILD-SAM: Phase-Aware Expert Adaptation of SAM for Landslide Detection in Wrapped InSAR Interferograms | Pan Yucheng, Li Heping, Liu Zhangle, Hussain Sajid, Pan Bin | 待提取 | WILD-SAM针对缠绕InSAR干涉图，采用相位感知专家混合机制适配SAM进行滑坡检测 | [#361](https://github.com/thinson/RS-PaperClaw/issues/361) |
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260416] Building Extraction from Remote Sensing Imagery under Hazy and Low-light Conditions: Benchmark and Baseline | Sang Feifei, Lu Wei, Chen Hongruixuan, Chen Sibao, Luo Bin | 构建雾霾与低光照条件下的建筑提取基准数据集，填补恶劣天气场景评估空白。 | [#355](https://github.com/thinson/RS-PaperClaw/issues/355) |
+| [20260416] OmniGCD: Abstracting Generalized Category Discovery for Modality Agnosticism | Shipard Jordan, Wiliem Arnold, Kien Nguyen Thanh, Xiang Wei, Fookes Clinton | 提出模态无关的广义类别发现框架，实现跨模态零样本泛化能力统一抽象。 | [#356](https://github.com/thinson/RS-PaperClaw/issues/356) |
+| [20260416] Geo2Sound: A Scalable Geo-Aligned Framework for Soundscape Generation from Satellite Imagery | Wu Kunlin, Wang Yanning, Tan Haofeng, Chen Boyi, Fei Teng, Ma Xianping, Yue Yang, Zhou Zan, Liu Xiaofeng | Geo2Sound建立地理对齐的卫星影像到声景生成框架，实现可扩展音频合成。 | [#357](https://github.com/thinson/RS-PaperClaw/issues/357) |
+| [20260416] Physically-Induced Atmospheric Adversarial Perturbations: Enhancing Transferability and Robustness in Remote Sensing Image Classification | Zhuang Weiwei, Xie Wangze, Zhang Qi, Du Xia, Lin Zihan, Lin Zheng, Cai Hanlin, Zhou Jizhe, Fang Zihan, Pun Chi-man, Ni Wei, Luo Jun | 设计物理诱导的大气对抗扰动方法，增强遥感图像分类的迁移攻击鲁棒性。 | [#358](https://github.com/thinson/RS-PaperClaw/issues/358) |
+| [20260416] A multi-platform LiDAR dataset for standardized forest inventory measurement at long term ecological monitoring sites | Michael R. Chang, Candotti Anna, Karl von Ellenrieder, Tomelleri Enrico, Camurri Marco | 发布多平台激光雷达森林清查数据集，支撑长期生态监测站点标准化测量。 | [#359](https://github.com/thinson/RS-PaperClaw/issues/359) |
+| [20260416] MapSR: Prompt-Driven Land Cover Map Super-Resolution via Vision Foundation Models | Wang Ruiqi, Yu Qi, Ma Jie, Wu Hanlin | MapSR以提示驱动视觉基础模型实现土地覆盖图超分辨率，采用弱监督策略。 | [#360](https://github.com/thinson/RS-PaperClaw/issues/360) |
+| [20260416] WILD-SAM: Phase-Aware Expert Adaptation of SAM for Landslide Detection in Wrapped InSAR Interferograms | Pan Yucheng, Li Heping, Liu Zhangle, Hussain Sajid, Pan Bin | WILD-SAM通过相位感知专家适配，将SAM扩展至缠绕InSAR干涉图的滑坡检测。 | [#361](https://github.com/thinson/RS-PaperClaw/issues/361) |
 
 ## 🔎 观察
 
-- 视觉基础模型正加速向遥感专用化演进，SAM、CLIP等架构通过领域适配模块（相位感知、提示驱动）解决地理空间数据异质性
-- 多模态研究从视觉-文本向视觉-音频拓展，Geo2Sound预示遥感可能催生地理声学（Geo-Acoustics）新兴交叉方向
+- 视觉基础模型正从通用分割向地球科学专用任务深度适配，相位感知等物理约束融入成为差异化关键
+- 跨模态生成与模态无关学习同步涌现，暗示遥感AI正突破视觉单模态局限，向多源感知融合演进
 
 ---
 
