@@ -145,6 +145,10 @@
         top: 20px;
         align-self: start;
         min-width: 0;
+        max-height: calc(100vh - 40px);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
       }
 
       .sidebar h2,
@@ -167,6 +171,8 @@
         display: grid;
         gap: 10px;
         min-width: 0;
+        overflow-y: auto;
+        padding-right: 4px;
       }
 
       .report-item {
@@ -281,6 +287,7 @@
 
       .table-wrap table {
         min-width: 980px;
+        table-layout: fixed;
       }
 
       .papers-mobile {
@@ -327,6 +334,29 @@
 
       th {
         background: rgba(45, 36, 25, 0.04);
+      }
+
+      .col-title {
+        width: 29%;
+      }
+
+      .col-authors {
+        width: 22%;
+      }
+
+      .col-institution {
+        width: 18%;
+      }
+
+      .col-summary {
+        width: 31%;
+      }
+
+      .paper-col-institution,
+      .paper-card-value.institution {
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.55;
       }
 
       a {
@@ -810,6 +840,9 @@
 
         .sidebar {
           padding: 14px;
+          max-height: none;
+          overflow: visible;
+          display: block;
         }
 
         .content {
@@ -1157,6 +1190,8 @@
       const issueCache = new Map();
       let overlayHistoryActive = false;
       const REPO_API_URL = "https://api.github.com/repos/thinson/RS-PaperClaw";
+      const TREE_API_URL =
+        "https://api.github.com/repos/thinson/RS-PaperClaw/git/trees/main?recursive=1";
 
       function normalizeReportBase(input) {
         const trimmed = input.trim();
@@ -1348,6 +1383,33 @@
 
       function buildReportUrl(basePath, date) {
         return `${basePath}/${date.slice(0, 6)}/${date}.md`;
+      }
+
+      async function fetchAvailableReportDates() {
+        try {
+          const response = await fetch(TREE_API_URL, {
+            headers: {
+              Accept: "application/vnd.github+json",
+            },
+          });
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+
+          const payload = await response.json();
+          const tree = Array.isArray(payload.tree) ? payload.tree : [];
+          const dates = tree
+            .map((item) => item.path || "")
+            .map((path) => path.match(/^daily_reports\/\d{6}\/(\d{8})\.md$/))
+            .filter(Boolean)
+            .map((match) => match[1])
+            .sort((left, right) => right.localeCompare(left));
+
+          return [...new Set(dates)];
+        } catch (error) {
+          console.warn("failed to fetch report dates from git tree", error);
+          return buildRecentDates();
+        }
       }
 
       function toDisplayUrl(rawUrl) {
@@ -1827,9 +1889,9 @@
                         }
                       </div>
                     </td>
-                    <td>${escapeHtml(item.authors || "-")}</td>
-                    <td>${escapeHtml(item.institution || "-")}</td>
-                    <td>${escapeHtml(item.summary || "-")}</td>
+                    <td class="paper-col-authors">${escapeHtml(item.authors || "-")}</td>
+                    <td class="paper-col-institution">${escapeHtml(item.institution || "-")}</td>
+                    <td class="paper-col-summary">${escapeHtml(item.summary || "-")}</td>
                   </tr>
                 `
               )
@@ -1862,7 +1924,7 @@
                     </div>
                     <div class="paper-card-row">
                       <span class="paper-card-label">单位</span>
-                      <div class="paper-card-value">${escapeHtml(item.institution || "-")}</div>
+                      <div class="paper-card-value institution">${escapeHtml(item.institution || "-")}</div>
                     </div>
                     <div class="paper-card-row">
                       <span class="paper-card-label">一句话概括</span>
@@ -1916,10 +1978,10 @@
               <table>
                 <thead>
                   <tr>
-                    <th>标题</th>
-                    <th>作者</th>
-                    <th>单位</th>
-                    <th>一句话概括</th>
+                    <th class="col-title">标题</th>
+                    <th class="col-authors">作者</th>
+                    <th class="col-institution">单位</th>
+                    <th class="col-summary">一句话概括</th>
                   </tr>
                 </thead>
                 <tbody>${articleRows}</tbody>
@@ -1970,7 +2032,7 @@
 
       async function loadReports() {
         const basePath = DEFAULT_REPORT_BASE;
-        const dates = buildRecentDates();
+        const dates = await fetchAvailableReportDates();
         closePaperOverlay({ fromHistory: true, resetHistory: true });
         loadSummary.textContent = `正在读取 ${dates.length} 天日报...`;
         reportList.innerHTML = '<div class="status">正在读取内容...</div>';
@@ -1984,9 +2046,11 @@
             .filter((item) => item.report)
             .map((item) => item.report)
             .sort((left, right) => right.date.localeCompare(left.date));
-          const summaryText = `已展示 ${reports.length + 1} 项，其中 ${reports.length} 天日报，范围 ${formatDate(
-            dates[0]
-          )} 到 ${formatDate(dates[dates.length - 1])}。`;
+          const summaryText = reports.length
+            ? `已展示 ${reports.length} 天日报，范围 ${formatDate(
+                reports[0].date
+              )} 到 ${formatDate(reports[reports.length - 1].date)}。`
+            : `已尝试读取 ${dates.length} 天日报。`;
 
           if (!reports.length) {
             renderList([], "", summaryText);
