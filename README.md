@@ -23,6 +23,10 @@ English version: **[README_EN.md](./README_EN.md)**
 - 项目主页（GitHub Pages）：**https://thinson.github.io/RS-PaperClaw/**
 - 日报归档目录：**[daily_reports/](./daily_reports/README.md)**
 
+## 🔗 Related Projects
+
+- **papers.cool**: https://papers.cool/
+
 ## 🖼️ 界面预览
 
 | 电脑端 UI | 移动端 UI |

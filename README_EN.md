@@ -23,6 +23,10 @@
 - GitHub Pages: **https://thinson.github.io/RS-PaperClaw/**
 - Digest archive: **[daily_reports/](./daily_reports/README.md)**
 
+## 🔗 Related Projects
+
+- **papers.cool**: https://papers.cool/
+
 ## 🖼️ UI Preview
 
 | Desktop UI | Mobile UI |
