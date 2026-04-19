@@ -1905,24 +1905,22 @@
           )
           .join("") +
           `
-            <a
+            <${
+              canLoadMore ? "button" : "a"
+            }
               class="report-item more"
-              href="https://github.com/thinson/RS-PaperClaw/tree/main/daily_reports"
-              target="_blank"
-              rel="noreferrer"
+              ${
+                canLoadMore
+                  ? 'id="loadMoreReports" type="button"'
+                  : 'href="https://github.com/thinson/RS-PaperClaw/tree/main/daily_reports" target="_blank" rel="noreferrer"'
+              }
             >
               <strong>More</strong>
-              <span>View all reports</span>
-            </a>
-          ` +
-          (canLoadMore
-            ? `
-              <button class="report-item more" id="loadMoreReports" type="button">
-                <strong>Load More</strong>
-                <span>继续加载更早 15 天</span>
-              </button>
-            `
-            : "");
+              <span>${
+                canLoadMore ? "继续加载更早 15 天" : "View all reports"
+              }</span>
+            </${canLoadMore ? "button" : "a"}>
+          `;
 
         reportList.querySelectorAll(".report-item").forEach((button) => {
           if (button.tagName === "A" || button.id === "loadMoreReports") return;
