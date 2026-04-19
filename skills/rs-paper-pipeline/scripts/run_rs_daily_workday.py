@@ -12,6 +12,7 @@ import os
 import json
 import time
 import fcntl
+import re
 import subprocess
 from datetime import datetime, timedelta
 
@@ -109,6 +110,31 @@ def _short_title(title: str, limit: int = 88) -> str:
     return text[: limit - 3].rstrip() + "..."
 
 
+def _extract_markdown_section(body: str, heading: str) -> list[str]:
+    pattern = re.compile(
+        rf"^##\s+{re.escape(heading)}\s*$([\s\S]*?)(?=^##\s+|\n---\n|\Z)",
+        re.MULTILINE,
+    )
+    match = pattern.search(body or "")
+    if not match:
+        return []
+    section = match.group(1).strip()
+    lines: list[str] = []
+    for raw_line in section.splitlines():
+        line = raw_line.strip()
+        if not line or not line.startswith("- "):
+            continue
+        lines.append(line[2:].strip())
+    return lines
+
+
+def _build_daily_report_urls(date_str: str) -> tuple[str, str]:
+    owner, repo = CONFIG.github_repo.split("/", 1)
+    markdown_url = f"https://github.com/{CONFIG.github_repo}/blob/main/daily_reports/{date_str[:6]}/{date_str}.md"
+    portal_url = f"https://{owner}.github.io/{repo}/"
+    return markdown_url, portal_url
+
+
 def _build_notify_message(date_str: str, stats_path: str, issue) -> tuple[str, str]:
     title = f"遥感AI日报 {date_str}"
     stats = _load_stats(stats_path)
@@ -116,32 +142,74 @@ def _build_notify_message(date_str: str, stats_path: str, issue) -> tuple[str, s
     selected_count = stats.get("llm_selected_count")
     candidate_count = stats.get("candidate_count")
     included_count = len(selected_items) if selected_items else selected_count
+    existing_count = stats.get("existing_count")
+    refresh_count = stats.get("refresh_count")
+    todo_count = stats.get("todo_count")
 
     if not issue:
-        lines = [f"RS {title}", "", f"日期: {date_str}"]
+        lines = [
+            f"## {title}",
+            "",
+            f"> 日期：{date_str}",
+        ]
         if candidate_count is not None and selected_count is not None:
-            lines.append(f"统计: 候选 {candidate_count} 篇 / 筛中 {selected_count} 篇")
-        lines.append("结果: 未生成日报 issue，可能当天没有命中论文或生成失败。")
+            lines.append(f"> 统计：候选 **{candidate_count}** 篇 ｜ 筛中 **{selected_count}** 篇")
+        lines.extend(
+            [
+                "",
+                "## 状态说明",
+                "",
+                "- 当天日报 issue 尚未生成，可能是未命中论文，或生成流程失败。",
+                "- 可先检查 `daily_digest_llm_upgrade.py` 和 `sync_daily_reports_to_repo.py` 日志。",
+            ]
+        )
         return title, "\n".join(lines)
 
+    issue_body = issue.body or ""
+    highlights = _extract_markdown_section(issue_body, "✨ 今日亮点")
+    observations = _extract_markdown_section(issue_body, "🔎 观察")
+    markdown_url, portal_url = _build_daily_report_urls(date_str)
+
     lines = [
-        f"RS {title}",
+        f"## {title}",
         "",
-        f"Issue: {issue.html_url}",
-        f"日期: {date_str}",
+        f"> 日期：{date_str}",
+        f"> 日报 Issue：[#{issue.number}]({issue.html_url})",
     ]
     if candidate_count is not None and selected_count is not None:
-        lines.append(f"统计: 候选 {candidate_count} 篇 / 筛中 {selected_count} 篇 / 纳入 {included_count} 篇")
+        stats_line = f"> 统计：候选 **{candidate_count}** 篇 ｜ 筛中 **{selected_count}** 篇 ｜ 纳入 **{included_count}** 篇"
+        if existing_count is not None and refresh_count is not None and todo_count is not None:
+            stats_line += f" ｜ 已合格 **{existing_count}** ｜ 待刷新 **{refresh_count}** ｜ 待处理 **{todo_count}**"
+        lines.append(stats_line)
+
+    lines.extend(
+        [
+            "",
+            "## 阅读入口",
+            "",
+            f"- [日报 Issue]({issue.html_url})",
+            f"- [日报 Markdown]({markdown_url})",
+            f"- [在线阅读]({portal_url})",
+        ]
+    )
+
+    if highlights:
+        lines.extend(["", "## 今日亮点", ""])
+        for item in highlights[:3]:
+            lines.append(f"- {item}")
 
     if selected_items:
-        lines.append("")
-        lines.append("今日文章列表:")
+        lines.extend(["", "## 论文速览", ""])
         for idx, item in enumerate(selected_items, 1):
-            lines.append(f"{idx}. {_short_title(item.get('title', ''))}")
+            lines.append(f"- {idx}. {_short_title(item.get('title', ''), 72)}")
+    if observations:
+        lines.extend(["", "## 观察", ""])
+        for item in observations[:2]:
+            lines.append(f"- {item}")
     else:
         body = (issue.body or "").strip()
         preview = body[:1200] + ("\n..." if len(body) > 1200 else "")
-        lines.extend(["", preview])
+        lines.extend(["", "## 日报预览", "", preview])
 
     return title, "\n".join(lines)
 
