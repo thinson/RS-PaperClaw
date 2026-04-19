@@ -173,7 +173,6 @@ python3 scripts/cli.py reconcile --date 20260317 --dry-run
 ---
 
 ## ✅ TODO
-- 增加单位名称
 - 增加期刊来源：RSE（Remote Sensing of Environment）、ISPRS JPRS、IEEE 旗下相关期刊
 
 ---
