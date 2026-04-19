@@ -1220,6 +1220,7 @@
       let visibleReportCount = REPORT_BATCH_SIZE;
       let overlayHistoryActive = false;
       const REPO_API_URL = "https://api.github.com/repos/thinson/RS-PaperClaw";
+      const REPO_WEB_URL = "https://github.com/thinson/RS-PaperClaw";
       const TREE_API_URL =
         "https://api.github.com/repos/thinson/RS-PaperClaw/git/trees/main?recursive=1";
 
@@ -1413,6 +1414,12 @@
 
       function buildReportUrl(basePath, date) {
         return `${basePath}/${date.slice(0, 6)}/${date}.md`;
+      }
+
+      function parseRequestedPaperIssueUrl() {
+        const match = window.location.hash.match(/^#paper-(\d+)$/);
+        if (!match) return "";
+        return `${REPO_WEB_URL}/issues/${match[1]}`;
       }
 
       function parseRequestedReportDate() {
@@ -2147,6 +2154,7 @@
         const basePath = DEFAULT_REPORT_BASE;
         const dates = await fetchAvailableReportDates();
         const requestedDate = parseRequestedReportDate();
+        const requestedIssueUrl = parseRequestedPaperIssueUrl();
         visibleReportCount = REPORT_BATCH_SIZE;
         closePaperOverlay({ fromHistory: true, resetHistory: true });
         loadSummary.textContent = `正在读取 ${dates.length} 天日报...`;
@@ -2181,6 +2189,9 @@
             ? requestedDate
             : reports[0].date;
           renderReport(reports, initialDate, summaryText, { replaceUrl: true });
+          if (requestedIssueUrl) {
+            openPaperDetail(requestedIssueUrl, "论文详情", { skipHistory: true });
+          }
         } catch (error) {
           loadSummary.textContent = "加载失败";
           reportList.innerHTML =
@@ -2259,6 +2270,17 @@
 
         if (event.state && event.state.paperOverlay) {
           openPaperDetail(event.state.issueUrl, "论文详情", { skipHistory: true });
+          return;
+        }
+
+        if (paperOverlay.classList.contains("open")) {
+          closePaperOverlay({ fromHistory: true });
+        }
+      });
+      window.addEventListener("hashchange", () => {
+        const requestedIssueUrl = parseRequestedPaperIssueUrl();
+        if (requestedIssueUrl) {
+          openPaperDetail(requestedIssueUrl, "论文详情", { skipHistory: true });
           return;
         }
 
