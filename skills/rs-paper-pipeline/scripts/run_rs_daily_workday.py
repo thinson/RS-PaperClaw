@@ -117,6 +117,11 @@ def _short_text(text: str, limit: int = 96) -> str:
     return value[: limit - 3].rstrip() + "..."
 
 
+def _clean_digest_title(text: str) -> str:
+    value = " ".join((text or "").split())
+    return re.sub(r"^\[\d{8}\]\s*", "", value)
+
+
 def _strip_markdown(text: str) -> str:
     value = (text or "").strip()
     value = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", value)
@@ -129,6 +134,11 @@ def _strip_markdown(text: str) -> str:
 def _split_table_row(row: str) -> list[str]:
     stripped = row.strip().strip("|")
     return [cell.strip() for cell in stripped.split("|")]
+
+
+def _extract_first_link(text: str) -> str:
+    match = re.search(r"\[[^\]]+\]\(([^)]+)\)", text or "")
+    return match.group(1).strip() if match else ""
 
 
 def _extract_markdown_section(body: str, heading: str) -> list[str]:
@@ -180,7 +190,9 @@ def _extract_digest_articles(body: str) -> list[dict[str, str]]:
         institution = _strip_markdown(
             item.get("单位") or item.get("机构") or item.get("Institution") or item.get("Affiliation") or ""
         )
-        issue = _strip_markdown(item.get("Issue") or cells[-1])
+        issue_cell = item.get("Issue") or cells[-1]
+        issue = _strip_markdown(issue_cell)
+        issue_url = _extract_first_link(issue_cell)
         if not title:
             continue
         articles.append(
@@ -189,6 +201,7 @@ def _extract_digest_articles(body: str) -> list[dict[str, str]]:
                 "summary": summary,
                 "institution": institution,
                 "issue": issue,
+                "issue_url": issue_url,
             }
         )
     return articles
@@ -216,14 +229,14 @@ def _build_notify_message(date_str: str, stats_path: str, issue) -> tuple[str, s
         lines = [
             f"## 🛰️ {title}",
             "",
-            f"> 📅 日期：{date_str}",
+            f"> 日期：{date_str}",
         ]
         if candidate_count is not None and selected_count is not None:
-            lines.append(f"> 📊 候选 **{candidate_count}** ｜ 筛中 **{selected_count}**")
+            lines.append(f"> 候选 **{candidate_count}** ｜ 筛中 **{selected_count}**")
         lines.extend(
             [
                 "",
-                "## ⚠️ 状态说明",
+                "## 状态说明",
                 "",
                 "- 当天日报 issue 尚未生成，可能是未命中论文，或生成流程失败。",
                 "- 可优先检查 `daily_digest_llm_upgrade.py` 与 `sync_daily_reports_to_repo.py` 日志。",
@@ -240,11 +253,11 @@ def _build_notify_message(date_str: str, stats_path: str, issue) -> tuple[str, s
     lines = [
         f"## 🛰️ {title}",
         "",
-        f"> 📅 日期：{date_str}",
-        f"> 🔗 日报 Issue：[#{issue.number}]({issue.html_url})",
+        f"> 日期：{date_str}",
+        f"> 日报 Issue：[#{issue.number}]({issue.html_url})",
     ]
     if candidate_count is not None and selected_count is not None:
-        stats_line = f"> 📊 候选 **{candidate_count}** ｜ 筛中 **{selected_count}** ｜ 纳入 **{included_count}**"
+        stats_line = f"> 候选 **{candidate_count}** ｜ 筛中 **{selected_count}** ｜ 纳入 **{included_count}**"
         if existing_count is not None and refresh_count is not None and todo_count is not None:
             stats_line += f" ｜ 已合格 **{existing_count}** ｜ 待刷新 **{refresh_count}** ｜ 待处理 **{todo_count}**"
         lines.append(stats_line)
@@ -252,32 +265,40 @@ def _build_notify_message(date_str: str, stats_path: str, issue) -> tuple[str, s
     lines.extend(
         [
             "",
-            "## 🚪 阅读入口",
+            "## 🔗 阅读入口",
             "",
-            f"- 📌 [日报 Issue]({issue.html_url})",
-            f"- 📝 [日报 Markdown]({markdown_url})",
-            f"- 🌐 [在线阅读]({portal_url})",
+            f"- [日报 Issue]({issue.html_url})",
+            f"- [日报 Markdown]({markdown_url})",
+            f"- [在线阅读]({portal_url})",
         ]
     )
 
     if highlights:
         lines.extend(["", "## ✨ 今日亮点", ""])
         for item in highlights[:3]:
-            lines.append(f"- 🔹 {item}")
+            lines.append(f"- {item}")
 
     if articles:
         lines.extend(["", "## 📚 论文速览", ""])
         for idx, article in enumerate(articles[:6], 1):
-            title_text = _short_title(article.get("title", ""), 68)
+            title_text = _short_title(_clean_digest_title(article.get("title", "")), 68)
             summary_text = _short_text(article.get("summary") or "暂无一句话概括。", 78)
             institution_text = _short_text(article.get("institution") or "单位信息见日报", 56)
             issue_text = article.get("issue") or "-"
+            detail_url = article.get("issue_url") or ""
+            title_line = (
+                f"**{idx}. [{title_text}]({detail_url})**"
+                if detail_url
+                else f"**{idx}. {title_text}**"
+            )
             lines.extend(
                 [
-                    f"**{idx}. {title_text}**",
-                    f"> 🧭 {summary_text}",
+                    title_line,
+                    f"> 📝 {summary_text}",
                     f"> 🏫 {institution_text}",
-                    f"> 🎯 {issue_text}",
+                    f"> {issue_text}",
+                    "",
+                    "---",
                     "",
                 ]
             )
@@ -288,11 +309,11 @@ def _build_notify_message(date_str: str, stats_path: str, issue) -> tuple[str, s
     if observations:
         lines.extend(["", "## 🔎 观察", ""])
         for item in observations[:2]:
-            lines.append(f"- 📝 {item}")
+            lines.append(f"- {item}")
     else:
         body = (issue.body or "").strip()
         preview = body[:1200] + ("\n..." if len(body) > 1200 else "")
-        lines.extend(["", "## 🗒️ 日报预览", "", preview])
+        lines.extend(["", "## 日报预览", "", preview])
 
     return title, "\n".join(lines)
 
