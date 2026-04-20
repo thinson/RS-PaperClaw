@@ -110,6 +110,27 @@ def _short_title(title: str, limit: int = 88) -> str:
     return text[: limit - 3].rstrip() + "..."
 
 
+def _short_text(text: str, limit: int = 96) -> str:
+    value = " ".join((text or "").split())
+    if len(value) <= limit:
+        return value
+    return value[: limit - 3].rstrip() + "..."
+
+
+def _strip_markdown(text: str) -> str:
+    value = (text or "").strip()
+    value = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", value)
+    value = re.sub(r"`([^`]+)`", r"\1", value)
+    value = re.sub(r"\*\*([^*]+)\*\*", r"\1", value)
+    value = re.sub(r"\*([^*]+)\*", r"\1", value)
+    return " ".join(value.split())
+
+
+def _split_table_row(row: str) -> list[str]:
+    stripped = row.strip().strip("|")
+    return [cell.strip() for cell in stripped.split("|")]
+
+
 def _extract_markdown_section(body: str, heading: str) -> list[str]:
     pattern = re.compile(
         rf"^##\s+{re.escape(heading)}\s*$([\s\S]*?)(?=^##\s+|\n---\n|\Z)",
@@ -126,6 +147,51 @@ def _extract_markdown_section(body: str, heading: str) -> list[str]:
             continue
         lines.append(line[2:].strip())
     return lines
+
+
+def _extract_digest_articles(body: str) -> list[dict[str, str]]:
+    pattern = re.compile(
+        r"^##\s+🗂\s*今日文章列表\s*$([\s\S]*?)(?=^##\s+|\n---\n|\Z)",
+        re.MULTILINE,
+    )
+    match = pattern.search(body or "")
+    if not match:
+        return []
+
+    lines = [
+        line.strip()
+        for line in match.group(1).splitlines()
+        if line.strip().startswith("|")
+    ]
+    if len(lines) < 3:
+        return []
+
+    headers = [_strip_markdown(cell) for cell in _split_table_row(lines[0])]
+    articles: list[dict[str, str]] = []
+    for row in lines[2:]:
+        cells = _split_table_row(row)
+        if len(cells) < 4:
+            continue
+        item = {headers[i]: cells[i] if i < len(cells) else "" for i in range(len(headers))}
+        title = _strip_markdown(item.get("标题") or item.get("Title") or cells[0])
+        summary = _strip_markdown(
+            item.get("一句话概括") or item.get("摘要") or item.get("Summary") or cells[-2]
+        )
+        institution = _strip_markdown(
+            item.get("单位") or item.get("机构") or item.get("Institution") or item.get("Affiliation") or ""
+        )
+        issue = _strip_markdown(item.get("Issue") or cells[-1])
+        if not title:
+            continue
+        articles.append(
+            {
+                "title": title,
+                "summary": summary,
+                "institution": institution,
+                "issue": issue,
+            }
+        )
+    return articles
 
 
 def _build_daily_report_urls(date_str: str) -> tuple[str, str]:
@@ -148,19 +214,19 @@ def _build_notify_message(date_str: str, stats_path: str, issue) -> tuple[str, s
 
     if not issue:
         lines = [
-            f"## {title}",
+            f"## 🛰️ {title}",
             "",
-            f"> 日期：{date_str}",
+            f"> 📅 日期：{date_str}",
         ]
         if candidate_count is not None and selected_count is not None:
-            lines.append(f"> 统计：候选 **{candidate_count}** 篇 ｜ 筛中 **{selected_count}** 篇")
+            lines.append(f"> 📊 候选 **{candidate_count}** ｜ 筛中 **{selected_count}**")
         lines.extend(
             [
                 "",
-                "## 状态说明",
+                "## ⚠️ 状态说明",
                 "",
                 "- 当天日报 issue 尚未生成，可能是未命中论文，或生成流程失败。",
-                "- 可先检查 `daily_digest_llm_upgrade.py` 和 `sync_daily_reports_to_repo.py` 日志。",
+                "- 可优先检查 `daily_digest_llm_upgrade.py` 与 `sync_daily_reports_to_repo.py` 日志。",
             ]
         )
         return title, "\n".join(lines)
@@ -168,16 +234,17 @@ def _build_notify_message(date_str: str, stats_path: str, issue) -> tuple[str, s
     issue_body = issue.body or ""
     highlights = _extract_markdown_section(issue_body, "✨ 今日亮点")
     observations = _extract_markdown_section(issue_body, "🔎 观察")
+    articles = _extract_digest_articles(issue_body)
     markdown_url, portal_url = _build_daily_report_urls(date_str)
 
     lines = [
-        f"## {title}",
+        f"## 🛰️ {title}",
         "",
-        f"> 日期：{date_str}",
-        f"> 日报 Issue：[#{issue.number}]({issue.html_url})",
+        f"> 📅 日期：{date_str}",
+        f"> 🔗 日报 Issue：[#{issue.number}]({issue.html_url})",
     ]
     if candidate_count is not None and selected_count is not None:
-        stats_line = f"> 统计：候选 **{candidate_count}** 篇 ｜ 筛中 **{selected_count}** 篇 ｜ 纳入 **{included_count}** 篇"
+        stats_line = f"> 📊 候选 **{candidate_count}** ｜ 筛中 **{selected_count}** ｜ 纳入 **{included_count}**"
         if existing_count is not None and refresh_count is not None and todo_count is not None:
             stats_line += f" ｜ 已合格 **{existing_count}** ｜ 待刷新 **{refresh_count}** ｜ 待处理 **{todo_count}**"
         lines.append(stats_line)
@@ -185,31 +252,47 @@ def _build_notify_message(date_str: str, stats_path: str, issue) -> tuple[str, s
     lines.extend(
         [
             "",
-            "## 阅读入口",
+            "## 🚪 阅读入口",
             "",
-            f"- [日报 Issue]({issue.html_url})",
-            f"- [日报 Markdown]({markdown_url})",
-            f"- [在线阅读]({portal_url})",
+            f"- 📌 [日报 Issue]({issue.html_url})",
+            f"- 📝 [日报 Markdown]({markdown_url})",
+            f"- 🌐 [在线阅读]({portal_url})",
         ]
     )
 
     if highlights:
-        lines.extend(["", "## 今日亮点", ""])
+        lines.extend(["", "## ✨ 今日亮点", ""])
         for item in highlights[:3]:
-            lines.append(f"- {item}")
+            lines.append(f"- 🔹 {item}")
 
-    if selected_items:
-        lines.extend(["", "## 论文速览", ""])
+    if articles:
+        lines.extend(["", "## 📚 论文速览", ""])
+        for idx, article in enumerate(articles[:6], 1):
+            title_text = _short_title(article.get("title", ""), 68)
+            summary_text = _short_text(article.get("summary") or "暂无一句话概括。", 78)
+            institution_text = _short_text(article.get("institution") or "单位信息见日报", 56)
+            issue_text = article.get("issue") or "-"
+            lines.extend(
+                [
+                    f"**{idx}. {title_text}**",
+                    f"> 🧭 {summary_text}",
+                    f"> 🏫 {institution_text}",
+                    f"> 🎯 {issue_text}",
+                    "",
+                ]
+            )
+    elif selected_items:
+        lines.extend(["", "## 📚 论文速览", ""])
         for idx, item in enumerate(selected_items, 1):
-            lines.append(f"- {idx}. {_short_title(item.get('title', ''), 72)}")
+            lines.append(f"- **{idx}. {_short_title(item.get('title', ''), 72)}**")
     if observations:
-        lines.extend(["", "## 观察", ""])
+        lines.extend(["", "## 🔎 观察", ""])
         for item in observations[:2]:
-            lines.append(f"- {item}")
+            lines.append(f"- 📝 {item}")
     else:
         body = (issue.body or "").strip()
         preview = body[:1200] + ("\n..." if len(body) > 1200 else "")
-        lines.extend(["", "## 日报预览", "", preview])
+        lines.extend(["", "## 🗒️ 日报预览", "", preview])
 
     return title, "\n".join(lines)
 
