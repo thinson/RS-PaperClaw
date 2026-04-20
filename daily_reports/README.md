@@ -7,29 +7,29 @@
 
 今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 6 篇。
 
-今日遥感AI研究聚焦多模态大模型与无人机智能应用的深度融合。视觉-语言模型在地理定位、开放词汇分割等任务中持续突破，同时轻量化Transformer与知识驱动伪标签技术为光谱分类提供新思路。零样本学习与认知架构成为无人机导航的关键方向。
+今日遥感AI研究呈现多模态融合与轻量化并重的趋势。无人机导航与分割任务持续引入大语言模型能力，高光谱分类探索高效Transformer架构，知识驱动方法借助LLM实现伪标签生成。同时，开放词汇分割基准建设与阴影去除等底层视觉任务亦有新进展。
 
 ## ✨ 今日亮点
 
-- FineCog-Nav构建细粒度认知模块，实现零样本多模态无人机导航
-- PixDLM提出双路径多模态语言模型，专攻无人机推理分割任务
-- SSFT设计轻量光谱-空间融合Transformer，面向通用高光谱分类
+- FineCog-Nav将细粒度认知模块融入零样本多模态无人机导航，提升复杂环境决策能力
+- 波兰团队利用LLM专家知识驱动伪标签生成，实现高光谱树种分类的知识增强
+- SSFT提出轻量光谱-空间融合Transformer，兼顾高光谱分类精度与计算效率
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260417] FineCog-Nav: Integrating Fine-grained Cognitive Modules for Zero-shot Multimodal UAV Navigation | Shao Dian, Xu Zhengzheng, Wang Peiyang, Liu Like, Wang Yule, Shi Jieqi, Huo Jing | Northwestern Polytechnical University；Nanjing University | FineCog-Nav整合细粒度认知模块，实现零样本多模态无人机视觉-语言导航。 | [#364](https://github.com/thinson/RS-PaperClaw/issues/364) |
-| [20260417] Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization | Bharadwaj Siddhant, Vashist Ashish, Aleem Fahimul, Vyas Shruti | University of Central Florida | 该研究在全球尺度分析视觉-语言模型在图像地理定位任务中的失败模式。 | [#365](https://github.com/thinson/RS-PaperClaw/issues/365) |
-| [20260417] From Articles to Canopies: Knowledge-Driven Pseudo-Labelling for Tree Species Classification using LLM Experts | Romaszewski Michał, Kopeć Dominik, Cholewa Michał, Kołodziej Katarzyna, Głomb Przemysław, Niedzielko Jan, Charyton Jakub, Wylazłowska Justyna, Jarocińska Anna | Institute of Theoretical and Applied Informatics, Polish Academy of Sciences；University of Lodz；MGGP Aero；University of Warsaw, Faculty of Geography and Regional Studies, Department of Geoinformatics, Cartography and Remote Sensing | 利用大语言模型专家知识驱动伪标签，实现高光谱树种分类。 | [#366](https://github.com/thinson/RS-PaperClaw/issues/366) |
-| [20260417] SSFT: A Lightweight Spectral-Spatial Fusion Transformer for Generic Hyperspectral Classification | Musiat Alexander, Ebert Nikolas, Wasenmüller Oliver | Mannheim University of Applied Sciences | SSFT提出轻量光谱-空间融合Transformer，用于通用高光谱图像分类。 | [#367](https://github.com/thinson/RS-PaperClaw/issues/367) |
-| [20260417] PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation | Ke Shuyan, Mei Yifan, Wu Changli, Zheng Yonghan, Ji Jiayi, Cao Liujuan, Ji Rongrong | Key Laboratory of Multimedia Trusted Perception and Efficient Computing, Ministry of Education of China, Xiamen University；Shanghai Innovation Institute | PixDLM构建双路径多模态语言模型，支持无人机推理分割任务。 | [#368](https://github.com/thinson/RS-PaperClaw/issues/368) |
-| [20260417] Towards Realistic Open-Vocabulary Remote Sensing Segmentation: Benchmark and Baseline | Li Bingyu, Huo Tao, Dong Haocheng, Zhang Da, Zhao Zhiyuan, Gao Junyu, Li Xuelong | University of Science and Technology of China | 该工作建立面向真实场景的开放词汇遥感分割基准数据集与基线方法。 | [#369](https://github.com/thinson/RS-PaperClaw/issues/369) |
+| [20260417] FineCog-Nav: Integrating Fine-grained Cognitive Modules for Zero-shot Multimodal UAV Navigation | Shao Dian, Xu Zhengzheng, Wang Peiyang, Liu Like, Wang Yule, Shi Jieqi, Huo Jing | Northwestern Polytechnical University；Nanjing University | FineCog-Nav通过整合细粒度认知模块，实现零样本多模态无人机视觉语言导航。 | [#364](https://github.com/thinson/RS-PaperClaw/issues/364) |
+| [20260417] From Articles to Canopies: Knowledge-Driven Pseudo-Labelling for Tree Species Classification using LLM Experts | Romaszewski Michał, Kopeć Dominik, Cholewa Michał, Kołodziej Katarzyna, Głomb Przemysław, Niedzielko Jan, Charyton Jakub, Wylazłowska Justyna, Jarocińska Anna | Institute of Theoretical and Applied Informatics, Polish Academy of Sciences；University of Lodz；MGGP Aero；University of Warsaw, Faculty of Geography and Regional Studies, Department of Geoinformatics, Cartography and Remote Sensing | 该研究借助大语言模型专家从文献中提取知识，驱动高光谱树种分类的伪标签生成。 | [#366](https://github.com/thinson/RS-PaperClaw/issues/366) |
+| [20260417] SSFT: A Lightweight Spectral-Spatial Fusion Transformer for Generic Hyperspectral Classification | Musiat Alexander, Ebert Nikolas, Wasenmüller Oliver | Mannheim University of Applied Sciences | SSFT以轻量化设计实现光谱-空间特征融合，面向通用高光谱分类任务。 | [#367](https://github.com/thinson/RS-PaperClaw/issues/367) |
+| [20260417] PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation | Ke Shuyan, Mei Yifan, Wu Changli, Zheng Yonghan, Ji Jiayi, Cao Liujuan, Ji Rongrong | Key Laboratory of Multimedia Trusted Perception and Efficient Computing, Ministry of Education of China, Xiamen University；Shanghai Innovation Institute | PixDLM构建双路径多模态语言模型，专门处理无人机推理分割任务。 | [#368](https://github.com/thinson/RS-PaperClaw/issues/368) |
+| [20260417] Towards Realistic Open-Vocabulary Remote Sensing Segmentation: Benchmark and Baseline | Li Bingyu, Huo Tao, Dong Haocheng, Zhang Da, Zhao Zhiyuan, Gao Junyu, Li Xuelong | University of Science and Technology of China | 该工作建立真实场景开放词汇遥感分割基准，并提供基线方法。 | [#369](https://github.com/thinson/RS-PaperClaw/issues/369) |
+| [20260417] Winner of CVPR2026 NTIRE Challenge on Image Shadow Removal: Semantic and Geometric Guidance for Shadow Removal via Cascaded Refinement | Beltrame Lorenzo, Salzinger Jules, Svoboda Filip, Lampert Jasmin, Fanta-Jende Phillipp, Timofte Radu, Koerner Marco | Austrian Institute of Technology；Technical University of Munich；University of Cambridge；University of Würzburg | NTIRE2026阴影去除冠军方案采用语义与几何引导的级联精修策略。 | [#371](https://github.com/thinson/RS-PaperClaw/issues/371) |
 
 ## 🔎 观察
 
-- 无人机平台正成为多模态大模型落地的重要载体，导航与分割任务同步推进。
-- 知识驱动范式兴起，LLM专家知识与伪标签结合为高光谱分类开辟新路径。
+- 无人机智能体正快速吸收大语言模型的推理与泛化能力，导航与分割任务边界趋于融合
+- 高光谱领域同时涌现知识驱动与轻量化架构两条技术路线，反映应用落地对效率与精度的双重诉求
 
 ---
 
