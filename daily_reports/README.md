@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260418](./202604/20260418.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究呈现两大方向：一是深度学习与InSAR技术融合用于积雪参数反演，二是强化学习驱动的SAR平台智能任务规划。合成孔径雷达（SAR）成为核心传感器，深度学习方法在物理参数估计与自主决策中发挥关键作用。
+
+## ✨ 今日亮点
+
+- 深度学习赋能InSAR积雪深度反演，突破传统干涉测量局限性
+- 多阶段强化学习实现SAR平台多目标监视轨迹智能规划
+- SAR数据与AI方法深度融合，推动遥感应用从观测向自主决策演进
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260418] Deep Learning-Based Snow Depth Retrieval Using Sentinel-1 Repeat-Pass InSAR | Yadav Nayan, Oveisgharan Shadi, Jalali Shirin | Rutgers University；California Institute of Technology | 提出基于深度学习的Sentinel-1重复轨道InSAR积雪深度反演方法，利用神经网络从干涉相位中提取积雪深度信息。 | [#372](https://github.com/thinson/RS-PaperClaw/issues/372) |
+| [20260418] Multi-stage Planning for Multi-target Surveillance using Aircrafts Equipped with Synthetic Aperture Radars Aware of Target Visibility | Fuertes Daniel, Carlos R. del-Blanco, Jaureguizar Fernando, Juan José Navarro-Corcuera, García Narciso | Universidad Politécnica de Madrid | 设计多阶段深度强化学习框架，为搭载SAR的无人机规划多目标监视轨迹，并显式考虑目标可见性约束。 | [#373](https://github.com/thinson/RS-PaperClaw/issues/373) |
+
+## 🔎 观察
+
+- InSAR与深度学习结合正成为积雪遥感的新兴方向，有望解决干雪穿透导致的信号衰减难题
+- SAR平台任务规划从规则驱动转向数据驱动，强化学习为复杂监视场景提供可扩展决策方案
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260417](./202604/20260417.md)
 ## 📌 今日概况
 
@@ -66,40 +97,6 @@ Powered by OpenClaw🦞
 
 - 视觉基础模型正从通用分割向遥感专用任务深度适配，相位感知、提示工程等细粒度机制成为关键创新点
 - 跨模态研究从视觉-文本向视觉-音频拓展，地理空间数据与多感官信息的联合建模或成新增长极
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260415](./202604/20260415.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究呈现两大主线：一是多模态大语言模型与视觉-语言模型的深度融合，覆盖无人机导航、变化检测理解及超高分辨率图像分析；二是面向实际部署的效率优化，包括扩散模型纹理感知超分与早期退出机制的轻量化网络。研究趋势从单一任务向统一理解、从实验室向边缘设备延伸。
-
-## ✨ 今日亮点
-
-- 视觉-语言导航为无人机具身智能开辟新方向，统一路线图厘清技术挑战
-- 多模态大模型首次统一遥感变化检测与语义理解，突破时序推理瓶颈
-- 预算感知Token压缩方案破解超高分辨率遥感图像的计算成本难题
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260415] Vision-and-Language Navigation for UAVs: Progress, Challenges, and a Research Roadmap | Chen Hanxuan, Zheng Jie, Yang Siqi, Zeng Tianle, Feng Siwei et al. | 系统综述无人机视觉-语言导航进展，提出融合VLM与VLA模型的研究路线图。 | [#172](https://github.com/thinson/RS-PaperClaw/issues/172) |
-| [20260415] Decoding the Delta: Unifying Remote Sensing Change Detection and Understanding with Multimodal Large Language Models | Li Xiaohe, Li Jiahao, Zhang Kaixin, Fang Yuqiang, Lin Leilei et al. | 构建多模态大语言模型统一框架，实现遥感变化检测与高层语义理解的联合推理。 | [#350](https://github.com/thinson/RS-PaperClaw/issues/350) |
-| [20260415] Remote Sensing Image Super-Resolution for Imbalanced Textures: A Texture-Aware Diffusion Framework | Zhang Enzhuo, Zhao Sijie, Muhtar Dilxat, Li Zhenshi, Zhang Xueliang et al. | 提出纹理感知扩散框架，针对性解决遥感图像超分辨率中纹理不平衡问题。 | [#351](https://github.com/thinson/RS-PaperClaw/issues/351) |
-| [20260415] Early Exiting U-Net for Efficient Processing on UAVs: A Case Study in Environmental Monitoring | Luca Sartori Boni, Moursi Mohamed, Wehn Norbert, Hammoud Bilal | 设计早期退出U-Net架构，在环境监测油膜检测任务中验证无人机实时处理可行性。 | [#352](https://github.com/thinson/RS-PaperClaw/issues/352) |
-| [20260415] UHR-BAT: Budget-Aware Token Compression Vision-Language model for Ultra-High-Resolution Remote Sensing | Dang Yunkai, Dai Minxin, Yang Yuekun, Li Zhangnan, Li Wenbin et al. | 开发预算感知Token压缩视觉-语言模型，平衡超高分辨率遥感分析精度与计算开销。 | [#353](https://github.com/thinson/RS-PaperClaw/issues/353) |
-
-## 🔎 观察
-
-- 视觉-语言模型正从通用领域向遥感专用场景深度渗透，但超高分辨率带来的Token爆炸仍需硬件协同优化
-- 早期退出与动态计算机制成为无人机等边缘设备部署的关键技术，效率与精度的帕累托前沿尚待突破
 
 ---
 
