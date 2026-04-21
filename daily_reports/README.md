@@ -71,27 +71,28 @@ Powered by OpenClaw🦞
 # [20260418](./202604/20260418.md)
 ## 📌 今日概况
 
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 2 篇。
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 3 篇。
 
-今日遥感AI研究呈现两大方向：一是深度学习与InSAR技术融合用于积雪参数反演，二是强化学习驱动的SAR平台智能任务规划。合成孔径雷达（SAR）成为核心传感器，深度学习方法在物理参数估计与自主决策中发挥关键作用。
+今日遥感AI研究聚焦SAR数据智能处理与多模态融合。深度学习在积雪深度反演、多目标监视轨迹规划及异构多模态预训练三大方向取得进展，体现从单一任务优化向多源协同与高效表征学习的演进趋势。
 
 ## ✨ 今日亮点
 
-- 深度学习赋能InSAR积雪深度反演，突破传统干涉测量局限性
-- 多阶段强化学习实现SAR平台多目标监视轨迹智能规划
-- SAR数据与AI方法深度融合，推动遥感应用从观测向自主决策演进
+- InSAR深度学习反演积雪深度，突破传统相位解缠限制
+- DRL驱动SAR载机多目标监视轨迹规划，兼顾目标可见性约束
+- 条件退化MAE实现异构多模态高效联合预训练，降低数据依赖
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260418] Deep Learning-Based Snow Depth Retrieval Using Sentinel-1 Repeat-Pass InSAR | Yadav Nayan, Oveisgharan Shadi, Jalali Shirin | Rutgers University；California Institute of Technology | 提出基于深度学习的Sentinel-1重复轨道InSAR积雪深度反演方法，利用神经网络从干涉相位中提取积雪深度信息。 | [#372](https://github.com/thinson/RS-PaperClaw/issues/372) |
-| [20260418] Multi-stage Planning for Multi-target Surveillance using Aircrafts Equipped with Synthetic Aperture Radars Aware of Target Visibility | Fuertes Daniel, Carlos R. del-Blanco, Jaureguizar Fernando, Juan José Navarro-Corcuera, García Narciso | Universidad Politécnica de Madrid | 设计多阶段深度强化学习框架，为搭载SAR的无人机规划多目标监视轨迹，并显式考虑目标可见性约束。 | [#373](https://github.com/thinson/RS-PaperClaw/issues/373) |
+| [20260418] Deep Learning-Based Snow Depth Retrieval Using Sentinel-1 Repeat-Pass InSAR | Yadav Nayan, Oveisgharan Shadi, Jalali Shirin | Rutgers University；California Institute of Technology | 提出基于Sentinel-1重复轨道InSAR的深度学习积雪深度反演方法，利用神经网络直接学习干涉相位与雪深映射关系。 | [#372](https://github.com/thinson/RS-PaperClaw/issues/372) |
+| [20260418] Multi-stage Planning for Multi-target Surveillance using Aircrafts Equipped with Synthetic Aperture Radars Aware of Target Visibility | Fuertes Daniel, Carlos R. del-Blanco, Jaureguizar Fernando, Juan José Navarro-Corcuera, García Narciso | Universidad Politécnica de Madrid | 构建多阶段深度强化学习框架，为SAR载机规划多目标监视轨迹，显式建模目标可见性以提升监视效率。 | [#373](https://github.com/thinson/RS-PaperClaw/issues/373) |
+| [20260418] Better with Less: Tackling Heterogeneous Multi-Modal Image Joint Pretraining via Conditioned and Degraded Masked Autoencoder | Peng Bowen, Liu Yongxiang, Zhou Jie, Chen Xiaodong, Liu Tianpeng, Yu Xiaogang, Liu Li | National University of Defense Technology | 设计条件退化掩码自编码器，通过模态条件掩码策略实现光学与SAR异构数据的高效联合预训练。 | [#385](https://github.com/thinson/RS-PaperClaw/issues/385) |
 
 ## 🔎 观察
 
-- InSAR与深度学习结合正成为积雪遥感的新兴方向，有望解决干雪穿透导致的信号衰减难题
-- SAR平台任务规划从规则驱动转向数据驱动，强化学习为复杂监视场景提供可扩展决策方案
+- SAR智能应用从静态图像分析向动态任务规划延伸，强化学习成为连接感知与决策的关键桥梁。
+- 多模态预训练正从数据堆砌转向结构化掩码设计，'更少数据、更好表征'成为遥感基础模型新范式。
 
 ---
 
