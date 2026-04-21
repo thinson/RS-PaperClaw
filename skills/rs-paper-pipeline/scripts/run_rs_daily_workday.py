@@ -94,6 +94,34 @@ def _format_exc(exc: Exception) -> str:
     return text or exc.__class__.__name__
 
 
+def _extract_digest_issue_numbers(body: str) -> list[int]:
+    seen: set[int] = set()
+    numbers: list[int] = []
+    for match in re.finditer(r"github\.com/[^/]+/[^/]+/issues/(\d+)", body or ""):
+        number = int(match.group(1))
+        if number in seen:
+            continue
+        seen.add(number)
+        numbers.append(number)
+    return numbers
+
+
+def _date_already_completed(date_str: str) -> tuple[bool, str]:
+    repo = _get_repo()
+    digest_issue = get_today_digest_issue(repo, date_str)
+    if digest_issue is None:
+        return False, "digest issue missing"
+
+    if not daily_report_file_exists(repo, date_str):
+        return False, "daily report file missing"
+
+    linked_issue_numbers = _extract_digest_issue_numbers(digest_issue.body or "")
+    if not linked_issue_numbers:
+        return False, "digest issue has no linked paper issues"
+
+    return True, f"digest=#{digest_issue.number} papers={len(linked_issue_numbers)}"
+
+
 def _load_stats(stats_path: str) -> dict:
     try:
         with open(stats_path, "r", encoding="utf-8") as fh:
@@ -354,7 +382,22 @@ def resolve_target_dates(today: datetime | None = None) -> list[str]:
     return [(now - timedelta(days=delta)).strftime("%Y%m%d") for delta in deltas]
 
 
-def _process_date(date_str: str, notify: bool):
+def _process_date(date_str: str, notify: bool, force: bool = False):
+    if not force:
+        already_done, reason = _date_already_completed(date_str)
+        if already_done:
+            print(f"SKIP {date_str} | {reason}")
+            _write_state(
+                date_str,
+                "done",
+                "skipped",
+                {
+                    "skip_reason": reason,
+                    "notify": notify,
+                },
+            )
+            return
+
     stats_path = f"memory/rs_daily_stats_{date_str}.json"
 
     _run_step(
@@ -425,7 +468,7 @@ def _process_date(date_str: str, notify: bool):
     _write_state(date_str, "done", "ok")
 
 
-def main(target_date: str | None = None, notify: bool | None = None):
+def main(target_date: str | None = None, notify: bool | None = None, force: bool = False):
     if not CONFIG.github_token:
         raise RuntimeError("Missing required environment variable: GITHUB_TOKEN")
     if not CONFIG.bailian_api_key:
@@ -458,7 +501,7 @@ def main(target_date: str | None = None, notify: bool | None = None):
                 )
             raise RuntimeError("GitHub 连通性检查失败，请切换代理节点后重试")
         for date_str in target_dates:
-            _process_date(date_str, notify)
+            _process_date(date_str, notify, force=force)
 
 
 if __name__ == "__main__":
@@ -467,6 +510,7 @@ if __name__ == "__main__":
     parser.add_argument("--date", dest="date", help="指定日期，格式 YYYYMMDD，默认为今天")
     parser.add_argument("--notify", action="store_true", help="强制发送通知")
     parser.add_argument("--no-notify", action="store_true", help="禁止发送Feishu通知")
+    parser.add_argument("--force", action="store_true", help="即使当天已成功也强制重跑")
     args = parser.parse_args()
 
     notify = None
@@ -478,4 +522,4 @@ if __name__ == "__main__":
     if notify and not has_available_notify_channel():
         raise RuntimeError("No available notify channel. Configure DINGTALK_WEBHOOK or FEISHU_TARGET with a working openclaw binary.")
 
-    main(target_date=args.date, notify=notify)
+    main(target_date=args.date, notify=notify, force=args.force)

@@ -23,6 +23,7 @@ def build_parser() -> argparse.ArgumentParser:
     run_parser.add_argument("--date", dest="date", help="指定日期，格式 YYYYMMDD")
     run_parser.add_argument("--notify", action="store_true", help="强制发送通知")
     run_parser.add_argument("--no-notify", action="store_true", help="禁止发送通知")
+    run_parser.add_argument("--force", action="store_true", help="即使当天已成功也强制重跑")
     run_parser.set_defaults(func=run_command)
 
     filter_parser = subparsers.add_parser("filter", help="抓取并筛选论文")
@@ -64,7 +65,7 @@ def run_command(args) -> None:
         notify = True
     if args.no_notify:
         notify = False
-    run_rs_daily_workday.main(target_date=args.date, notify=notify)
+    run_rs_daily_workday.main(target_date=args.date, notify=notify, force=args.force)
 
 
 def filter_command(args) -> None:
