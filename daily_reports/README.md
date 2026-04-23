@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260422](./202604/20260422.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究呈现多模态融合与基础模型优化并进的态势。SAR时序分析支撑海上风电基础设施监测，跨模态检索采用粗精两阶段策略提升效率，变化检测引入检索增强与Best-of-N排序构建新基准，面向对象检测探索傅里叶级数编码解决角度边界不连续问题，半监督流匹配模型推动马赛克与全色图像融合成像。
+
+## ✨ 今日亮点
+
+- 密集Sentinel-1时序实现全球海上风电部署动态监测
+- 检索增强Best-of-N排序构建遥感区域变化理解新基准
+- 傅里叶级数编码创新解决旋转目标检测角度边界不连续难题
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260422] Global Offshore Wind Infrastructure: Deployment and Operational Dynamics from Dense Sentinel-1 Time Series | Hoeser Thorsten, Bachofer Felix, Kuenzer Claudia | Earth Observation Center (EOC), German Aerospace Center (DLR)；Institute for Geography and Geology, University of Wuerzburg | 基于密集Sentinel-1时序数据，构建全球海上风电基础设施部署与运行动态监测框架。 | [#395](https://github.com/thinson/RS-PaperClaw/issues/395) |
+| [20260422] RSRCC: A Remote Sensing Regional Change Comprehension Benchmark Constructed via Retrieval-Augmented Best-of-N Ranking | Kazoom Roie, Gigi Yotam, Leifman George, Shekel Tomer, Beryozkin Genady | Google Research | 提出RSRCC基准，通过检索增强与Best-of-N排序构建遥感区域变化理解评测体系。 | [#396](https://github.com/thinson/RS-PaperClaw/issues/396) |
+| [20260422] Fast-then-Fine: A Two-Stage Framework with Multi-Granular Representation for Cross-Modal Retrieval in Remote Sensing | Chen Xi, Chen Xu, Jia Xiangyang, Zhang Xu, Wei Shuquan, Wang Wei | School of Computer Science, Wuhan University；Beijing Institute for General Artificial Intelligence (BIGAI) | 设计粗精两阶段跨模态检索框架，利用多粒度表征提升遥感图像-文本检索效率。 | [#397](https://github.com/thinson/RS-PaperClaw/issues/397) |
+| [20260422] Fourier Series Coder: A Novel Perspective on Angle Boundary Discontinuity Problem for Oriented Object Detection | Wei Minghong, Cao Pu, Chen Zhihao, Zang Zhiyuan, Yang Lu, Song Qing | Tsinghua University；Chinese Academy of Sciences | 以傅里叶级数编码新视角解决旋转目标检测中的角度边界不连续与周期模糊问题。 | [#398](https://github.com/thinson/RS-PaperClaw/issues/398) |
+| [20260422] Semi-Supervised Flow Matching for Mosaiced and Panchromatic Fusion Imaging | Luo Peiming, Wang Nan, Liu Litong, Huang Jiahan, Wu Chenxu, Dian Renwei, Hou Junming | Southeast University；Hunan University | 提出半监督流匹配方法，实现马赛克图像与全色图像的高质量融合成像。 | [#399](https://github.com/thinson/RS-PaperClaw/issues/399) |
+
+## 🔎 观察
+
+- 时序SAR数据正成为能源基础设施监测的核心数据源，海上风电等新兴领域需求凸显。
+- 检索增强与生成模型技术向遥感基准构建渗透，反映领域对高质量评测与数据效率的双重追求。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260421](./202604/20260421.md)
 ## 📌 今日概况
 
@@ -65,39 +99,6 @@ Powered by OpenClaw🦞
 
 - 零样本学习成为遥感热点，DiffuSAM与SAM提示工程两条技术路线并行，降低对新领域标注数据的依赖。
 - 生成式技术扩散明显，扩散模型与高斯溅射分别从判别与生成角度重塑遥感任务，多模态大模型成为基础设施。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260419](./202604/20260419.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦模型可靠性与效率提升。超分辨率、强化学习奖励机制、多模态大模型鲁棒性及无人机集群控制成为热点，涵盖大气监测、视觉语言理解、地球观测等应用场景，体现从算法创新到系统部署的完整链条。
-
-## ✨ 今日亮点
-
-- 自监督超分辨率技术突破Sentinel-5P高光谱数据分辨率瓶颈
-- 混合奖励机制解决遥感图像理解中的感知惯性难题
-- 多模态大模型鲁棒性增强方案应对地球观测视觉扰动
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260419] Self-Supervised Super-Resolution for Sentinel-5P Hyperspectral Images | Hyam Omar Ali, Crosnier Antoine, Abraham Romain, Combelles Baptiste, Jégou Fabrice, Galerne Bruno | Université Paris-Saclay, CNRS, ENS Paris-Saclay, Centre Borelli, Gif-sur-Yvette, France；Université d'Orléans, CNRS, PRISME, Orléans, France；VITO, Remote Sensing, Boeretang, Mol, Belgium | 提出自监督超分辨率方法，针对Sentinel-5P高光谱图像实现无配对训练下的分辨率增强，服务大气监测应用。 | [#375](https://github.com/thinson/RS-PaperClaw/issues/375) |
-| [20260419] RS-HyRe-R1: A Hybrid Reward Mechanism to Overcome Perceptual Inertia for Remote Sensing Images Understanding | Zhou Gaozhi, He Hu, Shen Peng, Zhang Jipeng, Zhang Liujue, Xu Linrui, Wang Zeyuan, Li Ziyu, Cui Xuezhi, Guo Wang, Li Haifeng | Chinese Academy of Sciences | 设计RS-HyRe-R1混合奖励机制，通过视觉-语言模型强化学习克服遥感图像理解中的感知惯性问题。 | [#376](https://github.com/thinson/RS-PaperClaw/issues/376) |
-| [20260419] RemoteShield: Enable Robust Multimodal Large Language Models for Earth Observation | Min Rui, Yao Liang, Miao Shiyu, Xu Shengxiang, Liu Yuxuan, Zhang Chuanyi, Di Shimin, Liu Fan | Hohai University；Nanjing University；Southeast University | 构建RemoteShield框架，提升多模态大语言模型在地球观测任务中对视觉扰动的鲁棒性。 | [#377](https://github.com/thinson/RS-PaperClaw/issues/377) |
-| [20260419] Shepherding UAV Swarm with Action Prediction Based on Movement Constraints | Tsunoda Yusuke, Goto Yusuke, Sato Takao | Graduate School of Engineering, University of Hyogo | 基于牧羊犬行为启发，利用运动约束动作预测实现无人机集群协同控制。 | [#378](https://github.com/thinson/RS-PaperClaw/issues/378) |
-
-## 🔎 观察
-
-- 遥感大模型研究正从性能优化转向可靠性保障，鲁棒性成为部署关键指标。
-- 自监督与强化学习在遥感领域渗透率提升，降低标注依赖的同时增强模型适应性。
 
 ---
 
