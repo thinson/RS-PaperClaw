@@ -33,6 +33,7 @@
 
 ## 📰 News
 
+- `2026-04-24`: Added a CVPR 2026 GeoAI paper collection with 139 papers (9 Oral + 20 Highlight + 110 Poster), browseable by topic tags.
 - `2026-04-20`: Added a short project timeline to the README for easier maintenance tracking.
 - `2026-04-19`: Completed a focused GitHub Pages frontend update, including paged archive loading, date deep links, merged `More` interaction, and multiple Papers table display fixes.
 - `2026-04-17`: Added institution metadata to per-paper reports and daily digests; author rendering was also updated to stop using `et al.`.
