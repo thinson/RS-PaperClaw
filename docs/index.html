@@ -1118,6 +1118,34 @@
           margin-bottom: 16px;
         }
       }
+
+      .site-footer {
+        margin-top: 24px;
+        text-align: center;
+      }
+
+      .footer-divider {
+        border: none;
+        border-top: 1px solid var(--line);
+        margin: 0 0 16px;
+      }
+
+      .footer-counter {
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .footer-dot {
+        margin: 0 10px;
+        color: var(--line);
+      }
+
+      #busuanzi_container_site_pv,
+      #busuanzi_container_site_uv {
+        display: inline;
+      }
     </style>
   </head>
   <body>
@@ -1151,7 +1179,7 @@
         >
           <div class="repo-meta">
             <strong>GitHub Repository</strong>
-            <span id="repoStars">11 stars</span>
+            <span id="repoStars">-</span>
           </div>
         </a>
       </section>
@@ -1168,7 +1196,20 @@
         <section class="content panel">
           <div id="reportDetail" class="empty">请选择一份日报。</div>
         </section>
-      </section>
+      </section> <!-- /layout -->
+
+      <footer class="site-footer">
+        <hr class="footer-divider" />
+        <p class="footer-counter">
+          <span id="busuanzi_container_site_pv">
+            总访问 <span id="busuanzi_value_site_pv">-</span> 次
+          </span>
+          <span class="footer-dot">·</span>
+          <span id="busuanzi_container_site_uv">
+            访客 <span id="busuanzi_value_site_uv">-</span> 人
+          </span>
+        </p>
+      </footer>
     </main>
 
     <div id="paperOverlay" class="overlay" aria-hidden="true">
@@ -1197,6 +1238,7 @@
       </button>
     </div>
 
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script>
       const loadSummary = document.getElementById("loadSummary");
       const reportList = document.getElementById("reportList");
@@ -1623,7 +1665,7 @@
       }
 
       function formatStarCount(count) {
-        if (!Number.isFinite(count)) return "11 stars";
+        if (!Number.isFinite(count) || count === 0) return "-";
         if (count >= 1000) {
           return `${(count / 1000).toFixed(count >= 10000 ? 0 : 1).replace(/\.0$/, "")}k stars`;
         }
@@ -2146,7 +2188,7 @@
           const repo = await response.json();
           repoStars.textContent = formatStarCount(repo.stargazers_count);
         } catch (error) {
-          repoStars.textContent = "11 stars";
+          repoStars.textContent = "-";
         }
       }
 
