@@ -21,6 +21,7 @@
 ## 🌐 Live Portal
 
 - GitHub Pages: **https://thinson.github.io/RS-PaperClaw/**
+- CVPR 2026 GeoAI Collection: **https://thinson.github.io/RS-PaperClaw/cvpr2026_geoai.html**
 - Digest archive: **[daily_reports/](./daily_reports/README.md)**
 
 ## 🖼️ UI Preview
