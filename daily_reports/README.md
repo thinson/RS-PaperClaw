@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260424](./202604/20260424.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦两大方向：一是灾害变化检测的语义理解升级，通过视觉-语言模型实现从像素检测到灾害语义解析的跨越；二是SAR图像的跨模态知识迁移，利用光学先验破解SAR数据标注稀缺难题，推动无监督类别发现。
+
+## ✨ 今日亮点
+
+- ChangeQuery构建视觉-语言框架，实现灾害变化检测的语义级理解突破
+- 光谱引导知识迁移首次将光学域先验系统注入SAR广义类别发现
+- 跨模态学习成为解决遥感数据异质性与标注瓶颈的核心技术路径
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260424] ChangeQuery: Advancing Remote Sensing Change Analysis for Natural and Human-Induced Disasters from Visual Detection to Semantic Understanding | Sun Dongwei, Yao Jing, Wei Kan, Cao Xiangyong, Wu Chen, Zhao Zhenghui, Ghamisi Pedram, Zhou Jun, Jón Atli Benediktsson | Chinese Academy of Sciences；University of Iceland；Technical University of Munich；German Aerospace Center；Helmholtz-Zentrum Hereon；Griffith University | ChangeQuery提出视觉-语言变化检测框架，将灾害分析从视觉检测提升至语义理解层次。 | [#405](https://github.com/thinson/RS-PaperClaw/issues/405) |
+| [20260424] Unlocking Optical Prior: Spectrum-Guided Knowledge Transfer for SAR Generalized Category Discovery | Xia Jingyuan, Hu Ruikang, Li Ye, Yang Zhixiong, Lan Xu, Lu Zhejun | the State Key Laboratory of Complex System | 该研究通过频域光谱引导，实现光学到SAR的知识迁移，解决SAR广义类别发现难题。 | [#406](https://github.com/thinson/RS-PaperClaw/issues/406) |
+
+## 🔎 观察
+
+- 视觉-语言模型正重塑遥感变化检测范式，从像素差异比对转向可解释的灾害语义推理。
+- SAR与光学数据的跨模态知识迁移或成突破SAR标注瓶颈的关键，但频域对齐的鲁棒性仍需验证。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260423](./202604/20260423.md)
 ## 📌 今日概况
 
@@ -61,43 +92,6 @@ Powered by OpenClaw🦞
 
 - 时序SAR数据正成为能源基础设施监测的核心数据源，海上风电等新兴领域需求凸显。
 - 检索增强与生成模型技术向遥感基准构建渗透，反映领域对高质量评测与数据效率的双重追求。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260421](./202604/20260421.md)
-## 📌 今日概况
-
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究呈现多模态融合与高效推理两大主线。高分辨率影像处理持续深化，涵盖语义分割、小目标检测与超分辨率重建；SAR任务规划与图像合成技术取得进展；农业遥感与光谱成像应用拓展。扩散模型、注意力机制与深度学习优化方法成为主要技术支撑。
-
-## ✨ 今日亮点
-
-- 无训练扩散模型实现卫星图像协调合成，降低域适应成本
-- 结构-语义解耦调制提升地理空间基础模型高分辨率制图能力
-- 自适应切片辅助超推理优化高分辨率影像小目标检测效率
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260421] Structure-Semantic Decoupled Modulation of Global Geospatial Embeddings for High-Resolution Remote Sensing Mapping | Lyu Jienan, Yang Miao, Cai Jinchen, Hu Yiwen, Lu Guanyi, Qiu Junhao, Dong Runmin | Sun Yat-Sen University；Tsinghua University | 提出结构-语义解耦调制方法，优化全球地理空间嵌入在高分辨率遥感制图中的应用。 | [#386](https://github.com/thinson/RS-PaperClaw/issues/386) |
-| [20260421] An effective window framework for closed-Loop regional SAR reconnaissance with hybrid direct-relay downlink scheduling | Li Linhong, Feng Qi, Li Kebo, Liang Yangang | College of Aerospace Science and Engineering, National University of Defense Technology；State Key Laboratory of Space System Operation and Control | 构建闭环区域SAR侦察窗口框架，实现混合直传中继下行链路调度与成像质量协同优化。 | [#387](https://github.com/thinson/RS-PaperClaw/issues/387) |
-| [20260421] Optimal Multispectral Imaging using RGB Cameras | Matulić Tomislav, Škrabo Ivan, Babić Dubravko, Seršić Damir | Faculty of Electrical Engineering and Computing University of Zagreb | 基于帧理论与条件数优化，开发RGB相机最优多光谱成像方法，实现光谱波段选择。 | [#388](https://github.com/thinson/RS-PaperClaw/issues/388) |
-| [20260421] HarmoniDiff-RS: Training-Free Diffusion Harmonization for Satellite Image Composition | Zhuang Xiaoqi, Jefersson A. Dos Santos, Han Jungong | The University of Sheffield；Tsinghua University | 提出HarmoniDiff-RS无训练扩散协调方法，用于卫星图像合成中的域适应与图像协调。 | [#389](https://github.com/thinson/RS-PaperClaw/issues/389) |
-| [20260421] Adaptive Slicing-Assisted Hyper Inference for Enhanced Small Object Detection in High-Resolution Imagery | Moretti Francesco, Jin Yi, Mario Guiqin | College of Educational Science and Technology, Polytechnic University of Turin | 设计自适应切片辅助超推理机制，提升高分辨率航空影像小目标检测性能。 | [#390](https://github.com/thinson/RS-PaperClaw/issues/390) |
-| [20260421] Attention-based Multi-modal Deep Learning Model of Spatio-temporal Crop Yield Prediction with Satellite, Soil and Climate Data | Gopal Krishna Shyam, Chandrakar Ila | Presidency University；University of Europe for Applied Sciences | 构建注意力驱动多模态深度学习模型，融合卫星、土壤与气候数据实现时空作物产量预测。 | [#391](https://github.com/thinson/RS-PaperClaw/issues/391) |
-| [20260421] DUSG-Tomo-Net: A Deep Unfolded Neural Network for Super-Resolving Gridless Spaceborne SAR Tomography via Learned Toeplitz-Structured Covariance Representation | Qian Kun, Xia Zhuge, Ma Qian, Zhang Qi, Liu Weijian, He Xiufeng | Wuhan Electronic Information Institute；School of Earth Sciences and Engineering, Hohai University；School of Medical Information Engineering, Guangzhou University of Chinese Medicine；Chair of Data Science in Earth Observation, Technical University of Munich | 开发深度展开神经网络DUSG-Tomo-Net，通过学习Toeplitz结构协方差表示实现无网格星载SAR层析超分辨率。 | [#392](https://github.com/thinson/RS-PaperClaw/issues/392) |
-| [20260421] ExplainS2A: Explainable Spectral-Spatial Duality Model for Fast Transforming Sentinel-2 Image to AVIRIS-Level Hyperspectral Image | Lin Chia-Hsiang, Leng Zi-Chao | IEEE | 提出可解释光谱-空间对偶模型ExplainS2A，实现Sentinel-2多光谱向AVIRIS级高光谱图像快速转换。 | [#393](https://github.com/thinson/RS-PaperClaw/issues/393) |
-
-## 🔎 观察
-
-- 高分辨率遥感处理呈现'切片-推理'精细化趋势，自适应策略成为平衡精度与效率的关键路径
-- 扩散模型在遥感域适应中向无训练方向发展，或推动实时卫星图像合成应用落地
 
 ---
 
