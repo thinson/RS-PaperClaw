@@ -11,7 +11,8 @@
     "UAV",
     "geolocalization",
     "change detection",
-    "land cover"
+    "land cover",
+    "AlphaEarth"
   ],
   "rs_signal_patterns": [
     "(?i)\\bremote sensing\\b",
@@ -25,7 +26,8 @@
     "\\bUAV\\b",
     "(?i)\\bgeolocalization\\b",
     "(?i)\\bchange detection\\b",
-    "(?i)\\bland cover\\b"
+    "(?i)\\bland cover\\b",
+    "(?i)\\balphaearth\\b"
   ],
   "ai_signal_patterns": [
     "(?i)\\bfoundation model(s)?\\b",

@@ -133,45 +133,112 @@ def _heuristic_institutions(first_page_text: str) -> list[str]:
     return _dedupe_institutions(lines)
 
 
+def _extract_footnote_block(first_page_text: str) -> str:
+    """Extract IEEE-style footnote block from the bottom of first page.
+
+    IEEE Trans templates place author affiliations in a footnote starting with
+    lines like "This work was supported..." or "(Corresponding author: ...)".
+    This block sits below the abstract and is often missed by top-down scraping.
+    """
+    text = first_page_text or ""
+    footnote_markers = [
+        r"This work was supported",
+        r"\(Corresponding author[:：]",
+        r"Manuscript received",
+        r"Digital Object Identifier",
+    ]
+    earliest = len(text)
+    for marker in footnote_markers:
+        m = re.search(marker, text, re.IGNORECASE)
+        if m and m.start() < earliest:
+            earliest = m.start()
+
+    if earliest >= len(text):
+        return ""
+    return text[earliest:]
+
+
+def _parse_ieee_footnote(footnote: str, known_authors: str) -> list[str]:
+    """Parse IEEE-style "is with / was with" affiliation sentences."""
+    institutions: list[str] = []
+
+    for match in re.finditer(
+        r"(?:are|is|was|were)\s+(?:all\s+)?(?:currently\s+)?with\s+(.+?)(?:\s*\(|\s*\[|\s*[–—]|\.$|\n)",
+        footnote,
+        re.IGNORECASE,
+    ):
+        chunk = match.group(1).strip().rstrip(" ,;.")
+        # Extract institution-like phrases containing keywords
+        kw = re.compile(
+            r"(universit[yi]|college|school|institut|academy|laborator[yi]|"
+            r"centre|center|department|hospital|faculty|research|laboratory|"
+            r"大学|学院|研究所|实验室|中心|医院|研究院|研究院)",
+            re.IGNORECASE,
+        )
+        for phrase in re.split(r",\s*and\s+also\s+|\band\s+also\b", chunk):
+            phrase = phrase.strip().rstrip(" ,;.")
+            if kw.search(phrase):
+                institutions.append(phrase)
+
+    # Also try "are with X, Y, and Z" pattern
+    for match in re.finditer(
+        r"(?:are|were|were all)\s+(?:all\s+)?with\s+([\w\s,]+?)(?:\s*\(|\s*\[|\s*[–—]|\.)",
+        footnote,
+        re.IGNORECASE,
+    ):
+        chunk = match.group(1).strip()
+        # Split by ", and" or "and also" to separate multi-institution mentions
+        for part in re.split(r",?\s+and\s+also\s+|,?\s+and\s+", chunk):
+            part = part.strip().rstrip(" ,;.")
+            if len(part) > 6:
+                institutions.append(part)
+
+    return _dedupe_institutions(institutions)
+
+
 def extract_institutions_from_first_page(title: str, authors: str, first_page_text: str) -> str:
     if not first_page_text.strip():
         return ""
 
-    candidate_lines = []
-    for raw_line in first_page_text.splitlines():
-        line = re.sub(r"\s+", " ", raw_line).strip()
-        if not line:
-            continue
-        candidate_lines.append(line)
-        if re.search(r"^(abstract|摘要|keywords?|index terms)\b", line, re.IGNORECASE):
-            break
-    context = "\n".join(candidate_lines[:80])[:5000]
-
-    prompt = (
-        "你是学术论文信息抽取助手。请根据论文首页文本，提取作者所属单位名称。\n"
-        "要求：\n"
-        "1. 只输出单位名称，不输出作者名、邮箱、国家、脚注编号；\n"
-        "2. 去重；\n"
-        "3. 若首页无法可靠判断，返回严格 JSON []，不要猜测；\n"
-        "4. 返回严格 JSON 数组，例如 [\"Tsinghua University\", \"Chinese Academy of Sciences\"]。\n\n"
-        f"标题：{title}\n"
-        f"作者：{authors}\n"
-        f"首页文本：\n{context}"
-    )
-    output = (call_llm(prompt, max_tokens=300, timeout=120) or "").strip()
-
+    # Strategy 1: IEEE footnote — scan the *entire* first page, especially
+    # the bottom footnote block that sits below the abstract.
+    footnote = _extract_footnote_block(first_page_text)
     institutions: list[str] = []
-    match = re.search(r"\[[\s\S]*\]", output)
-    if match:
-        try:
-            data = json.loads(match.group(0))
-            if isinstance(data, list):
-                institutions = [str(item) for item in data if isinstance(item, str)]
-        except Exception:
-            institutions = []
+    if footnote:
+        institutions = _parse_ieee_footnote(footnote, authors)
 
+    # Strategy 2: LLM extraction — feed the full first page text (not just
+    # the part before abstract), since IEEE footnotes are below the abstract.
     if not institutions:
-        institutions = _heuristic_institutions(context)
+        context = (first_page_text or "")[:6000]
+        prompt = (
+            "你是学术论文信息抽取助手。请根据论文首页文本，提取作者所属单位名称。\n"
+            "要求：\n"
+            "1. 只输出单位名称，不输出作者名、邮箱、国家、脚注编号；\n"
+            "2. 去重；\n"
+            "3. 若首页无法可靠判断，返回严格 JSON []，不要猜测；\n"
+            "4. 返回严格 JSON 数组，例如 [\"Tsinghua University\", \"Chinese Academy of Sciences\"]。\n"
+            "5. 特别注意：IEEE 等期刊模板的单位信息常出现在摘要下方的脚注区域\n"
+            "   （如 \"This work was supported...\" 或 \"(Corresponding author...)\" 之后的段落）。\n"
+            "   请仔细阅读该区域，提取 \"is with / are with\" 后面跟着的单位名称。\n\n"
+            f"标题：{title}\n"
+            f"作者：{authors}\n"
+            f"首页全文：\n{context}"
+        )
+        output = (call_llm(prompt, max_tokens=400, timeout=120) or "").strip()
+
+        match = re.search(r"\[[\s\S]*\]", output)
+        if match:
+            try:
+                data = json.loads(match.group(0))
+                if isinstance(data, list):
+                    institutions = [str(item) for item in data if isinstance(item, str)]
+            except Exception:
+                institutions = []
+
+    # Strategy 3: heuristic fallback — scan entire first page, not just pre-abstract.
+    if not institutions:
+        institutions = _heuristic_institutions(first_page_text)
 
     institutions = _dedupe_institutions(institutions)
     return "；".join(institutions)
