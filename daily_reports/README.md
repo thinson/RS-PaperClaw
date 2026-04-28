@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260425](./202604/20260425.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦三大方向：边缘计算驱动的农业精准管理、语义增强的时序变化理解，以及基础模型支撑的社会经济监测。研究呈现从通用模型向垂直场景深化、从云端向边缘部署延伸的趋势，体现遥感AI在可持续发展目标中的工具化价值。
+
+## ✨ 今日亮点
+
+- YOLO轻量化部署实现无人机端侧杂草实时检测，推动精准农业落地
+- 语义锚定双粒度消歧机制提升遥感变化描述准确性
+- 卫星基础模型自监督预训练赋能大范围财富指数预测
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260425] Resource-Constrained UAV-Based Weed Detection for Site-Specific Management on Edge Devices | Wang Linyuan, Yao Haibo, Tseng Te-Ming, Betitame Kelvin, Sun Xin, Huang Hanbo, Chen Dong | Department of Agricultural and Biological Engineering, Mississippi State University；USDA-ARS, Genetics and Sustainable Agriculture Research Unit；Department of Plant and Soil Sciences, Mississippi State University；Department of Agricultural and Biosystems Engineering, North Dakota State University；NDSU Peltier Institute for the Advancement of Agricultural Technology, North Dakota State University | 针对无人机边缘设备资源受限场景，优化YOLO模型实现田间杂草实时检测，支持变量施药等精准农业作业。 | [#408](https://github.com/thinson/RS-PaperClaw/issues/408) |
+| [20260425] STAND: Semantic Anchoring Constraint with Dual-Granularity Disambiguation for Remote Sensing Image Change Captioning | Gong Yanpei, Zhang Beichen, Wang Hao, Qi Zhaobo, Liu Xinyan, Xu Yuanrong, Gao Ruiyang, Zhang Weigang | Harbin Institute of Technology | 提出语义锚定约束与双粒度消歧网络，解决遥感变化描述中语义模糊问题，提升时序变化 captioning 精度。 | [#409](https://github.com/thinson/RS-PaperClaw/issues/409) |
+| [20260425] A satellite foundation model for improved wealth monitoring | Zheng Zhuo, Higuera-Mendieta Iván, Lee Richard, Newhouse David, Kilic Talip, Ermon Stefano, Burke Marshall, David B. Lobell | Department of Computer Science, Stanford University；Department of Earth System Science, Stanford University；Center on Food Security and the Environment, Stanford University；Development Economics Data Group, World Bank Group；Department of Environmental Social Science, Stanford University | 构建卫星影像基础模型，通过自监督预训练提取多尺度特征，实现无需人工标注的全球财富监测与贫困制图。 | [#410](https://github.com/thinson/RS-PaperClaw/issues/410) |
+
+## 🔎 观察
+
+- 农业遥感正从云端分析向端侧智能演进，边缘计算与模型压缩成为关键使能技术
+- 基础模型在经济社会遥感监测中展现潜力，但跨域泛化与伦理隐私问题仍需关注
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260424](./202604/20260424.md)
 ## 📌 今日概况
 
@@ -58,40 +90,6 @@ Powered by OpenClaw🦞
 
 - 合成数据与真实场景数据并重，反映遥感AI对标注成本高、样本稀缺问题的应对策略分化
 - 无人机平台成为近岸环境监测主力载体，像素级分割精度直接决定 debris 量化可靠性
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260422](./202604/20260422.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究呈现多模态融合与基础模型优化并进的态势。SAR时序分析支撑海上风电基础设施监测，跨模态检索采用粗精两阶段策略提升效率，变化检测引入检索增强与Best-of-N排序构建新基准，面向对象检测探索傅里叶级数编码解决角度边界不连续问题，半监督流匹配模型推动马赛克与全色图像融合成像。
-
-## ✨ 今日亮点
-
-- 密集Sentinel-1时序实现全球海上风电部署动态监测
-- 检索增强Best-of-N排序构建遥感区域变化理解新基准
-- 傅里叶级数编码创新解决旋转目标检测角度边界不连续难题
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260422] Global Offshore Wind Infrastructure: Deployment and Operational Dynamics from Dense Sentinel-1 Time Series | Hoeser Thorsten, Bachofer Felix, Kuenzer Claudia | Earth Observation Center (EOC), German Aerospace Center (DLR)；Institute for Geography and Geology, University of Wuerzburg | 基于密集Sentinel-1时序数据，构建全球海上风电基础设施部署与运行动态监测框架。 | [#395](https://github.com/thinson/RS-PaperClaw/issues/395) |
-| [20260422] RSRCC: A Remote Sensing Regional Change Comprehension Benchmark Constructed via Retrieval-Augmented Best-of-N Ranking | Kazoom Roie, Gigi Yotam, Leifman George, Shekel Tomer, Beryozkin Genady | Google Research | 提出RSRCC基准，通过检索增强与Best-of-N排序构建遥感区域变化理解评测体系。 | [#396](https://github.com/thinson/RS-PaperClaw/issues/396) |
-| [20260422] Fast-then-Fine: A Two-Stage Framework with Multi-Granular Representation for Cross-Modal Retrieval in Remote Sensing | Chen Xi, Chen Xu, Jia Xiangyang, Zhang Xu, Wei Shuquan, Wang Wei | School of Computer Science, Wuhan University；Beijing Institute for General Artificial Intelligence (BIGAI) | 设计粗精两阶段跨模态检索框架，利用多粒度表征提升遥感图像-文本检索效率。 | [#397](https://github.com/thinson/RS-PaperClaw/issues/397) |
-| [20260422] Fourier Series Coder: A Novel Perspective on Angle Boundary Discontinuity Problem for Oriented Object Detection | Wei Minghong, Cao Pu, Chen Zhihao, Zang Zhiyuan, Yang Lu, Song Qing | Tsinghua University；Chinese Academy of Sciences | 以傅里叶级数编码新视角解决旋转目标检测中的角度边界不连续与周期模糊问题。 | [#398](https://github.com/thinson/RS-PaperClaw/issues/398) |
-| [20260422] Semi-Supervised Flow Matching for Mosaiced and Panchromatic Fusion Imaging | Luo Peiming, Wang Nan, Liu Litong, Huang Jiahan, Wu Chenxu, Dian Renwei, Hou Junming | Southeast University；Hunan University | 提出半监督流匹配方法，实现马赛克图像与全色图像的高质量融合成像。 | [#399](https://github.com/thinson/RS-PaperClaw/issues/399) |
-
-## 🔎 观察
-
-- 时序SAR数据正成为能源基础设施监测的核心数据源，海上风电等新兴领域需求凸显。
-- 检索增强与生成模型技术向遥感基准构建渗透，反映领域对高质量评测与数据效率的双重追求。
 
 ---
 
