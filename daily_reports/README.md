@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260427](./202604/20260427.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究呈现多模态融合与语义理解并进的趋势。西南交大团队探索开放词汇语义分割，结合目标级标签与场景级语义特征；芬兰地理空间研究所发布多光谱机载激光扫描数据集，支撑树种分类研究；哈工大等提出统一去雾网络，兼顾色彩恢复与边缘保持；印度团队则聚焦遥感图像描述生成，融合结构-语义信息。
+
+## ✨ 今日亮点
+
+- 开放词汇遥感分割突破：整合目标级与场景级跨模态特征，提升多模态图像泛化能力
+- 多光谱激光雷达数据集发布：MS-ALS-SPECIES为树种分类提供新型数据基准
+- 统一去雾网络创新：6thGrid-Net基于3D LUTs实现色彩恢复与边缘保持的联合优化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260427] Open-Vocabulary Semantic Segmentation Network Integrating Object-Level Label and Scene-Level Semantic Features for Multimodal Remote Sensing Images | Dai Jinkun, Ye Yuanxin, Tang Peng, Tang Tengfeng, Ma Xianping, Xiao Jing, Wang Mi | Faculty of Geosciences and Engineering, Southwest Jiaotong University；State-Province Joint Engineering Laboratory of Spatial Information Technology for High-Speed Railway Safety, Southwest Jiaotong University；School of Artificial Intelligence, Wuhan University；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University | 西南交大等提出开放词汇语义分割网络，融合目标级标签与场景级语义特征，实现多模态遥感图像的跨模态文本监督学习。 | [#339](https://github.com/thinson/RS-PaperClaw/issues/339) |
+| [20260427] Multispectral airborne laser scanning dataset for tree species classification: MS-ALS-SPECIES | Hyyppä Matti, Salolahti Klaara, Hyyppä Eric, Yu Xiaowei, Taher Josef, Matikainen Leena, Lehtomäki Matti, Litkey Paula, Hakala Teemu, Kaartinen Harri, Hyyppä Juha, Kukko Antero | Department of Remote Sensing and Photogrammetry, Finnish Geospatial Research Institute FGI, The National Land Survey of Finland | 芬兰地理空间研究所发布MS-ALS-SPECIES数据集，基于多光谱机载激光扫描技术，为深度学习树种分类研究提供数据支撑。 | [#416](https://github.com/thinson/RS-PaperClaw/issues/416) |
+| [20260427] 6thGrid-Net: Unified Remote Sensing Image Dehazing Based on Color Restoration and Edge-Preserving | Bai Runci, Jiang Kui, Chen Xiang, Wu Chen, Lu Dianjie, Zhang Guijuan, Zheng Zhuoran | China Academy of Information and Communications Technology；Harbin Institute of Technology；Nanjing University of Science and Technology | 中国信通院等提出6thGrid-Net统一去雾网络，结合色彩恢复与边缘保持机制，基于3D LUTs实现遥感图像质量增强。 | [#417](https://github.com/thinson/RS-PaperClaw/issues/417) |
+| [20260427] JSSFF: A Joint Structural-Semantic Fusion Framework for Remote Sensing Image Captioning | Das Swadhin, Yadav Vivek | University of Petroleum and Energy Studies | 印度石油能源大学提出JSSFF联合结构-语义融合框架，通过边缘感知融合改进编码器-解码器架构，用于遥感图像描述生成。 | [#418](https://github.com/thinson/RS-PaperClaw/issues/418) |
+
+## 🔎 观察
+
+- 多模态融合成为核心范式：从跨模态分割到结构-语义联合建模，异构数据协同处理能力持续增强
+- 实用化数据集建设加速：多光谱激光雷达等新传感数据集的发布，正填补垂直应用领域的基准空白
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260426](./202604/20260426.md)
 ## 📌 今日概况
 
@@ -59,37 +92,6 @@ Powered by OpenClaw🦞
 
 - 农业遥感正从云端分析向端侧智能演进，边缘计算与模型压缩成为关键使能技术
 - 基础模型在经济社会遥感监测中展现潜力，但跨域泛化与伦理隐私问题仍需关注
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260424](./202604/20260424.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦两大方向：一是灾害变化检测的语义理解升级，通过视觉-语言模型实现从像素检测到灾害语义解析的跨越；二是SAR图像的跨模态知识迁移，利用光学先验破解SAR数据标注稀缺难题，推动无监督类别发现。
-
-## ✨ 今日亮点
-
-- ChangeQuery构建视觉-语言框架，实现灾害变化检测的语义级理解突破
-- 光谱引导知识迁移首次将光学域先验系统注入SAR广义类别发现
-- 跨模态学习成为解决遥感数据异质性与标注瓶颈的核心技术路径
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260424] ChangeQuery: Advancing Remote Sensing Change Analysis for Natural and Human-Induced Disasters from Visual Detection to Semantic Understanding | Sun Dongwei, Yao Jing, Wei Kan, Cao Xiangyong, Wu Chen, Zhao Zhenghui, Ghamisi Pedram, Zhou Jun, Jón Atli Benediktsson | Chinese Academy of Sciences；University of Iceland；Technical University of Munich；German Aerospace Center；Helmholtz-Zentrum Hereon；Griffith University | ChangeQuery提出视觉-语言变化检测框架，将灾害分析从视觉检测提升至语义理解层次。 | [#405](https://github.com/thinson/RS-PaperClaw/issues/405) |
-| [20260424] Unlocking Optical Prior: Spectrum-Guided Knowledge Transfer for SAR Generalized Category Discovery | Xia Jingyuan, Hu Ruikang, Li Ye, Yang Zhixiong, Lan Xu, Lu Zhejun | the State Key Laboratory of Complex System | 该研究通过频域光谱引导，实现光学到SAR的知识迁移，解决SAR广义类别发现难题。 | [#406](https://github.com/thinson/RS-PaperClaw/issues/406) |
-
-## 🔎 观察
-
-- 视觉-语言模型正重塑遥感变化检测范式，从像素差异比对转向可解释的灾害语义推理。
-- SAR与光学数据的跨模态知识迁移或成突破SAR标注瓶颈的关键，但频域对齐的鲁棒性仍需验证。
 
 ---
 
