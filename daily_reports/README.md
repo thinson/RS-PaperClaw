@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260426](./202604/20260426.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦深度学习在遥感图像处理中的创新应用，涵盖无监督时序制图、高光谱分类及SAR图像去噪三大方向。中山大学团队提出无需标注的油棕时序制图方法，汕头大学等探索CNN-Transformer融合架构，印度理工学院则回归数学基础比较PDE去噪模型。
+
+## ✨ 今日亮点
+
+- 无标注时序制图突破：利用历史噪声地图实现2020-2024年马印油棕榈动态监测
+- CNN-Transformer协同：池化注意力融合机制提升高光谱图像分类精度
+- PDE去噪理论对比：二阶与四阶偏微分方程在SAR及医学影像中的加权耦合研究
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260426] From Noisy Historical Maps to Time-Series Oil Palm Mapping Without Annotation in Malaysia and Indonesia (2020-2024) | Kuapanich Nuttaset, Zheng Juepeng, Shi Bohan, Liu Jiaying, Jiang Jiayin, Huang Jiatao, Tan Shenghan, Li Qingmei, Fu Haohuan | School of Artificial Intelligence, Sun Yat-Sen University；National Supercomputing Center in Shenzhen；Khoury College of Computer Sciences, Northeastern University；Tsinghua Shenzhen International Graduate School, Tsinghua University | 提出基于噪声历史地图的无监督学习方法，实现2020-2024年马来西亚和印度尼西亚油棕榈时序制图，无需人工标注。 | [#412](https://github.com/thinson/RS-PaperClaw/issues/412) |
+| [20260426] A Synergistic CNN-Transformer Network with Pooling Attention Fusion for Hyperspectral Image Classification | Chen Peng, He Wenxuan, Qian Feng, Shi Guangyao, Yan Jingwen | College of Engineering, Shantou University；School of Electronic Information and Communications, Huazhong University of Science and Technology；Changchun Institute of Optics, Fine Mechanics and Physics, Chinese Academy of Sciences；School of Computer Science and Technology, Chongqing University of Posts and Telecommunications；School of Intelligent Manufacturing and Electrical Engineering, Guangzhou Institute of Science and Technology | 设计CNN-Transformer协同网络，通过池化注意力融合机制联合提取高光谱图像空谱特征以提升分类性能。 | [#413](https://github.com/thinson/RS-PaperClaw/issues/413) |
+| [20260426] Comparative Study of Weighted and Coupled Second- and Fourth-Order PDEs for Image Despeckling in Grayscale, Color, SAR, and Ultrasound | Kumar Manish, Rajendra K. Ray | School of Mathematical and Statistical Sciences, Indian Institute of Technology Mandi | 系统比较加权与耦合的二阶、四阶偏微分方程模型，评估其在灰度、彩色、SAR及超声图像去噪中的效果。 | [#414](https://github.com/thinson/RS-PaperClaw/issues/414) |
+
+## 🔎 观察
+
+- 弱监督与无监督学习成为遥感大样本标注瓶颈的重要突破口，历史数据再利用价值凸显。
+- Transformer架构持续向高光谱等细粒度任务渗透，但CNN局部特征提取仍具不可替代性。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260425](./202604/20260425.md)
 ## 📌 今日概况
 
@@ -58,38 +90,6 @@ Powered by OpenClaw🦞
 
 - 视觉-语言模型正重塑遥感变化检测范式，从像素差异比对转向可解释的灾害语义推理。
 - SAR与光学数据的跨模态知识迁移或成突破SAR标注瓶颈的关键，但频域对齐的鲁棒性仍需验证。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260423](./202604/20260423.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦图像超分辨率与精细化分割任务。合成数据集构建、无人机 beach litter 监测及红外图像超分挑战赛成为三大主线，体现从数据生成到真实场景落地的技术链条，深度学习在像素级任务中的精度提升持续受到关注。
-
-## ✨ 今日亮点
-
-- SyMTRS发布多任务合成数据集，同步支撑深度估计、域适应与超分辨率研究
-- PLAS-Net实现无人机海滩垃圾像素级分割，推动海洋 debris 自动化监测
-- NTIRE 2026首届遥感红外图像超分挑战赛公布基准结果与方法综述
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260423] SyMTRS: Benchmark Multi-Task Synthetic Dataset for Depth, Domain Adaptation and Super-Resolution in Aerial Imagery | Safouane El Ghazouali, Venturi Nicola, Rueegsegger Michael, Michelucci Umberto | TOELT LLC AI lab / HSLU；Competence Center for Artificial Intelligence and Simulation, armasuisse S+T | SyMTRS构建航空影像多任务合成数据集，为深度估计、域适应与超分辨率提供统一基准。 | [#401](https://github.com/thinson/RS-PaperClaw/issues/401) |
-| [20260423] PLAS-Net: Pixel-Level Area Segmentation for UAV-Based Beach Litter Monitoring | Liu Yongying, Wang Jiaqi, Song Jian, Shao Xinlei, Chen Yijia, Xu Nan, Mizuno Katsunori, Tabeta Shigeru, Zhao Fan | Graduate School of Frontier Sciences, The University of Tokyo；Department of Urban Informatics, Shenzhen University | PLAS-Net提出像素级面积分割网络，用于无人机海滩垃圾监测，实现实例级精细化识别。 | [#402](https://github.com/thinson/RS-PaperClaw/issues/402) |
-| [20260423] The First Challenge on Remote Sensing Infrared Image Super-Resolution at NTIRE 2026: Benchmark Results and Method Overview | Liu Kai, Yue Haoyang, Lin Zeli, Chen Zheng, Wang Jingkai, Gong Jue, Li Jiatong, Yan Xianglong, Zhu Libo, Li Jianze, Zhang Ziqing, Zhou Zihan, Liu Xiaoyang, Timofte Radu, Zhang Yulun, Chen Junye, Yan Zhenming, Hong Yucong, Han Ruize, ..., Gressin Adrien | NTIRE 2026 | NTIRE 2026首届遥感红外图像超分辨率挑战赛发布，汇总参赛方法与基准性能结果。 | [#403](https://github.com/thinson/RS-PaperClaw/issues/403) |
-
-## 🔎 观察
-
-- 合成数据与真实场景数据并重，反映遥感AI对标注成本高、样本稀缺问题的应对策略分化
-- 无人机平台成为近岸环境监测主力载体，像素级分割精度直接决定 debris 量化可靠性
 
 ---
 
