@@ -109,13 +109,13 @@ RS-PaperClaw/
 
 ### 0) Clone the repo
 
-The repo contains many paper preview images (400MB+). If you only need the pipeline scripts, use a lightweight clone:
+The repo contains many paper preview images (400MB+). To skip them:
 
 ```bash
-# Lightweight clone (skips images, ~1MB)
+# Lightweight clone (skips papers/previews/, ~1MB)
 git clone --filter=blob:none --sparse https://github.com/thinson/RS-PaperClaw.git
 cd RS-PaperClaw
-git sparse-checkout set skills/rs-paper-pipeline papers/issue_index.json
+git sparse-checkout set --no-cone '/*' '!papers/previews'
 
 # Full clone (includes all preview images, ~400MB)
 git clone https://github.com/thinson/RS-PaperClaw.git
