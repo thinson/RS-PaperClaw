@@ -28,6 +28,29 @@ def has_ai_signal(text: str) -> bool:
     return any(pattern.search(text) for pattern in AI_MATCH_PATTERNS)
 
 
+def _parse_llm_ids(raw_output: str) -> set[str] | None:
+    """Extract arxiv IDs from LLM output. Returns None on parse failure."""
+    code_block = re.search(r"```(?:json)?\s*([\s\S]*?)\s*```", raw_output)
+    if code_block:
+        json_str = code_block.group(1).strip()
+    else:
+        match = re.search(r"\[[\s\S]*\]", raw_output)
+        json_str = match.group(0) if match else raw_output
+    arr = json.loads(json_str)
+    return {x.strip() for x in arr if isinstance(x, str)}
+
+
+def _match_id(cid: str, keep_set: set[str]) -> bool:
+    if cid in keep_set:
+        return True
+    cid_base = cid.replace("v1", "").replace("v2", "").rstrip("v")
+    for k in keep_set:
+        k_base = k.replace("v1", "").replace("v2", "").rstrip("v")
+        if cid_base == k_base:
+            return True
+    return False
+
+
 def llm_cross_filter(candidates):
     if not candidates:
         return []
@@ -37,40 +60,34 @@ def llm_cross_filter(candidates):
         payload.append(f"[{i}] id={c['arxiv_id']} | title={c['title']} | abstract={c['abstract'][:500]}")
 
     prompt = render_filter_prompt(payload)
-    out = call_llm(prompt, max_tokens=1200, timeout=180).strip()
 
-    try:
-        # 先尝试提取 ```json 代码块中的内容
-        code_block = re.search(r"```(?:json)?\s*([\s\S]*?)\s*```", out)
-        if code_block:
-            json_str = code_block.group(1).strip()
-        else:
-            # 否则直接提取 JSON 数组
-            json_str = re.search(r"\[[\s\S]*\]", out)
-            json_str = json_str.group(0) if json_str else out
-        arr = json.loads(json_str)
-        keep = set(x.strip() for x in arr if isinstance(x, str))
-        # 支持 LLM 返回的 ID 可能缺少 v1 后缀的情况
-        def match_id(cid, keep_set):
-            if cid in keep_set:
-                return True
-            # 尝试匹配无前缀版本
-            cid_base = cid.replace("v1", "").replace("v2", "").rstrip("v")
-            for k in keep_set:
-                k_base = k.replace("v1", "").replace("v2", "").rstrip("v")
-                if cid_base == k_base:
-                    return True
-            return False
-        selected = [c for c in candidates if match_id(c["arxiv_id"], keep)]
-        return [c for c in selected if has_remote_sensing_signal(f"{c['title']}\n{c['abstract']}")]
-    except Exception:
-        # LLM 解析失败时，保守降级：关键词交叉筛选
-        out_items = []
-        for c in candidates:
-            text = f"{c['title']}\n{c['abstract']}"
-            if has_remote_sensing_signal(text) and has_ai_signal(text):
-                out_items.append(c)
-        return out_items
+    keep_ids = None
+    for attempt in range(2):
+        out = call_llm(prompt, max_tokens=1200, timeout=180).strip()
+        try:
+            keep_ids = _parse_llm_ids(out)
+            break
+        except Exception as exc:
+            print(f"  [LLM 解析] 第 {attempt + 1} 次失败: {exc}")
+            if attempt == 0:
+                print(f"  [LLM 解析] 原始输出: {out[:200]}")
+                print("  [LLM 解析] 重试中...")
+
+    if keep_ids is not None:
+        selected = [c for c in candidates if _match_id(c["arxiv_id"], keep_ids)]
+        result = [c for c in selected if has_remote_sensing_signal(f"{c['title']}\n{c['abstract']}")]
+        print(f"  [LLM 解析] 成功，命中 {len(result)} 篇")
+        return result
+
+    # 两次都失败，降级到关键词交叉筛选
+    print("  [LLM 解析] 两次均失败，降级为关键词交叉筛选")
+    out_items = []
+    for c in candidates:
+        text = f"{c['title']}\n{c['abstract']}"
+        if has_remote_sensing_signal(text) and has_ai_signal(text):
+            out_items.append(c)
+    print(f"  [关键词降级] 命中 {len(out_items)} 篇")
+    return out_items
 
 
 def compact_item(item: dict[str, str]) -> dict[str, str]:
