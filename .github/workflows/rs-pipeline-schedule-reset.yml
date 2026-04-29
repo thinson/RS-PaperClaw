@@ -33,8 +33,13 @@ jobs:
       PYTHONUNBUFFERED: "1"
 
     steps:
-      - name: Checkout
+      - name: Checkout (sparse)
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            skills/rs-paper-pipeline
+            papers/issue_index.json
+          sparse-checkout-cone-mode: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
