@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260428](./202604/20260428.md)
+## 📌 今日概况
+
+今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究呈现多元化趋势：卫星任务调度基准建设、量子启发式SAR分类、阴影感知图像修复、网络规模图像地理定位、边缘云协同重建及农业无人机检测等方向均有进展。计算效率与鲁棒性成为共同关注点，跨机构国际合作特征明显。
+
+## ✨ 今日亮点
+
+- EOS-Bench发布首个综合性地球观测卫星调度基准，覆盖敏捷卫星组合优化问题
+- 量子启发张量网络方法实现SAR目标分类的模型压缩与抗数据投毒能力
+- SARU框架统一阴影检测与去除任务，并构建遥感图像阴影处理新基准
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260428] EOS-Bench: A Comprehensive Benchmark for Earth Observation Satellite Scheduling | Yin Qian, Li Jiaxing, Cheng Jiaqi, Luo Qizhang, Riccardi Annalisa, Chatterjee Abhijit, Vazquez Rafael, Novara Carlo, Mavrovouniotis Michalis, Ponnuthurai Nagaratnam Suganthan, Bai Shengzhou, Hu Xiaoxuan, Xing Lining, Xu Ming, Li Shuang, Zheng Zixuan, Shen Xin, Chen Xiaoyu, Gu Yi, ..., Wang Xinwei | School of Traffic and Transportation Engineering, Central South University；School of Engineering and Materials Science, Queen Mary University of London；College of Automation, Central South University；Mechanical and Aerospace Engineering, University of Strathclyde；Department of Computer Science, University of Exeter；Department of Aerospace Engineering, Universidad de Sevilla；Department of Electronics and Telecommunications, Politecnico di Torino；ERATOSTHENES Centre of Excellence；Department of Civil Engineering and Geomatics, Cyprus University of Technology；Department of Computer Science and Engineering, College of Engineering, Qatar University；Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology；School of Management, Hefei University of Technology；Key Laboratory of Collaborative Intelligence Systems, Ministry of Education, Xidian University；School of Astronautics, Beihang University；Advanced Space Technology Laboratory, College of Astronautics, Nanjing University of Aeronautics and Astronautics；National Key Laboratory of Aerospace Flight Dynamics, Northwestern Polytechnical University；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；School of Computer Science, China University of Geosciences；School of Information Science and Technology, Dalian Maritime University；Department of Electrical & Computer Engineering, University of Alberta | EOS-Bench建立地球观测卫星调度综合基准，为组合优化算法提供标准化评估平台。 | [#420](https://github.com/thinson/RS-PaperClaw/issues/420) |
+| [20260428] Quantum-Inspired Robust and Scalable SAR Object Classification | Scharf Maximilian, Trenti Marco, Bock Felix, Davidson Padraig, Brosch Tobias, Benjamin Rodrigues de Miranda, Huber Sigurd, Felser Timo | Tensor AI Solutions GmbH；Hensoldt Sensors GmbH；German Aerospace Center (DLR)；Ulm University | 量子启发张量网络方法在SAR目标分类中实现鲁棒性与可扩展性的双重提升。 | [#421](https://github.com/thinson/RS-PaperClaw/issues/421) |
+| [20260428] SARU: A Shadow-Aware and Removal Unified Framework for Remote Sensing Images with New Benchmarks | Bo Zi-Yang, Lu Wei, Chen Hongruixuan, Chen Si-Bao, Luo Bin | Anhui University；The University of Tokyo | SARU框架将阴影检测与去除任务统一，并配套发布遥感图像阴影处理基准数据集。 | [#422](https://github.com/thinson/RS-PaperClaw/issues/422) |
+| [20260428] GeoSearch: Augmenting Worldwide Geolocalization with Web-Scale Reverse Image Search and Image Matching | Le-Duc Tung-Duong, Nguyen-Son Hoang-Quoc, Dao Minh-Son | University of Science, VNU-HCM；National Institute of Information and Communications Technology | GeoSearch结合网络规模反向图像搜索与大语言模型，增强全球图像地理定位能力。 | [#423](https://github.com/thinson/RS-PaperClaw/issues/423) |
+| [20260428] Edge-Cloud Collaborative Reconstruction via Structure-Aware Latent Diffusion for Downstream Remote Sensing Perception | Li Yun, Li Xianju | Chinese Academy of Sciences | 结构感知潜扩散模型支撑边缘云协同重建，服务于下游遥感感知任务。 | [#424](https://github.com/thinson/RS-PaperClaw/issues/424) |
+| [20260428] Towards Robust Deep Learning-based Rumex Obtusifolius Detection from Drone Images | Fabian Dionys Schrag, Mehmet Ozgur Turkoglu, Schindler Konrad, Ralph Lukas Stoop | Agroscope NBA；Agroscope Earth Observation of Agroecosystems Team；ETH Zurich | 针对无人机图像的钝叶酸模杂草检测研究，探索CNN与ViT的域适应鲁棒性。 | [#425](https://github.com/thinson/RS-PaperClaw/issues/425) |
+
+## 🔎 观察
+
+- 遥感AI正从单一任务优化转向系统级基准建设，EOS-Bench等工具将加速算法公平比较与产业落地。
+- 量子计算与边缘智能等新型计算范式开始渗透遥感领域，但其实际部署效益仍需工程验证。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260427](./202604/20260427.md)
 ## 📌 今日概况
 
@@ -60,38 +95,6 @@ Powered by OpenClaw🦞
 
 - 弱监督与无监督学习成为遥感大样本标注瓶颈的重要突破口，历史数据再利用价值凸显。
 - Transformer架构持续向高光谱等细粒度任务渗透，但CNN局部特征提取仍具不可替代性。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260425](./202604/20260425.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦三大方向：边缘计算驱动的农业精准管理、语义增强的时序变化理解，以及基础模型支撑的社会经济监测。研究呈现从通用模型向垂直场景深化、从云端向边缘部署延伸的趋势，体现遥感AI在可持续发展目标中的工具化价值。
-
-## ✨ 今日亮点
-
-- YOLO轻量化部署实现无人机端侧杂草实时检测，推动精准农业落地
-- 语义锚定双粒度消歧机制提升遥感变化描述准确性
-- 卫星基础模型自监督预训练赋能大范围财富指数预测
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260425] Resource-Constrained UAV-Based Weed Detection for Site-Specific Management on Edge Devices | Wang Linyuan, Yao Haibo, Tseng Te-Ming, Betitame Kelvin, Sun Xin, Huang Hanbo, Chen Dong | Department of Agricultural and Biological Engineering, Mississippi State University；USDA-ARS, Genetics and Sustainable Agriculture Research Unit；Department of Plant and Soil Sciences, Mississippi State University；Department of Agricultural and Biosystems Engineering, North Dakota State University；NDSU Peltier Institute for the Advancement of Agricultural Technology, North Dakota State University | 针对无人机边缘设备资源受限场景，优化YOLO模型实现田间杂草实时检测，支持变量施药等精准农业作业。 | [#408](https://github.com/thinson/RS-PaperClaw/issues/408) |
-| [20260425] STAND: Semantic Anchoring Constraint with Dual-Granularity Disambiguation for Remote Sensing Image Change Captioning | Gong Yanpei, Zhang Beichen, Wang Hao, Qi Zhaobo, Liu Xinyan, Xu Yuanrong, Gao Ruiyang, Zhang Weigang | Harbin Institute of Technology | 提出语义锚定约束与双粒度消歧网络，解决遥感变化描述中语义模糊问题，提升时序变化 captioning 精度。 | [#409](https://github.com/thinson/RS-PaperClaw/issues/409) |
-| [20260425] A satellite foundation model for improved wealth monitoring | Zheng Zhuo, Higuera-Mendieta Iván, Lee Richard, Newhouse David, Kilic Talip, Ermon Stefano, Burke Marshall, David B. Lobell | Department of Computer Science, Stanford University；Department of Earth System Science, Stanford University；Center on Food Security and the Environment, Stanford University；Development Economics Data Group, World Bank Group；Department of Environmental Social Science, Stanford University | 构建卫星影像基础模型，通过自监督预训练提取多尺度特征，实现无需人工标注的全球财富监测与贫困制图。 | [#410](https://github.com/thinson/RS-PaperClaw/issues/410) |
-
-## 🔎 观察
-
-- 农业遥感正从云端分析向端侧智能演进，边缘计算与模型压缩成为关键使能技术
-- 基础模型在经济社会遥感监测中展现潜力，但跨域泛化与伦理隐私问题仍需关注
 
 ---
 
