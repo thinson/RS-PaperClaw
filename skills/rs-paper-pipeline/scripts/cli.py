@@ -10,6 +10,8 @@ import paper_processor
 import reconcile_daily_issue_set
 import run_rs_daily_workday
 import sync_daily_reports_to_repo
+from services.issue_index import rebuild_index, save_index
+from pipeline_config import get_repo, load_config
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -56,6 +58,9 @@ def build_parser() -> argparse.ArgumentParser:
     paper_parser.add_argument("--output-dir", dest="output_dir", help="dry-run 输出目录")
     paper_parser.set_defaults(func=paper_command)
 
+    rebuild_parser = subparsers.add_parser("rebuild-index", help="重建 issue 索引")
+    rebuild_parser.set_defaults(func=rebuild_index_command)
+
     return parser
 
 
@@ -94,6 +99,15 @@ def reconcile_command(args) -> None:
 
 def paper_command(args) -> None:
     paper_processor.process_paper(args.arxiv_id, args.issue_number, dry_run=args.dry_run, output_dir=args.output_dir)
+
+
+def rebuild_index_command(args) -> None:
+    cfg = load_config()
+    repo = get_repo(cfg)
+    print("Rebuilding issue index...")
+    index = rebuild_index(repo)
+    save_index(repo, index)
+    print(f"Done. {len(index)} entries written to papers/issue_index.json")
 
 
 def main() -> int:

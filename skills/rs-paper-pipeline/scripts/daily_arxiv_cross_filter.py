@@ -18,6 +18,7 @@ from paper_processor import process_paper
 from pipeline_config import get_repo, load_config
 from services.filter_assets import load_ai_signal_patterns, render_filter_prompt
 from services.digest_builder import extract_author, extract_institution, is_invalid_digest_field
+from services.issue_index import ensure_index, lookup_issue, update_index_from_issue, save_index
 
 CONFIG = load_config()
 AI_MATCH_PATTERNS = load_ai_signal_patterns()
@@ -91,14 +92,12 @@ def issue_has_valid_metadata(issue) -> bool:
     )
 
 
-def load_existing_issue_map(repo) -> dict[str, object]:
+def load_existing_issue_map(repo, index: dict[str, dict], arxiv_ids: list[str]) -> dict[str, object]:
     issue_map: dict[str, object] = {}
-    for issue in repo.get_issues(state="all"):
-        body = issue.body or ""
-        match = re.search(r"arxiv\.org/abs/([^\)\s]+)", body)
-        if not match:
-            continue
-        issue_map[match.group(1).strip()] = issue
+    for arxiv_id in arxiv_ids:
+        issue = lookup_issue(repo, index, arxiv_id)
+        if issue is not None:
+            issue_map[arxiv_id] = issue
     return issue_map
 
 
@@ -109,6 +108,7 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
         raise RuntimeError("Missing required environment variable: BAILIAN_API_KEY")
 
     repo = get_repo(CONFIG)
+    index = ensure_index(repo)
 
     if target_date:
         print(f"[1/5] 拉取指定日期 {target_date} 候选...")
@@ -125,7 +125,8 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
     print(f"  入选数: {selected_count}")
 
     print("[3/5] 读取 issue 去重...")
-    existing_issue_map = load_existing_issue_map(repo)
+    selected_arxiv_ids = [x["arxiv_id"] for x in selected]
+    existing_issue_map = load_existing_issue_map(repo, index, selected_arxiv_ids)
     todo = []
     keep = []
     refresh = []
@@ -192,6 +193,8 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
         issue_number = task["issue_number"]
         print(f"  -> 处理 {aid} | issue={issue_number or '-'} | reason={task['reason']}")
         result = process_paper(aid, issue_number=issue_number)
+        if result is not None and hasattr(result, "number"):
+            update_index_from_issue(index, aid, result)
         if result is None:
             stats["failed_arxiv_ids"].append(aid)
             stats["failed_items"].append(
@@ -208,6 +211,7 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
         if stats_out:
             Path(stats_out).write_text(json.dumps(stats, ensure_ascii=False), encoding="utf-8")
 
+    save_index(repo, index)
     print("[5/5] 完成")
 
 

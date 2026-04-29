@@ -37,12 +37,9 @@ def daily_report_file_exists(repo, date_str: str) -> bool:
 
 
 def load_existing_arxiv_ids(repo) -> set[str]:
-    arxiv_ids: set[str] = set()
-    for issue in repo.get_issues(state="all"):
-        arxiv_id = extract_arxiv_id_from_issue(issue)
-        if arxiv_id:
-            arxiv_ids.add(arxiv_id)
-    return arxiv_ids
+    from services.issue_index import ensure_index
+    index = ensure_index(repo)
+    return set(index.keys())
 
 
 def upsert_repo_file(repo, path: str, content: str, message: str) -> None:
