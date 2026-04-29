@@ -30,8 +30,8 @@ def has_remote_sensing_signal(text: str) -> bool:
     return any(pattern.search(text) for pattern in RS_MATCH_PATTERNS)
 
 
-def fetch_url_with_retry(url: str, retries: int = 4, timeout: int = 90) -> str:
-    backoff = [2, 5, 10, 20]
+def fetch_url_with_retry(url: str, retries: int = 6, timeout: int = 90) -> str:
+    backoff = [2, 5, 10, 20, 30, 60]
     last_err = None
     for i in range(retries):
         try:
@@ -43,13 +43,14 @@ def fetch_url_with_retry(url: str, retries: int = 4, timeout: int = 90) -> str:
             if exc.code == 429:
                 retry_after = exc.headers.get("Retry-After")
                 if retry_after and retry_after.isdigit():
-                    wait_s = int(retry_after)
+                    wait_s = max(int(retry_after), 30)
                 else:
-                    wait_s = max(15, backoff[min(i, len(backoff) - 1)] * 3)
+                    wait_s = max(30, backoff[min(i, len(backoff) - 1)] * 3)
             else:
                 wait_s = backoff[min(i, len(backoff) - 1)]
             if i == retries - 1:
                 break
+            print(f"  [arXiv] HTTP {exc.code}, retry {i+1}/{retries} in {wait_s}s")
             time.sleep(wait_s)
         except Exception as exc:
             last_err = exc
@@ -85,6 +86,8 @@ def fetch_recent_candidates(
     max_scan = 3000
 
     for start in range(0, max_scan, page_size):
+        if start > 0:
+            time.sleep(3)
         params = {
             "search_query": query,
             "start": start,
