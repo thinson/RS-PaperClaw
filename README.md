@@ -107,6 +107,20 @@ RS-PaperClaw/
 
 ## 🚀 快速开始
 
+### 0) 克隆仓库
+
+仓库包含大量论文预览图（400MB+），如果只需要运行流水线脚本，可用轻量克隆：
+
+```bash
+# 轻量克隆（跳过图片，约 1MB）
+git clone --filter=blob:none --sparse https://github.com/thinson/RS-PaperClaw.git
+cd RS-PaperClaw
+git sparse-checkout set skills/rs-paper-pipeline papers/issue_index.json
+
+# 完整克隆（含全部预览图，约 400MB）
+git clone https://github.com/thinson/RS-PaperClaw.git
+```
+
 ### 1) 初始化
 
 ```bash
