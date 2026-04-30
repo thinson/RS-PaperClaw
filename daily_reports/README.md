@@ -2,6 +2,45 @@
 
 最近三天日报（最新在前）：
 
+# [20260429](./202604/20260429.md)
+## 📌 今日概况
+
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 10 篇。
+
+今日遥感AI研究呈现多模态融合与基础模型迁移两大主线。无人机RGBT语义分割、开放词汇变化检测等任务聚焦跨模态对齐；高光谱基础模型跨域迁移、量子机器学习特征映射等探索新型表征学习。3D视觉与点云配准等几何任务持续受到关注，扩散模型与拓扑学习方法为降维与半监督学习提供新思路。
+
+## ✨ 今日亮点
+
+- MemOVCD提出免训练开放词汇变化检测，通过跨时序记忆推理实现自适应修正
+- AirZoo构建大规模合成数据集，统一支撑航空几何三维视觉的地面真值研究
+- 高光谱扩散框架将噪声映射至低维流形，解决退化图像分类的维度灾难问题
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260429] Graph-based Semantic Calibration Network for Unaligned UAV RGBT Image Semantic Segmentation and A Large-scale Benchmark | Fan Fangqiang, Zhao Zhicheng, Ma Xiaoliang, Li Chenglong, Tang Jin | Key Laboratory of Intelligent Comput-；the School of Computer Science and Technology, Anhui the modality gap is reduced, deriving geometric corrections；the Anhui Provincial Key Laboratory of Multimodal | 图神经网络实现无人机RGBT图像语义分割的跨模态对齐与几何校正，构建大规模基准数据集。 | [#435](https://github.com/thinson/RS-PaperClaw/issues/435) |
+| [20260429] MemOVCD: Training-Free Open-Vocabulary Change Detection via Cross-Temporal Memory Reasoning and Global-Local Adaptive Rectification | Kuang Zuzheng, Chang Honghao, Liang Boqiang, Wang Haoqian, He Lijun, Li Fan, Bi Haixia | Xi'an Jiaotong University | 免训练开放词汇变化检测方法MemOVCD，利用跨时序记忆推理与全局-局部自适应修正提升检测精度。 | [#436](https://github.com/thinson/RS-PaperClaw/issues/436) |
+| [20260429] Parameterized Quantum Circuits as Feature Maps: Representation Quality and Readout Effects in Multispectral Land-Cover Classification | Komini Ralntion, Mandilara Aikaterini, Maragkopoulos Georgios, Syvridis Dimitris | Department of Informatics and Telecommunications, National and Kapodistrian University of Athens；Eulambia Advanced Technologies Ltd | 参数化量子电路作为特征映射，评估多光谱土地覆盖分类中的表示质量与读出效应影响。 | [#437](https://github.com/thinson/RS-PaperClaw/issues/437) |
+| [20260429] AirZoo: A Unified Large-Scale Dataset for Grounding Aerial Geometric 3D Vision | Cheng Xiaoya, Wu Rouwan, Liu Xinyi, Cui Zeyu, Liu Yan, Zhao Na, Liu Yu, Zhang Maojun, Yan Shen | National University of Defense Technology；Singapore University of Technology and Design | AirZoo统一大规模合成数据集，为航空几何三维视觉任务提供摄影测量级网格真值。 | [#438](https://github.com/thinson/RS-PaperClaw/issues/438) |
+| [20260429] 3D-LENS: A 3D Lifting-based Elevated Novel-view Synthesis method for Single-View Aerial-Ground Re-Identification | Grolleau William, Sabourin Astrid, Lapouge Guillaume, Achard Catherine | Université Paris-Saclay, CEA, List；Sorbonne University, CNRS, Institute of Intelligent Systems and Robotics (ISIR) | 3D-LENS基于单视图三维提升，实现空中-地面跨视角重识别的新视角合成。 | [#439](https://github.com/thinson/RS-PaperClaw/issues/439) |
+| [20260429] Cross-Domain Transfer of Hyperspectral Foundation Models | Theisen Nick, Neubert Peer | Intelligent Autonomous Systems, University of Koblenz | 高光谱基础模型跨域迁移研究，探索预训练表征在不同地理场景间的可迁移性。 | [#440](https://github.com/thinson/RS-PaperClaw/issues/440) |
+| [20260429] Topology-Aware Representation Alignment for Semi-Supervised Vision-Language Learning | You Junwon, Jang Mihyun, Mo Sangwoo, Jung Jae-Hun | KAIST；POSTECH | 拓扑感知表征对齐方法，利用持续同调优化半监督视觉-语言学习的多模态表征。 | [#441](https://github.com/thinson/RS-PaperClaw/issues/441) |
+| [20260429] Point Cloud Registration via Probabilistic Self-Update Local Correspondence and Line Vector Sets | Chung Kuo-Liang, Lin Yu-Cheng, Chen Wu-Chi | Department of Computer Science and Information Engineering, National Taiwan University of Science and Technology | 概率自更新局部对应与线向量集方法，提升点云配准的鲁棒性与精度。 | [#442](https://github.com/thinson/RS-PaperClaw/issues/442) |
+| [20260429] High-Dimensional Noise to Low-Dimensional Manifolds: A Manifold-Space Diffusion Framework for Degraded Hyperspectral Image Classification | Yang Boxiang, Chen Ning, Yue Xia, Luo Yichang, Fan Yingbo, Zhang Haoyuan, Ma Haoyu, Yue Jun, Mao Shanjun | School of Computer Science and Engineering, Central；the Aerospace Information Research a higher-dimensional observation space, thereby introducing；the Institute of energy, Peking University, Beijing, China mation；the School of Mechanics and Engineering Science, observations away from a compact spectral manifold into a；the School of Automation, Central South University, more dispersed high-dimensional space. In such cases, directly；the data, but more fundamentally from the strong sensitivity the Institute of Remote Sensing；Geographic Information System, of its intrinsic structure to external perturbations | 流形空间扩散框架将高维噪声映射至低维流形，解决退化高光谱图像分类问题。 | [#443](https://github.com/thinson/RS-PaperClaw/issues/443) |
+| [20260429] Seeking Consensus: Geometric-Semantic On-the-Fly Recalibration for Open-Vocabulary Remote Sensing Semantic Segmentation | Wang Guanchun, Wu Chenxiao, Zhang Xiangrong, Peng Zelin, Lai Jianxun, Zhang Tianyang, Tang Xu | School of Artificial Intelligence, Xidian University；MoE Key Lab of Artificial Intelligence, AI Institute, Shanghai Jiao Tong University | 几何-语义动态重校准方法，通过双重共识机制提升开放词汇遥感语义分割性能。 | [#444](https://github.com/thinson/RS-PaperClaw/issues/444) |
+
+## 🔎 观察
+
+- 开放词汇学习成为遥感语义分割热点方向，但几何一致性与语义一致性的联合优化仍具挑战。
+- 量子机器学习在遥感领域的应用尚处探索期，其表示优势需更多实际任务验证。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260428](./202604/20260428.md)
 ## 📌 今日概况
 
@@ -63,38 +102,6 @@ Powered by OpenClaw🦞
 
 - 多模态融合成为核心范式：从跨模态分割到结构-语义联合建模，异构数据协同处理能力持续增强
 - 实用化数据集建设加速：多光谱激光雷达等新传感数据集的发布，正填补垂直应用领域的基准空白
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260426](./202604/20260426.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦深度学习在遥感图像处理中的创新应用，涵盖无监督时序制图、高光谱分类及SAR图像去噪三大方向。中山大学团队提出无需标注的油棕时序制图方法，汕头大学等探索CNN-Transformer融合架构，印度理工学院则回归数学基础比较PDE去噪模型。
-
-## ✨ 今日亮点
-
-- 无标注时序制图突破：利用历史噪声地图实现2020-2024年马印油棕榈动态监测
-- CNN-Transformer协同：池化注意力融合机制提升高光谱图像分类精度
-- PDE去噪理论对比：二阶与四阶偏微分方程在SAR及医学影像中的加权耦合研究
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260426] From Noisy Historical Maps to Time-Series Oil Palm Mapping Without Annotation in Malaysia and Indonesia (2020-2024) | Kuapanich Nuttaset, Zheng Juepeng, Shi Bohan, Liu Jiaying, Jiang Jiayin, Huang Jiatao, Tan Shenghan, Li Qingmei, Fu Haohuan | School of Artificial Intelligence, Sun Yat-Sen University；National Supercomputing Center in Shenzhen；Khoury College of Computer Sciences, Northeastern University；Tsinghua Shenzhen International Graduate School, Tsinghua University | 提出基于噪声历史地图的无监督学习方法，实现2020-2024年马来西亚和印度尼西亚油棕榈时序制图，无需人工标注。 | [#412](https://github.com/thinson/RS-PaperClaw/issues/412) |
-| [20260426] A Synergistic CNN-Transformer Network with Pooling Attention Fusion for Hyperspectral Image Classification | Chen Peng, He Wenxuan, Qian Feng, Shi Guangyao, Yan Jingwen | College of Engineering, Shantou University；School of Electronic Information and Communications, Huazhong University of Science and Technology；Changchun Institute of Optics, Fine Mechanics and Physics, Chinese Academy of Sciences；School of Computer Science and Technology, Chongqing University of Posts and Telecommunications；School of Intelligent Manufacturing and Electrical Engineering, Guangzhou Institute of Science and Technology | 设计CNN-Transformer协同网络，通过池化注意力融合机制联合提取高光谱图像空谱特征以提升分类性能。 | [#413](https://github.com/thinson/RS-PaperClaw/issues/413) |
-| [20260426] Comparative Study of Weighted and Coupled Second- and Fourth-Order PDEs for Image Despeckling in Grayscale, Color, SAR, and Ultrasound | Kumar Manish, Rajendra K. Ray | School of Mathematical and Statistical Sciences, Indian Institute of Technology Mandi | 系统比较加权与耦合的二阶、四阶偏微分方程模型，评估其在灰度、彩色、SAR及超声图像去噪中的效果。 | [#414](https://github.com/thinson/RS-PaperClaw/issues/414) |
-
-## 🔎 观察
-
-- 弱监督与无监督学习成为遥感大样本标注瓶颈的重要突破口，历史数据再利用价值凸显。
-- Transformer架构持续向高光谱等细粒度任务渗透，但CNN局部特征提取仍具不可替代性。
 
 ---
 
