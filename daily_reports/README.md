@@ -2,6 +2,43 @@
 
 最近三天日报（最新在前）：
 
+# [20260430](./202604/20260430.md)
+## 📌 今日概况
+
+今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 8 篇。
+
+今日遥感AI研究呈现多模态融合与高效架构两大主线。高光谱分类与超分辨率持续深化光谱-空间联合建模；扩散模型、对比学习等自监督范式向语义分割、表格数据等场景扩展；轻量化设计与预训练策略优化成为工程落地关键。
+
+## ✨ 今日亮点
+
+- 扩散模型Noise2Map实现语义分割与变化检测端到端统一框架
+- 超光谱超分辨率引入频域动态注意力机制突破重建瓶颈
+- 多源数据融合网络协同挖掘SAR、高光谱与LiDAR互补信息
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260430] Hyperspectral Image Classification via Efficient Global Spectral Supertoken Clustering | Liu Peifu, Xu Tingfa, Wang Jie, Chen Huan, Bai Huiyan, Li Jianan | Beijing Institute of Technology；Beijing Institute of Technology Chongqing Innovation Center；Key Laboratory of Photoelectronic Imaging Technology and System, Ministry of Education of China | 提出全局光谱超像素聚类方法，通过超令牌机制提升高光谱分类边界 delineation 效率。 | [#443](https://github.com/thinson/RS-PaperClaw/issues/443) |
+| [20260430] Noise2Map: End-to-End Diffusion Model for Semantic Segmentation and Change Detection | Shibli Ali, Nascetti Andrea, Ban Yifang | KTH Royal Institute of Technology；Delft University of Technology | Noise2Map将扩散模型用于遥感语义分割与变化检测，实现噪声到地图的直接生成。 | [#446](https://github.com/thinson/RS-PaperClaw/issues/446) |
+| [20260430] Multi-wavelength polarisation imaging with inverse designed metasurfaces | Sarah E. Dean, Li Neuton, Munro Josephine, Laudert Benjamin, Siefke Thomas, Ngo Quyet, Sharp Robert, Dragomir N. Neshev, Eilenberger Falk, Andrey A. Sukhorukov | ARC Centre of Excellence for Transformative Meta-Optical Systems (TMOS), Department of Electronic Materials Engineering, Research School of Physics, The Australian National University；Fraunhofer-Institute for Applied Optics and Precision Engineering IOF；Friedrich Schiller University Jena, Abbe Center of Photonics, Institute of Applied Physics；Ernst-Abbe-Hochschule Jena University of Applied Sciences；Research School of Astronomy & Astrophysics, The Australian National University | 逆设计超表面实现多波长偏振成像，为计算成像硬件提供新范式。 | [#447](https://github.com/thinson/RS-PaperClaw/issues/447) |
+| [20260430] A generalised pre-training strategy for deep learning networks in semantic segmentation of remotely sensed images | Fang Yuan, Cai Yuanzhi, Aryal Jagannath, Zhu Qinfeng, Huang Hong, Zhang Cheng, Fan Lei | Xi'an Jiaotong-Liverpool University；CSIRO Mineral Resources；The University of Melbourne | 提出通用预训练策略缓解遥感语义分割中的域间隙问题，提升跨场景泛化能力。 | [#448](https://github.com/thinson/RS-PaperClaw/issues/448) |
+| [20260430] Robust Lightweight Crack Classification for Real-Time UAV Bridge Inspection | Li Wei, Li Haisheng, Li Weijie, Wang Jiandong, Ma Kaichen, Yang Luming | Bay Area Super Bridge Maintenance Technology Center, Guangdong Provincial Highway Construction Co., Ltd.；Guangdong AIHISUN Technology Co., Ltd. | 面向无人机桥梁巡检的轻量级裂缝分类网络，兼顾实时性与鲁棒性需求。 | [#449](https://github.com/thinson/RS-PaperClaw/issues/449) |
+| [20260430] ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data | Al Zadid Sultan Bin Habib, Tasnim Tanpia, Md. Ekramul Islam, Tabasum Muntasir | Lane Dept. of Computer Science and Electrical Engineering, West Virginia University；Dept. of Geology & Geography, West Virginia University；Department of Computer Science and Engineering, Green University of Bangladesh；Department of Computer Science and Engineering, Stamford University Bangladesh | ZAYAN解耦对比Transformer专为遥感表格数据设计，拓展自监督学习应用边界。 | [#450](https://github.com/thinson/RS-PaperClaw/issues/450) |
+| [20260430] Spectral Dynamic Attention Network for Hyperspectral Image Super-Resolution | Zhang Tengya, Gao Feng, Qi Lin, Dong Junyu, Du Qian | the Sanya Oceanographic Institution, Ocean Univer- conventional FFN follows a simple linear；State Key Laboratory of spectral；the Department of Electrical and Computer Engineering, recover fine-grained details and leads to suboptimal recon- | 频域动态注意力网络针对高光谱超分辨率，通过通道稀疏注意力捕获光谱相关性。 | [#451](https://github.com/thinson/RS-PaperClaw/issues/451) |
+| [20260430] Representative Spectral Correlation Network for Multi-source Remote Sensing Image Classification | Gong Chuanzheng, Gao Feng, Lin Junyan, Dong Junyu, Du Qian | the Department of Computing, The Hong Kong SAR/LiDAR data lacks sufficient spectral information, limit-；the Department of Electrical and Computer Engineering, ing its ability to distinguish objects with similar appearances；the State Key Laboratory of Physical Oceanography, Ocean University of China, Qingdao | 代表性光谱相关网络融合SAR、高光谱与LiDAR，解决多源遥感分类光谱选择难题。 | [#452](https://github.com/thinson/RS-PaperClaw/issues/452) |
+
+## 🔎 观察
+
+- 扩散模型正从生成任务向判别任务渗透，Noise2Map或预示遥感分割新范式。
+- 高光谱研究密集涌现，光谱-空间联合建模与频域分析成为竞争焦点。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260429](./202604/20260429.md)
 ## 📌 今日概况
 
@@ -69,39 +106,6 @@ Powered by OpenClaw🦞
 
 - 遥感AI正从单一任务优化转向系统级基准建设，EOS-Bench等工具将加速算法公平比较与产业落地。
 - 量子计算与边缘智能等新型计算范式开始渗透遥感领域，但其实际部署效益仍需工程验证。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260427](./202604/20260427.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究呈现多模态融合与语义理解并进的趋势。西南交大团队探索开放词汇语义分割，结合目标级标签与场景级语义特征；芬兰地理空间研究所发布多光谱机载激光扫描数据集，支撑树种分类研究；哈工大等提出统一去雾网络，兼顾色彩恢复与边缘保持；印度团队则聚焦遥感图像描述生成，融合结构-语义信息。
-
-## ✨ 今日亮点
-
-- 开放词汇遥感分割突破：整合目标级与场景级跨模态特征，提升多模态图像泛化能力
-- 多光谱激光雷达数据集发布：MS-ALS-SPECIES为树种分类提供新型数据基准
-- 统一去雾网络创新：6thGrid-Net基于3D LUTs实现色彩恢复与边缘保持的联合优化
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260427] Open-Vocabulary Semantic Segmentation Network Integrating Object-Level Label and Scene-Level Semantic Features for Multimodal Remote Sensing Images | Dai Jinkun, Ye Yuanxin, Tang Peng, Tang Tengfeng, Ma Xianping, Xiao Jing, Wang Mi | Faculty of Geosciences and Engineering, Southwest Jiaotong University；State-Province Joint Engineering Laboratory of Spatial Information Technology for High-Speed Railway Safety, Southwest Jiaotong University；School of Artificial Intelligence, Wuhan University；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University | 西南交大等提出开放词汇语义分割网络，融合目标级标签与场景级语义特征，实现多模态遥感图像的跨模态文本监督学习。 | [#339](https://github.com/thinson/RS-PaperClaw/issues/339) |
-| [20260427] Multispectral airborne laser scanning dataset for tree species classification: MS-ALS-SPECIES | Hyyppä Matti, Salolahti Klaara, Hyyppä Eric, Yu Xiaowei, Taher Josef, Matikainen Leena, Lehtomäki Matti, Litkey Paula, Hakala Teemu, Kaartinen Harri, Hyyppä Juha, Kukko Antero | Department of Remote Sensing and Photogrammetry, Finnish Geospatial Research Institute FGI, The National Land Survey of Finland | 芬兰地理空间研究所发布MS-ALS-SPECIES数据集，基于多光谱机载激光扫描技术，为深度学习树种分类研究提供数据支撑。 | [#416](https://github.com/thinson/RS-PaperClaw/issues/416) |
-| [20260427] 6thGrid-Net: Unified Remote Sensing Image Dehazing Based on Color Restoration and Edge-Preserving | Bai Runci, Jiang Kui, Chen Xiang, Wu Chen, Lu Dianjie, Zhang Guijuan, Zheng Zhuoran | China Academy of Information and Communications Technology；Harbin Institute of Technology；Nanjing University of Science and Technology | 中国信通院等提出6thGrid-Net统一去雾网络，结合色彩恢复与边缘保持机制，基于3D LUTs实现遥感图像质量增强。 | [#417](https://github.com/thinson/RS-PaperClaw/issues/417) |
-| [20260427] JSSFF: A Joint Structural-Semantic Fusion Framework for Remote Sensing Image Captioning | Das Swadhin, Yadav Vivek | University of Petroleum and Energy Studies | 印度石油能源大学提出JSSFF联合结构-语义融合框架，通过边缘感知融合改进编码器-解码器架构，用于遥感图像描述生成。 | [#418](https://github.com/thinson/RS-PaperClaw/issues/418) |
-
-## 🔎 观察
-
-- 多模态融合成为核心范式：从跨模态分割到结构-语义联合建模，异构数据协同处理能力持续增强
-- 实用化数据集建设加速：多光谱激光雷达等新传感数据集的发布，正填补垂直应用领域的基准空白
 
 ---
 
