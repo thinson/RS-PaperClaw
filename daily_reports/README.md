@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260502](./202605/20260502.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究呈现两大主线：一是智能体与仿真平台快速崛起，UAV搜救基准测试与地球观测交互环境相继发布；二是传感器融合持续深化，毫米波雷达与频域Transformer分别在农业低空感知与全色锐化领域取得进展。高校与产业界合作紧密，多模态大模型成为共性技术底座。
+
+## ✨ 今日亮点
+
+- ESARBench与EO-Gym双平台发布，推动遥感智能体从算法研究走向可交互、可评估的具身智能阶段
+- CGFformer将K-means聚类与频域Transformer结合，为全色锐化引入自适应频率分离新范式
+- 旋转毫米波雷达方案瞄准农业无人机地形感知，填补复杂农田环境下光学传感器失效的空白
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260502] CGFformer: Cluster-Guidance Frequency Transformer for Pansharpening | Zhou Zijian, Zhang Jianing, Sun Kai, Zhao Xiangyu, Zhang Chunxia, Cao Xiangyong | College of Artificial Intelligence, Xi'an Jiaotong University；School of Mathematics and Statistics, Xi'an Jiaotong University；School of Computer Science and Technology, Xi'an Jiaotong University | CGFformer提出聚类引导频域Transformer，通过K-means聚类实现自适应频率分离，优化全色锐化任务中的细节重建与光谱保真平衡。 | [#457](https://github.com/thinson/RS-PaperClaw/issues/457) |
+| [20260502] ESARBench: A Benchmark for Agentic UAV Embodied Search and Rescue | Zhang Daoxuan, Chen Ping, Zhou Jianyi, Yang Shuo | Harbin Institute of Technology, Shenzhen | ESARBench构建首个面向无人机搜救的具身智能基准，集成多模态大模型评估框架，为灾难响应场景的智能体能力量化提供标准化工具。 | [#458](https://github.com/thinson/RS-PaperClaw/issues/458) |
+| [20260502] Terrain Perception for Agricultural UAVs in Complex Farmland via Rotating mmWave Radar | Zhan Zhihao, Tao Le, Li Shaobin, Fang Chenxin, Yang Xingrui, Li Liang, Fan Rui, Ming Yuhang | School of Computer Science, Hangzhou Dianzi University；TopXGun Robotics；CARDC；College of Control Science and Engineering, Zhejiang University；College of Electronics and Information Engineering, Tongji University | 该研究设计旋转式毫米波雷达系统，解决农业无人机在扬尘、低光照复杂农田中的地形感知难题，支撑精准地形跟随飞行。 | [#459](https://github.com/thinson/RS-PaperClaw/issues/459) |
+| [20260502] EO-Gym: A Multimodal, Interactive Environment for Earth Observation Agents | Ma Sai, Li Zhuang, Li Sichao, Xu Xinyue, Zhu Ruibiao, Boston Tony, John A. Taylor | The Australian National University；Royal Melbourne Institute of Technology；University of Sydney；The Hong Kong University of Science and Technology | EO-Gym打造多模态交互式地球观测智能体环境，支持视觉-语言-地理空间数据融合，为遥感大模型的在线决策与工具调用能力训练提供基础设施。 | [#460](https://github.com/thinson/RS-PaperClaw/issues/460) |
+
+## 🔎 观察
+
+- 具身智能正成为遥感AI新焦点，从ESARBench的搜救任务到EO-Gym的通用平台，学术社区开始系统性构建评估体系而非单一算法
+- 毫米波雷达与农业场景的结合揭示低空经济基础设施的技术缺口，传统光学感知在复杂环境下的鲁棒性替代方案值得持续关注
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260501](./202605/20260501.md)
 ## 📌 今日概况
 
@@ -63,45 +96,6 @@ Powered by OpenClaw🦞
 
 - 扩散模型正从生成任务向判别任务渗透，Noise2Map或预示遥感分割新范式。
 - 高光谱研究密集涌现，光谱-空间联合建模与频域分析成为竞争焦点。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260429](./202604/20260429.md)
-## 📌 今日概况
-
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 10 篇。
-
-今日遥感AI研究呈现多模态融合与基础模型迁移两大主线。无人机RGBT语义分割、开放词汇变化检测等任务聚焦跨模态对齐；高光谱基础模型跨域迁移、量子机器学习特征映射等探索新型表征学习。3D视觉与点云配准等几何任务持续受到关注，扩散模型与拓扑学习方法为降维与半监督学习提供新思路。
-
-## ✨ 今日亮点
-
-- MemOVCD提出免训练开放词汇变化检测，通过跨时序记忆推理实现自适应修正
-- AirZoo构建大规模合成数据集，统一支撑航空几何三维视觉的地面真值研究
-- 高光谱扩散框架将噪声映射至低维流形，解决退化图像分类的维度灾难问题
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260429] Graph-based Semantic Calibration Network for Unaligned UAV RGBT Image Semantic Segmentation and A Large-scale Benchmark | Fan Fangqiang, Zhao Zhicheng, Ma Xiaoliang, Li Chenglong, Tang Jin | Key Laboratory of Intelligent Comput-；the School of Computer Science and Technology, Anhui the modality gap is reduced, deriving geometric corrections；the Anhui Provincial Key Laboratory of Multimodal | 图神经网络实现无人机RGBT图像语义分割的跨模态对齐与几何校正，构建大规模基准数据集。 | [#435](https://github.com/thinson/RS-PaperClaw/issues/435) |
-| [20260429] MemOVCD: Training-Free Open-Vocabulary Change Detection via Cross-Temporal Memory Reasoning and Global-Local Adaptive Rectification | Kuang Zuzheng, Chang Honghao, Liang Boqiang, Wang Haoqian, He Lijun, Li Fan, Bi Haixia | Xi'an Jiaotong University | 免训练开放词汇变化检测方法MemOVCD，利用跨时序记忆推理与全局-局部自适应修正提升检测精度。 | [#436](https://github.com/thinson/RS-PaperClaw/issues/436) |
-| [20260429] Parameterized Quantum Circuits as Feature Maps: Representation Quality and Readout Effects in Multispectral Land-Cover Classification | Komini Ralntion, Mandilara Aikaterini, Maragkopoulos Georgios, Syvridis Dimitris | Department of Informatics and Telecommunications, National and Kapodistrian University of Athens；Eulambia Advanced Technologies Ltd | 参数化量子电路作为特征映射，评估多光谱土地覆盖分类中的表示质量与读出效应影响。 | [#437](https://github.com/thinson/RS-PaperClaw/issues/437) |
-| [20260429] AirZoo: A Unified Large-Scale Dataset for Grounding Aerial Geometric 3D Vision | Cheng Xiaoya, Wu Rouwan, Liu Xinyi, Cui Zeyu, Liu Yan, Zhao Na, Liu Yu, Zhang Maojun, Yan Shen | National University of Defense Technology；Singapore University of Technology and Design | AirZoo统一大规模合成数据集，为航空几何三维视觉任务提供摄影测量级网格真值。 | [#438](https://github.com/thinson/RS-PaperClaw/issues/438) |
-| [20260429] 3D-LENS: A 3D Lifting-based Elevated Novel-view Synthesis method for Single-View Aerial-Ground Re-Identification | Grolleau William, Sabourin Astrid, Lapouge Guillaume, Achard Catherine | Université Paris-Saclay, CEA, List；Sorbonne University, CNRS, Institute of Intelligent Systems and Robotics (ISIR) | 3D-LENS基于单视图三维提升，实现空中-地面跨视角重识别的新视角合成。 | [#439](https://github.com/thinson/RS-PaperClaw/issues/439) |
-| [20260429] Cross-Domain Transfer of Hyperspectral Foundation Models | Theisen Nick, Neubert Peer | Intelligent Autonomous Systems, University of Koblenz | 高光谱基础模型跨域迁移研究，探索预训练表征在不同地理场景间的可迁移性。 | [#440](https://github.com/thinson/RS-PaperClaw/issues/440) |
-| [20260429] Topology-Aware Representation Alignment for Semi-Supervised Vision-Language Learning | You Junwon, Jang Mihyun, Mo Sangwoo, Jung Jae-Hun | KAIST；POSTECH | 拓扑感知表征对齐方法，利用持续同调优化半监督视觉-语言学习的多模态表征。 | [#441](https://github.com/thinson/RS-PaperClaw/issues/441) |
-| [20260429] Point Cloud Registration via Probabilistic Self-Update Local Correspondence and Line Vector Sets | Chung Kuo-Liang, Lin Yu-Cheng, Chen Wu-Chi | Department of Computer Science and Information Engineering, National Taiwan University of Science and Technology | 概率自更新局部对应与线向量集方法，提升点云配准的鲁棒性与精度。 | [#442](https://github.com/thinson/RS-PaperClaw/issues/442) |
-| [20260429] High-Dimensional Noise to Low-Dimensional Manifolds: A Manifold-Space Diffusion Framework for Degraded Hyperspectral Image Classification | Yang Boxiang, Chen Ning, Yue Xia, Luo Yichang, Fan Yingbo, Zhang Haoyuan, Ma Haoyu, Yue Jun, Mao Shanjun | School of Computer Science and Engineering, Central；the Aerospace Information Research a higher-dimensional observation space, thereby introducing；the Institute of energy, Peking University, Beijing, China mation；the School of Mechanics and Engineering Science, observations away from a compact spectral manifold into a；the School of Automation, Central South University, more dispersed high-dimensional space. In such cases, directly；the data, but more fundamentally from the strong sensitivity the Institute of Remote Sensing；Geographic Information System, of its intrinsic structure to external perturbations | 流形空间扩散框架将高维噪声映射至低维流形，解决退化高光谱图像分类问题。 | [#443](https://github.com/thinson/RS-PaperClaw/issues/443) |
-| [20260429] Seeking Consensus: Geometric-Semantic On-the-Fly Recalibration for Open-Vocabulary Remote Sensing Semantic Segmentation | Wang Guanchun, Wu Chenxiao, Zhang Xiangrong, Peng Zelin, Lai Jianxun, Zhang Tianyang, Tang Xu | School of Artificial Intelligence, Xidian University；MoE Key Lab of Artificial Intelligence, AI Institute, Shanghai Jiao Tong University | 几何-语义动态重校准方法，通过双重共识机制提升开放词汇遥感语义分割性能。 | [#444](https://github.com/thinson/RS-PaperClaw/issues/444) |
-
-## 🔎 观察
-
-- 开放词汇学习成为遥感语义分割热点方向，但几何一致性与语义一致性的联合优化仍具挑战。
-- 量子机器学习在遥感领域的应用尚处探索期，其表示优势需更多实际任务验证。
 
 ---
 
