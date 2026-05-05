@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260504](./202605/20260504.md)
+## 📌 今日概况
+
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究呈现多元化趋势：基础模型优化与轻量化部署并进，涵盖视觉基础模型对比、扩散模型蒸馏等方向；应用场景拓展至能源监测、废弃物管理与灾害响应；多源数据融合技术持续深化，包括SAR极化融合与全色锐化等。
+
+## ✨ 今日亮点
+
+- SlimDiffSR通过扩散模型蒸馏实现轻量化超分辨率，兼顾性能与效率
+- 撒哈拉以南非洲 crowdsourced UAV 废弃物检测开源模型，服务可持续发展
+- RAFNet提出区域感知融合网络，优化全色锐化中的空间-光谱信息平衡
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260504] AI and Open-data Driven Scalable Solar Power Profiling | Zhang Shiliang, Maharjan Sabita, Turgut Damla | the Department of Computer can transfer across tasks and domains. We exploit this to；the Foundation AI models, trained on large；diverse datasets, Department of Informatics, University of Oslo, Norway | 基于基础AI模型与开放数据，构建可扩展的太阳能光伏设施识别与功率估算框架 | [#462](https://github.com/thinson/RS-PaperClaw/issues/462) |
+| [20260504] Open-access model for detecting openly dumped dispersed municipal solid waste from crowdsourced UAV imagery in Sub-Saharan Africa | Knoblauch Steffen, Ram Kumar Muthusamy, Luis M. A. Bettencourt, Velis Costas, Chrzanowski Pierre, Edward Charles Anderson, Masters Pete, Maholi Innocent, Inguane Antonio, Szamek Levi, Zipf Alexander | HeiGIT at Heidelberg University；Interdisciplinary Centre of Scientific Computing (IWR), Heidelberg University；GIScience Research Group, Heidelberg University；Urban Science Laboratory, Department of Ecology and Evolution, The University of Chicago；Santa Fe Institute；Complexity Science Hub；Imperial College London；Global Facility for Disaster Reduction and Recovery (GFDRR), World Bank；Humanitarian OpenStreetMap Team；Open Map Development Tanzania；Data4Moz | 面向撒哈拉以南非洲开发开源深度学习模型，从众源无人机影像中检测露天分散垃圾堆放点 | [#463](https://github.com/thinson/RS-PaperClaw/issues/463) |
+| [20260504] Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM | Park Hyobin, Seo Minseok, Choi Dong-Geol | ANTLAB；Korea Advanced Institute of Science and Technology (KAIST)；Hanbat National University | 系统对比电光视觉基础模型与通用VFM在遥感检索任务中的跨场景泛化能力差异 | [#464](https://github.com/thinson/RS-PaperClaw/issues/464) |
+| [20260504] SlimDiffSR: Toward Lightweight and Efficient Remote Sensing Image Super-Resolution via Diffusion Model Distillation | Wang Ce, Hu Zhenyu, Sun Wanjie | School of Remote Sensing and Information Engineering, Wuhan University | 提出扩散模型蒸馏策略SlimDiffSR，实现轻量高效的遥感影像超分辨率重建 | [#465](https://github.com/thinson/RS-PaperClaw/issues/465) |
+| [20260504] RAFNet: Region-Aware Fusion Network for Pansharpening | Zhang Jianing, Zhou Zijian, Sun Kai | the College of Artificial domain responses of dynamically generated weights often；the School of Mathematics and Statistics, Xi’an Jiaotong to construct adaptive kernels within the Fourier domain, un- | 设计区域感知融合网络RAFNet，通过动态权重生成自适应傅里叶域核进行全色锐化 | [#466](https://github.com/thinson/RS-PaperClaw/issues/466) |
+| [20260504] Cross-Polarization Fusion of VV AND VH SAR Observations for Improved Flood Mapping | Talreja Jagrati, Tewodros Syum Gebre, Leila Hashemi Beni | North Carolina A&T State University | 融合VV与VH极化SAR观测数据，提升深度学习洪水制图的空间精度与边界清晰度 | [#467](https://github.com/thinson/RS-PaperClaw/issues/467) |
+
+## 🔎 观察
+
+- 基础模型研究从'规模竞赛'转向'效率优化'，模型蒸馏与轻量化成为新焦点
+- 遥感应用持续下沉至发展中国家本地化场景，众源数据与开放工具链降低技术门槛
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260502](./202605/20260502.md)
 ## 📌 今日概况
 
@@ -59,43 +94,6 @@ Powered by OpenClaw🦞
 
 - 基础模型向地球科学专用领域渗透，高光谱卫星数据成为新的模型训练与验证资源
 - 扩散模型替代方案在遥感影像生成任务中受关注，计算效率与重建质量的权衡成为关键考量
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260430](./202604/20260430.md)
-## 📌 今日概况
-
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究呈现多模态融合与高效架构两大主线。高光谱分类与超分辨率持续深化光谱-空间联合建模；扩散模型、对比学习等自监督范式向语义分割、表格数据等场景扩展；轻量化设计与预训练策略优化成为工程落地关键。
-
-## ✨ 今日亮点
-
-- 扩散模型Noise2Map实现语义分割与变化检测端到端统一框架
-- 超光谱超分辨率引入频域动态注意力机制突破重建瓶颈
-- 多源数据融合网络协同挖掘SAR、高光谱与LiDAR互补信息
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260430] Hyperspectral Image Classification via Efficient Global Spectral Supertoken Clustering | Liu Peifu, Xu Tingfa, Wang Jie, Chen Huan, Bai Huiyan, Li Jianan | Beijing Institute of Technology；Beijing Institute of Technology Chongqing Innovation Center；Key Laboratory of Photoelectronic Imaging Technology and System, Ministry of Education of China | 提出全局光谱超像素聚类方法，通过超令牌机制提升高光谱分类边界 delineation 效率。 | [#443](https://github.com/thinson/RS-PaperClaw/issues/443) |
-| [20260430] Noise2Map: End-to-End Diffusion Model for Semantic Segmentation and Change Detection | Shibli Ali, Nascetti Andrea, Ban Yifang | KTH Royal Institute of Technology；Delft University of Technology | Noise2Map将扩散模型用于遥感语义分割与变化检测，实现噪声到地图的直接生成。 | [#446](https://github.com/thinson/RS-PaperClaw/issues/446) |
-| [20260430] Multi-wavelength polarisation imaging with inverse designed metasurfaces | Sarah E. Dean, Li Neuton, Munro Josephine, Laudert Benjamin, Siefke Thomas, Ngo Quyet, Sharp Robert, Dragomir N. Neshev, Eilenberger Falk, Andrey A. Sukhorukov | ARC Centre of Excellence for Transformative Meta-Optical Systems (TMOS), Department of Electronic Materials Engineering, Research School of Physics, The Australian National University；Fraunhofer-Institute for Applied Optics and Precision Engineering IOF；Friedrich Schiller University Jena, Abbe Center of Photonics, Institute of Applied Physics；Ernst-Abbe-Hochschule Jena University of Applied Sciences；Research School of Astronomy & Astrophysics, The Australian National University | 逆设计超表面实现多波长偏振成像，为计算成像硬件提供新范式。 | [#447](https://github.com/thinson/RS-PaperClaw/issues/447) |
-| [20260430] A generalised pre-training strategy for deep learning networks in semantic segmentation of remotely sensed images | Fang Yuan, Cai Yuanzhi, Aryal Jagannath, Zhu Qinfeng, Huang Hong, Zhang Cheng, Fan Lei | Xi'an Jiaotong-Liverpool University；CSIRO Mineral Resources；The University of Melbourne | 提出通用预训练策略缓解遥感语义分割中的域间隙问题，提升跨场景泛化能力。 | [#448](https://github.com/thinson/RS-PaperClaw/issues/448) |
-| [20260430] Robust Lightweight Crack Classification for Real-Time UAV Bridge Inspection | Li Wei, Li Haisheng, Li Weijie, Wang Jiandong, Ma Kaichen, Yang Luming | Bay Area Super Bridge Maintenance Technology Center, Guangdong Provincial Highway Construction Co., Ltd.；Guangdong AIHISUN Technology Co., Ltd. | 面向无人机桥梁巡检的轻量级裂缝分类网络，兼顾实时性与鲁棒性需求。 | [#449](https://github.com/thinson/RS-PaperClaw/issues/449) |
-| [20260430] ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data | Al Zadid Sultan Bin Habib, Tasnim Tanpia, Md. Ekramul Islam, Tabasum Muntasir | Lane Dept. of Computer Science and Electrical Engineering, West Virginia University；Dept. of Geology & Geography, West Virginia University；Department of Computer Science and Engineering, Green University of Bangladesh；Department of Computer Science and Engineering, Stamford University Bangladesh | ZAYAN解耦对比Transformer专为遥感表格数据设计，拓展自监督学习应用边界。 | [#450](https://github.com/thinson/RS-PaperClaw/issues/450) |
-| [20260430] Spectral Dynamic Attention Network for Hyperspectral Image Super-Resolution | Zhang Tengya, Gao Feng, Qi Lin, Dong Junyu, Du Qian | the Sanya Oceanographic Institution, Ocean Univer- conventional FFN follows a simple linear；State Key Laboratory of spectral；the Department of Electrical and Computer Engineering, recover fine-grained details and leads to suboptimal recon- | 频域动态注意力网络针对高光谱超分辨率，通过通道稀疏注意力捕获光谱相关性。 | [#451](https://github.com/thinson/RS-PaperClaw/issues/451) |
-| [20260430] Representative Spectral Correlation Network for Multi-source Remote Sensing Image Classification | Gong Chuanzheng, Gao Feng, Lin Junyan, Dong Junyu, Du Qian | the Department of Computing, The Hong Kong SAR/LiDAR data lacks sufficient spectral information, limit-；the Department of Electrical and Computer Engineering, ing its ability to distinguish objects with similar appearances；the State Key Laboratory of Physical Oceanography, Ocean University of China, Qingdao | 代表性光谱相关网络融合SAR、高光谱与LiDAR，解决多源遥感分类光谱选择难题。 | [#452](https://github.com/thinson/RS-PaperClaw/issues/452) |
-
-## 🔎 观察
-
-- 扩散模型正从生成任务向判别任务渗透，Noise2Map或预示遥感分割新范式。
-- 高光谱研究密集涌现，光谱-空间联合建模与频域分析成为竞争焦点。
 
 ---
 
