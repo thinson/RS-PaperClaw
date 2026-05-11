@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260507](./202605/20260507.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 3 篇。
+
+今日研究呈现两大趋势：一是地球系统建模向无网格、观测原生范式演进，上海AI实验室联合多机构推出Earth-o1大气世界模型；二是遥感不确定性量化与地理空间嵌入技术持续深化，分别应用于图像回归与森林恢复监测场景。
+
+## ✨ 今日亮点
+
+- Earth-o1突破传统网格化模拟，实现观测数据直接驱动的大气世界模型
+- 不确定性引导的边缘学习为遥感图像回归提供可靠置信度估计
+- AlphaEarth地理空间嵌入助力巴西大西洋森林恢复成效量化评估
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260507] Earth-o1: A Grid-free Observation-native Atmospheric World Model | Gong Junchao, Xu Kaiyi, Wei Wangxu, Tu Siwei, Xu Jingyi, Liu Zili, Fan Hang, Zhou Zhiwang, Han Tao, Xiao Yi, Gu Xinyu, Li Zhangrui, Zhang Wenlong, Chen Hao, Yang Xiaokang, Wang Yaqiang, Cheng Lijing, Gentine Pierre, Ouyang Wanli, ..., Bai Lei | Shanghai Artificial Intelligence Laboratory；Department of Information Engineering, The Chinese University of Hong Kong；School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University；Department of Atmospheric and Oceanic Sciences, Fudan University；School of Information Science and Technology, University of Science and Technology of China；State Key Laboratory of Earth System Numerical Modeling and Application, Institute of Atmospheric Physics, Chinese Academy of Sciences；College of Computer Science and Artificial Intelligence, Fudan University；Department of Earth and Environmental Engineering, Columbia University；Chinese Academy of Meteorological Sciences；School of Atmospheric Sciences, Nanjing University | Earth-o1提出无网格、观测原生的大气世界模型，融合数据同化技术实现地球系统模拟新范式。 | [#480](https://github.com/thinson/RS-PaperClaw/issues/480) |
+| [20260507] Uncertainty-Guided Edge Learning for Deep Image Regression in Remote Sensing | Anh Vu Nguyen, Sejdinovic Dino, Chin Tat-Jun | Australian Institute for Machine Learning (AIML), Adelaide University | 该研究引入不确定性引导的边缘学习框架，结合Beta回归提升遥感图像深度回归的可靠性。 | [#481](https://github.com/thinson/RS-PaperClaw/issues/481) |
+| [20260508] Characterizing Brazilian Atlantic Forest Restoration Outcomes with Geospatial Alpha Earth Embeddings | Heiman Alice | Stanford University | 基于AlphaEarth地理空间嵌入，研究构建了巴西大西洋森林恢复成效的特征表征与评估方法。 | [#482](https://github.com/thinson/RS-PaperClaw/issues/482) |
+
+## 🔎 观察
+
+- 世界模型技术正从游戏与机器人领域向地球科学渗透，数据同化与观测原生学习成为关键衔接点
+- 遥感不确定性量化从后处理走向训练过程嵌入，边缘学习策略有望提升高 stakes 决策场景的可信度
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260506](./202605/20260506.md)
 ## 📌 今日概况
 
@@ -62,41 +94,6 @@ Powered by OpenClaw🦞
 
 - 卫星影像去阴影任务长期受困于真实标注稀缺，物理驱动的合成数据生成或成破局关键路径
 - 多机构跨国合作模式在遥感AI领域持续深化，欧洲研究网络在数据基础设施建设中表现活跃
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260504](./202605/20260504.md)
-## 📌 今日概况
-
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究呈现多元化趋势：基础模型优化与轻量化部署并进，涵盖视觉基础模型对比、扩散模型蒸馏等方向；应用场景拓展至能源监测、废弃物管理与灾害响应；多源数据融合技术持续深化，包括SAR极化融合与全色锐化等。
-
-## ✨ 今日亮点
-
-- SlimDiffSR通过扩散模型蒸馏实现轻量化超分辨率，兼顾性能与效率
-- 撒哈拉以南非洲 crowdsourced UAV 废弃物检测开源模型，服务可持续发展
-- RAFNet提出区域感知融合网络，优化全色锐化中的空间-光谱信息平衡
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260504] AI and Open-data Driven Scalable Solar Power Profiling | Zhang Shiliang, Maharjan Sabita, Turgut Damla | the Department of Computer can transfer across tasks and domains. We exploit this to；the Foundation AI models, trained on large；diverse datasets, Department of Informatics, University of Oslo, Norway | 基于基础AI模型与开放数据，构建可扩展的太阳能光伏设施识别与功率估算框架 | [#462](https://github.com/thinson/RS-PaperClaw/issues/462) |
-| [20260504] Open-access model for detecting openly dumped dispersed municipal solid waste from crowdsourced UAV imagery in Sub-Saharan Africa | Knoblauch Steffen, Ram Kumar Muthusamy, Luis M. A. Bettencourt, Velis Costas, Chrzanowski Pierre, Edward Charles Anderson, Masters Pete, Maholi Innocent, Inguane Antonio, Szamek Levi, Zipf Alexander | HeiGIT at Heidelberg University；Interdisciplinary Centre of Scientific Computing (IWR), Heidelberg University；GIScience Research Group, Heidelberg University；Urban Science Laboratory, Department of Ecology and Evolution, The University of Chicago；Santa Fe Institute；Complexity Science Hub；Imperial College London；Global Facility for Disaster Reduction and Recovery (GFDRR), World Bank；Humanitarian OpenStreetMap Team；Open Map Development Tanzania；Data4Moz | 面向撒哈拉以南非洲开发开源深度学习模型，从众源无人机影像中检测露天分散垃圾堆放点 | [#463](https://github.com/thinson/RS-PaperClaw/issues/463) |
-| [20260504] Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM | Park Hyobin, Seo Minseok, Choi Dong-Geol | ANTLAB；Korea Advanced Institute of Science and Technology (KAIST)；Hanbat National University | 系统对比电光视觉基础模型与通用VFM在遥感检索任务中的跨场景泛化能力差异 | [#464](https://github.com/thinson/RS-PaperClaw/issues/464) |
-| [20260504] SlimDiffSR: Toward Lightweight and Efficient Remote Sensing Image Super-Resolution via Diffusion Model Distillation | Wang Ce, Hu Zhenyu, Sun Wanjie | School of Remote Sensing and Information Engineering, Wuhan University | 提出扩散模型蒸馏策略SlimDiffSR，实现轻量高效的遥感影像超分辨率重建 | [#465](https://github.com/thinson/RS-PaperClaw/issues/465) |
-| [20260504] RAFNet: Region-Aware Fusion Network for Pansharpening | Zhang Jianing, Zhou Zijian, Sun Kai | the College of Artificial domain responses of dynamically generated weights often；the School of Mathematics and Statistics, Xi’an Jiaotong to construct adaptive kernels within the Fourier domain, un- | 设计区域感知融合网络RAFNet，通过动态权重生成自适应傅里叶域核进行全色锐化 | [#466](https://github.com/thinson/RS-PaperClaw/issues/466) |
-| [20260504] Cross-Polarization Fusion of VV AND VH SAR Observations for Improved Flood Mapping | Talreja Jagrati, Tewodros Syum Gebre, Leila Hashemi Beni | North Carolina A&T State University | 融合VV与VH极化SAR观测数据，提升深度学习洪水制图的空间精度与边界清晰度 | [#467](https://github.com/thinson/RS-PaperClaw/issues/467) |
-
-## 🔎 观察
-
-- 基础模型研究从'规模竞赛'转向'效率优化'，模型蒸馏与轻量化成为新焦点
-- 遥感应用持续下沉至发展中国家本地化场景，众源数据与开放工具链降低技术门槛
 
 ---
 
