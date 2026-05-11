@@ -46,26 +46,26 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日遥感AI研究呈现三大趋势：一是地球系统建模向无网格、观测原生范式演进，突破传统数值模拟局限；二是不确定性量化与边缘学习深度融合，提升遥感回归任务可靠性；三是地理空间嵌入技术赋能生态恢复评估，推动大模型在可持续发展领域的落地应用。
+今日遥感AI研究呈现三大趋势：一是世界模型向地球系统科学深度渗透，上海AI Lab等机构推出无网格大气世界模型；二是不确定性量化与边缘学习结合，提升遥感回归任务可靠性；三是基础模型嵌入（AlphaEarth）支撑生态监测应用，斯坦福团队将其用于巴西大西洋森林恢复评估。
 
 ## ✨ 今日亮点
 
-- Earth-o1提出无网格观测原生大气世界模型，实现数据同化与物理模拟的统一框架
-- 不确定性引导边缘学习结合Beta回归，为遥感图像深度回归提供可靠置信估计
-- AlphaEarth地理空间嵌入首次系统评估巴西大西洋森林恢复成效
+- Earth-o1突破传统网格化模拟范式，实现观测原生的大气世界建模
+- 不确定性引导的边缘学习框架为遥感深度学习提供可靠性保障
+- AlphaEarth基础模型嵌入赋能热带森林恢复成效的空间量化评估
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260507] Earth-o1: A Grid-free Observation-native Atmospheric World Model | Gong Junchao, Xu Kaiyi, Wei Wangxu, Tu Siwei, Xu Jingyi, Liu Zili, Fan Hang, Zhou Zhiwang, Han Tao, Xiao Yi, Gu Xinyu, Li Zhangrui, Zhang Wenlong, Chen Hao, Yang Xiaokang, Wang Yaqiang, Cheng Lijing, Gentine Pierre, Ouyang Wanli, ..., Bai Lei | Shanghai Artificial Intelligence Laboratory；Department of Information Engineering, The Chinese University of Hong Kong；School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University；Department of Atmospheric and Oceanic Sciences, Fudan University；School of Information Science and Technology, University of Science and Technology of China；State Key Laboratory of Earth System Numerical Modeling and Application, Institute of Atmospheric Physics, Chinese Academy of Sciences；College of Computer Science and Artificial Intelligence, Fudan University；Department of Earth and Environmental Engineering, Columbia University；Chinese Academy of Meteorological Sciences；School of Atmospheric Sciences, Nanjing University | Earth-o1构建无网格观测原生大气世界模型，融合多机构数据同化与物理约束，突破传统数值天气预报的网格依赖性瓶颈。 | [#480](https://github.com/thinson/RS-PaperClaw/issues/480) |
-| [20260507] Uncertainty-Guided Edge Learning for Deep Image Regression in Remote Sensing | Anh Vu Nguyen, Sejdinovic Dino, Chin Tat-Jun | Australian Institute for Machine Learning (AIML), Adelaide University | 提出不确定性引导边缘学习框架，将Beta回归与深度神经网络结合，实现遥感图像回归任务的不确定性量化与高效边缘部署。 | [#481](https://github.com/thinson/RS-PaperClaw/issues/481) |
-| [20260507] Characterizing Brazilian Atlantic Forest Restoration Outcomes with Geospatial Alpha Earth Embeddings | Heiman Alice | Stanford University | 利用AlphaEarth地理空间嵌入表征巴西大西洋森林恢复区域，对比自然再生与人工造林的多维生态特征差异。 | [#482](https://github.com/thinson/RS-PaperClaw/issues/482) |
+| [20260507] Earth-o1: A Grid-free Observation-native Atmospheric World Model | Gong Junchao, Xu Kaiyi, Wei Wangxu, Tu Siwei, Xu Jingyi, Liu Zili, Fan Hang, Zhou Zhiwang, Han Tao, Xiao Yi, Gu Xinyu, Li Zhangrui, Zhang Wenlong, Chen Hao, Yang Xiaokang, Wang Yaqiang, Cheng Lijing, Gentine Pierre, Ouyang Wanli, ..., Bai Lei | Shanghai Artificial Intelligence Laboratory；Department of Information Engineering, The Chinese University of Hong Kong；School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University；Department of Atmospheric and Oceanic Sciences, Fudan University；School of Information Science and Technology, University of Science and Technology of China；State Key Laboratory of Earth System Numerical Modeling and Application, Institute of Atmospheric Physics, Chinese Academy of Sciences；College of Computer Science and Artificial Intelligence, Fudan University；Department of Earth and Environmental Engineering, Columbia University；Chinese Academy of Meteorological Sciences；School of Atmospheric Sciences, Nanjing University | Earth-o1构建无网格观测原生大气世界模型，融合数据同化与深度学习实现地球系统模拟新范式。 | [#480](https://github.com/thinson/RS-PaperClaw/issues/480) |
+| [20260507] Uncertainty-Guided Edge Learning for Deep Image Regression in Remote Sensing | Anh Vu Nguyen, Sejdinovic Dino, Chin Tat-Jun | Australian Institute for Machine Learning (AIML), Adelaide University | 提出不确定性引导的边缘学习框架，通过Beta回归与边缘采样提升遥感图像深度回归的可靠性。 | [#481](https://github.com/thinson/RS-PaperClaw/issues/481) |
+| [20260507] Characterizing Brazilian Atlantic Forest Restoration Outcomes with Geospatial Alpha Earth Embeddings | Heiman Alice | Stanford University | 利用AlphaEarth地理空间嵌入表征巴西大西洋森林恢复成效，探索基础模型在生态监测中的应用潜力。 | [#482](https://github.com/thinson/RS-PaperClaw/issues/482) |
 
 ## 🔎 观察
 
-- 世界模型正从游戏智能向地球科学迁移，观测原生学习或重塑数值天气预报的数据同化范式
-- 不确定性量化与边缘学习的结合反映遥感AI从精度优先向可靠性优先的实用化转型
+- 世界模型正从通用智能向地球科学专用领域延伸，'观测原生'理念或重塑数值天气预报与气候模拟的技术路线
+- 遥感AI研究呈现'可靠性优先'转向，不确定性量化从后处理环节前移至模型架构设计与训练阶段
 
 ---
 
