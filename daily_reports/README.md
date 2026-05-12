@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260510](./202605/20260510.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦两大方向：一是面向地质灾害监测的高效特征选择方法，通过序列特征筛选优化滑坡分割任务；二是针对遥感图像质量提升的生成式建模，结合空间-频率域信息改进超分辨率重建。两项工作均体现轻量化设计与多源信息融合的研究趋势。
+
+## ✨ 今日亮点
+
+- 序列特征选择策略降低多光谱滑坡分割计算成本，提升模型效率
+- 空间-频率门控Swin Transformer实现遥感单图超分辨率，兼顾全局与细节重建
+- 印度多机构联合推进遥感图像增强技术，强化实际应用价值
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260510] Sequential Feature Selection for Efficient Landslide Segmentation from Multi-Spectral Data | Ahmad Arsalaan, Karakus Oktay, Paul L. Rosin | School of Computer Science and Informatics；Cardiff University | 卡迪夫大学团队提出序列特征选择方法，从多光谱数据中高效提取滑坡敏感特征，优化分割模型计算效率。 | [#500](https://github.com/thinson/RS-PaperClaw/issues/500) |
+| [20260510] Spatial-Frequency Gated Swin Transformer for Remote Sensing Single-Image Super-Resolution | Md Aminur Hossain, Valkesh Parekh, Ayush V. Patel, Jethani Yogesh, Sanjay K. Singh, Banerjee Biplab | Space Applications Centre, ISRO, Ahmedabad, India；Centre of Studies in Resources Engineering, Indian Institute of Technology Bombay, India；New L J Institute of Engineering and Technology, Ahmedabad, India；Pandit Deendayal Energy University, Gandhinagar, India；GLS University, Ahmedabad, India | 印度空间应用中心等机构联合开发空间-频率门控Swin Transformer，通过频域-空域协同建模提升遥感图像超分辨率质量。 | [#501](https://github.com/thinson/RS-PaperClaw/issues/501) |
+
+## 🔎 观察
+
+- 特征选择技术重回遥感深度学习视野，反映边缘部署场景对模型轻量化的迫切需求
+- Swin Transformer在遥感低层视觉任务中持续演进，门控机制与频域先验的结合或成为新范式
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260509](./202605/20260509.md)
 ## 📌 今日概况
 
@@ -76,38 +107,6 @@ Powered by OpenClaw🦞
 
 - 三维重建技术路线分化明显：神经辐射场、高斯溅射与显式几何方法并行发展，跨视角融合成为新竞争点
 - 遥感VLM研究从能力扩展转向安全可控，对抗攻击与幻觉问题揭示实际部署的潜在风险
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260507](./202605/20260507.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究呈现三大趋势：一是世界模型向地球系统科学深度渗透，上海AI Lab等机构推出无网格大气世界模型；二是不确定性量化与边缘学习结合，提升遥感回归任务可靠性；三是基础模型嵌入（AlphaEarth）支撑生态监测应用，斯坦福团队将其用于巴西大西洋森林恢复评估。
-
-## ✨ 今日亮点
-
-- Earth-o1突破传统网格化模拟范式，实现观测原生的大气世界建模
-- 不确定性引导的边缘学习框架为遥感深度学习提供可靠性保障
-- AlphaEarth基础模型嵌入赋能热带森林恢复成效的空间量化评估
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260507] Earth-o1: A Grid-free Observation-native Atmospheric World Model | Gong Junchao, Xu Kaiyi, Wei Wangxu, Tu Siwei, Xu Jingyi, Liu Zili, Fan Hang, Zhou Zhiwang, Han Tao, Xiao Yi, Gu Xinyu, Li Zhangrui, Zhang Wenlong, Chen Hao, Yang Xiaokang, Wang Yaqiang, Cheng Lijing, Gentine Pierre, Ouyang Wanli, ..., Bai Lei | Shanghai Artificial Intelligence Laboratory；Department of Information Engineering, The Chinese University of Hong Kong；School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University；Department of Atmospheric and Oceanic Sciences, Fudan University；School of Information Science and Technology, University of Science and Technology of China；State Key Laboratory of Earth System Numerical Modeling and Application, Institute of Atmospheric Physics, Chinese Academy of Sciences；College of Computer Science and Artificial Intelligence, Fudan University；Department of Earth and Environmental Engineering, Columbia University；Chinese Academy of Meteorological Sciences；School of Atmospheric Sciences, Nanjing University | Earth-o1构建无网格观测原生大气世界模型，融合数据同化与深度学习实现地球系统模拟新范式。 | [#480](https://github.com/thinson/RS-PaperClaw/issues/480) |
-| [20260507] Uncertainty-Guided Edge Learning for Deep Image Regression in Remote Sensing | Anh Vu Nguyen, Sejdinovic Dino, Chin Tat-Jun | Australian Institute for Machine Learning (AIML), Adelaide University | 提出不确定性引导的边缘学习框架，通过Beta回归与边缘采样提升遥感图像深度回归的可靠性。 | [#481](https://github.com/thinson/RS-PaperClaw/issues/481) |
-| [20260507] Characterizing Brazilian Atlantic Forest Restoration Outcomes with Geospatial Alpha Earth Embeddings | Heiman Alice | Stanford University | 利用AlphaEarth地理空间嵌入表征巴西大西洋森林恢复成效，探索基础模型在生态监测中的应用潜力。 | [#482](https://github.com/thinson/RS-PaperClaw/issues/482) |
-
-## 🔎 观察
-
-- 世界模型正从通用智能向地球科学专用领域延伸，'观测原生'理念或重塑数值天气预报与气候模拟的技术路线
-- 遥感AI研究呈现'可靠性优先'转向，不确定性量化从后处理环节前移至模型架构设计与训练阶段
 
 ---
 
