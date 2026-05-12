@@ -2,6 +2,54 @@
 
 最近三天日报（最新在前）：
 
+# [20260511](./202605/20260511.md)
+## 📌 今日概况
+
+今日共检索候选论文 18 篇；关键词+LLM 智能匹配遥感交叉论文 12 篇；最终纳入日报 10 篇。
+
+今日遥感AI研究呈现三大趋势：多模态大语言模型持续渗透遥感任务，涵盖视觉问答、场景分割与时空理解；3D重建技术向物理约束与实时应用演进，涉及森林燃料估算与滑坡模拟；SAR领域聚焦在线处理与目标识别，主动学习与异常检测等方向亦获关注。
+
+## ✨ 今日亮点
+
+- 多模态大模型成为遥感主流范式，4篇论文覆盖问答、分割与时空推理
+- 3D Gaussian Splatting结合物理约束，推动无人机应急测绘与灾害模拟
+- SAR在线处理与视觉问答并进，状态空间模型加速实时成像
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260511] Rapid Forest Fuel Load Estimation via Virtual Remote Sensing and Metric-Scale Feed-Forward 3D Reconstruction | Wu Quanyun, Gao Kyle, Sun Wentao, Xu Zhengsen, Sun Hudson, Xu Linlin, Chen Yuhao, David A. Clausi, Li Jonathan | University of Waterloo；University of Calgary | 基于Google Earth Studio虚拟遥感与度量级前馈3D重建，实现森林可燃物负荷快速估算。 | [#504](https://github.com/thinson/RS-PaperClaw/issues/504) |
+| [20260511] Towards a Large Language-Vision Question Answering Model for MSTAR Automatic Target Recognition | David F. Ramirez, Tim L. Overman, Jaskie Kristen, Kleine Marv, Spanias Andreas | SenSIP Center, School of ECEE, Arizona State University；Prime Solutions Group | 面向MSTAR数据集构建大型语言-视觉问答模型，提升合成孔径雷达自动目标识别能力。 | [#505](https://github.com/thinson/RS-PaperClaw/issues/505) |
+| [20260511] MPerS: Dynamic MLLM MixExperts Perception-Guided Remote Sensing Scene Segmentation | Wang Ziyi, Ma Xianping, Wang Ziyao, Zhang Hongyang, Man On Pun | The Chinese University of Hong Kong (Shenzhen)；Southwest Jiaotong University | 提出动态混合专家感知引导的遥感场景分割方法，增强多模态大语言模型视觉理解。 | [#506](https://github.com/thinson/RS-PaperClaw/issues/506) |
+| [20260511] Geospatial-Temporal Sensemaking of Remote Sensing Activity Detections with Multimodal Large Language Model | David F. Ramirez, Overman Tim, Jaskie Kristen, Spanias Andreas | Arizona State University；Prime Solutions Group Inc | 利用多模态大语言模型对Sentinel-2遥感活动检测进行地理空间-时序语义理解。 | [#507](https://github.com/thinson/RS-PaperClaw/issues/507) |
+| [20260511] UAV-Assisted Scan-to-Simulation for Landslides Using Physics-Informed Gaussian Splatting | Liang Zhenyu, Jack C. P. Cheng | HKUST | 结合物理信息高斯溅射，实现无人机辅助滑坡扫描到仿真的高效重建。 | [#508](https://github.com/thinson/RS-PaperClaw/issues/508) |
+| [20260511] SenseBench: A Benchmark for Remote Sensing Low-Level Visual Perception and Description in Large Vision-Language Models | Zhong Chen, An Xiao, Sun Jiaxing, Gui Zihan, Yang Guangyi, He Wei | Wuhan University；Shanghai Artificial Intelligent Laboratory | 发布SenseBench基准，系统评估大视觉语言模型在遥感低层视觉感知与描述能力。 | [#509](https://github.com/thinson/RS-PaperClaw/issues/509) |
+| [20260511] AnomalyClaw: A Universal Visual Anomaly Detection Agent via Tool-Grounded Refutation | Jiang Xi, Zhao Yinjie, Yang Zesheng, Zheng Feng | Southern University of Science and Technology (SUSTech)；Nanyang Technological University (NTU)；CFAR, Agency for Science, Technology and Research (A*STAR) | AnomalyClaw通过工具锚定反驳机制，构建通用视觉异常检测智能体。 | [#510](https://github.com/thinson/RS-PaperClaw/issues/510) |
+| [20260511] Learning to Focus Synthetic Aperture Radar On-line with State-Space Models | Fieldhouse Sebastian, Roberto Del Prete, Daga Gabriele, Rensly Nathaniel, Meoni Gabriele, Tang Kea-Tiong | College of Semiconductor Research, National Tsing Hua University；Φ-lab, European Space Agency (ESA)；Department of Electrical Engineering, National Tsing Hua University；Advanced Concepts and Studies Office, European Space Agency (ESA) | 基于状态空间模型实现合成孔径雷达在线聚焦学习，支持实时成像处理。 | [#511](https://github.com/thinson/RS-PaperClaw/issues/511) |
+| [20260511] Active-SAOOD: Active Sparsely Annotated Oriented Object Detection in Remote Sensing Images | Lin Yu, Lin Jianghang, Ye Kai, Zhang Shengchuan, Cao Liujuan | Image-Level Active Learning | 提出主动稀疏标注定向目标检测方法，降低遥感图像标注成本并提升检测效率。 | [#512](https://github.com/thinson/RS-PaperClaw/issues/512) |
+| [20260511] Lure-and-Reveal: An Exposure Framework for Stealthy Deception Attack in Multi-sensor Uncertain Systems | Tian Meiqi, Liu Yihan, Zhong Bingzhuo | The Thrust of Artificial Intelligence, Information Hub, Hong Kong University of Science and Technology (Guangzhou)；The Thrust of Intelligent Transportation, System Hub, Hong Kong University of Science and Technology (Guangzhou) | 揭示多传感器不确定系统中隐蔽欺骗攻击的暴露框架，保障融合系统安全。 | [#513](https://github.com/thinson/RS-PaperClaw/issues/513) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Developing a foundation model for high-resolution remote sensing data of the Netherlands | [2605.10184v1](https://arxiv.org/abs/2605.10184v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 视觉-语言大模型正从通用领域向遥感专业化纵深发展，任务覆盖度与评估体系同步完善
+- 3D重建技术加速与物理仿真、实时处理融合，灾害应急与生态监测成为典型落地场景
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260510](./202605/20260510.md)
 ## 📌 今日概况
 
@@ -68,45 +116,6 @@ Powered by OpenClaw🦞
 
 - 生成式压缩与超算结合标志着EO数据管理从存储驱动向计算驱动转型，但历史先验的泛化性仍需跨场景验证。
 - 甲烷监测平台化与传感器无关化设计反映碳监测标准化需求，不确定性量化或成为下一代遥感产品的合规门槛。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260508](./202605/20260508.md)
-## 📌 今日概况
-
-今日共检索候选论文 18 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 10 篇。
-
-今日遥感AI研究呈现多模态融合与三维重建两大主线。卫星-无人机-地面跨视角三维重建、高斯溅射表面重建、深度先验引导的变化检测等方向进展显著；同时，视觉语言模型的安全攻击、连续尺度条件化及地质岩性理解等基础问题受到关注，体现从应用层向模型机理与安全性的纵深探索。
-
-## ✨ 今日亮点
-
-- 跨视角三维重建突破：首次实现卫星、无人机与地面图像的前馈联合三维重建
-- 遥感VLM安全警示：揭示大气检索劫持攻击可导致RAG系统产生幻觉
-- 稀疏视角重建新范式：2D高斯溅射实现可泛化的卫星表面重建
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260508] Seeing Across Skies and Streets: Feedforward 3D Reconstruction from Satellite, Drone, and Ground Images | Wang Qiwei, Tuo Zhongyao, Ze Xianghui, Shi Yujiao | ShanghaiTech University；Nanjing University of Science and Technology | 提出前馈网络实现卫星、无人机与地面图像的联合三维重建，解决跨视角定位难题。 | [#484](https://github.com/thinson/RS-PaperClaw/issues/484) |
-| [20260508] LithoBench: Benchmarking Large Multimodal Models for Remote-Sensing Lithology Interpretation | Wang Jun, Li Fengpeng, Dong Hang, Huang Tianjin, Han Wei | School of Computer Science, China University of Geosciences；PRADA Lab, King Abdullah University of Science and Technology；Department of Computer Science, University of Exeter | 构建首个遥感岩性理解多模态大模型基准测试集LithoBench。 | [#485](https://github.com/thinson/RS-PaperClaw/issues/485) |
-| [20260508] Beyond GSD-as-Token: Continuous Scale Conditioning for Remote Sensing VLMs | Zhang Song, Chen Yanlong, Li Yilin, Chen Yining, Yi Zili, Zhang Xiaowei, Li Yawei | Nanjing University；ETH Zurich；RWTH Aachen University；Nanjing University of Posts and Telecommunications | 提出连续尺度条件化方法，突破传统GSD离散分桶对遥感VLM的局限。 | [#486](https://github.com/thinson/RS-PaperClaw/issues/486) |
-| [20260508] From Clouds to Hallucinations: Atmospheric Retrieval Hijacking in Remote Sensing Vision-Language RAG | Han Jiaju, Li Chao, Hu Chengyin, Zhang Qike, Sun Xuemeng, Wang Xin, Zhang Fengyu, Chen Xiang, Wei Yiwei, Long Jiahuan, Guo Jiujiang | China University of Petroleum, Beijing at Karamay | 首次揭示针对遥感视觉语言RAG的大气检索劫持攻击及其幻觉诱导机制。 | [#487](https://github.com/thinson/RS-PaperClaw/issues/487) |
-| [20260508] Sat3R: Satellite DSM Reconstruction via RPC-Aware Depth Fine-tuning | Yang Qiaoyi, Zhou Chaoyi, Liu Xi, Wang Run, Xu Minghui, Mert D. Pesé, Luo Feng, Xu Yuhao, Cheng Zhi-Qi, Chen Qiushi, Qi Hairong, Huang Siyu | Clemson University；University of Washington；University of Tennessee | 基于RPC感知深度微调实现卫星DSM重建，优化单目深度估计。 | [#488](https://github.com/thinson/RS-PaperClaw/issues/488) |
-| [20260508] Omnidirectional Transponder for Narrow-band Radar Calibration | Cohen Oren, Vana Moshe | ELTA Systems Ltd | 设计全向应答器用于窄带雷达校准，支持圆迹SAR等复杂成像模式。 | [#489](https://github.com/thinson/RS-PaperClaw/issues/489) |
-| [20260508] SatSurfGS: Generalizable 2D Gaussian Splatting for Sparse-View Satellite Surface Reconstruction | Chen Min, Guo Wei, Wang Bin, Li Wen, Fang Tong, Zhang Jinbo, Zhao Junqi, Kuang Hong, Hu Han, Ge Xuming, Zhu Qing, Xu Bo | Faculty of Geosciences and Engineering, Southwest Jiaotong University；School of Geography and Environment, Jiangxi Normal University；College of Geodesy and Geomatics, Shandong University of Science and Technology | 提出可泛化的2D高斯溅射方法，解决稀疏视角卫星表面重建问题。 | [#490](https://github.com/thinson/RS-PaperClaw/issues/490) |
-| [20260508] Masks Can Talk: Extracting Structured Text Information from Single-Modal Images for Remote Sensing Change Detection | Zheng Kai, Dong Hang-Cheng, Pan Jiatong, Wu Zhenkai, Wei Fupeng, Zhang Wei | Zhejiang University；Harbin Institute of Technology；Harbin Institute of Technology Suzhou Research Institute；North China University of Water Resources and Electric Power；University of Auckland | 从单模态图像提取结构化文本信息，以掩码标签引导遥感变化检测。 | [#491](https://github.com/thinson/RS-PaperClaw/issues/491) |
-| [20260508] DPG-CD: Depth-Prior-Guided Cross-Modal Joint 2D-3D Change Detection | Zhang Luqi, Dong Zhen, Yang Bisheng | State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University | 融合深度先验与跨模态信息，实现2D-3D联合城市变化检测。 | [#492](https://github.com/thinson/RS-PaperClaw/issues/492) |
-| [20260508] InfoGeo: Information-Theoretic Object-Centric Learning for Cross-View Generalizable UAV Geo-Localization | Zhang Hongyang, Wang Maonnan, Wang Ziyao, Yin Hongrui, OnPun Man | City University of Hong Kong；Shenzhen University；Peng Cheng Laboratory | 基于信息瓶颈的对象中心学习，提升无人机跨视角地理定位泛化能力。 | [#493](https://github.com/thinson/RS-PaperClaw/issues/493) |
-
-## 🔎 观察
-
-- 三维重建技术路线分化明显：神经辐射场、高斯溅射与显式几何方法并行发展，跨视角融合成为新竞争点
-- 遥感VLM研究从能力扩展转向安全可控，对抗攻击与幻觉问题揭示实际部署的潜在风险
 
 ---
 
