@@ -2,6 +2,48 @@
 
 最近三天日报（最新在前）：
 
+# [20260509](./202605/20260509.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究呈现三大趋势：一是甲烷监测与不确定性量化结合，推动多源卫星数据融合应用；二是深度学习向社会经济指标预测拓展，夜间灯光数据价值凸显；三是生成式压缩与超算结合，探索地球观测数据量级缩减新路径。工程检测领域亦见频域监督学习创新。
+
+## ✨ 今日亮点
+
+- HyGAS平台实现多卫星甲烷羽流反演与排放率估计，突破传感器依赖性限制
+- 意大利市政收入预测研究验证夜间灯光深度学习在经济遥感中的可行性
+- 生成式压缩模型借助历史先验与超算实现万倍数据缩减，重塑EO数据使用范式
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260509] HyGAS: an Open, Sensor-Agnostic Platform for Multi-Satellite Methane Plume Retrieval, Uncertainty Propagation, and Emission-Rate Estimation | Ferrari Alvise, Pampanoni Valerio, Laneve Giovanni | GMATICS S.r.l.；School of Aerospace Engineering, Sapienza University | HyGAS构建开放的多卫星甲烷反演平台，集成不确定性传播与排放率估计，支持成像光谱仪跨传感器应用。 | [#495](https://github.com/thinson/RS-PaperClaw/issues/495) |
+| [20260509] Nowcasting Italian Municipal Income with Nightlights: A Deep Learning Approach | Giannini Massimo | University of Rome Tor Vergata | 基于循环神经网络利用夜间灯光数据实现意大利市政收入动态预测，拓展遥感在经济监测中的实时应用。 | [#496](https://github.com/thinson/RS-PaperClaw/issues/496) |
+| [20260509] Contour-Native Bridge Defect Detection and Compact Digital Archiving with Frequency-Supervised Fourier Contours | Liu Jin, Wang Wang, Pu Hongxu, Cao Zhen, Wang Yasong, Wang Hu, Luo Kunming | State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；Sustainability X-Lab, The University of Hong Kong；Department of Cyber Security, Southeast University；School of Computer Science and Engineering, University of Electronic Science and Technology of China；Department of Electronic and Computer Engineering, The Hong Kong University of Science and Technology | 提出频域监督傅里叶轮廓方法，实现无人机影像桥梁缺陷检测与紧凑矢量数字存档。 | [#497](https://github.com/thinson/RS-PaperClaw/issues/497) |
+| [20260509] Transforming the Use of Earth Observation Data: Exascale Training of a Generative Compression Model with Historical Priors for up to 10,000x Data Reduction | Zhang Jinxiao, Dong Runmin, Wu Xiyong, Huang Xihan, Cheng Shenggan, Yang Yunkai, Zhou Zheng, Xu Yunpu, Luo Zhaoyang, Yang Miao, Wei Fan, Chen Mengxuan, You Yang, Zheng Juepeng, Li Weijia, Lu Yutong, Fu Haohuan | Institute of Data and Information, Tsinghua Shenzhen International Graduate School；Department of Earth System Science, Tsinghua University；Sun Yat-Sen University；National University of Singapore；National Supercomputing Center in Shenzhen | 开发基于历史先验的生成式压缩模型，依托E级计算实现地球观测数据高达10000倍缩减。 | [#498](https://github.com/thinson/RS-PaperClaw/issues/498) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Technical Report: A Hierarchical Dynamically Weighting Deep Reinforcement Learning Method for Multi-UAV Multi-Task Coordination | [2605.08623v1](https://arxiv.org/abs/2605.08623v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 生成式压缩与超算结合标志着EO数据管理从存储驱动向计算驱动转型，但历史先验的泛化性仍需跨场景验证。
+- 甲烷监测平台化与传感器无关化设计反映碳监测标准化需求，不确定性量化或成为下一代遥感产品的合规门槛。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260508](./202605/20260508.md)
 ## 📌 今日概况
 
@@ -66,43 +108,6 @@ Powered by OpenClaw🦞
 
 - 世界模型正从通用智能向地球科学专用领域延伸，'观测原生'理念或重塑数值天气预报与气候模拟的技术路线
 - 遥感AI研究呈现'可靠性优先'转向，不确定性量化从后处理环节前移至模型架构设计与训练阶段
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260506](./202605/20260506.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究呈现三大趋势：一是基础模型轻量化适配（LoRA微调、扩散模型几何控制），二是自主智能体架构创新（多模态元规划器、视觉语言跟踪），三是零标注学习范式兴起（自监督地理推理、原型学习）。量子计算与模糊逻辑也开始渗透高光谱异常检测领域。
-
-## ✨ 今日亮点
-
-- LoRA微调地理基础模型实现野火精准制图，降低 Sentinel-2 应用门槛
-- 轻量化多模态元规划器框架打通遥感感知与决策执行闭环
-- 零标注地理推理模型 RemoteZero 突破人工标注依赖瓶颈
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260506] Hyperspectral Anomaly Detection Using Einstein Fuzzy Computing and Quantum Neural Network | Lin Chia-Hsiang, Young Si-Sheng, Langari Reza | the Department of Electrical Engineering, Na- verse network architectures；the Institute of Computer and Communication Engineer- Nevertheless, relying solely on residual-based detectors may；the Department of Mechanical Engineering, Texas | 爱因斯坦模糊计算与量子神经网络结合，为高光谱异常检测提供新型混合智能架构。 | [#335](https://github.com/thinson/RS-PaperClaw/issues/335) |
-| [20260506] Low-Rank Adaptation of Geospatial Foundation Models for Wildfire Mapping Using Sentinel-2 Data | Shibli Ali, Nascetti Andrea, Ban Yifang | KTH Royal Institute of Technology | 基于LoRA的地理基础模型参数高效微调，实现Sentinel-2野火燃烧区高精度自动提取。 | [#472](https://github.com/thinson/RS-PaperClaw/issues/472) |
-| [20260506] Bridging Perception and Action: A Lightweight Multimodal Meta-Planner Framework for Robust Earth Observation Agents | Xu Jinghui, Shangguan Boyi, Zhu Mengke, Liu Hao, Jiang Junhuan, He Guangjun, Feng Pengming, Jin Shichao, Liang Bin, Chang Yongzhe, Tan Junbo, Zhang Tiantian, Wang Xueqian | State Key Laboratory of Space Information System and Integrated Application | 轻量级多模态元规划器框架支撑地球观测智能体从感知到行动的自主闭环决策。 | [#473](https://github.com/thinson/RS-PaperClaw/issues/473) |
-| [20260506] VL-UniTrack: A Unified Framework with Visual-Language Prompts for UAV-Ground Visual Tracking | Xu Boyue, Hou Ruichao, Ren Tongwei, Wu Gangshan | State Key Laboratory for Novel Software Technology, Nanjing University | VL-UniTrack统一视觉语言提示框架，实现无人机与地面跨视角目标跟踪协同。 | [#474](https://github.com/thinson/RS-PaperClaw/issues/474) |
-| [20260507] Delay-Aware Large-Small Model Collaboration over LEO Satellite Networks | Guo Mingyu, Wu Wen, Wang Ying, Zhang Songge, Li Liang | Frontier Research Center, Pengcheng Laboratory；School of Information and Communication Engineering, Beijing University of Posts and Telecommunications | 大小模型协同架构结合多智能体强化学习，优化低轨卫星网络边缘计算任务卸载。 | [#475](https://github.com/thinson/RS-PaperClaw/issues/475) |
-| [20260507] Efficient Geometry-Controlled High-Resolution Satellite Image Synthesis | Vasilescu Vlad, Faur Daniela, Costăchioiu Teodor | Univ. POLITEHNICA Bucharest；SIGMA Lab, CAMPUS Institute；GEOSENSE, CAMPUS Institute | 几何约束扩散模型实现高分辨率卫星影像可控合成，提升生成图像空间精度。 | [#476](https://github.com/thinson/RS-PaperClaw/issues/476) |
-| [20260506] RemoteZero: Geospatial Reasoning with Zero Human Annotations | Yao Liang, Liu Fan, Xu Shengxiang, Zhang Chuanyi, Min Rui, Di Shimin, Zheng Yuhui | Hohai University；Southeast University | RemoteZero零标注框架以自监督强化学习驱动多模态大模型地理空间推理能力。 | [#477](https://github.com/thinson/RS-PaperClaw/issues/477) |
-| [20260506] UAV as Urban Construction Change Monitor: A New Benchmark and Change Captioning Model | Gao Yupeng, Li Tianyu, Wang Guoqing, Yang Yang | University of Electronic Science and Technology of China | 无人机城市建筑变化监测新基准与变化描述模型，推动细粒度时序遥感理解。 | [#478](https://github.com/thinson/RS-PaperClaw/issues/478) |
-
-## 🔎 观察
-
-- 参数高效微调（PEFT）正成为遥感基础模型落地的关键路径，LoRA等技术显著降低行业适配成本
-- 智能体架构从单一感知向"感知-规划-执行"全链条演进，多模态融合与元学习成为核心支撑技术
 
 ---
 
