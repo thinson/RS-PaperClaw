@@ -2,6 +2,50 @@
 
 最近三天日报（最新在前）：
 
+# [20260512](./202605/20260512.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究呈现三大趋势：一是大语言模型与智能体技术深度渗透农业预测、灾害响应等垂直场景；二是超高分影像与跨模态（光学-SAR、视觉-语言）融合成为技术焦点；三是自监督学习与基础模型推动地理实体关系推理向精细化发展。多模态感知与具身智能成为核心驱动力。
+
+## ✨ 今日亮点
+
+- 智能体后修正机制革新农业产量预测范式，实现预测-解释-修正闭环
+- 超高分视觉语言模型诊断分辨率幻觉问题，突破微目标空间定位瓶颈
+- 文本语义驱动光学-SAR跨模态配准，破解异构影像特征对齐难题
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260512] Agent-Based Post-Hoc Correction of Agricultural Yield Forecasts | Beddows Matthew, Durrant Aiden, Leontidis Georgios | University of Aberdeen；University of East Anglia；UiT The Arctic University of Norway | 提出基于大语言模型的智能体后修正框架，通过多智能体协作对农业产量时序预测结果进行动态校正与不确定性量化。 | [#516](https://github.com/thinson/RS-PaperClaw/issues/516) |
+| [20260512] NARA: Anchor-Conditioned Relation-Aware Contextualization of Heterogeneous Geoentities | Kim Jina, Mai Gengchen, Zhao Lingyi, Shafique Khurram, Chiang Yao-Yi | University of Minnesota；University of Texas at Austin；Novateur Research Solutions | 构建锚点条件化关系感知框架NARA，以自监督方式学习异构地理实体间的空间关系表征。 | [#517](https://github.com/thinson/RS-PaperClaw/issues/517) |
+| [20260512] UHR-Micro: Diagnosing and Mitigating the Resolution Illusion in Earth Observation VLMs | Ni Shuo, Wang Tong, Zhang Jing, Chen He, Guo Haonan, Zhang Ning, Du Bo | National Key Laboratory of Science and Technology on Space-Born Intelligent Information Processing, Beijing Institute of Technology；School of Computer Science, Wuhan University；Zhongguancun Academy；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；The Department of Computing, Hong Kong Polytechnic University | 系统诊断地球观测视觉语言模型的分辨率幻觉现象，提出多尺度空间接地机制提升微目标识别精度。 | [#518](https://github.com/thinson/RS-PaperClaw/issues/518) |
+| [20260512] TAR: Text Semantic Assisted Cross-modal Image Registration Framework for Optical and SAR Images | Cai Zhuoyu, Quan Dou, Huyan Ning, He Pei, Wang Shuang, Jiao Licheng | the Department of from a wide spatial range while maintaining feature invariance | 设计文本语义辅助的跨模态配准网络TAR，利用高层语义桥接光学与SAR影像的模态差异。 | [#519](https://github.com/thinson/RS-PaperClaw/issues/519) |
+| [20260512] Mobile Traffic Camera Calibration from Road Geometry for UAV-Based Traffic Surveillance | Popov Alexey, Trukhina Natalia, Vashkelis Vadim | Embedded Intelligence Lab | 基于道路几何约束实现移动交通相机自标定，为无人机交通监控提供轻量级鸟瞰视图生成方案。 | [#520](https://github.com/thinson/RS-PaperClaw/issues/520) |
+| [20260512] Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations | Wang Junjue, Xuan Weihao, Qi Heli, Dai Pengyu, Liu Kunyi, Chen Hongruixuan, Zheng Zhuo, Xia Junshi, Ermon Stefano, Yokoya Naoto | The University of Tokyo；RIKEN AIP；Waseda University；Stanford University | 构建灾害响应场景下的异构地理空间推理基准，系统评估大语言模型智能体的应急决策能力边界。 | [#521](https://github.com/thinson/RS-PaperClaw/issues/521) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Large-Small Model Collaboration for Farmland Semantic Change Detection | [2605.12282v1](https://arxiv.org/abs/2605.12282v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 智能体架构正从通用对话向领域专用决策演进，后修正机制或成为高 stakes 预测任务的标准配置
+- 跨模态融合重心已从像素级对齐转向语义级桥接，文本作为中间表征显著降低模态鸿沟
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260511](./202605/20260511.md)
 ## 📌 今日概况
 
@@ -74,48 +118,6 @@ Powered by OpenClaw🦞
 
 - 特征选择技术重回遥感深度学习视野，反映边缘部署场景对模型轻量化的迫切需求
 - Swin Transformer在遥感低层视觉任务中持续演进，门控机制与频域先验的结合或成为新范式
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260509](./202605/20260509.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究呈现三大趋势：一是甲烷监测与不确定性量化结合，推动多源卫星数据融合应用；二是深度学习向社会经济指标预测拓展，夜间灯光数据价值凸显；三是生成式压缩与超算结合，探索地球观测数据量级缩减新路径。工程检测领域亦见频域监督学习创新。
-
-## ✨ 今日亮点
-
-- HyGAS平台实现多卫星甲烷羽流反演与排放率估计，突破传感器依赖性限制
-- 意大利市政收入预测研究验证夜间灯光深度学习在经济遥感中的可行性
-- 生成式压缩模型借助历史先验与超算实现万倍数据缩减，重塑EO数据使用范式
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260509] HyGAS: an Open, Sensor-Agnostic Platform for Multi-Satellite Methane Plume Retrieval, Uncertainty Propagation, and Emission-Rate Estimation | Ferrari Alvise, Pampanoni Valerio, Laneve Giovanni | GMATICS S.r.l.；School of Aerospace Engineering, Sapienza University | HyGAS构建开放的多卫星甲烷反演平台，集成不确定性传播与排放率估计，支持成像光谱仪跨传感器应用。 | [#495](https://github.com/thinson/RS-PaperClaw/issues/495) |
-| [20260509] Nowcasting Italian Municipal Income with Nightlights: A Deep Learning Approach | Giannini Massimo | University of Rome Tor Vergata | 基于循环神经网络利用夜间灯光数据实现意大利市政收入动态预测，拓展遥感在经济监测中的实时应用。 | [#496](https://github.com/thinson/RS-PaperClaw/issues/496) |
-| [20260509] Contour-Native Bridge Defect Detection and Compact Digital Archiving with Frequency-Supervised Fourier Contours | Liu Jin, Wang Wang, Pu Hongxu, Cao Zhen, Wang Yasong, Wang Hu, Luo Kunming | State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；Sustainability X-Lab, The University of Hong Kong；Department of Cyber Security, Southeast University；School of Computer Science and Engineering, University of Electronic Science and Technology of China；Department of Electronic and Computer Engineering, The Hong Kong University of Science and Technology | 提出频域监督傅里叶轮廓方法，实现无人机影像桥梁缺陷检测与紧凑矢量数字存档。 | [#497](https://github.com/thinson/RS-PaperClaw/issues/497) |
-| [20260509] Transforming the Use of Earth Observation Data: Exascale Training of a Generative Compression Model with Historical Priors for up to 10,000x Data Reduction | Zhang Jinxiao, Dong Runmin, Wu Xiyong, Huang Xihan, Cheng Shenggan, Yang Yunkai, Zhou Zheng, Xu Yunpu, Luo Zhaoyang, Yang Miao, Wei Fan, Chen Mengxuan, You Yang, Zheng Juepeng, Li Weijia, Lu Yutong, Fu Haohuan | Institute of Data and Information, Tsinghua Shenzhen International Graduate School；Department of Earth System Science, Tsinghua University；Sun Yat-Sen University；National University of Singapore；National Supercomputing Center in Shenzhen | 开发基于历史先验的生成式压缩模型，依托E级计算实现地球观测数据高达10000倍缩减。 | [#498](https://github.com/thinson/RS-PaperClaw/issues/498) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Technical Report: A Hierarchical Dynamically Weighting Deep Reinforcement Learning Method for Multi-UAV Multi-Task Coordination | [2605.08623v1](https://arxiv.org/abs/2605.08623v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 生成式压缩与超算结合标志着EO数据管理从存储驱动向计算驱动转型，但历史先验的泛化性仍需跨场景验证。
-- 甲烷监测平台化与传感器无关化设计反映碳监测标准化需求，不确定性量化或成为下一代遥感产品的合规门槛。
 
 ---
 
