@@ -7,29 +7,29 @@
 
 今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
 
-今日遥感AI研究呈现多模态融合与不确定性量化两大趋势。MLLM首次系统应用于农业景观分割，证据深度学习解决野火烟雾分类可靠性问题；同时，潜空间差异引导、文本引导图像传输等新范式涌现，推动高效表征与重建技术发展。
+今日遥感AI研究呈现多模态融合与不确定性量化两大趋势。MLLM赋能农业景观分割、证据深度学习提升野火烟雾检测可靠性，同时自监督时空建模、扩散模型变化检测及文本引导图像重建等方向均有新进展，体现基础模型与任务专用方法的并行发展。
 
 ## ✨ 今日亮点
 
-- MLLM农业分割：多模态大语言模型首次针对高分辨率卫星农业景观分割任务进行系统适配
-- 不确定性量化突破：证据深度学习结合CBAM-EfficientNet实现野火烟雾密度可信分类
-- 长时序基准发布：ChronoEarth-492K构建迄今最大规模时空高光谱地球观测数据集
+- 多模态大语言模型首次系统应用于高分辨率农业景观语义分割任务
+- 证据深度学习结合CBAM注意力机制实现野火烟雾密度不确定性量化
+- 发布49.2万样本长时序高光谱数据集，支撑时空自监督学习研究
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260515] MAgSeg: Segmentation of Agricultural Landscapes in High-Resolution Satellite Imagery using Multimodal Large Language Models | Tiwary Piyush, Ahuja Utkarsh, Sani Depanshu, Jayagopal Aishwarya, Gubbi Sagar, Venugopalan Subhashini, Talekar Alok, Rajan Vaibhav | Google DeepMind；Google；Indian Institute of Science | MAgSeg探索多模态大语言模型在高分辨率卫星农业景观语义分割中的应用潜力。 | [#544](https://github.com/thinson/RS-PaperClaw/issues/544) |
-| [20260515] Uncertainty-Aware Wildfire Smoke Density Classification from Satellite Imagery via CBAM-Augmented EfficientNet with Evidential Deep Learning | Chodavarapu Ranjith | Kent State University | 提出CBAM增强EfficientNet结合证据深度学习，实现卫星影像野火烟雾密度的不确定性感知分类。 | [#545](https://github.com/thinson/RS-PaperClaw/issues/545) |
-| [20260515] Highly Detailed and Generalizable Broadleaf Tree Crown Instance Segmentation from UAV Imagery | Nakada Mitsutaka, Ikebata Takahiko, Ikebata Kengo, Mizuno Yuji, Onoda Yusuke, Takeshige Ryuichi, Kyaw Kyaw Htoo, Kitayama Kanehiro, Ong Robert, Onishi Masanori | DeepForest Technologies Co., Ltd.；YM Lab.；Graduate School of Agriculture, Kyoto University；Graduate School of Science, Osaka Metropolitan University；Faculty of Tropical Forestry, Universiti Malaysia Sabah；Forest Research Centre, Sabah Forestry Department | 基于无人机影像开发可泛化的阔叶林树冠实例分割方法，实现高精度单木识别。 | [#546](https://github.com/thinson/RS-PaperClaw/issues/546) |
-| [20260515] ChronoEarth-492K: A Large Scale and Long Horizon Spatiotemporal Hyperspectral Earth Observation Dataset and Benchmark | Si Haozhe, Wan Yuxuan, Wang Yuqing, Do Minh, Zhao Han | Department of Electrical and Computer Engineering；Siebel School of Computing and Data Science；University of Illinois Urbana-Champaign | 发布ChronoEarth-492K数据集，支撑长时序高光谱地球观测的自监督时空建模研究。 | [#547](https://github.com/thinson/RS-PaperClaw/issues/547) |
-| [20260515] LDGUID: A FRAMEWORK FOR ROBUST CHANGE DETECTION VIA LATENT DIFFERENCE GUIDANCE | Zhao Jiaxuan, Bereyhi Ali | University of Toronto | LDGUID框架通过潜空间差异引导与信息瓶颈机制，提升变化检测的鲁棒性与语义判别能力。 | [#548](https://github.com/thinson/RS-PaperClaw/issues/548) |
-| [20260515] Text-RSIR: A Text-Guided Framework for Efficient Remote Sensing Image Transmission and Reconstruction | Yang Hao, Ma Xianping, Ma Peifeng, Pun Man-On | organization= School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen , city= Shenzhen , postcode= 518172 , state= Guangdong , country= China | Text-RSIR构建文本引导的遥感图像传输重建框架，实现高效跨模态图像压缩与恢复。 | [#549](https://github.com/thinson/RS-PaperClaw/issues/549) |
+| [20260515] MAgSeg: Segmentation of Agricultural Landscapes in High-Resolution Satellite Imagery using Multimodal Large Language Models | Tiwary Piyush, Ahuja Utkarsh, Sani Depanshu, Jayagopal Aishwarya, Gubbi Sagar, Venugopalan Subhashini, Talekar Alok, Rajan Vaibhav | Google DeepMind；Google；Indian Institute of Science | MAgSeg提出基于多模态大语言模型的农业景观分割框架，利用视觉-语言对齐提升高分辨率卫星影像的语义理解能力。 | [#544](https://github.com/thinson/RS-PaperClaw/issues/544) |
+| [20260515] Uncertainty-Aware Wildfire Smoke Density Classification from Satellite Imagery via CBAM-Augmented EfficientNet with Evidential Deep Learning | Chodavarapu Ranjith | Kent State University | 该研究将CBAM增强的EfficientNet与证据深度学习结合，在野火烟雾密度分类中实现显式不确定性估计。 | [#545](https://github.com/thinson/RS-PaperClaw/issues/545) |
+| [20260515] Highly Detailed and Generalizable Broadleaf Tree Crown Instance Segmentation from UAV Imagery | Nakada Mitsutaka, Ikebata Takahiko, Ikebata Kengo, Mizuno Yuji, Onoda Yusuke, Takeshige Ryuichi, Kyaw Kyaw Htoo, Kitayama Kanehiro, Ong Robert, Onishi Masanori | DeepForest Technologies Co., Ltd.；YM Lab.；Graduate School of Agriculture, Kyoto University；Graduate School of Science, Osaka Metropolitan University；Faculty of Tropical Forestry, Universiti Malaysia Sabah；Forest Research Centre, Sabah Forestry Department | 针对无人机阔叶林影像，开发高度精细且可泛化的单木树冠实例分割方法，融合多机构跨地域数据验证。 | [#546](https://github.com/thinson/RS-PaperClaw/issues/546) |
+| [20260515] ChronoEarth-492K: A Large Scale and Long Horizon Spatiotemporal Hyperspectral Earth Observation Dataset and Benchmark | Si Haozhe, Wan Yuxuan, Wang Yuqing, Do Minh, Zhao Han | Department of Electrical and Computer Engineering；Siebel School of Computing and Data Science；University of Illinois Urbana-Champaign | ChronoEarth-492K构建大规模长时序高光谱地球观测数据集，为时空自监督学习提供标准化基准。 | [#547](https://github.com/thinson/RS-PaperClaw/issues/547) |
+| [20260515] LDGUID: A FRAMEWORK FOR ROBUST CHANGE DETECTION VIA LATENT DIFFERENCE GUIDANCE | Zhao Jiaxuan, Bereyhi Ali | University of Toronto | LDGUID通过潜在差异引导与信息瓶颈约束，提升对抗自编码器在变化检测中的鲁棒性与语义判别能力。 | [#548](https://github.com/thinson/RS-PaperClaw/issues/548) |
+| [20260515] Text-RSIR: A Text-Guided Framework for Efficient Remote Sensing Image Transmission and Reconstruction | Yang Hao, Ma Xianping, Ma Peifeng, Pun Man-On | School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen；Geosciences and Engineering, Southwest Jiaotong University；Institute of Space and Earth Information Science and the Department of Geography and Resource Management, The Chinese University of Hong Kong | Text-RSIR建立文本引导的遥感图像传输重建框架，利用跨模态先验实现高效压缩与高质量恢复。 | [#549](https://github.com/thinson/RS-PaperClaw/issues/549) |
 
 ## 🔎 观察
 
-- 多模态大模型正从通用视觉向遥感垂直领域渗透，但农业景观的细粒度分割对MLLM的空间精度仍具挑战。
-- 不确定性量化方法在灾害应急场景加速落地，证据深度学习与注意力机制的结合或成为可靠性遥感AI的标准配置。
+- 基础模型下沉趋势明显：MLLM、扩散模型等通用架构正快速向遥感专用任务渗透，但领域适配机制尚待深化。
+- 不确定性量化关注度提升：从野火烟雾到变化检测，可靠性建模成为遥感AI落地应用的关键瓶颈与研究方向。
 
 ---
 
