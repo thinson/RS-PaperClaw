@@ -243,6 +243,42 @@ def _latex_to_plain(text: str) -> str:
     return re.sub(r"\s+", " ", plain).strip()
 
 
+def _extract_latex_key_values(text: str, key: str) -> list[str]:
+    values: list[str] = []
+    pattern = re.compile(r"\b" + re.escape(key) + r"\s*=\s*\{")
+    for match in pattern.finditer(text or ""):
+        start = match.end()
+        depth = 1
+        i = start
+        while i < len(text) and depth:
+            char = text[i]
+            if char == "\\":
+                i += 2
+                continue
+            if char == "{":
+                depth += 1
+            elif char == "}":
+                depth -= 1
+            i += 1
+        if depth == 0:
+            plain = _latex_to_plain(text[start : i - 1])
+            if plain:
+                values.append(plain)
+    return values
+
+
+def _institutions_from_latex_affiliation_body(body: str) -> list[str]:
+    organizations = _extract_latex_key_values(body, "organization")
+    if organizations:
+        return _dedupe_institutions(organizations)
+
+    plain = _latex_to_plain(body)
+    parsed = _parse_ieee_footnote(plain, "")
+    if parsed:
+        return parsed
+    return _heuristic_institutions(plain)
+
+
 def _read_latex_sources(source_path: Path) -> list[str]:
     if not source_path or not source_path.exists():
         return []
@@ -281,10 +317,7 @@ def extract_institutions_from_latex_source(source_path: Path | None) -> str:
 
         for command in ["thanks", "affil", "affiliation", "institute", "IEEEauthorblockA"]:
             for body in _extract_latex_command_bodies(source, command):
-                plain = _latex_to_plain(body)
-                institutions.extend(_parse_ieee_footnote(plain, ""))
-                if not institutions:
-                    institutions.extend(_heuristic_institutions(plain))
+                institutions.extend(_institutions_from_latex_affiliation_body(body))
 
         if institutions:
             break
