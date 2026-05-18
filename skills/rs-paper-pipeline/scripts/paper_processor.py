@@ -15,13 +15,15 @@ from pathlib import Path
 from datetime import datetime
 import json
 
-from clients.arxiv_client import download_pdf, extract_abs_info
+from clients.arxiv_client import download_pdf, download_source, extract_abs_info
 from pipeline_config import get_repo, load_config
 from services.paper_analysis import (
     extract_institutions_from_first_page,
+    extract_institutions_from_latex_source,
     extract_tags,
     format_answer_md,
     generate_tldr,
+    is_valid_institution_text,
     quality_gate,
     recover_metadata_from_pdf,
     summarize_paper,
@@ -134,7 +136,12 @@ def process_paper(arxiv_id: str, issue_number: int | None = None, dry_run: bool 
     info["abstract_en"] = recovered["abstract_en"] or info.get("abstract_en", "")
     log_step("STEP-1", "OK", f"recovered_title={info['title'][:40]} | recovered_authors={info['authors'][:30]}")
 
-    info["institutions"] = extract_institutions_from_first_page(info["title"], info["authors"], first_page_text)
+    pdf_institutions = extract_institutions_from_first_page(info["title"], info["authors"], first_page_text)
+    if is_valid_institution_text(pdf_institutions):
+        info["institutions"] = pdf_institutions
+    elif not is_valid_institution_text(info.get("institutions", "")):
+        source_path = download_source(arxiv_id)
+        info["institutions"] = extract_institutions_from_latex_source(source_path)
     log_step("STEP-1", "OK", f"institutions={info['institutions'][:60] if info['institutions'] else 'EMPTY'}")
 
     # 1.3 处理图片（PDF前三页转JPG并上传）

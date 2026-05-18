@@ -3,6 +3,9 @@ from __future__ import annotations
 
 import json
 import re
+import tarfile
+import gzip
+from pathlib import Path
 
 from clients.llm_client import call_llm, load_prompt
 
@@ -112,6 +115,11 @@ def _dedupe_institutions(institutions: list[str]) -> list[str]:
     return cleaned
 
 
+def is_valid_institution_text(text: str) -> bool:
+    normalized = (text or "").strip()
+    return normalized not in {"", "-"} and not has_bad_placeholder(normalized)
+
+
 def _heuristic_institutions(first_page_text: str) -> list[str]:
     keyword_pattern = re.compile(
         r"(universit|college|school|institut|academy|laborator|centre|center|department|hospital|faculty|research|laboratory|lab\b|国家|大学|学院|研究所|实验室|中心|医院)",
@@ -194,6 +202,94 @@ def _parse_ieee_footnote(footnote: str, known_authors: str) -> list[str]:
                 institutions.append(part)
 
     return _dedupe_institutions(institutions)
+
+
+def _latex_without_comments(text: str) -> str:
+    cleaned_lines = []
+    for line in (text or "").splitlines():
+        cleaned_lines.append(re.sub(r"(?<!\\)%.*$", "", line))
+    return "\n".join(cleaned_lines)
+
+
+def _extract_latex_command_bodies(text: str, command: str) -> list[str]:
+    bodies: list[str] = []
+    pattern = re.compile(r"\\" + re.escape(command) + r"(?:\[[^\]]*\])?\s*\{")
+    for match in pattern.finditer(text or ""):
+        start = match.end()
+        depth = 1
+        i = start
+        while i < len(text) and depth:
+            char = text[i]
+            if char == "\\":
+                i += 2
+                continue
+            if char == "{":
+                depth += 1
+            elif char == "}":
+                depth -= 1
+            i += 1
+        if depth == 0:
+            bodies.append(text[start : i - 1])
+    return bodies
+
+
+def _latex_to_plain(text: str) -> str:
+    plain = text or ""
+    plain = re.sub(r"\\(?:tt|small|footnotesize|scriptsize|hspace\*?)\s*(?:\{[^{}]*\})?", " ", plain)
+    plain = re.sub(r"\\(?:url|href)\s*\{[^{}]*\}(?:\{[^{}]*\})?", " ", plain)
+    plain = re.sub(r"\\[a-zA-Z]+\*?(?:\[[^\]]*\])?", " ", plain)
+    plain = re.sub(r"[{}$^_~]", " ", plain)
+    plain = re.sub(r"\\[\\,;:! ]", " ", plain)
+    return re.sub(r"\s+", " ", plain).strip()
+
+
+def _read_latex_sources(source_path: Path) -> list[str]:
+    if not source_path or not source_path.exists():
+        return []
+
+    sources: list[tuple[str, str]] = []
+    try:
+        if tarfile.is_tarfile(source_path):
+            with tarfile.open(source_path) as archive:
+                for member in archive.getmembers():
+                    if not member.isfile() or not member.name.lower().endswith(".tex"):
+                        continue
+                    extracted = archive.extractfile(member)
+                    if extracted is None:
+                        continue
+                    text = extracted.read(500_000).decode("utf-8", errors="ignore")
+                    sources.append((member.name, text))
+        else:
+            raw = source_path.read_bytes()
+            try:
+                raw = gzip.decompress(raw)
+            except Exception:
+                pass
+            text = raw[:1_000_000].decode("utf-8", errors="ignore")
+            sources.append((source_path.name, text))
+    except Exception:
+        return []
+
+    sources.sort(key=lambda item: (0 if re.search(r"(main|root|paper)\.tex$", item[0], re.IGNORECASE) else 1, item[0]))
+    return [text for _, text in sources]
+
+
+def extract_institutions_from_latex_source(source_path: Path | None) -> str:
+    institutions: list[str] = []
+    for raw_source in _read_latex_sources(source_path) if source_path else []:
+        source = _latex_without_comments(raw_source)
+
+        for command in ["thanks", "affil", "affiliation", "institute", "IEEEauthorblockA"]:
+            for body in _extract_latex_command_bodies(source, command):
+                plain = _latex_to_plain(body)
+                institutions.extend(_parse_ieee_footnote(plain, ""))
+                if not institutions:
+                    institutions.extend(_heuristic_institutions(plain))
+
+        if institutions:
+            break
+
+    return "；".join(_dedupe_institutions(institutions))
 
 
 def extract_institutions_from_first_page(title: str, authors: str, first_page_text: str) -> str:

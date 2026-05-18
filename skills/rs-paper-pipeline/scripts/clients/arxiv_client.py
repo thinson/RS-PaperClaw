@@ -204,6 +204,27 @@ def download_pdf(arxiv_id: str) -> tuple[Path | None, bool]:
     return None, False
 
 
+def download_source(arxiv_id: str) -> Path | None:
+    CONFIG.temp_dir.mkdir(parents=True, exist_ok=True)
+    output = CONFIG.temp_dir / f"{arxiv_id}.src"
+    urls = [
+        f"https://arxiv.org/e-print/{arxiv_id}",
+        f"https://export.arxiv.org/e-print/{arxiv_id}",
+    ]
+
+    for url in urls:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": CONFIG.arxiv_user_agent})
+            with urllib.request.urlopen(req, timeout=60) as response:
+                output.write_bytes(response.read())
+            if output.exists() and output.stat().st_size > 0:
+                return output
+        except Exception:
+            continue
+
+    return None
+
+
 def normalize_author_name(name: str) -> str:
     normalized = re.sub(r"\s+", " ", name or "").strip()
     if not normalized:
