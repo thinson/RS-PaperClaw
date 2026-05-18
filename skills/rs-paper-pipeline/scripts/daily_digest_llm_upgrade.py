@@ -8,6 +8,7 @@ from pathlib import Path
 
 from pipeline_config import get_repo, load_config
 from services.digest_builder import build_digest_with_llm, extract_paper_date, validate_papers_for_digest
+from services.issue_index import ensure_index, lookup_issue
 
 CONFIG = load_config()
 
@@ -44,6 +45,63 @@ def collect_papers_by_date(issues):
     return paper_by_date, digest_issue_by_date
 
 
+def _paper_key(paper: dict) -> int | None:
+    number = paper.get("number")
+    return number if isinstance(number, int) else None
+
+
+def _merge_paper(papers: list[dict], paper: dict) -> None:
+    number = _paper_key(paper)
+    if number is not None and any(_paper_key(item) == number for item in papers):
+        return
+    papers.append(paper)
+
+
+def _load_stats_map(stats_json: str | None) -> dict[str, dict]:
+    stats_map: dict[str, dict] = {}
+    if not stats_json:
+        return stats_map
+    try:
+        obj = json.loads(Path(stats_json).read_text(encoding="utf-8"))
+        if isinstance(obj, dict) and obj.get("date"):
+            stats_map[obj["date"]] = obj
+    except Exception:
+        pass
+    return stats_map
+
+
+def _augment_papers_from_stats(repo, papers: list[dict], stats: dict | None) -> list[dict]:
+    if not stats:
+        return papers
+
+    selected_ids = stats.get("successful_selected_arxiv_ids") or []
+    if not selected_ids:
+        return papers
+
+    index = ensure_index(repo)
+    by_issue_number = {
+        _paper_key(paper): paper
+        for paper in papers
+        if _paper_key(paper) is not None
+    }
+    merged = list(papers)
+
+    for arxiv_id in selected_ids:
+        issue = lookup_issue(repo, index, arxiv_id)
+        if issue is None:
+            continue
+
+        raw = issue_data(issue)
+        number = _paper_key(raw)
+        if number is not None and number in by_issue_number:
+            continue
+        _merge_paper(merged, raw)
+        if number is not None:
+            by_issue_number[number] = raw
+
+    return merged
+
+
 def main(target_date: str | None = None, stats_json: str | None = None):
     if not CONFIG.github_token:
         raise RuntimeError("Missing required environment variable: GITHUB_TOKEN")
@@ -52,14 +110,7 @@ def main(target_date: str | None = None, stats_json: str | None = None):
 
     repo = get_repo(CONFIG)
 
-    stats_map = {}
-    if stats_json:
-        try:
-            obj = json.loads(Path(stats_json).read_text(encoding="utf-8"))
-            if isinstance(obj, dict) and obj.get("date"):
-                stats_map[obj["date"]] = obj
-        except Exception:
-            pass
+    stats_map = _load_stats_map(stats_json)
 
     issues = load_open_issues(repo)
     paper_by_date, digest_issue_by_date = collect_papers_by_date(issues)
@@ -67,7 +118,7 @@ def main(target_date: str | None = None, stats_json: str | None = None):
     out_dir = CONFIG.temp_dir / "RS-PaperClaw" / "daily_reports"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    dates = sorted(paper_by_date.keys())
+    dates = sorted(set(paper_by_date.keys()) | set(stats_map.keys()))
     if target_date:
         dates = [d for d in dates if d == target_date]
 
@@ -76,9 +127,11 @@ def main(target_date: str | None = None, stats_json: str | None = None):
         return
 
     for date in dates:
-        # 以 issue 标签为准（paper_by_date），而非 stats 文件
-        # stats 可能因质量门禁失败等原因不完整，但只要 issue 有正确标签就应纳入日报
-        papers = sorted(paper_by_date.get(date, []), key=lambda x: x["number"])
+        # Open issue list is eventually consistent right after paper creation.
+        # Use stats + issue_index to fetch just-created successful papers by
+        # issue number, then merge with the regular date-labeled issue scan.
+        papers = _augment_papers_from_stats(repo, paper_by_date.get(date, []), stats_map.get(date))
+        papers = sorted(papers, key=lambda x: x["number"])
         if not papers:
             print(f"NO_PAPERS date={date}")
             continue
