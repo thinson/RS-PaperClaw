@@ -41,31 +41,30 @@ Powered by OpenClaw🦞
 # [20260517](./202605/20260517.md)
 ## 📌 今日概况
 
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 6 篇。
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
 
-今日遥感AI研究呈现三大趋势：量子计算与机器学习深度融合，两篇论文探索量子核方法在SAR溢油检测与高光谱分类中的应用；多模态感知持续演进，Mamba架构与状态空间模型推动光学-高程图像分割；无人机系统研究活跃，涵盖编队控制、信道仿真与FR3部署等方向。
+今日遥感AI研究呈现两大趋势：一是量子计算与机器学习深度融合，两篇论文分别将量子核方法与量子辅助SVM应用于高光谱分类和SAR溢油检测；二是无人机系统智能化升级，涵盖分布式编队控制与FR3频段传播仿真。高光谱成像领域亦出现新型预训练骨干网络。
 
 ## ✨ 今日亮点
 
-- 量子核方法双突破：SAR溢油检测与高光谱分类分别引入量子辅助SVM与大规模量子核
-- Mamba架构跨界应用：轴向关系引导的状态空间模型实现光学-高程图像高效分割
-- 无人机全栈研究：从编队控制安全约束到FR3信道仿真形成技术闭环
+- 量子核方法首次大规模应用于高光谱数据分类，结合张量网络与GPU加速实现高效计算
+- HyperVision提出通道自适应动态嵌入机制，解决高光谱预训练骨干网络的光谱异质性难题
+- 量子辅助SVM将SAR溢油检测推向近实时处理，拓展量子退火在遥感应急监测中的应用
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260516] Axial-Relation Guided Fusion State Space Model for Optical-Elevation Sensing Image Segmentation | Gao Feng, Jin Zhilin, Gan Yanhai, Dong Junyu, Du Qian | the Department of Electrical and Computer Engineering, modeling of fine-grained local details and global contex- | 提出轴向关系引导的融合状态空间模型，用于光学-高程遥感图像分割，结合Mamba架构处理细粒度局部细节与全局上下文。 | [#552](https://github.com/thinson/RS-PaperClaw/issues/552) |
-| [20260517] Distributed 3D Leader-Follower Formation Control with Field-of-View Safety via Control Barrier Functions | Immanuel R. Santjoko, Richie R. Suganda, Pan Miao, Hu Bin | Huazhong University of Science and Technology | 基于控制屏障函数实现分布式三维领导者-跟随者编队控制，引入视场安全约束保障多无人机系统协同飞行。 | [#555](https://github.com/thinson/RS-PaperClaw/issues/555) |
-| [20260517] UPSim: UxNB Propagation Simulator for 3D Map-Driven FR3 Deployments | Vinogradov Evgenii | NaNoNetworking Center in Catalonia (N3Cat), Universitat Politècnica de Catalunya, Spain；Department of Electrical Engineering, KU Leuven, Belgium | 开发UxNB传播仿真器UPSim，支持三维地图驱动的FR3频段无人机网络部署，采用射线追踪模拟空对地信道。 | [#556](https://github.com/thinson/RS-PaperClaw/issues/556) |
-| [20260517] HyperVision: A Channel-Adaptive Ground-Based Hyperspectral Vision Pre-trained Backbone | Fu Guanyiman, Li Jingtao, Cheng Zihang, Li Zhuanfeng, Chen Diqi, Xu Yan, Xiong Fengchao, Lu Jianfeng, Zhou Jun | Griffith University；Wuhan University；Nanjing University of Science and Technology；Huaiyin Normal University；Massey University | 构建通道自适应的高光谱视觉预训练骨干网络HyperVision，通过动态嵌入与伪标签学习提升高光谱表征能力。 | [#557](https://github.com/thinson/RS-PaperClaw/issues/557) |
-| [20260517] Toward Near-Real-Time Marine Oil Spill Detection in SAR Imagery using Quantum-Assisted SVM | Strauss Joseph, Sharma Jyotsna | Louisiana State University | 将量子退火辅助支持向量机应用于SAR图像海洋溢油检测，探索量子机器学习在实时遥感解译中的潜力。 | [#558](https://github.com/thinson/RS-PaperClaw/issues/558) |
-| [20260517] Large-Scale Quantum Kernels for Hyperspectral Data Classification | Delilbasic A., Miroszewski A., Wijata A., Nalepa J., Mielczarek J., Riedel M., Cavallaro G. | Forschungszentrum J\"ulich, J\"ulich, Germany；University of Iceland, 102 Reykjavík, Iceland；Jagiellonian University, Łojasiewicza 11, 30-348 Krakow, Poland；Silesian University of Technology, Akademicka 2A, 44-100 Gliwice, Poland；KP Labs, Bojkowska 37J, 44-100, Gliwice, Poland | 设计面向高光谱数据分类的大规模量子核方法，结合张量网络与GPU加速实现高效量子核矩阵计算。 | [#568](https://github.com/thinson/RS-PaperClaw/issues/568) |
+| [20260517] Distributed 3D Leader-Follower Formation Control with Field-of-View Safety via Control Barrier Functions | Immanuel R. Santjoko, Richie R. Suganda, Pan Miao, Hu Bin | Huazhong University of Science and Technology | 基于控制障碍函数实现多无人机分布式三维编队控制，引入视场约束保障飞行安全。 | [#555](https://github.com/thinson/RS-PaperClaw/issues/555) |
+| [20260517] UPSim: UxNB Propagation Simulator for 3D Map-Driven FR3 Deployments | Vinogradov Evgenii | NaNoNetworking Center in Catalonia (N3Cat), Universitat Politècnica de Catalunya, Spain；Department of Electrical Engineering, KU Leuven, Belgium | 构建面向FR3频段的无人机基站传播仿真器，支持射线追踪驱动的空对地信道建模。 | [#556](https://github.com/thinson/RS-PaperClaw/issues/556) |
+| [20260517] HyperVision: A Channel-Adaptive Ground-Based Hyperspectral Vision Pre-trained Backbone | Fu Guanyiman, Li Jingtao, Cheng Zihang, Li Zhuanfeng, Chen Diqi, Xu Yan, Xiong Fengchao, Lu Jianfeng, Zhou Jun | Griffith University；Wuhan University；Nanjing University of Science and Technology；Huaiyin Normal University；Massey University | 提出通道自适应高光谱视觉预训练骨干网络，通过动态嵌入与伪标签学习提升泛化能力。 | [#557](https://github.com/thinson/RS-PaperClaw/issues/557) |
+| [20260517] Toward Near-Real-Time Marine Oil Spill Detection in SAR Imagery using Quantum-Assisted SVM | Strauss Joseph, Sharma Jyotsna | Louisiana State University | 将量子退火辅助SVM用于SAR溢油检测，实现近实时海洋污染监测。 | [#558](https://github.com/thinson/RS-PaperClaw/issues/558) |
+| [20260517] Large-Scale Quantum Kernels for Hyperspectral Data Classification | Delilbasic A., Miroszewski A., Wijata A., Nalepa J., Mielczarek J., Riedel M., Cavallaro G. | Forschungszentrum J\"ulich, J\"ulich, Germany；University of Iceland, 102 Reykjavík, Iceland；Jagiellonian University, Łojasiewicza 11, 30-348 Krakow, Poland；Silesian University of Technology, Akademicka 2A, 44-100 Gliwice, Poland；KP Labs, Bojkowska 37J, 44-100, Gliwice, Poland | 开发大规模量子核方法用于高光谱分类，融合张量网络压缩与GPU加速优化计算效率。 | [#568](https://github.com/thinson/RS-PaperClaw/issues/568) |
 
 ## 🔎 观察
 
-- 量子机器学习正从概念验证迈向遥感专用场景，溢油检测与高光谱分类的同步探索显示该交叉领域进入实用化前期
-- Mamba与状态空间模型在遥感多模态融合中的快速渗透，反映出Transformer替代架构在计算效率与长程建模上的双重优势
+- 量子机器学习正从概念验证走向遥感实际应用，但量子硬件可及性仍是规模化部署瓶颈
+- 高光谱预训练模型开始关注光谱维度的物理特性适配，而非简单迁移RGB视觉范式
 
 ---
 
