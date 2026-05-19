@@ -169,37 +169,26 @@ def _extract_footnote_block(first_page_text: str) -> str:
 def _parse_ieee_footnote(footnote: str, known_authors: str) -> list[str]:
     """Parse IEEE-style "is with / was with" affiliation sentences."""
     institutions: list[str] = []
+    kw = re.compile(
+        r"(universit[yi]|college|school|institut|academy|laborator[yi]|"
+        r"centre|center|department|hospital|faculty|research|laboratory|"
+        r"labs?\b|labs,|forschungszentrum|jagiellonian|technology|"
+        r"大学|学院|研究所|实验室|中心|医院|研究院)",
+        re.IGNORECASE,
+    )
 
     for match in re.finditer(
-        r"(?:are|is|was|were)\s+(?:all\s+)?(?:currently\s+)?with\s+(.+?)(?:\s*\(|\s*\[|\s*[–—]|\.$|\n)",
+        r"(?:are|is|was|were)\s+(?:all\s+)?(?:currently\s+)?with\s+(.+?)(?:\s+E-?mail[:：]|\s*\(|\s*\[|\s*[–—]|\.$|\n)",
         footnote,
         re.IGNORECASE,
     ):
         chunk = match.group(1).strip().rstrip(" ,;.")
-        # Extract institution-like phrases containing keywords
-        kw = re.compile(
-            r"(universit[yi]|college|school|institut|academy|laborator[yi]|"
-            r"centre|center|department|hospital|faculty|research|laboratory|"
-            r"大学|学院|研究所|实验室|中心|医院|研究院|研究院)",
-            re.IGNORECASE,
-        )
-        for phrase in re.split(r",\s*and\s+also\s+|\band\s+also\b", chunk):
+        chunk = re.sub(r"\b\d{4,6}\b", "", chunk)
+        chunk = re.sub(r"\s+", " ", chunk)
+        for phrase in re.split(r",\s+and\s+|,\s*and\s+also\s+|\band\s+also\b", chunk):
             phrase = phrase.strip().rstrip(" ,;.")
             if kw.search(phrase):
                 institutions.append(phrase)
-
-    # Also try "are with X, Y, and Z" pattern
-    for match in re.finditer(
-        r"(?:are|were|were all)\s+(?:all\s+)?with\s+([\w\s,]+?)(?:\s*\(|\s*\[|\s*[–—]|\.)",
-        footnote,
-        re.IGNORECASE,
-    ):
-        chunk = match.group(1).strip()
-        # Split by ", and" or "and also" to separate multi-institution mentions
-        for part in re.split(r",?\s+and\s+also\s+|,?\s+and\s+", chunk):
-            part = part.strip().rstrip(" ,;.")
-            if len(part) > 6:
-                institutions.append(part)
 
     return _dedupe_institutions(institutions)
 
@@ -220,9 +209,6 @@ def _extract_latex_command_bodies(text: str, command: str) -> list[str]:
         i = start
         while i < len(text) and depth:
             char = text[i]
-            if char == "\\":
-                i += 2
-                continue
             if char == "{":
                 depth += 1
             elif char == "}":
