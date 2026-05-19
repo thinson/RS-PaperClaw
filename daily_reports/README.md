@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260516](./202605/20260516.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦三维变化检测与多模态遥感图像分割。视觉几何基础模型与Mamba架构成为热点，分别用于无训练点云配准和光-高程图像融合。SAR变化检测领域关注全局动态上下文建模，整体呈现基础模型迁移与高效架构探索并行的趋势。
+
+## ✨ 今日亮点
+
+- VGGT-CD提出无训练三维变化检测框架，利用视觉几何基础模型实现鲁棒点云配准
+- 轴向关系引导的Mamba融合模型，优化光-高程多模态遥感图像分割性能
+- 全局动态上下文感知网络增强SAR图像变化检测的特征表达能力
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260516] VGGT-CD: Training-Free Robust Registration for 3D Change Detection | Zhang Wei, Li Songhua, Wu Yihang, Li Qiang, Wang Qi | Northwestern Polytechnical University | VGGT-CD利用视觉几何基础模型实现无需训练的三维变化检测点云配准，提升鲁棒性。 | [#551](https://github.com/thinson/RS-PaperClaw/issues/551) |
+| [20260516] Axial-Relation Guided Fusion State Space Model for Optical-Elevation Sensing Image Segmentation | Gao Feng, Jin Zhilin, Gan Yanhai, Dong Junyu, Du Qian | the Department of Electrical and Computer Engineering, modeling of fine-grained local details and global contex- | 提出轴向关系引导的融合状态空间模型，用于光-高程遥感图像的语义分割任务。 | [#552](https://github.com/thinson/RS-PaperClaw/issues/552) |
+| [20260516] Synthetic Aperture Radar Image Change Detection Based on Global Dynamic Context-Aware Network | Huan Baogui, Gong Chuanzheng, Chen Dezhong, Gao Feng, Dong Junyu, Du Qian | the In contemporary remote sensing research, a wide variety of；the Department of Electrical and Computer Engineering, optical, synthetic aperture radar；the In contemporary remote sensing research, a wide variety of State Key Laboratory of Physical Oceanography, Ocean University of China, sensors are employed for image change detection, including Qingdao 266100, China | 基于全局动态上下文感知网络的SAR图像变化检测方法，增强卷积神经网络的全局建模能力。 | [#553](https://github.com/thinson/RS-PaperClaw/issues/553) |
+
+## 🔎 观察
+
+- 视觉几何基础模型向三维点云任务迁移成为新方向，无训练范式降低数据依赖
+- Mamba架构在遥感多模态融合中加速渗透，状态空间模型或成CNN/Transformer替代方案
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260515](./202605/20260515.md)
 ## 📌 今日概况
 
@@ -67,57 +99,6 @@ Powered by OpenClaw🦞
 
 - 生成式扩散模型在遥感领域应用趋深，从单纯图像合成扩展至波段修复、云雾控制等精细化任务，数据增强与物理仿真价值凸显。
 - 视觉-语言模型正从被动理解转向主动感知，结合超高分图像处理与视觉定位，推动遥感智能体决策能力升级。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260513](./202605/20260513.md)
-## 📌 今日概况
-
-今日共检索候选论文 18 篇；关键词+LLM 智能匹配遥感交叉论文 15 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究聚焦三大方向：无人机系统智能化（4篇）涵盖走廊管理、定位与多机协同；多/高光谱成像技术（3篇）涉及融合检测、光谱超分辨与色彩恒常性；以及基础理论探索，包括深度学习幻觉问题与二维材料物理机制。
-
-## ✨ 今日亮点
-
-- WD-FQDet提出小波分解与频率感知查询学习，优化多光谱目标检测性能
-- Phy-CoSF结合物理引导与隐式神经表示，实现快照压缩成像的光谱连续重建
-- 多UAV定位研究涌现，感知辅助LoS/NLoS识别与不确定性感知精修形成技术互补
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260513] Loiter UAV Reinsertion Guidance for Fixed-wing UAV Corridors | J Pradeep, Siddhardha Kedarisetty, Ratnoo Ashwini | Indian Institute of Technology Bhilai；Indian Institute of Science | 针对固定翼无人机走廊场景，提出盘旋模式重入制导策略，优化空域交通管理效率。 | [#524](https://github.com/thinson/RS-PaperClaw/issues/524) |
-| [20260513] WD-FQDet: Multispectral Detection Transformer via Wavelet Decomposition and Frequency-aware Query Learning | Yang Chunjin, Zhang Xiwei, Xiao Yiming, Meng Fanman | University of Electronic Science and Technology of China | WD-FQDet通过小波分解与频率感知查询学习，增强多光谱检测Transformer的跨模态特征融合能力。 | [#525](https://github.com/thinson/RS-PaperClaw/issues/525) |
-| [20260513] Phy-CoSF: Physics-Guided Continuous Spectral Fields Reconstruction and Super-Resolution for Snapshot Compressive Imaging | Chen Wudi, Zha Zhiyuan, Yuan Xin, Wang Shigang, Wen Bihan, Zhou Jiantao, Yan Gang, Fan Zipei, Zhu Ce | College of Communication Engineering, Jilin University；School of Engineering, Westlake University；School of Electrical & Electronic Engineering, Nanyang Technological University；Department of Computer and Information Science, University of Macau；College of Computer Science and Technology, Jilin University；College of Artificial Intelligence, Jilin University；School of Information and Communication Engineering, University of Electronic Science and Technology of China | Phy-CoSF融合物理先验与隐式神经表示，实现快照压缩成像的光谱连续场重建与超分辨率。 | [#526](https://github.com/thinson/RS-PaperClaw/issues/526) |
-| [20260513] Anisotropic Dopant and Strain Architectures in WS$_2$ Nanocrystals Driven by Growth Kinetics | Frederico B. Sousa, Raphaela de Oliveira, Matheus J. S. Matos, Elizabeth Grace Houser, Igor Ferreira Curvelo, Yu Zhuohang, Liu Mingzu, Menescal Felipe, Gilmar Eugenio Marques, Leandro M. Malard, Terrones Mauricio, Bruno R. Carvalho, Chacham Helio, Marcio D. Teodoro | Departamento de Física, Universidade Federal de São Carlos；Brazilian Synchrotron Light Laboratory (LNLS), Brazilian Center for Research in Energy and Materials (CNPEM)；Departamento de Física, Universidade Federal de Ouro Preto；Center for 2-Dimensional and Layered Materials, The Pennsylvania State University；Department of Physics, The Pennsylvania State University；Department of Materials Science and Engineering, The Pennsylvania State University；Departamento de Física, Universidade Federal de Minas Gerais；Departamento de Física, Universidade Federal do Rio Grande do Norte | 揭示WS₂纳米晶中生长动力学驱动的各向异性掺杂与应变架构，为二维材料可控合成提供新机制。 | [#527](https://github.com/thinson/RS-PaperClaw/issues/527) |
-| [20260513] Sensing-Assisted LoS/NLoS Identification in Dynamic UAV Positioning Systems | Qiao Huijuan, Bai Lu, Sun Mingran, Lu Mengyuan, Chen Jiajing, Cheng Xiang | Tsinghua University；Chinese Academy of Sciences | 利用信道脉冲响应与多模态融合，实现动态UAV定位系统中LoS/NLoS状态的感知辅助识别。 | [#528](https://github.com/thinson/RS-PaperClaw/issues/528) |
-| [20260513] Uncertainty-Aware 3D Position Refinement for Multi-UAV Systems | Alamleh Hosam, Pulatov Damir | University of North Carolina Wilmington | 提出不确定性感知的分布式估计框架，通过协方差交叉融合实现多UAV系统的3D位置精修。 | [#529](https://github.com/thinson/RS-PaperClaw/issues/529) |
-| [20260513] COLOR CONSTANCY IN HYPERSPECTRAL IMAGING VIA REDUCED SPECTRAL SPACES | G. Dofri Vidarsson, Lu Liying, Süsstrunk Sabine | École Polytechnique Fédérale de Lausanne (EPFL) | 基于降维光谱空间的高光谱色彩恒常性方法，有效分离光源与表面反射特性。 | [#530](https://github.com/thinson/RS-PaperClaw/issues/530) |
-| [20260513] On Hallucinations in Inverse Problems: Fundamental Limits and Provable Assessment Methods | Iagaru David, Nina M. Gottschling, Anders C. Hansen, Garnier Josselin | CMAP, Ecole polytechnique, Institut Polytechnique de Paris；German Aerospace Center (DLR), Remote Sensing Technology Institute；Computing and Computational Sciences, Oak Ridge National Laboratory；DAMTP, University of Cambridge；CMAP, CNRS, Ecole polytechnique, Institut Polytechnique de Paris | 系统分析逆问题中深度学习幻觉的数学极限，建立可证明的可靠性评估方法论。 | [#531](https://github.com/thinson/RS-PaperClaw/issues/531) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| LMPath: Language-Mediated Priors and Path Generation for Aerial Exploration | [2605.13782v1](https://arxiv.org/abs/2605.13782v1) | 质检未通过: 单位为空或无效 |
-| HADAR-Based Thermal Infrared Hyperspectral Image Restoration | [2605.13664v1](https://arxiv.org/abs/2605.13664v1) | 质检未通过: 单位为空或无效 |
-| HIR-ALIGN: Enhancing Hyperspectral Image Restoration via Diffusion-Based Data Generation | [2605.13581v1](https://arxiv.org/abs/2605.13581v1) | 质检未通过: 单位为空或无效 |
-| A Multi-Modal Intelligent U2V Channel Model for 6G Sensing-Communication Integration | [2605.13502v1](https://arxiv.org/abs/2605.13502v1) | 质检未通过: 单位为空或无效 |
-| RS-Claw: Progressive Active Tool Exploration via Hierarchical Skill Trees for Remote Sensing Agents | [2605.13391v1](https://arxiv.org/abs/2605.13391v1) | 质检未通过: 单位为空或无效 |
-| Galilean State Estimation for Inertial Navigation Systems with Unknown Time Delay | [2605.13266v1](https://arxiv.org/abs/2605.13266v1) | 质检未通过: 标题为空或无效; Q1 未通过质检; Q5 未通过质检; Q6 未通过质检 |
-
-
-## 🔎 观察
-
-- UAV研究从单一导航向'感知-通信-控制'一体化演进，通感融合成为关键使能技术
-- 高光谱成像正从传统重建迈向物理约束与神经表示的深度结合，光谱连续性成为新指标
 
 ---
 
