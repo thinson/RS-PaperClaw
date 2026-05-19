@@ -2,6 +2,48 @@
 
 最近三天日报（最新在前）：
 
+# [20260517](./202605/20260517.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究呈现多元化趋势：无人机系统控制与通信仿真持续深化，高光谱成像与量子机器学习成为新兴热点。多智能体编队控制、信道建模、预训练骨干网络及SAR目标检测等方向均有进展，体现算法创新与硬件约束协同优化的发展特征。
+
+## ✨ 今日亮点
+
+- 基于控制障碍函数的分布式无人机编队控制，解决视场约束下的安全协同问题
+- HyperVision提出通道自适应动态嵌入机制，构建高光谱预训练骨干网络
+- 量子退火辅助SVM实现SAR影像溢油近实时检测，探索量子-经典混合架构
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260517] Distributed 3D Leader-Follower Formation Control with Field-of-View Safety via Control Barrier Functions | Immanuel R. Santjoko, Richie R. Suganda, Pan Miao, Hu Bin | Huazhong University of Science and Technology | 提出分布式三维领导者-跟随者编队控制框架，利用控制障碍函数处理视场约束，实现多无人机安全协同。 | [#555](https://github.com/thinson/RS-PaperClaw/issues/555) |
+| [20260517] UPSim: UxNB Propagation Simulator for 3D Map-Driven FR3 Deployments | Vinogradov Evgenii | NaNoNetworking Center in Catalonia (N3Cat), Universitat Politècnica de Catalunya, Spain；Department of Electrical Engineering, KU Leuven, Belgium | 开发面向FR3频段的无人机基站传播仿真器UPSim，结合射线追踪与三维地图驱动空对地信道建模。 | [#556](https://github.com/thinson/RS-PaperClaw/issues/556) |
+| [20260517] HyperVision: A Channel-Adaptive Ground-Based Hyperspectral Vision Pre-trained Backbone | Fu Guanyiman, Li Jingtao, Cheng Zihang, Li Zhuanfeng, Chen Diqi, Xu Yan, Xiong Fengchao, Lu Jianfeng, Zhou Jun | Griffith University；Wuhan University；Nanjing University of Science and Technology；Huaiyin Normal University；Massey University | 构建通道自适应高光谱预训练骨干网络HyperVision，采用动态嵌入与伪标签策略提升表征能力。 | [#557](https://github.com/thinson/RS-PaperClaw/issues/557) |
+| [20260517] Toward Near-Real-Time Marine Oil Spill Detection in SAR Imagery using Quantum-Assisted SVM | Strauss Joseph, Sharma Jyotsna | Louisiana State University | 将量子退火引入SAR溢油检测，设计量子辅助SVM分类器以逼近近实时处理需求。 | [#558](https://github.com/thinson/RS-PaperClaw/issues/558) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Large-Scale Quantum Kernels for Hyperspectral Data Classification | [2605.17587v1](https://arxiv.org/abs/2605.17587v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 无人机技术链呈现全栈覆盖态势：从底层信道仿真、中层编队控制到上层智能感知，系统性研究特征明显
+- 量子计算与遥感AI的交叉尚处探索期，当前以混合架构为主，实用化仍需突破量子比特规模与噪声瓶颈
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260516](./202605/20260516.md)
 ## 📌 今日概况
 
@@ -62,43 +104,6 @@ Powered by OpenClaw🦞
 
 - 基础模型下沉趋势明显：MLLM、扩散模型等通用架构正快速向遥感专用任务渗透，但领域适配机制尚待深化。
 - 不确定性量化关注度提升：从野火烟雾到变化检测，可靠性建模成为遥感AI落地应用的关键瓶颈与研究方向。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260514](./202605/20260514.md)
-## 📌 今日概况
-
-今日共检索候选论文 16 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究呈现多模态融合与生成式AI双主线并进态势。视觉-语言模型向主动感知与超高分理解延伸，扩散模型在图像生成与波段修复领域持续深化，同时几何先验与语义解耦技术在定位与变化检测任务中展现新思路。
-
-## ✨ 今日亮点
-
-- HiSem提出层次化语义解耦框架，通过差分注意力机制优化遥感变化描述生成
-- Sat3DGen实现单张卫星图像到街景级三维场景的几何优先重建
-- GeoFuse利用道路地图作为免费几何先验，构建天气不变性无人机定位系统
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260514] HiSem: Hierarchical Semantic Disentangling for Remote Sensing Image Change Captioning | Wang Man, Liu Chenyang, Li Wenjun, Ni Feng, Jia Bing, Huang Baoqi, Xia Riting, Shi Zhenwei | Aerospace Information Research Institute, Chinese Academy of Sciences；School of Electronic, Electrical and Communication Engineering, University of Chinese Academy of Sciences；Key Laboratory of Network Information System Technology (NIST), Aerospace Information Research Institute, Chinese Academy of Sciences；Key Laboratory of Computational Optical Imaging Technology, Aerospace Information Research Institute, Chinese Academy of Sciences；School of Astronautics, Beihang University | HiSem通过层次化语义解耦与差分注意力机制，提升遥感图像变化描述生成的准确性与可解释性。 | [#534](https://github.com/thinson/RS-PaperClaw/issues/534) |
-| [20260514] Sat3DGen: Comprehensive Street-Level 3D Scene Generation from Single Satellite Image | Qian Ming, Xia Zimin, Liu Changkun, Ma Shuailei, Wang Wen, Ke Zeran, Tan Bin, Zhang Hang, Xia Gui-Song | LIESMARS & School of Artificial Intelligence, Wuhan University；EPFL；HKUST；Northeastern University；Zhejiang University；Ant Group；Amap, Alibaba Group | Sat3DGen采用几何优先方法，从单张卫星图像生成综合街景级三维场景，实现跨视角合成。 | [#535](https://github.com/thinson/RS-PaperClaw/issues/535) |
-| [20260514] Road Maps as Free Geometric Priors: Weather-Invariant Drone Geo-Localization with GeoFuse | Fang Yunsong, Wang Tingyu, Zheng Zhedong | University of Macau；Hangzhou Dianzi University | GeoFuse将道路地图作为免费几何先验融入跨模态学习，解决天气变化下的无人机地理定位难题。 | [#536](https://github.com/thinson/RS-PaperClaw/issues/536) |
-| [20260514] TERRA-CD: Multi-Temporal Framework for Multi-class and Semantic Change Detection | Oak Omkar, Nazre Rukmini, Budke Rujuta, Sawant Suraj | COEP Technological University；University of Massachusetts, Amherst；North Carolina State University | TERRA-CD构建多时相框架，支持多类别语义变化检测，面向城市植被等应用场景。 | [#537](https://github.com/thinson/RS-PaperClaw/issues/537) |
-| [20260514] GeoVista: Visually Grounded Active Perception for Ultra-High-Resolution Remote Sensing Understanding | Zhu Jiashun, Fu Ronghao, Hu Jiasen, Xing Nachuan, Na Xu, Yang Xiao, Lin Zhiwen, Zhang Weipeng, Sun Lang, Xue Zhiheng, Liu Haoran, Zhang Weijie, Yang Bo | College of Computer Science and Technology, Jilin University；Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of Education | GeoVista提出视觉基础主动感知机制，针对超高分遥感图像实现高效视觉定位理解。 | [#538](https://github.com/thinson/RS-PaperClaw/issues/538) |
-| [20260514] GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation | Liu Yuhao, Al-Kindi Sadeer, Veeraraghavan Ashok, Balakrishnan Guha | Rice University；Houston Methodist | GeoViSTA融合地理空间视觉与表格数据，基于自监督学习构建多模态环境表征模型。 | [#539](https://github.com/thinson/RS-PaperClaw/issues/539) |
-| [20260514] AnyBand-Diff: A Unified Remote Sensing Image Generation and Band Repair Framework with Spectral Priors | Zhao Zuopeng, Liu Ying, Li Xiaoyu, Luo Su, Li Lu, Liu Wenwen | Tsinghua University；Chinese Academy of Sciences | AnyBand-Diff利用光谱先验统一遥感图像生成与波段修复，基于扩散模型实现灵活光谱重建。 | [#540](https://github.com/thinson/RS-PaperClaw/issues/540) |
-| [20260514] D2-CDIG: Controlled Diffusion Remote Sensing Image Generation with Dual Priors of DEM and Cloud-Fog | Zhao Zuopeng, Liu Ying, Pharksuwan Kanyaphakphachsorn, Luo Su, Li Xiaoyu, Ning Maocai | the School of Computer Science and Technolo- pollution, and climate change with surface features is often not；the School of Computer Science and Technology/School of simulating different weather conditions or terrain environments | D2-CDIG引入DEM与云雾双重先验，实现可控扩散生成以模拟多样天气与地形条件。 | [#541](https://github.com/thinson/RS-PaperClaw/issues/541) |
-
-## 🔎 观察
-
-- 生成式扩散模型在遥感领域应用趋深，从单纯图像合成扩展至波段修复、云雾控制等精细化任务，数据增强与物理仿真价值凸显。
-- 视觉-语言模型正从被动理解转向主动感知，结合超高分图像处理与视觉定位，推动遥感智能体决策能力升级。
 
 ---
 
