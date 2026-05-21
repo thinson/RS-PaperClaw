@@ -2,6 +2,44 @@
 
 最近三天日报（最新在前）：
 
+# [20260520](./202605/20260520.md)
+## 📌 今日概况
+
+今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
+
+今日遥感AI研究呈现三大趋势：扩散模型持续渗透图像修复与生成任务，多模态融合与基础模型成为热点，无人机检测与增量学习等应用问题受到关注。物理模型与深度学习的混合架构在森林参数反演中展现潜力。
+
+## ✨ 今日亮点
+
+- 扩散模型主导：从Landsat 7条带修复到SAR三维可控生成，扩散架构展现强大生成能力
+- 多模态基础模型突破：SpectralEarth-FM首次将高光谱纳入多模态地球观测预训练框架
+- 无人机检测双进展：多光谱数据集UAVNet-MS与RGB-红外专家路由方法同期出现
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260520] A Non-Reference Diffusion-Based Restoration Framework for Landsat 7 ETM+ SLC-off Imagery in Antarctica | Tang Leyue, Jonathan Louis Bamber, Qiao Gang, Kong Yuanhang | Center for Spatial Information Science and Sustainable；Bristol Glaciology Centre, School of observations or data from other sensors. One of the earliest；Center for Spatial Information Science and Sustainable shortly after the SLC failure, which estimates missing pixel；College of Surveying and Geo-Informatics, Tongji | 提出无参考扩散框架，无需辅助数据即可修复南极Landsat 7 ETM+ SLC-off影像条带缺失。 | [#584](https://github.com/thinson/RS-PaperClaw/issues/584) |
+| [20260520] Vision Transformers and Convolutional Neural Networks for Land Use Scene Classification | Arun D. Kulkarni | University of Texas at Tyler | 系统对比Vision Transformer与CNN在土地利用场景分类中的性能表现与适用条件。 | [#585](https://github.com/thinson/RS-PaperClaw/issues/585) |
+| [20260520] GeoDiff-SAR II: 3D-Driven Foundation Diffusion Models for SAR Generation via Decoupled Control | Wu Xuanting, Zhang Fan, Ma Fei, Liu Yingbing, Peng Lingxiao, Yin Qiang, Zhou Yongsheng | College of Information Science and Technology, Beijing University of Chemical Technology；Suzhou Aerospace Information Research Institute, Chinese Academy of Sciences | GeoDiff-SAR II通过解耦的几何-电磁条件控制，实现三维引导的SAR图像可控生成。 | [#586](https://github.com/thinson/RS-PaperClaw/issues/586) |
+| [20260520] SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining | Nassim Ait Ali Braham, Banze Aaron, Conrad M. Albrecht, Mairal Julien, Chanussot Jocelyn, Xiao Xiang Zhu | Chair of Data Science in Earth Observation, Technical University of Munich；Remote Sensing Technology Institute, German Aerospace Center (DLR)；Department of Aerospace Engineering, University of the Bundeswehr Munich；LEAP, Columbia University；Munich Center for Machine Learning (MCML)；Univ. Grenoble Alpes, Inria, CNRS, Grenoble INP, LJK | SpectralEarth-FM构建首个融合高光谱的多模态地球观测基础模型预训练框架。 | [#587](https://github.com/thinson/RS-PaperClaw/issues/587) |
+| [20260520] Hybrid Machine Learning Model for Forest Height Estimation from TanDEM-X and Landsat Data | Mansour Islam, Haensch Ronny, Hajnsek Irena, Papathanassiou Konstantinos | German Aerospace Center (DLR), Microwaves and Radar Institute, Wessling, Germany；ETH Zurich, Institute of Environmental Engineering, Zurich, Switzerland | 混合机器学习结合物理模型与TanDEM-X、Landsat数据，提升森林高度估算精度。 | [#588](https://github.com/thinson/RS-PaperClaw/issues/588) |
+| [20260520] Towards UAV Detection in the Real World: A New Multispectral Dataset UAVNet-MS and a New Method | Luo Yihang, Chen Jun, Xiao Chao, Wang Yingqian, Li Zhaoxu, Ling Qiang, He Xu, Chen Nuo, Guo Gaowei, Li Hongge, Li Miao, Wang Longguang, Guo Yulan, Liu Li, An Wei, Chen Zhijie | the College of from precision mapping and logistics to surveillance；the Aviation University of Air Force；Sun Yat-sen University, China. Q. Ling, C. Xiao | 发布真实世界多光谱无人机检测数据集UAVNet-MS，配套提出专用检测方法。 | [#589](https://github.com/thinson/RS-PaperClaw/issues/589) |
+| [20260520] STAR-IOD: Scale-decoupled Topology Alignment with Pseudo-label Refinement for Remote Sensing Incremental Object Detection | Zhang Yaoteng, Zhou Qing, Gao Junyu, Wang Qi | School of Computer Science, Northwestern Polytechnical University；School of Artificial Intelligence, OPtics and ElectroNics (iOPEN), Northwestern Polytechnical University | STAR-IOD通过尺度解耦拓扑对齐与伪标签精化，解决遥感增量目标检测中的尺度变化难题。 | [#590](https://github.com/thinson/RS-PaperClaw/issues/590) |
+| [20260520] LER-YOLO: Reliability-Aware Expert Routing for Misaligned RGB-Infrared UAV Detection | Hou Liming, Peng Yueping, Hao Hexiang, Wang Ji, Zhang Xuekai, Tang Wei, Ye Zecong, Ying Xin, He Yubo | Engineering University of PAP；Unit Command Department, Officers College of PAP | LER-YOLO设计可靠性感知专家路由机制，实现未配准RGB-红外图像的无人机检测。 | [#591](https://github.com/thinson/RS-PaperClaw/issues/591) |
+| [20260520] End-to-End Unmixing with Material Prompts for Hyperspectral Object Tracking | Han Xu, Mohammad Aminul Islam, Wang Lei, Long Zekun, Fu Guanmanyi, Cai Wangshu, Kuldip K. Paliwal, Zhou Jun | the School of pecially in challenging scenarios where appearance informa-；the School of Information and has attracted increasing attention, evolving from handcrafted；the School of Engi- issue, existing methods have primarily followed two research；the School of Environment and Science, Griffith gies | 端到端高光谱目标跟踪网络引入材料提示，联合优化光谱解混与跟踪任务。 | [#592](https://github.com/thinson/RS-PaperClaw/issues/592) |
+
+## 🔎 观察
+
+- 扩散模型正从自然图像向遥感专用任务快速迁移，生成式AI或重塑遥感数据补全与仿真范式
+- 无人机检测研究热度攀升，多光谱与红外融合成为应对低可视条件的关键技术路线
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260519](./202605/20260519.md)
 ## 📌 今日概况
 
@@ -74,40 +112,6 @@ Powered by OpenClaw🦞
 
 - 扩散模型正从图像生成向超分辨率、能源建模等垂直场景渗透，技术成熟度显著提升
 - 遥感领域开始关注基础模型的系统评估与互补融合，预示从单模型竞赛向生态协作转变
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260517](./202605/20260517.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究呈现三大趋势：量子计算加速遥感数据处理成为热点，两篇论文分别探索量子核方法与量子辅助SVM在SAR溢油检测和高光谱分类中的应用；无人机系统研究持续深化，涵盖编队控制与信道仿真；高光谱成像领域关注通道自适应预训练模型构建。
-
-## ✨ 今日亮点
-
-- 量子机器学习在遥感领域加速落地，量子核与量子退火技术分别用于高光谱分类和SAR溢油检测
-- 无人机研究从单一平台向集群协同演进，分布式编队控制与网络传播仿真并重
-- 高光谱成像突破固定波段限制，通道自适应预训练骨干网络提升跨场景泛化能力
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260517] Distributed 3D Leader-Follower Formation Control with Field-of-View Safety via Control Barrier Functions | Immanuel R. Santjoko, Richie R. Suganda, Pan Miao, Hu Bin | Huazhong University of Science and Technology | 基于控制屏障函数实现多无人机分布式三维编队控制，引入视场约束保障飞行安全。 | [#555](https://github.com/thinson/RS-PaperClaw/issues/555) |
-| [20260517] UPSim: UxNB Propagation Simulator for 3D Map-Driven FR3 Deployments | Vinogradov Evgenii | NaNoNetworking Center in Catalonia (N3Cat), Universitat Politècnica de Catalunya, Spain；Department of Electrical Engineering, KU Leuven, Belgium | 构建面向FR3频段的无人机基站传播仿真器，结合射线追踪实现三维地图驱动的空对地信道建模。 | [#556](https://github.com/thinson/RS-PaperClaw/issues/556) |
-| [20260517] HyperVision: A Channel-Adaptive Ground-Based Hyperspectral Vision Pre-trained Backbone | Fu Guanyiman, Li Jingtao, Cheng Zihang, Li Zhuanfeng, Chen Diqi, Xu Yan, Xiong Fengchao, Lu Jianfeng, Zhou Jun | Griffith University；Wuhan University；Nanjing University of Science and Technology；Huaiyin Normal University；Massey University | 提出通道自适应高光谱视觉预训练骨干网络HyperVision，通过动态嵌入与伪标签学习适配可变波段输入。 | [#557](https://github.com/thinson/RS-PaperClaw/issues/557) |
-| [20260517] Toward Near-Real-Time Marine Oil Spill Detection in SAR Imagery using Quantum-Assisted SVM | Strauss Joseph, Sharma Jyotsna | Louisiana State University | 将量子退火辅助支持向量机应用于SAR影像溢油检测，推动海洋污染监测向近实时处理迈进。 | [#558](https://github.com/thinson/RS-PaperClaw/issues/558) |
-| [20260517] Large-Scale Quantum Kernels for Hyperspectral Data Classification | Delilbasic A., Miroszewski A., Wijata A., Nalepa J., Mielczarek J., Riedel M., Cavallaro G. | Forschungszentrum Jülich, Jülich, Germany；University of Iceland, 102 Reykjavík, Iceland；Jagiellonian University, Łojasiewicza 11, 30-348 Krakow, Poland；Silesian University of Technology, Akademicka 2A, 44-100 Gliwice, Poland；KP Labs, Bojkowska 37J, 44-100, Gliwice, Poland | 开发可扩展量子核方法用于高光谱数据分类，结合张量网络与GPU加速实现大规模量子核矩阵计算。 | [#568](https://github.com/thinson/RS-PaperClaw/issues/568) |
-
-## 🔎 观察
-
-- 量子计算与遥感AI的交叉研究显著增多，但量子硬件可及性与实际部署成本仍是制约规模化应用的关键瓶颈
-- 高光谱成像正从'数据驱动'转向'物理感知'，通道自适应设计有望解决传感器异构性导致的模型失效问题
 
 ---
 
