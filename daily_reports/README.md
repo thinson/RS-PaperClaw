@@ -2,6 +2,43 @@
 
 最近三天日报（最新在前）：
 
+# [20260521](./202605/20260521.md)
+## 📌 今日概况
+
+今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+
+今日遥感AI研究聚焦无人机智能感知与三维地物分类两大主线。无人机检测与控制持续深化，涉及运动解耦、视觉伺服、通感一体化等关键技术；多光谱LiDAR与深度学习结合推动三维土地利用分类发展；生成式模型与高斯溅射技术为遥感超分辨率重建提供新路径。
+
+## ✨ 今日亮点
+
+- 无人机检测领域提出双区间运动线索解耦方法，分离自身运动与目标动态
+- 通感一体化(ISAC)成为热点，两篇论文分别探索能效优化与多模态协同感知
+- 多光谱LiDAR结合Point Transformer推动三维土地利用分类技术演进
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260521] Decoupling Ego-Motion from Target Dynamics via Dual-Interval Motion Cues for UAV Detection | Wang Liuyang, Zhang Feitian | the Robotics and Control Laboratory, Department of Robotics, School of Advanced Manufacturing and Robotics；the State Key Laboratory of Turbulence and Complex Systems, Peking University, Beijing, , China | 通过双区间运动线索解耦自身运动与目标动态，提升无人机视频目标检测性能。 | [#594](https://github.com/thinson/RS-PaperClaw/issues/594) |
+| [20260521] UAV-based Energy-Efficient Data Collection in Smart Grids with ISAC QoS Guarantees | Xie Yibin, Zhao Jin, Dey Indrakshi, Marchetti Nicola | Department of Electronic and Electrical Engineering, Trinity College Dublin；Walton Institute, South East Technological University | 设计满足ISAC服务质量约束的无人机能效数据采集方案，服务于智能电网应用。 | [#595](https://github.com/thinson/RS-PaperClaw/issues/595) |
+| [20260521] Terminal Constraint Model Predictive Control for Image-Based Visual Servoing of UAVs with Kalman Filter-Based Moment Loss Compensation | Wang X., Cao Y., W. L. W. Leong, Y. R. Tan, Huang S., S. H. R. Teo, Xiang C. | College of Design and Engineering, National University of Singapore | 融合终端约束模型预测控制与卡尔曼滤波矩损失补偿，实现无人机图像视觉伺服。 | [#596](https://github.com/thinson/RS-PaperClaw/issues/596) |
+| [20260521] 3D LULC classification using multispectral LiDAR and deep learning: current and prospective schemes | Takhtkeshha Narges, Rizaldy Aldino, Hollaus Markus, Hyyppä Juha, Remondino Fabio, Mandlburger Gottfried | 3D Optical Metrology (3DOM) Unit, Bruno Kessler Foundation (FBK)；Department of Geodesy and Geoinformation, TU Wien；Helmholtz-Zentrum Dresden-Rossendorf (HZDR), Helmholtz Institute Freiberg for Resource Technology (HIF)；Freie Universität Berlin, Remote Sensing and Geoinformatics；Department of Remote Sensing and Photogrammetry, Finnish Geospatial Research Institute FGI, The National Land Survey of Finland | 系统综述多光谱LiDAR与深度学习在三维土地利用分类中的现状与发展方向。 | [#597](https://github.com/thinson/RS-PaperClaw/issues/597) |
+| [20260521] Impact of Atmospheric Turbulence and Pointing Error on Earth Observation | Sánchez-de-Miguel Celia, Antonio M. Mercado-Martínez, Soret Beatriz, Jurado-Navas Antonio, Castillo-Vázquez Miguel | TELMA, University of Malaga | 量化分析大气湍流与指向误差对地观测图像退化的影响机制。 | [#598](https://github.com/thinson/RS-PaperClaw/issues/598) |
+| [20260521] Flow-based Gaussian Splatting for Continuous-Scale Remote Sensing Image Super-Resolution | Mo Jiangwei, Lu Xi, Wu Hanlin | the School of Information Science and Technol- We then learn a conditional flow transport from noise to this | 基于流匹配的高斯溅射方法实现连续尺度遥感图像超分辨率重建。 | [#599](https://github.com/thinson/RS-PaperClaw/issues/599) |
+| [20260521] A Camera-Cooperative ISAC Framework for Multimodal Non-Cooperative UAVs Sensing | Wu Wenfeng, Xiang Luping, Yang Kun | the State Key Laboratory of Novel Software Technology, Nanjing University, Nanjing, , China, Institute of Intelligent Networks and Communications | 构建相机协同通感一体化框架，实现多模态非合作无人机感知与波束跟踪。 | [#600](https://github.com/thinson/RS-PaperClaw/issues/600) |
+| [20260521] Non-Contact Vibration-Based Damage Detection of Civil Structures Using a Cost-Effective Autonomous UAV | Becerril Javier, Vargas Maximiliano, Herrera Jennifer, Gutierrez Joanna, Rios Jorge, Amjadian Mohsen, Tarawneh Constantine, Yang Jinghao, Lu Qi | Department of Computer Science, The University of Texas at Rio Grande Valley (UTRGV), Edinburg, TX, USA.；Department of Electrical and Computer Engineering at UTRGV. | 开发低成本自主无人机系统，基于非接触振动分析实现土木工程结构损伤检测。 | [#601](https://github.com/thinson/RS-PaperClaw/issues/601) |
+
+## 🔎 观察
+
+- ISAC技术正从通信与雷达分离架构向深度融合演进，无人机作为移动节点成为关键载体。
+- 三维点云语义分割从RGB点云向多光谱LiDAR扩展，光谱-几何联合特征学习将成为重点。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260520](./202605/20260520.md)
 ## 📌 今日概况
 
@@ -76,42 +113,6 @@ Powered by OpenClaw🦞
 
 - 3D高斯溅射正从神经渲染向遥感专用前馈重建演进，稀疏视角与地理参考约束成为关键适配方向
 - 低空经济研究呈现全栈化特征：从数据生成、感知导航到边缘决策与量子安全，产学研协同密集
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260518](./202605/20260518.md)
-## 📌 今日概况
-
-今日共检索候选论文 18 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日遥感AI研究呈现多模态融合与生成式AI双主线并进态势。地球嵌入模型互补性评估、扩散模型在超分辨率与能源建模中的应用，以及视觉语言推理成为热点。同时，高光谱表征学习、主动三维场景图生成与无人机几何感知重建等方向亦有新进展，体现基础模型评估与下游任务创新的并重趋势。
-
-## ✨ 今日亮点
-
-- 地球嵌入模型互补性评估：系统分析多模型融合潜力，为遥感基础模型选择提供依据
-- 扩散模型多场景落地：超分辨率重建与建筑能源建模双管齐下，生成式AI应用深化
-- 原生多模态架构崛起：SkyNative探索无编码器视觉语言推理，降低模态对齐复杂度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260518] Better Together: Evaluating the Complementarity of Earth Embedding Models | Thijs L van der Plas, Jacob JW Bakermans, Nedungadi Vishal, Tijūnaitytė Gabrielė, Rußwurm Marc, Ioannis N Athanasiadis | Wageningen University；University College London；University of Bonn | 首次系统评估地球嵌入模型的互补性，提出融合策略以提升遥感表征学习性能。 | [#560](https://github.com/thinson/RS-PaperClaw/issues/560) |
-| [20260518] LESSViT: Robust Hyperspectral Representation Learning under Spectral Configuration Shift | Si Haozhe, Wan Yuxuan, Wang Yuqing, Do Minh, Zhao Han | Department of Electrical and Computer Engineering；Siebel School of Computing and Data Science；University of Illinois Urbana-Champaign | 提出低秩分解与空间-光谱注意力机制，增强高光谱模型跨光谱配置的泛化能力。 | [#561](https://github.com/thinson/RS-PaperClaw/issues/561) |
-| [20260518] Fixed External Cameras as Common Prior Maps for Active 3D Scene Graph Generation | Modi Giorgia, Buoso Davide, Averta Giuseppe, Daniele De Martini | Mobile Robotics Group (MRG), University of Oxford；Visual and Multimodal Applied Learning Lab (VANDAL), Politecnico di Torino | 利用固定外部相机作为先验地图，实现主动探索驱动的三维场景图高效生成。 | [#562](https://github.com/thinson/RS-PaperClaw/issues/562) |
-| [20260518] SENSE: Satellite-based ENergy Synthesis for Sustainable Environment | Sun Kailai, He Mingyi, Huang Heye, Rong Can, Prakash Alok, Guo Baoshen, Wang Shenhao, Zhao Jinhua | SMART, Singapore；Massachusetts Institute of Technology；University of Florida | 基于扩散模型合成卫星图像，支撑城市建筑能源建模与可持续发展决策。 | [#563](https://github.com/thinson/RS-PaperClaw/issues/563) |
-| [20260518] Learning to Balance: Decoupled Siamese Diffusion Transformer for Reference-Based Remote Sensing Image Super-Resolution | Luo Bin, Dong Runmin, Luo Zhaoyang, Zhang Jinxiao, Zhao Jiyao, Wei Fan, Fu Haohuan | Tsinghua Shenzhen International Graduate School；Sun Yat-sen University；National Supercomputing Center in Shenzhen；Tsinghua University | 解耦孪生扩散Transformer平衡参考图像与生成质量，提升遥感超分辨率效果。 | [#564](https://github.com/thinson/RS-PaperClaw/issues/564) |
-| [20260518] SkyNative: A Native Multimodal Framework for Remote Sensing Visual Evidence Reasoning | Yang Xiao, Fu Ronghao, Lin Zhiwen, Duan Zhuoran, Zhu Jiashun, Hu Jiasen, Sun Lang, Zhang Weipeng, Liu Jiaqi, Na Xu, Liu Haoran, Zhang Weijie, Yang Bo | College of Computer Science and Technology, Jilin University；Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of Education | 构建无编码器的原生多模态框架，实现遥感视觉证据的直接推理与可解释分析。 | [#565](https://github.com/thinson/RS-PaperClaw/issues/565) |
-| [20260518] UAVFF3D: A Geometry-Aware Benchmark for Feed-Forward UAV 3D Reconstruction | Yang Xiang, Wang Yongli, Li HaiFeng, Zhang Yunsheng | School of Geosciences and Info-Physics, Central South University | 发布几何感知无人机三维重建基准，推动前馈式重建与相机几何估计研究。 | [#566](https://github.com/thinson/RS-PaperClaw/issues/566) |
-
-## 🔎 观察
-
-- 扩散模型正从图像生成向超分辨率、能源建模等垂直场景渗透，技术成熟度显著提升
-- 遥感领域开始关注基础模型的系统评估与互补融合，预示从单模型竞赛向生态协作转变
 
 ---
 
