@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260522](./202605/20260522.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日遥感AI研究聚焦语言-图像预训练在目标检测中的创新应用。清华大学团队提出结构化属性对齐框架，通过引入遥感对象的多粒度语义描述与保形预测机制，提升细粒度检测的可靠性，反映领域正从通用视觉模型向遥感专用语义理解深化。
+
+## ✨ 今日亮点
+
+- 结构化属性语言-图像预训练，突破遥感目标细粒度语义对齐瓶颈
+- 融合保形预测机制，为检测置信度提供理论保证
+- 清华-中科院联合团队推动遥感专用视觉语言模型发展
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260522] SLIP-RS: Structured-Attribute Language-Image Pre-Training for Remote Sensing Object Detection | Wang Chenxu, Li Yuxuan, Li Yunheng, Li Xiang, Xia Jingyuan, Hou Qibin | Tsinghua University；Chinese Academy of Sciences | SLIP-RS提出结构化属性语言-图像预训练框架，通过多粒度语义描述与保形预测提升遥感目标检测的细粒度理解与可靠性。 | [#603](https://github.com/thinson/RS-PaperClaw/issues/603) |
+
+## 🔎 观察
+
+- 遥感目标检测正从纯视觉特征转向视觉-语言联合表征，属性级语义对齐成为新方向
+- 保形预测等不确定性量化技术引入，标志遥感AI从追求精度向可信决策演进
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260521](./202605/20260521.md)
 ## 📌 今日概况
 
@@ -70,49 +100,6 @@ Powered by OpenClaw🦞
 
 - 扩散模型正从自然图像向遥感专用任务快速迁移，生成式AI或重塑遥感数据补全与仿真范式
 - 无人机检测研究热度攀升，多光谱与红外融合成为应对低可视条件的关键技术路线
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260519](./202605/20260519.md)
-## 📌 今日概况
-
-今日共检索候选论文 16 篇；关键词+LLM 智能匹配遥感交叉论文 14 篇；最终纳入日报 14 篇。
-
-今日遥感AI研究呈现三大趋势：一是3D高斯溅射技术快速渗透至稀疏航空重建与跨视角合成领域；二是低空经济驱动无人机导航、协同规划与边缘智能研究爆发；三是Mamba、MoE、量子机器学习等新架构在遥感任务中加速验证，多模态统一生成与物理感知智能成为前沿焦点。
-
-## ✨ 今日亮点
-
-- 3D高斯溅射技术双突破：稀疏航空重建与卫星-地面跨视角合成并行推进
-- 低空经济研究集群涌现：涵盖无人机导航、空地协同、边缘推理与数据生成
-- 新架构遥感适配加速：Mamba视觉、MoE网络、量子机器学习集中验证
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260519] HaorFloodAlert: Deseasonalized ML Ensemble for 72-Hour Flood Prediction in Bangladesh Haor Wetlands | Salma Hoque Talukdar Koli, Fahima Haque Talukder Jely, Md. Samiul Alim, Md. Zakir Hossen | RTM Al-Kabir Technical University；North East University Bangladesh；Dhaka University of Engineering & Technology | 针对孟加拉Haor湿地季节性洪水，提出去季节化机器学习集成方法，结合SAR变化检测实现72小时洪涝预警。 | [#569](https://github.com/thinson/RS-PaperClaw/issues/569) |
-| [20260519] MetaEarth-MM: Unified Multimodal Remote Sensing Image Generation with Scene-centered Joint Modeling | Yu Zhiping, Liu Chenyang, Cao Jinqi, Yang Qinzhe, Yu Siwei, Zou Zhengxia, Shi Zhenwei | the Department of Aerospace Intelligent Science and Tech- a unified generative model for diverse modalities and multi-；Shenyuan Honors College, Beihang University, Beijing construct such a unified model. Under this paradigm, pairwise | MetaEarth-MM构建以场景为中心的多模态遥感统一生成模型，支持跨模态图像翻译与联合建模。 | [#570](https://github.com/thinson/RS-PaperClaw/issues/570) |
-| [20260519] Feed-Forward Gaussian Splatting from Sparse Aerial Views | Wu Dongli, Li Zhuoxiao, Hua Tongyan, Ren Yinrui, Wei Xiaobao, Qin Rongjun, Zhao Wufan | The Hong Kong University of Science and Technology (Guangzhou)；Peking University；The Ohio State University | 提出前馈式高斯溅射网络，从稀疏航空视角实现城市场景实时三维重建，无需逐场景优化。 | [#571](https://github.com/thinson/RS-PaperClaw/issues/571) |
-| [20260519] StruMPL: Multi-task Dense Regression under Disjoint Partial Supervision and MNAR Labels | Reza M. Asiyabi, Juan Alberto Molina-Valero, The SEOSAW Partnership, Hancock Steven, Casey M. Ryan | School of Geosciences, University of Edinburgh；National Centre for Earth Observation (NCEO)；Department of Spatial Sciences, Faculty of Environmental Sciences, Czech University of Life Sciences Prague | StruMPL框架解决多任务密集回归中标签缺失非随机（MNAR）与部分监督 disjoint 难题，应用于森林生物量估算。 | [#572](https://github.com/thinson/RS-PaperClaw/issues/572) |
-| [20260519] Deep Tech to Space: Space Data Centers and AI Revolution at the Edge | Weiss Jonas, Sagmeister Patricia, Gabriel Maiolini Capez, Verma Dinesh, Garello Roberto, Perotti Alberto, Lazaj Dawid, Musial Alicja, Nalepa Jakub, Morf Thomas, Schmatz Martin, Krawczyk Marek, Przeliorz Mateusz, Roche Kevin, Tayal Sagar, Lakshminarayanan Mahalakshmi, Longépé Nicolas, Mathieu Pierre-Philippe, Wijata Agata | IBM Research Europe；Politecnico di Torino；Vyoma GmbH；IBM Research；KP Labs；Silesian University of Technology；Meguro Space；IBM；ESA Φ-lab | 探讨近地轨道空间数据中心架构，将AI推理推向卫星边缘，支撑星座级实时数据处理。 | [#573](https://github.com/thinson/RS-PaperClaw/issues/573) |
-| [20260519] GeoMamba: A Geometry-driven MambaVision Framework and Dataset for Fine-grained Optical-SAR Object Retrieval | Fang Tiantong, Wang Xiuwei, Xiao Jing, Zhou Wujie, Liao Liang, Wang Mi | Zhejiang University of Technology；Zhejiang University；Nanyang Technological University；Zhejiang Lab | GeoMamba融合几何驱动Mamba视觉与光学-SAR跨模态检索，构建细粒度遥感目标检索新框架及数据集。 | [#574](https://github.com/thinson/RS-PaperClaw/issues/574) |
-| [20260519] KIO-planner: Attention-Guided Single-Stage Motion Planning with Dual Mapping for UAV Navigation | Yao Dexing, Li Haochen, Wei Junhao, Zhao Yifu, Li Yanxiao, Xu Jiahui, Hu Jinxuan, Tian Lele, Lu Baili, Li Zikun, Yang Xu, Im Sio-Kei, Yang Dingcheng, Wang Yapeng | Macao Polytechnic University；Zhongkai University of Agriculture and Engineering；South China Normal University；Nanchang University | KIO-planner采用注意力引导单阶段运动规划与双映射策略，实现无人机动力学约束下的高效导航。 | [#575](https://github.com/thinson/RS-PaperClaw/issues/575) |
-| [20260519] Cross-View Splatter: Feed-Forward View Synthesis with Georeferenced Images | Turkulainen Matias, Krishnan Akshay, Aleotti Filippo, Sayed Mohamed, Garcia-Hernando Guillermo, Kannala Juho, Solin Arno, Brostow Gabriel, Turmukhambetov Daniyar | Aalto University；Georgia Tech；Niantic Spatial；University of Oulu；ELLIS Institute Finland；UCL | Cross-View Splatter实现地理参考图像的前馈新视角合成，打通卫星影像与地面级三维场景生成链路。 | [#576](https://github.com/thinson/RS-PaperClaw/issues/576) |
-| [20260519] Component-Aware Structure-Preserving Style Transfer for Satellite Sim2Real 6D Pose Estimation | Zhang Yonglong | the School of Mechatronics Engineering, Harbin Institute of Technology, Harbin, China | 提出部件感知结构保持风格迁移方法，解决卫星Sim2Real域迁移中的6D位姿估计难题。 | [#577](https://github.com/thinson/RS-PaperClaw/issues/577) |
-| [20260519] FlyMirage: A Fully Automated Generation Pipeline for Diverse and Scalable UAV Flight Data via Generative World Model | Li Jinhan, Huang Xijie, Wang Zhaoqi, Wang Yijin, Ge Weiqi, He Qiyi, Zhu Mo, Gao Fei, Wu Yuze, Zhou Xin | Zhejiang University；Hangzhou Dianzi University | FlyMirage基于生成式世界模型与3D高斯溅射，构建全自动多样化无人机飞行数据生成管线。 | [#578](https://github.com/thinson/RS-PaperClaw/issues/578) |
-| [20260519] A novel YOLO26-MoE optimized by an LLM agent for insulator fault detection considering UAV images | João Pedro Matos-Carvalho, Laio Oriel Seman, Stefano Frizzo Stefenon, Mohammad Khalaf Mohammad Khreasat, Gabriel Villarrubia González | LASIGE, Faculdade de Ciências, Universidade de Lisboa；Department of Automation and Systems Engineering, Federal University of Santa Catarina；Instituto Superior de Engenharia de Lisboa, Instituto Politécnico de Lisboa；Expert Systems and Applications Lab, Faculty of Science, University of Salamanca | YOLO26-MoE结合大语言模型智能体优化，针对无人机图像实现绝缘子故障检测的专家混合架构。 | [#579](https://github.com/thinson/RS-PaperClaw/issues/579) |
-| [20260519] Learning-Accelerated Optimization-based Trajectory Planning for Cooperative Aerial-Ground Handover Missions | Chen Jingshan, Yu Bochen, Ebel Henrik, Eberhard Peter | Institute of Engineering and Computational Mechanics, University of Stuttgart；Mechanical Engineering, LUT University | LSTM网络学习加速优化轨迹规划，为无人机-无人车协同空地交接任务提供热启动策略。 | [#580](https://github.com/thinson/RS-PaperClaw/issues/580) |
-| [20260519] UAV-Assisted Cooperative Edge Inference for Low-Altitude Economy via MoE-based Hierarchical Deep Reinforcement Learning | Zhuang Wenhao, Mao Yuyi, Ivan Wang-Hei Ho, Yu Xianghao | the Department of Electrical and；the School of Computer Science and Engineering；the Department of Electrical Engineering, City University of less networks presents a fundamental conflict among compu- | 基于MoE分层深度强化学习的无人机协同边缘推理，服务低空经济场景下的计算-通信权衡。 | [#581](https://github.com/thinson/RS-PaperClaw/issues/581) |
-| [20260519] Quantum Machine Learning for Cyber-Physical Anomaly Detection in Unmanned Aerial Vehicles: A Leakage-Free Evaluation with Proxy-Audited Feature Sets | Carlos A. Durán Paredes, Javier E. León Calderón, Nicolás Sánchez Perea, German Darío Díaz, Camilo Segura Quintero | Corporation for Aerospace Initiatives, Research and Innovation (CASIRI)；Universidad Nacional de Colombia；Universidad del Cauca | 量子机器学习用于无人机网络物理系统异常检测，提出无泄漏评估框架与代理审计特征集。 | [#582](https://github.com/thinson/RS-PaperClaw/issues/582) |
-
-## 🔎 观察
-
-- 3D高斯溅射正从神经渲染向遥感专用前馈重建演进，稀疏视角与地理参考约束成为关键适配方向
-- 低空经济研究呈现全栈化特征：从数据生成、感知导航到边缘决策与量子安全，产学研协同密集
 
 ---
 
