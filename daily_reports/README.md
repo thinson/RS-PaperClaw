@@ -2,6 +2,43 @@
 
 最近三天日报（最新在前）：
 
+# [20260523](./202605/20260523.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+
+今日遥感AI研究呈现多模态融合与模型可解释性并重的趋势。视觉-语言模型在遥感检索与分割任务中持续深化，知识蒸馏与域适应技术成为解决数据稀缺的主流路径。同时，物理一致性与科学对齐开始受到关注，预训练模型的跨模态迁移能力得到进一步挖掘。
+
+## ✨ 今日亮点
+
+- GRAIL框架实现卫星数据科学工作流的自然语言到代码自动翻译
+- TC-Bench首次系统评估视觉基础模型的物理可解释性与科学对齐度
+- DisDop提出域先验蒸馏策略，突破航拍开放词汇检测瓶颈
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260523] GRAIL: AI translation for scientists application workflow on satellite data | Shang Zhuocheng, Eldawy Ahmed | University of California, Riverside | GRAIL基于大语言模型构建卫星数据处理的自然语言编程接口，支持Apache Spark分布式计算工作流自动生成。 | [#605](https://github.com/thinson/RS-PaperClaw/issues/605) |
+| [20260523] The Perception-Physics Paradox: Probing Scientific Alignment with TC-Bench | Yao Dingling, Polesello Andrea, Pervez Adeel, Muller Caroline, Locatello Francesco | CausalLearningAI | TC-Bench通过结构同构性分析揭示视觉基础模型感知能力与物理规律理解之间的悖论性差距。 | [#606](https://github.com/thinson/RS-PaperClaw/issues/606) |
+| [20260523] Leveraging pretrained RGB denoisers for hyperspectral image restoration | Picone Daniele, Jouni Mohamad, Dalla-Mura Mauro | Univ. Grenoble Alpes, CNRS, Grenoble INP, GIPSA-Lab | 提出将预训练RGB去噪器迁移至高光谱图像复原的即插即用框架，通过光谱投影实现跨模态知识复用。 | [#607](https://github.com/thinson/RS-PaperClaw/issues/607) |
+| [20260523] Analysis of Altitude-Dependent Electronic Conspicuity in Cellular-Connected UAVs | Md Sharif Hossen, Vijay K. Shah, Guvenc Ismail | North Carolina State University | 量化分析蜂窝网络连接无人机的海拔高度对电子可见性及小区间干扰的影响规律。 | [#608](https://github.com/thinson/RS-PaperClaw/issues/608) |
+| [20260523] DisDop: Distillation with Domain Priors for Open-Vocabulary Aerial Object Detection | Xu Ruihao, Liu Yong, Tang Yansong, Bai Sule, Ye Xubing, Yu Bingyao, Guo Yutao, Lu Jiwen, Zhou Jie | Tsinghua Shenzhen International Graduate School, Tsinghua University；Tsinghua University | DisDop融合域先验知识与知识蒸馏，提升开放词汇航拍目标检测对新类别的泛化能力。 | [#609](https://github.com/thinson/RS-PaperClaw/issues/609) |
+| [20260523] Image-Conditioned Instance Prompt Network for Referring Remote Sensing Image Segmentation | Ren Biaoyu, Wang Qingsheng, Xu Cun, Yang Dingkang, Wang Wenxuan | School of Computer Science, Northwestern Polytechnical University；College of Intelligent Robotics and Advanced Manufacturing, Fudan University；Shenzhen Research Institute of Northwestern Polytechnical University | 图像条件实例提示网络实现遥感图像的指代分割，强化跨模态实例级理解能力。 | [#610](https://github.com/thinson/RS-PaperClaw/issues/610) |
+| [20260523] Coarse-to-Fine Domain Incremental Learning with Attentive Distillation for Mining Footprint Segmentation in Multispectral Imagery | Alif Tri Handoyo, Vincent C.S. Lee, Rizka Widyarini Purwanto, Alex M. Lechner, Kemp Deanna, Muhamad Risqi U. Saputra | Monash University；Northeastern University；The University of Queensland | 面向多光谱矿区足迹分割的粗到细域增量学习框架，采用注意力蒸馏缓解域漂移。 | [#611](https://github.com/thinson/RS-PaperClaw/issues/611) |
+| [20260523] Benchmarking Composed Image Retrieval for Applied Earth Observation | Psomas Bill, Christopoulos Dionysis, Petropoulos Thanasis, Efthymiadis Nikos, Kakogeorgiou Ioannis, Chum Ondřej, Avrithis Yannis, Tolias Giorgos, Karantzalos Konstantinos | Visual Recognition Group, Department of Cybernetics, Czech Technical University in Prague；Remote Sensing Laboratory, School of Rural, Surveying and Geoinformatics Engineering, National Technical University of Athens；Institute of Informatics & Telecommunications, National Centre for Scientific Research "Demokritos"；Department of Informatics and Telecommunications, National and Kapodistrian University of Athens | 首个面向地球观测的组合图像检索基准测试，系统评估视觉-语言模型的复杂查询理解能力。 | [#612](https://github.com/thinson/RS-PaperClaw/issues/612) |
+
+## 🔎 观察
+
+- 视觉-语言模型正从通用场景向遥感专用化演进，但科学任务所需的物理可解释性仍是明显短板
+- 知识蒸馏与域适应技术的密集出现，反映出遥感数据标注成本高、分布差异大的结构性困境
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260522](./202605/20260522.md)
 ## 📌 今日概况
 
@@ -62,44 +99,6 @@ Powered by OpenClaw🦞
 
 - ISAC技术正从通信与雷达分离架构向深度融合演进，无人机作为移动节点成为关键载体。
 - 三维点云语义分割从RGB点云向多光谱LiDAR扩展，光谱-几何联合特征学习将成为重点。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260520](./202605/20260520.md)
-## 📌 今日概况
-
-今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
-
-今日遥感AI研究呈现三大趋势：扩散模型持续渗透图像修复与生成任务，多模态融合与基础模型成为热点，无人机检测与增量学习等应用问题受到关注。物理模型与深度学习的混合架构在森林参数反演中展现潜力。
-
-## ✨ 今日亮点
-
-- 扩散模型主导：从Landsat 7条带修复到SAR三维可控生成，扩散架构展现强大生成能力
-- 多模态基础模型突破：SpectralEarth-FM首次将高光谱纳入多模态地球观测预训练框架
-- 无人机检测双进展：多光谱数据集UAVNet-MS与RGB-红外专家路由方法同期出现
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260520] A Non-Reference Diffusion-Based Restoration Framework for Landsat 7 ETM+ SLC-off Imagery in Antarctica | Tang Leyue, Jonathan Louis Bamber, Qiao Gang, Kong Yuanhang | Center for Spatial Information Science and Sustainable；Bristol Glaciology Centre, School of observations or data from other sensors. One of the earliest；Center for Spatial Information Science and Sustainable shortly after the SLC failure, which estimates missing pixel；College of Surveying and Geo-Informatics, Tongji | 提出无参考扩散框架，无需辅助数据即可修复南极Landsat 7 ETM+ SLC-off影像条带缺失。 | [#584](https://github.com/thinson/RS-PaperClaw/issues/584) |
-| [20260520] Vision Transformers and Convolutional Neural Networks for Land Use Scene Classification | Arun D. Kulkarni | University of Texas at Tyler | 系统对比Vision Transformer与CNN在土地利用场景分类中的性能表现与适用条件。 | [#585](https://github.com/thinson/RS-PaperClaw/issues/585) |
-| [20260520] GeoDiff-SAR II: 3D-Driven Foundation Diffusion Models for SAR Generation via Decoupled Control | Wu Xuanting, Zhang Fan, Ma Fei, Liu Yingbing, Peng Lingxiao, Yin Qiang, Zhou Yongsheng | College of Information Science and Technology, Beijing University of Chemical Technology；Suzhou Aerospace Information Research Institute, Chinese Academy of Sciences | GeoDiff-SAR II通过解耦的几何-电磁条件控制，实现三维引导的SAR图像可控生成。 | [#586](https://github.com/thinson/RS-PaperClaw/issues/586) |
-| [20260520] SpectralEarth-FM: Bringing Hyperspectral Imagery into Multimodal Earth Observation Pretraining | Nassim Ait Ali Braham, Banze Aaron, Conrad M. Albrecht, Mairal Julien, Chanussot Jocelyn, Xiao Xiang Zhu | Chair of Data Science in Earth Observation, Technical University of Munich；Remote Sensing Technology Institute, German Aerospace Center (DLR)；Department of Aerospace Engineering, University of the Bundeswehr Munich；LEAP, Columbia University；Munich Center for Machine Learning (MCML)；Univ. Grenoble Alpes, Inria, CNRS, Grenoble INP, LJK | SpectralEarth-FM构建首个融合高光谱的多模态地球观测基础模型预训练框架。 | [#587](https://github.com/thinson/RS-PaperClaw/issues/587) |
-| [20260520] Hybrid Machine Learning Model for Forest Height Estimation from TanDEM-X and Landsat Data | Mansour Islam, Haensch Ronny, Hajnsek Irena, Papathanassiou Konstantinos | German Aerospace Center (DLR), Microwaves and Radar Institute, Wessling, Germany；ETH Zurich, Institute of Environmental Engineering, Zurich, Switzerland | 混合机器学习结合物理模型与TanDEM-X、Landsat数据，提升森林高度估算精度。 | [#588](https://github.com/thinson/RS-PaperClaw/issues/588) |
-| [20260520] Towards UAV Detection in the Real World: A New Multispectral Dataset UAVNet-MS and a New Method | Luo Yihang, Chen Jun, Xiao Chao, Wang Yingqian, Li Zhaoxu, Ling Qiang, He Xu, Chen Nuo, Guo Gaowei, Li Hongge, Li Miao, Wang Longguang, Guo Yulan, Liu Li, An Wei, Chen Zhijie | the College of from precision mapping and logistics to surveillance；the Aviation University of Air Force；Sun Yat-sen University, China. Q. Ling, C. Xiao | 发布真实世界多光谱无人机检测数据集UAVNet-MS，配套提出专用检测方法。 | [#589](https://github.com/thinson/RS-PaperClaw/issues/589) |
-| [20260520] STAR-IOD: Scale-decoupled Topology Alignment with Pseudo-label Refinement for Remote Sensing Incremental Object Detection | Zhang Yaoteng, Zhou Qing, Gao Junyu, Wang Qi | School of Computer Science, Northwestern Polytechnical University；School of Artificial Intelligence, OPtics and ElectroNics (iOPEN), Northwestern Polytechnical University | STAR-IOD通过尺度解耦拓扑对齐与伪标签精化，解决遥感增量目标检测中的尺度变化难题。 | [#590](https://github.com/thinson/RS-PaperClaw/issues/590) |
-| [20260520] LER-YOLO: Reliability-Aware Expert Routing for Misaligned RGB-Infrared UAV Detection | Hou Liming, Peng Yueping, Hao Hexiang, Wang Ji, Zhang Xuekai, Tang Wei, Ye Zecong, Ying Xin, He Yubo | Engineering University of PAP；Unit Command Department, Officers College of PAP | LER-YOLO设计可靠性感知专家路由机制，实现未配准RGB-红外图像的无人机检测。 | [#591](https://github.com/thinson/RS-PaperClaw/issues/591) |
-| [20260520] End-to-End Unmixing with Material Prompts for Hyperspectral Object Tracking | Han Xu, Mohammad Aminul Islam, Wang Lei, Long Zekun, Fu Guanmanyi, Cai Wangshu, Kuldip K. Paliwal, Zhou Jun | the School of pecially in challenging scenarios where appearance informa-；the School of Information and has attracted increasing attention, evolving from handcrafted；the School of Engi- issue, existing methods have primarily followed two research；the School of Environment and Science, Griffith gies | 端到端高光谱目标跟踪网络引入材料提示，联合优化光谱解混与跟踪任务。 | [#592](https://github.com/thinson/RS-PaperClaw/issues/592) |
-
-## 🔎 观察
-
-- 扩散模型正从自然图像向遥感专用任务快速迁移，生成式AI或重塑遥感数据补全与仿真范式
-- 无人机检测研究热度攀升，多光谱与红外融合成为应对低可视条件的关键技术路线
 
 ---
 
