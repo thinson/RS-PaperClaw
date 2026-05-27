@@ -7,10 +7,11 @@ from pathlib import Path
 
 import daily_arxiv_cross_filter
 import daily_digest_llm_upgrade
+import paper_processor
 import sync_daily_reports_to_repo
 from clients.github_ops import extract_arxiv_id_from_issue
 from pipeline_config import get_repo, load_config
-from services.issue_index import ensure_index, lookup_issue
+from services.issue_index import ensure_index, lookup_issue, save_index, update_index_from_issue
 
 
 CONFIG = load_config()
@@ -77,6 +78,57 @@ def clear_missing_from_index(repo, missing: set[str]) -> set[str]:
     return remaining
 
 
+def _append_unique(items: list, value):
+    if value not in items:
+        items.append(value)
+
+
+def process_stats_todo_items(repo, stats: dict, stats_json: str, date_str: str, target_ids: set[str]) -> dict:
+    todo_items = stats.get("todo_items") or []
+    if not todo_items:
+        return stats
+
+    index = ensure_index(repo)
+    for item in todo_items:
+        arxiv_id = item.get("arxiv_id")
+        if not arxiv_id or arxiv_id not in target_ids:
+            continue
+
+        issue_number = item.get("issue_number")
+        print(
+            f"REBUILD_TODO {arxiv_id} | issue={issue_number or '-'} | reason={item.get('reason') or '-'}"
+        )
+        result, error_msg = paper_processor.process_paper(
+            arxiv_id,
+            issue_number=issue_number,
+            target_date=date_str,
+        )
+        if result is not None and hasattr(result, "number"):
+            update_index_from_issue(index, arxiv_id, result)
+            _append_unique(stats.setdefault("successful_selected_arxiv_ids", []), arxiv_id)
+            _append_unique(
+                stats.setdefault("successful_selected_items", []),
+                {
+                    "arxiv_id": arxiv_id,
+                    "published": item.get("published", ""),
+                    "title": item.get("title", ""),
+                },
+            )
+        else:
+            _append_unique(stats.setdefault("failed_arxiv_ids", []), arxiv_id)
+            stats.setdefault("failed_items", []).append(
+                {
+                    **item,
+                    "error": error_msg or "未知错误",
+                }
+            )
+
+        Path(stats_json).write_text(json.dumps(stats, ensure_ascii=False), encoding="utf-8")
+
+    save_index(repo, index)
+    return stats
+
+
 def reconcile(date_str: str, stats_json: str, dry_run: bool = False, skip_digest: bool = False, skip_sync: bool = False) -> int:
     stats = ensure_stats(stats_json, date_str)
     expected_ids = set(stats["selected_arxiv_ids"])
@@ -112,6 +164,9 @@ def reconcile(date_str: str, stats_json: str, dry_run: bool = False, skip_digest
         print(f"UNKNOWN #{issue.number} | {issue.title}")
     for arxiv_id in sorted(missing):
         print(f"MISSING_ARXIV {arxiv_id}")
+    refresh_ids = set(stats.get("refresh_arxiv_ids") or [])
+    for arxiv_id in sorted(refresh_ids):
+        print(f"REFRESH_ARXIV {arxiv_id}")
 
     if dry_run:
         print("DRY_RUN no changes applied")
@@ -126,16 +181,12 @@ def reconcile(date_str: str, stats_json: str, dry_run: bool = False, skip_digest
         issue.edit(state="closed")
         print(f"CLOSED #{issue.number}")
 
-    if missing:
+    process_ids = set(missing) | refresh_ids
+    if process_ids:
         print(
-            f"REBUILD_MISSING {date_str} | {', '.join(sorted(missing))} -> running filter processing"
+            f"REBUILD_TODOS {date_str} | {', '.join(sorted(process_ids))} -> processing stats todo_items"
         )
-        daily_arxiv_cross_filter.main(
-            dry_run=False,
-            days_back=2,
-            stats_out=stats_json,
-            target_date=date_str,
-        )
+        stats = process_stats_todo_items(repo, stats, stats_json, date_str, process_ids)
         stats = load_stats(stats_json, date_str)
         expected_ids = set(stats["selected_arxiv_ids"])
         digest_issue, paper_issues = split_date_issues(get_open_date_issues(repo, date_str))
