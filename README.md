@@ -34,6 +34,7 @@ English version: **[README_EN.md](./README_EN.md)**
 
 ## 📰 News
 
+- `2026-05-27`: 默认 LLM 已切换为 `deepseek-v4-flash`；同时支持其他 OpenAI-like Chat Completions 兼容模型，可通过 `LLM_MODEL` 与 `LLM_API_URL` 自定义。
 - `2026-04-24`: 新增 CVPR 2026 GeoAI 论文合集页面，收录 139 篇论文（9 Oral + 20 Highlight + 110 Poster），按主题标签分类浏览。
 - `2026-04-20`: README 补充项目进展时间线，便于快速了解当前维护状态。
 - `2026-04-19`: GitHub Pages 前端完成一轮集中修复，包括历史日报分页加载、日期深链跳转、`More` 交互合并，以及 Papers 表格显示问题修复。
@@ -137,6 +138,8 @@ cd skills/rs-paper-pipeline
 
 可选：
 
+- `LLM_MODEL`（默认：`deepseek-v4-flash`）
+- `LLM_API_URL`（默认：`https://api.deepseek.com/chat/completions`；支持其他 OpenAI-like Chat Completions 兼容接口）
 - `DINGTALK_WEBHOOK`
 - `FEISHU_TARGET`
 - `RS_GITHUB_REPO`

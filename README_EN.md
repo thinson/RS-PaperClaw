@@ -34,6 +34,7 @@
 
 ## 📰 News
 
+- `2026-05-27`: Switched the default LLM to `deepseek-v4-flash`; other OpenAI-like Chat Completions-compatible models are also supported via `LLM_MODEL` and `LLM_API_URL`.
 - `2026-04-24`: Added a CVPR 2026 GeoAI paper collection with 139 papers (9 Oral + 20 Highlight + 110 Poster), browseable by topic tags.
 - `2026-04-20`: Added a short project timeline to the README for easier maintenance tracking.
 - `2026-04-19`: Completed a focused GitHub Pages frontend update, including paged archive loading, date deep links, merged `More` interaction, and multiple Papers table display fixes.
@@ -137,6 +138,8 @@ Required:
 
 Optional:
 
+- `LLM_MODEL` (default: `deepseek-v4-flash`)
+- `LLM_API_URL` (default: `https://api.deepseek.com/chat/completions`; supports other OpenAI-like Chat Completions-compatible endpoints)
 - `DINGTALK_WEBHOOK`
 - `FEISHU_TARGET`
 - `RS_GITHUB_REPO`
