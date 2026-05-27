@@ -148,22 +148,47 @@ def is_valid_institution_text(text: str) -> bool:
 
 def _heuristic_institutions(first_page_text: str) -> list[str]:
     keyword_pattern = re.compile(
-        r"(universit|college|school|institut|academy|laborator|centre|center|department|hospital|faculty|research|laboratory|lab\b|国家|大学|学院|研究所|实验室|中心|医院)",
+        r"(universit|college|school|institut|academy|laborator|centre|center|department|hospital|faculty|laboratory|lab\b|国家|大学|学院|研究所|实验室|中心|医院)",
         re.IGNORECASE,
     )
+    generic_institution_terms = {
+        "academy",
+        "center",
+        "centre",
+        "college",
+        "department",
+        "faculty",
+        "hospital",
+        "institute",
+        "lab",
+        "laboratory",
+        "school",
+        "university",
+    }
     lines = []
+    pending_prefix = ""
     for raw_line in (first_page_text or "").splitlines():
-        line = re.sub(r"\s+", " ", raw_line).strip()
+        left_column = re.split(r"\s{8,}(?=[a-z•])", raw_line.strip(), maxsplit=1)[0]
+        line = re.sub(r"\s+", " ", left_column).strip()
         if not line or len(line) < 6:
             continue
         if re.search(r"^(abstract|摘要|keywords?|index terms|introduction)\b", line, re.IGNORECASE):
-            break
+            continue
+        line = re.split(r"\b(?:Correspondence|Corresponding author|E-?mail)[:：]?\b", line, maxsplit=1, flags=re.IGNORECASE)[0]
         if keyword_pattern.search(line) and not re.search(r"@", line):
             parts = re.split(r"\s+(?=\d+\s+[A-Z])", line)
             for part in parts:
-                cleaned = re.sub(r"^\d+\s*", "", part).strip()
+                cleaned = re.sub(r"^\d+\s*", "", part).strip(" .")
+                if pending_prefix and cleaned.casefold() in generic_institution_terms:
+                    cleaned = f"{pending_prefix} {cleaned}"
+                    pending_prefix = ""
+                elif cleaned.casefold() in generic_institution_terms:
+                    continue
                 if keyword_pattern.search(cleaned):
                     lines.append(cleaned)
+                    continue
+                if re.fullmatch(r"[A-Z][A-Za-z&.-]+(?:\s+[A-Z][A-Za-z&.-]+){0,3}", cleaned):
+                    pending_prefix = cleaned
     return _dedupe_institutions(lines)
 
 
@@ -243,6 +268,38 @@ def _extract_latex_command_bodies(text: str, command: str) -> list[str]:
         if depth == 0:
             bodies.append(text[start : i - 1])
     return bodies
+
+
+def _extract_latex_command_arg_groups(text: str, command: str, min_args: int) -> list[list[str]]:
+    groups: list[list[str]] = []
+    pattern = re.compile(r"\\" + re.escape(command) + r"(?:\[[^\]]*\])?")
+    for match in pattern.finditer(text or ""):
+        args: list[str] = []
+        i = match.end()
+        while i < len(text):
+            while i < len(text) and text[i].isspace():
+                i += 1
+            if i >= len(text) or text[i] != "{":
+                break
+            start = i + 1
+            depth = 1
+            i = start
+            while i < len(text) and depth:
+                char = text[i]
+                if char == "\\":
+                    i += 2
+                    continue
+                if char == "{":
+                    depth += 1
+                elif char == "}":
+                    depth -= 1
+                i += 1
+            if depth != 0:
+                break
+            args.append(text[start : i - 1])
+        if len(args) >= min_args:
+            groups.append(args)
+    return groups
 
 
 def _latex_to_plain(text: str) -> str:
@@ -349,6 +406,9 @@ def extract_institutions_from_latex_source(source_path: Path | None) -> str:
     for raw_source in _read_latex_sources(source_path) if source_path else []:
         source = _latex_without_comments(raw_source)
 
+        for args in _extract_latex_command_arg_groups(source, "icmlaffiliation", 2):
+            institutions.extend(_institutions_from_latex_affiliation_body(args[1]))
+
         for command in ["thanks", "affil", "affiliation", "institute", "IEEEauthorblockA"]:
             for body in _extract_latex_command_bodies(source, command):
                 institutions.extend(_institutions_from_latex_affiliation_body(body))
@@ -370,8 +430,13 @@ def extract_institutions_from_first_page(title: str, authors: str, first_page_te
     if footnote:
         institutions = _parse_ieee_footnote(footnote, authors)
 
-    # Strategy 2: LLM extraction — feed the full first page text (not just
-    # the part before abstract), since IEEE footnotes are below the abstract.
+    # Strategy 2: deterministic fallback — scan the entire first page, since
+    # ICML/IEEE-style affiliations often sit below the abstract.
+    if not institutions:
+        institutions = _heuristic_institutions(first_page_text)
+
+    # Strategy 3: LLM extraction — feed the full first page text (not just
+    # the part before abstract), since many footnotes are below the abstract.
     if not institutions:
         context = (first_page_text or "")[:6000]
         prompt = (
@@ -398,10 +463,6 @@ def extract_institutions_from_first_page(title: str, authors: str, first_page_te
                     institutions = [str(item) for item in data if isinstance(item, str)]
             except Exception:
                 institutions = []
-
-    # Strategy 3: heuristic fallback — scan entire first page, not just pre-abstract.
-    if not institutions:
-        institutions = _heuristic_institutions(first_page_text)
 
     institutions = _dedupe_institutions(institutions)
     return "；".join(institutions)
