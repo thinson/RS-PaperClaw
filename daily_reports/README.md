@@ -77,36 +77,38 @@ Powered by OpenClaw🦞
 
 ---
 
-# [20260523](./202605/20260523.md)
+# [20260524](./202605/20260524.md)
 ## 📌 今日概况
 
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 1 篇。
 
-今日遥感AI研究呈现多模态融合与模型可解释性并重的趋势。视觉-语言模型在遥感检索与分割任务中持续深化，知识蒸馏与域适应技术成为解决数据稀缺的主流路径。同时，物理一致性与科学对齐开始受到关注，预训练模型的跨模态迁移能力得到进一步挖掘。
+今日研究聚焦于无人机通信中的个性化联邦学习，提出了一种能效优化方案。通过梯度调度策略应对数据异构性，在保障模型个性化的同时降低能耗，体现了边缘智能与绿色通信的融合趋势。
 
 ## ✨ 今日亮点
 
-- GRAIL框架实现卫星数据科学工作流的自然语言到代码自动翻译
-- TC-Bench首次系统评估视觉基础模型的物理可解释性与科学对齐度
-- DisDop提出域先验蒸馏策略，突破航拍开放词汇检测瓶颈
+- 无人机通信与联邦学习结合，提升边缘智能能效。
+- 个性化联邦学习应对数据异构性，优化模型性能。
+- 梯度调度策略实现能耗与精度的平衡。
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260523] GRAIL: AI translation for scientists application workflow on satellite data | Shang Zhuocheng, Eldawy Ahmed | University of California, Riverside | GRAIL基于大语言模型构建卫星数据处理的自然语言编程接口，支持Apache Spark分布式计算工作流自动生成。 | [#605](https://github.com/thinson/RS-PaperClaw/issues/605) |
-| [20260523] The Perception-Physics Paradox: Probing Scientific Alignment with TC-Bench | Yao Dingling, Polesello Andrea, Pervez Adeel, Muller Caroline, Locatello Francesco | CausalLearningAI | TC-Bench通过结构同构性分析揭示视觉基础模型感知能力与物理规律理解之间的悖论性差距。 | [#606](https://github.com/thinson/RS-PaperClaw/issues/606) |
-| [20260523] Leveraging pretrained RGB denoisers for hyperspectral image restoration | Picone Daniele, Jouni Mohamad, Dalla-Mura Mauro | Univ. Grenoble Alpes, CNRS, Grenoble INP, GIPSA-Lab | 提出将预训练RGB去噪器迁移至高光谱图像复原的即插即用框架，通过光谱投影实现跨模态知识复用。 | [#607](https://github.com/thinson/RS-PaperClaw/issues/607) |
-| [20260523] Analysis of Altitude-Dependent Electronic Conspicuity in Cellular-Connected UAVs | Md Sharif Hossen, Vijay K. Shah, Guvenc Ismail | North Carolina State University | 量化分析蜂窝网络连接无人机的海拔高度对电子可见性及小区间干扰的影响规律。 | [#608](https://github.com/thinson/RS-PaperClaw/issues/608) |
-| [20260523] DisDop: Distillation with Domain Priors for Open-Vocabulary Aerial Object Detection | Xu Ruihao, Liu Yong, Tang Yansong, Bai Sule, Ye Xubing, Yu Bingyao, Guo Yutao, Lu Jiwen, Zhou Jie | Tsinghua Shenzhen International Graduate School, Tsinghua University；Tsinghua University | DisDop融合域先验知识与知识蒸馏，提升开放词汇航拍目标检测对新类别的泛化能力。 | [#609](https://github.com/thinson/RS-PaperClaw/issues/609) |
-| [20260523] Image-Conditioned Instance Prompt Network for Referring Remote Sensing Image Segmentation | Ren Biaoyu, Wang Qingsheng, Xu Cun, Yang Dingkang, Wang Wenxuan | School of Computer Science, Northwestern Polytechnical University；College of Intelligent Robotics and Advanced Manufacturing, Fudan University；Shenzhen Research Institute of Northwestern Polytechnical University | 图像条件实例提示网络实现遥感图像的指代分割，强化跨模态实例级理解能力。 | [#610](https://github.com/thinson/RS-PaperClaw/issues/610) |
-| [20260523] Coarse-to-Fine Domain Incremental Learning with Attentive Distillation for Mining Footprint Segmentation in Multispectral Imagery | Alif Tri Handoyo, Vincent C.S. Lee, Rizka Widyarini Purwanto, Alex M. Lechner, Kemp Deanna, Muhamad Risqi U. Saputra | Monash University；Northeastern University；The University of Queensland | 面向多光谱矿区足迹分割的粗到细域增量学习框架，采用注意力蒸馏缓解域漂移。 | [#611](https://github.com/thinson/RS-PaperClaw/issues/611) |
-| [20260523] Benchmarking Composed Image Retrieval for Applied Earth Observation | Psomas Bill, Christopoulos Dionysis, Petropoulos Thanasis, Efthymiadis Nikos, Kakogeorgiou Ioannis, Chum Ondřej, Avrithis Yannis, Tolias Giorgos, Karantzalos Konstantinos | Visual Recognition Group, Department of Cybernetics, Czech Technical University in Prague；Remote Sensing Laboratory, School of Rural, Surveying and Geoinformatics Engineering, National Technical University of Athens；Institute of Informatics & Telecommunications, National Centre for Scientific Research "Demokritos"；Department of Informatics and Telecommunications, National and Kapodistrian University of Athens | 首个面向地球观测的组合图像检索基准测试，系统评估视觉-语言模型的复杂查询理解能力。 | [#612](https://github.com/thinson/RS-PaperClaw/issues/612) |
+| [20260524] Personalized Federated Learning by Energy-Efficient UAV Communications | Guo Shiqian, Liu Jianqing, Lorenzo Beatriz | the Department of Electrical and Computer Engineering, University of Massachusetts, Amherst, MA USA | 提出能效优化的个性化联邦学习框架，用于无人机通信场景。 | [#624](https://github.com/thinson/RS-PaperClaw/issues/624) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Geo-Expert: Towards Expert-Level Geological Reasoning via Parameter-Efficient Fine-Tuning | [2605.24844v1](https://arxiv.org/abs/2605.24844v1) | 质检未通过: 单位为空或无效 |
+
 
 ## 🔎 观察
 
-- 视觉-语言模型正从通用场景向遥感专用化演进，但科学任务所需的物理可解释性仍是明显短板
-- 知识蒸馏与域适应技术的密集出现，反映出遥感数据标注成本高、分布差异大的结构性困境
+- 无人机边缘计算中，联邦学习正从通用向个性化演进。
+- 能效与数据异构性是当前无人机联邦学习的关键挑战。
 
 ---
 
