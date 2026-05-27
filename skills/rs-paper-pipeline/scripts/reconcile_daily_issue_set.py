@@ -111,9 +111,27 @@ def reconcile(date_str: str, stats_json: str, dry_run: bool = False, skip_digest
         print(f"CLOSED #{issue.number}")
 
     if missing:
-        raise RuntimeError(
-            f"cannot regenerate digest for {date_str}; missing expected arxiv ids: {', '.join(sorted(missing))}"
+        print(
+            f"REBUILD_MISSING {date_str} | {', '.join(sorted(missing))} -> running filter processing"
         )
+        daily_arxiv_cross_filter.main(
+            dry_run=False,
+            days_back=2,
+            stats_out=stats_json,
+            target_date=date_str,
+        )
+        stats = load_stats(stats_json, date_str)
+        expected_ids = set(stats["selected_arxiv_ids"])
+        digest_issue, paper_issues = split_date_issues(get_open_date_issues(repo, date_str))
+        missing = set(expected_ids)
+        for issue in paper_issues:
+            arxiv_id = extract_arxiv_id_from_issue(issue)
+            if arxiv_id in expected_ids:
+                missing.discard(arxiv_id)
+        if missing:
+            raise RuntimeError(
+                f"cannot regenerate digest for {date_str}; missing expected arxiv ids: {', '.join(sorted(missing))}"
+            )
 
     if not skip_digest:
         daily_digest_llm_upgrade.main(target_date=date_str, stats_json=stats_json)
