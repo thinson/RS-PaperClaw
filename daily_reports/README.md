@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260526](./202605/20260526.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究呈现多元化趋势：无人机载SAR成像优化、图像分割评估方法反思，以及面向全球泛化的道路交互式提取成为三大焦点。学术界持续关注模型泛化能力与评估指标可靠性等基础问题。
+
+## ✨ 今日亮点
+
+- UAV-MIMO TomoSAR通过粒子群优化实现点扩散函数优化，提升三维成像质量
+- 图像阈值分割研究揭示SSIM、PSNR等常用指标对特定评价函数存在系统性偏差
+- RoadGIE构建全球尺度航空道路数据集，推动交互式分割的跨域泛化研究
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260526] Point Spread Function Optimization for Communication-assisted UAV-borne MIMO TomoSAR | Fakharizadeh Pouya, Lahmeri Mohamed-Amine, Krieger Gerhard, Schober Robert | Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)；German Aerospace Center (DLR), Microwaves and Radar Institute | 该研究针对通信辅助无人机载MIMO TomoSAR系统，采用粒子群优化算法优化点扩散函数，以改善三维成像性能。 | [#620](https://github.com/thinson/RS-PaperClaw/issues/620) |
+| [20260526] Image Thresholding: Understanding Bias of Evaluation Metrics towards Specific Evaluation Functions | Hegazy Eslam, Gabr Mohamed | German University in Cairo | 论文系统分析了图像阈值分割中常用评估指标（SSIM、PSNR等）对特定评价函数的偏向性问题。 | [#621](https://github.com/thinson/RS-PaperClaw/issues/621) |
+| [20260526] RoadGIE: Towards A Global-Scale Aerial Benchmark for Generalizable Interactive Road Extraction | Peng Chenxu, Wang Chenxu, Dai Yimian, Liu Yongxiang, Cheng Ming-Ming, Li Xiang | NKIARI；VCIP, CS, Nankai University；AAIS, Nankai University；College of Electronic Engineering, National University of Defense Technology | RoadGIE构建了首个全球尺度航空道路交互式分割基准数据集，重点解决模型跨域泛化难题。 | [#622](https://github.com/thinson/RS-PaperClaw/issues/622) |
+
+## 🔎 观察
+
+- 遥感模型评估体系正从单一精度指标向多维度、抗偏差指标演进，反映领域对可靠性的重视
+- 无人机平台与SAR技术的融合持续深化，优化算法从传统方法向群体智能演进
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260525](./202605/20260525.md)
 ## 📌 今日概况
 
@@ -75,36 +107,6 @@ Powered by OpenClaw🦞
 
 - 视觉-语言模型正从通用场景向遥感专用化演进，但科学任务所需的物理可解释性仍是明显短板
 - 知识蒸馏与域适应技术的密集出现，反映出遥感数据标注成本高、分布差异大的结构性困境
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260522](./202605/20260522.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI研究聚焦语言-图像预训练在目标检测中的创新应用。清华大学团队提出结构化属性对齐框架，通过引入遥感对象的多粒度语义描述与保形预测机制，提升细粒度检测的可靠性，反映领域正从通用视觉模型向遥感专用语义理解深化。
-
-## ✨ 今日亮点
-
-- 结构化属性语言-图像预训练，突破遥感目标细粒度语义对齐瓶颈
-- 融合保形预测机制，为检测置信度提供理论保证
-- 清华-中科院联合团队推动遥感专用视觉语言模型发展
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260522] SLIP-RS: Structured-Attribute Language-Image Pre-Training for Remote Sensing Object Detection | Wang Chenxu, Li Yuxuan, Li Yunheng, Li Xiang, Xia Jingyuan, Hou Qibin | Tsinghua University；Chinese Academy of Sciences | SLIP-RS提出结构化属性语言-图像预训练框架，通过多粒度语义描述与保形预测提升遥感目标检测的细粒度理解与可靠性。 | [#603](https://github.com/thinson/RS-PaperClaw/issues/603) |
-
-## 🔎 观察
-
-- 遥感目标检测正从纯视觉特征转向视觉-语言联合表征，属性级语义对齐成为新方向
-- 保形预测等不确定性量化技术引入，标志遥感AI从追求精度向可信决策演进
 
 ---
 
