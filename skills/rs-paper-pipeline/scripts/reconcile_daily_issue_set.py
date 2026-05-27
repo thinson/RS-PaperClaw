@@ -10,6 +10,7 @@ import daily_digest_llm_upgrade
 import sync_daily_reports_to_repo
 from clients.github_ops import extract_arxiv_id_from_issue
 from pipeline_config import get_repo, load_config
+from services.issue_index import ensure_index, lookup_issue
 
 
 CONFIG = load_config()
@@ -59,6 +60,21 @@ def split_date_issues(issues):
         else:
             paper_issues.append(issue)
     return digest_issue, paper_issues
+
+
+def clear_missing_from_index(repo, missing: set[str]) -> set[str]:
+    if not missing:
+        return missing
+
+    index = ensure_index(repo)
+    remaining = set(missing)
+    for arxiv_id in sorted(missing):
+        issue = lookup_issue(repo, index, arxiv_id)
+        if issue is None:
+            continue
+        print(f"FOUND_INDEX {arxiv_id} -> #{issue.number}")
+        remaining.discard(arxiv_id)
+    return remaining
 
 
 def reconcile(date_str: str, stats_json: str, dry_run: bool = False, skip_digest: bool = False, skip_sync: bool = False) -> int:
@@ -128,6 +144,8 @@ def reconcile(date_str: str, stats_json: str, dry_run: bool = False, skip_digest
             arxiv_id = extract_arxiv_id_from_issue(issue)
             if arxiv_id in expected_ids:
                 missing.discard(arxiv_id)
+        missing -= set(stats.get("successful_selected_arxiv_ids") or [])
+        missing = clear_missing_from_index(repo, missing)
         if missing:
             raise RuntimeError(
                 f"cannot regenerate digest for {date_str}; missing expected arxiv ids: {', '.join(sorted(missing))}"
