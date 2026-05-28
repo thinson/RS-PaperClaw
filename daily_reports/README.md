@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260527](./202605/20260527.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦于高效计算与多模态基础模型。一方面，探索在Apple Silicon上利用块浮点半精度FFT实现SAR成像，强调动态范围而非精度；另一方面，通过可训练张量分解将RGB模型迁移至高光谱图像，以及提出多模态地理空间基础模型FLORO，支持跨传感器与尺度的生态遥感。
+
+## ✨ 今日亮点
+
+- 块浮点半精度FFT在Apple Silicon上实现SAR成像
+- 可训练张量分解迁移RGB模型至高光谱图像
+- 多模态基础模型FLORO支持跨传感器生态遥感
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260527] Range, Not Precision: Block-Floating-Point Half-Precision FFT and SAR Imaging on Apple Silicon | Mohamed Amine Bergach | Illumina | 利用块浮点半精度FFT在Apple Silicon上实现高效SAR成像，侧重动态范围而非精度。 | [#630](https://github.com/thinson/RS-PaperClaw/issues/630) |
+| [20260527] Transfer learning RGB models to hyperspectral images with trainable tensor decompositions | Schönfeld Mariette, Devos Laurens, Meert Wannes, Blockeel Hendrik | Leuven.AI - KU Leuven Institute for AI, B-3000 Leuven, Belgium | 通过可训练张量分解将RGB预训练模型迁移至高光谱图像，提升光谱-空间特征学习。 | [#631](https://github.com/thinson/RS-PaperClaw/issues/631) |
+| [20260527] FLORO: A Multimodal Geospatial Foundation Model for Ecological Remote Sensing Across Sensors and Scales | Jorge L. Rodriguez, Victor Angulo Morales, Alwahas Areej, Mariana Elias Lara, Fida Mohammad Thoker, Johansen Kasper, Ghanem Bernard, Fernando T. Maestre, Matthew F. McCabe | King Abdullah University of Science and Technology | FLORO多模态地理空间基础模型结合掩码自编码，实现跨传感器与尺度的生态遥感。 | [#632](https://github.com/thinson/RS-PaperClaw/issues/632) |
+
+## 🔎 观察
+
+- 计算效率与模型泛化能力成为遥感AI研究的双重焦点。
+- 多模态与跨传感器融合正推动基础模型在生态遥感中的实际应用。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260526](./202605/20260526.md)
 ## 📌 今日概况
 
@@ -63,37 +95,6 @@ Powered by OpenClaw🦞
 
 - 3D空间理解成为遥感多模态大模型评测与优化的关键方向。
 - 超广域与低空场景推动多尺度、多源数据融合技术快速发展。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260524](./202605/20260524.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦于无人机通信与地质推理两大方向。前者提出基于能量效率的个性化联邦学习框架，通过梯度调度应对数据异质性；后者则利用参数高效微调技术构建专家级地质推理模型，展示了大型语言模型在遥感地学领域的应用潜力。
-
-## ✨ 今日亮点
-
-- 无人机通信中实现能量高效的个性化联邦学习
-- 参数高效微调推动地质推理达到专家水平
-- 大型语言模型在遥感地学领域取得新突破
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260524] Personalized Federated Learning by Energy-Efficient UAV Communications | Guo Shiqian, Liu Jianqing, Lorenzo Beatriz | the Department of Electrical and Computer Engineering, University of Massachusetts, Amherst, MA USA | 提出能量高效的个性化联邦学习框架，优化无人机通信中的数据异质性调度。 | [#624](https://github.com/thinson/RS-PaperClaw/issues/624) |
-| [20260524] Geo-Expert: Towards Expert-Level Geological Reasoning via Parameter-Efficient Fine-Tuning | Guo Chenyou, Liu Zongqi, Zhang Yizhou, Jiang Zhaorui, Liu Ze | Ocean University of China；Peking University；Monash University | Geo-Expert通过参数高效微调实现专家级地质推理，构建领域专用基准。 | [#626](https://github.com/thinson/RS-PaperClaw/issues/626) |
-
-## 🔎 观察
-
-- 联邦学习与无人机通信结合，正成为解决边缘计算能耗问题的关键路径。
-- 大型语言模型微调技术在地学推理中展现潜力，但领域基准仍需完善。
 
 ---
 
