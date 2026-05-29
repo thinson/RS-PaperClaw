@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260528](./202605/20260528.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦于基础框架构建与鲁棒性评估。多模态语义引导的遥感变化检测框架OmniCD被提出，旨在提升场景检索与变化检测能力。同时，针对密集城市非正规住区的建筑与道路识别发布了专用数据集与基准。此外，研究关注星上处理中的建筑损毁评估，以及面向真实世界分布偏移的鲁棒性基准EarthShift，体现了从模型设计到实际部署的全面探索。
+
+## ✨ 今日亮点
+
+- 多模态语义引导的变化检测基础框架OmniCD发布
+- 城市非正规住区建筑与道路识别数据集及基准建立
+- 面向星上处理的建筑损毁评估与鲁棒性基准EarthShift
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260528] OmniCD: A Foundational Framework for Remote Sensing Image Change Detection Guided by Multimodal Semantics | Sun Chenhao | Wuhan University | OmniCD提出多模态语义引导的遥感变化检测基础框架，提升场景检索能力。 | [#634](https://github.com/thinson/RS-PaperClaw/issues/634) |
+| [20260528] Building and Road Recognition in Dense Urban Informal Settlements: A Dataset and Benchmark | Long Hongyu, Liu Jiaxuan, Cao Rui | HKUST(GZ) | 发布密集城市非正规住区建筑与道路识别数据集及基准，填补领域空白。 | [#635](https://github.com/thinson/RS-PaperClaw/issues/635) |
+| [20260528] Optimizing Latent Representations for Robust Building Damage Assessment Onboard Earth Observation Satellites | Goudemant Thomas, Francesconi Benjamin | Institut de Recherche Technologique Saint Exupéry | 优化潜在表示实现星上建筑损毁评估，增强灾害响应实时性。 | [#636](https://github.com/thinson/RS-PaperClaw/issues/636) |
+| [20260528] EarthShift: a benchmark for measuring robustness to real-world distribution shifts in Earth observation | Doerksen Kelsey, Kerner Hannah | School of Computing and Augmented Intelligence；Arizona State University | EarthShift基准衡量遥感模型对真实世界分布偏移的鲁棒性。 | [#637](https://github.com/thinson/RS-PaperClaw/issues/637) |
+
+## 🔎 观察
+
+- 多模态语义融合正成为遥感变化检测基础模型的关键技术路径。
+- 星上智能处理与分布偏移鲁棒性研究，推动遥感AI向实际部署迈进。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260527](./202605/20260527.md)
 ## 📌 今日概况
 
@@ -59,42 +92,6 @@ Powered by OpenClaw🦞
 
 - 遥感模型评估体系正从单一精度指标向多维度、抗偏差指标演进，反映领域对可靠性的重视
 - 无人机平台与SAR技术的融合持续深化，优化算法从传统方法向群体智能演进
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260525](./202605/20260525.md)
-## 📌 今日概况
-
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日遥感AI研究聚焦于多模态融合与3D空间理解，涵盖MLLM高度线索利用、超广域分割、无人机视角泛化、低空城市数据融合、建筑多模态检测、高光谱3D成像及红外单像素成像等方向，体现了从2D到3D、从单源到多源、从可见光到红外宽谱段的技术演进趋势。
-
-## ✨ 今日亮点
-
-- 多模态大模型利用高度线索消除遥感场景2D歧义
-- 超广域图像分割提出尺度-截锥体表示新方法
-- 无人机动作识别实现跨视角泛化能力突破
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260525] VertiCue-Bench: Diagnosing Whether MLLMs Use Height Cues to Resolve 2D Ambiguity in Remote Sensing Natural Scenes | Huang Jing, Wang Duanchu, Yang Junjie, Cheng Zihang, Li Cheng, Cui Lin, Wu Zhouyi, Wang Di | Xi'an Jiaotong University；Xidian University；University of Chinese Academy of Sciences | 提出VertiCue-Bench基准，评估MLLMs利用高度线索消除遥感2D歧义的能力。 | [#614](https://github.com/thinson/RS-PaperClaw/issues/614) |
-| [20260525] SFR-Net: Learning Scale-Frustum Representations for Ultra-Wide Area Remote Sensing Image Segmentation | Zhong Chuyu, Chen Keyan, Yang Qinzhe, Chen Bowen, Zou Zhengxia, Shi Zhenwei | the Department of Aerospace Intelligent Science and Technology, School of Astronautics, Beihang University, Beijing , China；the Key Laboratory of Spacecraft Design Optimization and Dynamic Simulation Technologies, Ministry of Education, Beihang University, Beijing；Shen Yuan Honors College, Beihang University, Beijing；the College of Computing and Data Science, Nanyang Technological University, Singapore | SFR-Net学习尺度-截锥体表示，实现超广域遥感图像高效分割。 | [#615](https://github.com/thinson/RS-PaperClaw/issues/615) |
-| [20260525] UAV-OVO: Out-of-Viewpoint Generalization in UAV Action Recognition | Xia Yu, Zhang Zhengbo, Zhang Shuaihu, Tu Zhigang | Wuhan University；Singapore University of Technology and Design | UAV-OVO方法提升无人机动作识别在未见视角下的泛化性能。 | [#617](https://github.com/thinson/RS-PaperClaw/issues/617) |
-| [20260525] Location Prior Generation via Multi-Source Urban Data Fusion for Low-Altitude Air Mobility | Xie Xiang, Liu Xiaonan | the School of Natural and Computing Science, University of Aberdeen, Aberdeen, U.K | 融合多源城市数据生成位置先验，支持低空空中交通规划。 | [#618](https://github.com/thinson/RS-PaperClaw/issues/618) |
-| [20260525] Multi-Modal Building Inspection via Perceiver IO Fusion of Satellite and Street-Level Imagery | Sombekke Niels, Rob G. J. Wijnhoven, Martin R. Oswald | University of Amsterdam (UvA), Amsterdam, The Netherlands | 利用Perceiver IO融合卫星与街景图像，实现多模态建筑检测。 | [#627](https://github.com/thinson/RS-PaperClaw/issues/627) |
-| [20260525] Broadband Hyperspectral 3D Imaging using Dispersed Structured Light | Shin Suhyun, Moon Yunseong, Maeda Ryota, Lindell David, Kutulacos Kyros, Baek Seung-Hwan | RYOTA MAEDA, University of Hyogo, Japan；DAVID LINDELL, University of Toronto, Canada；KYROS KUTULAKOS, University of Toronto, Canada | 基于色散结构光实现宽带高光谱3D成像，覆盖SWIR波段。 | [#628](https://github.com/thinson/RS-PaperClaw/issues/628) |
-| [20260525] Infrared Single-Pixel Hyperspectral Imaging via Spatial-Temporal Multiplexing | Sun Ben, Huang Kun, Zhao Zhibin, Dong Beibei, Fang Jianan, Zeng Heping | State Key Laboratory of Precision Spectroscopy, and Hainan Institute；East China Normal University, Shanghai 200062, China；Chongqing Key Laboratory of Precision Optics, Chongqing Institute；of East China Normal University, Chongqing 401121, China；Collaborative Innovation Center of Extreme Optics；Shanxi University, Taiyuan, Shanxi 030006, China；Shanghai Research Center for Quantum Sciences, Shanghai 201315, China；Chongqing Institute for Brain and Intelligence, Guangyang Bay Laboratory, Chongqing, 400064, China | 时空复用策略实现红外单像素高光谱成像，降低采样成本。 | [#629](https://github.com/thinson/RS-PaperClaw/issues/629) |
-
-## 🔎 观察
-
-- 3D空间理解成为遥感多模态大模型评测与优化的关键方向。
-- 超广域与低空场景推动多尺度、多源数据融合技术快速发展。
 
 ---
 
