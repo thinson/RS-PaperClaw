@@ -2,6 +2,49 @@
 
 最近三天日报（最新在前）：
 
+# [20260529](./202605/20260529.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究呈现三大趋势：量子-经典混合架构用于跨模态表征学习、异构多智能体强化学习驱动卫星自主集群、以及合成数据训练的高光谱-多光谱融合方法。此外，通用视觉计数模型拓展至遥感场景，推动少样本与跨域目标计数能力提升。
+
+## ✨ 今日亮点
+
+- 量子-经典混合架构用于遥感跨模态表征学习
+- 异构多智能体差分Transformer实现卫星自主集群
+- 合成数据训练实现高光谱-多光谱自适应融合
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260529] HQ-JEPA: Hybrid Quantum Joint-Embedding Predictive Architecture for Cross-Modal Remote Sensing Representation Learning | Md Aminur Hossain, Ayush V. Patel, Sanjay K. Singh, Banerjee Biplab | Space Applications Centre；Biplab Banerjee2 | 提出混合量子-经典联合嵌入预测架构，用于遥感跨模态表征学习。 | [#639](https://github.com/thinson/RS-PaperClaw/issues/639) |
+| [20260529] HADT: A Heterogeneous Multi-Agent Differential Transformer for Autonomous Earth Observation Satellite Cluster | Mohamad A. Hady, Muhammad Anwar Masum, Hu Siyi, Pratama Mahardhika, Cao Jimmy, Kowalczyk Ryszard | School of Computer Science and Information Technology, Adelaide University；School of Electrical Engineering, Computing and Mathematical Sciences (EECMS)；Systems Research Institute, Polish Academy of Sciences, Warsaw, Poland | 设计异构多智能体差分Transformer，实现地球观测卫星集群自主决策。 | [#640](https://github.com/thinson/RS-PaperClaw/issues/640) |
+| [20260529] SCALMU: Synthetically-trained Coupling of Adaptive Learned Multiplicative Updates for Hyperspectral-Multispectral Fusion | Xu Xinxin, Gousseau Yann, Kervazo Christophe, Ladjal Saïd | The authors are with LTCI, Télécom Paris, Institut Polytechnique | 基于合成数据训练自适应耦合乘法更新网络，实现高光谱-多光谱融合。 | [#641](https://github.com/thinson/RS-PaperClaw/issues/641) |
+| [20260529] Count Anything | Lei Mengqi, Cheng Shuokun, Bao Wei, Du Shaoyi, Yong Jun-Hai, Li Siqi, Gao Yue | {BNRist, THUIBCS, BLBCI, School of Software}, Tsinghua University；School of Computer Science and Technology, China University of Geosciences, Wuhan；State Key Laboratory of Human-Machine Hybrid Augmented Intelligence；National Engineering Research Center for Visual Information and Applications；and Institute of Artificial Intelligence and Robotics, Xi’an Jiaotong University | 提出文本引导的通用计数模型，可跨域计数遥感图像中任意目标。 | [#642](https://github.com/thinson/RS-PaperClaw/issues/642) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| PolSAR Image Classification using a Hybrid Complex-Valued Network (HybridCVNet) | [2605.31137v1](https://arxiv.org/abs/2605.31137v1) | 质检未通过: 单位为空或无效 |
+| Non-destructive Identification of Oyster Species is possible from Hyperspectral Images with Machine Learning | [2605.30811v1](https://arxiv.org/abs/2605.30811v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 量子计算与遥感表征学习的结合尚属前沿，但实际部署仍需克服硬件限制。
+- 合成数据训练策略在遥感融合任务中展现出潜力，可缓解真实标注数据稀缺问题。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260528](./202605/20260528.md)
 ## 📌 今日概况
 
@@ -60,38 +103,6 @@ Powered by OpenClaw🦞
 
 - 计算效率与模型泛化能力成为遥感AI研究的双重焦点。
 - 多模态与跨传感器融合正推动基础模型在生态遥感中的实际应用。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260526](./202605/20260526.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究呈现多元化趋势：无人机载SAR成像优化、图像分割评估方法反思，以及面向全球泛化的道路交互式提取成为三大焦点。学术界持续关注模型泛化能力与评估指标可靠性等基础问题。
-
-## ✨ 今日亮点
-
-- UAV-MIMO TomoSAR通过粒子群优化实现点扩散函数优化，提升三维成像质量
-- 图像阈值分割研究揭示SSIM、PSNR等常用指标对特定评价函数存在系统性偏差
-- RoadGIE构建全球尺度航空道路数据集，推动交互式分割的跨域泛化研究
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260526] Point Spread Function Optimization for Communication-assisted UAV-borne MIMO TomoSAR | Fakharizadeh Pouya, Lahmeri Mohamed-Amine, Krieger Gerhard, Schober Robert | Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)；German Aerospace Center (DLR), Microwaves and Radar Institute | 该研究针对通信辅助无人机载MIMO TomoSAR系统，采用粒子群优化算法优化点扩散函数，以改善三维成像性能。 | [#620](https://github.com/thinson/RS-PaperClaw/issues/620) |
-| [20260526] Image Thresholding: Understanding Bias of Evaluation Metrics towards Specific Evaluation Functions | Hegazy Eslam, Gabr Mohamed | German University in Cairo | 论文系统分析了图像阈值分割中常用评估指标（SSIM、PSNR等）对特定评价函数的偏向性问题。 | [#621](https://github.com/thinson/RS-PaperClaw/issues/621) |
-| [20260526] RoadGIE: Towards A Global-Scale Aerial Benchmark for Generalizable Interactive Road Extraction | Peng Chenxu, Wang Chenxu, Dai Yimian, Liu Yongxiang, Cheng Ming-Ming, Li Xiang | NKIARI；VCIP, CS, Nankai University；AAIS, Nankai University；College of Electronic Engineering, National University of Defense Technology | RoadGIE构建了首个全球尺度航空道路交互式分割基准数据集，重点解决模型跨域泛化难题。 | [#622](https://github.com/thinson/RS-PaperClaw/issues/622) |
-
-## 🔎 观察
-
-- 遥感模型评估体系正从单一精度指标向多维度、抗偏差指标演进，反映领域对可靠性的重视
-- 无人机平台与SAR技术的融合持续深化，优化算法从传统方法向群体智能演进
 
 ---
 
