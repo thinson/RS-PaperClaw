@@ -2,6 +2,48 @@
 
 最近三天日报（最新在前）：
 
+# [20260531](./202605/20260531.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦于智能感知与计算效率。葡萄叶片光谱预测利用多头注意力网络实现性状到光谱的映射；UAV雷达搜索通过在线学习优化策略应对场景噪声与漂移；空间事件视觉与星上传感器计算则分别探索了神经形态相机与TinyML在低功耗地球观测中的应用，展现了从算法到硬件的全链条创新趋势。
+
+## ✨ 今日亮点
+
+- 多头注意力网络提升叶片光谱预测精度
+- 在线学习优化UAV雷达搜索策略
+- 事件视觉与星上计算推动低功耗遥感
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260531] Leaf Spectral Reflectance Prediction Using Multi-Head Attention Neural Networks | Farajpoor Parastoo, Pourreza Alireza, Narimani Mohammadreza, El-Kereamy Ashraf, Matthew W. Fidelibus | a Digital Agriculture Laboratory, Department of Biological and Agricultural Engineering, University；b Department of Botany and Plant Sciences, University of California, Riverside, CA, USA；c Department of Viticulture and Enology, University of California, Davis, CA, USA | 多头注意力网络预测葡萄叶片光谱，实现性状到光谱的映射 | [#650](https://github.com/thinson/RS-PaperClaw/issues/650) |
+| [20260531] SEArch: Optimistic Policy Selection Between Scene Noise and Drift for UAV Radar Search | Khial Noor, Mhaisen Naram, Ismail Loay, Mohamed Amr | ∗ College of Engineering, Qatar University, Qatar；† Faculty of Electrical Engineering, Mathematics, and Computer Science, Delft University of Technology, The Netherlands | SEArch算法在线选择策略，优化UAV雷达在噪声与漂移下的搜索 | [#651](https://github.com/thinson/RS-PaperClaw/issues/651) |
+| [20260531] Event-Based Vision in Space: Applications, Trends, and Future Directions | Capogrosso Luigi, Bonazzi Pietro, Magno Michele | Interdisciplinary Transformation University of Austria；ETH Zurich | 综述事件视觉在空间应用中的趋势与未来方向 | [#652](https://github.com/thinson/RS-PaperClaw/issues/652) |
+| [20260531] Exploiting In-Sensor Computing for Energy-Efficient Earth Observation | Capogrosso Luigi, Bonazzi Pietro, Hoxhaj Loris, Magno Michele | Interdisciplinary Transformation University of Austria；ETH Zurich；University of Verona | 利用星上传感器计算与TinyML实现低功耗地球观测 | [#653](https://github.com/thinson/RS-PaperClaw/issues/653) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Rank-Aware Quantile Activation for Motion-Robust Crop Segmentation in UAV Imagery | [2606.01118v1](https://arxiv.org/abs/2606.01118v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 注意力机制与在线学习正成为遥感智能感知的核心技术
+- 低功耗、星上处理是未来地球观测系统的重要发展方向
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260530](./202605/20260530.md)
 ## 📌 今日概况
 
@@ -81,39 +123,6 @@ Powered by OpenClaw🦞
 
 - 量子计算与遥感表征学习的结合尚属前沿，但实际部署仍需克服硬件限制。
 - 合成数据训练策略在遥感融合任务中展现出潜力，可缓解真实标注数据稀缺问题。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260528](./202605/20260528.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦于基础框架构建与鲁棒性评估。多模态语义引导的遥感变化检测框架OmniCD被提出，旨在提升场景检索与变化检测能力。同时，针对密集城市非正规住区的建筑与道路识别发布了专用数据集与基准。此外，研究关注星上处理中的建筑损毁评估，以及面向真实世界分布偏移的鲁棒性基准EarthShift，体现了从模型设计到实际部署的全面探索。
-
-## ✨ 今日亮点
-
-- 多模态语义引导的变化检测基础框架OmniCD发布
-- 城市非正规住区建筑与道路识别数据集及基准建立
-- 面向星上处理的建筑损毁评估与鲁棒性基准EarthShift
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260528] OmniCD: A Foundational Framework for Remote Sensing Image Change Detection Guided by Multimodal Semantics | Sun Chenhao | Wuhan University | OmniCD提出多模态语义引导的遥感变化检测基础框架，提升场景检索能力。 | [#634](https://github.com/thinson/RS-PaperClaw/issues/634) |
-| [20260528] Building and Road Recognition in Dense Urban Informal Settlements: A Dataset and Benchmark | Long Hongyu, Liu Jiaxuan, Cao Rui | HKUST(GZ) | 发布密集城市非正规住区建筑与道路识别数据集及基准，填补领域空白。 | [#635](https://github.com/thinson/RS-PaperClaw/issues/635) |
-| [20260528] Optimizing Latent Representations for Robust Building Damage Assessment Onboard Earth Observation Satellites | Goudemant Thomas, Francesconi Benjamin | Institut de Recherche Technologique Saint Exupéry | 优化潜在表示实现星上建筑损毁评估，增强灾害响应实时性。 | [#636](https://github.com/thinson/RS-PaperClaw/issues/636) |
-| [20260528] EarthShift: a benchmark for measuring robustness to real-world distribution shifts in Earth observation | Doerksen Kelsey, Kerner Hannah | School of Computing and Augmented Intelligence；Arizona State University | EarthShift基准衡量遥感模型对真实世界分布偏移的鲁棒性。 | [#637](https://github.com/thinson/RS-PaperClaw/issues/637) |
-
-## 🔎 观察
-
-- 多模态语义融合正成为遥感变化检测基础模型的关键技术路径。
-- 星上智能处理与分布偏移鲁棒性研究，推动遥感AI向实际部署迈进。
 
 ---
 
