@@ -2,6 +2,49 @@
 
 最近三天日报（最新在前）：
 
+# [20260530](./202605/20260530.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究聚焦于跨模态学习与细粒度应用。CR-JEPA提出跨模态联合嵌入预测架构用于图像检索；EuroCrops驱动Sentinel-2作物分割框架关注建模与评估；视觉定位通过聚类引导精炼与模型集成提升性能；CAFOSat数据集支持高分辨率影像的集约化养殖场基础设施感知映射；DarkVesselNet融合多模态遥感与轨迹推理检测暗船。
+
+## ✨ 今日亮点
+
+- 跨模态联合嵌入预测学习提升遥感图像检索性能
+- 聚类引导精炼与模型集成增强遥感视觉定位
+- 多模态遥感与轨迹推理结合检测暗船
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260530] CR-JEPA: Cross-Modal Joint-Embedding Predictive Learning for Remote Sensing Image Retrieval | Md Aminur Hossain, Ayush V. Patel, Dube Nitant, Banerjee Biplab | Space Applications Centre；Biplab Banerjee2 | CR-JEPA利用跨模态联合嵌入预测实现遥感图像检索语义对齐 | [#644](https://github.com/thinson/RS-PaperClaw/issues/644) |
+| [20260530] A Modelling and Evaluation Framework for EuroCrops-Driven Sentinel-2 Crop Segmentation | Alexandra Nicoleta Scarlat, Ioana Cristina Plajer, Baicoianu Alexandra | Transilvania University of Braşov, Faculty of Mathematics and Computer Science | EuroCrops驱动Sentinel-2作物分割框架提供建模与评估方法 | [#645](https://github.com/thinson/RS-PaperClaw/issues/645) |
+| [20260530] Improving Visual Grounding in Remote Sensing via Cluster-Guided Refinement and Model Ensemble Voting | Shah Panav, Sethi Geet, Gandhe Ashutosh | Indian Institute of Technology Bombay Indian Institute of Technology Bombay；Indian Institute of Technology Bombay | 聚类引导精炼与模型集成投票提升遥感视觉定位准确性 | [#646](https://github.com/thinson/RS-PaperClaw/issues/646) |
+| [20260530] CAFOSat: A Strongly Annotated Dataset for Infrastructure-Aware CAFO Mapping Using High-Resolution Imagery | Oishee Bintey Hoque, Nibir Chandra Mandal, Mandy L Wilson, Swarup Samarth, Marathe Madhav, Adiga Abhijin | University of Virginia；Biocomplexity Institute, University of Virginia | CAFOSat数据集支持高分辨率影像的集约化养殖场基础设施映射 | [#647](https://github.com/thinson/RS-PaperClaw/issues/647) |
+| [20260530] DarkVesselNet: Multi-Modal Remote Sensing and Trajectory Reasoning for Dark Vessel Detection | Sharma Arun | University of Minnesota, Twin Cities | DarkVesselNet融合SAR与光学数据及AIS轨迹推理检测暗船 | [#648](https://github.com/thinson/RS-PaperClaw/issues/648) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| DINO-GFSA: Geo-Localization via Semantic Gated Fusion and Mamba-based Sequential Aggregation | [2606.00784v1](https://arxiv.org/abs/2606.00784v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 跨模态学习成为遥感检索与定位任务的主流范式
+- 多模态融合与轨迹推理结合在海洋监测中展现潜力
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260529](./202605/20260529.md)
 ## 📌 今日概况
 
@@ -71,38 +114,6 @@ Powered by OpenClaw🦞
 
 - 多模态语义融合正成为遥感变化检测基础模型的关键技术路径。
 - 星上智能处理与分布偏移鲁棒性研究，推动遥感AI向实际部署迈进。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260527](./202605/20260527.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦于高效计算与多模态基础模型。一方面，探索在Apple Silicon上利用块浮点半精度FFT实现SAR成像，强调动态范围而非精度；另一方面，通过可训练张量分解将RGB模型迁移至高光谱图像，以及提出多模态地理空间基础模型FLORO，支持跨传感器与尺度的生态遥感。
-
-## ✨ 今日亮点
-
-- 块浮点半精度FFT在Apple Silicon上实现SAR成像
-- 可训练张量分解迁移RGB模型至高光谱图像
-- 多模态基础模型FLORO支持跨传感器生态遥感
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260527] Range, Not Precision: Block-Floating-Point Half-Precision FFT and SAR Imaging on Apple Silicon | Mohamed Amine Bergach | Illumina | 利用块浮点半精度FFT在Apple Silicon上实现高效SAR成像，侧重动态范围而非精度。 | [#630](https://github.com/thinson/RS-PaperClaw/issues/630) |
-| [20260527] Transfer learning RGB models to hyperspectral images with trainable tensor decompositions | Schönfeld Mariette, Devos Laurens, Meert Wannes, Blockeel Hendrik | Leuven.AI - KU Leuven Institute for AI, B-3000 Leuven, Belgium | 通过可训练张量分解将RGB预训练模型迁移至高光谱图像，提升光谱-空间特征学习。 | [#631](https://github.com/thinson/RS-PaperClaw/issues/631) |
-| [20260527] FLORO: A Multimodal Geospatial Foundation Model for Ecological Remote Sensing Across Sensors and Scales | Jorge L. Rodriguez, Victor Angulo Morales, Alwahas Areej, Mariana Elias Lara, Fida Mohammad Thoker, Johansen Kasper, Ghanem Bernard, Fernando T. Maestre, Matthew F. McCabe | King Abdullah University of Science and Technology | FLORO多模态地理空间基础模型结合掩码自编码，实现跨传感器与尺度的生态遥感。 | [#632](https://github.com/thinson/RS-PaperClaw/issues/632) |
-
-## 🔎 观察
-
-- 计算效率与模型泛化能力成为遥感AI研究的双重焦点。
-- 多模态与跨传感器融合正推动基础模型在生态遥感中的实际应用。
 
 ---
 
