@@ -2,6 +2,48 @@
 
 最近三天日报（最新在前）：
 
+# [20260602](./202606/20260602.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦于多模态与实时处理：长波红外高光谱温度-发射率-纹理分解数据集发布，无人机ISAC系统安全增强，卫星星上甲烷快速检测，以及频域感知融合的多模态变化检测方法。
+
+## ✨ 今日亮点
+
+- 长波红外高光谱温度-发射率-纹理分解基准数据集发布
+- 基于扩展卡尔曼滤波的无人机ISAC安全方案
+- 星上快速甲烷检测管道结合Mag1c-SAS与LinkNet
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260602] TeX-1500: A Paired Real-World LWIR Hyperspectral Dataset and Benchmark for Temperature-Emissivity-Texture Decomposition | Dai Cheng, Lin Jiale, Xu Hongyi, Song Bingxuan, Xie Ziyang, Bao Fanglin | centered thermal perception；Cheng Dai, Hongyi Xu, Ziyang Xie and Fanglin Bao are with the School；of Science, Westlake University, Hangzhou 310030, China；Jiale Lin and Bingxuan Song are with the School of Engineering, Westlake；University, Hangzhou 310030, China | 提出TeX-1500长波红外高光谱数据集，用于温度-发射率-纹理分解基准。 | [#663](https://github.com/thinson/RS-PaperClaw/issues/663) |
+| [20260602] On Secure EKF-enhanced UAV-ISAC Systems | Lei Hongjiang, Jin Heng, Park Ki-Hong, Ye Jia, Yang Liang, Pan Gaofeng, Li Yun | School of Communications and Information Engineering, Chongqing University of Posts and Telecommunications, Chongqing , China；the CEMSE Division, King Abdullah University of Science and Technology；State Key Laboratory of Power Transmission Equipment Technology, School of Electrical Engineering, Chongqing University, Chongqing , China；the College of Computer Science and Electronic Engineering, Hunan University, Changsha , China；the School of Cyberspace Science and Technology, Beijing Institute of Technology, Beijing , China；Chongqing Key Laboratory of Mobile Communications Technology, Chongqing , China | 设计EKF增强的无人机ISAC系统，提升物理层安全与轨迹跟踪。 | [#664](https://github.com/thinson/RS-PaperClaw/issues/664) |
+| [20260602] A Fast Methane Detection Pipeline on Board Satellites Based on Mag1c-SAS and LinkNet | Herec Jonáš, Růžička Vít, Pitoňák Rado, Sedmidubsky Jan | the Faculty of Informatics, Masaryk University, Brno, Czech Republic | 提出基于Mag1c-SAS和LinkNet的卫星星上甲烷快速检测管道。 | [#665](https://github.com/thinson/RS-PaperClaw/issues/665) |
+| [20260602] FAF-CD: Frequency-Aware Fusion for Change Detection under Imperfect Multimodal Remote Sensing | Wang Yufan, Makrogiannis Sokratis, Kambhamettu Chandra | University of South Florida；Delaware State University；//github.com/VimsLab/FAF-CD | 提出频域感知融合的孪生网络FAF-CD，用于多模态遥感变化检测。 | [#666](https://github.com/thinson/RS-PaperClaw/issues/666) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Self-Refining Agentic Reinforcement Learning for Vision-Conditioned UAV Navigation | [2606.03963v1](https://arxiv.org/abs/2606.03963v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 多模态融合与星上实时处理成为遥感AI应用的重要趋势。
+- 安全性与分解精度在无人机感知与高光谱分析中受到更多关注。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260601](./202606/20260601.md)
 ## 📌 今日概况
 
@@ -73,49 +115,6 @@ Powered by OpenClaw🦞
 
 - 注意力机制与在线学习正成为遥感智能感知的核心技术
 - 低功耗、星上处理是未来地球观测系统的重要发展方向
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260530](./202605/20260530.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究聚焦于跨模态学习与细粒度应用。CR-JEPA提出跨模态联合嵌入预测架构用于图像检索；EuroCrops驱动Sentinel-2作物分割框架关注建模与评估；视觉定位通过聚类引导精炼与模型集成提升性能；CAFOSat数据集支持高分辨率影像的集约化养殖场基础设施感知映射；DarkVesselNet融合多模态遥感与轨迹推理检测暗船。
-
-## ✨ 今日亮点
-
-- 跨模态联合嵌入预测学习提升遥感图像检索性能
-- 聚类引导精炼与模型集成增强遥感视觉定位
-- 多模态遥感与轨迹推理结合检测暗船
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260530] CR-JEPA: Cross-Modal Joint-Embedding Predictive Learning for Remote Sensing Image Retrieval | Md Aminur Hossain, Ayush V. Patel, Dube Nitant, Banerjee Biplab | Space Applications Centre；Biplab Banerjee2 | CR-JEPA利用跨模态联合嵌入预测实现遥感图像检索语义对齐 | [#644](https://github.com/thinson/RS-PaperClaw/issues/644) |
-| [20260530] A Modelling and Evaluation Framework for EuroCrops-Driven Sentinel-2 Crop Segmentation | Alexandra Nicoleta Scarlat, Ioana Cristina Plajer, Baicoianu Alexandra | Transilvania University of Braşov, Faculty of Mathematics and Computer Science | EuroCrops驱动Sentinel-2作物分割框架提供建模与评估方法 | [#645](https://github.com/thinson/RS-PaperClaw/issues/645) |
-| [20260530] Improving Visual Grounding in Remote Sensing via Cluster-Guided Refinement and Model Ensemble Voting | Shah Panav, Sethi Geet, Gandhe Ashutosh | Indian Institute of Technology Bombay Indian Institute of Technology Bombay；Indian Institute of Technology Bombay | 聚类引导精炼与模型集成投票提升遥感视觉定位准确性 | [#646](https://github.com/thinson/RS-PaperClaw/issues/646) |
-| [20260530] CAFOSat: A Strongly Annotated Dataset for Infrastructure-Aware CAFO Mapping Using High-Resolution Imagery | Oishee Bintey Hoque, Nibir Chandra Mandal, Mandy L Wilson, Swarup Samarth, Marathe Madhav, Adiga Abhijin | University of Virginia；Biocomplexity Institute, University of Virginia | CAFOSat数据集支持高分辨率影像的集约化养殖场基础设施映射 | [#647](https://github.com/thinson/RS-PaperClaw/issues/647) |
-| [20260530] DarkVesselNet: Multi-Modal Remote Sensing and Trajectory Reasoning for Dark Vessel Detection | Sharma Arun | University of Minnesota, Twin Cities | DarkVesselNet融合SAR与光学数据及AIS轨迹推理检测暗船 | [#648](https://github.com/thinson/RS-PaperClaw/issues/648) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| DINO-GFSA: Geo-Localization via Semantic Gated Fusion and Mamba-based Sequential Aggregation | [2606.00784v1](https://arxiv.org/abs/2606.00784v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 跨模态学习成为遥感检索与定位任务的主流范式
-- 多模态融合与轨迹推理结合在海洋监测中展现潜力
 
 ---
 
