@@ -2,6 +2,55 @@
 
 最近三天日报（最新在前）：
 
+# [20260604](./202606/20260604.md)
+## 📌 今日概况
+
+今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 12 篇；最终纳入日报 7 篇。
+
+今日遥感AI研究聚焦于Transformer架构的深度应用与多模态融合。多篇工作利用Transformer改进城市绿地提取、云去除及时序异常检测，同时无人机灾害响应与目标跟踪任务中，图神经网络与强化学习方法成为热点。整体趋势显示，模型正从单一任务向自适应、动态场景的智能决策方向发展。
+
+## ✨ 今日亮点
+
+- Transformer与NDVI结合提升城市绿地提取精度
+- 自适应三角注意力机制用于遥感影像云去除
+- 图神经网络强化无人机多目标跟踪能力
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260604] GMBFormer: An NDVI-Guided Global Memory Bank Transformer for Urban Green-Space Extraction from Ultra-High-Resolution Imagery | Lei Hao, Cheng Xi, Shu Chenlu, Chen Zhiheng, Duan Zhengjie, Wang Haoyu, Shen Zhanfeng | College of Geophysics, Chengdu University of Technology, Chengdu 610059, China；National Engineering Research Center for Geomatics, Aerospace Information Research；Institute, Chinese Academy of Sciences, and University of Chinese Academy of Sciences | 提出NDVI引导的全局记忆库Transformer，用于超高分辨率影像城市绿地提取。 | [#670](https://github.com/thinson/RS-PaperClaw/issues/670) |
+| [20260604] DisasterBench: A Multimodal Benchmark for UAV-Based Disaster Response in Complex Environments | Zhang Tan, Li Quanyou, Zhang Lu, Liu Jun, Zhu Xiaofeng, Hu Ping | a School of Computer Science and Engineering, University of Electronic Science and Technology of；b School of Information and Communication Engineering, Dalian University of；c School of Computing and Communications, Lancaster University, Lancaster, LA1 4YW, England；d School of Computer Science and Technology, Hainan University, Haikou, 570228, China | 发布多模态无人机灾害响应基准DisasterBench，评估复杂环境下的推理能力。 | [#671](https://github.com/thinson/RS-PaperClaw/issues/671) |
+| [20260604] ATT-CR: Adaptive Triangular Transformer for Cloud Removal | Wu Yang, Deng Ye, Li Pengna, Huang Wenli, Wu Kangyi, Xin Xiaomeng, Wang Jinjun | the Xi'an Jiaotong University, Xi'an, Shaanxi , China；the School of Computing and Artificial Intelligence, Southwestern University of Finance and Economics, Chengdu, Sichuan , China；the Ningbo University of Technology, Ningbo, Zhejiang , China | 设计自适应三角Transformer，通过三角注意力机制有效去除遥感影像云层。 | [#672](https://github.com/thinson/RS-PaperClaw/issues/672) |
+| [20260604] AISC deployment in dynamic UAV-assisted MEC network: a reinforcement learning method based on heterogeneous graph attention neural network | Chang Hanzhi, Bai Jing, Tang Xin, Liu Xiaomei | Hanzhi Chang, Jing Bai, Xin Tang and Xiaomei Liu are with the School of；Cyber Science and Engineering, University of International Relations, Beijing | 利用异构图注意力强化学习，优化动态无人机边缘计算网络中的AI服务链部署。 | [#673](https://github.com/thinson/RS-PaperClaw/issues/673) |
+| [20260604] T-SAR-JEPA: Self-Supervised Temporal Anomaly Detection in SAR Amplitude Stacks via Latent Prediction | Woldesenbet Kerod, Woldesenbet Abem | Independent Researcher Dakota State University | 提出自监督时序SAR异常检测方法，通过潜在预测学习振幅堆栈中的变化。 | [#674](https://github.com/thinson/RS-PaperClaw/issues/674) |
+| [20260604] HDST-GNN: Heterogeneous Dynamic Spatiotemporal Graph Neural Networks for Multi-Object Tracking in UAV Aerial Imagery | Jiang Phillip | Phillip Jiang | 构建异质动态时空图神经网络，提升无人机航拍多目标跟踪性能。 | [#675](https://github.com/thinson/RS-PaperClaw/issues/675) |
+| [20260604] BMCR: Adaptive Backbone Module Composition via Reinforcement Learning for Remote Sensing Object Detection | Liu Wenlin, Hu Xikun, Zhong Ping | Wenlin Liu, Xikun Hu, and Ping Zhong are with the College of Elec- backbone composition, limiting their ability to exploit the；tronic Science and Technology, National University of Defense Technology | 采用强化学习自适应组合骨干模块，优化遥感目标检测模型结构。 | [#676](https://github.com/thinson/RS-PaperClaw/issues/676) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| In-Context Multiple Instance Learning | [2606.06458v1](https://arxiv.org/abs/2606.06458v1) | 质检未通过: 单位为空或无效 |
+| Comparison of Deep Learning Frameworks For Rice Disease Mapping From UAV Multispectral Imaging | [2606.06359v1](https://arxiv.org/abs/2606.06359v1) | 质检未通过: 单位为空或无效 |
+| WorldFly: A World-Model-Based Vision-Language-Action Model for UAV Navigation | [2606.06147v1](https://arxiv.org/abs/2606.06147v1) | 质检未通过: Q6 未通过质检 |
+| Physics-Guided Deep Unfolding for Blind Cross-Sensor Spectral Super-Resolution via Learning the Spectral Transformation Function | [2606.05759v1](https://arxiv.org/abs/2606.05759v1) | 质检未通过: Q1 未通过质检; Q3 未通过质检; Q4 未通过质检; Q9 未通过质检 |
+| Intercomparison of Machine Learning Algorithms for Remote Sensing-based In-season Crop Mapping | [2606.05731v1](https://arxiv.org/abs/2606.05731v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- Transformer正从基础特征提取向任务特定结构（如三角注意力、记忆库）演进
+- 无人机遥感研究从单一感知向多模态推理与动态决策系统集成发展
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260603](./202606/20260603.md)
 ## 📌 今日概况
 
@@ -77,42 +126,6 @@ Powered by OpenClaw🦞
 
 - 多模态融合与星上实时处理成为遥感AI应用的重要趋势。
 - 安全性与分解精度在无人机感知与高光谱分析中受到更多关注。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260601](./202606/20260601.md)
-## 📌 今日概况
-
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日研究聚焦于遥感基础模型与轻量化架构的协同发展。多篇工作探索了栅格-矢量语义统一、城市流动性与社会经济理解的融合，以及物理引导的星上甲烷检测。同时，知识蒸馏、轻量Transformer及高效分类框架的提出，推动了遥感在洪水制图、森林健康监测等领域的实用化部署。
-
-## ✨ 今日亮点
-
-- 栅格与矢量语义统一，推动人本地理空间基础模型。
-- 物理引导神经算子实现星上高光谱甲烷检测。
-- 轻量Transformer与知识蒸馏提升遥感部署效率。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260601] Spatial Representation Learning Beyond Pixels: Unifying Raster Data and Vector Semantics for Human-Centric Geospatial Foundation Models | Knoblauch Steffen, Li Hao, Mai Gengchen, Klemmer Konstantin, Gao Song, Li WenWen | Heidelberg University；National University of Singapore；University of Texas at Austin；University College London；University of Wisconsin-Madison；Arizona State University | 提出统一栅格与矢量语义的空间表示学习，用于人本地理空间基础模型。 | [#655](https://github.com/thinson/RS-PaperClaw/issues/655) |
-| [20260601] Deep Learning for Remote Sensing to Improve Flood Inundation Mapping | Bhattarai Yogesh, Chaudhary Vijay, Wai Lim Kim, Sharma Sanjib | Department of Civil and Environmental Engineering Department of Computer Science and Electrical Engineering；Howard University Howard University；Department of Medicine Department of Civil and Environmental Engineering | 利用深度学习与扩散模型改进遥感洪水淹没制图精度。 | [#656](https://github.com/thinson/RS-PaperClaw/issues/656) |
-| [20260601] Cross-Domain Dead Tree Detection via Knowledge Distillation in Aerial Imagery | Anis Ur Rahman, Ahishali Mete, Heinaro Einari, Junttila Samuli | CSC – IT Center for Science Ltd., Espoo, Finland；Department of Forest Sciences, University of Helsinki；School of Forest Sciences, University of Eastern Finland | 通过知识蒸馏实现航拍影像中跨域枯树检测。 | [#657](https://github.com/thinson/RS-PaperClaw/issues/657) |
-| [20260601] LALE: Lightweight-Transformer Architecture for Land-Cover Estimation | Ümit Mert Çağlar, Temizel Alptekin | Graduate School of Informatics, METU, Ankara, Turkey | 设计轻量Transformer架构LALE用于高效土地覆盖估计。 | [#658](https://github.com/thinson/RS-PaperClaw/issues/658) |
-| [20260601] Enhancing the Socioeconomic Understanding of Foundation Models with Urban Mobility | Guo Baoshen, Li Donghang, Hong Zhiqing, Sun Kailai, Huang Heye, Prakash Alok, Wang Shenhao | Hong Kong University of Science & Technology (Guangzhou), China；Korea Advanced Institute of Science & Technology, Korea；University of Florida, Gainesville, USA；Massachusetts Institute of Technology, Cambridge, USA | 融合城市流动性数据增强基础模型的社会经济理解能力。 | [#659](https://github.com/thinson/RS-PaperClaw/issues/659) |
-| [20260601] MixerSENet: A Lightweight Framework for Efficient Hyperspectral Image Classification | Mohammed Q. Alkhatib, Swalpa Kumar Roy, Jamali Ali | the College of Engineering and IT, University of Dubai, Dubai, , UAE；the Department of Computer Science and Engineering, Alipurduar Government Engineering and Management College, West Bengal , India；the Department of Geography, Simon Fraser University, British Columbia , Canada | 提出MixerSENet轻量框架用于高效高光谱图像分类。 | [#660](https://github.com/thinson/RS-PaperClaw/issues/660) |
-| [20260601] FLAME: Physics-Guided Neural Operators for Onboard Satellite Methane Detection in Hyperspectral Imagery | Heo Junhyuk, Park Junhwan, Sim Sancheol, Choi Beomkyu, Cho Woojin | Agency for Defense Development | 开发物理引导神经算子FLAME实现星上甲烷检测。 | [#661](https://github.com/thinson/RS-PaperClaw/issues/661) |
-
-## 🔎 观察
-
-- 基础模型正从单一像素分析向融合矢量语义与多模态数据演进。
-- 轻量化与物理引导成为星上及边缘部署遥感模型的关键趋势。
 
 ---
 
