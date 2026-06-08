@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260605](./202606/20260605.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦于SAR图像处理与无人机导航两大方向。SAR领域，一篇工作利用深度学习从检测SAR图像中提取InSAR相干性，另一篇则通过物理驱动方法理解飞机目标的语义散射结构。无人机导航方面，提出了一种模拟飞行员思维的细粒度长时程导航方法，结合视觉-语言模型实现6自由度轨迹控制。整体趋势显示，物理模型与数据驱动方法的融合日益深入。
+
+## ✨ 今日亮点
+
+- 深度学习提升InSAR相干性估计精度
+- 物理驱动SAR飞机目标散射结构理解
+- 视觉-语言模型赋能长时程无人机导航
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260605] Beyond Backscatter: InSAR coherence from detected SAR images | Sica Francescopaolo, Pulella Andrea, Schmitt Michael | Department of Aerospace Engineering, University of the Bundeswehr Munich, Neubiberg, Germany；Microwaves and Radar Institute, German Aerospace Center (DLR), Weßling, Germany | 利用残差U-Net从检测SAR图像估计InSAR相干性，超越传统后向散射方法。 | [#678](https://github.com/thinson/RS-PaperClaw/issues/678) |
+| [20260605] Physics-Driven Semantic Scattering Structure Understanding of Aircraft Target in SAR Images | Yin Yifei, Yu Xiaogang, Shi Hao, Chen Liang, Li Wei | the School of Information and Electronics, Beijing Institute of Technology, Beijing , China；the National Key Laboratory of Science and Technology on Space-Born Intelligent Information Processing；the Beijing Institute of Remote Sensing Information, Beijing, China | 提出物理驱动语义散射结构理解方法，用于SAR图像飞机目标识别。 | [#679](https://github.com/thinson/RS-PaperClaw/issues/679) |
+| [20260605] Think Like a Pilot: Fine-Grained Long-Horizon UAV Navigation | Zheng Xiangyi, Wang Xiangyu, Liao Qinan, Tang Zimu, Liao Yue, Lyu Dongyue, Wang Guodong, Liu Junjie, Liu Si | Colab May 2026；Colab, Beihang University 2；National University of Singapore；https://buaa-colalab.github.io/FLIGHT/；https://github.com/buaa-colalab/FLIGHT | 模拟飞行员思维，实现细粒度长时程6自由度无人机视觉语言导航。 | [#680](https://github.com/thinson/RS-PaperClaw/issues/680) |
+
+## 🔎 观察
+
+- SAR领域正从单一后向散射分析向多维度信息融合演进。
+- 无人机导航研究向长时程、细粒度控制与语言指令结合方向发展。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260604](./202606/20260604.md)
 ## 📌 今日概况
 
@@ -84,48 +116,6 @@ Powered by OpenClaw🦞
 
 - 低空网络资源调度正从单一维度向多维度联合优化演进
 - 双基地ISARAC系统有望成为低空遥感与通信融合的关键架构
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260602](./202606/20260602.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦于多模态与实时处理：长波红外高光谱温度-发射率-纹理分解数据集发布，无人机ISAC系统安全增强，卫星星上甲烷快速检测，以及频域感知融合的多模态变化检测方法。
-
-## ✨ 今日亮点
-
-- 长波红外高光谱温度-发射率-纹理分解基准数据集发布
-- 基于扩展卡尔曼滤波的无人机ISAC安全方案
-- 星上快速甲烷检测管道结合Mag1c-SAS与LinkNet
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260602] TeX-1500: A Paired Real-World LWIR Hyperspectral Dataset and Benchmark for Temperature-Emissivity-Texture Decomposition | Dai Cheng, Lin Jiale, Xu Hongyi, Song Bingxuan, Xie Ziyang, Bao Fanglin | centered thermal perception；Cheng Dai, Hongyi Xu, Ziyang Xie and Fanglin Bao are with the School；of Science, Westlake University, Hangzhou 310030, China；Jiale Lin and Bingxuan Song are with the School of Engineering, Westlake；University, Hangzhou 310030, China | 提出TeX-1500长波红外高光谱数据集，用于温度-发射率-纹理分解基准。 | [#663](https://github.com/thinson/RS-PaperClaw/issues/663) |
-| [20260602] On Secure EKF-enhanced UAV-ISAC Systems | Lei Hongjiang, Jin Heng, Park Ki-Hong, Ye Jia, Yang Liang, Pan Gaofeng, Li Yun | School of Communications and Information Engineering, Chongqing University of Posts and Telecommunications, Chongqing , China；the CEMSE Division, King Abdullah University of Science and Technology；State Key Laboratory of Power Transmission Equipment Technology, School of Electrical Engineering, Chongqing University, Chongqing , China；the College of Computer Science and Electronic Engineering, Hunan University, Changsha , China；the School of Cyberspace Science and Technology, Beijing Institute of Technology, Beijing , China；Chongqing Key Laboratory of Mobile Communications Technology, Chongqing , China | 设计EKF增强的无人机ISAC系统，提升物理层安全与轨迹跟踪。 | [#664](https://github.com/thinson/RS-PaperClaw/issues/664) |
-| [20260602] A Fast Methane Detection Pipeline on Board Satellites Based on Mag1c-SAS and LinkNet | Herec Jonáš, Růžička Vít, Pitoňák Rado, Sedmidubsky Jan | the Faculty of Informatics, Masaryk University, Brno, Czech Republic | 提出基于Mag1c-SAS和LinkNet的卫星星上甲烷快速检测管道。 | [#665](https://github.com/thinson/RS-PaperClaw/issues/665) |
-| [20260602] FAF-CD: Frequency-Aware Fusion for Change Detection under Imperfect Multimodal Remote Sensing | Wang Yufan, Makrogiannis Sokratis, Kambhamettu Chandra | University of South Florida；Delaware State University；//github.com/VimsLab/FAF-CD | 提出频域感知融合的孪生网络FAF-CD，用于多模态遥感变化检测。 | [#666](https://github.com/thinson/RS-PaperClaw/issues/666) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Self-Refining Agentic Reinforcement Learning for Vision-Conditioned UAV Navigation | [2606.03963v1](https://arxiv.org/abs/2606.03963v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 多模态融合与星上实时处理成为遥感AI应用的重要趋势。
-- 安全性与分解精度在无人机感知与高光谱分析中受到更多关注。
 
 ---
 
