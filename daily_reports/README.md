@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260606](./202606/20260606.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日研究聚焦于遥感与地理空间智能的交叉创新，涵盖大气校正、地理定位、三维重建及生态监测。Transformer与图神经网络成为主流方法，分别用于高光谱大气补偿和时序地理定位。同时，卫星影像辅助度量尺度恢复、OpenStreetMap对比学习表征、以及近80年海草变化检测等研究，展现了从算法到应用的广泛探索。
+
+## ✨ 今日亮点
+
+- Transformer用于远距离长波红外高光谱大气补偿。
+- 双塔图神经网络实现时序地理定位。
+- 卫星影像助力前馈重建模型恢复度量尺度。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260606] Set-Based Transformer for Atmospheric Compensation in Standoff LWIR Hyperspectral Imaging | Perez Fabian, Quintero Nicolas, Acevedo Jeferson, Rueda-Chacon Hoover | Department of Computer Science, Universidad Industrial de Santander | 提出基于集合的Transformer模型，用于远距离长波红外高光谱成像的大气补偿。 | [#682](https://github.com/thinson/RS-PaperClaw/issues/682) |
+| [20260606] GeoGNN: Time Series Geo-Localization using Two-Tower Graph Neural Networks | Tran Toan, Abebe Waqwoya, Potnis Abhishek, Chinthavali Supriya, Shahabi Cyrus, Xiong Li, Lunga Dalton | Emory University Oak Ridge National Laboratory Oak Ridge National Laboratory；Oak Ridge National Laboratory University of Southern California Emory University；Oak Ridge National Laboratory | GeoGNN采用双塔图神经网络，实现时序数据的地理定位。 | [#683](https://github.com/thinson/RS-PaperClaw/issues/683) |
+| [20260606] Empowering Feed-Forward Reconstruction Models with Metric Scale via Satellite Images | Ze Xianghui, Luo Yongjian, Chao Mengjun, Song Zhenbo, Lu Jianfeng, Shi Yujiao | Nanjing University of Science and Technology；ShanghaiTech University | 利用卫星影像为前馈三维重建模型提供度量尺度信息。 | [#684](https://github.com/thinson/RS-PaperClaw/issues/684) |
+| [20260606] OSMGraphCLIP: Learning Global Location Representations from OpenStreetMap Graphs | Michail Dimitrios, Saka Eleni, Giannopoulos Ioannis, Papoutsis Ioannis | National Technical University of Athens, Athens, Greece；Vienna University of Technology, Vienna, Austria | OSMGraphCLIP通过对比学习从OpenStreetMap图学习全局位置表征。 | [#685](https://github.com/thinson/RS-PaperClaw/issues/685) |
+| [20260606] Feasibility to detect rapid change and disappearance of seagrass: Lessons from nearly 80 years of vegetation change in the Ako, Seto Inland Sea, Japan | Yamakita Takehisa, Igarashi Yoji, Eto Akira, Ishida Ken, Iiyama Masaaki | Japan Agency for Marine-Earth Science and Technology (JAMSTEC), Application Laboratory (APL), 3173-25, Showa-machi；The University of Tokyo, Graduate School of Agricultural and Life Sciences, 1-1-1 Yayoi, Bunkyo City, Tokyo, Japan；Tokyo University of Marine Science and Technology, 4-5-7 Kohnan, Minato-ku, Tokyo, Japan；Shiga University, Faculty of Data Science, 1-1-1 Banba, Hikone City, Shiga, Japan | 利用近80年航拍影像检测海草植被的快速变化与消失。 | [#686](https://github.com/thinson/RS-PaperClaw/issues/686) |
+
+## 🔎 观察
+
+- 图神经网络与Transformer在遥感任务中应用日益广泛，尤其在空间关系建模方面。
+- 长时序遥感分析结合深度学习，为生态监测提供历史变迁的量化手段。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260605](./202606/20260605.md)
 ## 📌 今日概况
 
@@ -76,46 +110,6 @@ Powered by OpenClaw🦞
 
 - Transformer正从基础特征提取向任务特定结构（如三角注意力、记忆库）演进
 - 无人机遥感研究从单一感知向多模态推理与动态决策系统集成发展
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260603](./202606/20260603.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 1 篇。
-
-今日研究聚焦于低空网络中的HAPs-UAV双基地ISARAC系统，提出联合三维轨迹与功率分配优化方法，旨在提升覆盖范围与续航能力。该工作体现了遥感与通信融合的趋势，为低空网络资源调度提供了新思路。
-
-## ✨ 今日亮点
-
-- 提出HAPs-UAV双基地ISARAC联合优化方案
-- 兼顾三维轨迹与功率分配提升网络性能
-- 聚焦低空网络覆盖与续航协同问题
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260603] Joint 3D Trajectory and Power Allocation for HAPs-UAV Bistatic ISARAC in Low-Altitude Networks | Huang Bang, Alouini Mohamed-Slim | and Engineering (CEMSE) division in King Abdullah University of Science much broader coverage and signiﬁcantly longer endurance | 研究HAPs-UAV双基地ISARAC中联合三维轨迹与功率分配优化。 | [#668](https://github.com/thinson/RS-PaperClaw/issues/668) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Data Efficient Complex Feature Fusion Network For Hyperspectral Image Classification | [2606.04710v1](https://arxiv.org/abs/2606.04710v1) | 质检未通过: 单位为空或无效 |
-| Optical-Guided Neural Collapse for SAR Few-Shot Class Incremental Learning | [2606.04528v1](https://arxiv.org/abs/2606.04528v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 低空网络资源调度正从单一维度向多维度联合优化演进
-- 双基地ISARAC系统有望成为低空遥感与通信融合的关键架构
 
 ---
 
