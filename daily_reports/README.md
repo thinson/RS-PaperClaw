@@ -2,6 +2,53 @@
 
 最近三天日报（最新在前）：
 
+# [20260608](./202606/20260608.md)
+## 📌 今日概况
+
+今日共检索候选论文 17 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 8 篇。
+
+今日遥感AI研究聚焦于无人机平台的多模态融合与目标检测，同时涉及变化检测、数据管理及建筑物提取。DINOv3驱动的语义对齐、信息瓶颈融合去云、零参数几何门控等新方法涌现，体现了对高精度、高效率及跨时相一致性的追求。
+
+## ✨ 今日亮点
+
+- 无人机多模态融合与目标检测成为今日研究热点
+- 语义变化检测引入DINOv3实现跨时相对齐
+- 零参数几何门控提升无人机视频分割时域稳定性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260608] SemDINO: A DINOv3-Driven Network for Cross-Temporal Semantic Alignment in Change Detection | Tong Xinyu, Zhou Meihua, Sun Jinxiao, Tang Yingjie, Wang Lei | the Xinjiang Institute of Ecology and Geography, Chinese Academy of Sciences, Urumqi , China；the University of Chinese Academy of Sciences, Beijing , China；the School of Computer Science, Xiangtan University, Xiangtan , China；the College of Information and Communication Engineering, Harbin Engineering University, Harbin , China | SemDINO利用DINOv3实现跨时相语义对齐的变化检测网络 | [#690](https://github.com/thinson/RS-PaperClaw/issues/690) |
+| [20260608] AeroMesa: Efficient Data Management System for Multi-Dimensional Spatio-Temporal Trajectories | Zhang Yue, Ding Zizhong, Sun Lin, Chen Haopeng, Jiao Yan, Xu Yongming | Shanghai Jiao Tong University, Shanghai, China | AeroMesa提出高效管理多维时空轨迹的数据系统 | [#691](https://github.com/thinson/RS-PaperClaw/issues/691) |
+| [20260608] IB-HFN: Information Bottleneck-Driven SAR-Optical Fusion Network for High-Fidelity Cloud Removal | Guo Haojun, Feng Fan, Wang Ziquan | Geospatial Information Institute, Information Engineering University, Zhengzhou, China | IB-HFN基于信息瓶颈融合SAR与光学图像实现高保真去云 | [#692](https://github.com/thinson/RS-PaperClaw/issues/692) |
+| [20260608] Zero-Parameter Geometric Gating for Temporally Stable Low-Altitude UAV Video Semantic Segmentation | Yang Jingpu, Ji Fengxian, Lai Zhengzhao, Wu Juanfan, Cui Mingxuan, Wang Yufeng | Beihang University Northeastern University The Chinese University of Hong；Beijing Institute of Technology Northeastern University Beihang University | 零参数几何门控方法提升低空无人机视频语义分割时域一致性 | [#693](https://github.com/thinson/RS-PaperClaw/issues/693) |
+| [20260608] CAMF-Det: Closure-Aware Multimodal Fusion for LiDAR-Camera 3D Object Detection on UAV Platforms | Jiang Yanze, Gu Yanfeng, Li Xian | a School of Electronics and Information Engineering, Harbin Institute of Technology, Harbin 150001, China | CAMF-Det实现无人机平台LiDAR-相机融合的3D目标检测 | [#694](https://github.com/thinson/RS-PaperClaw/issues/694) |
+| [20260608] Illumination-Invariant Anomaly Detection for Sub-Canopy UAV Multispectral Point Clouds | Chen Likun, Gu Yanfeng, Li Xian | School of Electronics and Information School of Electronics and Information School of Electronics and Information；Harbin Institute of Technology Harbin Institute of Technology Harbin Institute of Technology | 光照不变异常检测方法用于林下无人机多光谱点云 | [#695](https://github.com/thinson/RS-PaperClaw/issues/695) |
+| [20260608] Edge-Constrained UAV Small-Object Detection with P2 Enhancement and Quantum-Inspired Lightweight Structure Search | Lei Wuming, Gao Yanbin, Sun Mingyan, Li Xiaobin, Liang Xuechen | East China Jiaotong University, Nanchang, China | 边缘约束与量子启发搜索提升无人机小目标检测性能 | [#696](https://github.com/thinson/RS-PaperClaw/issues/696) |
+| [20260608] PolyBuild: An End-to-End Method for Polygonal Building Contour Extraction from High-Resolution Remote Sensing Images | Zhang Yaoteng, Zhang Julin, Wang Guangshuai, Deng Jiwei, Sheng Hui, Muhammad Yasir, Wei Shiqing | the College of Oceanography and Space Informatics, China University of Petroleum | PolyBuild端到端方法从高分辨率遥感图像提取多边形建筑轮廓 | [#697](https://github.com/thinson/RS-PaperClaw/issues/697) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Vision-Language Guided Hyperspectral Object Tracking via Semantics Fusion and Contextual Template Updating | [2606.09167v1](https://arxiv.org/abs/2606.09167v1) | 质检未通过: 单位为空或无效 |
+| An Enhanced Geometric-Spectral Feature Learning Framework for Airborne Multispectral Point Cloud Classification | [2606.09123v1](https://arxiv.org/abs/2606.09123v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 无人机平台研究占比过半，多模态融合与轻量化设计成主流趋势
+- 语义变化检测与建筑物提取方法向端到端、高保真方向演进
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260607](./202606/20260607.md)
 ## 📌 今日概况
 
@@ -59,38 +106,6 @@ Powered by OpenClaw🦞
 
 - 图神经网络与Transformer在遥感任务中应用日益广泛，尤其在空间关系建模方面。
 - 长时序遥感分析结合深度学习，为生态监测提供历史变迁的量化手段。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260605](./202606/20260605.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦于SAR图像处理与无人机导航两大方向。SAR领域，一篇工作利用深度学习从检测SAR图像中提取InSAR相干性，另一篇则通过物理驱动方法理解飞机目标的语义散射结构。无人机导航方面，提出了一种模拟飞行员思维的细粒度长时程导航方法，结合视觉-语言模型实现6自由度轨迹控制。整体趋势显示，物理模型与数据驱动方法的融合日益深入。
-
-## ✨ 今日亮点
-
-- 深度学习提升InSAR相干性估计精度
-- 物理驱动SAR飞机目标散射结构理解
-- 视觉-语言模型赋能长时程无人机导航
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260605] Beyond Backscatter: InSAR coherence from detected SAR images | Sica Francescopaolo, Pulella Andrea, Schmitt Michael | Department of Aerospace Engineering, University of the Bundeswehr Munich, Neubiberg, Germany；Microwaves and Radar Institute, German Aerospace Center (DLR), Weßling, Germany | 利用残差U-Net从检测SAR图像估计InSAR相干性，超越传统后向散射方法。 | [#678](https://github.com/thinson/RS-PaperClaw/issues/678) |
-| [20260605] Physics-Driven Semantic Scattering Structure Understanding of Aircraft Target in SAR Images | Yin Yifei, Yu Xiaogang, Shi Hao, Chen Liang, Li Wei | the School of Information and Electronics, Beijing Institute of Technology, Beijing , China；the National Key Laboratory of Science and Technology on Space-Born Intelligent Information Processing；the Beijing Institute of Remote Sensing Information, Beijing, China | 提出物理驱动语义散射结构理解方法，用于SAR图像飞机目标识别。 | [#679](https://github.com/thinson/RS-PaperClaw/issues/679) |
-| [20260605] Think Like a Pilot: Fine-Grained Long-Horizon UAV Navigation | Zheng Xiangyi, Wang Xiangyu, Liao Qinan, Tang Zimu, Liao Yue, Lyu Dongyue, Wang Guodong, Liu Junjie, Liu Si | Colab May 2026；Colab, Beihang University 2；National University of Singapore；https://buaa-colalab.github.io/FLIGHT/；https://github.com/buaa-colalab/FLIGHT | 模拟飞行员思维，实现细粒度长时程6自由度无人机视觉语言导航。 | [#680](https://github.com/thinson/RS-PaperClaw/issues/680) |
-
-## 🔎 观察
-
-- SAR领域正从单一后向散射分析向多维度信息融合演进。
-- 无人机导航研究向长时程、细粒度控制与语言指令结合方向发展。
 
 ---
 
