@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260611](./202606/20260611.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦于大语言模型在地球系统与环境地理分析中的智能体能力评估。TerraBench提出异构地球数据推理基准，GeoNatureAgent Benchmark则系统评测前沿与开源模型在环境地理分析中的工具调用与API交互表现，共同推动LLM在科学工作流中的落地。
+
+## ✨ 今日亮点
+
+- TerraBench评测模型对异构地球系统数据的推理能力
+- GeoNatureAgent Benchmark聚焦环境地理分析中的LLM智能体
+- 两项基准均强调结构化工具调用与多模态数据融合
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260611] TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data? | Dat Tien Nguyen, Nguyen Thao, Fadillah Adamsyah Maani, Huy M. Le, Muhammad Umer Sheikh, Saeed Numan, Muhammad Haris Khan, Khan Salman | Mohamed bin Zayed University of Artificial Intelligence | TerraBench提出异构地球系统数据推理基准，评估智能体综合能力。 | [#715](https://github.com/thinson/RS-PaperClaw/issues/715) |
+| [20260611] GeoNatureAgent Benchmark: Benchmarking LLM Agents for Environmental Geospatial Analysis Across Frontier and Open-Weight Foundation Models | Diaz-Ireland Gabriel, Prieto-Herráez Diego, Mario García Peces, Velázquez Javier, Jain Devika | Johns Hopkins University；Universidad Católica de Ávila (UCAV) Center for Geographic Analysis；Ávila, Spain Harvard University | GeoNatureAgent Benchmark系统评测LLM在环境地理分析中的工具调用表现。 | [#716](https://github.com/thinson/RS-PaperClaw/issues/716) |
+
+## 🔎 观察
+
+- LLM智能体正从通用问答转向领域专用推理与工具调用
+- 异构数据融合与结构化API交互成为遥感AI新评估焦点
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260610](./202606/20260610.md)
 ## 📌 今日概况
 
@@ -76,53 +107,6 @@ Powered by OpenClaw🦞
 
 - 多模态大模型正从通用视觉向遥感专用传感器模态深化，跨传感器融合成为趋势。
 - 无监督与零样本方法在变化检测和目标分割中应用增多，降低标注依赖是当前重要方向。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260608](./202606/20260608.md)
-## 📌 今日概况
-
-今日共检索候选论文 17 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究聚焦于无人机平台的多模态融合与目标检测，同时涉及变化检测、数据管理及建筑物提取。DINOv3驱动的语义对齐、信息瓶颈融合去云、零参数几何门控等新方法涌现，体现了对高精度、高效率及跨时相一致性的追求。
-
-## ✨ 今日亮点
-
-- 无人机多模态融合与目标检测成为今日研究热点
-- 语义变化检测引入DINOv3实现跨时相对齐
-- 零参数几何门控提升无人机视频分割时域稳定性
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260608] SemDINO: A DINOv3-Driven Network for Cross-Temporal Semantic Alignment in Change Detection | Tong Xinyu, Zhou Meihua, Sun Jinxiao, Tang Yingjie, Wang Lei | the Xinjiang Institute of Ecology and Geography, Chinese Academy of Sciences, Urumqi , China；the University of Chinese Academy of Sciences, Beijing , China；the School of Computer Science, Xiangtan University, Xiangtan , China；the College of Information and Communication Engineering, Harbin Engineering University, Harbin , China | SemDINO利用DINOv3实现跨时相语义对齐的变化检测网络 | [#690](https://github.com/thinson/RS-PaperClaw/issues/690) |
-| [20260608] AeroMesa: Efficient Data Management System for Multi-Dimensional Spatio-Temporal Trajectories | Zhang Yue, Ding Zizhong, Sun Lin, Chen Haopeng, Jiao Yan, Xu Yongming | Shanghai Jiao Tong University, Shanghai, China | AeroMesa提出高效管理多维时空轨迹的数据系统 | [#691](https://github.com/thinson/RS-PaperClaw/issues/691) |
-| [20260608] IB-HFN: Information Bottleneck-Driven SAR-Optical Fusion Network for High-Fidelity Cloud Removal | Guo Haojun, Feng Fan, Wang Ziquan | Geospatial Information Institute, Information Engineering University, Zhengzhou, China | IB-HFN基于信息瓶颈融合SAR与光学图像实现高保真去云 | [#692](https://github.com/thinson/RS-PaperClaw/issues/692) |
-| [20260608] Zero-Parameter Geometric Gating for Temporally Stable Low-Altitude UAV Video Semantic Segmentation | Yang Jingpu, Ji Fengxian, Lai Zhengzhao, Wu Juanfan, Cui Mingxuan, Wang Yufeng | Beihang University Northeastern University The Chinese University of Hong；Beijing Institute of Technology Northeastern University Beihang University | 零参数几何门控方法提升低空无人机视频语义分割时域一致性 | [#693](https://github.com/thinson/RS-PaperClaw/issues/693) |
-| [20260608] CAMF-Det: Closure-Aware Multimodal Fusion for LiDAR-Camera 3D Object Detection on UAV Platforms | Jiang Yanze, Gu Yanfeng, Li Xian | a School of Electronics and Information Engineering, Harbin Institute of Technology, Harbin 150001, China | CAMF-Det实现无人机平台LiDAR-相机融合的3D目标检测 | [#694](https://github.com/thinson/RS-PaperClaw/issues/694) |
-| [20260608] Illumination-Invariant Anomaly Detection for Sub-Canopy UAV Multispectral Point Clouds | Chen Likun, Gu Yanfeng, Li Xian | School of Electronics and Information School of Electronics and Information School of Electronics and Information；Harbin Institute of Technology Harbin Institute of Technology Harbin Institute of Technology | 光照不变异常检测方法用于林下无人机多光谱点云 | [#695](https://github.com/thinson/RS-PaperClaw/issues/695) |
-| [20260608] Edge-Constrained UAV Small-Object Detection with P2 Enhancement and Quantum-Inspired Lightweight Structure Search | Lei Wuming, Gao Yanbin, Sun Mingyan, Li Xiaobin, Liang Xuechen | East China Jiaotong University, Nanchang, China | 边缘约束与量子启发搜索提升无人机小目标检测性能 | [#696](https://github.com/thinson/RS-PaperClaw/issues/696) |
-| [20260608] PolyBuild: An End-to-End Method for Polygonal Building Contour Extraction from High-Resolution Remote Sensing Images | Zhang Yaoteng, Zhang Julin, Wang Guangshuai, Deng Jiwei, Sheng Hui, Muhammad Yasir, Wei Shiqing | the College of Oceanography and Space Informatics, China University of Petroleum | PolyBuild端到端方法从高分辨率遥感图像提取多边形建筑轮廓 | [#697](https://github.com/thinson/RS-PaperClaw/issues/697) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Vision-Language Guided Hyperspectral Object Tracking via Semantics Fusion and Contextual Template Updating | [2606.09167v1](https://arxiv.org/abs/2606.09167v1) | 质检未通过: 单位为空或无效 |
-| An Enhanced Geometric-Spectral Feature Learning Framework for Airborne Multispectral Point Cloud Classification | [2606.09123v1](https://arxiv.org/abs/2606.09123v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 无人机平台研究占比过半，多模态融合与轻量化设计成主流趋势
-- 语义变化检测与建筑物提取方法向端到端、高保真方向演进
 
 ---
 
