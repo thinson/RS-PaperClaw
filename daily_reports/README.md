@@ -2,6 +2,48 @@
 
 最近三天日报（最新在前）：
 
+# [20260612](./202606/20260612.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦于多模态数据融合与自主系统优化。NEST3D数据集结合无人机与3D点云，推动生态监测精细化；轻量级高光谱3D重建管道提升医学影像效率；选择性智能恢复框架增强无人机任务持久性；SAR与AIS融合的航向分析方法改善海上监视能力。整体趋势向高分辨率、轻量化与自主化发展。
+
+## ✨ 今日亮点
+
+- 多模态数据集NEST3D推动生态遥感精细化
+- 轻量级高光谱3D重建助力医学影像分析
+- 选择性智能恢复框架增强无人机自主性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260612] NEST3D: A High-Resolution Multimodal Dataset of Sociable Weaver Tree Nests | Constanza A. Molina Catricheo, Boeder Simon, Guo Ting-Jia, May Giacomo, Berthelot Clément, Tuia Devis, Friedrich Fedor Reinhard, Remondino Fabio, Risse Benjamin | Institute for Geoinformatics (ifgi), University of Münster, Germany；Max Planck Institute of Animal Behavior, Germany；University of Konstanz, Germany | NEST3D提供高分辨率多模态数据集，用于群居织巢鸟巢穴语义分割与3D点云分析。 | [#718](https://github.com/thinson/RS-PaperClaw/issues/718) |
+| [20260612] A Lightweight Fiducial-Based Pipeline for 3D Hyperspectral Mapping of ex-vivo Lumpectomy Specimens | Bicchi Anna, Rota Alberto, Passoni Leonardo, Ancellotti Nicola, Peroni Andrea, Vinco Lorenzo, Polli Dario, Elena De Momi | Authors are with the Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano, Milan, Italy；Authors are with the Department of Physics, Politecnico di Milano, Milan, Italy | 提出基于基准标记的轻量级管道，实现离体肿瘤标本的3D高光谱映射。 | [#719](https://github.com/thinson/RS-PaperClaw/issues/719) |
+| [20260612] Selective Agentic Recovery for UAV Autonomy with a Persistent Mission Runtime | Park Taewoo, Yoo Kyeonghyun, Yoo Seunghyun, Kim Hwangnam | Department of Electrical and Electronic Engineering；Korea University | 选择性智能恢复框架提升无人机在持久任务中的自主运行与安全执行能力。 | [#720](https://github.com/thinson/RS-PaperClaw/issues/720) |
+| [20260612] HARBOR: Heading Analysis and Reconstruction from Behavioral Observation and Radar | Joao P. A. Dantas, Paulo F. Silva Filho, Jelton A. Cunha, Dietzsch Gabriel | Institute for Advanced Studies, São José dos Campos, São Paulo, Brazil, 12.228-001；Researcher, C4ISR Division, Institute for Advanced Studies (IEAv) | HARBOR方法融合SAR与AIS数据，实现海上目标航向分析与重建。 | [#721](https://github.com/thinson/RS-PaperClaw/issues/721) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Spectrum Aware Illumination Estimation Using Multispectral Image | [2606.14248v1](https://arxiv.org/abs/2606.14248v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 多模态数据融合（如SAR+AIS、高光谱+3D）成为提升遥感应用精度的关键路径。
+- 轻量化和自主化设计在无人机与医学遥感中日益突出，推动边缘部署可行性。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260611](./202606/20260611.md)
 ## 📌 今日概况
 
@@ -61,52 +103,6 @@ Powered by OpenClaw🦞
 
 - 多智能体与知识蒸馏成为遥感AI系统集成的重要范式
 - 面向特定应用（如城市热、无人机检测）的专用数据集持续涌现
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260609](./202606/20260609.md)
-## 📌 今日概况
-
-今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 8 篇。
-
-今日遥感研究呈现多模态大模型与无监督学习两大热点。Earth-OneVision将多模态大模型扩展至更多传感器模态与任务；多篇工作聚焦建筑物变化检测，分别采用无监督自训练、地震场景专用网络及内容诱导的空谱聚合方法。此外，零样本检测分割、矢量地图统一表示、视觉语言模型用于海岸线定位、以及物理嵌入的频谱重建等方向亦有新进展。
-
-## ✨ 今日亮点
-
-- 多模态大模型向更多遥感传感器模态扩展
-- 无监督自训练方法提升建筑物变化检测性能
-- 物理知识嵌入Transformer改善光谱重建
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260609] Earth-OneVision: Extending Remote Sensing Multimodal Large Language Models to More Sensor Modalities and Tasks | Cai Miaoxin, Wang Guanqun, Zhang Wei, Zhou Guangyao, Zhuang Yin, Zhang Tong, Wang Hao, Chen He, Li Jun | the National Key Laboratory of Science and Technology on Space-Born Intelligent Information Processing；the Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing , China；the Key Laboratory of Technology in Geo-Spatial Information Processing and Application System, Chinese Academy of Sciences, Beijing , China；the Advanced Research Institute of Multidisciplinary Sciences, Beijing Institute of Technology, Beijing , China；the School of Mechatronical Engineering, Beijing Institute of Technology, Beijing , China；the School of Earth and Space Sciences, Peking University, Beijing , China；the School of Electronics, Peking University, Beijing , China；the School of Computer Science and Hubei Key Laboratory of Intelligent Geo-Information Processing, China University of Geosciences, Wuhan, , China | Earth-OneVision将多模态大语言模型扩展至更多遥感传感器模态与任务。 | [#699](https://github.com/thinson/RS-PaperClaw/issues/699) |
-| [20260609] Spatially Selective Self-Training for Unsupervised Building Change Detection | Wafaa I. M. Hussin, Lu Zhi, Anas M. I. Mohammed, Zhou Xiang, Ratiba A. H. Abubaker, Peng Zhenming | the School of Information and Communication Engineering, University of Electronic Science and Technology of China, Chengdu , China；the Laboratory of Intelligent Collaborative Computing, University of Electronic Science and Technology of China, Chengdu , China；the School of Civil Engineering, University of Khartoum, Khartoum, Sudan；the National Energy Research Center, Ministry of Higher Education and Scientific Research, Khartoum, Sudan | 提出空间选择性自训练方法，实现无监督建筑物变化检测。 | [#700](https://github.com/thinson/RS-PaperClaw/issues/700) |
-| [20260609] ZODS-RS -- Zero-training Oriented Detection & Segmentation for Remote Sensing | Gu Zuan, Gao Tianhan, Zhao Langxu | Northeastern University, China | ZODS-RS实现零训练条件下的遥感目标检测与实例分割。 | [#701](https://github.com/thinson/RS-PaperClaw/issues/701) |
-| [20260609] Vector Map as Language: Toward Unified Remote Sensing Vector Mapping | Yan Yinglong, Yang Yunkai, Wang Haoyi, Fu Wei, Wu Linshan, Pan Honghu, Xia Shaobo, Zhang Shanghang, Chen Hao, Fang Leyuan | Fang are with the school of Artificial Intelligence and Robotics, Hunan {；University, Changsha 410082, China；• Linshan Wu and Hao Chen are with the Department of Computer Science；and Engineering, The Hong Kong University of Science and Technol-；• Shaobo Xia is in the Department of Geomatics Engineering, Changsha；University of Science and Technology, Changsha 410114, China；• Shanghang Zhang is in State Key Laboratory of Multimedia Information；Processing, School of Computer Science, Peking University | 将矢量地图视为语言，提出统一的遥感矢量映射范式。 | [#702](https://github.com/thinson/RS-PaperClaw/issues/702) |
-| [20260609] Geometric Coastline Localization using Vision-Language Models | Malik Rafia, Pfahringer Bernhard, Bryan Karin, Dickson Mark, Frank Eibe | a The University of Waikato, New Zealand；b The University of Auckland, New Zealand | 利用视觉语言模型进行几何海岸线定位与变化分析。 | [#703](https://github.com/thinson/RS-PaperClaw/issues/703) |
-| [20260609] PF-Trans: Physics-Embedded Frequency-Aware Transformer for Spectral Reconstruction | Gui Yuzhe, Liu Tianzhu, Gu Yanfeng, Li Xian | Harbin Institute of Technology Harbin Institute of Technology Harbin Institute of Technology Harbin Institute of Technology | PF-Trans通过物理嵌入的频率感知Transformer实现光谱重建。 | [#704](https://github.com/thinson/RS-PaperClaw/issues/704) |
-| [20260609] Building Change Detection in Earthquake: A Multi-Scale Interaction Network and A Change Detection Dataset | Liu Yunlong, Zhang Zekai | Science and Engineering, Shandong University, Ji’nan 250061, China ( | 提出多尺度交互网络及专用数据集用于地震建筑物变化检测。 | [#705](https://github.com/thinson/RS-PaperClaw/issues/705) |
-| [20260609] Content-Induced Spatial-Spectral Aggregation Network for Change Detection in Remote Sensing Images | Liu Yunlong, Zhang Zekai | Science and Engineering, Shandong University, Ji’nan 250061, China ( | 内容诱导的空谱聚合网络结合图卷积提升变化检测性能。 | [#706](https://github.com/thinson/RS-PaperClaw/issues/706) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Multi-Angular Reflectance Anisotropy Observed from UAV Multispectral Imagery | [2606.10350v1](https://arxiv.org/abs/2606.10350v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 多模态大模型正从通用视觉向遥感专用传感器模态深化，跨传感器融合成为趋势。
-- 无监督与零样本方法在变化检测和目标分割中应用增多，降低标注依赖是当前重要方向。
 
 ---
 
