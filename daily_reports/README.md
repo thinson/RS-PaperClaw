@@ -2,6 +2,45 @@
 
 最近三天日报（最新在前）：
 
+# [20260613](./202606/20260613.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 1 篇。
+
+今日研究聚焦于低轨卫星网络中的智能资源编排问题，提出了一种结合检索增强生成（RAG）的双层认知编排框架。该工作通过引入认知计算与RAG技术，旨在缓解卫星边缘计算中的资源碎片化问题，提升网络编排效率与智能化水平，反映了遥感与卫星通信领域对AI驱动自主决策能力的持续探索。
+
+## ✨ 今日亮点
+
+- 提出RAG增强的双层认知编排框架，应对资源碎片化
+- 聚焦低轨卫星网络中的智能资源管理问题
+- 融合认知计算与检索增强生成技术提升编排效率
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260613] A RAG-Enhanced Bi-Level Cognitive Orchestration Framework for LEO Satellite Networks | Jiang Yuhong, Shen Zhishu, Yin Tong, Zheng Qiushi, Jin Yichao, Mehmeti Fidan, Jin Jiong | Yuhong Jiang, Zhishu Shen, and Tong Yin are with the School；of Computer Science and Artificial Intelligence, Wuhan University of；of Transportation Internet of Things, Wuhan University of Technology；Qiushi Zheng, and Jiong Jin are with the School of Engineering, Swin-；burne University of Technology, Melbourne, Australia (；Yichao Jin is with School of Automation (School of Artificial Intelligence)；Hangzhou Dianzi University, Hangzhou, China (；University of Munich, Munich, Germany ( | 提出RAG增强的双层认知编排框架，用于低轨卫星网络资源管理。 | [#723](https://github.com/thinson/RS-PaperClaw/issues/723) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Risk-Aware LLM Agents for Geospatial Data Retrieval: Design and Preliminary Adversarial Evaluation | [2606.15077v1](https://arxiv.org/abs/2606.15077v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- RAG技术正从文本处理向卫星网络编排等垂直领域迁移
+- 认知计算与卫星边缘计算的结合成为智能遥感新方向
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260612](./202606/20260612.md)
 ## 📌 今日概况
 
@@ -68,41 +107,6 @@ Powered by OpenClaw🦞
 
 - LLM智能体正从通用问答转向领域专用推理与工具调用
 - 异构数据融合与结构化API交互成为遥感AI新评估焦点
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260610](./202606/20260610.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究聚焦于智能体系统与深度学习在遥感中的应用。多智能体自主构建空间智能基准、稀疏驱动源定位、全球高分辨率土地利用重建、多模态无人机威胁检测、跨模态知识蒸馏及城市热岛AI数据集等方向均有突破，体现了从数据到模型再到应用的全面智能化趋势。
-
-## ✨ 今日亮点
-
-- 多智能体系统自主构建具身空间智能基准
-- 稀疏驱动源定位提升层析感知精度
-- 深度学习实现全球高分辨率土地利用重建
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260610] Embodied-BenchClaw: An Autonomous Multi-Agent System for Embodied Spatial Intelligence Benchmark Construction | Jiang Baoyang, Zhang Fengchun, Wang Leyuan, Li Haotian, Wang Yida, Ji Zhe, Lai Jinshan, Ren Xi, Hu Jianwei, Ma Qiang | QiYuan Lab；School of Information and Software Engineering；University of Electronic Science and Technology of China；Beijing University of Posts and Telecommunications；School of Computer Science and Engineering, Northeastern University；School of Computer Science and Engineering, Beihang University | 提出多智能体自主构建具身空间智能基准的流水线系统 | [#708](https://github.com/thinson/RS-PaperClaw/issues/708) |
-| [20260610] Sparsity-Driven Source Localization in Tomographic Sensing Applications | Mattuschka Marco, Noah An der Lan, Ficks Arne, Max von Danwitz, Popp Alexander | German Aerospace Center (DLR), Institute for the Protection of Terrestrial Infrastructures；Bundeswehr Research Institute for Protective Technologies and CBRN Protection (WIS)；University of the Bundeswehr Munich, Institute for Mathematics and Computer-Based Simulation (IMCS) | 利用稀疏性驱动方法改进层析感知中的源定位 | [#709](https://github.com/thinson/RS-PaperClaw/issues/709) |
-| [20260610] AI4Land: Scalable Deep Learning for Global High-Resolution Land Use Reconstruction | Mozaffari Amirpasha, Castaño Marina, Materia Stefano, Tourigny Etienne, Molina-Sedano Oscar, Varela-Agrelo Jordi, Garcia-Gasulla Dario, Miguel Castrillo Melguizo, Acosta Mario, Duarte Amanda | Earth Science Department, Barcelona Supercomputing Center, Barcelona, 08034, Spain；AI Institute, Barcelona Supercomputing Center, Barcelona, 08034, Spain | 深度学习模型实现全球高分辨率土地利用重建 | [#710](https://github.com/thinson/RS-PaperClaw/issues/710) |
-| [20260610] DroneShield-AI: A Multi-Modal Sensor Fusion Framework for Real-Time Autonomous Drone Threat Detection, Behavioral Intent Classification, and Swarm Intelligence in Contested Airspace | Bayizere Marius | Independent Researcher | 多模态传感器融合框架用于实时无人机威胁检测 | [#711](https://github.com/thinson/RS-PaperClaw/issues/711) |
-| [20260610] FreqKD: Frequency-Decoupled Cross-Modal Knowledge Distillation for Infrared Object Detection | Thaker Keval, Narayanan Venkatraman, Aburaddaha Abdalmalek, Samir A. Rawashdeh | Keval Thaker University of Michigan-Dearborn | 频率解耦跨模态知识蒸馏提升红外目标检测性能 | [#712](https://github.com/thinson/RS-PaperClaw/issues/712) |
-| [20260610] Urban Heat MiniCubes: An AI-Ready dataset for urban heat research | Starfeldt Jonathan, Maria J. Molina, Kerr Alexander, Yang Adam, Thomas R. H. Holmes, Christopher R. Hain | Department of Atmospheric and Oceanic Science, University of；Maryland, College Park, MD, USA；Department of Computer Science, University of Maryland, College；NASA Goddard Space Flight Center, Greenbelt, MD, USA；NASA Marshall Space Flight Center, Huntsville, AL, USA | 发布面向城市热研究的AI就绪遥感数据集 | [#713](https://github.com/thinson/RS-PaperClaw/issues/713) |
-
-## 🔎 观察
-
-- 多智能体与知识蒸馏成为遥感AI系统集成的重要范式
-- 面向特定应用（如城市热、无人机检测）的专用数据集持续涌现
 
 ---
 
