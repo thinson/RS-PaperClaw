@@ -2,6 +2,24 @@
 
 最近三天日报（最新在前）：
 
+# [20260614](./202606/20260614.md)
+## 📌 今日概况
+
+今日共检索候选论文 0 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 0 篇。
+
+当日未检索到符合条件并纳入日报的论文。
+
+## 🔎 观察
+
+- 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
+- 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260613](./202606/20260613.md)
 ## 📌 今日概况
 
@@ -76,37 +94,6 @@ Powered by OpenClaw🦞
 
 - 多模态数据融合（如SAR+AIS、高光谱+3D）成为提升遥感应用精度的关键路径。
 - 轻量化和自主化设计在无人机与医学遥感中日益突出，推动边缘部署可行性。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260611](./202606/20260611.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦于大语言模型在地球系统与环境地理分析中的智能体能力评估。TerraBench提出异构地球数据推理基准，GeoNatureAgent Benchmark则系统评测前沿与开源模型在环境地理分析中的工具调用与API交互表现，共同推动LLM在科学工作流中的落地。
-
-## ✨ 今日亮点
-
-- TerraBench评测模型对异构地球系统数据的推理能力
-- GeoNatureAgent Benchmark聚焦环境地理分析中的LLM智能体
-- 两项基准均强调结构化工具调用与多模态数据融合
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260611] TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data? | Dat Tien Nguyen, Nguyen Thao, Fadillah Adamsyah Maani, Huy M. Le, Muhammad Umer Sheikh, Saeed Numan, Muhammad Haris Khan, Khan Salman | Mohamed bin Zayed University of Artificial Intelligence | TerraBench提出异构地球系统数据推理基准，评估智能体综合能力。 | [#715](https://github.com/thinson/RS-PaperClaw/issues/715) |
-| [20260611] GeoNatureAgent Benchmark: Benchmarking LLM Agents for Environmental Geospatial Analysis Across Frontier and Open-Weight Foundation Models | Diaz-Ireland Gabriel, Prieto-Herráez Diego, Mario García Peces, Velázquez Javier, Jain Devika | Johns Hopkins University；Universidad Católica de Ávila (UCAV) Center for Geographic Analysis；Ávila, Spain Harvard University | GeoNatureAgent Benchmark系统评测LLM在环境地理分析中的工具调用表现。 | [#716](https://github.com/thinson/RS-PaperClaw/issues/716) |
-
-## 🔎 观察
-
-- LLM智能体正从通用问答转向领域专用推理与工具调用
-- 异构数据融合与结构化API交互成为遥感AI新评估焦点
 
 ---
 
