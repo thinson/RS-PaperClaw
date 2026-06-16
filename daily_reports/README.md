@@ -2,6 +2,49 @@
 
 最近三天日报（最新在前）：
 
+# [20260615](./202606/20260615.md)
+## 📌 今日概况
+
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究聚焦多模态融合与精细化解译。FusionRS提出首个大规模RGB-红外双模态视觉语言数据集；WaveDINO利用深度学习实现InSAR大气校正；层级细粒度目标检测与无人机去雾方法分别提升识别精度与图像质量；SAR洪水分割研究对比了CNN与Transformer的可解释性。
+
+## ✨ 今日亮点
+
+- 首个RGB-红外双模态遥感视觉语言数据集发布
+- 深度学习InSAR大气校正方法获GNSS验证
+- 无人机去雾引入几何感知深度展开网络
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260615] FusionRS: A Large-Scale RGB-Infrared Remote Sensing Dataset for Dual-Modal Vision-Language Foundation Models | Han Jiaju, Zhang Ben, Sun Xuemeng, Zhang Qike, Dong Yuxian, Hu Chengyin, Zhang Fengyu, Wei Yiwei, Guo Jiujiang | China University of Petroleum-Beijing at Karamay；University of Electronic Science and Technology of China；Tianjin University；most existing work remains centered on RGB | FusionRS发布大规模RGB-红外双模态遥感数据集，支撑视觉语言模型。 | [#726](https://github.com/thinson/RS-PaperClaw/issues/726) |
+| [20260615] WaveDINO: Learning-Based Atmospheric Correction of Unwrapped InSAR Interferograms Validated by GNSS: Results at Laguna del Maule and Campi Flegrei Volcanoes | Popescu Robert, Biggs Juliet, Zhu Tianyuan, Anantrasirichai Nantheera | the University of Bristol, Bristol, U.K | WaveDINO用深度学习校正InSAR大气相位，经GNSS验证有效。 | [#727](https://github.com/thinson/RS-PaperClaw/issues/727) |
+| [20260615] Hierarchical Fine-Grained Aerial Object Detection | Zhang Yan, Xu Fang, Yang Wen, Xia Gui-Song | the School of Computer Science, Wuhan University, Wuhan, , China；the School of Artificial Intelligence, Wuhan University, Wuhan, , China；the School of Electronic Information, Wuhan University, Wuhan, , China | 层级细粒度检测方法提升遥感目标属性与类别识别精度。 | [#728](https://github.com/thinson/RS-PaperClaw/issues/728) |
+| [20260615] Towards UAV Image Dehazing: A UAV Atmospheric Scattering Model, Benchmark, and Geometry-Aware Deep Unfolding Network | Fang Wenxuan, Weng Jiangwei, Zheng Yu, Fan Junkai, Wang Guangfa, Chen Xiang, Yang Jian, Li Jun | School of Computer Science and Engineering, Nanjing University of Science and Technology | 提出无人机大气散射模型与几何感知深度展开去雾网络。 | [#729](https://github.com/thinson/RS-PaperClaw/issues/729) |
+| [20260615] Explainable Flood Segmentation on Sentinel-1 SAR Imagery: A Comparative Study of CNN and Transformer Architectures | Banerjee Arundhuti, Daou David | United Nations University’s Institute for Environment and Human Security (UNU-EHS) | 对比CNN与Transformer在SAR洪水分割中的可解释性与性能。 | [#730](https://github.com/thinson/RS-PaperClaw/issues/730) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Training-Free Open-Vocabulary Visual Grounding for Remote Sensing Images and Videos | [2606.16124v1](https://arxiv.org/abs/2606.16124v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 双模态视觉语言模型成为遥感基础模型新热点，数据与任务协同推进。
+- 深度学习在InSAR与SAR应用中从分割向物理校正与可解释性延伸。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260614](./202606/20260614.md)
 ## 📌 今日概况
 
@@ -52,48 +95,6 @@ Powered by OpenClaw🦞
 
 - RAG技术正从文本处理向卫星网络编排等垂直领域迁移
 - 认知计算与卫星边缘计算的结合成为智能遥感新方向
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260612](./202606/20260612.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦于多模态数据融合与自主系统优化。NEST3D数据集结合无人机与3D点云，推动生态监测精细化；轻量级高光谱3D重建管道提升医学影像效率；选择性智能恢复框架增强无人机任务持久性；SAR与AIS融合的航向分析方法改善海上监视能力。整体趋势向高分辨率、轻量化与自主化发展。
-
-## ✨ 今日亮点
-
-- 多模态数据集NEST3D推动生态遥感精细化
-- 轻量级高光谱3D重建助力医学影像分析
-- 选择性智能恢复框架增强无人机自主性
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260612] NEST3D: A High-Resolution Multimodal Dataset of Sociable Weaver Tree Nests | Constanza A. Molina Catricheo, Boeder Simon, Guo Ting-Jia, May Giacomo, Berthelot Clément, Tuia Devis, Friedrich Fedor Reinhard, Remondino Fabio, Risse Benjamin | Institute for Geoinformatics (ifgi), University of Münster, Germany；Max Planck Institute of Animal Behavior, Germany；University of Konstanz, Germany | NEST3D提供高分辨率多模态数据集，用于群居织巢鸟巢穴语义分割与3D点云分析。 | [#718](https://github.com/thinson/RS-PaperClaw/issues/718) |
-| [20260612] A Lightweight Fiducial-Based Pipeline for 3D Hyperspectral Mapping of ex-vivo Lumpectomy Specimens | Bicchi Anna, Rota Alberto, Passoni Leonardo, Ancellotti Nicola, Peroni Andrea, Vinco Lorenzo, Polli Dario, Elena De Momi | Authors are with the Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano, Milan, Italy；Authors are with the Department of Physics, Politecnico di Milano, Milan, Italy | 提出基于基准标记的轻量级管道，实现离体肿瘤标本的3D高光谱映射。 | [#719](https://github.com/thinson/RS-PaperClaw/issues/719) |
-| [20260612] Selective Agentic Recovery for UAV Autonomy with a Persistent Mission Runtime | Park Taewoo, Yoo Kyeonghyun, Yoo Seunghyun, Kim Hwangnam | Department of Electrical and Electronic Engineering；Korea University | 选择性智能恢复框架提升无人机在持久任务中的自主运行与安全执行能力。 | [#720](https://github.com/thinson/RS-PaperClaw/issues/720) |
-| [20260612] HARBOR: Heading Analysis and Reconstruction from Behavioral Observation and Radar | Joao P. A. Dantas, Paulo F. Silva Filho, Jelton A. Cunha, Dietzsch Gabriel | Institute for Advanced Studies, São José dos Campos, São Paulo, Brazil, 12.228-001；Researcher, C4ISR Division, Institute for Advanced Studies (IEAv) | HARBOR方法融合SAR与AIS数据，实现海上目标航向分析与重建。 | [#721](https://github.com/thinson/RS-PaperClaw/issues/721) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Spectrum Aware Illumination Estimation Using Multispectral Image | [2606.14248v1](https://arxiv.org/abs/2606.14248v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 多模态数据融合（如SAR+AIS、高光谱+3D）成为提升遥感应用精度的关键路径。
-- 轻量化和自主化设计在无人机与医学遥感中日益突出，推动边缘部署可行性。
 
 ---
 
