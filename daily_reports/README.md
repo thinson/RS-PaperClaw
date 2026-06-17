@@ -2,6 +2,50 @@
 
 最近三天日报（最新在前）：
 
+# [20260616](./202606/20260616.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究聚焦于无人机网络与多源数据融合两大方向。量子LiDAR在相关噪声下展现出双光束优势；深度强化学习被用于无人机空中计算的能量感知调度；数字孪生数据集支持无人机群网络入侵检测。全色锐化引入连续高斯原语表示实现任意尺度融合；SAR-光学异源融合框架用于近实时云污染下土地利用制图；基础模型在多视角卫星影像中验证了几何一致性协议。
+
+## ✨ 今日亮点
+
+- 量子LiDAR双光束态在相关噪声中展现纠缠优势
+- 深度强化学习优化多集群无人机空中计算能耗
+- 连续高斯原语实现任意尺度全色锐化融合
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260616] Twin-beam advantage in quantum LiDAR under correlated noise | Cimini Valeria | Dipartimento di Fisica, Sapienza Università di Roma, Piazzale Aldo Moro 5, I-00185 Roma, Italy | 量子LiDAR利用双光束态在相关噪声下提升联合测距测速精度 | [#732](https://github.com/thinson/RS-PaperClaw/issues/732) |
+| [20260616] Time-Slotted Multi-Cluster UAV AirComp with Energy-Awareness: A Pointer Network-Assisted Soft Actor-Critic Learning Framework | Lan Xunqiang, Tang Xiao, Zhang Ruonan, Du Qinghe, Tony Q. S. Quek | the School of Electronics and Information, Northwestern Polytechnical University, Xi'an , China；the School of Information and Communication Engineering, Xi'an Jiaotong University, Xi'an , China；the Information Systems Technology and Design Pillar, Singapore University of Technology and Design, Singapore , Singapore | 指针网络辅助SAC框架实现多集群无人机能量感知空中计算调度 | [#733](https://github.com/thinson/RS-PaperClaw/issues/733) |
+| [20260616] UAV-CAS: A Calibrated Digital-Twin Dataset for Intrusion Detection in UAV Swarm Networks | Mishra Sripath, Bhargava Bharat, Liu Zizheng, Islam Shafkat | Purdue University Purdue University；Purdue University Purdue University Northwest | UAV-CAS数据集基于数字孪生校准用于无人机群网络入侵检测 | [#734](https://github.com/thinson/RS-PaperClaw/issues/734) |
+| [20260616] GSPan: A Continuous Gaussian Primitive Representation for Arbitrary-Scale Pansharpening | Li Fangyi, Yang Xiaoyuan, Li Yixiao, Sui Zongyang, Shen Kangqing, Vivone Gemine | a Beihang University, School of Mathematical Sciences, Beijing, 102206, China；b Tsinghua University, Department of Automation, Beijing, 100084, China；c National Research Council - Institute of Methodologies for Environmental Analysis, CNR-IMAA, Tito, 85050, Italy | GSPan通过连续高斯原语表示实现任意尺度全色锐化融合 | [#735](https://github.com/thinson/RS-PaperClaw/issues/735) |
+| [20260616] Heterogeneous SAR-optical fusion for near-real-time land use and land cover mapping under cloud contamination: A novel framework and global benchmark dataset | Xu Jiangong, Xue Weibao, Yu Xiaoyu, Pan Jun, Lianga Xinlian, Wang Mi | State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan 430079, China；School of Computer Science and Information Engineering, Hefei University of Technology, Hefei 230009, China；c Hangzhou International Innovation Institute, Beihang University, Hangzhou 311100, China；Oriental Space Port Research Institute, Yantai, 265100, China；Hubei Luojia Laboratory, Wuhan, 430079, China | 异源SAR-光学融合框架及基准数据集用于云污染下近实时土地利用制图 | [#736](https://github.com/thinson/RS-PaperClaw/issues/736) |
+| [20260616] Geometric Consistency Protocol for Foundation Model Features in Multi-View Satellite Imagery | Luo Qiyan, Yang Jie, Pi Yingdong, Wen Lekang, Wang Mi | State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University | 基础模型特征在多视角卫星影像中验证了极线几何一致性协议 | [#737](https://github.com/thinson/RS-PaperClaw/issues/737) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Bridging Spatial And Frequency Views For Disaster Assessment: Benefits And Limitations | [2606.17403v1](https://arxiv.org/abs/2606.17403v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 无人机集群的智能通信与安全防护成为当前研究热点，强化学习与数字孪生技术被广泛采用
+- 多源遥感数据融合正从传统方法向连续表示与基础模型方向演进，强调几何一致性与实时性
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260615](./202606/20260615.md)
 ## 📌 今日概况
 
@@ -56,45 +100,6 @@ Powered by OpenClaw🦞
 
 - 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
 - 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260613](./202606/20260613.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 1 篇。
-
-今日研究聚焦于低轨卫星网络中的智能资源编排问题，提出了一种结合检索增强生成（RAG）的双层认知编排框架。该工作通过引入认知计算与RAG技术，旨在缓解卫星边缘计算中的资源碎片化问题，提升网络编排效率与智能化水平，反映了遥感与卫星通信领域对AI驱动自主决策能力的持续探索。
-
-## ✨ 今日亮点
-
-- 提出RAG增强的双层认知编排框架，应对资源碎片化
-- 聚焦低轨卫星网络中的智能资源管理问题
-- 融合认知计算与检索增强生成技术提升编排效率
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260613] A RAG-Enhanced Bi-Level Cognitive Orchestration Framework for LEO Satellite Networks | Jiang Yuhong, Shen Zhishu, Yin Tong, Zheng Qiushi, Jin Yichao, Mehmeti Fidan, Jin Jiong | Yuhong Jiang, Zhishu Shen, and Tong Yin are with the School；of Computer Science and Artificial Intelligence, Wuhan University of；of Transportation Internet of Things, Wuhan University of Technology；Qiushi Zheng, and Jiong Jin are with the School of Engineering, Swin-；burne University of Technology, Melbourne, Australia (；Yichao Jin is with School of Automation (School of Artificial Intelligence)；Hangzhou Dianzi University, Hangzhou, China (；University of Munich, Munich, Germany ( | 提出RAG增强的双层认知编排框架，用于低轨卫星网络资源管理。 | [#723](https://github.com/thinson/RS-PaperClaw/issues/723) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Risk-Aware LLM Agents for Geospatial Data Retrieval: Design and Preliminary Adversarial Evaluation | [2606.15077v1](https://arxiv.org/abs/2606.15077v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- RAG技术正从文本处理向卫星网络编排等垂直领域迁移
-- 认知计算与卫星边缘计算的结合成为智能遥感新方向
 
 ---
 
