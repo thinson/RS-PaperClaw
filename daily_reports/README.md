@@ -2,6 +2,47 @@
 
 最近三天日报（最新在前）：
 
+# [20260622](./202606/20260622.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦于提升模型对多模态、多分辨率数据的泛化能力。UniverSat提出一种与分辨率和模态无关的Transformer架构，通过自监督学习实现通用地球观测表征。另一工作则关注遥感模型在不同卫星与传感器间的模态迁移与适配问题，提出DeluluNet方法。两项研究共同推动了遥感基础模型的跨场景适应性与实用性。
+
+## ✨ 今日亮点
+
+- 提出分辨率与模态无关的通用遥感Transformer
+- 探索遥感模型在不同卫星传感器间的迁移适配
+- 自监督学习与模态迁移成为今日研究焦点
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260622] UniverSat: Resolution- and Modality-Agnostic Transformers for Earth Observation | Perron Yohann, Astruc Guillaume, Gonthier Nicolas, Mallet Clement, Landrieu Loic | LIGM, Ecole Nationale des Ponts et Chaussées, IP Paris, Univ Gustave Eiffel, CNRS；LASTIG, Univ Gustave Eiffel, IGN, ENSG；IGN；CNES；EFEO | UniverSat提出分辨率与模态无关的Transformer，用于通用地球观测表征。 | [#761](https://github.com/thinson/RS-PaperClaw/issues/761) |
+| [20260622] Changing Modalities: Adapting Remote Sensing Models to New Satellites and Sensors | Tim G. Zhou, Fuller Anthony, Pleiss Geoff, Shelhamer Evan | University of British Columbia；Vector Institute；Carleton University | Changing Modalities研究遥感模型在新卫星与传感器间的模态迁移与适配。 | [#762](https://github.com/thinson/RS-PaperClaw/issues/762) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Hedgementation = Hedgerow Segmentation: A Remote Sensing Benchmark | [2606.23615v1](https://arxiv.org/abs/2606.23615v1) | 质检未通过: 单位为空或无效; Q3 未通过质检 |
+| AI-Empowered UAV-Assisted Backscatter Localization and ISAC for Zero-Energy IoT: A Comprehensive Survey | [2606.23125v1](https://arxiv.org/abs/2606.23125v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 遥感基础模型正从单一传感器向跨模态、跨分辨率通用架构演进。
+- 模态迁移与传感器适配成为提升遥感模型实用性的关键挑战。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260621](./202606/20260621.md)
 ## 📌 今日概况
 
@@ -56,24 +97,6 @@ Powered by OpenClaw🦞
 
 - 注意力机制与知识蒸馏成为提升遥感检测精度的主流技术路径。
 - 多模态数据融合（卫星+街景）在灾害评估中展现应用潜力。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260619](./202606/20260619.md)
-## 📌 今日概况
-
-今日共检索候选论文 0 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 0 篇。
-
-当日未检索到符合条件并纳入日报的论文。
-
-## 🔎 观察
-
-- 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
-- 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
 
 ---
 
