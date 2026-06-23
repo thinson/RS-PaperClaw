@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260620](./202606/20260620.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究聚焦于场景条件植被模拟、红外小目标检测、变化检测、开放词汇语义分割及灾害评估。多篇工作引入注意力机制、知识蒸馏与多智能体流水线，强调模型可解释性与场景适应性，推动遥感分析向精细化与智能化发展。
+
+## ✨ 今日亮点
+
+- 植被模拟引入场景条件地理空间世界模型
+- 红外小目标检测结合去噪与知识蒸馏
+- 开放词汇分割通过提示校准SAM 3
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260620] VegSim: A Geospatial World Model for Scenario-Conditioned Vegetation Simulation | Iele Irene, Elena Mulero Ayllón, Soda Paolo, Tortora Matteo | Università Campus Bio-Medico di Roma Università Campus Bio-Medico di Roma；Umeå University University of Genoa；∗ Also with Università Campus Bio-Medico di Roma | VegSim提出场景条件地理空间模型用于植被动态模拟。 | [#754](https://github.com/thinson/RS-PaperClaw/issues/754) |
+| [20260620] Denoising-Enhanced Coarse-to-Fine Infrared Small Target Detection with Attention Prior-Guided Knowledge Distillation | Fang Houzhang, Huang Ruixuan, Chen Qiuhuan, Wang Xiaolin, Chang Yi, Yan Luxin | Xidian University, Xi’an, China；Huazhong University of Science and Technology, Wuhan, China | 去噪增强的粗到细红外小目标检测结合注意力先验知识蒸馏。 | [#755](https://github.com/thinson/RS-PaperClaw/issues/755) |
+| [20260620] CoSA: Correlation-Guided Change Attention with Learnable Residual Gating for Remote Sensing Change Detection | Omar Abdirashid, Park Jonghyuk | Department of Data Science, Graduate School of Kookmin University | CoSA利用相关引导注意力和可学习残差门控进行遥感变化检测。 | [#756](https://github.com/thinson/RS-PaperClaw/issues/756) |
+| [20260620] Prompt-Calibrated SAM 3 for Open-Vocabulary Remote Sensing Semantic Segmentation | Song Yanghui, Liu Nanqing, Yin Haonan, Gao Yingjie, Yang Chengfu, Ming Qi | the School of Information Science and Technology, Yunnan Normal University, Kunming, China；the School of Computer Science and Engineering, Beihang University, Beijing, China；the College of Computer Science, Beijing University of Technology, Beijing, China | 提示校准SAM 3实现遥感图像开放词汇语义分割。 | [#757](https://github.com/thinson/RS-PaperClaw/issues/757) |
+| [20260620] RAPID: A Reproducible Multi-Agent Pipeline for Interpretable Disaster Damage Assessment from Satellite and Street-View Imagery | Yang Yifan, Gong Wenjing, Zhang Kaili, Zou Lei, Tu Zhengzhong, Li Hao, Li Zongrong, Ye Xinyue | Texas A&M University Texas A&M University Texas A&M University；College Station, Texas, USA College Station, Texas, USA College Station, Texas, USA；Texas A&M University Texas A&M University National University of Singapore；College Station, Texas, USA College Station, Texas, USA Singapore, Singapore；Texas A&M University The University of Alabama；College Station, Texas, USA Tuscaloosa, Alabama, USA | RAPID构建可解释多智能体流水线用于卫星与街景灾害评估。 | [#758](https://github.com/thinson/RS-PaperClaw/issues/758) |
+
+## 🔎 观察
+
+- 注意力机制与知识蒸馏成为提升遥感检测精度的主流技术路径。
+- 多模态数据融合（卫星+街景）在灾害评估中展现应用潜力。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260619](./202606/20260619.md)
 ## 📌 今日概况
 
@@ -52,46 +86,6 @@ Powered by OpenClaw🦞
 
 - 多模态数据集与基准构建成为热点，推动遥感AI从算法创新向数据驱动演进。
 - 无人机相关研究从导航、状态估计到对抗伪装，呈现系统化应用趋势。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260617](./202606/20260617.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 2 篇。
-
-今日遥感研究聚焦于时序分析与变化检测两大方向。一方面，提出ROSA-TFormer模型，融合雷达与光学时序数据，提升树种分类精度；另一方面，利用星载SAR相干性分析进行港口动态监测，展现了SAR在海洋场景中的变化检测能力。
-
-## ✨ 今日亮点
-
-- 雷达-光学时序融合Transformer提升树种分类精度
-- 星载SAR相干分析用于港口动态监测
-- GEE平台支持Sentinel-1/2时序数据高效处理
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260617] ROSA-TFormer: A Radar-Optical Sensor-Aware Temporal Transformer for Pinus sylvestris Plantation Classification in Northern Shaanxi Using GEE-Derived Sentinel-1/2 Time Series | Zhang Nengbo, sheng Chang | Nengbo Zhang and Sheng Chang is with the Key Laboratory of Re-；mote Sensing and Digital Earth, Aerospace Information Research Institute；Chinese Academy of Sciences (AIRCAS), Beijing 100101, China | 提出ROSA-TFormer模型，融合雷达与光学时序数据实现树种分类。 | [#739](https://github.com/thinson/RS-PaperClaw/issues/739) |
-| [20260617] Spaceborne SAR Change Detection and Coherence Analysis for Maritime Port Monitoring | Necati Kagan Erkek, Esmer Kudret | † Telecommunications Engineering, Department of Electronic, Information and Bioengineering | 利用星载SAR相干性分析实现港口区域变化检测。 | [#740](https://github.com/thinson/RS-PaperClaw/issues/740) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| A Unified Framework for Efficient Remote Sensing Visual Question Answering: Adapting Dual, Hybrid, and Encoder-Decoder Architectures | [2606.19277v1](https://arxiv.org/abs/2606.19277v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 时序融合与Transformer架构成为遥感分类任务的主流技术路径。
-- SAR相干性分析在港口监测中展现出高灵敏度变化检测潜力。
 
 ---
 
