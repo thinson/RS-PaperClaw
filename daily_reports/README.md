@@ -5,39 +5,31 @@
 # [20260623](./202606/20260623.md)
 ## 📌 今日概况
 
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 3 篇。
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
 
-今日研究聚焦于遥感数据的高分辨率应用与多源融合。Sentinel-1时间序列被用于矿区高分辨率土壤水分反演；多源生成模型MotifGen解决了卫星图像时空插值问题，应用于热带气旋监测；此外，一种渐进式像素邻域可变形交叉注意力机制被提出，用于提升多光谱目标检测中的可见光-热红外对齐与融合性能。
+今日遥感AI研究聚焦于高分辨率土壤水分反演、多源卫星图像时空插值、多光谱目标检测、树木计数、3D城市生成及洪水制图。SAR与光学数据融合、生成模型及视觉基础模型的应用成为热点，推动遥感在环境监测与城市数字化中的精细化发展。
 
 ## ✨ 今日亮点
 
-- Sentinel-1时间序列实现高分辨率矿区土壤水分反演
-- 生成模型MotifGen解决卫星图像时空插值难题
-- 可变形交叉注意力提升多光谱目标检测对齐精度
+- SAR时间序列实现高分辨率土壤水分反演
+- 生成模型解决卫星图像时空插值难题
+- 视觉基础模型提升RGB洪水制图精度
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260623] High Resolution Sediment-Specific Surface Soil Moisture Retrieval Using Sentinel-1 Time Series and Auxiliary Data | Hamedianfar Alireza, Antropov Oleg, Molinier Matthieu, Salmela Ulla, Kukkula Hanna, Seitsonen Lauri, Liwata-Kenttälä Pauliina, Middleton Maarit | b VTT Technical Research Centre of Finland, Espoo, 02150, Finland | 利用Sentinel-1时间序列与辅助数据实现高分辨率矿区土壤水分反演 | [#764](https://github.com/thinson/RS-PaperClaw/issues/764) |
-| [20260623] MotifGen: Spatiotemporal interpolation of misaligned satellite images via multi-source generative modeling, in an application to tropical cyclones | Dauvilliers Clément, Monteleoni Claire | University of Colorado Boulder, Boulder, CO, USA | MotifGen通过多源生成模型对未对齐卫星图像进行时空插值 | [#765](https://github.com/thinson/RS-PaperClaw/issues/765) |
-| [20260623] Progressive Pixel-Neighborhood Deformable Cross-Attention for Multispectral Object Detection | Qiu Tian, Shen Jifeng, Zuo Xin | a School of Electrical and Information Engineering, Jiangsu University, Zhenjiang, 212013, China；b School of Computer Science and Engineering, Jiangsu University of Science and Technology, Zhenjiang | 渐进式像素邻域可变形交叉注意力用于多光谱目标检测 | [#766](https://github.com/thinson/RS-PaperClaw/issues/766) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Counting Trees from Satellite Imagery with Noisy Supervision | [2606.24786v1](https://arxiv.org/abs/2606.24786v1) | 质检未通过: 单位为空或无效 |
-| Sat2City v2: Native 3D City Asset Generation from a Single Satellite Image | [2606.24138v1](https://arxiv.org/abs/2606.24138v1) | 质检未通过: 单位为空或无效 |
-| Flood Mapping from RGB imagery using a Vision Foundation Model | [2606.24120v1](https://arxiv.org/abs/2606.24120v1) | 质检未通过: 单位为空或无效 |
-
+| [20260623] High Resolution Sediment-Specific Surface Soil Moisture Retrieval Using Sentinel-1 Time Series and Auxiliary Data | Hamedianfar Alireza, Antropov Oleg, Molinier Matthieu, Salmela Ulla, Kukkula Hanna, Seitsonen Lauri, Liwata-Kenttälä Pauliina, Middleton Maarit | b VTT Technical Research Centre of Finland, Espoo, 02150, Finland | 利用Sentinel-1时间序列与辅助数据实现高分辨率沉积物特定地表土壤水分反演。 | [#764](https://github.com/thinson/RS-PaperClaw/issues/764) |
+| [20260623] MotifGen: Spatiotemporal interpolation of misaligned satellite images via multi-source generative modeling, in an application to tropical cyclones | Dauvilliers Clément, Monteleoni Claire | University of Colorado Boulder, Boulder, CO, USA | 提出MotifGen生成模型，用于热带气旋场景下多源卫星图像的时空插值。 | [#765](https://github.com/thinson/RS-PaperClaw/issues/765) |
+| [20260623] Progressive Pixel-Neighborhood Deformable Cross-Attention for Multispectral Object Detection | Qiu Tian, Shen Jifeng, Zuo Xin | a School of Electrical and Information Engineering, Jiangsu University, Zhenjiang, 212013, China；b School of Computer Science and Engineering, Jiangsu University of Science and Technology, Zhenjiang | 渐进式像素邻域可变形交叉注意力机制提升多光谱目标检测性能。 | [#766](https://github.com/thinson/RS-PaperClaw/issues/766) |
+| [20260623] Counting Trees from Satellite Imagery with Noisy Supervision | Gominski Dimitri, Mugabowindekwe Maurice, Xu Qiue, Tong Xiaowei, Brandt Martin, Le Hieu, Fensholt Rasmus, Samaras Dimitris, Landrieu Loic | University of Copenhagen；University of Rwanda；University of Chinese Academy of Sciences；University of North Carolina at Charlotte；Stony Brook University；LIGM, CNRS, Univ Gustave Eiffel, ENPC, IPP | 基于噪声监督与不平衡最优传输实现卫星图像树木计数与密度估计。 | [#768](https://github.com/thinson/RS-PaperClaw/issues/768) |
+| [20260623] Sat2City v2: Native 3D City Asset Generation from a Single Satellite Image | Hua Tongyan, Wu Dongli, Zhu Jinjing, Ren Yinrui, Hong Zhongcheng, Chen Ying-Cong, Xiong Hui, Zhao Wufan | The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China；The Chinese University of Hong Kong, Hong Kong SAR, China；Auckland University of Technology, Auckland, New Zealand；the Department of Computer Science and Engineering, The Hong Kong University of Science and Technology, Hong Kong SAR, China | Sat2City v2从单张卫星图像生成原生3D城市资产与纹理网格。 | [#769](https://github.com/thinson/RS-PaperClaw/issues/769) |
+| [20260623] Flood Mapping from RGB imagery using a Vision Foundation Model | Polushko Vladyslav, Bucher Tilman, Rösch Ronald, März Thomas, Rauhut Markus, Weinmann Andreas | ∗ Image Processing Department, Fraunhofer ITWM, Kaiserslautern, Germany；‡ Institut für Optische Sensorsysteme, DLR, Berlin, Germany；§ ACIDA Lab, THWS Würzburg-Schweinfurt, Schweinfurt, Germany | 利用视觉基础模型对RGB图像进行洪水制图与水体分割。 | [#770](https://github.com/thinson/RS-PaperClaw/issues/770) |
 
 ## 🔎 观察
 
-- SAR与光学数据融合仍是高分辨率地表参数反演的主流方向
-- 生成模型在遥感时空插值中的应用正从理论走向实际任务
+- 多模态数据融合（SAR+光学、可见光+热红外）仍是提升遥感应用精度的核心方向。
+- 生成模型与视觉基础模型正加速从通用场景向灾害监测、城市建模等专用任务渗透。
 
 ---
 
