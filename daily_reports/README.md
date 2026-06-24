@@ -2,6 +2,49 @@
 
 最近三天日报（最新在前）：
 
+# [20260623](./202606/20260623.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 3 篇。
+
+今日研究聚焦于遥感数据的高分辨率应用与多源融合。Sentinel-1时间序列被用于矿区高分辨率土壤水分反演；多源生成模型MotifGen解决了卫星图像时空插值问题，应用于热带气旋监测；此外，一种渐进式像素邻域可变形交叉注意力机制被提出，用于提升多光谱目标检测中的可见光-热红外对齐与融合性能。
+
+## ✨ 今日亮点
+
+- Sentinel-1时间序列实现高分辨率矿区土壤水分反演
+- 生成模型MotifGen解决卫星图像时空插值难题
+- 可变形交叉注意力提升多光谱目标检测对齐精度
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260623] High Resolution Sediment-Specific Surface Soil Moisture Retrieval Using Sentinel-1 Time Series and Auxiliary Data | Hamedianfar Alireza, Antropov Oleg, Molinier Matthieu, Salmela Ulla, Kukkula Hanna, Seitsonen Lauri, Liwata-Kenttälä Pauliina, Middleton Maarit | b VTT Technical Research Centre of Finland, Espoo, 02150, Finland | 利用Sentinel-1时间序列与辅助数据实现高分辨率矿区土壤水分反演 | [#764](https://github.com/thinson/RS-PaperClaw/issues/764) |
+| [20260623] MotifGen: Spatiotemporal interpolation of misaligned satellite images via multi-source generative modeling, in an application to tropical cyclones | Dauvilliers Clément, Monteleoni Claire | University of Colorado Boulder, Boulder, CO, USA | MotifGen通过多源生成模型对未对齐卫星图像进行时空插值 | [#765](https://github.com/thinson/RS-PaperClaw/issues/765) |
+| [20260623] Progressive Pixel-Neighborhood Deformable Cross-Attention for Multispectral Object Detection | Qiu Tian, Shen Jifeng, Zuo Xin | a School of Electrical and Information Engineering, Jiangsu University, Zhenjiang, 212013, China；b School of Computer Science and Engineering, Jiangsu University of Science and Technology, Zhenjiang | 渐进式像素邻域可变形交叉注意力用于多光谱目标检测 | [#766](https://github.com/thinson/RS-PaperClaw/issues/766) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Counting Trees from Satellite Imagery with Noisy Supervision | [2606.24786v1](https://arxiv.org/abs/2606.24786v1) | 质检未通过: 单位为空或无效 |
+| Sat2City v2: Native 3D City Asset Generation from a Single Satellite Image | [2606.24138v1](https://arxiv.org/abs/2606.24138v1) | 质检未通过: 单位为空或无效 |
+| Flood Mapping from RGB imagery using a Vision Foundation Model | [2606.24120v1](https://arxiv.org/abs/2606.24120v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- SAR与光学数据融合仍是高分辨率地表参数反演的主流方向
+- 生成模型在遥感时空插值中的应用正从理论走向实际任务
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260622](./202606/20260622.md)
 ## 📌 今日概况
 
@@ -63,40 +106,6 @@ Powered by OpenClaw🦞
 
 - 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
 - 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260620](./202606/20260620.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究聚焦于场景条件植被模拟、红外小目标检测、变化检测、开放词汇语义分割及灾害评估。多篇工作引入注意力机制、知识蒸馏与多智能体流水线，强调模型可解释性与场景适应性，推动遥感分析向精细化与智能化发展。
-
-## ✨ 今日亮点
-
-- 植被模拟引入场景条件地理空间世界模型
-- 红外小目标检测结合去噪与知识蒸馏
-- 开放词汇分割通过提示校准SAM 3
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260620] VegSim: A Geospatial World Model for Scenario-Conditioned Vegetation Simulation | Iele Irene, Elena Mulero Ayllón, Soda Paolo, Tortora Matteo | Università Campus Bio-Medico di Roma Università Campus Bio-Medico di Roma；Umeå University University of Genoa；∗ Also with Università Campus Bio-Medico di Roma | VegSim提出场景条件地理空间模型用于植被动态模拟。 | [#754](https://github.com/thinson/RS-PaperClaw/issues/754) |
-| [20260620] Denoising-Enhanced Coarse-to-Fine Infrared Small Target Detection with Attention Prior-Guided Knowledge Distillation | Fang Houzhang, Huang Ruixuan, Chen Qiuhuan, Wang Xiaolin, Chang Yi, Yan Luxin | Xidian University, Xi’an, China；Huazhong University of Science and Technology, Wuhan, China | 去噪增强的粗到细红外小目标检测结合注意力先验知识蒸馏。 | [#755](https://github.com/thinson/RS-PaperClaw/issues/755) |
-| [20260620] CoSA: Correlation-Guided Change Attention with Learnable Residual Gating for Remote Sensing Change Detection | Omar Abdirashid, Park Jonghyuk | Department of Data Science, Graduate School of Kookmin University | CoSA利用相关引导注意力和可学习残差门控进行遥感变化检测。 | [#756](https://github.com/thinson/RS-PaperClaw/issues/756) |
-| [20260620] Prompt-Calibrated SAM 3 for Open-Vocabulary Remote Sensing Semantic Segmentation | Song Yanghui, Liu Nanqing, Yin Haonan, Gao Yingjie, Yang Chengfu, Ming Qi | the School of Information Science and Technology, Yunnan Normal University, Kunming, China；the School of Computer Science and Engineering, Beihang University, Beijing, China；the College of Computer Science, Beijing University of Technology, Beijing, China | 提示校准SAM 3实现遥感图像开放词汇语义分割。 | [#757](https://github.com/thinson/RS-PaperClaw/issues/757) |
-| [20260620] RAPID: A Reproducible Multi-Agent Pipeline for Interpretable Disaster Damage Assessment from Satellite and Street-View Imagery | Yang Yifan, Gong Wenjing, Zhang Kaili, Zou Lei, Tu Zhengzhong, Li Hao, Li Zongrong, Ye Xinyue | Texas A&M University Texas A&M University Texas A&M University；College Station, Texas, USA College Station, Texas, USA College Station, Texas, USA；Texas A&M University Texas A&M University National University of Singapore；College Station, Texas, USA College Station, Texas, USA Singapore, Singapore；Texas A&M University The University of Alabama；College Station, Texas, USA Tuscaloosa, Alabama, USA | RAPID构建可解释多智能体流水线用于卫星与街景灾害评估。 | [#758](https://github.com/thinson/RS-PaperClaw/issues/758) |
-
-## 🔎 观察
-
-- 注意力机制与知识蒸馏成为提升遥感检测精度的主流技术路径。
-- 多模态数据融合（卫星+街景）在灾害评估中展现应用潜力。
 
 ---
 
