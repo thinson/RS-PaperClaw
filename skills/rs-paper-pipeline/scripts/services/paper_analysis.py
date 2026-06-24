@@ -11,8 +11,47 @@ from clients.llm_client import call_llm, load_prompt
 
 
 def has_bad_placeholder(text: str) -> bool:
-    bad = ["待提取", "未知", "Unknown", "分析中", "N/A"]
-    return any(keyword in (text or "") for keyword in bad)
+    normalized = re.sub(r"\s+", " ", text or "").strip()
+    if not normalized:
+        return False
+
+    def compact_value(value: str) -> str:
+        return re.sub(r"[\s:：,，。.!！?？;；()（）\[\]【】\"'`]+", "", value).casefold()
+
+    exact_placeholders = {
+        "-",
+        "--",
+        "待提取",
+        "未知",
+        "分析中",
+        "暂无",
+        "无",
+        "未提供",
+        "未说明",
+        "unknown",
+        "n/a",
+        "na",
+        "none",
+        "null",
+        "notprovided",
+        "notavailable",
+        "notspecified",
+        "notmentioned",
+    }
+    compact = compact_value(normalized)
+    if compact in exact_placeholders:
+        return True
+
+    field_prefix = re.match(
+        r"(?i)^(?:title|author|authors|institution|institutions|affiliation|abstract|date|info|information)"
+        r"\s*(?:is|are|:|：)?\s*(.+)$",
+        normalized,
+    )
+    if field_prefix and compact_value(field_prefix.group(1)) in exact_placeholders:
+        return True
+
+    zh_prefix = re.match(r"^(?:标题|作者|单位|机构|摘要|日期|信息)\s*(?:[:：]|为|是)?\s*(.+)$", normalized)
+    return bool(zh_prefix and compact_value(zh_prefix.group(1)) in exact_placeholders)
 
 
 def dedupe_bullets(text: str) -> str:
