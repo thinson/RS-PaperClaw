@@ -5,26 +5,29 @@
 # [20260624](./202606/20260624.md)
 ## 📌 今日概况
 
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 0 篇。
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
 
-当日筛中论文均未通过处理或质检，未纳入日报。
+今日遥感AI研究聚焦于基础模型与高效架构的融合。一方面，大规模数据集LEVIRDet与变化描述基准C3-Bench的提出，推动了通用检测与上下文感知评估的发展；另一方面，状态空间模型（SSM）在遥感中的综述及其在实例分割中的线性时间蒸馏应用，展现了处理长程依赖与多模态数据的新范式。整体趋势向大规模、高效、上下文感知方向演进。
 
+## ✨ 今日亮点
 
-## ⚠️ 未纳入日报的匹配论文
+- LEVIRDet发布百万级159类遥感检测数据集与基础模型
+- C3-Bench提出上下文感知变化描述评估框架
+- SSM综述及线性时间蒸馏用于遥感实例分割
 
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+## 🗂 今日文章列表
 
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| C3-Bench: A Context-Aware Change Captioning Benchmark | [2606.25445v1](https://arxiv.org/abs/2606.25445v1) | 质检未通过: 单位为空或无效 |
-| State Space Models Meet Remote Sensing: A Survey | [2606.25329v1](https://arxiv.org/abs/2606.25329v1) | 质检未通过: 单位为空或无效 |
-| Efficient Remote Sensing Instance Segmentation with Linear-Time State Space Distilled Visual Foundation Models | [2606.25324v1](https://arxiv.org/abs/2606.25324v1) | 质检未通过: 单位为空或无效 |
-| LEVIRDet: A Million-Scale 159-Category Dataset and Foundation Model for Universal Remote Sensing Object Detection | [2606.25312v1](https://arxiv.org/abs/2606.25312v1) | 质检未通过: 单位为空或无效 |
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260624] C3-Bench: A Context-Aware Change Captioning Benchmark | Kim Jae-Woo, Kim Hyeongbeom, Kim Ue-Hwan | Gwangju Institute of Science and Technology, Gwangju, Republic of Korea；GIST InnoCORE AI-Nano Convergence Institute for Early Detection of Neurodegenerative Diseases, Gwangju Institute of Science and Technology | C3-Bench提出上下文感知变化描述基准，采用LLM-as-Judge评估。 | [#772](https://github.com/thinson/RS-PaperClaw/issues/772) |
+| [20260624] State Space Models Meet Remote Sensing: A Survey | Yang Qinzhe, Liu Chenyang, Xu Jia, Shi Zhenwei, Zou Zhengxia | Shen Yuan Honors College, Beihang University, Beijing 100191, China；Department of Aerospace Intelligent Science and Technology, School of Astronautics, Beihang University, Beijing 100191, China；State Key Laboratory of Virtual Reality Technology and Systems, Beihang University, Beijing 100191, China；Qian Xuesen Laboratory of Space Technology, China Academy of Space Technology, Beijing 100094, China | 综述探讨状态空间模型在遥感长程依赖与多模态数据中的应用。 | [#773](https://github.com/thinson/RS-PaperClaw/issues/773) |
+| [20260624] Efficient Remote Sensing Instance Segmentation with Linear-Time State Space Distilled Visual Foundation Models | Yang Qinzhe, Chen Keyan, Xu Jia, Shi Zhenwei, Zou Zhengxia | Shen Yuan Honors College, Beihang University, Beijing, China；Department of Aerospace Intelligent Science and Technology, School of Astronautics；State Key Laboratory of Virtual Reality Technology and Systems, Beihang University, Beijing, China；Qian Xuesen Laboratory of Space Technology, China Academy of Space Technology, Beijing, China | 线性时间状态空间蒸馏视觉基础模型实现高效遥感实例分割。 | [#774](https://github.com/thinson/RS-PaperClaw/issues/774) |
+| [20260624] LEVIRDet: A Million-Scale 159-Category Dataset and Foundation Model for Universal Remote Sensing Object Detection | Yang Qinzhe, Wang Dongyu, Niu Haohan, Xu Jia, Shi Zhenwei, Zou Zhengxia | Shen Yuan Honors College, Beihang University, Beijing, China；Department of Aerospace Intelligent Science and Technology, School of Astronautics；State Key Laboratory of Virtual Reality Technology and Systems, Beihang University, Beijing, China；Qian Xuesen Laboratory of Space Technology, China Academy of Space Technology, Beijing, China | LEVIRDet提供百万级159类数据集，推动通用遥感目标检测。 | [#775](https://github.com/thinson/RS-PaperClaw/issues/775) |
 
 ## 🔎 观察
 
-- 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
-- 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
+- 状态空间模型正成为遥感长程依赖建模的新主流架构。
+- 大规模数据集与基础模型结合，加速遥感通用检测落地。
 
 ---
 
