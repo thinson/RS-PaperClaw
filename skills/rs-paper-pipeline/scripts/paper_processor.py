@@ -41,6 +41,10 @@ def log_step(step: str, status: str, reason: str = ""):
         msg += f" | {reason}"
     print(msg)
 
+
+def _institution_count(text: str) -> int:
+    return len([chunk for chunk in re.split(r"[；;]", text or "") if chunk.strip()])
+
 def handle_figures(arxiv_id: str, pdf_path: Path, repo=None) -> list:
     """将 PDF 前三页转 JPG 并上传，返回已上传页码列表"""
     arxiv_dir = FIGURES_DIR / arxiv_id
@@ -137,11 +141,18 @@ def process_paper(arxiv_id: str, issue_number: int | None = None, dry_run: bool 
     log_step("STEP-1", "OK", f"recovered_title={info['title'][:40]} | recovered_authors={info['authors'][:30]}")
 
     pdf_institutions = extract_institutions_from_first_page(info["title"], info["authors"], first_page_text)
-    if is_valid_institution_text(pdf_institutions):
-        info["institutions"] = pdf_institutions
-    elif not is_valid_institution_text(info.get("institutions", "")):
+    source_institutions = ""
+    if not is_valid_institution_text(info.get("institutions", "")):
         source_path = download_source(arxiv_id)
-        info["institutions"] = extract_institutions_from_latex_source(source_path)
+        source_institutions = extract_institutions_from_latex_source(source_path)
+
+    if is_valid_institution_text(source_institutions) and (
+        not is_valid_institution_text(pdf_institutions)
+        or _institution_count(source_institutions) >= _institution_count(pdf_institutions)
+    ):
+        info["institutions"] = source_institutions
+    elif is_valid_institution_text(pdf_institutions):
+        info["institutions"] = pdf_institutions
     log_step("STEP-1", "OK", f"institutions={info['institutions'][:60] if info['institutions'] else 'EMPTY'}")
 
     # 1.3 处理图片（PDF前三页转JPG并上传）

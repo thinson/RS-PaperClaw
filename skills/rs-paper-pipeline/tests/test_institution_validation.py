@@ -190,6 +190,108 @@ class InstitutionValidationTest(unittest.TestCase):
             "Ocean University of China；Peking University；Monash University",
         )
 
+    def test_extracts_science_china_address_affiliations_from_source(self):
+        tex = r"""
+        \author[1]{Qinzhe YANG}{}
+        \author[1,2,3]{Chenyang LIU}{}
+        \author[4]{Jia XU}{}
+        \address[1]{Shen Yuan Honors College, Beihang University, Beijing {\rm 100191}, China}
+        \address[2]{Department of Aerospace Intelligent Science and Technology, School of Astronautics, Beihang University, Beijing {\rm 100191}, China}
+        \address[3]{State Key Laboratory of Virtual Reality Technology and Systems, Beihang University, Beijing {\rm 100191}, China}
+        \address[4]{Qian Xuesen Laboratory of Space Technology, China Academy of Space Technology, Beijing {\rm 100094}, China}
+        """
+        with tempfile.TemporaryDirectory() as temp_dir:
+            source_path = Path(temp_dir) / "source.tar"
+            tex_path = Path(temp_dir) / "paper.tex"
+            tex_path.write_text(tex, encoding="utf-8")
+            with tarfile.open(source_path, "w") as archive:
+                archive.add(tex_path, arcname="SCIS-2021-1065.tex")
+
+            institutions = extract_institutions_from_latex_source(source_path)
+
+        self.assertIn("Shen Yuan Honors College, Beihang University", institutions)
+        self.assertIn("Qian Xuesen Laboratory of Space Technology", institutions)
+        self.assertTrue(is_valid_institution_text(institutions))
+
+    def test_extracts_springer_institute_and_skips_project_page(self):
+        tex = r"""
+        \institute{ \textsuperscript{1}Gwangju Institute of Science
+        and Technology, Gwangju, Republic of Korea\\
+        \textsuperscript{2}GIST InnoCORE AI-Nano Convergence Institute for Early Detection of Neurode-
+        generative Diseases, Gwangju Institute of Science and Technology, 61005 Gwangju, Republic of Korea \\
+        \email{kjw01124@gm.gist.ac.kr, hbk08101@gm.gist.ac.kr, uehwan@gist.ac.kr} \\[0.2em]
+        \small\textbf{Project Page:} \texttt{\url{https://github.com/AutoCompSysLab/C3-Bench}}}
+        """
+        with tempfile.TemporaryDirectory() as temp_dir:
+            source_path = Path(temp_dir) / "source.tar"
+            tex_path = Path(temp_dir) / "main.tex"
+            tex_path.write_text(tex, encoding="utf-8")
+            with tarfile.open(source_path, "w") as archive:
+                archive.add(tex_path, arcname="main.tex")
+
+            institutions = extract_institutions_from_latex_source(source_path)
+
+        self.assertIn("Gwangju Institute of Science and Technology", institutions)
+        self.assertIn("GIST InnoCORE AI-Nano Convergence Institute", institutions)
+        self.assertNotIn("Project Page", institutions)
+        self.assertNotIn("github", institutions)
+        self.assertTrue(is_valid_institution_text(institutions))
+
+    def test_extracts_ieee_thanks_without_contribution_note(self):
+        tex = r"""
+        \thanks{The work was supported by the National Natural Science Foundation of China under Grant 62125102.}
+        \thanks{Qinzhe Yang is with Shen Yuan Honors College, Beihang University, Beijing 100191, China.
+        Keyan Chen, Zhenwei Shi, and Zhengxia Zou are with the Department of Aerospace Intelligent Science and Technology, School of Astronautics, and with the State Key Laboratory of Virtual Reality Technology and Systems, Beihang University, Beijing 100191, China.
+        Jia Xu is with the Qian Xuesen
+        Laboratory of Space Technology, China Academy of Space Technology,
+        Beijing 100094, China. $^\dag$ These authors contributed equally to this paper.}
+        """
+        with tempfile.TemporaryDirectory() as temp_dir:
+            source_path = Path(temp_dir) / "source.tar"
+            tex_path = Path(temp_dir) / "main.tex"
+            tex_path.write_text(tex, encoding="utf-8")
+            with tarfile.open(source_path, "w") as archive:
+                archive.add(tex_path, arcname="main.tex")
+
+            institutions = extract_institutions_from_latex_source(source_path)
+
+        self.assertIn("Shen Yuan Honors College, Beihang University", institutions)
+        self.assertIn("Department of Aerospace Intelligent Science and Technology", institutions)
+        self.assertIn("State Key Laboratory of Virtual Reality Technology and Systems", institutions)
+        self.assertIn("Qian Xuesen Laboratory of Space Technology", institutions)
+        self.assertNotIn("contributed", institutions)
+        self.assertNotIn("supported", institutions)
+        self.assertTrue(is_valid_institution_text(institutions))
+
+    def test_extracts_ieee_compsoc_itemized_thanks(self):
+        tex = r"""
+        \author{Qinzhe~Yang, Dongyu~Wang, Haohan~Niu,~Jia~Xu,\\Zhenwei~Shi, and~Zhengxia~Zou
+        \IEEEcompsocitemizethanks{
+        \IEEEcompsocthanksitem Qinzhe Yang and Haohan Niu are with Shen Yuan Honors College, Beihang University, Beijing 100191, China.
+        \IEEEcompsocthanksitem Dongyu Wang, Zhenwei Shi, and Zhengxia Zou are with the Department of Aerospace Intelligent Science and Technology, School of Astronautics, and with the State Key Laboratory of Virtual Reality Technology and Systems, Beihang University, Beijing 100191, China.
+        \IEEEcompsocthanksitem Jia Xu is with the Qian Xuesen
+        Laboratory of Space Technology, China Academy of Space Technology,
+        Beijing 100094, China.
+        \IEEEcompsocthanksitem The work was supported by the National Natural Science Foundation of China.
+        }}
+        """
+        with tempfile.TemporaryDirectory() as temp_dir:
+            source_path = Path(temp_dir) / "source.tar"
+            tex_path = Path(temp_dir) / "main.tex"
+            tex_path.write_text(tex, encoding="utf-8")
+            with tarfile.open(source_path, "w") as archive:
+                archive.add(tex_path, arcname="main.tex")
+
+            institutions = extract_institutions_from_latex_source(source_path)
+
+        self.assertIn("Shen Yuan Honors College, Beihang University", institutions)
+        self.assertIn("Department of Aerospace Intelligent Science and Technology", institutions)
+        self.assertIn("State Key Laboratory of Virtual Reality Technology and Systems", institutions)
+        self.assertIn("Qian Xuesen Laboratory of Space Technology", institutions)
+        self.assertNotIn("Qinzhe Yang", institutions)
+        self.assertNotIn("supported", institutions)
+        self.assertTrue(is_valid_institution_text(institutions))
+
 
 if __name__ == "__main__":
     unittest.main()
