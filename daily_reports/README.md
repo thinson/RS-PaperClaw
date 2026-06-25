@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260624](./202606/20260624.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 0 篇。
+
+当日筛中论文均未通过处理或质检，未纳入日报。
+
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| C3-Bench: A Context-Aware Change Captioning Benchmark | [2606.25445v1](https://arxiv.org/abs/2606.25445v1) | 质检未通过: 单位为空或无效 |
+| State Space Models Meet Remote Sensing: A Survey | [2606.25329v1](https://arxiv.org/abs/2606.25329v1) | 质检未通过: 单位为空或无效 |
+| Efficient Remote Sensing Instance Segmentation with Linear-Time State Space Distilled Visual Foundation Models | [2606.25324v1](https://arxiv.org/abs/2606.25324v1) | 质检未通过: 单位为空或无效 |
+| LEVIRDet: A Million-Scale 159-Category Dataset and Foundation Model for Universal Remote Sensing Object Detection | [2606.25312v1](https://arxiv.org/abs/2606.25312v1) | 质检未通过: 单位为空或无效 |
+
+## 🔎 观察
+
+- 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
+- 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260623](./202606/20260623.md)
 ## 📌 今日概况
 
@@ -71,33 +101,6 @@ Powered by OpenClaw🦞
 
 - 遥感基础模型正从单一传感器向跨模态、跨分辨率通用架构演进。
 - 模态迁移与传感器适配成为提升遥感模型实用性的关键挑战。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260621](./202606/20260621.md)
-## 📌 今日概况
-
-今日共检索候选论文 1 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 0 篇。
-
-当日筛中论文均未通过处理或质检，未纳入日报。
-
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Semantic-Aware Autonomous Exploration for UAVs in Unknown Indoor Environments | [2606.22670v1](https://arxiv.org/abs/2606.22670v1) | 质检未通过: 标题为空或无效; Q1 未通过质检 |
-
-## 🔎 观察
-
-- 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
-- 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
 
 ---
 
