@@ -2,6 +2,45 @@
 
 最近三天日报（最新在前）：
 
+# [20260625](./202606/20260625.md)
+## 📌 今日概况
+
+今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 10 篇。
+
+今日研究聚焦于遥感智能解译与无人机系统两大方向。世界模型与视频扩散Transformer被用于概率性地球观测预报；高斯泼溅结合生成式精炼提升了卫星三维重建保真度。无人机领域涌现了野火视觉问答基准、安全通信、多会话建图及海空网络预测波束追踪等应用。此外，轻量化语义传输与对抗性数据增强也受到关注。
+
+## ✨ 今日亮点
+
+- 世界模型与扩散Transformer结合，提升地球观测概率预报能力
+- 高斯泼溅生成式精炼，实现高保真卫星三维重建
+- 无人机野火VQA基准及安全通信测试床推动实用化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260625] EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting | Luo Junwei, Yuan Shuai, Yang Zhenya, Li Yansheng, Liu Zhe, Zhao Hengshuang | University of Hong Kong；Wuhan University | 提出物理信息世界模型EO-WM，用于概率性地球观测预报 | [#776](https://github.com/thinson/RS-PaperClaw/issues/776) |
+| [20260625] SatSplatDiff: Geometry-preserving generative refinement for high-fidelity satellite Gaussian Splatting | Kim Jiyong, Song Shuang, Qin Ronjgun | Department of Civil, Environmental and Geodetic Engineering, The Ohio State University；Department of Electrical and Computer Engineering, The Ohio State University | SatSplatDiff通过生成式精炼保持几何结构，提升卫星高斯泼溅质量 | [#777](https://github.com/thinson/RS-PaperClaw/issues/777) |
+| [20260625] FlameVQA: A Physically-Grounded UAV Wildfire VQA Benchmark with Radiometric Thermal Supervision | Habibpour Mobin, Spodnik John, Niloufar Alipour Talemi, Afghah Fatemeh | Clemson University | FlameVQA构建基于辐射热成像的无人机野火视觉问答基准 | [#778](https://github.com/thinson/RS-PaperClaw/issues/778) |
+| [20260625] Design and Performance Evaluation of Secure RF and WiFi-Based Communication in Drone Swarms via Testbed Implementation | Dixit Bhavya, Rajgor Aayushi, Kumar Subham, Patil Rushikesh, A. Ananthapadmanabhan, Gaurav S. Kasbekar, Maity Arnab | Department of Electrical Engineering, Indian Institute of Technology (IIT) Bombay, Mumbai, Maharashtra, India；Department of Aerospace Engineering, IIT Bombay | 设计并实测了基于RF和WiFi的无人机蜂群安全通信方案 | [#779](https://github.com/thinson/RS-PaperClaw/issues/779) |
+| [20260625] On-board Remote-Sensing Foundation Models for Unsupervised Change Detection of Disaster Events | Ramírez-Gallego S. | Thales Alenia Space Spain | 利用遥感基础模型在轨实现无监督灾害变化检测 | [#780](https://github.com/thinson/RS-PaperClaw/issues/780) |
+| [20260625] UAV-MapFusion: RTK-Aligned Uncertainty-Aware Coarse-to-Fine Multi-Session UAV Mapping | Pan Feng, Zheng Chunran, Xue Bing, Cui Yukang, Wen Jiayu, Chen Zhiyu, Wang Wei | College of Automation, Harbin Engineering University, Harbin, China. (；Department of Mechanical Engineering, University of Hong Kong, Hong Kong SAR, China. (；College of Mechatronics and Control Engineering, Shenzhen University, Shenzhen, China. ( | UAV-MapFusion融合RTK与不确定性，实现多会话无人机建图 | [#781](https://github.com/thinson/RS-PaperClaw/issues/781) |
+| [20260625] Learning Adversarial Augmentation Policies for Robust Garlic Seedling Detection | Lee Soeun, Kim Chanho, Kang Yeji, Hong YoungKi, Kang Byeongkeun | School of Electrical and Electronics Engineering, Chung-Ang University；Department of Agricultural Engineering, National Institute of Agricultural Sciences | 学习对抗性增强策略，提升大蒜幼苗检测的鲁棒性 | [#782](https://github.com/thinson/RS-PaperClaw/issues/782) |
+| [20260625] Calibrated Harmonic Overlaid Implicit Neural Representations for Multi-Dimensional Data | Chen Honghang, Zhang Xiujun, Sun Xiaoli, Xiao Mingqing | Shenzhen University, Shenzhen, China；Shenzhen Polytechnic University, Shenzhen, China；Southern Illinois University Carbondale, USA | 提出校准谐波叠加隐式神经表示，处理多维数据频谱偏差 | [#783](https://github.com/thinson/RS-PaperClaw/issues/783) |
+| [20260625] ISAC for Sea-Air Networks: Predictive Beam Tracking under Sea Induced Disturbances | Zhang Rui, Dong Fuwang, Wang Wei, Du Zhen | College of Intelligent Systems Science and Engineering, Harbin Engineering Univer- sity, Harbin, China (；School of Electronic and Information Engineering, Nanjing University of Information Science and Technology, Nanjing, applied the integrated sensing and communication (ISAC) China ( | 面向海空网络的ISAC系统，实现海况扰动下预测波束追踪 | [#784](https://github.com/thinson/RS-PaperClaw/issues/784) |
+| [20260625] SpaceRipple: Lightweight Semantic Delivery for Mission-Oriented LEO Earth Observation Satellite Networks | Yang Ziyi, Yuan Hao, Yi Yunxiang, Wang Wenbo, Zhang Xing | Beijing University of Posts and Telecommunications | SpaceRipple实现面向任务的轻量化语义传输，用于LEO卫星网络 | [#785](https://github.com/thinson/RS-PaperClaw/issues/785) |
+
+## 🔎 观察
+
+- 世界模型与生成式AI正从图像生成向物理约束的遥感预报演进
+- 无人机遥感研究从单机感知向蜂群通信、多会话建图等系统级问题深化
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260624](./202606/20260624.md)
 ## 📌 今日概况
 
@@ -63,47 +102,6 @@ Powered by OpenClaw🦞
 
 - 多模态数据融合（SAR+光学、可见光+热红外）仍是提升遥感应用精度的核心方向。
 - 生成模型与视觉基础模型正加速从通用场景向灾害监测、城市建模等专用任务渗透。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260622](./202606/20260622.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦于提升模型对多模态、多分辨率数据的泛化能力。UniverSat提出一种与分辨率和模态无关的Transformer架构，通过自监督学习实现通用地球观测表征。另一工作则关注遥感模型在不同卫星与传感器间的模态迁移与适配问题，提出DeluluNet方法。两项研究共同推动了遥感基础模型的跨场景适应性与实用性。
-
-## ✨ 今日亮点
-
-- 提出分辨率与模态无关的通用遥感Transformer
-- 探索遥感模型在不同卫星传感器间的迁移适配
-- 自监督学习与模态迁移成为今日研究焦点
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260622] UniverSat: Resolution- and Modality-Agnostic Transformers for Earth Observation | Perron Yohann, Astruc Guillaume, Gonthier Nicolas, Mallet Clement, Landrieu Loic | LIGM, Ecole Nationale des Ponts et Chaussées, IP Paris, Univ Gustave Eiffel, CNRS；LASTIG, Univ Gustave Eiffel, IGN, ENSG；IGN；CNES；EFEO | UniverSat提出分辨率与模态无关的Transformer，用于通用地球观测表征。 | [#761](https://github.com/thinson/RS-PaperClaw/issues/761) |
-| [20260622] Changing Modalities: Adapting Remote Sensing Models to New Satellites and Sensors | Tim G. Zhou, Fuller Anthony, Pleiss Geoff, Shelhamer Evan | University of British Columbia；Vector Institute；Carleton University | Changing Modalities研究遥感模型在新卫星与传感器间的模态迁移与适配。 | [#762](https://github.com/thinson/RS-PaperClaw/issues/762) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Hedgementation = Hedgerow Segmentation: A Remote Sensing Benchmark | [2606.23615v1](https://arxiv.org/abs/2606.23615v1) | 质检未通过: 单位为空或无效; Q3 未通过质检 |
-| AI-Empowered UAV-Assisted Backscatter Localization and ISAC for Zero-Energy IoT: A Comprehensive Survey | [2606.23125v1](https://arxiv.org/abs/2606.23125v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 遥感基础模型正从单一传感器向跨模态、跨分辨率通用架构演进。
-- 模态迁移与传感器适配成为提升遥感模型实用性的关键挑战。
 
 ---
 
