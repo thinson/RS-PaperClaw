@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260626](./202606/20260626.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦于多模态大语言模型在遥感变化描述中的应用、跨传感器超分辨率中的域差距量化，以及低空无人机空间智能基准构建。这些工作分别从模型微调、域适应和空间理解评估角度推进遥感智能分析能力。
+
+## ✨ 今日亮点
+
+- 提出RSICCLLM多模态大模型用于遥感变化描述
+- 量化跨传感器超分辨率中的域差距问题
+- 发布低空无人机空间智能基准SpatialUAV
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260626] RSICCLLM: A Multimodal Large Language Model for Remote Sensing Image Change Captioning | Wang Yelin, Song Zijia, Ye Shuo, Yang Chuanguang, Wang Miaoyu, Xu Yong, An Zhulin, Xu Yongjun, Yu Zitong | State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese；Academy of Sciences, Beijing, China；Great Bay University, Dongguan, China；Harbin Institute of Technology, Shenzhen, China；Dongguan Key Laboratory for Intelligence and Information Technology, Dongguan | RSICCLLM通过差异感知微调实现遥感图像变化描述。 | [#787](https://github.com/thinson/RS-PaperClaw/issues/787) |
+| [20260626] Mind the Gap: Quantifying the Domain Gap in Cross-Sensor Diffusion Super-Resolution | Kopeć Dawid, Jabłońska Katarzyna, Kozłowski Wojciech, Zięba Maciej | WUST；Tooploox | 研究量化跨传感器扩散超分辨率中的域差距。 | [#788](https://github.com/thinson/RS-PaperClaw/issues/788) |
+| [20260626] SpatialUAV: Benchmarking Spatial Intelligence for Low-Altitude UAV Perception, Collaboration, and Motion | Zhang Haoyu, Liu Meng, Xiang Qianlong, Wang Kun, Wang Yaowei, Nie Liqiang | organizes all samples into a unified visual-input–question–answer respectively, advancing research on spatial understanding in；remains largely grounded in human-centered visual perspec- over more complex input settings and structured answer forms | SpatialUAV基准评估无人机空间感知与协作能力。 | [#789](https://github.com/thinson/RS-PaperClaw/issues/789) |
+
+## 🔎 观察
+
+- 多模态大模型正从通用场景向遥感变化描述等专业任务深化。
+- 域差距量化与空间智能基准成为提升遥感模型泛化性的关键方向。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260625](./202606/20260625.md)
 ## 📌 今日概况
 
@@ -67,41 +99,6 @@ Powered by OpenClaw🦞
 
 - 状态空间模型正成为遥感长程依赖建模的新主流架构。
 - 大规模数据集与基础模型结合，加速遥感通用检测落地。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260623](./202606/20260623.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究聚焦于高分辨率土壤水分反演、多源卫星图像时空插值、多光谱目标检测、树木计数、3D城市生成及洪水制图。SAR与光学数据融合、生成模型及视觉基础模型的应用成为热点，推动遥感在环境监测与城市数字化中的精细化发展。
-
-## ✨ 今日亮点
-
-- SAR时间序列实现高分辨率土壤水分反演
-- 生成模型解决卫星图像时空插值难题
-- 视觉基础模型提升RGB洪水制图精度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260623] High Resolution Sediment-Specific Surface Soil Moisture Retrieval Using Sentinel-1 Time Series and Auxiliary Data | Hamedianfar Alireza, Antropov Oleg, Molinier Matthieu, Salmela Ulla, Kukkula Hanna, Seitsonen Lauri, Liwata-Kenttälä Pauliina, Middleton Maarit | b VTT Technical Research Centre of Finland, Espoo, 02150, Finland | 利用Sentinel-1时间序列与辅助数据实现高分辨率沉积物特定地表土壤水分反演。 | [#764](https://github.com/thinson/RS-PaperClaw/issues/764) |
-| [20260623] MotifGen: Spatiotemporal interpolation of misaligned satellite images via multi-source generative modeling, in an application to tropical cyclones | Dauvilliers Clément, Monteleoni Claire | University of Colorado Boulder, Boulder, CO, USA | 提出MotifGen生成模型，用于热带气旋场景下多源卫星图像的时空插值。 | [#765](https://github.com/thinson/RS-PaperClaw/issues/765) |
-| [20260623] Progressive Pixel-Neighborhood Deformable Cross-Attention for Multispectral Object Detection | Qiu Tian, Shen Jifeng, Zuo Xin | a School of Electrical and Information Engineering, Jiangsu University, Zhenjiang, 212013, China；b School of Computer Science and Engineering, Jiangsu University of Science and Technology, Zhenjiang | 渐进式像素邻域可变形交叉注意力机制提升多光谱目标检测性能。 | [#766](https://github.com/thinson/RS-PaperClaw/issues/766) |
-| [20260623] Counting Trees from Satellite Imagery with Noisy Supervision | Gominski Dimitri, Mugabowindekwe Maurice, Xu Qiue, Tong Xiaowei, Brandt Martin, Le Hieu, Fensholt Rasmus, Samaras Dimitris, Landrieu Loic | University of Copenhagen；University of Rwanda；University of Chinese Academy of Sciences；University of North Carolina at Charlotte；Stony Brook University；LIGM, CNRS, Univ Gustave Eiffel, ENPC, IPP | 基于噪声监督与不平衡最优传输实现卫星图像树木计数与密度估计。 | [#768](https://github.com/thinson/RS-PaperClaw/issues/768) |
-| [20260623] Sat2City v2: Native 3D City Asset Generation from a Single Satellite Image | Hua Tongyan, Wu Dongli, Zhu Jinjing, Ren Yinrui, Hong Zhongcheng, Chen Ying-Cong, Xiong Hui, Zhao Wufan | The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China；The Chinese University of Hong Kong, Hong Kong SAR, China；Auckland University of Technology, Auckland, New Zealand；the Department of Computer Science and Engineering, The Hong Kong University of Science and Technology, Hong Kong SAR, China | Sat2City v2从单张卫星图像生成原生3D城市资产与纹理网格。 | [#769](https://github.com/thinson/RS-PaperClaw/issues/769) |
-| [20260623] Flood Mapping from RGB imagery using a Vision Foundation Model | Polushko Vladyslav, Bucher Tilman, Rösch Ronald, März Thomas, Rauhut Markus, Weinmann Andreas | ∗ Image Processing Department, Fraunhofer ITWM, Kaiserslautern, Germany；‡ Institut für Optische Sensorsysteme, DLR, Berlin, Germany；§ ACIDA Lab, THWS Würzburg-Schweinfurt, Schweinfurt, Germany | 利用视觉基础模型对RGB图像进行洪水制图与水体分割。 | [#770](https://github.com/thinson/RS-PaperClaw/issues/770) |
-
-## 🔎 观察
-
-- 多模态数据融合（SAR+光学、可见光+热红外）仍是提升遥感应用精度的核心方向。
-- 生成模型与视觉基础模型正加速从通用场景向灾害监测、城市建模等专用任务渗透。
 
 ---
 
