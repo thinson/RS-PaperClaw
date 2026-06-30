@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260629](./202606/20260629.md)
+## 📌 今日概况
+
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感研究聚焦于多模态融合与基础模型应用。Sentinel-1/2跨传感器学习实现高分辨率洪水制图，语义驱动的跨模态对齐提升遥感图像分割效率，城市建筑变化检测注重外观鲁棒性与边界感知，无人机单目深度估计推出真实世界基准，并系统评估了地理空间基础模型在农业中的迁移能力。
+
+## ✨ 今日亮点
+
+- 跨传感器学习提升洪水制图精度
+- 语义驱动对齐优化遥感分割效率
+- 地理空间基础模型农业迁移评估
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260629] High-Resolution Flood Mapping With Sentinel-1 and Sentinel-2 via Misalignment-Robust Cross-Sensor Learning and Generative Despeckling | Ma David, Feinstein Jeremy, Pandit Shreya, Ganguli Arkaprabha, Yan Eugene | Argonne National Laboratory, Lemont, IL USA (；University of Chicago, Chicago, IL USA；Ohlone College, Fremont, CA USA | 利用Sentinel-1/2跨传感器学习与生成式去噪实现高分辨率洪水制图。 | [#799](https://github.com/thinson/RS-PaperClaw/issues/799) |
+| [20260629] Semantic-Driven Scale and Spatial Selection for Efficient Cross-Modal Alignment in Referring Remote Sensing Image Segmentation | Li Kun, Gui Shengxi, Nex Francesco, Michael Ying Yang | University of Liverpool, UK；University of Michigan, USA；University of Twente, NL；University of Bath, UK；Beyond its theoretical significance, RRSIS has significant potential for advancing human-centered | 语义驱动的尺度和空间选择实现高效跨模态对齐遥感图像分割。 | [#800](https://github.com/thinson/RS-PaperClaw/issues/800) |
+| [20260629] UrbanCDNet: Appearance-Robust and Boundary-Aware Bitemporal Change Detection for Korean Urban Building Monitoring | Omar Abdirashid, Park Jonghyuk | Department of Data Science, Graduate School of Kookmin University | UrbanCDNet提出外观鲁棒且边界感知的双时相变化检测方法。 | [#801](https://github.com/thinson/RS-PaperClaw/issues/801) |
+| [20260629] AerialMetric: Benchmarking and Adapting UAV Monocular Metric Depth Estimation in the Real World | Song Zhongqiang, Chen Guanying, Zhang Yuqi, Zou Yin, Fu Chuanyu, Yuan Zhiyuan, Huang Chuan, Cui Shuguang, Cao Xiaochun | Sun Yat-sen University, Shenzhen Campus | AerialMetric构建无人机单目深度估计真实世界基准与自适应方法。 | [#802](https://github.com/thinson/RS-PaperClaw/issues/802) |
+| [20260629] Benchmarking Geospatial Foundation Models for Agriculture Applications | Shang Zhuocheng, Das Sanmay, Eldawy Ahmed | University of California, Riverside Riverside USA | 系统评估地理空间基础模型在农业作物分割与区域迁移中的表现。 | [#803](https://github.com/thinson/RS-PaperClaw/issues/803) |
+
+## 🔎 观察
+
+- 多模态融合与跨传感器学习成为遥感应用的主流技术路径。
+- 基础模型在农业等垂直领域的迁移评估正受到更多关注。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260628](./202606/20260628.md)
 ## 📌 今日概况
 
@@ -59,38 +93,6 @@ Powered by OpenClaw🦞
 
 - SAR数据生成正从单一模型向智能体框架演进，强调质量保障。
 - 多模态大模型在遥感中趋向免训练适配，降低应用门槛。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260626](./202606/20260626.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦于多模态大语言模型在遥感变化描述中的应用、跨传感器超分辨率中的域差距量化，以及低空无人机空间智能基准构建。这些工作分别从模型微调、域适应和空间理解评估角度推进遥感智能分析能力。
-
-## ✨ 今日亮点
-
-- 提出RSICCLLM多模态大模型用于遥感变化描述
-- 量化跨传感器超分辨率中的域差距问题
-- 发布低空无人机空间智能基准SpatialUAV
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260626] RSICCLLM: A Multimodal Large Language Model for Remote Sensing Image Change Captioning | Wang Yelin, Song Zijia, Ye Shuo, Yang Chuanguang, Wang Miaoyu, Xu Yong, An Zhulin, Xu Yongjun, Yu Zitong | State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese；Academy of Sciences, Beijing, China；Great Bay University, Dongguan, China；Harbin Institute of Technology, Shenzhen, China；Dongguan Key Laboratory for Intelligence and Information Technology, Dongguan | RSICCLLM通过差异感知微调实现遥感图像变化描述。 | [#787](https://github.com/thinson/RS-PaperClaw/issues/787) |
-| [20260626] Mind the Gap: Quantifying the Domain Gap in Cross-Sensor Diffusion Super-Resolution | Kopeć Dawid, Jabłońska Katarzyna, Kozłowski Wojciech, Zięba Maciej | WUST；Tooploox | 研究量化跨传感器扩散超分辨率中的域差距。 | [#788](https://github.com/thinson/RS-PaperClaw/issues/788) |
-| [20260626] SpatialUAV: Benchmarking Spatial Intelligence for Low-Altitude UAV Perception, Collaboration, and Motion | Zhang Haoyu, Liu Meng, Xiang Qianlong, Wang Kun, Wang Yaowei, Nie Liqiang | organizes all samples into a unified visual-input–question–answer respectively, advancing research on spatial understanding in；remains largely grounded in human-centered visual perspec- over more complex input settings and structured answer forms | SpatialUAV基准评估无人机空间感知与协作能力。 | [#789](https://github.com/thinson/RS-PaperClaw/issues/789) |
-
-## 🔎 观察
-
-- 多模态大模型正从通用场景向遥感变化描述等专业任务深化。
-- 域差距量化与空间智能基准成为提升遥感模型泛化性的关键方向。
 
 ---
 
