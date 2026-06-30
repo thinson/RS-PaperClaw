@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260627](./202606/20260627.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦于SAR数据生成与多模态视觉理解两大方向。扩散模型与智能体框架被用于提升SAR数据质量与跨传感器迁移能力；同时，基于多模态大模型的免训练视觉定位方法及无人机玻璃幕墙数字化融合框架也取得进展，体现了生成式AI与多模态技术在地学应用中的深化。
+
+## ✨ 今日亮点
+
+- 扩散模型实现跨传感器SAR数据生成与特征迁移
+- 智能体框架保障SAR数据生成质量与任务驱动
+- 多模态大模型免训练视觉定位方法提升遥感理解
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260627] Cross-Sensor SAR Data Generation Using Diffusion Models and Feature Migration | Wu Xuanting, Zhang Fan, Ma Fei, Yin Qiang, Zhou Yongsheng | College of Information Science and Technology, Beijing University of Chemical Technology | 利用扩散模型与特征迁移实现跨传感器SAR数据生成。 | [#791](https://github.com/thinson/RS-PaperClaw/issues/791) |
+| [20260627] ExACT: Exemplar-Driven Calibrated Refinement for Training-Free Visual Grounding in Remote Sensing Images | Zhang Zixiao, Li Lingling, He Pei, Liu Xu, Jiao Licheng | Xidian University Xidian University Xidian University；Xidian University Xidian University | 提出示例驱动校准的免训练遥感视觉定位方法。 | [#792](https://github.com/thinson/RS-PaperClaw/issues/792) |
+| [20260627] A Task-Driven and Quality-Assured Agent Framework for SAR Data Generation | Wu Xuanting, Zhanga Fan, Ma Fei, Guan Ling, Ma Guochun, Zhou Yongsheng | College of Information Science and Technology, Beijing University of Chemical Technology；Science and Technology on Electromagnetic Scattering Laboratory, Beijing Institute of Environmental Features | 构建任务驱动且质量保证的智能体SAR数据生成框架。 | [#793](https://github.com/thinson/RS-PaperClaw/issues/793) |
+| [20260627] RefGlass-GS: A UAV-Enabled Fusion Framework for Photorealistic, Semantic and Interactive Digitization of Reflective Glass Facades via Gaussian Splatting | Liang Zhenyu, Zhang Xiao, Wang Boyu, Liang Zhaolun, Li Ang, Jeff Chak Fu Chan, Wang Mingzhu, Jack C. P. Cheng | Department of Civil and Environmental Engineering, The Hong Kong University of Science and；Department of Civil and Environmental Engineering, University of Maryland, College Park, Maryland；Department of the Built Environment, National University of Singapore, Singapore；Department of Architecture and Civil Engineering, City University of Hong Kong, Hong Kong, China | 无人机融合高斯泼溅实现反射玻璃幕墙语义数字化。 | [#794](https://github.com/thinson/RS-PaperClaw/issues/794) |
+
+## 🔎 观察
+
+- SAR数据生成正从单一模型向智能体框架演进，强调质量保障。
+- 多模态大模型在遥感中趋向免训练适配，降低应用门槛。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260626](./202606/20260626.md)
 ## 📌 今日概况
 
@@ -66,39 +99,6 @@ Powered by OpenClaw🦞
 
 - 世界模型与生成式AI正从图像生成向物理约束的遥感预报演进
 - 无人机遥感研究从单机感知向蜂群通信、多会话建图等系统级问题深化
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260624](./202606/20260624.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦于基础模型与高效架构的融合。一方面，大规模数据集LEVIRDet与变化描述基准C3-Bench的提出，推动了通用检测与上下文感知评估的发展；另一方面，状态空间模型（SSM）在遥感中的综述及其在实例分割中的线性时间蒸馏应用，展现了处理长程依赖与多模态数据的新范式。整体趋势向大规模、高效、上下文感知方向演进。
-
-## ✨ 今日亮点
-
-- LEVIRDet发布百万级159类遥感检测数据集与基础模型
-- C3-Bench提出上下文感知变化描述评估框架
-- SSM综述及线性时间蒸馏用于遥感实例分割
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260624] C3-Bench: A Context-Aware Change Captioning Benchmark | Kim Jae-Woo, Kim Hyeongbeom, Kim Ue-Hwan | Gwangju Institute of Science and Technology, Gwangju, Republic of Korea；GIST InnoCORE AI-Nano Convergence Institute for Early Detection of Neurodegenerative Diseases, Gwangju Institute of Science and Technology | C3-Bench提出上下文感知变化描述基准，采用LLM-as-Judge评估。 | [#772](https://github.com/thinson/RS-PaperClaw/issues/772) |
-| [20260624] State Space Models Meet Remote Sensing: A Survey | Yang Qinzhe, Liu Chenyang, Xu Jia, Shi Zhenwei, Zou Zhengxia | Shen Yuan Honors College, Beihang University, Beijing 100191, China；Department of Aerospace Intelligent Science and Technology, School of Astronautics, Beihang University, Beijing 100191, China；State Key Laboratory of Virtual Reality Technology and Systems, Beihang University, Beijing 100191, China；Qian Xuesen Laboratory of Space Technology, China Academy of Space Technology, Beijing 100094, China | 综述探讨状态空间模型在遥感长程依赖与多模态数据中的应用。 | [#773](https://github.com/thinson/RS-PaperClaw/issues/773) |
-| [20260624] Efficient Remote Sensing Instance Segmentation with Linear-Time State Space Distilled Visual Foundation Models | Yang Qinzhe, Chen Keyan, Xu Jia, Shi Zhenwei, Zou Zhengxia | Shen Yuan Honors College, Beihang University, Beijing, China；Department of Aerospace Intelligent Science and Technology, School of Astronautics；State Key Laboratory of Virtual Reality Technology and Systems, Beihang University, Beijing, China；Qian Xuesen Laboratory of Space Technology, China Academy of Space Technology, Beijing, China | 线性时间状态空间蒸馏视觉基础模型实现高效遥感实例分割。 | [#774](https://github.com/thinson/RS-PaperClaw/issues/774) |
-| [20260624] LEVIRDet: A Million-Scale 159-Category Dataset and Foundation Model for Universal Remote Sensing Object Detection | Yang Qinzhe, Wang Dongyu, Niu Haohan, Xu Jia, Shi Zhenwei, Zou Zhengxia | Shen Yuan Honors College, Beihang University, Beijing, China；Department of Aerospace Intelligent Science and Technology, School of Astronautics；State Key Laboratory of Virtual Reality Technology and Systems, Beihang University, Beijing, China；Qian Xuesen Laboratory of Space Technology, China Academy of Space Technology, Beijing, China | LEVIRDet提供百万级159类数据集，推动通用遥感目标检测。 | [#775](https://github.com/thinson/RS-PaperClaw/issues/775) |
-
-## 🔎 观察
-
-- 状态空间模型正成为遥感长程依赖建模的新主流架构。
-- 大规模数据集与基础模型结合，加速遥感通用检测落地。
 
 ---
 
