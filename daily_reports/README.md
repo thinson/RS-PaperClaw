@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260628](./202606/20260628.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦于图像分割中的不确定性量化与先验知识融合。一篇论文提出可扩展贝叶斯空间混合模型，用于遥感图像分割并量化不确定性；另一篇则利用土地覆盖先验知识提升SAR洪水分割的泛化能力，展示了先验信息在深度学习中的价值。
+
+## ✨ 今日亮点
+
+- 贝叶斯空间混合模型实现遥感图像分割与不确定性量化
+- 土地覆盖先验提升SAR洪水分割的跨骨干泛化能力
+- 先验知识融合成为遥感深度学习新趋势
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260628] Scalable Bayesian Spatial Mixture Modelling for Remote Sensing Image Segmentation | Bao Khanh Nguyen, Cameron Iain, Balocchi Cecilia, Sell Torben | School of Mathematics and Maxwell Institute for Mathematical；Sciences, University of Edinburgh, Edinburgh, UK | 提出可扩展贝叶斯空间混合模型用于遥感图像分割与不确定性量化。 | [#796](https://github.com/thinson/RS-PaperClaw/issues/796) |
+| [20260628] Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones | Thasma Sanjay, Ho Yu-Hsuan, Mostafavi Ali | Department of Computer Science and Engineering, Texas A\&M University, College Station, TX (；the Urban Resilience.AI Lab, Zachry Department of Civil and Environmental Engineering, Texas A\&M University, College Station, TX ( | 利用土地覆盖先验知识提升SAR洪水分割在不同骨干网络上的性能。 | [#797](https://github.com/thinson/RS-PaperClaw/issues/797) |
+
+## 🔎 观察
+
+- 贝叶斯方法在遥感分割中兼顾精度与不确定性评估，实用性强。
+- 先验知识引导的深度学习模型在SAR数据上展现出更强的鲁棒性。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260627](./202606/20260627.md)
 ## 📌 今日概况
 
@@ -60,45 +91,6 @@ Powered by OpenClaw🦞
 
 - 多模态大模型正从通用场景向遥感变化描述等专业任务深化。
 - 域差距量化与空间智能基准成为提升遥感模型泛化性的关键方向。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260625](./202606/20260625.md)
-## 📌 今日概况
-
-今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 10 篇。
-
-今日研究聚焦于遥感智能解译与无人机系统两大方向。世界模型与视频扩散Transformer被用于概率性地球观测预报；高斯泼溅结合生成式精炼提升了卫星三维重建保真度。无人机领域涌现了野火视觉问答基准、安全通信、多会话建图及海空网络预测波束追踪等应用。此外，轻量化语义传输与对抗性数据增强也受到关注。
-
-## ✨ 今日亮点
-
-- 世界模型与扩散Transformer结合，提升地球观测概率预报能力
-- 高斯泼溅生成式精炼，实现高保真卫星三维重建
-- 无人机野火VQA基准及安全通信测试床推动实用化
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260625] EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting | Luo Junwei, Yuan Shuai, Yang Zhenya, Li Yansheng, Liu Zhe, Zhao Hengshuang | University of Hong Kong；Wuhan University | 提出物理信息世界模型EO-WM，用于概率性地球观测预报 | [#776](https://github.com/thinson/RS-PaperClaw/issues/776) |
-| [20260625] SatSplatDiff: Geometry-preserving generative refinement for high-fidelity satellite Gaussian Splatting | Kim Jiyong, Song Shuang, Qin Ronjgun | Department of Civil, Environmental and Geodetic Engineering, The Ohio State University；Department of Electrical and Computer Engineering, The Ohio State University | SatSplatDiff通过生成式精炼保持几何结构，提升卫星高斯泼溅质量 | [#777](https://github.com/thinson/RS-PaperClaw/issues/777) |
-| [20260625] FlameVQA: A Physically-Grounded UAV Wildfire VQA Benchmark with Radiometric Thermal Supervision | Habibpour Mobin, Spodnik John, Niloufar Alipour Talemi, Afghah Fatemeh | Clemson University | FlameVQA构建基于辐射热成像的无人机野火视觉问答基准 | [#778](https://github.com/thinson/RS-PaperClaw/issues/778) |
-| [20260625] Design and Performance Evaluation of Secure RF and WiFi-Based Communication in Drone Swarms via Testbed Implementation | Dixit Bhavya, Rajgor Aayushi, Kumar Subham, Patil Rushikesh, A. Ananthapadmanabhan, Gaurav S. Kasbekar, Maity Arnab | Department of Electrical Engineering, Indian Institute of Technology (IIT) Bombay, Mumbai, Maharashtra, India；Department of Aerospace Engineering, IIT Bombay | 设计并实测了基于RF和WiFi的无人机蜂群安全通信方案 | [#779](https://github.com/thinson/RS-PaperClaw/issues/779) |
-| [20260625] On-board Remote-Sensing Foundation Models for Unsupervised Change Detection of Disaster Events | Ramírez-Gallego S. | Thales Alenia Space Spain | 利用遥感基础模型在轨实现无监督灾害变化检测 | [#780](https://github.com/thinson/RS-PaperClaw/issues/780) |
-| [20260625] UAV-MapFusion: RTK-Aligned Uncertainty-Aware Coarse-to-Fine Multi-Session UAV Mapping | Pan Feng, Zheng Chunran, Xue Bing, Cui Yukang, Wen Jiayu, Chen Zhiyu, Wang Wei | College of Automation, Harbin Engineering University, Harbin, China. (；Department of Mechanical Engineering, University of Hong Kong, Hong Kong SAR, China. (；College of Mechatronics and Control Engineering, Shenzhen University, Shenzhen, China. ( | UAV-MapFusion融合RTK与不确定性，实现多会话无人机建图 | [#781](https://github.com/thinson/RS-PaperClaw/issues/781) |
-| [20260625] Learning Adversarial Augmentation Policies for Robust Garlic Seedling Detection | Lee Soeun, Kim Chanho, Kang Yeji, Hong YoungKi, Kang Byeongkeun | School of Electrical and Electronics Engineering, Chung-Ang University；Department of Agricultural Engineering, National Institute of Agricultural Sciences | 学习对抗性增强策略，提升大蒜幼苗检测的鲁棒性 | [#782](https://github.com/thinson/RS-PaperClaw/issues/782) |
-| [20260625] Calibrated Harmonic Overlaid Implicit Neural Representations for Multi-Dimensional Data | Chen Honghang, Zhang Xiujun, Sun Xiaoli, Xiao Mingqing | Shenzhen University, Shenzhen, China；Shenzhen Polytechnic University, Shenzhen, China；Southern Illinois University Carbondale, USA | 提出校准谐波叠加隐式神经表示，处理多维数据频谱偏差 | [#783](https://github.com/thinson/RS-PaperClaw/issues/783) |
-| [20260625] ISAC for Sea-Air Networks: Predictive Beam Tracking under Sea Induced Disturbances | Zhang Rui, Dong Fuwang, Wang Wei, Du Zhen | College of Intelligent Systems Science and Engineering, Harbin Engineering Univer- sity, Harbin, China (；School of Electronic and Information Engineering, Nanjing University of Information Science and Technology, Nanjing, applied the integrated sensing and communication (ISAC) China ( | 面向海空网络的ISAC系统，实现海况扰动下预测波束追踪 | [#784](https://github.com/thinson/RS-PaperClaw/issues/784) |
-| [20260625] SpaceRipple: Lightweight Semantic Delivery for Mission-Oriented LEO Earth Observation Satellite Networks | Yang Ziyi, Yuan Hao, Yi Yunxiang, Wang Wenbo, Zhang Xing | Beijing University of Posts and Telecommunications | SpaceRipple实现面向任务的轻量化语义传输，用于LEO卫星网络 | [#785](https://github.com/thinson/RS-PaperClaw/issues/785) |
-
-## 🔎 观察
-
-- 世界模型与生成式AI正从图像生成向物理约束的遥感预报演进
-- 无人机遥感研究从单机感知向蜂群通信、多会话建图等系统级问题深化
 
 ---
 
