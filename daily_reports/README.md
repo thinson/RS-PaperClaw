@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260702](./202607/20260702.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感研究聚焦于智能解译与数据发现两大方向。云去除结合残差流与地理上下文对齐提升可解释性；多篇工作探索大语言模型与知识图谱在遥感数据检索、假设生成及无人机自主决策中的应用；持续学习框架被引入变化检测以应对域偏移问题。
+
+## ✨ 今日亮点
+
+- 云去除方法引入残差流与地理上下文对齐提升可解释性
+- 多篇工作探索LLM与知识图谱驱动遥感数据智能发现
+- 持续学习框架被用于域增量变化检测任务
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260702] Interpretation-Oriented Cloud Removal via Observation-Anchored Residual Flow with Geo-Contextual Alignment | Wang Ziyao, Wang Maonan, He Yucheng, Ma Xianping, Wang Ziyi, Zhang Hongyang, Cheng Yirong, Pun Man-on | School of Science and Engineering, The Chinese University of Hong Kong；Shanghai Ai Lab, Shanghai, China；Faculty of Geosciences and Engineering, Southwest Jiaotong University, Chengdu | 提出面向可解释的云去除方法，利用观测锚定残差流与地理上下文对齐。 | [#832](https://github.com/thinson/RS-PaperClaw/issues/832) |
+| [20260702] Bringing Agentic Search to Earth Observation Data Discovery | Yu Minghan, Sun Youran, Yi Chugang, Wen Yixin, Yang Haizhao | University of Maryland, College Park University of Maryland, College Park；University of Maryland, College Park University of Florida；University of Maryland, College Park；NASA and its data centers hold thousands of geoscience datasets and tools like；metadata, tools, and access pathways. NASA and its affiliated data centers host thousands of datasets；across dozens of Distributed Active Archive Centers (DAACs), together with tools such as Worldview；domain experts to locate the data that best matches their own research question | 将智能体搜索引入地球观测数据发现，提升数据集检索效率。 | [#833](https://github.com/thinson/RS-PaperClaw/issues/833) |
+| [20260702] Dual-Selective Network for Domain-Incremental Change Detection | He Yuzhi, Huang Junxi, Wu Haorui, Qu Jiahui | Xidian University, Xi'an, China | 提出双选择性网络用于域增量变化检测，结合视觉状态空间模型。 | [#834](https://github.com/thinson/RS-PaperClaw/issues/834) |
+| [20260702] NEUROSYMLAND: Neuro-Symbolic Landing-Site Assessment for Robust and Edge-Deployable UAV Autonomy | Qian Weixian, Yang Tianyi, Schroder Sebastian, Deng Yao, Yao Jiaohong, Cheng Xiao, Han Richard, Zheng Xi | School of Computing, Macquarie University, Sydney, NSW, Australia；Macquarie University, when this work was conducted；Department of Computer Science, University of California, Santa Barbara, CA, USA. tianyi | 神经符号方法实现无人机着陆点评估，支持边缘部署与鲁棒自主。 | [#835](https://github.com/thinson/RS-PaperClaw/issues/835) |
+| [20260702] EO-Agents: A Three-Agent LLM Pipeline for Earth Observation Hypothesis Generation | Ghazanfari Mahyar, Tabrizian Amin, Mehrabian Armin, Wei Peng | Earth-observation (EO) research is fundamentally combina-；Washington University, Washington, DC, USA；Space Flight Center, Greenbelt, MD, USA | 构建三智能体LLM流水线，自动生成地球观测科学假设。 | [#836](https://github.com/thinson/RS-PaperClaw/issues/836) |
+
+## 🔎 观察
+
+- 大语言模型正从辅助工具演变为遥感数据发现与假设生成的核心引擎。
+- 持续学习与域适应成为变化检测研究新热点，应对多源数据分布漂移。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260701](./202607/20260701.md)
 ## 📌 今日概况
 
@@ -78,40 +112,6 @@ Powered by OpenClaw🦞
 
 - Agentic AI正从概念验证走向遥感垂直应用，如林业偏差标注与植物表型发现。
 - 无人机研究从单一任务向多机协同、语义通信与能量优化等系统级问题深化。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260629](./202606/20260629.md)
-## 📌 今日概况
-
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感研究聚焦于多模态融合与基础模型应用。Sentinel-1/2跨传感器学习实现高分辨率洪水制图，语义驱动的跨模态对齐提升遥感图像分割效率，城市建筑变化检测注重外观鲁棒性与边界感知，无人机单目深度估计推出真实世界基准，并系统评估了地理空间基础模型在农业中的迁移能力。
-
-## ✨ 今日亮点
-
-- 跨传感器学习提升洪水制图精度
-- 语义驱动对齐优化遥感分割效率
-- 地理空间基础模型农业迁移评估
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260629] High-Resolution Flood Mapping With Sentinel-1 and Sentinel-2 via Misalignment-Robust Cross-Sensor Learning and Generative Despeckling | Ma David, Feinstein Jeremy, Pandit Shreya, Ganguli Arkaprabha, Yan Eugene | Argonne National Laboratory, Lemont, IL USA (；University of Chicago, Chicago, IL USA；Ohlone College, Fremont, CA USA | 利用Sentinel-1/2跨传感器学习与生成式去噪实现高分辨率洪水制图。 | [#799](https://github.com/thinson/RS-PaperClaw/issues/799) |
-| [20260629] Semantic-Driven Scale and Spatial Selection for Efficient Cross-Modal Alignment in Referring Remote Sensing Image Segmentation | Li Kun, Gui Shengxi, Nex Francesco, Michael Ying Yang | University of Liverpool, UK；University of Michigan, USA；University of Twente, NL；University of Bath, UK；Beyond its theoretical significance, RRSIS has significant potential for advancing human-centered | 语义驱动的尺度和空间选择实现高效跨模态对齐遥感图像分割。 | [#800](https://github.com/thinson/RS-PaperClaw/issues/800) |
-| [20260629] UrbanCDNet: Appearance-Robust and Boundary-Aware Bitemporal Change Detection for Korean Urban Building Monitoring | Omar Abdirashid, Park Jonghyuk | Department of Data Science, Graduate School of Kookmin University | UrbanCDNet提出外观鲁棒且边界感知的双时相变化检测方法。 | [#801](https://github.com/thinson/RS-PaperClaw/issues/801) |
-| [20260629] AerialMetric: Benchmarking and Adapting UAV Monocular Metric Depth Estimation in the Real World | Song Zhongqiang, Chen Guanying, Zhang Yuqi, Zou Yin, Fu Chuanyu, Yuan Zhiyuan, Huang Chuan, Cui Shuguang, Cao Xiaochun | Sun Yat-sen University, Shenzhen Campus | AerialMetric构建无人机单目深度估计真实世界基准与自适应方法。 | [#802](https://github.com/thinson/RS-PaperClaw/issues/802) |
-| [20260629] Benchmarking Geospatial Foundation Models for Agriculture Applications | Shang Zhuocheng, Das Sanmay, Eldawy Ahmed | University of California, Riverside Riverside USA | 系统评估地理空间基础模型在农业作物分割与区域迁移中的表现。 | [#803](https://github.com/thinson/RS-PaperClaw/issues/803) |
-
-## 🔎 观察
-
-- 多模态融合与跨传感器学习成为遥感应用的主流技术路径。
-- 基础模型在农业等垂直领域的迁移评估正受到更多关注。
 
 ---
 
