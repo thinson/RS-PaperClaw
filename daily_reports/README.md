@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260705](./202607/20260705.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦于变化检测、小目标检测与冰川预测三大方向。MambaRefine-CD引入MambaVision与时空边界细化提升变化检测精度；FRFDet通过对称采样与可扩展融合实现无人机小目标高效检测；GlacierCastAI结合多模态卫星影像与气候信号预测冰川退缩，展现了深度学习在环境监测中的前沿应用。
+
+## ✨ 今日亮点
+
+- MambaVision结合时空边界细化提升变化检测精度
+- 对称采样与可扩展融合实现无人机小目标高效检测
+- 多模态卫星影像与气候信号联合预测冰川退缩
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260705] MambaRefine-CD: MambaVision with Region-Boundary Temporal Refinement | Perera Dineth, Firdous Thaariq, Samarakoon Oshadha, Godaliyadda Roshan, Ekanayake Parakrama, Herath Vijitha | University of Peradeniya | MambaRefine-CD利用MambaVision与区域-边界时序细化改进遥感变化检测 | [#848](https://github.com/thinson/RS-PaperClaw/issues/848) |
+| [20260705] FRFDet: Efficient UAV Small Object Detection with Symmetric Sampling and Scalable Fusion | Si Yunzhong, Xu Huiying, Zhu Xinzhong, Liu Yang, Dong Yao, Zhang Wenhao, Li Hongbo | College of Computer Science and Technology, Zhejiang Normal University, Jinhua, China；Hangzhou School of Automation, Zhejiang Normal University, Hangzhou, China | FRFDet提出对称双向采样与可扩展融合实现轻量无人机小目标检测 | [#849](https://github.com/thinson/RS-PaperClaw/issues/849) |
+| [20260705] GlacierCastAI: Predicting Glacier Retreat from Multi-Modal Satellite Imagery and Climate Signals | Ramachandran Arunkumar | Independent Researcher；achieves an IoU of 0.320—98% of image-only performance— The primary research question addressed in this study is | GlacierCastAI融合多模态卫星影像与气候信号预测冰川退缩动态 | [#850](https://github.com/thinson/RS-PaperClaw/issues/850) |
+
+## 🔎 观察
+
+- 时序与多模态融合成为遥感智能分析的关键技术趋势
+- 轻量化与高效检测在无人机遥感应用中持续受到关注
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260704](./202607/20260704.md)
 ## 📌 今日概况
 
@@ -59,40 +91,6 @@ Powered by OpenClaw🦞
 
 - 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
 - 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260702](./202607/20260702.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感研究聚焦于智能解译与数据发现两大方向。云去除结合残差流与地理上下文对齐提升可解释性；多篇工作探索大语言模型与知识图谱在遥感数据检索、假设生成及无人机自主决策中的应用；持续学习框架被引入变化检测以应对域偏移问题。
-
-## ✨ 今日亮点
-
-- 云去除方法引入残差流与地理上下文对齐提升可解释性
-- 多篇工作探索LLM与知识图谱驱动遥感数据智能发现
-- 持续学习框架被用于域增量变化检测任务
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260702] Interpretation-Oriented Cloud Removal via Observation-Anchored Residual Flow with Geo-Contextual Alignment | Wang Ziyao, Wang Maonan, He Yucheng, Ma Xianping, Wang Ziyi, Zhang Hongyang, Cheng Yirong, Pun Man-on | School of Science and Engineering, The Chinese University of Hong Kong；Shanghai Ai Lab, Shanghai, China；Faculty of Geosciences and Engineering, Southwest Jiaotong University, Chengdu | 提出面向可解释的云去除方法，利用观测锚定残差流与地理上下文对齐。 | [#832](https://github.com/thinson/RS-PaperClaw/issues/832) |
-| [20260702] Bringing Agentic Search to Earth Observation Data Discovery | Yu Minghan, Sun Youran, Yi Chugang, Wen Yixin, Yang Haizhao | University of Maryland, College Park University of Maryland, College Park；University of Maryland, College Park University of Florida；University of Maryland, College Park；NASA and its data centers hold thousands of geoscience datasets and tools like；metadata, tools, and access pathways. NASA and its affiliated data centers host thousands of datasets；across dozens of Distributed Active Archive Centers (DAACs), together with tools such as Worldview；domain experts to locate the data that best matches their own research question | 将智能体搜索引入地球观测数据发现，提升数据集检索效率。 | [#833](https://github.com/thinson/RS-PaperClaw/issues/833) |
-| [20260702] Dual-Selective Network for Domain-Incremental Change Detection | He Yuzhi, Huang Junxi, Wu Haorui, Qu Jiahui | Xidian University, Xi'an, China | 提出双选择性网络用于域增量变化检测，结合视觉状态空间模型。 | [#834](https://github.com/thinson/RS-PaperClaw/issues/834) |
-| [20260702] NEUROSYMLAND: Neuro-Symbolic Landing-Site Assessment for Robust and Edge-Deployable UAV Autonomy | Qian Weixian, Yang Tianyi, Schroder Sebastian, Deng Yao, Yao Jiaohong, Cheng Xiao, Han Richard, Zheng Xi | School of Computing, Macquarie University, Sydney, NSW, Australia；Macquarie University, when this work was conducted；Department of Computer Science, University of California, Santa Barbara, CA, USA. tianyi | 神经符号方法实现无人机着陆点评估，支持边缘部署与鲁棒自主。 | [#835](https://github.com/thinson/RS-PaperClaw/issues/835) |
-| [20260702] EO-Agents: A Three-Agent LLM Pipeline for Earth Observation Hypothesis Generation | Ghazanfari Mahyar, Tabrizian Amin, Mehrabian Armin, Wei Peng | Earth-observation (EO) research is fundamentally combina-；Washington University, Washington, DC, USA；Space Flight Center, Greenbelt, MD, USA | 构建三智能体LLM流水线，自动生成地球观测科学假设。 | [#836](https://github.com/thinson/RS-PaperClaw/issues/836) |
-
-## 🔎 观察
-
-- 大语言模型正从辅助工具演变为遥感数据发现与假设生成的核心引擎。
-- 持续学习与域适应成为变化检测研究新热点，应对多源数据分布漂移。
 
 ---
 
