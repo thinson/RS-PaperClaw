@@ -2,6 +2,52 @@
 
 最近三天日报（最新在前）：
 
+# [20260704](./202607/20260704.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 8 篇。
+
+今日遥感AI研究聚焦于轻量化与高精度分割、无人机多模态感知及三维重建。多篇工作提出专用数据集与训练-free方法，推动遥感目标分割与低空通信发展。扩散模型与Transformer架构在显著性检测与生物量估计中展现潜力。
+
+## ✨ 今日亮点
+
+- NWPU-Traffic数据集推动遥感交通目标实例分割
+- SharpSplat利用边缘正则化提升无人机建筑三维重建
+- GeoSAM-Lite实现轻量化星上遥感分割
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260704] A Large-Scale Dataset and a New Method for RemoteSensing Traffic Object Segmentation | Yang Zhigang, Yao Huiguang, Tian Linmao, Li Qiang, Wang Qi | a School of Artificial Intelligence, OPtics and ElectroNics (iOPEN), Northwestern Polytechnical；University, Xi’an, 710072, Shaanxi, China；b School of Computer Science, Northwestern Polytechnical University, Xi’an, 710072, Shaanxi, China；c School of Software, Northwestern Polytechnical University, Xi’an, 710072, Shaanxi, China | 提出大规模NWPU-Traffic数据集及交通目标实例分割方法 | [#839](https://github.com/thinson/RS-PaperClaw/issues/839) |
+| [20260704] SharpSplat: Edge-Regularized 3D Gaussian Splatting for High Fidelity Urban Building Reconstruction from UAV images | Vaid Porus, Chopra Shivam, Kumar Vaibhav | uations across campus environments, dense urban centers, and | SharpSplat用边缘正则化3D高斯泼溅实现高保真建筑重建 | [#840](https://github.com/thinson/RS-PaperClaw/issues/840) |
+| [20260704] GeoSelect: Spatial-Program Execution for Training-Free Referring Remote Sensing Image Segmentation | Jiang Yuhang, Deng Guohui, Xu Miaozhong, Ruan Chao, Zhao Jinling, Huang Linsheng | School of Internet, Anhui University, Hefei, China；the National Engineering Research Center for Agro-Ecological Big Data Analysis \& Application, Anhui University, Hefei, China；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan, China | GeoSelect通过空间程序执行实现免训练遥感图像分割 | [#841](https://github.com/thinson/RS-PaperClaw/issues/841) |
+| [20260704] LAMBDA: A Low-Altitude Multimodal Base Dataset for UAV Sensing and Communication | Zhou Lin, Rao Peichuan, Zhang Chenshuo, Mo Jianhua, Sun Shu, Chen Zhiyong, Tao Meixia | Research on low-altitude integrated sensing and communication (ISAC) requires aligned；the same platforms and within the same networks, giving rise to a key research area known as；School of Information Science and Electronic Engineering, Shanghai Jiao Tong University, Shanghai, China | LAMBDA提供低空多模态数据集用于无人机感知与通信 | [#842](https://github.com/thinson/RS-PaperClaw/issues/842) |
+| [20260704] TRISTAR: Triple-Signal Stair Recognition and Vision-Only Indoor Navigation for Search-and-Rescue Micro-UAVs | Gîngu Octavian, Spînu Stelian | International Student Conference, Military Technical Academy, Bucharest, Romania；Military Technical Academy ``Ferdinand I'', Bucharest, Romania | TRISTAR实现微无人机基于单目视觉的楼梯识别与导航 | [#843](https://github.com/thinson/RS-PaperClaw/issues/843) |
+| [20260704] GeoSAM-Lite: A Lightweight Foundation Model for Onboard Remote Sensing Segmentation | Wang Yongcong, Zhang Jie, Jiang Rui, Yang Xubing, Yun Ting, Zhang Li | College of Information Science and Technology \& Artificial Intelligence, Nanjing Forestry University, Nanjing, China (；College of Telecommunications and Information Engineering, Nanjing University of Posts and Telecommunications, Nanjing, China | GeoSAM-Lite是面向星上分割的轻量级基础模型 | [#844](https://github.com/thinson/RS-PaperClaw/issues/844) |
+| [20260704] IPDiff: Diffusion-driven ORSI Salient Object Detection with Information Reconstruction and Multi-Prior Guidance | Li Gongyang, Bai Zhen, Cong Runmin, Zeng Dan, Lin Weisi, Zhang Xiao-Ping | ing, Shanghai University, Shanghai, China；School of Control Science and Engineering, Shandong；University, Jinan, China；School of Computer Science and Engineering, Nanyang；Technological University, Singapore；Shenzhen Key Laboratory of Ubiquitous Data Enabling, Tsinghua Shenzhen International Graduate School；Tsinghua University, Shenzhen, China Optical Remote Sensing Images (ORSIs) refer to images | IPDiff用扩散模型与多先验引导进行遥感显著性检测 | [#845](https://github.com/thinson/RS-PaperClaw/issues/845) |
+| [20260704] Phase-Preserving Trimodal Transformer for Tropical Forest Biomass Estimation Using Optical and PolInSAR Data | Luiz Felipe Parente Santiago, Rosiane Rodrigues de Freitas, Daniel Rodrigues dos Santos, Ferrari Felipe | Institute of Computing (IComp), Federal University of Amazonas (UFAM), Manaus, Brazil；Brazilian Army Research Institute in the Amazon (IPEAM), Manaus, Brazil；Military Institute of Engineering (IME), Rio de Janeiro, Brazil | 相位保持三模态Transformer融合光学与PolInSAR估测森林生物量 | [#846](https://github.com/thinson/RS-PaperClaw/issues/846) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Exploring SAM Supervision for Fine-Grained UAV Target Segmentation under Data Scarcity | [2607.03754v1](https://arxiv.org/abs/2607.03754v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 轻量化与星上处理成为遥感分割模型落地的重要趋势
+- 多模态数据融合（光学、SAR、通信信号）在低空与森林应用中加速
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260703](./202607/20260703.md)
 ## 📌 今日概况
 
@@ -47,41 +93,6 @@ Powered by OpenClaw🦞
 
 - 大语言模型正从辅助工具演变为遥感数据发现与假设生成的核心引擎。
 - 持续学习与域适应成为变化检测研究新热点，应对多源数据分布漂移。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260701](./202607/20260701.md)
-## 📌 今日概况
-
-今日共检索候选论文 17 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感研究呈现多模态融合与精细化建模两大趋势。视觉定位任务引入过程监督与锚点引导推理，提升复杂场景理解能力。无人机图像分析聚焦质量评估与高效检测微调，结合视觉-语言模型。三维重建方面，轨道射线条件约束的3D基础模型提升了卫星多视角重建精度。此外，不确定性感知的树高变化回归与极化SAR土壤水分反演，体现了对物理过程与量测不确定性的深入建模。
-
-## ✨ 今日亮点
-
-- 多模态大模型在遥感视觉定位中引入过程监督机制
-- 无人机图像分析结合视觉-语言模型实现质量评估与高效检测
-- 卫星三维重建与森林动态监测强调物理约束与不确定性建模
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260701] GeoSearcher: Anchor-Guided Progressive Reasoning for Remote Sensing Visual Grounding with Process Supervision | Wang Dianyu, Zhang Yidan, Zhang Peirong, Li Xuyang, Liu Xiaoxuan, Wang Lei | School of Electronic, Electrical and Communication Engineering, University of Chinese Academy of Sciences, Beijing, China ( | GeoSearcher提出锚点引导渐进推理，实现遥感视觉定位的过程监督。 | [#825](https://github.com/thinson/RS-PaperClaw/issues/825) |
-| [20260701] Uncertainty-aware tree height change regression | Gaber Max, Gominski Dimitri, Jaime C. Revenga, Oehmcke Stefan, Fensholt Rasmus, Brandt Martin | Department of Mathematical Sciences, University of Copenhagen；Department of Computer Science and Electrical Engineering, University of Rostock；Department of Computer Science, University of Copenhagen | 不确定性感知回归模型用于树高变化估计，提升森林动态监测可靠性。 | [#826](https://github.com/thinson/RS-PaperClaw/issues/826) |
-| [20260701] EO-VGGT: Orbital Ray-Conditioned 3D Foundation Models for Satellite Multi-View Reconstruction | Luo Qiyan, Pi Yingdong, Wen Lekang, Yang Jie, Wang Xiaoyu, Zhang Haiming, Wang Mi | State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；Hubei Luojia Laboratory | EO-VGGT利用轨道射线条件约束，构建卫星多视角重建3D基础模型。 | [#827](https://github.com/thinson/RS-PaperClaw/issues/827) |
-| [20260701] DroneIQA-VLE: Multi-Task Drone Image Quality Assessment via Vision-Language Ensemble | Sun Wei, Zhang Weixia, Zhan Hongjian, Lu Mingkai, Gao Yixuan, Zhai Guangtao | East China Normal University；Shanghai Jiao Tong University；To promote research on UAV-oriented quality modeling | DroneIQA-VLE通过视觉-语言集成实现无人机图像多任务质量评估。 | [#828](https://github.com/thinson/RS-PaperClaw/issues/828) |
-| [20260701] DroneFINE: Domain-Aware Parameter-Efficient Fine-Tuning of Vision-Language Detectors for Drone Images | Wu Ke, Zhang Yanan, Gao Yingjie, Li Wenhao, Zhou Chenyu, Ma XinZhu, Chen Jiaxin, Huang Di | National College for Excellent Engineers, Beihang University, Beijing, China；School of Computer Science and Engineering, Beihang University, Beijing, China；School of Computer Science and Information Engineering, Hefei University of；State Key Laboratory of Virtual Reality Technology and Systems, Beihang；University, Beijing, China；Innovation Center for Intelligent System Cognition and Decision-Making, Beijing；Information Science Academy of China Electronics Technology Group Corporation | DroneFINE提出域感知参数高效微调，适配无人机图像的视觉语言检测。 | [#829](https://github.com/thinson/RS-PaperClaw/issues/829) |
-| [20260701] Polarimetric SAR Model Fitting for Soil Moisture Retrieval: Study of PALSAR-2 data over a Heterogeneous Mine Environment in Finland | Antropov Oleg, Hamedianfar Alireza, Molinier Matthieu, Salmela Ulla, Kukkula Hanna, Seitsonen Lauri, Liwata-Kenttälä Pauliina, Middleton Maarit | VTT Technical Research Centre of Finland, Espoo, Finland | 极化SAR半经验模型用于芬兰矿区土壤水分反演，分析PALSAR-2时序数据。 | [#830](https://github.com/thinson/RS-PaperClaw/issues/830) |
-
-## 🔎 观察
-
-- 视觉-语言模型正从通用场景向遥感垂直领域渗透，驱动定位、检测与质量评估任务革新。
-- 遥感基础模型发展更注重物理先验（如轨道几何、极化散射）与不确定性量化，提升可解释性。
 
 ---
 
