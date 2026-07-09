@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260708](./202607/20260708.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感研究聚焦于多模态数据融合与跨域迁移。非洲贫民窟制图结合Sentinel-1纹理与局地气候分区，提升非正规住区识别精度。碳预测模型CarbonCLIP引入街景语义与时序对比学习。异源遥感变化检测通过对抗对齐与空频精炼网络，增强跨模态特征不变性。
+
+## ✨ 今日亮点
+
+- SAR纹理与局地气候分区结合提升贫民窟制图精度
+- 街景语义与时序对比学习增强碳预测模型
+- 对抗对齐与空频精炼网络实现异源变化检测
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260708] Context-Aware Slum Mapping in Sub-Saharan Africa Using Sentinel-1 Texture and Local Climate Zones | Chepkilot Peterson, Memar Babak, Gamba Paolo | Department of Civil, Building and Environmental Engineering, Sapienza University of Rome, Rome, Italy (；Department of Electrical, Computer and Biomedical Engineering, University of Pavia, Pavia, Italy ( | 利用Sentinel-1纹理和局地气候分区实现非洲贫民窟上下文感知制图 | [#866](https://github.com/thinson/RS-PaperClaw/issues/866) |
+| [20260708] CarbonCLIP: Enhance Carbon Prediction from Satellite Imagery via Integrated Street-View Semantics and Temporal Context Training | Yang Zeru, Gong Fang-Ying, Steve H. L. Yim, Yuen Chau | Energy Research Institute at NTU, Interdisciplinary Graduate Programme, Nanyang Technological University, Singapore；School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore；School of Public Administration and Policy, Renmin University of China, Beijing, China；Asian School of the Environment, Nanyang Technological University, Singapore；Center for Climate Change and Environmental Health, Nanyang Technological University, Singapore | CarbonCLIP融合街景语义与时序上下文提升卫星碳预测能力 | [#867](https://github.com/thinson/RS-PaperClaw/issues/867) |
+| [20260708] ASFR-Net: Adversarial Alignment and Spatio-Frequency Refinement Network for Heterogeneous Remote Sensing Image Change Detection | Wu Xin-Jie, You Zhi-Hui, Chen Si-Bao, Shu Qing-Ling, Wang Xiao, Tang Jin, Luo Bin | School of Public Safety and Emergency Management, Anhui University of Science and Technology, Hefei, China ( | ASFR-Net通过对抗对齐和空频精炼实现异源遥感变化检测 | [#868](https://github.com/thinson/RS-PaperClaw/issues/868) |
+
+## 🔎 观察
+
+- 多模态融合（SAR+气候分区、卫星+街景）成为提升遥感应用精度的关键路径
+- 跨模态特征对齐与不变性学习在异源变化检测中展现显著优势
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260707](./202607/20260707.md)
 ## 📌 今日概况
 
@@ -65,38 +97,6 @@ Powered by OpenClaw🦞
 
 - 自监督学习与物理环境信号的结合成为地理空间表征评估新方向。
 - 旋转等变与低秩先验等结构化先验正被广泛引入遥感检测任务。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260705](./202607/20260705.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦于变化检测、小目标检测与冰川预测三大方向。MambaRefine-CD引入MambaVision与时空边界细化提升变化检测精度；FRFDet通过对称采样与可扩展融合实现无人机小目标高效检测；GlacierCastAI结合多模态卫星影像与气候信号预测冰川退缩，展现了深度学习在环境监测中的前沿应用。
-
-## ✨ 今日亮点
-
-- MambaVision结合时空边界细化提升变化检测精度
-- 对称采样与可扩展融合实现无人机小目标高效检测
-- 多模态卫星影像与气候信号联合预测冰川退缩
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260705] MambaRefine-CD: MambaVision with Region-Boundary Temporal Refinement | Perera Dineth, Firdous Thaariq, Samarakoon Oshadha, Godaliyadda Roshan, Ekanayake Parakrama, Herath Vijitha | University of Peradeniya | MambaRefine-CD利用MambaVision与区域-边界时序细化改进遥感变化检测 | [#848](https://github.com/thinson/RS-PaperClaw/issues/848) |
-| [20260705] FRFDet: Efficient UAV Small Object Detection with Symmetric Sampling and Scalable Fusion | Si Yunzhong, Xu Huiying, Zhu Xinzhong, Liu Yang, Dong Yao, Zhang Wenhao, Li Hongbo | College of Computer Science and Technology, Zhejiang Normal University, Jinhua, China；Hangzhou School of Automation, Zhejiang Normal University, Hangzhou, China | FRFDet提出对称双向采样与可扩展融合实现轻量无人机小目标检测 | [#849](https://github.com/thinson/RS-PaperClaw/issues/849) |
-| [20260705] GlacierCastAI: Predicting Glacier Retreat from Multi-Modal Satellite Imagery and Climate Signals | Ramachandran Arunkumar | Independent Researcher；achieves an IoU of 0.320—98% of image-only performance— The primary research question addressed in this study is | GlacierCastAI融合多模态卫星影像与气候信号预测冰川退缩动态 | [#850](https://github.com/thinson/RS-PaperClaw/issues/850) |
-
-## 🔎 观察
-
-- 时序与多模态融合成为遥感智能分析的关键技术趋势
-- 轻量化与高效检测在无人机遥感应用中持续受到关注
 
 ---
 
