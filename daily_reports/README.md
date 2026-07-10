@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260709](./202607/20260709.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究聚焦于无人机视觉与地理空间基础模型的应用。多篇工作探索了无人机在长时域导航、开放词汇分割及多模态指代理解中的能力，同时基础模型被用于葡萄种植潜力预测和儿童贫困制图，体现了遥感与语言、语义推理的深度融合趋势。
+
+## ✨ 今日亮点
+
+- 无人机视觉语言导航与开放词汇分割成为热点
+- 地理空间基础模型拓展至农业与贫困预测
+- 多模态指代理解与目标检测方法持续创新
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260709] Predicting Viticulture Potential through an Ensemble of U-Net and a Geospatial Foundation Model | Jorge Ignacio Perez, Hwaai Kang Kee, Rassbach Lucas | Georgia Institute of Technology, North Ave NW, Atlanta, GA 30332 | 集成U-Net与地理空间基础模型预测葡萄种植潜力。 | [#870](https://github.com/thinson/RS-PaperClaw/issues/870) |
+| [20260709] FSD-VLN: Fast-Slow Dual-System Modeling for Aerial Long-Horizon Vision-Language Navigation | Zhu Xueke, Meng Qingyan, Yu Liutao, Zhang Wei, Ma Zhengyu, Zhou Huihui, Tian Yonghong | Pengcheng Laboratory；Shenzhen Institutes of Advanced Technology；Peking University | 提出快慢双系统架构用于无人机长时域视觉语言导航。 | [#871](https://github.com/thinson/RS-PaperClaw/issues/871) |
+| [20260709] Enhancing the KidSat Model: Integrating Geographical Encoding and Data Quality Assessment for Childhood Poverty Prediction | Hou Hin Ip, Ka Nam Lam, Joshua Man Yu Ng, Sharma Makkunda, Flaxman Seth, Gerlach-Wood Codie, H Juliette T Unwin | School of Mathematics School of Mathematics School of Mathematics；University of Bristol University of Bristol University of Bristol；Department of Computer Science Department of Computer Science；University of Oxford University of Oxford；School of Mathematics School of Mathematics；University of Bristol University of Bristol | 改进KidSat模型，融入地理编码与数据质量评估预测儿童贫困。 | [#872](https://github.com/thinson/RS-PaperClaw/issues/872) |
+| [20260709] UniRef-UAV: A Multimodal Benchmark for Universal Referring in UAV Imagery | Tian Haibin, Xie Huichao, Qian Xuelin, Lu Ruitao, Han Junwei, Zhang Dingwen | School of Automation, Northwestern Polytechnical University, Xi'an, China (；College of Missile Engineering, Rocket Force University of Engineering, Xi'an, China (；School of Artificial Intelligence, Chongqing University of Posts and Telecommunications, Chongqing, China ( | 发布UniRef-UAV多模态基准，支持无人机通用指代理解。 | [#873](https://github.com/thinson/RS-PaperClaw/issues/873) |
+| [20260709] UAV-OVVIS: Unmanned Aerial Vehicles Also Need Open-Vocabulary Video Instance Segmentation | Dou Mingyu, Qiu Shi, Hu Ming, Chen Yifan, Sun Zhe | Xi’an Institute of Optics and Precision Mechanics, Chinese Academy of Sciences；University of Chinese Academy of Sciences；Institute of Artificial Intelligence (TeleAI), China Telecom；College of Future Information Technology, Fudan University；School of Artificial Intelligence, Optics and Electronics, Northwestern Polytechnical University | 提出UAV-OVVIS方法，实现无人机开放词汇视频实例分割。 | [#874](https://github.com/thinson/RS-PaperClaw/issues/874) |
+| [20260709] LOGOS: Language-guided Oriented Object Detection in Aerial Scenes | Nguyen Trong-Thuan, Tran Minh-Triet | University of Science, VNU-HCM, Vietnam；Vietnam National University, Ho Chi Minh City, Vietnam | 提出LOGOS方法，利用语言引导实现航拍场景有向目标检测。 | [#875](https://github.com/thinson/RS-PaperClaw/issues/875) |
+
+## 🔎 观察
+
+- 无人机视觉任务正从单一感知向语言引导的语义推理演进。
+- 地理空间基础模型在农业和社会经济预测中的应用潜力初显。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260708](./202607/20260708.md)
 ## 📌 今日概况
 
@@ -64,39 +99,6 @@ Powered by OpenClaw🦞
 
 - 红外遥感与视觉-语言模型结合成为热点，涵盖适配与对抗攻击两方面。
 - 物理信息与遥感融合趋势明显，如森林声学模拟和热气流扰动研究。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260706](./202607/20260706.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦于自监督地理空间表征、多光谱目标检测、无人机群雷达成像及红外小目标检测。自监督学习结合环境信号评估表征质量，旋转等变网络提升多光谱检测鲁棒性，原子范数去噪实现稀疏孔径下无人机群成像，深度展开网络利用低秩先验增强红外小目标检测性能。
-
-## ✨ 今日亮点
-
-- 自监督地理空间表征结合环境信号评估
-- 旋转等变网络提升多光谱目标检测鲁棒性
-- 原子范数去噪实现无人机群稀疏孔径成像
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260706] Probing Geospatial SSL Representations with Environmental Signals | Mocharla Rohita, Vishal M. Patel | Johns Hopkins Applied Physics Laboratory；Johns Hopkins University | 利用ERA5再分析环境信号评估自监督地理空间表征质量。 | [#852](https://github.com/thinson/RS-PaperClaw/issues/852) |
-| [20260706] Fully Rotation-Equivariant Spectral-Spatial Learning for Multispectral Object Detection | Zhang Peng, Xu Tingfa, Han Shuaihao, Li Jianan | Beijing Institute of Technology, Beijing, China | 提出全旋转等变光谱-空间学习网络用于多光谱目标检测。 | [#853](https://github.com/thinson/RS-PaperClaw/issues/853) |
-| [20260706] Multi-Target ISAR Imaging of UAV Swarms Using Fast Reweighted Atomic Norm Denoising | Roueinfar Mohammad | Mazandaran University of Science and Technology, December 23-24, 2025；School of Electrical Engineering；IHU University；involves resolving scattering centers across range and | 采用快速重加权原子范数去噪实现无人机群多目标ISAR成像。 | [#854](https://github.com/thinson/RS-PaperClaw/issues/854) |
-| [20260706] LCPNet: Latent Consistent Proximal Unfolding Network for Infrared Small Target Detection | Zhang Tianfang, Wu Fengyi, Li Lei, Liu Chang, Peng Zhenming, Zhang Huaping, Ji Xiangyang | Department of Automation, Tsinghua University, Beijing,, China；School of Artificial Intelligence, Beijing Institute of Technology, Beijing,, China | 设计潜一致近端展开网络结合低秩先验检测红外小目标。 | [#855](https://github.com/thinson/RS-PaperClaw/issues/855) |
-
-## 🔎 观察
-
-- 自监督学习与物理环境信号的结合成为地理空间表征评估新方向。
-- 旋转等变与低秩先验等结构化先验正被广泛引入遥感检测任务。
 
 ---
 
