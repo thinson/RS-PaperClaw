@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260710](./202607/20260710.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦于基础模型适配与自主感知两大方向。SAM 3在遥感场景下的零样本与单样本分割能力被系统评估；多光谱差分分析用于地形识别，服务于自主导航；面向无人机野外主动目标检测的大规模数据集与基准发布；跨视角地理定位中提出稳定自训练方法，通过弹性匹配与自适应净化提升无监督学习效果。
+
+## ✨ 今日亮点
+
+- SAM 3遥感零样本与单样本分割能力评估
+- 多光谱差分融合用于地形识别与自主导航
+- 无人机野外主动目标检测数据集与基准发布
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260710] Promptable Concept Segmentation from Above: Evaluating SAM 3's Zero-Shot and One-Shot Capabilities in Remote Sensing | Dabaja Mohammad, Celik Turgay | “school” is implicitly tied to its vertical facades and windows；Both authors are affiliated with the Department of ICT, University of Agder, To resolve this ambiguity and establish a performance | 评估SAM 3在遥感中的零样本与单样本概念分割能力。 | [#877](https://github.com/thinson/RS-PaperClaw/issues/877) |
+| [20260710] Differential Analysis of Multispectral Images for Terrain Identification | Kashmar Omar, Arya Hemendra, Mastrogiovanni Fulvio | University of Genoa, Italy；Indian Institute of Technology Bombay, Mumbai, India | 提出多光谱图像差分分析方法用于地形识别。 | [#878](https://github.com/thinson/RS-PaperClaw/issues/878) |
+| [20260710] Toward Active Object Detection for UAVs in the Wild: A Large-Scale Dataset, Benchmark and Method | Liu Tianpeng, Jiang Xinhua, Liu Li, Shen Qinmu, Tang Siwei, Liu Zhen, Liu Yongxiang | College of Electronic Science and Technology, National University of Defense Technology, Changsha,, China | 发布面向无人机野外主动目标检测的大规模数据集与基准。 | [#879](https://github.com/thinson/RS-PaperClaw/issues/879) |
+| [20260710] STEAM: Stable Self-Training with Elastic Matching and Adaptive Purification | Wang Shaoxiang, Zhang Kejia, Pan Haiwei, Zhang Lan | Harbin Engineering University, School of Computer Science and Technology；Northeast Forestry University, School of Computer and Artificial Intelligence | 提出稳定自训练方法，结合弹性匹配与自适应净化。 | [#880](https://github.com/thinson/RS-PaperClaw/issues/880) |
+
+## 🔎 观察
+
+- 基础模型（如SAM）向遥感垂直领域迁移仍是研究热点，零样本能力受关注。
+- 无人机自主感知正从静态检测向主动目标检测演进，数据集驱动明显。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260709](./202607/20260709.md)
 ## 📌 今日概况
 
@@ -62,43 +95,6 @@ Powered by OpenClaw🦞
 
 - 多模态融合（SAR+气候分区、卫星+街景）成为提升遥感应用精度的关键路径
 - 跨模态特征对齐与不变性学习在异源变化检测中展现显著优势
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260707](./202607/20260707.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究呈现多模态融合与物理感知并进趋势。红外遥感视觉-语言模型在CLIP适配与对抗攻击方面取得进展；同时，物理信息驱动的森林声学模拟、无人机辅助6G网络服务、盐沼植被监测及不确定性感知的跨模态检索等方向均有新工作，体现了遥感AI向精细化、鲁棒化发展的特点。
-
-## ✨ 今日亮点
-
-- 红外遥感视觉-语言模型CLIP适配与指令微调研究
-- 物理信息驱动的森林声学模拟用于生物遥感
-- 不确定性感知的跨模态遥感图像-文本检索
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260707] MonoIR-RS: Infrared Remote Sensing Vision-Language Learning with CLIP and VLM Adaptation | Han Jiaju, Yaqi Ma, Chai Yahui, Sun Xuemeng, Li Xin, Zhang Qike, Zhao Yingying, Chen Xiang, Yang Luwei, Hu Chengyin, Long Jiahuan | China University of Petroleum-Beijing at Karamay, Karamay, Xinjiang, China；Guizhou University, Guiyang, China；Shenzhen Research Institute of Big Data, Shenzhen, China；Shanghai Jiao Tong University, Shanghai, China | 提出MonoIR-RS，通过CLIP与VLM适配实现红外遥感视觉-语言学习。 | [#857](https://github.com/thinson/RS-PaperClaw/issues/857) |
-| [20260707] Life Style Levels: Neighborhood Delineation using Geospatial Data | Kulkarni Srivatsa, Banerjee Debarag | L&T Finance | 利用地理空间数据划分生活方式等级，实现城市邻里精细刻画。 | [#858](https://github.com/thinson/RS-PaperClaw/issues/858) |
-| [20260707] AirflowAttack: Thermal-Airflow Adversarial Perturbations against Infrared Remote-Sensing Vision-Language Models | Su Cong, Han Jiaju, Sun Xuemeng, Hu Chengyin, Zhang Qike, Guo Jiujiang, Wei Yiwei, Long Jiahuan | China University of Petroleum-Beijing at Karamay, Karamay, Xinjiang, China；Tianjin University, Tianjin, China；Shanghai Jiao Tong University, Shanghai, China | 设计热气流对抗扰动，攻击红外遥感视觉-语言模型。 | [#859](https://github.com/thinson/RS-PaperClaw/issues/859) |
-| [20260707] ForestIR: Physics-Informed Forest Sound Simulation for Array-Based Bioacoustic Remote Sensing | Shen Xin, Jennifer N. Kampe, Changwoo J. Lee, Scherting Braden, Somervuo Panu, Lehtiö Ari, Sandro von Brandenburg, Nokelainen Ossi, Ovaskainen Otso, David B. Dunson | Department of Statistical Science, Duke University, Durham, NC, USA；Department of Biological and Environmental Science, University of Jyväskylä, Jyväskylä, Finland；Organismal and Evolutionary Biology Research Programme, Faculty of Biological and Environmental；Sciences, University of Helsinki, Helsinki, Finland；Digital Services, University of Jyväskylä, Jyväskylä, Finland；Open Science Centre, University of Jyväskylä, Jyväskylä, Finland | 提出ForestIR，物理信息驱动森林声学模拟用于阵列生物遥感。 | [#860](https://github.com/thinson/RS-PaperClaw/issues/860) |
-| [20260707] Quality-Aware Personalized AI Service Provisioning in UAV-Assisted 6G Networks | Farhoudi Mohammad, Shokrnezhad Masoud, Taleb Tarik | Oulu University, Finland；Ruhr University Bochum (RUB), Germany | 在无人机辅助6G网络中实现质量感知的个性化AI服务部署。 | [#861](https://github.com/thinson/RS-PaperClaw/issues/861) |
-| [20260707] EcoVision: AI-Powered Drone Imaging for Salt Marsh Vegetation Monitoring and Dominance Mapping | Onyenonachi Innocent, Peter J. Lawerance, Kanwal Nadia | School of Computer Science and Mathematics；School of Life Science | EcoVision利用AI无人机成像进行盐沼植被监测与优势种制图。 | [#862](https://github.com/thinson/RS-PaperClaw/issues/862) |
-| [20260707] Uncertainty-Aware Cross-Modal Remote Sensing Image-Text Retrieval via Evidential Learning | Wang Zhuoyue, Wang Xueqian, Li Gang, Li Chengxi, Liu Yongpan, Ban Yifang | Department of Electronic Engineering, Despite the notable progress achieved by current CMRSITR Tsinghua University, Beijing, China；Department of Electronic Engineering, Tsinghua University, Beijing, China；State Key Laboratory of Space Network and Communications, Tsinghua University, Beijing, China (；School of Electrical Engineering and Computer Science, fulfill these idealized conditions；the Division of Geoinformatics, School of Architecture and major source of uncertainty arises from atmospheric and the Built Environment, KTH Royal Institute of Technology | 基于证据学习实现不确定性感知的跨模态遥感图像-文本检索。 | [#863](https://github.com/thinson/RS-PaperClaw/issues/863) |
-| [20260707] SpecTrack: Spectral Prompt Guided Adaptive Experts for Multispectral Object Tracking | Tan Xingyu, Qin Yunrong, Hu Mengjie | Beijing University of Posts and Telecommunications | SpecTrack采用光谱提示引导的混合专家模型进行多光谱目标跟踪。 | [#864](https://github.com/thinson/RS-PaperClaw/issues/864) |
-
-## 🔎 观察
-
-- 红外遥感与视觉-语言模型结合成为热点，涵盖适配与对抗攻击两方面。
-- 物理信息与遥感融合趋势明显，如森林声学模拟和热气流扰动研究。
 
 ---
 
