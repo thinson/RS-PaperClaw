@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260712](./202607/20260712.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦于无监督学习与实时检测两大方向。一篇工作提出利用空间变换网络解决建筑分割中的标签错位问题，实现无监督分割。另有两篇分别关注无人机平台的人员实时检测和车辆再识别在模拟天气下的鲁棒性，体现了从算法到实际部署的全面探索。
+
+## ✨ 今日亮点
+
+- 无监督建筑分割方法应对标签错位问题
+- 无人机实时人员检测框架基于YOLOv8
+- 模拟天气下无人机车辆再识别基准测试
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260712] Align and Segment: Unsupervised Learning for Building Segmentation From Misaligned Labels | Venkanna Babu Guthula, Krause Oswin, Gominski Dimitri, Zhang Hui, Mottelson Johan, Kariryaa Ankit, Lang Nico, Igel Christian | University of Copenhagen, Copenhagen, Denmark；Royal Danish Academy, Copenhagen, Denmark | 提出无监督方法，用空间变换网络对齐错位标签实现建筑分割 | [#886](https://github.com/thinson/RS-PaperClaw/issues/886) |
+| [20260712] End-to-End Real-Time Drone-Based Person Detection Framework Using Deep Learning | Sarmah Payel, Ranjan Ayush, Piyush Kaushik Bhattacharyya, Anil Kr. Shaw, Pradip Kr. Das | Centre for Drone Technology；Indian Institute of Technology Guwahati；KIIT University；Drone LAB；National Institute of Electronics and Information Technology | 基于YOLOv8的端到端无人机实时人员检测框架 | [#887](https://github.com/thinson/RS-PaperClaw/issues/887) |
+| [20260712] Benchmarking UAV-based Vehicle Re-Identification under Simulated Weather Conditions | Vu Minh Tran, Nguyen Khang | University of Information Technology University of Information Technology；Vietnam National University Ho Chi Minh City Vietnam National University Ho Chi Minh City；become an important research topic in computer vision due to | 构建模拟天气条件下的无人机车辆再识别基准数据集 | [#888](https://github.com/thinson/RS-PaperClaw/issues/888) |
+
+## 🔎 观察
+
+- 无监督学习在遥感标注不完美场景中展现出实用潜力
+- 无人机视觉任务正从检测向更复杂的再识别与鲁棒性评估延伸
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260711](./202607/20260711.md)
 ## 📌 今日概况
 
@@ -60,41 +92,6 @@ Powered by OpenClaw🦞
 
 - 基础模型（如SAM）向遥感垂直领域迁移仍是研究热点，零样本能力受关注。
 - 无人机自主感知正从静态检测向主动目标检测演进，数据集驱动明显。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260709](./202607/20260709.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究聚焦于无人机视觉与地理空间基础模型的应用。多篇工作探索了无人机在长时域导航、开放词汇分割及多模态指代理解中的能力，同时基础模型被用于葡萄种植潜力预测和儿童贫困制图，体现了遥感与语言、语义推理的深度融合趋势。
-
-## ✨ 今日亮点
-
-- 无人机视觉语言导航与开放词汇分割成为热点
-- 地理空间基础模型拓展至农业与贫困预测
-- 多模态指代理解与目标检测方法持续创新
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260709] Predicting Viticulture Potential through an Ensemble of U-Net and a Geospatial Foundation Model | Jorge Ignacio Perez, Hwaai Kang Kee, Rassbach Lucas | Georgia Institute of Technology, North Ave NW, Atlanta, GA 30332 | 集成U-Net与地理空间基础模型预测葡萄种植潜力。 | [#870](https://github.com/thinson/RS-PaperClaw/issues/870) |
-| [20260709] FSD-VLN: Fast-Slow Dual-System Modeling for Aerial Long-Horizon Vision-Language Navigation | Zhu Xueke, Meng Qingyan, Yu Liutao, Zhang Wei, Ma Zhengyu, Zhou Huihui, Tian Yonghong | Pengcheng Laboratory；Shenzhen Institutes of Advanced Technology；Peking University | 提出快慢双系统架构用于无人机长时域视觉语言导航。 | [#871](https://github.com/thinson/RS-PaperClaw/issues/871) |
-| [20260709] Enhancing the KidSat Model: Integrating Geographical Encoding and Data Quality Assessment for Childhood Poverty Prediction | Hou Hin Ip, Ka Nam Lam, Joshua Man Yu Ng, Sharma Makkunda, Flaxman Seth, Gerlach-Wood Codie, H Juliette T Unwin | School of Mathematics School of Mathematics School of Mathematics；University of Bristol University of Bristol University of Bristol；Department of Computer Science Department of Computer Science；University of Oxford University of Oxford；School of Mathematics School of Mathematics；University of Bristol University of Bristol | 改进KidSat模型，融入地理编码与数据质量评估预测儿童贫困。 | [#872](https://github.com/thinson/RS-PaperClaw/issues/872) |
-| [20260709] UniRef-UAV: A Multimodal Benchmark for Universal Referring in UAV Imagery | Tian Haibin, Xie Huichao, Qian Xuelin, Lu Ruitao, Han Junwei, Zhang Dingwen | School of Automation, Northwestern Polytechnical University, Xi'an, China (；College of Missile Engineering, Rocket Force University of Engineering, Xi'an, China (；School of Artificial Intelligence, Chongqing University of Posts and Telecommunications, Chongqing, China ( | 发布UniRef-UAV多模态基准，支持无人机通用指代理解。 | [#873](https://github.com/thinson/RS-PaperClaw/issues/873) |
-| [20260709] UAV-OVVIS: Unmanned Aerial Vehicles Also Need Open-Vocabulary Video Instance Segmentation | Dou Mingyu, Qiu Shi, Hu Ming, Chen Yifan, Sun Zhe | Xi’an Institute of Optics and Precision Mechanics, Chinese Academy of Sciences；University of Chinese Academy of Sciences；Institute of Artificial Intelligence (TeleAI), China Telecom；College of Future Information Technology, Fudan University；School of Artificial Intelligence, Optics and Electronics, Northwestern Polytechnical University | 提出UAV-OVVIS方法，实现无人机开放词汇视频实例分割。 | [#874](https://github.com/thinson/RS-PaperClaw/issues/874) |
-| [20260709] LOGOS: Language-guided Oriented Object Detection in Aerial Scenes | Nguyen Trong-Thuan, Tran Minh-Triet | University of Science, VNU-HCM, Vietnam；Vietnam National University, Ho Chi Minh City, Vietnam | 提出LOGOS方法，利用语言引导实现航拍场景有向目标检测。 | [#875](https://github.com/thinson/RS-PaperClaw/issues/875) |
-
-## 🔎 观察
-
-- 无人机视觉任务正从单一感知向语言引导的语义推理演进。
-- 地理空间基础模型在农业和社会经济预测中的应用潜力初显。
 
 ---
 
