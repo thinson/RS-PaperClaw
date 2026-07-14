@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260711](./202607/20260711.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦于自监督学习、视觉语言模型与边缘智能三大方向。PhenoEmbed利用自监督多光谱时序嵌入实现单木冠层物候分析；WeaveEarth提出无训练框架，通过结构化证据构建增强超高分遥感理解；DynaFilter则探索云边协同下的动态滤波机制，优化卫星边缘推理效率。整体趋势向轻量化、无监督及多模态融合演进。
+
+## ✨ 今日亮点
+
+- 自监督时序嵌入用于单木冠层物候提取
+- 无训练视觉语言模型提升超高分遥感理解
+- 云边协同动态滤波优化卫星边缘推理
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260711] PhenoEmbed: Self-Supervised Multispectral UAV Time-Series Embeddings for Individual Tree Crown Phenology | Khan Taimur | are retained as object anchors to extract aligned crown-centered crops through time, allowing one；Helmholtz Centre for Environmental Research - UFZ, Community Ecology, Theodor-Lieser-Str. 4, 06120 | 自监督多光谱无人机时序嵌入实现单木冠层物候特征提取 | [#882](https://github.com/thinson/RS-PaperClaw/issues/882) |
+| [20260711] WeaveEarth: Structured Evidence Construction and Reasoning for Training-Free UHR Remote Sensing Understanding | Ma Xianzhi, Wang Shujun, Li Xiaohan, Liu Hao, Pei Changhua, li Jianhui | School of Frontier Sciences, Nanjing School of Frontier Sciences, Nanjing School of Frontier Sciences, Nanjing；University University University；School of Frontier Sciences, Nanjing Computer Network Information School of Frontier Sciences, Nanjing；University Center, Chinese Academy of Sciences University | 无训练框架通过结构化证据与全局推理增强超高分遥感理解 | [#883](https://github.com/thinson/RS-PaperClaw/issues/883) |
+| [20260711] DynaFilter: Cloud-driven Dynamic Filtering for Satellite Edge Intelligence | Zhang Ziyang, Liu Jie, Mottola Luca | Harbin Institute of Technology Shenzhen, China | 云驱动动态滤波方法优化卫星边缘智能推理效率 | [#884](https://github.com/thinson/RS-PaperClaw/issues/884) |
+
+## 🔎 观察
+
+- 自监督学习在遥感时序分析中的应用日益成熟，尤其针对精细物候监测
+- 无训练视觉语言模型成为超高分遥感理解的新趋势，降低标注依赖
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260710](./202607/20260710.md)
 ## 📌 今日概况
 
@@ -63,38 +95,6 @@ Powered by OpenClaw🦞
 
 - 无人机视觉任务正从单一感知向语言引导的语义推理演进。
 - 地理空间基础模型在农业和社会经济预测中的应用潜力初显。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260708](./202607/20260708.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感研究聚焦于多模态数据融合与跨域迁移。非洲贫民窟制图结合Sentinel-1纹理与局地气候分区，提升非正规住区识别精度。碳预测模型CarbonCLIP引入街景语义与时序对比学习。异源遥感变化检测通过对抗对齐与空频精炼网络，增强跨模态特征不变性。
-
-## ✨ 今日亮点
-
-- SAR纹理与局地气候分区结合提升贫民窟制图精度
-- 街景语义与时序对比学习增强碳预测模型
-- 对抗对齐与空频精炼网络实现异源变化检测
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260708] Context-Aware Slum Mapping in Sub-Saharan Africa Using Sentinel-1 Texture and Local Climate Zones | Chepkilot Peterson, Memar Babak, Gamba Paolo | Department of Civil, Building and Environmental Engineering, Sapienza University of Rome, Rome, Italy (；Department of Electrical, Computer and Biomedical Engineering, University of Pavia, Pavia, Italy ( | 利用Sentinel-1纹理和局地气候分区实现非洲贫民窟上下文感知制图 | [#866](https://github.com/thinson/RS-PaperClaw/issues/866) |
-| [20260708] CarbonCLIP: Enhance Carbon Prediction from Satellite Imagery via Integrated Street-View Semantics and Temporal Context Training | Yang Zeru, Gong Fang-Ying, Steve H. L. Yim, Yuen Chau | Energy Research Institute at NTU, Interdisciplinary Graduate Programme, Nanyang Technological University, Singapore；School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore；School of Public Administration and Policy, Renmin University of China, Beijing, China；Asian School of the Environment, Nanyang Technological University, Singapore；Center for Climate Change and Environmental Health, Nanyang Technological University, Singapore | CarbonCLIP融合街景语义与时序上下文提升卫星碳预测能力 | [#867](https://github.com/thinson/RS-PaperClaw/issues/867) |
-| [20260708] ASFR-Net: Adversarial Alignment and Spatio-Frequency Refinement Network for Heterogeneous Remote Sensing Image Change Detection | Wu Xin-Jie, You Zhi-Hui, Chen Si-Bao, Shu Qing-Ling, Wang Xiao, Tang Jin, Luo Bin | School of Public Safety and Emergency Management, Anhui University of Science and Technology, Hefei, China ( | ASFR-Net通过对抗对齐和空频精炼实现异源遥感变化检测 | [#868](https://github.com/thinson/RS-PaperClaw/issues/868) |
-
-## 🔎 观察
-
-- 多模态融合（SAR+气候分区、卫星+街景）成为提升遥感应用精度的关键路径
-- 跨模态特征对齐与不变性学习在异源变化检测中展现显著优势
 
 ---
 
