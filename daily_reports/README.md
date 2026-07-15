@@ -5,7 +5,7 @@
 # [20260714](./202607/20260714.md)
 ## 📌 今日概况
 
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 0 篇。
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 0 篇。
 
 当日筛中论文均未通过处理或质检，未纳入日报。
 
@@ -17,6 +17,7 @@
 | 标题 | arXiv | 失败原因 |
 |------|-------|----------|
 | Domain-Incremental Remote Sensing Change Detection via Difference-Guided Adaptation and Frequency-Decoupled Distillation | [2607.12934v1](https://arxiv.org/abs/2607.12934v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
+| Autonomous Tracking and Terminal Guidance of Moving Targets for Fixed-Wing UAVs | [2607.12801v1](https://arxiv.org/abs/2607.12801v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
 | MBTI: A Multi-Branch Efficient Fine-Tuning Framework for Hyperspectral Image Classification with Foundation Models | [2607.12782v1](https://arxiv.org/abs/2607.12782v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
 | Weakly Supervised Spatio-Temporal Candidate Discovery of Dairy Farm Sites from Seasonal Satellite Imagery | [2607.12748v1](https://arxiv.org/abs/2607.12748v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
 | Label-Decoupled Style Augmentation for Domain Generalization in Multi-Label Remote Sensing Scene Classification | [2607.12704v1](https://arxiv.org/abs/2607.12704v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
