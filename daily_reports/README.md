@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260714](./202607/20260714.md)
+## 📌 今日概况
+
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 0 篇。
+
+当日筛中论文均未通过处理或质检，未纳入日报。
+
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Domain-Incremental Remote Sensing Change Detection via Difference-Guided Adaptation and Frequency-Decoupled Distillation | [2607.12934v1](https://arxiv.org/abs/2607.12934v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
+| Autonomous Tracking and Terminal Guidance of Moving Targets for Fixed-Wing UAVs | [2607.12801v1](https://arxiv.org/abs/2607.12801v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
+| MBTI: A Multi-Branch Efficient Fine-Tuning Framework for Hyperspectral Image Classification with Foundation Models | [2607.12782v1](https://arxiv.org/abs/2607.12782v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
+| Weakly Supervised Spatio-Temporal Candidate Discovery of Dairy Farm Sites from Seasonal Satellite Imagery | [2607.12748v1](https://arxiv.org/abs/2607.12748v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
+| Label-Decoupled Style Augmentation for Domain Generalization in Multi-Label Remote Sensing Scene Classification | [2607.12704v1](https://arxiv.org/abs/2607.12704v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
+| Improving Autonomous Nano-drones Performance via Automated End-to-End Optimization and Deployment of DNNs | [2607.12593v1](https://arxiv.org/abs/2607.12593v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
+| Edge-Aware Thermal Infrared UAV Swarm Tracking | [2607.12544v1](https://arxiv.org/abs/2607.12544v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
+| TerraLogic: A Benchmark for Hierarchical Geospatial Reasoning in Earth Observation | [2607.12497v1](https://arxiv.org/abs/2607.12497v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
+| Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence | [2607.12477v1](https://arxiv.org/abs/2607.12477v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
+
+## 🔎 观察
+
+- 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
+- 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260713](./202607/20260713.md)
 ## 📌 今日概况
 
@@ -63,38 +98,6 @@ Powered by OpenClaw🦞
 
 - 无监督学习在遥感标注不完美场景中展现出实用潜力
 - 无人机视觉任务正从检测向更复杂的再识别与鲁棒性评估延伸
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260711](./202607/20260711.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦于自监督学习、视觉语言模型与边缘智能三大方向。PhenoEmbed利用自监督多光谱时序嵌入实现单木冠层物候分析；WeaveEarth提出无训练框架，通过结构化证据构建增强超高分遥感理解；DynaFilter则探索云边协同下的动态滤波机制，优化卫星边缘推理效率。整体趋势向轻量化、无监督及多模态融合演进。
-
-## ✨ 今日亮点
-
-- 自监督时序嵌入用于单木冠层物候提取
-- 无训练视觉语言模型提升超高分遥感理解
-- 云边协同动态滤波优化卫星边缘推理
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260711] PhenoEmbed: Self-Supervised Multispectral UAV Time-Series Embeddings for Individual Tree Crown Phenology | Khan Taimur | are retained as object anchors to extract aligned crown-centered crops through time, allowing one；Helmholtz Centre for Environmental Research - UFZ, Community Ecology, Theodor-Lieser-Str. 4, 06120 | 自监督多光谱无人机时序嵌入实现单木冠层物候特征提取 | [#882](https://github.com/thinson/RS-PaperClaw/issues/882) |
-| [20260711] WeaveEarth: Structured Evidence Construction and Reasoning for Training-Free UHR Remote Sensing Understanding | Ma Xianzhi, Wang Shujun, Li Xiaohan, Liu Hao, Pei Changhua, li Jianhui | School of Frontier Sciences, Nanjing School of Frontier Sciences, Nanjing School of Frontier Sciences, Nanjing；University University University；School of Frontier Sciences, Nanjing Computer Network Information School of Frontier Sciences, Nanjing；University Center, Chinese Academy of Sciences University | 无训练框架通过结构化证据与全局推理增强超高分遥感理解 | [#883](https://github.com/thinson/RS-PaperClaw/issues/883) |
-| [20260711] DynaFilter: Cloud-driven Dynamic Filtering for Satellite Edge Intelligence | Zhang Ziyang, Liu Jie, Mottola Luca | Harbin Institute of Technology Shenzhen, China | 云驱动动态滤波方法优化卫星边缘智能推理效率 | [#884](https://github.com/thinson/RS-PaperClaw/issues/884) |
-
-## 🔎 观察
-
-- 自监督学习在遥感时序分析中的应用日益成熟，尤其针对精细物候监测
-- 无训练视觉语言模型成为超高分遥感理解的新趋势，降低标注依赖
 
 ---
 
