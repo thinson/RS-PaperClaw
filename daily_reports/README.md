@@ -2,6 +2,48 @@
 
 最近三天日报（最新在前）：
 
+# [20260715](./202607/20260715.md)
+## 📌 今日概况
+
+今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦于无人机自主导航与多模态感知、云感知地球观测及北极海冰监测。AeroMap3D提出基于视觉-几何-语义地图先验的单目6-DoF定位方法，解决GNSS拒止环境问题；M3F-UAV构建低空无线传感缺失模态多模态基础模型；RoughNet利用扩散超分辨率技术绘制海冰粗糙度图，提升气候监测能力。
+
+## ✨ 今日亮点
+
+- 无人机单目定位结合地图先验，突破GNSS拒止限制
+- 低空无线传感缺失模态融合基础模型
+- 扩散模型超分辨率用于北极海冰粗糙度制图
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260715] AeroMap3D: Anchoring Monocular UAV 6-DoF Localization to Visual-Geometric-Semantic Map Priors | Deng Zhiyun, Sentis Luis | University of Texas at Austin | AeroMap3D利用视觉-几何-语义地图先验实现无人机单目6-DoF定位 | [#899](https://github.com/thinson/RS-PaperClaw/issues/899) |
+| [20260715] M3F-UAV: A Missing-Modality Multimodal Foundation Model for Low-Altitude Wireless Sensing | Gao Pengxuan, Ying Kai, Wu Botao, Mo Jianhua, Wen Qingsong | School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China ( | M3F-UAV提出缺失模态多模态基础模型用于低空无线传感 | [#900](https://github.com/thinson/RS-PaperClaw/issues/900) |
+| [20260715] From Surface Forecasting to Observability Forecasting: A Latent World Model for Cloud-Aware EO Monitoring | Albughdadi Mohanad | European Centre for Medium-Range Weather Forecasts | LeWorldModel实现从地表到可观测性的云感知预报 | [#901](https://github.com/thinson/RS-PaperClaw/issues/901) |
+| [20260715] RoughNet: Mapping Arctic Sea Ice Roughness Using Diffusion-Based Super-Resolution of Satellite Imagery | Cannon Tessa, Tsamados Michel, Manescu Petru, Newman Thomas, Haas Christian, Helm Veit, Chen Weibin, Scharien Randall | Department of Computer Science, University College London；Department of Earth Sciences, University College London；Alfred Wegener Institute Helmholtz Centre for Polar and；Marine Research, Bremerhaven, Germany；Department of Geography, University of Victoria | RoughNet基于扩散超分辨率卫星影像绘制海冰粗糙度图 | [#902](https://github.com/thinson/RS-PaperClaw/issues/902) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Minimax Theory of Likelihood-Based Deep Learning for Speckle Regression | [2607.14064v1](https://arxiv.org/abs/2607.14064v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 无人机定位研究正从纯视觉向多模态地图先验融合演进
+- 扩散模型在遥感超分辨率应用中展现出对复杂纹理的建模优势
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260714](./202607/20260714.md)
 ## 📌 今日概况
 
@@ -66,38 +108,6 @@ Powered by OpenClaw🦞
 
 - 无人机自主性与安全性研究成为热点，多模态交互与协同导航技术并行发展。
 - 自监督与不确定性量化方法在遥感应用中日益重要，推动模型鲁棒性与实用性提升。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260712](./202607/20260712.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦于无监督学习与实时检测两大方向。一篇工作提出利用空间变换网络解决建筑分割中的标签错位问题，实现无监督分割。另有两篇分别关注无人机平台的人员实时检测和车辆再识别在模拟天气下的鲁棒性，体现了从算法到实际部署的全面探索。
-
-## ✨ 今日亮点
-
-- 无监督建筑分割方法应对标签错位问题
-- 无人机实时人员检测框架基于YOLOv8
-- 模拟天气下无人机车辆再识别基准测试
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260712] Align and Segment: Unsupervised Learning for Building Segmentation From Misaligned Labels | Venkanna Babu Guthula, Krause Oswin, Gominski Dimitri, Zhang Hui, Mottelson Johan, Kariryaa Ankit, Lang Nico, Igel Christian | University of Copenhagen, Copenhagen, Denmark；Royal Danish Academy, Copenhagen, Denmark | 提出无监督方法，用空间变换网络对齐错位标签实现建筑分割 | [#886](https://github.com/thinson/RS-PaperClaw/issues/886) |
-| [20260712] End-to-End Real-Time Drone-Based Person Detection Framework Using Deep Learning | Sarmah Payel, Ranjan Ayush, Piyush Kaushik Bhattacharyya, Anil Kr. Shaw, Pradip Kr. Das | Centre for Drone Technology；Indian Institute of Technology Guwahati；KIIT University；Drone LAB；National Institute of Electronics and Information Technology | 基于YOLOv8的端到端无人机实时人员检测框架 | [#887](https://github.com/thinson/RS-PaperClaw/issues/887) |
-| [20260712] Benchmarking UAV-based Vehicle Re-Identification under Simulated Weather Conditions | Vu Minh Tran, Nguyen Khang | University of Information Technology University of Information Technology；Vietnam National University Ho Chi Minh City Vietnam National University Ho Chi Minh City；become an important research topic in computer vision due to | 构建模拟天气条件下的无人机车辆再识别基准数据集 | [#888](https://github.com/thinson/RS-PaperClaw/issues/888) |
-
-## 🔎 观察
-
-- 无监督学习在遥感标注不完美场景中展现出实用潜力
-- 无人机视觉任务正从检测向更复杂的再识别与鲁棒性评估延伸
 
 ---
 
