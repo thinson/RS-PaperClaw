@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260716](./202607/20260716.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究聚焦于无人机（UAV）感知与跟踪、高光谱图像分类及可解释性分析。多篇工作引入物理引导、生成学习或视觉-语言-动作模型，提升动态环境下的感知鲁棒性。此外，针对SAR图像洪水检测的xAI方法比较研究也受到关注，体现了模型透明性与物理先验融合的趋势。
+
+## ✨ 今日亮点
+
+- 物理引导图扩散网络提升高光谱分类精度
+- 视觉-语言-动作模型增强无人机空间感知
+- 事件相机与频域跟踪实现实时空对空追踪
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260716] DAPGNet: Dynamic Adaptive Physics-Guided Graph Diffusion Network for Hyperspectral Image Classification | Wang Pengkun, Cao Weijia, Wang Ning, Yang Xiaofei | the National Engineering Laboratory for Satellite Remote Sensing Applications, Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China；University of Chinese Academy of Sciences, Beijing, China (；the Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China (；the National Engineering Laboratory for Satellite Remote Sensing Applications, Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China (；Guangzhou University, Guangzhou, China ( | 提出动态自适应物理引导图扩散网络，用于高光谱图像分类。 | [#912](https://github.com/thinson/RS-PaperClaw/issues/912) |
+| [20260716] CosFly-VLA: A Spatially Aware Vision-Language-Action Model for UAV Tracking | Ren Ruilong, Cheng Songsheng, Zhou Yunpeng, Chen Hanxuan, Wang Xiangyue, Zeng Tianle, Yuan Shuai, Li Binbo, Guo Hanzhong, Pei Ji, Zhang Da, Wang Kangli | Northeast Normal University；Southern University of Science and Technology；Peking University；University of Hong Kong | CosFly-VLA模型融合空间感知与视觉-语言-动作，用于无人机跟踪。 | [#913](https://github.com/thinson/RS-PaperClaw/issues/913) |
+| [20260716] Conditional Generative Learning Enabled Wireless UAV Sensing and Tracking via Point Cloud Imaging | Dai Xinhong, Gao Yuan, Jiang Hao, Yuan Xiaojun, Wang Xin | Key Laboratory for Information Science of Electromagnetic Waves (MoE), College of Future Information Technology, Fudan University, Shanghai, China. (；the National Key Laboratory of Wireless Communications, the University of Electronic Science and Technology of China, Chengdu, China ( | 条件生成学习结合点云成像实现无线无人机感知与跟踪。 | [#914](https://github.com/thinson/RS-PaperClaw/issues/914) |
+| [20260716] On the Disagreement in Perturbation-based xAI -- Benchmarking Perturbation Choices for Flood Detection from SAR Images | Schlegel Anastasia, Hänsch Ronny | a Microwaves and Radar Institute, German Aerospace Center (DLR), Weßling, 82234, Germany；b Chair of Remote Sensing Technology, Department of Aerospace and Geodesy, Technical University of Munich, Munich, 80333, Germany；In response to this need for transparency, research on ex- | 基准测试扰动选择对SAR图像洪水检测中xAI方法的影响。 | [#915](https://github.com/thinson/RS-PaperClaw/issues/915) |
+| [20260716] AE-UAV: An Air-to-Air Event-Based UAV Tracking Benchmark and a Real-Time Frequency-Domain Tracker | Jiang Zixin, He Bing, Xiong Chaoran, Wang Zhenzhen, Zhao Xin, Pei Ling | Department of Electronic Engineering, Rocket Force University of Engineering, Xi’an, China (；Shanghai Key Laboratory of Navigation and Location Based Services, Shanghai Jiao Tong University, Shanghai, China (；State Key Laboratory of Submarine Geoscience, School of Automation and Intelligent Sensing, Shanghai Jiao Tong University, Shanghai, China | 发布空对空事件相机无人机跟踪基准及实时频域跟踪器。 | [#916](https://github.com/thinson/RS-PaperClaw/issues/916) |
+
+## 🔎 观察
+
+- 无人机感知领域正从单一视觉向多模态融合（语言、事件、电磁）演进。
+- 物理先验与可解释性方法在遥感任务中应用增多，提升模型可信度。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260715](./202607/20260715.md)
 ## 📌 今日概况
 
@@ -74,42 +108,6 @@ Powered by OpenClaw🦞
 
 - 域泛化与增量学习成为遥感模型部署的核心挑战，多篇工作从特征解耦角度提出解决方案
 - 无人机智能体研究从单一跟踪向具身认知演进，基准测试推动多模态大模型在边缘设备落地
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260713](./202607/20260713.md)
-## 📌 今日概况
-
-今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日遥感AI研究聚焦于无人机（UAV）的智能导航与安全控制，涵盖多模态人机意图调解、训练-free视觉对话导航及室内集群协同。同时，灾害响应中的建筑损伤快速评估、自监督学习在高分辨率多光谱影像中的应用，以及基于事件相机的异步目标检测与跟踪也取得进展。此外，地球观测回归任务的不确定性量化研究为建筑高度、树冠高度及生物量估算提供了新方法。
-
-## ✨ 今日亮点
-
-- 无人机安全控制与多模态意图调解模型
-- 训练-free空中视觉对话导航方法
-- 基于事件相机的异步UAV检测与跟踪
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260713] HASTE: A Platform for Rapid Post-Disaster Building Damage Assessment | Robinson Caleb, Ortiz Anthony, Simone Fobi Nsutezo, Birge Cameron, Machado Meygha, Duarte Marcelo, Joaquin Rivero Rodriguez, Anthony Cintron Roman, White Kevin, Becker-Reshef Inbal, Juan M. Lavista Ferres | AI for Good Lab；Microsoft AI for Good Research Lab | HASTE平台实现灾后建筑损伤快速评估，基于卫星影像与机器学习。 | [#890](https://github.com/thinson/RS-PaperClaw/issues/890) |
-| [20260713] A Model for Mediating Multi-Modal Human Intent into Safe Maneuvers for UAVs | Nelson Sofia, Alrajeh Dalal, Pedro Antonio Alarcon Granadeno, Cleland-Huang Jane | University of Notre Dame；Imperial College London | 提出多模态人机意图调解模型，保障无人机安全机动。 | [#891](https://github.com/thinson/RS-PaperClaw/issues/891) |
-| [20260713] Parse, Search, and Confirmation: Training-Free Aerial Vision-and-Dialog Navigation with Chain-of-Thought Reasoning and Structured Spatial Memory | Qi Yu, Li Hongyu, Huang Shaofei, Hui Tianrui, Wang Yaxiong, Cheng Lechao, Zhong Zhun, Liu Si, Wang Meng | School of Computer Science and Information Engineering, Hefei University of Technology；Jianghuai Advance Technology Center；Anhui Provincial Key Laboratory of Humanoid Robots；School of Artificial Intelligence, Beihang University；University of Macau | 训练-free空中视觉对话导航，结合链式推理与空间记忆。 | [#892](https://github.com/thinson/RS-PaperClaw/issues/892) |
-| [20260713] Uncertainty Quantification for EO Regression Tasks: Building Height, Tree Canopy Height and Above-ground Biomass Estimation | Yadav Ritu, Nascetti Andrea, Ban Yifang | Division of Geoinformatics, KTH Royal Institute of Technology, Sweden. ( | 量化EO回归任务不确定性，提升建筑与植被高度估算可靠性。 | [#893](https://github.com/thinson/RS-PaperClaw/issues/893) |
-| [20260713] From Sketch Prior to Trajectories: A Mission-Oriented Coordinated Navigation Framework for Indoor UAV Swarm | Xu Xinhang, Liu Ruiyang, Jin Haotian, Wang Yi, Shen Hongming, Li Jianping, Xie Lihua | School of Electrical and Electronic Engineering, Nanyang Technological University, 50 Nanyang Avenue, Singapore | 基于草图先验的室内无人机集群任务导向协同导航框架。 | [#894](https://github.com/thinson/RS-PaperClaw/issues/894) |
-| [20260713] Self-supervised training for high-resolution close-range multispectral remote sensing imagery | Thomas Leon-Friedrich, Änäkkälä Mikael, Lajunen Antti | funded by Helsinki University Library.” | 自监督训练用于高分辨率近距多光谱遥感影像语义分割。 | [#895](https://github.com/thinson/RS-PaperClaw/issues/895) |
-| [20260713] ASUMOT: Motion-Consistency-Based Asynchronous UAV Detection and Tracking with Event Cameras | Jia Baofeng, Chen Xiaoyu, Zhang Jingyuan, Wu Zongze, li Haochen, Han Jing, Bai Lianfa | State key Laboratory of Extreme Environment Optoelectronic Dynamic Testing Technology and Instrument, Nanjing；University of Science and Technology, Nanjing 210094, China；Jiangsu Key Laboratory of Visual Sensing and Intelligent Perception, Nanjing University of Science and Technology, Nanjing | ASUMOT利用事件相机实现运动一致性驱动的异步UAV检测跟踪。 | [#896](https://github.com/thinson/RS-PaperClaw/issues/896) |
-
-## 🔎 观察
-
-- 无人机自主性与安全性研究成为热点，多模态交互与协同导航技术并行发展。
-- 自监督与不确定性量化方法在遥感应用中日益重要，推动模型鲁棒性与实用性提升。
 
 ---
 
