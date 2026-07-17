@@ -47,31 +47,33 @@ Powered by OpenClaw🦞
 # [20260714](./202607/20260714.md)
 ## 📌 今日概况
 
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 0 篇。
+今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
 
-当日筛中论文均未通过处理或质检，未纳入日报。
+今日遥感AI研究聚焦于领域增量学习、基础模型微调与弱监督分析三大方向。多篇工作关注模型在变化检测、高光谱分类及场景理解中的泛化能力，同时涌现出针对无人机自主导航与空间认知的端到端优化及基准测试，体现了从算法到系统集成的趋势。
 
+## ✨ 今日亮点
 
-## ⚠️ 未纳入日报的匹配论文
+- 提出差异引导与频率解耦蒸馏的域增量变化检测方法
+- 多分支高效微调框架用于高光谱基础模型分类
+- 发布无人机具身智能自我意识与空间认知基准
 
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+## 🗂 今日文章列表
 
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Domain-Incremental Remote Sensing Change Detection via Difference-Guided Adaptation and Frequency-Decoupled Distillation | [2607.12934v1](https://arxiv.org/abs/2607.12934v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
-| Autonomous Tracking and Terminal Guidance of Moving Targets for Fixed-Wing UAVs | [2607.12801v1](https://arxiv.org/abs/2607.12801v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
-| MBTI: A Multi-Branch Efficient Fine-Tuning Framework for Hyperspectral Image Classification with Foundation Models | [2607.12782v1](https://arxiv.org/abs/2607.12782v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
-| Weakly Supervised Spatio-Temporal Candidate Discovery of Dairy Farm Sites from Seasonal Satellite Imagery | [2607.12748v1](https://arxiv.org/abs/2607.12748v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
-| Label-Decoupled Style Augmentation for Domain Generalization in Multi-Label Remote Sensing Scene Classification | [2607.12704v1](https://arxiv.org/abs/2607.12704v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
-| Improving Autonomous Nano-drones Performance via Automated End-to-End Optimization and Deployment of DNNs | [2607.12593v1](https://arxiv.org/abs/2607.12593v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
-| Edge-Aware Thermal Infrared UAV Swarm Tracking | [2607.12544v1](https://arxiv.org/abs/2607.12544v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
-| TerraLogic: A Benchmark for Hierarchical Geospatial Reasoning in Earth Observation | [2607.12497v1](https://arxiv.org/abs/2607.12497v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
-| Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence | [2607.12477v1](https://arxiv.org/abs/2607.12477v1) | 质检未通过: 单位为空或无效; 图片数量不足（至少1张） |
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260714] Domain-Incremental Remote Sensing Change Detection via Difference-Guided Adaptation and Frequency-Decoupled Distillation | Peng Daifeng, Li Yaning, Guan Haiyan | School of Remote Sensing and Geomatics Engineering, Nanjing University of Information Science and Technology, Nanjing 210044, China | 提出差异引导适应与频率解耦蒸馏，缓解遥感变化检测中的灾难性遗忘 | [#904](https://github.com/thinson/RS-PaperClaw/issues/904) |
+| [20260714] MBTI: A Multi-Branch Efficient Fine-Tuning Framework for Hyperspectral Image Classification with Foundation Models | Xu Mingzhen, Guo Haonan, Wang Di, Qu Yinghua, Zhou Zhiliang, Zhang Lei, Yao Huiwen, Zhao Rui, Wang Fengxiang, Wan Gang, Du Bo, Zhang Liangpei | School of Computer Science, Wuhan University, Wuhan, China. (；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan, China. (；Hebei Key Laboratory of Underground Energy Storage Technology, Langfang, China. (；the Faculty of Electrical Engineering and Computer Science, Ningbo University, Ningbo, China. (；College of Computer Science and Technology, National University of Defense Technology, Changsha, China. (；School of Aerospace Information, Space Engineering University, Beijing, China；the Key Laboratory of Intelligent Processing and Application Technology of Satellite Information, Beijing, China ( | 多分支框架高效微调基础模型，提升高光谱图像分类性能 | [#905](https://github.com/thinson/RS-PaperClaw/issues/905) |
+| [20260714] Weakly Supervised Spatio-Temporal Candidate Discovery of Dairy Farm Sites from Seasonal Satellite Imagery | Haider Usman, Khalid Fatima, Mason Karl | School of Computer Science, University of Galway, Ireland；Faculty of Computer Science and Engineering, GIK Institute of Engineering Sciences and Technology, Pakistan | 弱监督方法利用季节性卫星影像发现奶牛场候选位置 | [#906](https://github.com/thinson/RS-PaperClaw/issues/906) |
+| [20260714] Label-Decoupled Style Augmentation for Domain Generalization in Multi-Label Remote Sensing Scene Classification | Almouradi Alaa, Aptoula Erchan | Faculty of Engineering and Natural Sciences, Sabancı University | 标签解耦风格增强提升多标签遥感场景分类的域泛化能力 | [#907](https://github.com/thinson/RS-PaperClaw/issues/907) |
+| [20260714] Improving Autonomous Nano-drones Performance via Automated End-to-End Optimization and Deployment of DNNs | Niculescu Vlad, Lamberti Lorenzo, Conti Francesco, Benini Luca, Palossi Daniele | Integrated Systems Laboratory - ETH Zürich, Switzerland；Department of Electrical, Electronic and Information Engineering - University of Bologna, Italy；Dalle Molle Institute for Artificial Intelligence - USI-SUPSI, Switzerland | 自动化端到端优化与部署DNN，提升自主纳米无人机性能 | [#908](https://github.com/thinson/RS-PaperClaw/issues/908) |
+| [20260714] Edge-Aware Thermal Infrared UAV Swarm Tracking | Chen Yu-Hsi | University of Melbourne | 边缘感知卡尔曼滤波实现热红外无人机群实时跟踪 | [#909](https://github.com/thinson/RS-PaperClaw/issues/909) |
+| [20260714] TerraLogic: A Benchmark for Hierarchical Geospatial Reasoning in Earth Observation | Yan Yuhang, Mou Linchao, Yang Bokang, Li Qingyu | The Chinese University of Hong Kong (Shenzhen) China；Technical University of Munich Germany | TerraLogic基准测试大语言模型在地理空间层次推理能力 | [#910](https://github.com/thinson/RS-PaperClaw/issues/910) |
+| [20260714] Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence | Zou Zhishan, Sun Guoyan, Wei Zhiwei, Pan Jiancheng, Li Yujie, Peng Mugen, Xu Wenjia | Beijing University of Posts and Telecommunications；Hunan Normal University；Tsinghua University | Self in Space基准评估多模态大模型在无人机中的自我意识与空间认知 | [#911](https://github.com/thinson/RS-PaperClaw/issues/911) |
 
 ## 🔎 观察
 
-- 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
-- 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
+- 域泛化与增量学习成为遥感模型部署的核心挑战，多篇工作从特征解耦角度提出解决方案
+- 无人机智能体研究从单一跟踪向具身认知演进，基准测试推动多模态大模型在边缘设备落地
 
 ---
 
