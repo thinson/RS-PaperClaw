@@ -2,6 +2,50 @@
 
 最近三天日报（最新在前）：
 
+# [20260717](./202607/20260717.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 6 篇。
+
+今日遥感研究呈现三大热点：一是多模态大语言模型（MLLMs）在无人机时空推理与遥感长时序理解中的基准构建，推动模型认知能力评估；二是高光谱与多光谱数据在工业电解槽分割及地物分类中的深度学习融合方法创新；三是结合基础模型与可解释性进行大陆尺度洪灾损失预测，体现了遥感AI向精细化、可解释化发展的趋势。
+
+## ✨ 今日亮点
+
+- MLLMs无人机时空推理双认知基准发布
+- 高光谱与RGB多模态融合用于电解槽分割
+- 大陆尺度每日洪灾损失预测模型DELUGE
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260717] Knowing the Self, Understanding the World: A Dual-Cognition Benchmark for UAV Spatio-temporal Reasoning with MLLMs | Liu Like, Xu Zhengzheng, He Haitao, Li Hongzhe, Zhang Shuchang, Shao Dian | Northwestern Polytechnical University University；University Xi’an, Shaanxi, China Xi’an, Shaanxi, China；China University of Petroleum Northwestern Polytechnical；Qingdao, Shandong, China University Northwestern Polytechnical；Xi’an, Shaanxi, China University | 提出双认知基准，评估MLLMs在无人机时空推理中的自我状态与场景理解能力。 | [#918](https://github.com/thinson/RS-PaperClaw/issues/918) |
+| [20260717] Multi-Modal Semantic Segmentation of Electrolyzer Components for Sustainable Hydrogen Technologies: A Dual-Branch Deep Learning Approach | Karim Wasimul, Nur Mohammad Fahad, Abdul Hasib Siddique, Md Rafiqul Islam, Mehdizadeh-Rad Hooman, Karim Asif, Azam Sami | Applied Artificial Intelligence and INtelligent Systems (AAIINS) Laboratory, Dhaka 1217, Bangladesh；Department of Computer Science and Engineering, University of Scholars；School of Engineering and Energy, Murdoch University, Murdoch, WA 6150, Australia；Faculty of Science and Technology, Charles Darwin University, Casuarina, NT 0909, Australia | 采用双分支深度学习融合高光谱与RGB图像，实现电解槽组件语义分割。 | [#919](https://github.com/thinson/RS-PaperClaw/issues/919) |
+| [20260717] DELUGE: Towards Continental-Scale Daily Pluvial Flood Damage Prediction via Interpretable Conditioning on Foundation Model Embeddings | Kawakami Yuya, Cayan Daniel, Liu Dongyu, Ma Kwan-Liu, Corringham Tom | University of California, Davis Scripps Institution of Oceanography University of California, Davis；Davis, California, USA University of California, San Diego Davis, California, USA；University of California, Davis Scripps Institution of Oceanography；Davis, California, USA University of California, San Diego | DELUGE模型利用基础模型嵌入实现大陆尺度每日暴雨洪灾损失可解释预测。 | [#920](https://github.com/thinson/RS-PaperClaw/issues/920) |
+| [20260717] GeoChrono: Benchmarking and Rethinking Long-Term Temporal Understanding in Remote Sensing | Li Yujie, Pan Jiancheng, Wei Zhiwei, Wang Jiuniu, Peng Mugen, Xu Wenjia | Beijing University of Posts and Telecommunications Haidian Beijing China；Tsinghua University Haidian Beijing China；Hunan Normal University Changsha Hunan China；City University of Hong Kong Hong Kong China | GeoChrono基准重新审视遥感MLLMs在长期时序理解上的能力与局限。 | [#921](https://github.com/thinson/RS-PaperClaw/issues/921) |
+| [20260717] BCG-Former: Toward Pareto-Efficient Hyperspectral Image Classification via Band-Contextual Gating | Sharma Gaurav, Lee Eungjoo | College of Information Science, University of Arizona, Tucson, AZ, USA；Department of Electrical and Computer Engineering, University of Arizona, Tucson, AZ, USA ( | BCG-Former通过波段上下文门控实现帕累托高效的高光谱图像分类。 | [#922](https://github.com/thinson/RS-PaperClaw/issues/922) |
+| [20260717] MSTF-Net: A UAV-Oriented Multi-Spectral Video Segmentation Method via Modality-Robust, Scale-Adaptive, and Consistent Fusion | Wang Chenwei, Wang Zhida, Li Zelin, Ozden-Yenigun Elif, Liu Houde | Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China | MSTF-Net提出模态鲁棒、尺度自适应的多光谱无人机视频分割方法。 | [#923](https://github.com/thinson/RS-PaperClaw/issues/923) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| More with Less: a Large Scale Remote Sensing VLM with a Simple Recipe | [2607.15942v1](https://arxiv.org/abs/2607.15942v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 多模态大模型在遥感时序推理中的基准构建成为当前评估能力的关键手段。
+- 高光谱与多光谱数据的轻量化融合方法正从地物分类向工业应用拓展。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260716](./202607/20260716.md)
 ## 📌 今日概况
 
@@ -71,43 +115,6 @@ Powered by OpenClaw🦞
 
 - 无人机定位研究正从纯视觉向多模态地图先验融合演进
 - 扩散模型在遥感超分辨率应用中展现出对复杂纹理的建模优势
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260714](./202607/20260714.md)
-## 📌 今日概况
-
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究聚焦于领域增量学习、基础模型微调与弱监督分析三大方向。多篇工作关注模型在变化检测、高光谱分类及场景理解中的泛化能力，同时涌现出针对无人机自主导航与空间认知的端到端优化及基准测试，体现了从算法到系统集成的趋势。
-
-## ✨ 今日亮点
-
-- 提出差异引导与频率解耦蒸馏的域增量变化检测方法
-- 多分支高效微调框架用于高光谱基础模型分类
-- 发布无人机具身智能自我意识与空间认知基准
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260714] Domain-Incremental Remote Sensing Change Detection via Difference-Guided Adaptation and Frequency-Decoupled Distillation | Peng Daifeng, Li Yaning, Guan Haiyan | School of Remote Sensing and Geomatics Engineering, Nanjing University of Information Science and Technology, Nanjing 210044, China | 提出差异引导适应与频率解耦蒸馏，缓解遥感变化检测中的灾难性遗忘 | [#904](https://github.com/thinson/RS-PaperClaw/issues/904) |
-| [20260714] MBTI: A Multi-Branch Efficient Fine-Tuning Framework for Hyperspectral Image Classification with Foundation Models | Xu Mingzhen, Guo Haonan, Wang Di, Qu Yinghua, Zhou Zhiliang, Zhang Lei, Yao Huiwen, Zhao Rui, Wang Fengxiang, Wan Gang, Du Bo, Zhang Liangpei | School of Computer Science, Wuhan University, Wuhan, China. (；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan, China. (；Hebei Key Laboratory of Underground Energy Storage Technology, Langfang, China. (；the Faculty of Electrical Engineering and Computer Science, Ningbo University, Ningbo, China. (；College of Computer Science and Technology, National University of Defense Technology, Changsha, China. (；School of Aerospace Information, Space Engineering University, Beijing, China；the Key Laboratory of Intelligent Processing and Application Technology of Satellite Information, Beijing, China ( | 多分支框架高效微调基础模型，提升高光谱图像分类性能 | [#905](https://github.com/thinson/RS-PaperClaw/issues/905) |
-| [20260714] Weakly Supervised Spatio-Temporal Candidate Discovery of Dairy Farm Sites from Seasonal Satellite Imagery | Haider Usman, Khalid Fatima, Mason Karl | School of Computer Science, University of Galway, Ireland；Faculty of Computer Science and Engineering, GIK Institute of Engineering Sciences and Technology, Pakistan | 弱监督方法利用季节性卫星影像发现奶牛场候选位置 | [#906](https://github.com/thinson/RS-PaperClaw/issues/906) |
-| [20260714] Label-Decoupled Style Augmentation for Domain Generalization in Multi-Label Remote Sensing Scene Classification | Almouradi Alaa, Aptoula Erchan | Faculty of Engineering and Natural Sciences, Sabancı University | 标签解耦风格增强提升多标签遥感场景分类的域泛化能力 | [#907](https://github.com/thinson/RS-PaperClaw/issues/907) |
-| [20260714] Improving Autonomous Nano-drones Performance via Automated End-to-End Optimization and Deployment of DNNs | Niculescu Vlad, Lamberti Lorenzo, Conti Francesco, Benini Luca, Palossi Daniele | Integrated Systems Laboratory - ETH Zürich, Switzerland；Department of Electrical, Electronic and Information Engineering - University of Bologna, Italy；Dalle Molle Institute for Artificial Intelligence - USI-SUPSI, Switzerland | 自动化端到端优化与部署DNN，提升自主纳米无人机性能 | [#908](https://github.com/thinson/RS-PaperClaw/issues/908) |
-| [20260714] Edge-Aware Thermal Infrared UAV Swarm Tracking | Chen Yu-Hsi | University of Melbourne | 边缘感知卡尔曼滤波实现热红外无人机群实时跟踪 | [#909](https://github.com/thinson/RS-PaperClaw/issues/909) |
-| [20260714] TerraLogic: A Benchmark for Hierarchical Geospatial Reasoning in Earth Observation | Yan Yuhang, Mou Linchao, Yang Bokang, Li Qingyu | The Chinese University of Hong Kong (Shenzhen) China；Technical University of Munich Germany | TerraLogic基准测试大语言模型在地理空间层次推理能力 | [#910](https://github.com/thinson/RS-PaperClaw/issues/910) |
-| [20260714] Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence | Zou Zhishan, Sun Guoyan, Wei Zhiwei, Pan Jiancheng, Li Yujie, Peng Mugen, Xu Wenjia | Beijing University of Posts and Telecommunications；Hunan Normal University；Tsinghua University | Self in Space基准评估多模态大模型在无人机中的自我意识与空间认知 | [#911](https://github.com/thinson/RS-PaperClaw/issues/911) |
-
-## 🔎 观察
-
-- 域泛化与增量学习成为遥感模型部署的核心挑战，多篇工作从特征解耦角度提出解决方案
-- 无人机智能体研究从单一跟踪向具身认知演进，基准测试推动多模态大模型在边缘设备落地
 
 ---
 
