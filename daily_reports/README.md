@@ -2,6 +2,42 @@
 
 最近三天日报（最新在前）：
 
+# [20260720](./202607/20260720.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日遥感AI研究聚焦于多源异构数据融合与实时智能控制。SAR领域利用深度学习实现暗船识别与吨位估计；量子光谱技术突破高光谱成像灵敏度；无人机控制与通信网络研究强调实时性与自适应性，包括自然语言接口、塑性恢复及多智能体协同；此外，ISAC成像与卫星农业预测也取得进展。
+
+## ✨ 今日亮点
+
+- SAR深度学习实现暗船识别与吨位估计
+- 量子傅里叶光谱实现高灵敏高光谱成像
+- 无人机实时控制与自适通信网络研究突出
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260720] SAR Vessel Detection and Gross Tonnage Estimation from Heterogeneous Datasets for Dark Vessel Identification | Paltrinieri Davide, Diecidue Andrea, Basla Roberto, Casciani Daniele, Fraternali Piero, Boracchi Giacomo | Politecnico di Milano | 利用异构SAR数据集深度学习检测暗船并估计总吨位 | [#930](https://github.com/thinson/RS-PaperClaw/issues/930) |
+| [20260720] Scanless quantum Fourier-transform mid-infrared spectroscopy for rapid high-sensitivity hyperspectral mapping | Gattinger Paul, Heise Bettina, Andreas W. Schell, Duswald Kristina, Brandstetter Markus, Zorin Ivan | Research Center for Non-Destructive Testing, Science Park 2, Altenberger Str. 69；Division of Light-Matter-Interaction, Johannes Kepler University, Altenberger Str. 69 | 基于纠缠光子的无扫描量子中红外光谱实现快速高光谱成像 | [#931](https://github.com/thinson/RS-PaperClaw/issues/931) |
+| [20260720] RT-SHCUA: Real-Time Self-Hosted Computer-Use Agent for UAV Control | Lu Di, Zhang Bo, Li Xiyuan, Liao Yongzhi, Dong Xuewen, Shen Yulong, Liu Zhiquan, Ma Jianfeng | School of Computer Science and Technology, Xidian University, Xi’an, Shaanxi, China；the Shaanxi Key Laboratory of Network and System Security, Xi'an, Shaanxi,, China；College of Cyber Security, Jinan University, Guangzhou, China；School of Cyber Engineering, Shaanxi Key Lab of Network and System Security, Xidian University, Xi’an, Shaanxi,, China | 提出实时自托管计算机代理实现自然语言控制无人机 | [#932](https://github.com/thinson/RS-PaperClaw/issues/932) |
+| [20260720] PRIME: Plasticity Recovery in Multi-Agent Environments for UAV-Assisted Emergency Communication Networks | Qiu Wen, He Zhiqiang, Zhao Wei, Masui Hiroshi | Department of Information and Communication Engineering, Kitami Institute of Technology, Japan (；the Graduate School of Informatics and Engineering, University of Electro-Communications, Japan (；School of Computer Science and Technology, Anhui University of Technology, China ( | 多智能体强化学习恢复塑性以优化无人机应急通信网络 | [#933](https://github.com/thinson/RS-PaperClaw/issues/933) |
+| [20260720] Massive MIMO-OFDM ISAC for Sparse ISAR Imaging: Joint Power and Subcarrier Allocation | Hamid Reza Hashempour, Li Yanjiao, Zhang Jie, Shin Hyundong, Hien Quoc Ngo | the Centre for Wireless Innovation (CWI), Queen’s University Belfast, BT3 9 DT Belfast, U.K. (；Department of Electronic Engineering, Kyung Hee University, Yongin-si, Gyeonggi-do, Republic of Korea；Institute of Engineering Technology, University of Science and Technology Beijing, Beijing, China (；Department of Electronics and Information Convergence Engineering, Kyung Hee University, Yongin-si, Gyeonggi-do, Republic of Korea ( | 大规模MIMO-OFDM ISAC系统联合优化功率与子载波实现稀疏ISAR成像 | [#934](https://github.com/thinson/RS-PaperClaw/issues/934) |
+| [20260720] Polar Coordinate-based Differential Evolution for Moving Target Search Using Vision Sensor on Unmanned Aerial Vehicles | Thu Hang Khuat, Bui Duy-Nam, Thuy Ngan Duong, Manh Duong Phung | VNU University of Engineering and Technology, Vietnam National University, Hanoi, Vietnam；Department of Electrical Engineering, Ulsan National Institute of Science and Technology, Ulsan；College of Engineering and Computer Science and Smart Green Transformation Center (GREEN-X)；VinUniversity, Hanoi, Vietnam | 基于极坐标差分进化算法引导无人机视觉搜索移动目标 | [#935](https://github.com/thinson/RS-PaperClaw/issues/935) |
+| [20260720] Early Yield Prediction for Sugar Beet Fields using Satellite Data -- Learnings from Specialized Vision Transformers | Vaeth Philipp, Bhumika Laxman Sadbhave, Dejon Denise, Schorcht Gunther, Gregorova Magda | Center for Artificial Intelligence and Robotics, Technical University of Applied Sciences Wuerzburg-Schweinfurt, Franz-Horn-Strasse 2, Wuerzburg, Germany；Bielefeld University, Universitaetsstrasse 25, Bielefeld, Germany | 利用专用视觉Transformer从卫星数据早期预测甜菜产量 | [#936](https://github.com/thinson/RS-PaperClaw/issues/936) |
+
+## 🔎 观察
+
+- SAR与深度学习结合在海洋监控中向多任务（检测+估计）发展
+- 无人机研究从单一控制向多智能体协同与自然语言交互演进
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260719](./202607/20260719.md)
 ## 📌 今日概况
 
@@ -56,50 +92,6 @@ Powered by OpenClaw🦞
 
 - 推理模型在遥感图像解译中的应用正成为新趋势
 - 主动学习结合基础模型有望缓解遥感标注数据稀缺问题
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260717](./202607/20260717.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 6 篇。
-
-今日遥感研究呈现三大热点：一是多模态大语言模型（MLLMs）在无人机时空推理与遥感长时序理解中的基准构建，推动模型认知能力评估；二是高光谱与多光谱数据在工业电解槽分割及地物分类中的深度学习融合方法创新；三是结合基础模型与可解释性进行大陆尺度洪灾损失预测，体现了遥感AI向精细化、可解释化发展的趋势。
-
-## ✨ 今日亮点
-
-- MLLMs无人机时空推理双认知基准发布
-- 高光谱与RGB多模态融合用于电解槽分割
-- 大陆尺度每日洪灾损失预测模型DELUGE
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260717] Knowing the Self, Understanding the World: A Dual-Cognition Benchmark for UAV Spatio-temporal Reasoning with MLLMs | Liu Like, Xu Zhengzheng, He Haitao, Li Hongzhe, Zhang Shuchang, Shao Dian | Northwestern Polytechnical University University；University Xi’an, Shaanxi, China Xi’an, Shaanxi, China；China University of Petroleum Northwestern Polytechnical；Qingdao, Shandong, China University Northwestern Polytechnical；Xi’an, Shaanxi, China University | 提出双认知基准，评估MLLMs在无人机时空推理中的自我状态与场景理解能力。 | [#918](https://github.com/thinson/RS-PaperClaw/issues/918) |
-| [20260717] Multi-Modal Semantic Segmentation of Electrolyzer Components for Sustainable Hydrogen Technologies: A Dual-Branch Deep Learning Approach | Karim Wasimul, Nur Mohammad Fahad, Abdul Hasib Siddique, Md Rafiqul Islam, Mehdizadeh-Rad Hooman, Karim Asif, Azam Sami | Applied Artificial Intelligence and INtelligent Systems (AAIINS) Laboratory, Dhaka 1217, Bangladesh；Department of Computer Science and Engineering, University of Scholars；School of Engineering and Energy, Murdoch University, Murdoch, WA 6150, Australia；Faculty of Science and Technology, Charles Darwin University, Casuarina, NT 0909, Australia | 采用双分支深度学习融合高光谱与RGB图像，实现电解槽组件语义分割。 | [#919](https://github.com/thinson/RS-PaperClaw/issues/919) |
-| [20260717] DELUGE: Towards Continental-Scale Daily Pluvial Flood Damage Prediction via Interpretable Conditioning on Foundation Model Embeddings | Kawakami Yuya, Cayan Daniel, Liu Dongyu, Ma Kwan-Liu, Corringham Tom | University of California, Davis Scripps Institution of Oceanography University of California, Davis；Davis, California, USA University of California, San Diego Davis, California, USA；University of California, Davis Scripps Institution of Oceanography；Davis, California, USA University of California, San Diego | DELUGE模型利用基础模型嵌入实现大陆尺度每日暴雨洪灾损失可解释预测。 | [#920](https://github.com/thinson/RS-PaperClaw/issues/920) |
-| [20260717] GeoChrono: Benchmarking and Rethinking Long-Term Temporal Understanding in Remote Sensing | Li Yujie, Pan Jiancheng, Wei Zhiwei, Wang Jiuniu, Peng Mugen, Xu Wenjia | Beijing University of Posts and Telecommunications Haidian Beijing China；Tsinghua University Haidian Beijing China；Hunan Normal University Changsha Hunan China；City University of Hong Kong Hong Kong China | GeoChrono基准重新审视遥感MLLMs在长期时序理解上的能力与局限。 | [#921](https://github.com/thinson/RS-PaperClaw/issues/921) |
-| [20260717] BCG-Former: Toward Pareto-Efficient Hyperspectral Image Classification via Band-Contextual Gating | Sharma Gaurav, Lee Eungjoo | College of Information Science, University of Arizona, Tucson, AZ, USA；Department of Electrical and Computer Engineering, University of Arizona, Tucson, AZ, USA ( | BCG-Former通过波段上下文门控实现帕累托高效的高光谱图像分类。 | [#922](https://github.com/thinson/RS-PaperClaw/issues/922) |
-| [20260717] MSTF-Net: A UAV-Oriented Multi-Spectral Video Segmentation Method via Modality-Robust, Scale-Adaptive, and Consistent Fusion | Wang Chenwei, Wang Zhida, Li Zelin, Ozden-Yenigun Elif, Liu Houde | Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China | MSTF-Net提出模态鲁棒、尺度自适应的多光谱无人机视频分割方法。 | [#923](https://github.com/thinson/RS-PaperClaw/issues/923) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| More with Less: a Large Scale Remote Sensing VLM with a Simple Recipe | [2607.15942v1](https://arxiv.org/abs/2607.15942v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 多模态大模型在遥感时序推理中的基准构建成为当前评估能力的关键手段。
-- 高光谱与多光谱数据的轻量化融合方法正从地物分类向工业应用拓展。
 
 ---
 
