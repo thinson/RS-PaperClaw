@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260719](./202607/20260719.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日遥感AI研究聚焦于无人机视频理解，提出SkyVLaM多模态大语言模型，融合视频分割与时序感知机制，推动遥感领域从静态图像分析向动态视频理解演进，体现了多模态与时空建模的融合趋势。
+
+## ✨ 今日亮点
+
+- 多模态大模型用于无人机视频理解
+- 提出时序感知机制提升视频分割精度
+- 遥感AI从静态图像向动态视频演进
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260719] SkyVLaM: Multimodal Large Language Model for UAV Video Understanding in Remote Sensing | Jing Kaiwen, Jia Ruixu, Li Bingyao, Ou Ruizhe, Wu Ming, Zhang Chuang | Beijing University of Posts and Telecommunications, Beijing, China；Peking University, Beijing, China；Beijing Wuzi University, Beijing, China | SkyVLaM利用多模态大语言模型实现无人机遥感视频理解与分割。 | [#928](https://github.com/thinson/RS-PaperClaw/issues/928) |
+
+## 🔎 观察
+
+- 多模态大模型正加速渗透遥感视频分析领域
+- 时序感知机制成为提升动态遥感理解的关键
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260718](./202607/20260718.md)
 ## 📌 今日概况
 
@@ -70,40 +100,6 @@ Powered by OpenClaw🦞
 
 - 多模态大模型在遥感时序推理中的基准构建成为当前评估能力的关键手段。
 - 高光谱与多光谱数据的轻量化融合方法正从地物分类向工业应用拓展。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260716](./202607/20260716.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究聚焦于无人机（UAV）感知与跟踪、高光谱图像分类及可解释性分析。多篇工作引入物理引导、生成学习或视觉-语言-动作模型，提升动态环境下的感知鲁棒性。此外，针对SAR图像洪水检测的xAI方法比较研究也受到关注，体现了模型透明性与物理先验融合的趋势。
-
-## ✨ 今日亮点
-
-- 物理引导图扩散网络提升高光谱分类精度
-- 视觉-语言-动作模型增强无人机空间感知
-- 事件相机与频域跟踪实现实时空对空追踪
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260716] DAPGNet: Dynamic Adaptive Physics-Guided Graph Diffusion Network for Hyperspectral Image Classification | Wang Pengkun, Cao Weijia, Wang Ning, Yang Xiaofei | the National Engineering Laboratory for Satellite Remote Sensing Applications, Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China；University of Chinese Academy of Sciences, Beijing, China (；the Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China (；the National Engineering Laboratory for Satellite Remote Sensing Applications, Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China (；Guangzhou University, Guangzhou, China ( | 提出动态自适应物理引导图扩散网络，用于高光谱图像分类。 | [#912](https://github.com/thinson/RS-PaperClaw/issues/912) |
-| [20260716] CosFly-VLA: A Spatially Aware Vision-Language-Action Model for UAV Tracking | Ren Ruilong, Cheng Songsheng, Zhou Yunpeng, Chen Hanxuan, Wang Xiangyue, Zeng Tianle, Yuan Shuai, Li Binbo, Guo Hanzhong, Pei Ji, Zhang Da, Wang Kangli | Northeast Normal University；Southern University of Science and Technology；Peking University；University of Hong Kong | CosFly-VLA模型融合空间感知与视觉-语言-动作，用于无人机跟踪。 | [#913](https://github.com/thinson/RS-PaperClaw/issues/913) |
-| [20260716] Conditional Generative Learning Enabled Wireless UAV Sensing and Tracking via Point Cloud Imaging | Dai Xinhong, Gao Yuan, Jiang Hao, Yuan Xiaojun, Wang Xin | Key Laboratory for Information Science of Electromagnetic Waves (MoE), College of Future Information Technology, Fudan University, Shanghai, China. (；the National Key Laboratory of Wireless Communications, the University of Electronic Science and Technology of China, Chengdu, China ( | 条件生成学习结合点云成像实现无线无人机感知与跟踪。 | [#914](https://github.com/thinson/RS-PaperClaw/issues/914) |
-| [20260716] On the Disagreement in Perturbation-based xAI -- Benchmarking Perturbation Choices for Flood Detection from SAR Images | Schlegel Anastasia, Hänsch Ronny | a Microwaves and Radar Institute, German Aerospace Center (DLR), Weßling, 82234, Germany；b Chair of Remote Sensing Technology, Department of Aerospace and Geodesy, Technical University of Munich, Munich, 80333, Germany；In response to this need for transparency, research on ex- | 基准测试扰动选择对SAR图像洪水检测中xAI方法的影响。 | [#915](https://github.com/thinson/RS-PaperClaw/issues/915) |
-| [20260716] AE-UAV: An Air-to-Air Event-Based UAV Tracking Benchmark and a Real-Time Frequency-Domain Tracker | Jiang Zixin, He Bing, Xiong Chaoran, Wang Zhenzhen, Zhao Xin, Pei Ling | Department of Electronic Engineering, Rocket Force University of Engineering, Xi’an, China (；Shanghai Key Laboratory of Navigation and Location Based Services, Shanghai Jiao Tong University, Shanghai, China (；State Key Laboratory of Submarine Geoscience, School of Automation and Intelligent Sensing, Shanghai Jiao Tong University, Shanghai, China | 发布空对空事件相机无人机跟踪基准及实时频域跟踪器。 | [#916](https://github.com/thinson/RS-PaperClaw/issues/916) |
-
-## 🔎 观察
-
-- 无人机感知领域正从单一视觉向多模态融合（语言、事件、电磁）演进。
-- 物理先验与可解释性方法在遥感任务中应用增多，提升模型可信度。
 
 ---
 
