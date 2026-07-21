@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260718](./202607/20260718.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦于SAR图像智能解译与目标检测标注优化。FUSAR-R1提出大规模推理模型，结合视觉-语言模型提升SAR图像理解能力；另一研究利用基础模型辅助主动学习，通过不确定性估计减少标注成本，推动遥感目标检测的自动化与高效化。
+
+## ✨ 今日亮点
+
+- SAR图像解译引入大规模推理模型，提升智能分析能力
+- 基础模型辅助主动学习，降低目标检测标注成本
+- 遥感AI向少样本、高效率标注方向持续演进
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260718] FUSAR-R1: A Large-Scale Reasoning Model for Intelligent Interpretation of SAR Images | Yang Yi, Zhang Xiaokun, Li Yuxuan, Zhang Ruyi, Zhou Xinpeng, Wang Haipeng | In the field of SAR image interpretation, existing research；Haipeng Wang are with the Key Laboratory for Information Science of | FUSAR-R1提出大规模推理模型，用于SAR图像的智能解译与理解 | [#925](https://github.com/thinson/RS-PaperClaw/issues/925) |
+| [20260718] Foundation-Assisted Active Learning for Object Detection Annotation | Zhang Jinchang, Zumbrun Arnold, Lin Jing, Lu Guoyu | the Intelligent Vision and Sensing (IVS) Lab at Indiana University Bloomington；the US Air Force Research Lab (AFRL) during this work | 基础模型辅助主动学习，通过不确定性估计优化目标检测标注效率 | [#926](https://github.com/thinson/RS-PaperClaw/issues/926) |
+
+## 🔎 观察
+
+- 推理模型在遥感图像解译中的应用正成为新趋势
+- 主动学习结合基础模型有望缓解遥感标注数据稀缺问题
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260717](./202607/20260717.md)
 ## 📌 今日概况
 
@@ -73,48 +104,6 @@ Powered by OpenClaw🦞
 
 - 无人机感知领域正从单一视觉向多模态融合（语言、事件、电磁）演进。
 - 物理先验与可解释性方法在遥感任务中应用增多，提升模型可信度。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260715](./202607/20260715.md)
-## 📌 今日概况
-
-今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦于无人机自主导航与多模态感知、云感知地球观测及北极海冰监测。AeroMap3D提出基于视觉-几何-语义地图先验的单目6-DoF定位方法，解决GNSS拒止环境问题；M3F-UAV构建低空无线传感缺失模态多模态基础模型；RoughNet利用扩散超分辨率技术绘制海冰粗糙度图，提升气候监测能力。
-
-## ✨ 今日亮点
-
-- 无人机单目定位结合地图先验，突破GNSS拒止限制
-- 低空无线传感缺失模态融合基础模型
-- 扩散模型超分辨率用于北极海冰粗糙度制图
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260715] AeroMap3D: Anchoring Monocular UAV 6-DoF Localization to Visual-Geometric-Semantic Map Priors | Deng Zhiyun, Sentis Luis | University of Texas at Austin | AeroMap3D利用视觉-几何-语义地图先验实现无人机单目6-DoF定位 | [#899](https://github.com/thinson/RS-PaperClaw/issues/899) |
-| [20260715] M3F-UAV: A Missing-Modality Multimodal Foundation Model for Low-Altitude Wireless Sensing | Gao Pengxuan, Ying Kai, Wu Botao, Mo Jianhua, Wen Qingsong | School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China ( | M3F-UAV提出缺失模态多模态基础模型用于低空无线传感 | [#900](https://github.com/thinson/RS-PaperClaw/issues/900) |
-| [20260715] From Surface Forecasting to Observability Forecasting: A Latent World Model for Cloud-Aware EO Monitoring | Albughdadi Mohanad | European Centre for Medium-Range Weather Forecasts | LeWorldModel实现从地表到可观测性的云感知预报 | [#901](https://github.com/thinson/RS-PaperClaw/issues/901) |
-| [20260715] RoughNet: Mapping Arctic Sea Ice Roughness Using Diffusion-Based Super-Resolution of Satellite Imagery | Cannon Tessa, Tsamados Michel, Manescu Petru, Newman Thomas, Haas Christian, Helm Veit, Chen Weibin, Scharien Randall | Department of Computer Science, University College London；Department of Earth Sciences, University College London；Alfred Wegener Institute Helmholtz Centre for Polar and；Marine Research, Bremerhaven, Germany；Department of Geography, University of Victoria | RoughNet基于扩散超分辨率卫星影像绘制海冰粗糙度图 | [#902](https://github.com/thinson/RS-PaperClaw/issues/902) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Minimax Theory of Likelihood-Based Deep Learning for Speckle Regression | [2607.14064v1](https://arxiv.org/abs/2607.14064v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 无人机定位研究正从纯视觉向多模态地图先验融合演进
-- 扩散模型在遥感超分辨率应用中展现出对复杂纹理的建模优势
 
 ---
 
