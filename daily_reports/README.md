@@ -2,6 +2,45 @@
 
 最近三天日报（最新在前）：
 
+# [20260721](./202607/20260721.md)
+## 📌 今日概况
+
+今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 10 篇。
+
+今日遥感AI研究聚焦于无人机（UAV）导航与目标检测两大方向。多篇工作探索了视觉-语言模型、事件相机、跨模态融合等新范式在UAV导航与弱小红外目标检测中的应用。同时，农业遥感领域涌现出基于自监督学习与深度学习的作物胁迫检测与作物间隙制图方法。此外，变化检测与地理定位研究也取得了语义鲁棒性与无GPS环境下的新进展。整体趋势显示，模型正从单一模态向多模态、从有监督向自监督/无训练范式演进。
+
+## ✨ 今日亮点
+
+- UAV导航研究引入测试时缩放与层级大语言模型新范式。
+- 红外弱小目标检测与跨模态跟踪方法取得显著进展。
+- 自监督学习在农业遥感作物胁迫检测中展现潜力。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260721] No Training, Better Flights: Test-Time Scaled VLMs for UAV Navigation | Cheng Feinan, Xu Dongliang, Nong Wenli, Zhang Zhiheng, Liu Ang, Wang Tianyu, Yao Yue | Institution1；Institution1 address；Institution2；First line of institution2 address；Shandong University；China University of Petroleum (East China) | 提出无需训练的测试时缩放视觉语言模型用于无人机导航。 | [#938](https://github.com/thinson/RS-PaperClaw/issues/938) |
+| [20260721] Gaze-DETR: Top-Down Guidance Through Priority Maps for Infrared Weak-Small UAV Detection with DETR | Liu Nian, Yang Yuxin, Lin Shubo, Zhang Sikui, Li Liang, Cai Boyu, Wang Yizheng, Hu Weiming, Gao Jin | State Key Laboratory of Multimodal Artificial Intelligence Systems, Institute of Automation, Chinese Academy of Sciences, Beijing, China；School of Advanced Interdisciplinary Sciences, University of Chinese Academy of Sciences, Beijing, China；School of Artificial Intelligence, University of Chinese Academy of Sciences, Beijing, China；the Beijing Key Laboratory of Super Intelligent Security of Multi-Modal Information, Institute of Automation, Chinese Academy of Sciences, Beijing, China；School of Information Science and Technology, ShanghaiTech University, Shanghai, China；the Beijing Institute of Basic Medical Sciences, Beijing, China | Gaze-DETR利用优先级图实现红外弱小无人机检测。 | [#939](https://github.com/thinson/RS-PaperClaw/issues/939) |
+| [20260721] Learning Semantic-Robust Change Detection via Semantic-Invariant Self-Distillation | Qu Jiuhe, Liang Yingping, Fu Ying | Beijing Institute of Technology, Beijing, China | 通过语义不变自蒸馏学习语义鲁棒的变化检测方法。 | [#940](https://github.com/thinson/RS-PaperClaw/issues/940) |
+| [20260721] NGPS: GPS-Denied Aerial Geo-Localization and 2.5D Reconstruction via Deep Satellite Image Matching and Multi-Rate Sensor Fusion | Sharma Sanket | Independent Researcher | 提出无GPS环境下基于卫星图像匹配的空中地理定位与重建。 | [#941](https://github.com/thinson/RS-PaperClaw/issues/941) |
+| [20260721] STS-NET: Spatio-Temporal Stress Network for Self-Supervised Crop Stress Detection using Satellite Image Time Series | Dalal Pradeep, Ranjan Rajiv, Ghildiyal Sushil, Tamaskar Shashank, Goel Neeraj | Department of Computer Science and Engineering, Indian Institute of Technology Ropar, Rupnagar, India (；Department of Robotics and Autonomous Systems, Plaksha University, Mohali, India ( | STS-NET利用卫星时序影像自监督检测作物胁迫。 | [#942](https://github.com/thinson/RS-PaperClaw/issues/942) |
+| [20260721] CGMap: A Geospatially Aware Deep Learning Framework for Crop Gap Mapping Using UAV | Sharma Karan, Ranjan Rajiv, Kumar Dinesh, Tamaskar Shashank | Robotics and Autonomous Systems, Plaksha University, Mohali, India | CGMap框架结合YOLOv8实现无人机影像作物间隙制图。 | [#943](https://github.com/thinson/RS-PaperClaw/issues/943) |
+| [20260721] Cross-Modal UAV Object Tracking: State-Aware Representation Learning and A Unified Benchmark | Xiao Yun, Hong Zhihong, Jin Jiandong, Li Chenglong, Tang Jin, Hussain Amir | has emerged as a popular research field with broad practical #406；of Artificial Intelligence, Anhui University, Hefei 230601, China (；Laboratory of Multimodal Cognitive Computation, School of Computer；Science and Technology, Anhui University, Hefei 230601, China (；Amir Hussain is affiliated with School of Computing, Engineering and；the Built Environment, Edinburgh Napier University, Edinburgh EH10 5 DT modality and switch between modalities for real-time tracking | 提出跨模态无人机跟踪的状态感知表示学习与统一基准。 | [#944](https://github.com/thinson/RS-PaperClaw/issues/944) |
+| [20260721] SkyEV: RGB-Event UAV detection and tracking dataset and baseline | Mandula Jakub, Heusinger Sebastian, Moosmann Julian, Vogt Christian, Magno Michele | As highlighted by recent European research, detecting UAVs near sensitive infrastructure, such as airports or other no-fly zones, has become a critical priority | 发布RGB-事件双模态无人机检测跟踪数据集与基线。 | [#945](https://github.com/thinson/RS-PaperClaw/issues/945) |
+| [20260721] Confidence-Gated Vision-Only Heading Alignment for UAV-UGV Cooperative Systems | Ahmari Reza, Hemmati Vahid, Kebria Parham, Odeyomi Olusola, Roy Kaushik, Homaifar Abdollah | Department of Computer Science, North Carolina Agricultural and Technical State University, Greensboro, NC, USA；Department of Electrical and Computer Engineering, North Carolina Agricultural and Technical State University, Greensboro, NC, USA | 提出置信门控纯视觉航向对齐用于无人机-无人车协同。 | [#946](https://github.com/thinson/RS-PaperClaw/issues/946) |
+| [20260721] Intelligent Multi-UAV Navigation in ITNTNs: A Hierarchical LLM Approach | Yan Zijiang, Zhou Hao, Jaafar Wael, Pei Jianhua, Wang Ping, Yanikomeroglu Halim, Tabassum Hina | York University, Toronto, ON, Canada；Samsung Research America, Toronto, ON, Canada；ÉTS, University of Quebec, Montréal, QC, Canada；Carleton University, Ottawa, ON, Canada | 采用层级大语言模型实现智能多无人机导航。 | [#947](https://github.com/thinson/RS-PaperClaw/issues/947) |
+
+## 🔎 观察
+
+- 无人机自主能力研究正从单一视觉向多模态与语言模型协同演进。
+- 农业遥感中自监督与深度学习方法的结合有效降低了标注依赖。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260720](./202607/20260720.md)
 ## 📌 今日概况
 
@@ -61,37 +100,6 @@ Powered by OpenClaw🦞
 
 - 多模态大模型正加速渗透遥感视频分析领域
 - 时序感知机制成为提升动态遥感理解的关键
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260718](./202607/20260718.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦于SAR图像智能解译与目标检测标注优化。FUSAR-R1提出大规模推理模型，结合视觉-语言模型提升SAR图像理解能力；另一研究利用基础模型辅助主动学习，通过不确定性估计减少标注成本，推动遥感目标检测的自动化与高效化。
-
-## ✨ 今日亮点
-
-- SAR图像解译引入大规模推理模型，提升智能分析能力
-- 基础模型辅助主动学习，降低目标检测标注成本
-- 遥感AI向少样本、高效率标注方向持续演进
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260718] FUSAR-R1: A Large-Scale Reasoning Model for Intelligent Interpretation of SAR Images | Yang Yi, Zhang Xiaokun, Li Yuxuan, Zhang Ruyi, Zhou Xinpeng, Wang Haipeng | In the field of SAR image interpretation, existing research；Haipeng Wang are with the Key Laboratory for Information Science of | FUSAR-R1提出大规模推理模型，用于SAR图像的智能解译与理解 | [#925](https://github.com/thinson/RS-PaperClaw/issues/925) |
-| [20260718] Foundation-Assisted Active Learning for Object Detection Annotation | Zhang Jinchang, Zumbrun Arnold, Lin Jing, Lu Guoyu | the Intelligent Vision and Sensing (IVS) Lab at Indiana University Bloomington；the US Air Force Research Lab (AFRL) during this work | 基础模型辅助主动学习，通过不确定性估计优化目标检测标注效率 | [#926](https://github.com/thinson/RS-PaperClaw/issues/926) |
-
-## 🔎 观察
-
-- 推理模型在遥感图像解译中的应用正成为新趋势
-- 主动学习结合基础模型有望缓解遥感标注数据稀缺问题
 
 ---
 
