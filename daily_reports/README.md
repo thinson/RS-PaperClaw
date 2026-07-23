@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260722](./202607/20260722.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究呈现两大热点：一是多模态大语言模型在遥感领域的应用深化，包括通用与专用模型对比、小目标理解及图像编辑推理；二是无人机视觉定位与地理定位技术取得新进展，通过检索匹配、大偏视角基准等方案提升跨域定位精度。此外，物理感知的复值状态空间模型为极化SAR分类提供了新思路。
+
+## ✨ 今日亮点
+
+- 多模态大模型在遥感理解中通用与专用之争成焦点。
+- 无人机跨域视觉定位与地理定位基准研究活跃。
+- 物理感知深度学习推动极化SAR分类精度提升。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260722] Multimodal Large Language Models for Remote Sensing Image Understanding: Domain-Specific or General-Purpose? | Ma Qiwei, Qiu Chunping, Cheng Xinjun, Zhang Xiaoyu, Duan Puhong, Yang Ke, Kang Xudong, Li Shutao | School of Artificial Intelligence and Robotics, Hunan University；Intelligent Game and Decision Lab (IGDL)；Yuelushan Center for Industrial Innovation | 探讨多模态大模型用于遥感图像理解时通用与专用模型的优劣。 | [#928](https://github.com/thinson/RS-PaperClaw/issues/928) |
+| [20260722] RS-RIE-Bench: Benchmarking Reasoning-Guided Remote Sensing Image Editing | Qin Zihan, Xu Boao, Dong Zhao, Sun Yingping, Jiao Ziheng, Wang Junying, Wang Hongwei | School of Artificial Intelligence, Optics and Electronics (iOPEN), Northwestern Polytechnical University；Xi’an Modern Control Technology Research Institute, Xi’an 710065, China；Lanzhou Institute of Physics, Lanzhou 730000, China；Fudan University and Shanghai Artificial Intelligence Laboratory, Shanghai 200000, China | 提出推理引导的遥感图像编辑基准，涵盖时序与因果推理。 | [#949](https://github.com/thinson/RS-PaperClaw/issues/949) |
+| [20260722] RIM: A Retrieval-In-Matching Framework for Cross-Domain Global Visual Localization of UAVs | Li Xin, Duan Siyuan, Wang Shang, Mao Zhimin, Hu Bingliang, Zhang Geng | Key Laboratory of Spectral Imaging Technology CAS, Xi’an Institute of Optics and；Precision Mechanics, Chinese Academy of Sciences, Xi’an, 710119, China；University of Chinese Academy of Sciences, Beijing, 100049, China | 提出检索匹配框架，实现无人机跨域全局视觉定位。 | [#950](https://github.com/thinson/RS-PaperClaw/issues/950) |
+| [20260722] OffNadirLoc: Benchmark and Framework for Challenging UAV-to-Satellite Geo-Localization under Large Off-Nadir Views | Qiao Qian, Liu Wenye, Liu Ting, Shu Jiuhe, Wang Peng | School of Computer Science, Northwestern Polytechnical University | 构建大偏视角下无人机对卫星地理定位的基准与框架。 | [#951](https://github.com/thinson/RS-PaperClaw/issues/951) |
+| [20260722] Memory-Augmented Multimodal Large Language Models for Small Object Understanding in Streaming Aerial Videos | Sun Penglei, Huang Yehua, Tao Zhuoli, Li Xiang, Guan Runwei, Song Yaoxian, Zhao Kaiyong, Ding Henghui, Han Bo, Yang Yang, Chu Xiaowen | Information Hub, The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China；University of Freiburg, Freiburg, German；Hangzhou City University, Hangzhou, China；Fudan University, Shanghai, China；Department of Computer Science, Hong Kong Baptist University, Hong Kong, China | 提出记忆增强多模态大模型，用于流式航拍视频小目标理解。 | [#952](https://github.com/thinson/RS-PaperClaw/issues/952) |
+| [20260722] Physics-Aware Complex-Valued State Space Model with Scattering-Prior Feature Modulation for PolSAR Image Classification | Zhang Fangyan, Zhang Fan, Zhou Shiqi, Ni Jun, López-Martínez Carlos, Yin Qiang | College of Information Science and Technology, Beijing University of Chemical Technology；School of Information Science and Engineering, Yunnan University；Department of Signal Theory and Communications, Polytechnic University of Catalonia；School of Information and Cyberspace Security, Ningxia University | 提出物理感知复值状态空间模型，用于极化SAR图像分类。 | [#953](https://github.com/thinson/RS-PaperClaw/issues/953) |
+
+## 🔎 观察
+
+- 多模态大模型正从通用对话向遥感垂直任务快速渗透。
+- 无人机定位研究聚焦于大视角差异与跨域匹配的鲁棒性。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260721](./202607/20260721.md)
 ## 📌 今日概况
 
@@ -70,36 +105,6 @@ Powered by OpenClaw🦞
 
 - SAR与深度学习结合在海洋监控中向多任务（检测+估计）发展
 - 无人机研究从单一控制向多智能体协同与自然语言交互演进
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260719](./202607/20260719.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI研究聚焦于无人机视频理解，提出SkyVLaM多模态大语言模型，融合视频分割与时序感知机制，推动遥感领域从静态图像分析向动态视频理解演进，体现了多模态与时空建模的融合趋势。
-
-## ✨ 今日亮点
-
-- 多模态大模型用于无人机视频理解
-- 提出时序感知机制提升视频分割精度
-- 遥感AI从静态图像向动态视频演进
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260719] SkyVLaM: Multimodal Large Language Model for UAV Video Understanding in Remote Sensing | Jing Kaiwen, Jia Ruixu, Li Bingyao, Ou Ruizhe, Wu Ming, Zhang Chuang | Beijing University of Posts and Telecommunications, Beijing, China；Peking University, Beijing, China；Beijing Wuzi University, Beijing, China | SkyVLaM利用多模态大语言模型实现无人机遥感视频理解与分割。 | [#928](https://github.com/thinson/RS-PaperClaw/issues/928) |
-
-## 🔎 观察
-
-- 多模态大模型正加速渗透遥感视频分析领域
-- 时序感知机制成为提升动态遥感理解的关键
 
 ---
 
