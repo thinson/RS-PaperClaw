@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260723](./202607/20260723.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦于多模态与多任务融合，涵盖无人机单目深度估计、高光谱影像分类基准、大模型对抗攻击及显著目标检测。深度估计强调视角泛化，高光谱领域推出大规模基准数据集，同时大模型安全性与光谱-空间协同网络成为新热点。
+
+## ✨ 今日亮点
+
+- 无人机单目深度估计实现任意高度、俯仰、翻滚及视场角泛化
+- 发布大规模高空间分辨率高光谱影像分类基准数据集
+- 提出针对遥感大语言模型的可迁移定向对抗攻击方法
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260723] DAPM: UAV Monocular Depth Estimation from Any Height, Pitch, Roll and FOV | Ling Tong, Diao Wenhui, Feng Yingchao, Bi Hanbo, Hou Zhongyan, Sun Xian | Accordingly, research on low-altitude remote sensing imagery；mation Research Institute, Chinese Academy of Sciences, Beijing 100190；China, also with the School of Electronic, Electrical and Communication；Engineering, University of Chinese Academy of Sciences, Beijing 100190；China, also with the University of Chinese Academy of Sciences, Beijing；China, and also with the Key Laboratory of Target Cognition；stitute, Chinese Academy of Sciences, Beijing 100190, China ( | 提出DAPM方法，实现无人机任意视角下的单目深度估计 | [#955](https://github.com/thinson/RS-PaperClaw/issues/955) |
+| [20260723] HyperImageNet: A Large-Scale High-Spatial Resolution Hyperspectral Imagery Classification Benchmark | Zeng Chuguang, Li Jingtao, Liu Yinhe, Zhong Yanfei | Wuhan University Wuhan University Wuhan University Wuhan University | HyperImageNet发布大规模高空间分辨率高光谱分类基准 | [#956](https://github.com/thinson/RS-PaperClaw/issues/956) |
+| [20260723] GeoThreat: Transferable Targeted Adversarial Attacks on Large Vision-Language Models for Remote Sensing Image Interpretation | Fu Yimin, Bai Yuefeng, Pan Baicheng, Liu Zhunga, Michael K. Ng | Department of Mathematics, Hong Kong Baptist University, Hong Kong, China (；School of Automation, Northwestern Polytechnical University, Xi'an,, China ( | GeoThreat实现针对遥感大模型的可迁移定向对抗攻击 | [#957](https://github.com/thinson/RS-PaperClaw/issues/957) |
+| [20260723] Spectral-Spatial Synergistic Guided Network for Hyperspectral Salient Object Detection | Peng Yanyan, Xu Tingfa, Xiao Yao, Liu Peifu, Bai Shuyan, Xu Fengxiang, Li Jianan | Chongqing Innovation Center, Beijing Institute of Technology, Chongqing, China；School of Optics and Photonics, Beijing Institute of Technology, Beijing, China (；School of Optics and Photonics, Beijing Institute of Technology, Beijing, China；the Key Laboratory of Photoelectronic Imaging Technology and System, Ministry of Education of China, Beijing, China ( | 提出光谱-空间协同引导网络用于高光谱显著目标检测 | [#958](https://github.com/thinson/RS-PaperClaw/issues/958) |
+
+## 🔎 观察
+
+- 高光谱遥感从分类向显著目标检测等细粒度任务拓展
+- 大模型安全性与视角泛化能力成为遥感AI研究新焦点
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260722](./202607/20260722.md)
 ## 📌 今日概况
 
@@ -69,42 +102,6 @@ Powered by OpenClaw🦞
 
 - 无人机自主能力研究正从单一视觉向多模态与语言模型协同演进。
 - 农业遥感中自监督与深度学习方法的结合有效降低了标注依赖。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260720](./202607/20260720.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日遥感AI研究聚焦于多源异构数据融合与实时智能控制。SAR领域利用深度学习实现暗船识别与吨位估计；量子光谱技术突破高光谱成像灵敏度；无人机控制与通信网络研究强调实时性与自适应性，包括自然语言接口、塑性恢复及多智能体协同；此外，ISAC成像与卫星农业预测也取得进展。
-
-## ✨ 今日亮点
-
-- SAR深度学习实现暗船识别与吨位估计
-- 量子傅里叶光谱实现高灵敏高光谱成像
-- 无人机实时控制与自适通信网络研究突出
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260720] SAR Vessel Detection and Gross Tonnage Estimation from Heterogeneous Datasets for Dark Vessel Identification | Paltrinieri Davide, Diecidue Andrea, Basla Roberto, Casciani Daniele, Fraternali Piero, Boracchi Giacomo | Politecnico di Milano | 利用异构SAR数据集深度学习检测暗船并估计总吨位 | [#930](https://github.com/thinson/RS-PaperClaw/issues/930) |
-| [20260720] Scanless quantum Fourier-transform mid-infrared spectroscopy for rapid high-sensitivity hyperspectral mapping | Gattinger Paul, Heise Bettina, Andreas W. Schell, Duswald Kristina, Brandstetter Markus, Zorin Ivan | Research Center for Non-Destructive Testing, Science Park 2, Altenberger Str. 69；Division of Light-Matter-Interaction, Johannes Kepler University, Altenberger Str. 69 | 基于纠缠光子的无扫描量子中红外光谱实现快速高光谱成像 | [#931](https://github.com/thinson/RS-PaperClaw/issues/931) |
-| [20260720] RT-SHCUA: Real-Time Self-Hosted Computer-Use Agent for UAV Control | Lu Di, Zhang Bo, Li Xiyuan, Liao Yongzhi, Dong Xuewen, Shen Yulong, Liu Zhiquan, Ma Jianfeng | School of Computer Science and Technology, Xidian University, Xi’an, Shaanxi, China；the Shaanxi Key Laboratory of Network and System Security, Xi'an, Shaanxi,, China；College of Cyber Security, Jinan University, Guangzhou, China；School of Cyber Engineering, Shaanxi Key Lab of Network and System Security, Xidian University, Xi’an, Shaanxi,, China | 提出实时自托管计算机代理实现自然语言控制无人机 | [#932](https://github.com/thinson/RS-PaperClaw/issues/932) |
-| [20260720] PRIME: Plasticity Recovery in Multi-Agent Environments for UAV-Assisted Emergency Communication Networks | Qiu Wen, He Zhiqiang, Zhao Wei, Masui Hiroshi | Department of Information and Communication Engineering, Kitami Institute of Technology, Japan (；the Graduate School of Informatics and Engineering, University of Electro-Communications, Japan (；School of Computer Science and Technology, Anhui University of Technology, China ( | 多智能体强化学习恢复塑性以优化无人机应急通信网络 | [#933](https://github.com/thinson/RS-PaperClaw/issues/933) |
-| [20260720] Massive MIMO-OFDM ISAC for Sparse ISAR Imaging: Joint Power and Subcarrier Allocation | Hamid Reza Hashempour, Li Yanjiao, Zhang Jie, Shin Hyundong, Hien Quoc Ngo | the Centre for Wireless Innovation (CWI), Queen’s University Belfast, BT3 9 DT Belfast, U.K. (；Department of Electronic Engineering, Kyung Hee University, Yongin-si, Gyeonggi-do, Republic of Korea；Institute of Engineering Technology, University of Science and Technology Beijing, Beijing, China (；Department of Electronics and Information Convergence Engineering, Kyung Hee University, Yongin-si, Gyeonggi-do, Republic of Korea ( | 大规模MIMO-OFDM ISAC系统联合优化功率与子载波实现稀疏ISAR成像 | [#934](https://github.com/thinson/RS-PaperClaw/issues/934) |
-| [20260720] Polar Coordinate-based Differential Evolution for Moving Target Search Using Vision Sensor on Unmanned Aerial Vehicles | Thu Hang Khuat, Bui Duy-Nam, Thuy Ngan Duong, Manh Duong Phung | VNU University of Engineering and Technology, Vietnam National University, Hanoi, Vietnam；Department of Electrical Engineering, Ulsan National Institute of Science and Technology, Ulsan；College of Engineering and Computer Science and Smart Green Transformation Center (GREEN-X)；VinUniversity, Hanoi, Vietnam | 基于极坐标差分进化算法引导无人机视觉搜索移动目标 | [#935](https://github.com/thinson/RS-PaperClaw/issues/935) |
-| [20260720] Early Yield Prediction for Sugar Beet Fields using Satellite Data -- Learnings from Specialized Vision Transformers | Vaeth Philipp, Bhumika Laxman Sadbhave, Dejon Denise, Schorcht Gunther, Gregorova Magda | Center for Artificial Intelligence and Robotics, Technical University of Applied Sciences Wuerzburg-Schweinfurt, Franz-Horn-Strasse 2, Wuerzburg, Germany；Bielefeld University, Universitaetsstrasse 25, Bielefeld, Germany | 利用专用视觉Transformer从卫星数据早期预测甜菜产量 | [#936](https://github.com/thinson/RS-PaperClaw/issues/936) |
-
-## 🔎 观察
-
-- SAR与深度学习结合在海洋监控中向多任务（检测+估计）发展
-- 无人机研究从单一控制向多智能体协同与自然语言交互演进
 
 ---
 
