@@ -2,6 +2,51 @@
 
 最近三天日报（最新在前）：
 
+# [20260804](./202608/20260804.md)
+## 📌 今日概况
+
+今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究聚焦于基础模型与多模态融合，涵盖地球嵌入、城市理解、分割与生成任务。多篇工作探索视觉-语言模型在遥感分割中的应用，并引入原型演化、知识蒸馏等机制。同时，物理信息引导的扩散模型用于洪水合成，地理先验辅助3D场景补全，整体呈现从通用表征到任务专用优化的趋势。
+
+## ✨ 今日亮点
+
+- 多模态嵌入与视觉-语言模型成为遥感分割研究热点。
+- 物理先验与地理信息被引入生成及3D任务。
+- 基础模型通过蒸馏与提示学习适配遥感场景。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260804] Earth Embeddings | Adam J. Stewart, Fang Heng, Isaac A. Corley, Xiao Xiang Zhu | Chair of Data Science in Earth Observation, Technical University of Munich, Munich, Germany；KTH Royal Institute of Technology, Stockholm, Sweden | 提出Earth Embeddings，用于土地覆盖制图的卫星影像嵌入产品。 | [#482](https://github.com/thinson/RS-PaperClaw/issues/482) |
+| [20260804] UniEvo-RS: Omni-Prompt Unified Remote Sensing Segmentation with Representative Exemplar-Driven Prototype Evolution | Zhang Kunquan, Li Peilang, Hu Xikun, Yang Yunkai, Zou Yushan, Zhang Zhiwei, Dong Runmin | Sun Yat-sen University National University of Defense Technology | UniEvo-RS采用原型演化实现遥感分割的全提示统一框架。 | [#1041](https://github.com/thinson/RS-PaperClaw/issues/1041) |
+| [20260804] Geo-Embed: Towards Unified Multimodal Embeddings for Urban Understanding | Li Jiapeng, Li Yong, Zhou Junjie, Zhang Fan, Liu Yu | Peking University；Beijing University of Posts and Telecommunications | Geo-Embed构建城市理解的多模态统一嵌入，支持变化检测。 | [#1042](https://github.com/thinson/RS-PaperClaw/issues/1042) |
+| [20260804] FlowForm: Synergizing Fluid Physics with Topological Consistency for Satellite Flood Synthesis | Weihui Zhang, Ruizhi Wang, Hongye Xu, Huiqiong Wang, Li Sun, Mingli Song | Zhejiang University, Zhejiang, China | FlowForm结合流体物理与拓扑一致性合成卫星洪水图像。 | [#1043](https://github.com/thinson/RS-PaperClaw/issues/1043) |
+| [20260804] Geospatial-Prior Guidance for 3D Semantic Scene Completion | Wang Meng, Zhang Shougao, He Wenzhe, Li Ruihui, Hu Nan, Tang Zhuo, Li Kenli | College of Computer Science and Electronic Engineering, Hunan University, Hunan, China | 利用地理先验（如OSM）引导3D语义场景补全。 | [#1044](https://github.com/thinson/RS-PaperClaw/issues/1044) |
+| [20260804] CROSS: Cascaded Distillation and Dual-Constraint Grounding for Remote Sensing Referring Segmentation | Luo Tingzhang, Liu Ruizhong, Liu Yichao, Fan Cheng, Liu Yu, Guo Jianyuan | City University of Hong Kong；The Hong Kong University of Science and Technology (Guangzhou)；Nankai University；Peking University | CROSS通过级联蒸馏与双约束实现遥感指代分割。 | [#1045](https://github.com/thinson/RS-PaperClaw/issues/1045) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Distilled Roads: Generalisable Road Network Extraction Across Sensors, Resolutions, and Region | [2608.03407v1](https://arxiv.org/abs/2608.03407v1) | 质检未通过: 单位为空或无效 |
+| Standalone DINOv3 for Training-Free Open-Vocabulary Semantic Segmentation in Remote Sensing | [2608.03023v1](https://arxiv.org/abs/2608.03023v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 视觉-语言模型在遥感分割中应用增多，但多依赖提示工程，泛化性待验证。
+- 物理与地理先验的引入表明领域知识正与深度学习深度融合。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260803](./202608/20260803.md)
 ## 📌 今日概况
 
@@ -72,38 +117,6 @@ Powered by OpenClaw🦞
 
 - 多篇论文强调计算效率与鲁棒性，反映遥感AI向轻量化和实用化发展。
 - 跨模态与跨尺度融合成为主流，但脉冲网络等新型架构仍待突破。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260801](./202608/20260801.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦于多领域交叉应用：统计部门探索负责任AI与算法采纳以优化方法论，农业遥感利用基础模型实现免训练作物制图，图像处理领域提出新型去阴影网络。整体趋势显示，AI技术正从单一任务向复杂场景、多模态融合及实际业务落地演进。
-
-## ✨ 今日亮点
-
-- 统计部门探索负责任AI与算法采纳，推动遥感数据融入官方统计。
-- 免训练作物制图方法结合SAM与物候信息，提升时空泛化能力。
-- 新型去阴影网络利用CIELAB统计，增强边界可靠性与色彩恢复。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260801] Responsible AI and Algorithmic Adoption in Methodology Development for National Statistical Offices | Tam Siu-Ming | in methodology research and development, including harnessing big data, satellite imagery, and transactional sources to improve or redesign data collection instruments | 统计部门方法论开发中负责任AI与算法采纳，利用卫星影像等大数据改进数据采集。 | [#1016](https://github.com/thinson/RS-PaperClaw/issues/1016) |
-| [20260801] PhenoStitch: Training-Free Panoptic Crop Mapping from Satellite Image Time Series | Li Xuechen | University of Minnesota | PhenoStitch提出免训练泛在作物制图，结合SAM与物候信息实现时序影像全景分割。 | [#1017](https://github.com/thinson/RS-PaperClaw/issues/1017) |
-| [20260801] BRIC-Net: Boundary-Reliable Illumination-Color Interaction for Remote Sensing Image Deshadowing | Lu Wei, Liu Yi, Si-Bao | MOE Key Lab of ICSP, IMIS Lab of Anhui, Anhui Provincial Key Lab of Multimodal Cognitive Computation, Zenmorn-AHU；AI Joint Lab, School of Computer Science and Technology, Anhui University, Hefei 230601, China；derives reliability-aware guidance from CIELAB statistics | BRIC-Net通过边界可靠光照-颜色交互，提升遥感图像去阴影的亮度恢复与色彩校正。 | [#1018](https://github.com/thinson/RS-PaperClaw/issues/1018) |
-
-## 🔎 观察
-
-- 基础模型（如SAM）在遥感时序分析中应用增多，但免训练策略仍依赖物候先验。
-- 统计业务与遥感AI结合，强调算法可解释性与负责任部署，或成未来重要方向。
 
 ---
 
