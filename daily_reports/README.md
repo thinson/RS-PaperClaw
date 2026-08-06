@@ -2,6 +2,43 @@
 
 最近三天日报（最新在前）：
 
+# [20260805](./202608/20260805.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+
+今日遥感AI研究聚焦于基础模型应用与数据安全。多篇论文探索地理空间基础模型在生物量估算中的潜力，同时关注联邦学习与视觉语言模型的结合。此外，研究涉及Sentinel-1时序分析、海上风电基础设施监测、多标签分类设计选择分析，以及针对遥感目标检测的物理对抗攻击，显示出对模型鲁棒性和实际部署的重视。
+
+## ✨ 今日亮点
+
+- 地理空间基础模型助力生物量估算，提升碳监测精度。
+- 遥感深伪检测基准数据集构建，保障数据安全。
+- 联邦学习与视觉语言模型结合，应对非独立同分布数据。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260805] Above-ground Biomass Estimation with Geospatial Foundation Models | Sialellia Ghjulia, Scheibenreif Linus, Jan Dirk Wegner, Schindler Konrad | ETH AI Center, Zurich, 8092, Switzerland；EcoVision Lab, Department of Mathematical Modeling and Machine | 利用地理空间基础模型回归估算地上生物量，支持碳储量监测。 | [#893](https://github.com/thinson/RS-PaperClaw/issues/893) |
+| [20260805] DefoEye: Python-Based Software for Facilitating Time-Series InSAR Analysis of Sentinel-1 Remote-Sensing Data | Alireza Taheri Dehkordi, Hashemi Hossein, Naghibi Amir | United Nations University Hub on Water in a Changing Environment (WICE), United Nations University Institute；for Water, Environment and Health (UNU-INWEH), Lund University, Lund, Sweden；Centre for Advanced Middle Eastern Studies, Lund university, Lund, Sweden | DefoEye软件简化Sentinel-1时序InSAR分析，用于形变监测。 | [#1047](https://github.com/thinson/RS-PaperClaw/issues/1047) |
+| [20260805] Towards a satellite image manipulation and deepfake localization benchmark dataset | Arndt Jacob, Varshney Debvrat, Dias Philipe, Nukavarapu Nivedita | Oak Ridge National Laboratory | 构建卫星图像篡改与深伪定位基准数据集，推动取证研究。 | [#1048](https://github.com/thinson/RS-PaperClaw/issues/1048) |
+| [20260805] On the Effectiveness of Adaptation Strategies for VLM-Based Federated Learning in Remote Sensing | Lösche Simon, Büyüktaş Barış, Adler Mathis, Zavras Angelos, Papoutsis Ioannis, Demir Begüm | Technische Universität Berlin；Orion Lab, School of Rural, Surveying and Geoinformatics Engineering, National Technical；University of Athens；Institute of Astronomy, Astrophysics, Space Applications and Remote Sensing, National；Department of Informatics and Telematics, Harokopio University of Athens | 评估遥感联邦学习中视觉语言模型的不同适应策略效果。 | [#1049](https://github.com/thinson/RS-PaperClaw/issues/1049) |
+| [20260805] Benchmarking Deep Learning Models for Dense Event Classification of Offshore Wind Infrastructure in Sentinel-1 Time Series | Hoeser Thorsten, Bachofer Felix, Kuenzer Claudia | Earth Observation Center (EOC), German Aerospace Center (DLR), Oberpfaffenhofen；Institute for Geography and Geology, University of Wuerzburg | 基准测试深度学习模型对Sentinel-1时序海上风电事件的分类性能。 | [#1050](https://github.com/thinson/RS-PaperClaw/issues/1050) |
+| [20260805] Design Choices That Matter: A Functional ANOVA Analysis for Remote Sensing Multi-Label Classification | Maryam Gholami Shiri, Tuba Eva, Džeroski Sašo, Eftimov Tome, Nikolikj Ana | Department of Knowledge Technologies, Jožef Stefan Institute, Ljubljana, Slovenia；Jožef Stefan International Postgraduate School, Ljubljana, Slovenia；Computer Systems Department, Jožef Stefan Institute, Ljubljana, Slovenia；Trinity University, San Antonio, TX, USA；Singidunum University, Belgrade, Serbia | 通过功能方差分析揭示遥感多标签分类中关键设计选择的影响。 | [#1051](https://github.com/thinson/RS-PaperClaw/issues/1051) |
+| [20260805] OutLangSplat: 3D Language Gaussian Splatting for UAV Outdoor Scenes | Yan Xia, Wu He, Xu Yanghui, Wu Zizhao, Chen Jiazhou | Zhejiang University of Technology；Hangzhou Dianzi University | 提出OutLangSplat，将3D语言高斯泼溅应用于无人机户外场景分割。 | [#1052](https://github.com/thinson/RS-PaperClaw/issues/1052) |
+| [20260805] ColorFD: A Finite-Difference Guided Black-Box Physical Adversarial Attack for Remote Sensing Object Detection | Guo Tiannuo, Qiu Guhang, Xie Yuzhen, Feng Rui, Li Ligang, Xiang Deliang | College of Information Science and Technology, Beijing University of Chemical Technology, Beijing, China ( | 提出ColorFD，基于有限差分的黑盒物理对抗攻击方法用于遥感检测。 | [#1053](https://github.com/thinson/RS-PaperClaw/issues/1053) |
+
+## 🔎 观察
+
+- 基础模型在遥感中的应用从分类扩展到回归任务，如生物量估算，显示其通用性增强。
+- 对抗攻击与深伪检测研究增多，反映遥感数据安全与模型鲁棒性成为关注焦点。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260804](./202608/20260804.md)
 ## 📌 今日概况
 
@@ -84,39 +121,6 @@ Powered by OpenClaw🦞
 
 - Mamba架构正快速渗透高光谱图像处理，成为Transformer的强有力替代方案
 - 遥感基础模型研究从判别式向生成式演进，同时注重参数高效微调
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260802](./202608/20260802.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日研究聚焦于遥感AI的多个前沿方向：自动驾驶高精地图构建、高光谱水果成熟度预测、脉冲神经网络的分布外检测，以及跨视角地理定位。多模态融合与高效架构（如混合专家、脉冲集成）成为提升性能的关键，同时注重实际应用中的计算效率与鲁棒性。
-
-## ✨ 今日亮点
-
-- 高精地图构建引入人类驾驶行为模仿，提升在线建图效率。
-- 脉冲伪集成方法缓解多样性坍缩，增强遥感OOD检测能力。
-- 稀疏混合专家实现多尺度跨视角定位，兼顾精度与效率。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260802] Driver2Map: Imitating Human Driving for Online High-Definition Map Construction | Yin Pan, Xia Runtian, Kuang Weisong, Li Kaiyu, Zhao Cong, Cao Xiangyong | Xi’an Jiaotong University | 模仿人类驾驶行为，利用多模态融合与相机位姿在线构建高精地图。 | [#1020](https://github.com/thinson/RS-PaperClaw/issues/1020) |
-| [20260802] Fruit-HSNet: A Machine Learning Approach for Hyperspectral Image-Based Fruit Ripeness Prediction | Ahmed Baha Ben Jmaa, Chaieb Faten, Fabijańska Anna | Efrei Research Lab, Paris Panthéon-Assas University, Paris, France；Institute of Applied Computer Science, Lodz University of Technology, Łódź, Poland | 结合傅里叶变换与特征融合，基于高光谱图像预测水果成熟度。 | [#1021](https://github.com/thinson/RS-PaperClaw/issues/1021) |
-| [20260802] Breaking Diversity Collapse in Spiking Pseudo-Ensembles for Efficient OOD Detection in Remote Sensing | Anumasa Srinivas, Shah Rushi, Zou Qiran, Liu Dianbo | National University of Singapore | 通过脉冲伪集成打破多样性坍缩，提升遥感分布外检测效率。 | [#1022](https://github.com/thinson/RS-PaperClaw/issues/1022) |
-| [20260802] One Query, Many Scales: Sparse Mixture-of-Experts for Efficient Hierarchical Cross-View Geo-Localization | Fan Ruijie, Ye Junyan, Zhu Qi, Li Weijia | Tsinghua Shenzhen International Graduate School, Tsinghua University；School of Geospatial Engineering and Science, Sun Yat-sen University | 采用稀疏混合专家与多尺度表示，实现高效层级跨视角地理定位。 | [#1023](https://github.com/thinson/RS-PaperClaw/issues/1023) |
-
-## 🔎 观察
-
-- 多篇论文强调计算效率与鲁棒性，反映遥感AI向轻量化和实用化发展。
-- 跨模态与跨尺度融合成为主流，但脉冲网络等新型架构仍待突破。
 
 ---
 
