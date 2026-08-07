@@ -2,6 +2,46 @@
 
 最近三天日报（最新在前）：
 
+# [20260806](./202608/20260806.md)
+## 📌 今日概况
+
+今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 11 篇。
+
+今日遥感AI研究聚焦多模态融合、变化检测与智能感知。多篇论文探索跨注意力机制、开放词汇变化检测及持续学习，推动模型适应性与泛化能力。高光谱图像分类与变化检测结合无监督伪标签与拓扑学习，提升标签效率。此外，低光增强、UAV路径规划及智能体AI与通感一体化等方向亦受关注，整体呈现从静态分析向动态、多时相推理演进的趋势。
+
+## ✨ 今日亮点
+
+- 多模态融合与持续学习成热点，提升模型适应性与泛化能力。
+- 高光谱分类与变化检测探索无监督及源自由域适应方法。
+- UAV导航与路径规划结合世界模型与优化算法，增强自主性。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260806] CFGPNet: Cross-Attention-Based Fused Gradient Programmed Network Framework for Multispectral Object Detection | Hatami Nima, Faez Karim, Sharifian Saeed, Amindavar Hamidreza | Department of Electrical Engineering, Amirkabir University of Technology | 提出CFGPNet，用交叉注意力融合梯度编程网络，提升多光谱目标检测性能。 | [#1055](https://github.com/thinson/RS-PaperClaw/issues/1055) |
+| [20260806] CogVis: Must Open-Vocabulary Change Detection Perceive the Scene Anew for Every Query? | Wang Zijie, Zhong Chen, He Wei | Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；monitoring and informed decision-making (Li et al. 2026a). 2026b) summarizes existing research through the Mask- | CogVis探索开放词汇变化检测中场景感知复用，减少重复计算并保持准确性。 | [#1056](https://github.com/thinson/RS-PaperClaw/issues/1056) |
+| [20260806] DARAD: Dual Adapters and Ranking-Aware Distillation for Continual Remote Sensing Image-Text Retrieval | Chen Xi, Chen Xu, Jia Xiangyang, Wang Wei, Zhang Xu, Sun Zhenyuan | School of Computer Science, Wuhan University, Wuhan 430072, China；Beijing Institute for General Artificial Intelligence (BIGAI) | DARAD采用双适配器与排序感知蒸馏，实现遥感图文检索的持续学习。 | [#1057](https://github.com/thinson/RS-PaperClaw/issues/1057) |
+| [20260806] Hyperspectral Calibration Detection: A Novel Concept For Change Detection With Unsupervised Incremental Safe Pseudo-Labeling Implementation | Lin Chia-Hsiang, Hsu Shih-Min, Liang Ching-Yun, Chanussot Jocelyn, Chen Jhih-Yan | Department of Electrical Engineering；the Miin Wu School of Computing, National Cheng Kung University, Tainan, Taiwan (R.O.C.) (；Institute of Computer and Communication Engineering, Department of Electrical Engineering, National Cheng Kung University, Tainan, Taiwan (R.O.C.) (；Inria, CNRS, Grenoble INP, LJK, Université Grenoble Alpes, Grenoble, France ( | 提出高光谱校准检测概念，结合无监督增量安全伪标签用于变化检测。 | [#1058](https://github.com/thinson/RS-PaperClaw/issues/1058) |
+| [20260806] Multi-Year Geospatial Reasoning using Interannually-Consistent Historical Predictions as a Free Input Modality | Syed Roshaan Ali Shah, Bonte Kasper, Bekaert David, Kristof Van Tricht, Wens Dieter | VITO Remote Sensing | 利用年际一致的历史预测作为免费输入模态，增强多时相地理空间推理。 | [#1059](https://github.com/thinson/RS-PaperClaw/issues/1059) |
+| [20260806] Topology-Aware Neighborhood Learning for Source-Free Cross-Scene Hyperspectral Image Classification | Li Qingmei, Zheng Juepeng, Zhang Jiarui, Huang Jianxi, Fu Haohuan | the Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China (；School of Artificial Intelligence, Sun Yat-Sen University, Zhuhai, China ( | 拓扑感知邻域学习用于源自由跨场景高光谱图像分类，提升伪标签质量。 | [#1060](https://github.com/thinson/RS-PaperClaw/issues/1060) |
+| [20260806] Shape-Aware Oriented Bounding Box (OBB) to Horizontal Bounding Box (HBB) Conversion | Badha Rathna Sabhapathy, Dahiya Gotam, Vatsal Vishesh | Hyspace Technologies | 提出形状感知的旋转框转水平框方法，改善遥感目标检测的标注效率。 | [#1061](https://github.com/thinson/RS-PaperClaw/issues/1061) |
+| [20260806] Overcoming Attention Drift: Homogeneity-Heterogeneity Guided Feature Aggregation for Low-Light Remote Sensing Image Enhancement | Zhong Yaozi, Yang Xingxing, Mei Shaohui, Ma Mingyang | School of Information and Artificial Intelligence, Yunnan University of Finance and Economics, Kunming, China；Department of Computer Science, Hong Kong Baptist University, Hong Kong, China；School of Electronics and Information, Northwestern Polytechnical University, Xi'an, China | 同质-异质引导特征聚合克服注意力漂移，用于低光遥感图像增强。 | [#1062](https://github.com/thinson/RS-PaperClaw/issues/1062) |
+| [20260806] When Agentic AI Meets Integrated Sensing and Communication | Li Kai, Li Conggai, Sarah Ali Siddiqui, Syed Sohail Ahmed, Yuan Xin, Li Shenghong, Ni Wei | KAI LI, Interdisciplinary Centre for Security, Reliability and Trust (SnT), University of Luxembourg, Luxembourg；SYED SOHAIL AHMED, College of Computer, Qassim University, Saudi Arabia；WEI NI, Edith Cowan University, School of Engineering, Australia；Authors’ Contact Information: Kai Li, Interdisciplinary Centre for Security, Reliability and Trust (SnT), University of Luxembourg, Luxembourg | 探讨智能体AI与通感一体化结合，提出闭环框架以增强多模态智能。 | [#1063](https://github.com/thinson/RS-PaperClaw/issues/1063) |
+| [20260806] Iterative Hybrid Discrete-Continuous Viewpoint Planning for UAV Photogrammetry | Grech Alan, Pisani Daniel, Grima Andre, Carl James Debono, Formosa Saviour, Seychell Dylan | University of Malta University of Malta Stargate Studios Malta；University of Malta University of Malta University of Malta；University of Malta (Dawl AI Lab), financed by Xjenza Malta through the registration reliability, completeness, and depth accuracy [3] | 迭代混合离散连续视点规划用于UAV摄影测量，优化表面覆盖与精度。 | [#1064](https://github.com/thinson/RS-PaperClaw/issues/1064) |
+| [20260806] Uncertainty-Aware World Model for Aerial Image-Goal Navigation | Zhu Deyi, Fan Haoyu, Zhu Yinan, Zhang Weichen, Ma Shilin, Chen Xinlei, Tang Yansong | Tsinghua Shenzhen International Graduate School, Tsinghua University | 不确定性感知世界模型用于航空图像目标导航，提升轨迹评分与决策鲁棒性。 | [#1065](https://github.com/thinson/RS-PaperClaw/issues/1065) |
+
+## 🔎 观察
+
+- 多篇工作聚焦无监督或持续学习，减少标注依赖，适应动态遥感场景。
+- 跨模态与多时相融合趋势明显，推动从单帧分析向时空推理发展。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260805](./202608/20260805.md)
 ## 📌 今日概况
 
@@ -77,50 +117,6 @@ Powered by OpenClaw🦞
 
 - 视觉-语言模型在遥感分割中应用增多，但多依赖提示工程，泛化性待验证。
 - 物理与地理先验的引入表明领域知识正与深度学习深度融合。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260803](./202608/20260803.md)
-## 📌 今日概况
-
-今日共检索候选论文 17 篇；关键词+LLM 智能匹配遥感交叉论文 15 篇；最终纳入日报 15 篇。
-
-今日遥感AI研究聚焦于高光谱图像分类与超分辨率、遥感视频理解、灾害监测及基础模型微调。多篇论文引入Mamba架构、扩散模型及自监督学习，推动模型效率与泛化能力提升。同时，新发布多个基准数据集（如GEOID-Flood、RSVideo、OSSDD），促进多模态与视频理解研究。整体趋势显示，遥感AI正从单一任务向跨模态、生成式及基础模型方向发展。
-
-## ✨ 今日亮点
-
-- Mamba架构在高光谱分类与超分辨率中表现突出
-- 多模态基准数据集推动灾害监测与视频理解研究
-- 基础模型微调与生成式模型成为遥感AI新热点
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260803] Fermat Active Laplace Learning for Semi-Supervised Hyperspectral Image Classification | Buranasiri Vutichart, James M. Murphy | Department of Mathematics；Tufts University | 提出Fermat主动拉普拉斯学习，提升半监督高光谱图像分类性能 | [#1025](https://github.com/thinson/RS-PaperClaw/issues/1025) |
-| [20260803] ISRS-DETR: Detection-Guided Click Propagation for Remote Sensing Interactive Segmentation | Thanh Duc Pham, Nguyen Anh, Duong Duc Hieu, Pham Minh-Tan | FPT Software AI Center, Vietnam；Department of Computer Science, University of Liverpool, UK；IRISA, Université Bretagne Sud, UMR 6074 | ISRS-DETR利用检测引导点击传播，改进遥感交互式分割 | [#1026](https://github.com/thinson/RS-PaperClaw/issues/1026) |
-| [20260803] UAV-Based Environmental Monitoring of Rip-Current Indicators Using Wavelet-Derived Texture Features | Yonatan Ben Avraham, Binyaminov Baruch, Aperstein Yehudit | Intelligent Systems, Afeka Academic College of Engineering, Tel Aviv 6998812, Israel | 基于小波纹理特征，无人机监测离岸流指示物 | [#1027](https://github.com/thinson/RS-PaperClaw/issues/1027) |
-| [20260803] USP-Mamba: Unmixing-Derived Spectral and Structural Prompting for Hyperspectral Image Super-Resolution | Chen Shi, Zhang Jie, Zhou Yicong | Department of Computer Science, University of Macau, Macau, China | USP-Mamba结合光谱解混与提示，实现高光谱超分辨率 | [#1028](https://github.com/thinson/RS-PaperClaw/issues/1028) |
-| [20260803] Global-Scale Self-Supervised Spatiotemporal Learning for NDVI Time-Series Reconstruction | Li Ang, Jiang Menghui, Guan Xiaobin, Chu Dong, Shen Huanfeng | School of Geography and Tourism, Anhui Normal University, Wuhu 241002, China；Key Laboratory of Earth Surface Processes and Regional Response in the Yangtze River；Key Laboratory of Geographic Information System of Ministry of Education, Wuhan 430079；Key Laboratory of Digital Cartography and Land Information Application of the Ministry of | 全球尺度自监督时空学习，重建NDVI时间序列 | [#1029](https://github.com/thinson/RS-PaperClaw/issues/1029) |
-| [20260803] GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation | Chiriaco Gaetano, Barco Luca, Bragagnolo Andrea, Rossi Claudio, Arnaudo Edoardo | Fondazione LINKS；Politecnico di Torino | GEOID-Flood提供多模态洪水分割基准数据集 | [#1030](https://github.com/thinson/RS-PaperClaw/issues/1030) |
-| [20260803] Mapping melliferous tree species in Kenya via one-class classification with hyperspectral unsupervised domain adaptation | Luo Zhaozhi, Heiskanen Janne, Vuorinne Ilja, Ocholla Ian, Zhang Shiqi, Järvinen Saana, Wang Xinyu, Zhong Yanfei, Pellikka Petri | School of Emergency Management, Xihua University；School of Remote Sensing and Information Engineering, Wuhan University；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University | 无监督域适应用于肯尼亚蜜源树种制图 | [#1031](https://github.com/thinson/RS-PaperClaw/issues/1031) |
-| [20260803] RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos? | Zhou Hongjie, Wang Shiqin, Chen Haoyang, Guo Haonan, Wang Di, Liu Juhua, Lin Fu, Luo Yong | Wuhan University；Zhongguancun Academy | RSVideo基准评估视觉语言模型在遥感视频理解能力 | [#1032](https://github.com/thinson/RS-PaperClaw/issues/1032) |
-| [20260803] OSSDD - a New Open Dataset for Sentinel-1 Ship Detection | Hammer Horst, Hochstuhl Sylvia, Thiele Antje, Brosch Tobias, Davidson Padraig, Remiger Tim, Teutsch Michael | Fraunhofer Institute of Optronics, System Technologies and Image Exploitation - IOSB；Karlsruhe Institute of Technology - KIT | OSSDD发布开放Sentinel-1舰船检测数据集 | [#1033](https://github.com/thinson/RS-PaperClaw/issues/1033) |
-| [20260803] PNEC-Mamba: Prototype-Guided Positive-Negative Evidence Calibration for Hyperspectral Image Classification | Xu Mingzhen, Xu Can, Wang Di, Guo Haonan, Du Bo | Wuhan University | PNEC-Mamba通过原型引导证据校准，提升高光谱分类 | [#1034](https://github.com/thinson/RS-PaperClaw/issues/1034) |
-| [20260803] Assessing the Benefits of Combining Advanced Deep Learning Techniques for Post-Disaster Building Damage Assessment from UAV Imagery | Huy Quang Ung, Habault Guillaume, Legaspi Roberto, Niu Hao, Cao Lian, Taya Masato | KDDI Research, Inc., Fujimino, Japan | 结合深度学习技术，评估无人机影像建筑损毁 | [#1035](https://github.com/thinson/RS-PaperClaw/issues/1035) |
-| [20260803] GeoCore-9B: Towards Geo-Aware Generative Foundation Models in Earth Observation | Do Jeonghyeok, Kim Munchurl | Information \& Electronics Research Institute；School of Electrical Engineering | GeoCore-9B构建地理感知生成式基础模型 | [#1036](https://github.com/thinson/RS-PaperClaw/issues/1036) |
-| [20260803] EchoChange: A Diffusion Language Model with Dual Pass Remasking for Factual Remote Sensing Disaster Change Captioning | Sun Dongwei, Yao Bowen, Zhang Yujie, Liu Pei, Yao Jing, Cao Xiangyong | School of Computer Science and Technology and the Ministry of Education Key Lab for Intelligent Networks and Network；Security, Xi’an Jiaotong University, 710049, China；School of Computer Science and Technology, Faculty of Electronic and Information Engineering, Xi’an Jiaotong University；State Key Laboratory of Remote Sensing and Digital Earth, Aerospace Information Research Institute, Chinese Academy of | EchoChange用扩散语言模型实现灾害变化描述 | [#1037](https://github.com/thinson/RS-PaperClaw/issues/1037) |
-| [20260803] CoNav-UAV: Cooperative Dual-Altitude Aerial Navigation via Stackelberg Learning | Song Junru, Zhang Wenhao, Yang Yang, Qiu Xuekai, Wang Feifei, Zhou Weien, Jiang Tingsong, Wen Ying, Li Yang, Yao Wen | Shanghai Jiao Tong University；Intelligent Game and Decision Laboratory；Renmin University of China；Shanghai Innovation Institute | CoNav-UAV基于Stackelberg学习实现双高度协同导航 | [#1038](https://github.com/thinson/RS-PaperClaw/issues/1038) |
-| [20260803] SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models | Li Xingyan, Jordan A. Caraballo-Vega, Gong Jie, Mark L. Carroll, Wang Jianwu | University of Maryland, Baltimore County Baltimore Maryland USA；NASA Goddard Space Flight Center Greenbelt Maryland USA；Univ. of Maryland, Baltimore County Baltimore Maryland USA | SPECTRA通过带路由嵌入与LoRA实现跨传感器微调 | [#1039](https://github.com/thinson/RS-PaperClaw/issues/1039) |
-
-## 🔎 观察
-
-- Mamba架构正快速渗透高光谱图像处理，成为Transformer的强有力替代方案
-- 遥感基础模型研究从判别式向生成式演进，同时注重参数高效微调
 
 ---
 
