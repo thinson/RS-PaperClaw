@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260807](./202608/20260807.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦星上智能处理与轻量化模型。三篇论文分别提出宽幅卫星交通检测基准、基于视觉语言模型的星上摘要生成，以及极限学习机图像压缩方法，共同指向降低卫星下行带宽压力、提升在轨实时分析能力，体现了边缘计算与遥感结合的趋势。
+
+## ✨ 今日亮点
+
+- 星上视觉语言模型实现先摘要后下载，大幅节省带宽。
+- 宽幅卫星交通检测新基准，配套超轻量基线模型。
+- 极限学习机用于星上图像压缩，提升下行效率。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260807] SkySeaLand: A Wide-Format Satellite Transportation Benchmark with an Ultra-Lightweight Detection Baseline | Md. Zahid Hasan Riad, Md Sultanul Islam Ovi | Dept. of Computer Science and Engineering, Green University of Bangladesh, Bangladesh；Dept. of Computer Science, George Mason University, Virginia, USA | 提出宽幅卫星交通检测基准SkySeaLand及超轻量基线，推动小目标检测。 | [#1067](https://github.com/thinson/RS-PaperClaw/issues/1067) |
+| [20260807] Summarize First, Download Later: Onboard VLMs for Bandwidth-Efficient Earth Observation | Park Junghwan, Sim Sangcheol, Cho Woojin, Kwon Darongsae | TelePIX | 利用星上视觉语言模型生成摘要，减少下行数据量，提高带宽效率。 | [#1068](https://github.com/thinson/RS-PaperClaw/issues/1068) |
+| [20260807] ELMZip: Onboard Satellite Image Compression via Extreme Learning Machines for Efficient Downlink | Cho Woojin, Park Junghwan, Sim Sangcheol, Steve Andreas Immanuel, Heo Junhyuk, Kwon Darongsae | TelePIX | ELMZip基于极限学习机实现星上多光谱图像压缩，优化下行传输。 | [#1069](https://github.com/thinson/RS-PaperClaw/issues/1069) |
+
+## 🔎 观察
+
+- 星上处理成为热点，三篇均关注在轨计算，旨在减少对地面依赖。
+- 轻量化模型与压缩技术结合，预示遥感小卫星星座的智能化升级。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260806](./202608/20260806.md)
 ## 📌 今日概况
 
@@ -72,51 +104,6 @@ Powered by OpenClaw🦞
 
 - 基础模型在遥感中的应用从分类扩展到回归任务，如生物量估算，显示其通用性增强。
 - 对抗攻击与深伪检测研究增多，反映遥感数据安全与模型鲁棒性成为关注焦点。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260804](./202608/20260804.md)
-## 📌 今日概况
-
-今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究聚焦于基础模型与多模态融合，涵盖地球嵌入、城市理解、分割与生成任务。多篇工作探索视觉-语言模型在遥感分割中的应用，并引入原型演化、知识蒸馏等机制。同时，物理信息引导的扩散模型用于洪水合成，地理先验辅助3D场景补全，整体呈现从通用表征到任务专用优化的趋势。
-
-## ✨ 今日亮点
-
-- 多模态嵌入与视觉-语言模型成为遥感分割研究热点。
-- 物理先验与地理信息被引入生成及3D任务。
-- 基础模型通过蒸馏与提示学习适配遥感场景。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260804] Earth Embeddings | Adam J. Stewart, Fang Heng, Isaac A. Corley, Xiao Xiang Zhu | Chair of Data Science in Earth Observation, Technical University of Munich, Munich, Germany；KTH Royal Institute of Technology, Stockholm, Sweden | 提出Earth Embeddings，用于土地覆盖制图的卫星影像嵌入产品。 | [#482](https://github.com/thinson/RS-PaperClaw/issues/482) |
-| [20260804] UniEvo-RS: Omni-Prompt Unified Remote Sensing Segmentation with Representative Exemplar-Driven Prototype Evolution | Zhang Kunquan, Li Peilang, Hu Xikun, Yang Yunkai, Zou Yushan, Zhang Zhiwei, Dong Runmin | Sun Yat-sen University National University of Defense Technology | UniEvo-RS采用原型演化实现遥感分割的全提示统一框架。 | [#1041](https://github.com/thinson/RS-PaperClaw/issues/1041) |
-| [20260804] Geo-Embed: Towards Unified Multimodal Embeddings for Urban Understanding | Li Jiapeng, Li Yong, Zhou Junjie, Zhang Fan, Liu Yu | Peking University；Beijing University of Posts and Telecommunications | Geo-Embed构建城市理解的多模态统一嵌入，支持变化检测。 | [#1042](https://github.com/thinson/RS-PaperClaw/issues/1042) |
-| [20260804] FlowForm: Synergizing Fluid Physics with Topological Consistency for Satellite Flood Synthesis | Weihui Zhang, Ruizhi Wang, Hongye Xu, Huiqiong Wang, Li Sun, Mingli Song | Zhejiang University, Zhejiang, China | FlowForm结合流体物理与拓扑一致性合成卫星洪水图像。 | [#1043](https://github.com/thinson/RS-PaperClaw/issues/1043) |
-| [20260804] Geospatial-Prior Guidance for 3D Semantic Scene Completion | Wang Meng, Zhang Shougao, He Wenzhe, Li Ruihui, Hu Nan, Tang Zhuo, Li Kenli | College of Computer Science and Electronic Engineering, Hunan University, Hunan, China | 利用地理先验（如OSM）引导3D语义场景补全。 | [#1044](https://github.com/thinson/RS-PaperClaw/issues/1044) |
-| [20260804] CROSS: Cascaded Distillation and Dual-Constraint Grounding for Remote Sensing Referring Segmentation | Luo Tingzhang, Liu Ruizhong, Liu Yichao, Fan Cheng, Liu Yu, Guo Jianyuan | City University of Hong Kong；The Hong Kong University of Science and Technology (Guangzhou)；Nankai University；Peking University | CROSS通过级联蒸馏与双约束实现遥感指代分割。 | [#1045](https://github.com/thinson/RS-PaperClaw/issues/1045) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Distilled Roads: Generalisable Road Network Extraction Across Sensors, Resolutions, and Region | [2608.03407v1](https://arxiv.org/abs/2608.03407v1) | 质检未通过: 单位为空或无效 |
-| Standalone DINOv3 for Training-Free Open-Vocabulary Semantic Segmentation in Remote Sensing | [2608.03023v1](https://arxiv.org/abs/2608.03023v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 视觉-语言模型在遥感分割中应用增多，但多依赖提示工程，泛化性待验证。
-- 物理与地理先验的引入表明领域知识正与深度学习深度融合。
 
 ---
 
