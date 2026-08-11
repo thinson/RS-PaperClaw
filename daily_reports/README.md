@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260808](./202608/20260808.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦于气象预测与视觉基础模型两大方向。热带气旋预测引入潜空间修正流模型，结合卫星影像与大气场数据，提升生成式预测精度；变化检测领域则提出AdaDINO，通过冻结DINO骨干的配对感知适配，实现高效双时相分析。两项工作均强调对现有深度学习架构的优化，以应对遥感数据的时空复杂性，推动灾害监测与地表动态识别的智能化发展。
+
+## ✨ 今日亮点
+
+- 潜空间修正流提升热带气旋预测精度
+- 冻结DINO适配实现高效变化检测
+- 遥感AI聚焦生成模型与基础模型优化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260808] Tropical Cyclone Forecasting via Latent Rectified Flow using Satellite Imagery and Atmospheric Fields | Zannat Meheru, Sk. Md. Masudul Ahsan | Department of Computer Science and Engineering；Khulna University of Engineering \& Technology | 提出潜空间修正流模型，融合卫星影像与大气场预测热带气旋 | [#1071](https://github.com/thinson/RS-PaperClaw/issues/1071) |
+| [20260808] AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection | Zhang Xu, Li Xinqing, Xie Jianpeng, Zhu Zeshuai, He Xin, Liu Yun | VCIP, College of Computer Science, Nankai University；School of Computer Science and Engineering, Tianjin University of Technology；Academy for Advanced Interdisciplinary Studies, Nankai University；Nankai International Advanced Research Institute, Shenzhen Futian | AdaDINO在冻结DINO骨干中引入配对感知适配，提升变化检测效率 | [#1072](https://github.com/thinson/RS-PaperClaw/issues/1072) |
+
+## 🔎 观察
+
+- 生成式模型在气象预测中应用渐增，但需平衡计算成本与精度
+- 基础模型适配策略趋向轻量化，强调冻结骨干与任务特定模块结合
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260807](./202608/20260807.md)
 ## 📌 今日概况
 
@@ -67,43 +98,6 @@ Powered by OpenClaw🦞
 
 - 多篇工作聚焦无监督或持续学习，减少标注依赖，适应动态遥感场景。
 - 跨模态与多时相融合趋势明显，推动从单帧分析向时空推理发展。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260805](./202608/20260805.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究聚焦于基础模型应用与数据安全。多篇论文探索地理空间基础模型在生物量估算中的潜力，同时关注联邦学习与视觉语言模型的结合。此外，研究涉及Sentinel-1时序分析、海上风电基础设施监测、多标签分类设计选择分析，以及针对遥感目标检测的物理对抗攻击，显示出对模型鲁棒性和实际部署的重视。
-
-## ✨ 今日亮点
-
-- 地理空间基础模型助力生物量估算，提升碳监测精度。
-- 遥感深伪检测基准数据集构建，保障数据安全。
-- 联邦学习与视觉语言模型结合，应对非独立同分布数据。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260805] Above-ground Biomass Estimation with Geospatial Foundation Models | Sialellia Ghjulia, Scheibenreif Linus, Jan Dirk Wegner, Schindler Konrad | ETH AI Center, Zurich, 8092, Switzerland；EcoVision Lab, Department of Mathematical Modeling and Machine | 利用地理空间基础模型回归估算地上生物量，支持碳储量监测。 | [#893](https://github.com/thinson/RS-PaperClaw/issues/893) |
-| [20260805] DefoEye: Python-Based Software for Facilitating Time-Series InSAR Analysis of Sentinel-1 Remote-Sensing Data | Alireza Taheri Dehkordi, Hashemi Hossein, Naghibi Amir | United Nations University Hub on Water in a Changing Environment (WICE), United Nations University Institute；for Water, Environment and Health (UNU-INWEH), Lund University, Lund, Sweden；Centre for Advanced Middle Eastern Studies, Lund university, Lund, Sweden | DefoEye软件简化Sentinel-1时序InSAR分析，用于形变监测。 | [#1047](https://github.com/thinson/RS-PaperClaw/issues/1047) |
-| [20260805] Towards a satellite image manipulation and deepfake localization benchmark dataset | Arndt Jacob, Varshney Debvrat, Dias Philipe, Nukavarapu Nivedita | Oak Ridge National Laboratory | 构建卫星图像篡改与深伪定位基准数据集，推动取证研究。 | [#1048](https://github.com/thinson/RS-PaperClaw/issues/1048) |
-| [20260805] On the Effectiveness of Adaptation Strategies for VLM-Based Federated Learning in Remote Sensing | Lösche Simon, Büyüktaş Barış, Adler Mathis, Zavras Angelos, Papoutsis Ioannis, Demir Begüm | Technische Universität Berlin；Orion Lab, School of Rural, Surveying and Geoinformatics Engineering, National Technical；University of Athens；Institute of Astronomy, Astrophysics, Space Applications and Remote Sensing, National；Department of Informatics and Telematics, Harokopio University of Athens | 评估遥感联邦学习中视觉语言模型的不同适应策略效果。 | [#1049](https://github.com/thinson/RS-PaperClaw/issues/1049) |
-| [20260805] Benchmarking Deep Learning Models for Dense Event Classification of Offshore Wind Infrastructure in Sentinel-1 Time Series | Hoeser Thorsten, Bachofer Felix, Kuenzer Claudia | Earth Observation Center (EOC), German Aerospace Center (DLR), Oberpfaffenhofen；Institute for Geography and Geology, University of Wuerzburg | 基准测试深度学习模型对Sentinel-1时序海上风电事件的分类性能。 | [#1050](https://github.com/thinson/RS-PaperClaw/issues/1050) |
-| [20260805] Design Choices That Matter: A Functional ANOVA Analysis for Remote Sensing Multi-Label Classification | Maryam Gholami Shiri, Tuba Eva, Džeroski Sašo, Eftimov Tome, Nikolikj Ana | Department of Knowledge Technologies, Jožef Stefan Institute, Ljubljana, Slovenia；Jožef Stefan International Postgraduate School, Ljubljana, Slovenia；Computer Systems Department, Jožef Stefan Institute, Ljubljana, Slovenia；Trinity University, San Antonio, TX, USA；Singidunum University, Belgrade, Serbia | 通过功能方差分析揭示遥感多标签分类中关键设计选择的影响。 | [#1051](https://github.com/thinson/RS-PaperClaw/issues/1051) |
-| [20260805] OutLangSplat: 3D Language Gaussian Splatting for UAV Outdoor Scenes | Yan Xia, Wu He, Xu Yanghui, Wu Zizhao, Chen Jiazhou | Zhejiang University of Technology；Hangzhou Dianzi University | 提出OutLangSplat，将3D语言高斯泼溅应用于无人机户外场景分割。 | [#1052](https://github.com/thinson/RS-PaperClaw/issues/1052) |
-| [20260805] ColorFD: A Finite-Difference Guided Black-Box Physical Adversarial Attack for Remote Sensing Object Detection | Guo Tiannuo, Qiu Guhang, Xie Yuzhen, Feng Rui, Li Ligang, Xiang Deliang | College of Information Science and Technology, Beijing University of Chemical Technology, Beijing, China ( | 提出ColorFD，基于有限差分的黑盒物理对抗攻击方法用于遥感检测。 | [#1053](https://github.com/thinson/RS-PaperClaw/issues/1053) |
-
-## 🔎 观察
-
-- 基础模型在遥感中的应用从分类扩展到回归任务，如生物量估算，显示其通用性增强。
-- 对抗攻击与深伪检测研究增多，反映遥感数据安全与模型鲁棒性成为关注焦点。
 
 ---
 
