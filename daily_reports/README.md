@@ -2,6 +2,42 @@
 
 最近三天日报（最新在前）：
 
+# [20260810](./202608/20260810.md)
+## 📌 今日概况
+
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日遥感AI研究聚焦于无人机系统设计、作物制图基准、渔船监测、跨视角地理定位、红外图像超分辨率、语义分割掩膜质量审计及建筑足迹验证。趋势显示，深度学习与系统工程方法深度融合，强调数据质量评估与多源数据应用，推动遥感智能解译向精细化、实用化发展。
+
+## ✨ 今日亮点
+
+- 无人机系统设计引入SysML框架，强化模型驱动。
+- SwissCrop25提供多年作物制图基准，促进时序分析。
+- 夜光影像结合YOLO11提升渔船监测精度。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260810] Model-Based Systems Engineering Framework for SysML-Driven Design of Autonomous UAVs | Angadi Deekshitha, Budda Naveena, Agarwal Vikas, Samshad Mohamed, Bharath Kumar Suryadevara, Kemsaram Narsimlu | AIR Lab, UAVs Group, Autonomous Robotics Systems Limited, Hyderabad, India；Department of Microelectronics and VLSI Design, University of Hyderabad；Department of IoT, Ideabytes Software India Private Limited, Hyderabad, India；School of Computer Science, Georgia Institute of Technology, Atlanta, USA；Department of Electrical Engineering, Indian Institute of Technology, Kanpur；Department of System Engineering, Akkodis AS&D GmbH, Bremen, Germany；Department of Artificial Intelligence, Universiti Malaya, Kuala Lumpur, Malaysia | 提出基于SysML的MBSE框架，用于自主无人机系统架构设计。 | [#1076](https://github.com/thinson/RS-PaperClaw/issues/1076) |
+| [20260810] SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping | Lauber Thomas, Mehmet Ozgur Turkoglu, Ledain Sélène, Aasen Helge | Earth Observation of Agroecosystems Team, Agroscope | 发布瑞士全国多年作物制图基准数据集SwissCrop25，支持时序分析。 | [#1077](https://github.com/thinson/RS-PaperClaw/issues/1077) |
+| [20260810] Deep Learning based Detection of Fishing Vessels and Fishing Monitoring using Nightlight Images | Mohanty Shantakar, Prasun Kumar Gupta, Raian Vargas Maretto | Indian Institute of Remote Sensing, ISRO, Dehradun, India；University of Twente, Faculty of Geo-Information Science and Earth | 利用SDGSAT-1夜光影像和YOLO11深度学习检测渔船，监测渔业活动。 | [#1078](https://github.com/thinson/RS-PaperClaw/issues/1078) |
+| [20260810] Warp-free Cross-view Geo-localization via Feature-space Consensus Mining | Song Zhuo, Xu Lian, Jiang Runqing, Zhang Yongjian, Li Kunhong, Zhang Ye, Guo Yulan | Sun Yat-sen University, Shenzhen, China；University of Western Australia, Perth, Australia | 通过特征空间共识挖掘实现无变形跨视角地理定位，提升视角不变性。 | [#1079](https://github.com/thinson/RS-PaperClaw/issues/1079) |
+| [20260810] OGG-FR: Orthogonal Gradient Gaming and Frequency Rectification for Unmanned Aerial Vehicle Infrared Image Super-Resolution | Huang Yongsong, Wang Qingzhong, Liu Xiaofeng, Miyazaki Tomo, Fan Yaohou, Omachi Shinichiro | Tohoku University；Yale University | 提出正交梯度博弈与频率校正方法，增强无人机红外图像超分辨率。 | [#1080](https://github.com/thinson/RS-PaperClaw/issues/1080) |
+| [20260810] Contrastive Mask Fidelity: Reference-Free Auditing of Ground-Truth Masks in Remote Sensing Semantic Segmentation | Cao Shuaishuai, Peng Shuwei, Tang Meng, Huang Min, Wang Youjin, Chen Jie, Ouyang Jing, Zhai Zhiwei | Central South University；University of Chinese Academy of Sciences；Aberystwyth University；Jiangxi Normal University；Renmin University of China；BGI Research | 设计对比掩膜保真度指标，无需参考即可审计遥感分割标注质量。 | [#1081](https://github.com/thinson/RS-PaperClaw/issues/1081) |
+| [20260810] GeoAI-based post-segmentation quality validation of building footprints via spatial feature engineering | Shah Imran Ahsan Chowdhury, Kazi Jihadur Rashid, Rajsree Das Tuli, Saha Rahul, Ahammad Bulbul | Department of Computer Science and Engineering；Jahangirnagar University；Department of Geography；Florida State University；Department of Geography and Environmental Sustainability；University of Oklahoma | 结合GeoAI与空间特征工程，对建筑足迹分割结果进行后验证。 | [#1082](https://github.com/thinson/RS-PaperClaw/issues/1082) |
+
+## 🔎 观察
+
+- 研究侧重数据质量与验证，如掩膜审计和足迹验证，反映对标注可靠性的关注。
+- 多篇结合无人机与深度学习，应用场景向动态监测和精细农业延伸。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260809](./202608/20260809.md)
 ## 📌 今日概况
 
@@ -56,38 +92,6 @@ Powered by OpenClaw🦞
 
 - 生成式模型在气象预测中应用渐增，但需平衡计算成本与精度
 - 基础模型适配策略趋向轻量化，强调冻结骨干与任务特定模块结合
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260807](./202608/20260807.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦星上智能处理与轻量化模型。三篇论文分别提出宽幅卫星交通检测基准、基于视觉语言模型的星上摘要生成，以及极限学习机图像压缩方法，共同指向降低卫星下行带宽压力、提升在轨实时分析能力，体现了边缘计算与遥感结合的趋势。
-
-## ✨ 今日亮点
-
-- 星上视觉语言模型实现先摘要后下载，大幅节省带宽。
-- 宽幅卫星交通检测新基准，配套超轻量基线模型。
-- 极限学习机用于星上图像压缩，提升下行效率。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260807] SkySeaLand: A Wide-Format Satellite Transportation Benchmark with an Ultra-Lightweight Detection Baseline | Md. Zahid Hasan Riad, Md Sultanul Islam Ovi | Dept. of Computer Science and Engineering, Green University of Bangladesh, Bangladesh；Dept. of Computer Science, George Mason University, Virginia, USA | 提出宽幅卫星交通检测基准SkySeaLand及超轻量基线，推动小目标检测。 | [#1067](https://github.com/thinson/RS-PaperClaw/issues/1067) |
-| [20260807] Summarize First, Download Later: Onboard VLMs for Bandwidth-Efficient Earth Observation | Park Junghwan, Sim Sangcheol, Cho Woojin, Kwon Darongsae | TelePIX | 利用星上视觉语言模型生成摘要，减少下行数据量，提高带宽效率。 | [#1068](https://github.com/thinson/RS-PaperClaw/issues/1068) |
-| [20260807] ELMZip: Onboard Satellite Image Compression via Extreme Learning Machines for Efficient Downlink | Cho Woojin, Park Junghwan, Sim Sangcheol, Steve Andreas Immanuel, Heo Junhyuk, Kwon Darongsae | TelePIX | ELMZip基于极限学习机实现星上多光谱图像压缩，优化下行传输。 | [#1069](https://github.com/thinson/RS-PaperClaw/issues/1069) |
-
-## 🔎 观察
-
-- 星上处理成为热点，三篇均关注在轨计算，旨在减少对地面依赖。
-- 轻量化模型与压缩技术结合，预示遥感小卫星星座的智能化升级。
 
 ---
 
