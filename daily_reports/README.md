@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260809](./202608/20260809.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日遥感AI研究聚焦于无人机集群在间歇性连接条件下的可靠协同侦察。核心趋势是利用生成式预测与潜在状态估计，以应对通信受限环境下的感知不确定性，提升多机系统的鲁棒性与自主性。该方向融合了多智能体协同、深度学习与状态推理，为复杂动态场景下的遥感数据获取与融合提供了新思路。
+
+## ✨ 今日亮点
+
+- 提出潜在语义状态估计方法，增强无人机集群在弱连接下的协同可靠性。
+- 结合生成式预测，应对间歇性通信导致的感知数据缺失问题。
+- 研究聚焦于协同侦察场景，提升多机系统在复杂环境中的自主决策能力。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260809] Latent Semantic State Estimation for Reliable Swarming of UAVs under Intermittent Connectivity | Paris A. Karakasis, Saad Walid | Institute for Advanced Computing and Bradley Dept. of Electrical and Computer Engineering | 提出潜在语义状态估计框架，用于间歇性连接下无人机集群的可靠协同侦察。 | [#1074](https://github.com/thinson/RS-PaperClaw/issues/1074) |
+
+## 🔎 观察
+
+- 间歇性连接成为多机协同遥感的核心约束，推动状态估计向生成式与潜在语义方向演进。
+- 研究侧重算法鲁棒性而非硬件改进，表明软件层面补偿通信缺陷是当前技术突破口。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260808](./202608/20260808.md)
 ## 📌 今日概况
 
@@ -58,46 +88,6 @@ Powered by OpenClaw🦞
 
 - 星上处理成为热点，三篇均关注在轨计算，旨在减少对地面依赖。
 - 轻量化模型与压缩技术结合，预示遥感小卫星星座的智能化升级。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260806](./202608/20260806.md)
-## 📌 今日概况
-
-今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 11 篇。
-
-今日遥感AI研究聚焦多模态融合、变化检测与智能感知。多篇论文探索跨注意力机制、开放词汇变化检测及持续学习，推动模型适应性与泛化能力。高光谱图像分类与变化检测结合无监督伪标签与拓扑学习，提升标签效率。此外，低光增强、UAV路径规划及智能体AI与通感一体化等方向亦受关注，整体呈现从静态分析向动态、多时相推理演进的趋势。
-
-## ✨ 今日亮点
-
-- 多模态融合与持续学习成热点，提升模型适应性与泛化能力。
-- 高光谱分类与变化检测探索无监督及源自由域适应方法。
-- UAV导航与路径规划结合世界模型与优化算法，增强自主性。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260806] CFGPNet: Cross-Attention-Based Fused Gradient Programmed Network Framework for Multispectral Object Detection | Hatami Nima, Faez Karim, Sharifian Saeed, Amindavar Hamidreza | Department of Electrical Engineering, Amirkabir University of Technology | 提出CFGPNet，用交叉注意力融合梯度编程网络，提升多光谱目标检测性能。 | [#1055](https://github.com/thinson/RS-PaperClaw/issues/1055) |
-| [20260806] CogVis: Must Open-Vocabulary Change Detection Perceive the Scene Anew for Every Query? | Wang Zijie, Zhong Chen, He Wei | Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；monitoring and informed decision-making (Li et al. 2026a). 2026b) summarizes existing research through the Mask- | CogVis探索开放词汇变化检测中场景感知复用，减少重复计算并保持准确性。 | [#1056](https://github.com/thinson/RS-PaperClaw/issues/1056) |
-| [20260806] DARAD: Dual Adapters and Ranking-Aware Distillation for Continual Remote Sensing Image-Text Retrieval | Chen Xi, Chen Xu, Jia Xiangyang, Wang Wei, Zhang Xu, Sun Zhenyuan | School of Computer Science, Wuhan University, Wuhan 430072, China；Beijing Institute for General Artificial Intelligence (BIGAI) | DARAD采用双适配器与排序感知蒸馏，实现遥感图文检索的持续学习。 | [#1057](https://github.com/thinson/RS-PaperClaw/issues/1057) |
-| [20260806] Hyperspectral Calibration Detection: A Novel Concept For Change Detection With Unsupervised Incremental Safe Pseudo-Labeling Implementation | Lin Chia-Hsiang, Hsu Shih-Min, Liang Ching-Yun, Chanussot Jocelyn, Chen Jhih-Yan | Department of Electrical Engineering；the Miin Wu School of Computing, National Cheng Kung University, Tainan, Taiwan (R.O.C.) (；Institute of Computer and Communication Engineering, Department of Electrical Engineering, National Cheng Kung University, Tainan, Taiwan (R.O.C.) (；Inria, CNRS, Grenoble INP, LJK, Université Grenoble Alpes, Grenoble, France ( | 提出高光谱校准检测概念，结合无监督增量安全伪标签用于变化检测。 | [#1058](https://github.com/thinson/RS-PaperClaw/issues/1058) |
-| [20260806] Multi-Year Geospatial Reasoning using Interannually-Consistent Historical Predictions as a Free Input Modality | Syed Roshaan Ali Shah, Bonte Kasper, Bekaert David, Kristof Van Tricht, Wens Dieter | VITO Remote Sensing | 利用年际一致的历史预测作为免费输入模态，增强多时相地理空间推理。 | [#1059](https://github.com/thinson/RS-PaperClaw/issues/1059) |
-| [20260806] Topology-Aware Neighborhood Learning for Source-Free Cross-Scene Hyperspectral Image Classification | Li Qingmei, Zheng Juepeng, Zhang Jiarui, Huang Jianxi, Fu Haohuan | the Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China (；School of Artificial Intelligence, Sun Yat-Sen University, Zhuhai, China ( | 拓扑感知邻域学习用于源自由跨场景高光谱图像分类，提升伪标签质量。 | [#1060](https://github.com/thinson/RS-PaperClaw/issues/1060) |
-| [20260806] Shape-Aware Oriented Bounding Box (OBB) to Horizontal Bounding Box (HBB) Conversion | Badha Rathna Sabhapathy, Dahiya Gotam, Vatsal Vishesh | Hyspace Technologies | 提出形状感知的旋转框转水平框方法，改善遥感目标检测的标注效率。 | [#1061](https://github.com/thinson/RS-PaperClaw/issues/1061) |
-| [20260806] Overcoming Attention Drift: Homogeneity-Heterogeneity Guided Feature Aggregation for Low-Light Remote Sensing Image Enhancement | Zhong Yaozi, Yang Xingxing, Mei Shaohui, Ma Mingyang | School of Information and Artificial Intelligence, Yunnan University of Finance and Economics, Kunming, China；Department of Computer Science, Hong Kong Baptist University, Hong Kong, China；School of Electronics and Information, Northwestern Polytechnical University, Xi'an, China | 同质-异质引导特征聚合克服注意力漂移，用于低光遥感图像增强。 | [#1062](https://github.com/thinson/RS-PaperClaw/issues/1062) |
-| [20260806] When Agentic AI Meets Integrated Sensing and Communication | Li Kai, Li Conggai, Sarah Ali Siddiqui, Syed Sohail Ahmed, Yuan Xin, Li Shenghong, Ni Wei | KAI LI, Interdisciplinary Centre for Security, Reliability and Trust (SnT), University of Luxembourg, Luxembourg；SYED SOHAIL AHMED, College of Computer, Qassim University, Saudi Arabia；WEI NI, Edith Cowan University, School of Engineering, Australia；Authors’ Contact Information: Kai Li, Interdisciplinary Centre for Security, Reliability and Trust (SnT), University of Luxembourg, Luxembourg | 探讨智能体AI与通感一体化结合，提出闭环框架以增强多模态智能。 | [#1063](https://github.com/thinson/RS-PaperClaw/issues/1063) |
-| [20260806] Iterative Hybrid Discrete-Continuous Viewpoint Planning for UAV Photogrammetry | Grech Alan, Pisani Daniel, Grima Andre, Carl James Debono, Formosa Saviour, Seychell Dylan | University of Malta University of Malta Stargate Studios Malta；University of Malta University of Malta University of Malta；University of Malta (Dawl AI Lab), financed by Xjenza Malta through the registration reliability, completeness, and depth accuracy [3] | 迭代混合离散连续视点规划用于UAV摄影测量，优化表面覆盖与精度。 | [#1064](https://github.com/thinson/RS-PaperClaw/issues/1064) |
-| [20260806] Uncertainty-Aware World Model for Aerial Image-Goal Navigation | Zhu Deyi, Fan Haoyu, Zhu Yinan, Zhang Weichen, Ma Shilin, Chen Xinlei, Tang Yansong | Tsinghua Shenzhen International Graduate School, Tsinghua University | 不确定性感知世界模型用于航空图像目标导航，提升轨迹评分与决策鲁棒性。 | [#1065](https://github.com/thinson/RS-PaperClaw/issues/1065) |
-
-## 🔎 观察
-
-- 多篇工作聚焦无监督或持续学习，减少标注依赖，适应动态遥感场景。
-- 跨模态与多时相融合趋势明显，推动从单帧分析向时空推理发展。
 
 ---
 
