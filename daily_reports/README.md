@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260811](./202608/20260811.md)
+## 📌 今日概况
+
+今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究聚焦于农业监测、可解释性、基础模型应用及多模态优化。SAR2Agri探索自监督SAR表示用于作物监测；熵中心可解释AI提升分割透明度；基础模型在小规模光伏分割中受语义与空间引导影响；InterPruner通过结构化剪枝优化多模态检测；GeoForge提出自进化智能体用于地理推理；GeoSeg-OV以结构引导弥合开放词汇分割的域差距。整体趋势强调模型效率、可解释性与跨域泛化。
+
+## ✨ 今日亮点
+
+- 自监督SAR表示助力农业监测，提升作物类型映射精度。
+- 熵中心可解释AI为遥感分割提供透明决策依据。
+- 基础模型提示引导优化小规模光伏分割性能。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260811] SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring | Moti Rattan Gupta, Sobti Anupam | Plaksha University, Mohali, Punjab, India | SAR2Agri利用自监督学习提取SAR强度特征，用于农业监测与作物制图。 | [#1084](https://github.com/thinson/RS-PaperClaw/issues/1084) |
+| [20260811] Entropy-Centric Explainable AI for Remote Sensing Image Segmentation | Saleh Ali, Abdul Karim Gizzini, Ghassany Mohamad, Ali J. Ghandour | Faculty of Engineering, Lebanese University, Beirut, Lebanon；University of Paris-Est Créteil (UPEC), LISSI/TincNET, F-94400, Vitry-sur-Seine, France；EFREI, EFREI Research Lab, F-94800 Villejuif, France；National Center for Remote Sensing - CNRS, Mansourieh, 22411, Lebanon | 提出熵中心可解释AI框架，增强遥感图像分割的透明度和可信度。 | [#1085](https://github.com/thinson/RS-PaperClaw/issues/1085) |
+| [20260811] Evaluating Semantic and Spatial Guidance for Foundation Model Segmentation of Small-Scale PV in Remote Sensing Imagery | Blushtein-Livnon Roni, Svoray Tal, Rafaeli Osher, Dorman Michael, Fischhendler Itay, Yahel Havazelet, Galilee Emir | Department of Environmental, Geoinformatics and Urban Planning Sciences, Ben-Gurion University of the Negev, Israel (；Department of Environmental, Geoinformatics and Urban Planning Sciences, and the Department of Psychology, Ben-Gurion University of the Negev, Israel (；Department of Geography, The Hebrew University of Jerusalem, Isreal；the Ben Gurion Institute for the Study of Israel \& Zionism, Ben-Gurion Israel Research Institute, Isreal | 评估语义与空间提示对基础模型分割小规模光伏的影响，优化提示策略。 | [#1086](https://github.com/thinson/RS-PaperClaw/issues/1086) |
+| [20260811] InterPruner: Interactive Structured Pruning via Taylor-Implicit Criterion and Language-Prior Modulator for Multimodal Object Detection | Ming Qi, Yang Zihan, Huang Shaoguang, Sun Si, Zhang Hanqing, Liu Nanqing, Lv Jiahui, Fang Juan, Pizurica Aleksandra | Beijing University of Technology；Southwest University；China University of Geosciences Wuhan；Tsinghua University；Beijing Institute of Technology；Yunnan Normal University；Beijing Forestry University；Department of Telecommunications and Information Processing (TELIN), Ghent University | InterPruner结合泰勒准则与语言先验，实现多模态检测的结构化剪枝。 | [#1087](https://github.com/thinson/RS-PaperClaw/issues/1087) |
+| [20260811] GeoForge: Non-Parametric Self-Evolving Agents for Earth-Observation Reasoning | Xiao Xin, Zhong Jiang, Zhu Junnan, Feng Yingchao, Wang Peijin, Zhang Yidan, Wei Kaiwen | School of Computer Science, Chongqing University；MAIS, Institute of Automation, Chinese Academy of Sciences；Aerospace Information Research Institute, Chinese Academy of Sciences | GeoForge构建非参数自进化智能体，提升地球观测推理能力。 | [#1088](https://github.com/thinson/RS-PaperClaw/issues/1088) |
+| [20260811] GeoSeg-OV: Bridging Geospatial Gaps with Structural Guidance for Open-Vocabulary Remote Sensing Segmentation | Liu Ruizhong, Luo Tingzhang, Zhang Zaiyan, Chen Jundong, Chen Hongruixuan, Huang Shaoguang, Zhang Hongyan | School of Computer Science, China University of Geosciences；Systems Hub, The Hong Kong University of Science and Technology (Guangzhou)；Department of Computer Science, City University of Hong Kong；School of Geodesy and Geomatics, Wuhan University；Data Science and AI Innovation Research Promotion Center, Shiga University | GeoSeg-OV以结构引导缓解地理域偏移，改进开放词汇遥感分割。 | [#1089](https://github.com/thinson/RS-PaperClaw/issues/1089) |
+
+## 🔎 观察
+
+- 基础模型在遥感应用中需适配小目标与域差异，提示引导成为关键研究方向。
+- 模型压缩与自进化机制受关注，旨在提升部署效率与自适应能力。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260810](./202608/20260810.md)
 ## 📌 今日概况
 
@@ -61,37 +96,6 @@ Powered by OpenClaw🦞
 
 - 间歇性连接成为多机协同遥感的核心约束，推动状态估计向生成式与潜在语义方向演进。
 - 研究侧重算法鲁棒性而非硬件改进，表明软件层面补偿通信缺陷是当前技术突破口。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260808](./202608/20260808.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦于气象预测与视觉基础模型两大方向。热带气旋预测引入潜空间修正流模型，结合卫星影像与大气场数据，提升生成式预测精度；变化检测领域则提出AdaDINO，通过冻结DINO骨干的配对感知适配，实现高效双时相分析。两项工作均强调对现有深度学习架构的优化，以应对遥感数据的时空复杂性，推动灾害监测与地表动态识别的智能化发展。
-
-## ✨ 今日亮点
-
-- 潜空间修正流提升热带气旋预测精度
-- 冻结DINO适配实现高效变化检测
-- 遥感AI聚焦生成模型与基础模型优化
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260808] Tropical Cyclone Forecasting via Latent Rectified Flow using Satellite Imagery and Atmospheric Fields | Zannat Meheru, Sk. Md. Masudul Ahsan | Department of Computer Science and Engineering；Khulna University of Engineering \& Technology | 提出潜空间修正流模型，融合卫星影像与大气场预测热带气旋 | [#1071](https://github.com/thinson/RS-PaperClaw/issues/1071) |
-| [20260808] AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection | Zhang Xu, Li Xinqing, Xie Jianpeng, Zhu Zeshuai, He Xin, Liu Yun | VCIP, College of Computer Science, Nankai University；School of Computer Science and Engineering, Tianjin University of Technology；Academy for Advanced Interdisciplinary Studies, Nankai University；Nankai International Advanced Research Institute, Shenzhen Futian | AdaDINO在冻结DINO骨干中引入配对感知适配，提升变化检测效率 | [#1072](https://github.com/thinson/RS-PaperClaw/issues/1072) |
-
-## 🔎 观察
-
-- 生成式模型在气象预测中应用渐增，但需平衡计算成本与精度
-- 基础模型适配策略趋向轻量化，强调冻结骨干与任务特定模块结合
 
 ---
 
