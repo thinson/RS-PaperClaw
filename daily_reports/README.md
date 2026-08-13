@@ -2,6 +2,46 @@
 
 最近三天日报（最新在前）：
 
+# [20260812](./202608/20260812.md)
+## 📌 今日概况
+
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 11 篇。
+
+今日研究聚焦于遥感AI的多项前沿应用，涵盖基础模型用于天气降尺度、高光谱图像在食品新鲜度评估中的少样本与轻量化方法、以及基于卫星影像的土地利用与作物检测。此外，扩散模型用于高光谱全色锐化、多模态大语言模型用于无人机图像理解、以及开放词汇变化检测等方向也取得进展。研究趋势显示，模型效率、跨模态融合与少样本学习成为关注重点。
+
+## ✨ 今日亮点
+
+- 基础模型嵌入用于概率天气降尺度，提升描述能力。
+- 高光谱成像结合少样本学习，实现鱼类新鲜度日级估计。
+- 零样本扩散模型与伪标签学习推动开放词汇变化检测。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260812] Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling | Sousa Pedro, Tebbutt Will, Jaffer Sadiq, Young Robin, Madhavapeddy Anil, Richard E. Turner | Department of Computer Science, University of Cambridge；Department of Engineering, University of Cambridge | 地球观测嵌入作为亚网格描述符，改进概率天气降尺度性能。 | [#1091](https://github.com/thinson/RS-PaperClaw/issues/1091) |
+| [20260812] Few-Shot Ordinal Learning for Day-Wise Freshness Estimation with Hyperspectral Fish Images | Kazi Nabiul Alam, Pooneh Bagheri Zadeh, Sheikh-Akbari Akbar | School of Built Environment, Engineering and Computing；Leeds Beckett University, Leeds, United Kingdom | 少样本序数学习用于高光谱鱼图像，实现日级新鲜度估计。 | [#1092](https://github.com/thinson/RS-PaperClaw/issues/1092) |
+| [20260812] Domain-Aware Lightweight Spectral-Grouped Convolutions for Hyperspectral Fish Freshness Classification | Kazi Nabiul Alam, Pooneh Bagheri Zadeh, Sheikh-Akbari Akbar | Kazi Nabiul Alam School of Built Environment；Pooneh Bagheri Zadeh Leeds Beckett University | 轻量光谱分组卷积网络，高效分类鱼类新鲜度等级。 | [#1093](https://github.com/thinson/RS-PaperClaw/issues/1093) |
+| [20260812] Remote Sensing and Machine Learning-Based Analysis of Land Use and Vegetation Change in Dhaka District, Bangladesh | Muhammad Masud Tarek, Md. Alamgir Hossain, Md. Samiul Islam, Muntasir Hasan Kanchan | Department of Computer Science and Engineering, State University of Bangladesh, Dhaka, Bangladesh；Department of Computer Science, American International University - Bangladesh, Dhaka, Bangladesh；Skill Morph Research Lab., Skill Morph, Dhaka, Bangladesh | 遥感与机器学习分析达卡地区土地利用与植被变化。 | [#1094](https://github.com/thinson/RS-PaperClaw/issues/1094) |
+| [20260812] A Remote Approach to Cashew Orchard Detection: Leveraging Active Learning with Satellite Imagery in Guinea-Bissau | Miguel, Sofia, Maria, Patrícia, Luke, João | Department of Computer Science, Faculty of Sciences, University of Porto, Rua do Campo Alegre, 4169-007 Porto；Forest Research Centre, School of Agriculture, University of Lisbon, Tapada da Ajuda, 1349-017 Lisbon；CIBIO and BIOPOLIS, InBIO Associated Laboratory, Vairão Campus, University of Porto, Rua do Crasto, 4485-661 Vairão；CMUP and Department of Computer Science, Faculty of Sciences, University of Porto, Rua do Campo Alegre, 4169-007 Porto | 主动学习结合哨兵二号影像，远程检测几内亚比绍腰果果园。 | [#1095](https://github.com/thinson/RS-PaperClaw/issues/1095) |
+| [20260812] Warping Earth Observations for better ice labeling in the Marginal Marginal Ice Zone | Kelly Tom, Martin S. J. Rogers | British Antarctic Survey | 图像配准扭曲地球观测，改善南极边缘冰区冰标注。 | [#1096](https://github.com/thinson/RS-PaperClaw/issues/1096) |
+| [20260812] Dual Modality Prompted Diffusion Priors for Zero Shot Hyperspectral Pansharpening | Xie Pengwei, Zhu Fei, Li Jiajun, Liu Xiangyuan, Liu Xiangyuan, Shen Kangqing, Vivone Gemine | School of Artificial Intelligence, Beijing Normal University, Beijing, China (；School of GeoAI and Hinton STAI Institute, and the Key Laboratory of Geographic Information Science (Ministry of Education), East China Normal University, Shanghai, China (；Peking University, Beijing, China (；the National Center for Applied Mathematics Shenzhen (NCAMS), Southern University of Science and Technology, Shenzhen, China (；Department of Automation, Tsinghua University, Beijing, China (；the National Research Council of Italy, Institute of Integrated Methodologies for Earth Observation (CNR-IMIOT), Tito, Italy ( | 双模态提示扩散先验，实现零样本高光谱全色锐化。 | [#1097](https://github.com/thinson/RS-PaperClaw/issues/1097) |
+| [20260812] Advancing MLLM-based UAV Image Understanding and Reasoning: A Benchmark and a Training-Free Multi-Agent System | Zhang Haoyu, Zhang Shuoxun, Ye Peng, Zhang Lin, Yuan Jiakang, Yi Shenghong, Wang Yuening, Chen Tao | Shanghai Innovation Institute, Shanghai, China (；The Chinese University of Hong Kong, Hong Kong (；College of Future Information Technology, Fudan University, Shanghai, China ( | 提出基准与免训练多智能体系统，提升无人机图像理解。 | [#1098](https://github.com/thinson/RS-PaperClaw/issues/1098) |
+| [20260812] EGM-Det: Entropy-Guided Multimodal Adaptive Fusion for UAV RGB-IR Object Detection | Fan Cunzheng, Yan Dawei, Wang Guanlin, Yang Xingshuo, Jia Yupeng, Yang Jing, Zhang Haokui | School of Cybersecurity, Northwestern Polytechnical University, Xi’an 710072, China；School of Automation and Software Engineering, Shanxi University, Taiyuan 030006, China；Joint utilization of RGB and infrared (IR) information for object detection represents an important research | 熵引导多模态自适应融合，增强无人机RGB-IR目标检测。 | [#1099](https://github.com/thinson/RS-PaperClaw/issues/1099) |
+| [20260812] Zero-OVCD: Bridging Training-Free Foundation Models and Pseudo-Label Learning for Open-Vocabulary Change Detection | Peng Daifeng, Peng Yuanke, Guan Haiyan | School of Remote Sensing and Geomatics Engineering, Nanjing University of Information Science and Technology, Nanjing, China ( | 免训练基础模型与伪标签结合，实现开放词汇变化检测。 | [#1100](https://github.com/thinson/RS-PaperClaw/issues/1100) |
+| [20260812] Transferable Above-Ground Biomass (AGB) Estimation Model from Multi-Sensor Data with Sparse Field Calibration | Pann Thinzar Seint, Atwood Bryan, Chhatkuli Subas | DAI Labs, K.K. | 多传感器数据与稀疏校准，构建可迁移的地上生物量模型。 | [#1101](https://github.com/thinson/RS-PaperClaw/issues/1101) |
+
+## 🔎 观察
+
+- 高光谱成像在食品质量评估中应用增多，结合少样本学习提升实用性。
+- 基础模型与扩散模型在遥感任务中渗透，推动零样本与开放词汇能力发展。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260811](./202608/20260811.md)
 ## 📌 今日概况
 
@@ -66,36 +106,6 @@ Powered by OpenClaw🦞
 
 - 研究侧重数据质量与验证，如掩膜审计和足迹验证，反映对标注可靠性的关注。
 - 多篇结合无人机与深度学习，应用场景向动态监测和精细农业延伸。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260809](./202608/20260809.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI研究聚焦于无人机集群在间歇性连接条件下的可靠协同侦察。核心趋势是利用生成式预测与潜在状态估计，以应对通信受限环境下的感知不确定性，提升多机系统的鲁棒性与自主性。该方向融合了多智能体协同、深度学习与状态推理，为复杂动态场景下的遥感数据获取与融合提供了新思路。
-
-## ✨ 今日亮点
-
-- 提出潜在语义状态估计方法，增强无人机集群在弱连接下的协同可靠性。
-- 结合生成式预测，应对间歇性通信导致的感知数据缺失问题。
-- 研究聚焦于协同侦察场景，提升多机系统在复杂环境中的自主决策能力。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260809] Latent Semantic State Estimation for Reliable Swarming of UAVs under Intermittent Connectivity | Paris A. Karakasis, Saad Walid | Institute for Advanced Computing and Bradley Dept. of Electrical and Computer Engineering | 提出潜在语义状态估计框架，用于间歇性连接下无人机集群的可靠协同侦察。 | [#1074](https://github.com/thinson/RS-PaperClaw/issues/1074) |
-
-## 🔎 观察
-
-- 间歇性连接成为多机协同遥感的核心约束，推动状态估计向生成式与潜在语义方向演进。
-- 研究侧重算法鲁棒性而非硬件改进，表明软件层面补偿通信缺陷是当前技术突破口。
 
 ---
 
