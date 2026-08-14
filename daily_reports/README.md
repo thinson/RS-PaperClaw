@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260813](./202608/20260813.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦于视觉-语言模型在地球观测与无人机导航中的应用。LongEarth-R1提出长时序推理基准，DiCoR优化指代分割效率，AirForesight与ARIES-Mission2分别探索跨空间规划与零样本任务生成，整体呈现从感知到推理、从单任务到多模态协同的趋势。
+
+## ✨ 今日亮点
+
+- 长时序遥感推理基准LongEarth-R1发布
+- 指代分割新框架DiCoR提升效率
+- 无人机视觉语言导航与任务生成受关注
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260813] LongEarth-R1: Benchmarking and Aligning Vision-Language Models for Long-Horizon Earth Observation Reasoning | Ding Yupan, Xiao Jing, Zhang Zhenyuan, Chen Chaofeng, Liao Liang, Xia Gui-Song, Wang Mi | School of Artificial Intelligence, Wuhan University, Wuhan, China；School of Computer Science, Wuhan University, Wuhan, China；Xi’an University of Electronic Science and Technology, Xi’an, China；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan | LongEarth-R1构建长时序遥感推理基准并对齐视觉语言模型 | [#1103](https://github.com/thinson/RS-PaperClaw/issues/1103) |
+| [20260813] DiCoR: Decoupled Referent Disambiguation and Contour Recalibration for Efficient Referring Remote Sensing Image Segmentation | Gao Ziyang, Jiang Zhizhuo, Chang Jingjing, Yang Yixin, Pan Yuwen, Mao Yong-Qiang, Liu Yu, Chen Hai-Bao | School of Integrated Circuits, School of Information Science and Electronic Engineering, Shanghai Jiao Tong University, Shanghai, China；College of Computer Science, Nankai University, Tianjin, China；Department of Electronic Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China；Department of Electronic Engineering, Tsinghua University, Beijing, China | DiCoR解耦指代消歧与轮廓重校准，实现高效遥感指代分割 | [#1104](https://github.com/thinson/RS-PaperClaw/issues/1104) |
+| [20260813] AirForesight: Current-to-Future Spatial Map Imagination with Cross-Space Planning Consistency for UAV-VLN | Liu Yutong, Li Xiaojie, Xu Mingzhu, Wu Jianlong | Harbin Institute of Technology, Shenzhen Shenzhen China；Shandong University Jinan China；Harbin Institute of Technology, Shenzhen Shenzhen Loop Area Institute Shenzhen China | AirForesight通过跨空间规划一致性实现无人机视觉语言导航 | [#1105](https://github.com/thinson/RS-PaperClaw/issues/1105) |
+| [20260813] ARIES-Mission2: A Zero-Shot Vision-Language-Action Framework for Fast Large-Scale Aerial Mission Generation | Wei Junhao, Li Yanxiao, Li Haochen, Zhao Yifu, Yao Dexing, Lu Baili, Li Zikun, Wang Yapeng, Im Sio-Kei, Yang Dingcheng, Yang Xu | Faculty of Applied Sciences；Macao Polytechnic University；School of Economics and Management；South China Normal University；Information Engineering School；Nanchang University | ARIES-Mission2零样本生成大规模无人机任务并优化路线 | [#1106](https://github.com/thinson/RS-PaperClaw/issues/1106) |
+
+## 🔎 观察
+
+- 研究从静态感知转向动态推理，长时序与未来预测成新焦点
+- 零样本与高效框架减少标注依赖，推动遥感AI实用化
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260812](./202608/20260812.md)
 ## 📌 今日概况
 
@@ -70,42 +103,6 @@ Powered by OpenClaw🦞
 
 - 基础模型在遥感应用中需适配小目标与域差异，提示引导成为关键研究方向。
 - 模型压缩与自进化机制受关注，旨在提升部署效率与自适应能力。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260810](./202608/20260810.md)
-## 📌 今日概况
-
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日遥感AI研究聚焦于无人机系统设计、作物制图基准、渔船监测、跨视角地理定位、红外图像超分辨率、语义分割掩膜质量审计及建筑足迹验证。趋势显示，深度学习与系统工程方法深度融合，强调数据质量评估与多源数据应用，推动遥感智能解译向精细化、实用化发展。
-
-## ✨ 今日亮点
-
-- 无人机系统设计引入SysML框架，强化模型驱动。
-- SwissCrop25提供多年作物制图基准，促进时序分析。
-- 夜光影像结合YOLO11提升渔船监测精度。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260810] Model-Based Systems Engineering Framework for SysML-Driven Design of Autonomous UAVs | Angadi Deekshitha, Budda Naveena, Agarwal Vikas, Samshad Mohamed, Bharath Kumar Suryadevara, Kemsaram Narsimlu | AIR Lab, UAVs Group, Autonomous Robotics Systems Limited, Hyderabad, India；Department of Microelectronics and VLSI Design, University of Hyderabad；Department of IoT, Ideabytes Software India Private Limited, Hyderabad, India；School of Computer Science, Georgia Institute of Technology, Atlanta, USA；Department of Electrical Engineering, Indian Institute of Technology, Kanpur；Department of System Engineering, Akkodis AS&D GmbH, Bremen, Germany；Department of Artificial Intelligence, Universiti Malaya, Kuala Lumpur, Malaysia | 提出基于SysML的MBSE框架，用于自主无人机系统架构设计。 | [#1076](https://github.com/thinson/RS-PaperClaw/issues/1076) |
-| [20260810] SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping | Lauber Thomas, Mehmet Ozgur Turkoglu, Ledain Sélène, Aasen Helge | Earth Observation of Agroecosystems Team, Agroscope | 发布瑞士全国多年作物制图基准数据集SwissCrop25，支持时序分析。 | [#1077](https://github.com/thinson/RS-PaperClaw/issues/1077) |
-| [20260810] Deep Learning based Detection of Fishing Vessels and Fishing Monitoring using Nightlight Images | Mohanty Shantakar, Prasun Kumar Gupta, Raian Vargas Maretto | Indian Institute of Remote Sensing, ISRO, Dehradun, India；University of Twente, Faculty of Geo-Information Science and Earth | 利用SDGSAT-1夜光影像和YOLO11深度学习检测渔船，监测渔业活动。 | [#1078](https://github.com/thinson/RS-PaperClaw/issues/1078) |
-| [20260810] Warp-free Cross-view Geo-localization via Feature-space Consensus Mining | Song Zhuo, Xu Lian, Jiang Runqing, Zhang Yongjian, Li Kunhong, Zhang Ye, Guo Yulan | Sun Yat-sen University, Shenzhen, China；University of Western Australia, Perth, Australia | 通过特征空间共识挖掘实现无变形跨视角地理定位，提升视角不变性。 | [#1079](https://github.com/thinson/RS-PaperClaw/issues/1079) |
-| [20260810] OGG-FR: Orthogonal Gradient Gaming and Frequency Rectification for Unmanned Aerial Vehicle Infrared Image Super-Resolution | Huang Yongsong, Wang Qingzhong, Liu Xiaofeng, Miyazaki Tomo, Fan Yaohou, Omachi Shinichiro | Tohoku University；Yale University | 提出正交梯度博弈与频率校正方法，增强无人机红外图像超分辨率。 | [#1080](https://github.com/thinson/RS-PaperClaw/issues/1080) |
-| [20260810] Contrastive Mask Fidelity: Reference-Free Auditing of Ground-Truth Masks in Remote Sensing Semantic Segmentation | Cao Shuaishuai, Peng Shuwei, Tang Meng, Huang Min, Wang Youjin, Chen Jie, Ouyang Jing, Zhai Zhiwei | Central South University；University of Chinese Academy of Sciences；Aberystwyth University；Jiangxi Normal University；Renmin University of China；BGI Research | 设计对比掩膜保真度指标，无需参考即可审计遥感分割标注质量。 | [#1081](https://github.com/thinson/RS-PaperClaw/issues/1081) |
-| [20260810] GeoAI-based post-segmentation quality validation of building footprints via spatial feature engineering | Shah Imran Ahsan Chowdhury, Kazi Jihadur Rashid, Rajsree Das Tuli, Saha Rahul, Ahammad Bulbul | Department of Computer Science and Engineering；Jahangirnagar University；Department of Geography；Florida State University；Department of Geography and Environmental Sustainability；University of Oklahoma | 结合GeoAI与空间特征工程，对建筑足迹分割结果进行后验证。 | [#1082](https://github.com/thinson/RS-PaperClaw/issues/1082) |
-
-## 🔎 观察
-
-- 研究侧重数据质量与验证，如掩膜审计和足迹验证，反映对标注可靠性的关注。
-- 多篇结合无人机与深度学习，应用场景向动态监测和精细农业延伸。
 
 ---
 
