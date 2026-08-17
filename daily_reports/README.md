@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260814](./202608/20260814.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦于弱监督学习、时序预测与多模态理解。Sentinel-1 SAR影像中极地低压的弱监督分割方法，展示了减少标注依赖的潜力。基于Sentinel-2的作物生长预测模型，利用时序数据提升冬小麦叶面积指数预报精度。此外，针对遥感推理分割的细粒度掩码表示方法，以及结合GeoAI与空间建模的城市冠层评估，共同推动了遥感智能解译向精细化、实用化发展。
+
+## ✨ 今日亮点
+
+- 弱监督分割降低SAR极地低压标注成本
+- 时序遥感数据助力作物生长预测
+- 细粒度掩码表示提升推理分割精度
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260814] Weakly Supervised Polar Low Segmentation in Sentinel-1 SAR Imagery | Federici Andrea, Grahn Jakob, Boracchi Giacomo, Filippo Maria Bianchi | the Dept. of Mathematics and Statistics, UiT the Arctic University of Norway；NORCE, The Norwegian Research Centre AS | 利用弱监督学习实现Sentinel-1 SAR影像极地低压分割，减少像素级标注需求。 | [#1108](https://github.com/thinson/RS-PaperClaw/issues/1108) |
+| [20260814] Learning to Forecast Crop Growth from Earth Observation Data | Senti Dominik, Mehmet Ozgur Turkoglu, Volpi Michele, Aasen Helge | Earth Observation of Agroecosystems Team, Agroscope, Switzerland Swiss Data Science Center, ETH Zurich and EPFL, Switzerland | 基于Sentinel-2时序数据学习预测冬小麦叶面积指数，支持作物生长监测。 | [#1109](https://github.com/thinson/RS-PaperClaw/issues/1109) |
+| [20260814] FIRM: Fine-Grained Intra-Token Representation of Masks for Remote Sensing Reasoning Segmentation | Tang Weidong, Li Kaiyu, Wang Yikai, Wu Yanan, Gan Haotian, Wang Shihong, Cao Xiangyong | Xi’an Jiaotong University, Xi’an, China；Renmin University of China, Beijing, China；China Agricultural University, Beijing, China；Shaanxi University of Science and Technology, Xi’an, China | 提出FIRM方法，通过细粒度掩码标记增强遥感推理分割的视觉理解能力。 | [#1110](https://github.com/thinson/RS-PaperClaw/issues/1110) |
+| [20260814] From crown candidates to neighborhood screening: integrating optical GeoAI and spatial modeling for urban-canopy assessment in Davis, California | Narimani Mohammadreza, Mitra Shreyan, Farajpoor Parastoo | a Department of Biological and Agricultural Engineering, University of California, Davis, Davis, CA, 95616, USA；b California High School, San Ramon, CA, 94583, USA；pixels and 97.4% of candidate centers agreed with the；homes, active-travel routes, schools, or hot paved surfaces | 集成光学GeoAI与空间模型，实现城市树冠候选检测与邻域筛选评估。 | [#1111](https://github.com/thinson/RS-PaperClaw/issues/1111) |
+
+## 🔎 观察
+
+- 弱监督与多模态方法成为降低遥感标注成本、提升解译精度的双轨趋势。
+- 作物预测与城市评估等应用研究，显示遥感AI正加速落地于农业与城市管理。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260813](./202608/20260813.md)
 ## 📌 今日概况
 
@@ -68,41 +101,6 @@ Powered by OpenClaw🦞
 
 - 高光谱成像在食品质量评估中应用增多，结合少样本学习提升实用性。
 - 基础模型与扩散模型在遥感任务中渗透，推动零样本与开放词汇能力发展。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260811](./202608/20260811.md)
-## 📌 今日概况
-
-今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究聚焦于农业监测、可解释性、基础模型应用及多模态优化。SAR2Agri探索自监督SAR表示用于作物监测；熵中心可解释AI提升分割透明度；基础模型在小规模光伏分割中受语义与空间引导影响；InterPruner通过结构化剪枝优化多模态检测；GeoForge提出自进化智能体用于地理推理；GeoSeg-OV以结构引导弥合开放词汇分割的域差距。整体趋势强调模型效率、可解释性与跨域泛化。
-
-## ✨ 今日亮点
-
-- 自监督SAR表示助力农业监测，提升作物类型映射精度。
-- 熵中心可解释AI为遥感分割提供透明决策依据。
-- 基础模型提示引导优化小规模光伏分割性能。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260811] SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring | Moti Rattan Gupta, Sobti Anupam | Plaksha University, Mohali, Punjab, India | SAR2Agri利用自监督学习提取SAR强度特征，用于农业监测与作物制图。 | [#1084](https://github.com/thinson/RS-PaperClaw/issues/1084) |
-| [20260811] Entropy-Centric Explainable AI for Remote Sensing Image Segmentation | Saleh Ali, Abdul Karim Gizzini, Ghassany Mohamad, Ali J. Ghandour | Faculty of Engineering, Lebanese University, Beirut, Lebanon；University of Paris-Est Créteil (UPEC), LISSI/TincNET, F-94400, Vitry-sur-Seine, France；EFREI, EFREI Research Lab, F-94800 Villejuif, France；National Center for Remote Sensing - CNRS, Mansourieh, 22411, Lebanon | 提出熵中心可解释AI框架，增强遥感图像分割的透明度和可信度。 | [#1085](https://github.com/thinson/RS-PaperClaw/issues/1085) |
-| [20260811] Evaluating Semantic and Spatial Guidance for Foundation Model Segmentation of Small-Scale PV in Remote Sensing Imagery | Blushtein-Livnon Roni, Svoray Tal, Rafaeli Osher, Dorman Michael, Fischhendler Itay, Yahel Havazelet, Galilee Emir | Department of Environmental, Geoinformatics and Urban Planning Sciences, Ben-Gurion University of the Negev, Israel (；Department of Environmental, Geoinformatics and Urban Planning Sciences, and the Department of Psychology, Ben-Gurion University of the Negev, Israel (；Department of Geography, The Hebrew University of Jerusalem, Isreal；the Ben Gurion Institute for the Study of Israel \& Zionism, Ben-Gurion Israel Research Institute, Isreal | 评估语义与空间提示对基础模型分割小规模光伏的影响，优化提示策略。 | [#1086](https://github.com/thinson/RS-PaperClaw/issues/1086) |
-| [20260811] InterPruner: Interactive Structured Pruning via Taylor-Implicit Criterion and Language-Prior Modulator for Multimodal Object Detection | Ming Qi, Yang Zihan, Huang Shaoguang, Sun Si, Zhang Hanqing, Liu Nanqing, Lv Jiahui, Fang Juan, Pizurica Aleksandra | Beijing University of Technology；Southwest University；China University of Geosciences Wuhan；Tsinghua University；Beijing Institute of Technology；Yunnan Normal University；Beijing Forestry University；Department of Telecommunications and Information Processing (TELIN), Ghent University | InterPruner结合泰勒准则与语言先验，实现多模态检测的结构化剪枝。 | [#1087](https://github.com/thinson/RS-PaperClaw/issues/1087) |
-| [20260811] GeoForge: Non-Parametric Self-Evolving Agents for Earth-Observation Reasoning | Xiao Xin, Zhong Jiang, Zhu Junnan, Feng Yingchao, Wang Peijin, Zhang Yidan, Wei Kaiwen | School of Computer Science, Chongqing University；MAIS, Institute of Automation, Chinese Academy of Sciences；Aerospace Information Research Institute, Chinese Academy of Sciences | GeoForge构建非参数自进化智能体，提升地球观测推理能力。 | [#1088](https://github.com/thinson/RS-PaperClaw/issues/1088) |
-| [20260811] GeoSeg-OV: Bridging Geospatial Gaps with Structural Guidance for Open-Vocabulary Remote Sensing Segmentation | Liu Ruizhong, Luo Tingzhang, Zhang Zaiyan, Chen Jundong, Chen Hongruixuan, Huang Shaoguang, Zhang Hongyan | School of Computer Science, China University of Geosciences；Systems Hub, The Hong Kong University of Science and Technology (Guangzhou)；Department of Computer Science, City University of Hong Kong；School of Geodesy and Geomatics, Wuhan University；Data Science and AI Innovation Research Promotion Center, Shiga University | GeoSeg-OV以结构引导缓解地理域偏移，改进开放词汇遥感分割。 | [#1089](https://github.com/thinson/RS-PaperClaw/issues/1089) |
-
-## 🔎 观察
-
-- 基础模型在遥感应用中需适配小目标与域差异，提示引导成为关键研究方向。
-- 模型压缩与自进化机制受关注，旨在提升部署效率与自适应能力。
 
 ---
 
