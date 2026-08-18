@@ -2,6 +2,44 @@
 
 最近三天日报（最新在前）：
 
+# [20260815](./202608/20260815.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
+
+今日遥感AI研究聚焦于基础模型、鲁棒性与效率优化。多篇论文探索地球观测基础模型在生态水文学中的应用，以及大语言模型在无人机导航中的潜力。同时，研究关注对抗鲁棒性、光学-SAR融合检测、视频去模糊和目标检测等任务。此外，针对大视觉语言模型的token剪枝、SAR去斑和光谱重建等效率与质量提升方法也受到关注。整体趋势显示，模型正朝着更智能、更高效、更鲁棒的方向发展。
+
+## ✨ 今日亮点
+
+- 基础模型与LLM驱动遥感智能分析。
+- 鲁棒性研究覆盖对抗攻击与跨模态融合。
+- 效率优化聚焦token剪枝与去斑算法。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260815] Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference | Yu Yi, Peng Jian, Lin Yucheng, Trevor F. Keenan, Thomas F. A. Bishop | the Precision Agriculture, Hydrology and Geoinformation Science Laboratory, School of Life and Environmental Sciences, The University of Sydney, Eveleigh, NSW, Australia (；Department of Remote Sensing, Helmholtz Centre for Environmental Research--UFZ, Leipzig, Germany；Institute for Earth System Science and Remote Sensing, Leipzig University, Leipzig, Germany (；School of Energy and Environment, City University of Hong Kong, Hong Kong SAR, China (；Department of Environmental Science, Policy, and Management, University of California, Berkeley, Berkeley, CA, USA；the Climate and Ecosystem Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA ( | 综述地球观测基础模型在生态水文学中的表示学习与过程推断。 | [#1113](https://github.com/thinson/RS-PaperClaw/issues/1113) |
+| [20260815] On the Adversarial Robustness of Remote Sensing Semantic Change Detection | Yu Weikang, Xu Yonghao, Ghamisi Pedram | Department of Electrical Engineering, Linköping University | 研究遥感语义变化检测的对抗鲁棒性，关注时间扰动影响。 | [#1114](https://github.com/thinson/RS-PaperClaw/issues/1114) |
+| [20260815] Boundary-Aligned Contribution Routing for Robust Optical--SAR Object Detection | Zhang Haifa, Wang Yijing, Wang Haoyu, Li Zheng, Zuo Zhiqiang | the Tianjin Key Laboratory of Intelligent Unmanned Swarm Technology and System, School of Electrical and Information Engineering, Tianjin University, Tianjin, China (；the Key Laboratory of System Control and Information Processing, Ministry of Education of China, Shanghai, China ( | 提出边界对齐贡献路由方法，提升光学-SAR融合检测鲁棒性。 | [#1115](https://github.com/thinson/RS-PaperClaw/issues/1115) |
+| [20260815] UAV Video Deblurring via Motion-Aware Diffusion: A Path to Robust Target Detection | Hu Zhiqiang, Huang Shouren, Ishikawa Masatoshi | the Research Institute for Science \& Technology, Tokyo University of Science | 利用运动感知扩散实现无人机视频去模糊，增强目标检测。 | [#1116](https://github.com/thinson/RS-PaperClaw/issues/1116) |
+| [20260815] LAPF: LLM-Agent-Based Path Finder Using the UAVScenes Dataset | Emami Yousef, Homaei Mohammadhossein, Zhou Hao, Miguel Gutiérrez Gaitán, Atefeh Hajijamali Arani, Zhang Rui | University of Vigo；University of Auckland；University of Science and Technology of China；University of Toronto；National University of Singapore | 基于LLM智能体与UAVScenes数据集实现自主路径规划。 | [#1117](https://github.com/thinson/RS-PaperClaw/issues/1117) |
+| [20260815] SA-GEM: Scale-Adaptive and Geospatial Evidence-Modulated Token Pruning for Efficient Remote Sensing Large Vision-Language Models | Ma Kexin, Xiao Jing, Xing Bowen, Liao Liang, Lin Chia-Wen | School of Artificial Intelligence, Wuhan University；Hangzhou Institute of Technology, Xidian University；Department of Electrical Engineering, National Tsing Hua University | 提出尺度自适应与地理证据调制的token剪枝，加速遥感大模型。 | [#1118](https://github.com/thinson/RS-PaperClaw/issues/1118) |
+| [20260815] Frequency and Edge-Guided Segment Anything Model for Remote Sensing Image Semantic Segmentation | Gao Feng, Pan Zizhe, Wang Haoting, Hua Ruzhuang, Cao Jingchao, Dong Junyu, Du Qian | State Key Laboratory of Physical Oceanography, SAM’s training data；Department of Electrical and Computer Engineering, land cover types exhibit distinct spatial distributions, leading to Mississippi State University, Starkville, MS USA | 结合频率与边缘引导的SAM模型，提升遥感图像分割精度。 | [#1119](https://github.com/thinson/RS-PaperClaw/issues/1119) |
+| [20260815] Geometry-Calibrated Closed-Form Shrinkage for SAR Despeckling | Hu Xuran, Zhu Mingzhe, Stanković Djordje, Zhu Yujie, Feng Zhenpeng, Ban Yifang, Stanković Ljubiša | School of Electronic Engineering, Xidian University, Xi'an, China；the Kunshan Innovation Institute of Xidian University, Kunshan, China；the EE Department, University of Montenegro, Podgorica, Montenegro；the Division of Geoinformatics, KTH Royal Institute of Technology, Stockholm, Sweden；the Faculty of Science and Engineering, Macquarie University, Sydney, NSW, Australia | 提出几何校准闭式收缩方法，用于SAR图像去斑。 | [#1120](https://github.com/thinson/RS-PaperClaw/issues/1120) |
+| [20260815] Registration-Free Hyperspectral Reconstruction from RGB via a Permutation-Invariant Gram-Matrix Principle | Zhao Jiangsan, Hirafuji Masayuki, Ninomiya Seishi, Geipel Jakob, Guo Wei | Department of Agricultural Technology, Norwegian Institute of Bioeconomy Research (NIBIO), Ås, Norway；Laboratory of Field Phenomics, Graduate School of Agriculture and Life Sciences, The University of Tokyo, Nishitokyo, Tokyo 188-0002；Plant Phenomics Research Center, Nanjing Agricultural University, Nanjing, China | 利用置换不变Gram矩阵实现无配准的高光谱重建。 | [#1121](https://github.com/thinson/RS-PaperClaw/issues/1121) |
+
+## 🔎 观察
+
+- 基础模型正从通用遥感向特定领域（如生态水文）深化，强调过程推断能力。
+- 鲁棒性与效率并重，对抗攻击、跨模态融合及模型压缩成为研究热点。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260814](./202608/20260814.md)
 ## 📌 今日概况
 
@@ -61,46 +99,6 @@ Powered by OpenClaw🦞
 
 - 研究从静态感知转向动态推理，长时序与未来预测成新焦点
 - 零样本与高效框架减少标注依赖，推动遥感AI实用化
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260812](./202608/20260812.md)
-## 📌 今日概况
-
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 11 篇。
-
-今日研究聚焦于遥感AI的多项前沿应用，涵盖基础模型用于天气降尺度、高光谱图像在食品新鲜度评估中的少样本与轻量化方法、以及基于卫星影像的土地利用与作物检测。此外，扩散模型用于高光谱全色锐化、多模态大语言模型用于无人机图像理解、以及开放词汇变化检测等方向也取得进展。研究趋势显示，模型效率、跨模态融合与少样本学习成为关注重点。
-
-## ✨ 今日亮点
-
-- 基础模型嵌入用于概率天气降尺度，提升描述能力。
-- 高光谱成像结合少样本学习，实现鱼类新鲜度日级估计。
-- 零样本扩散模型与伪标签学习推动开放词汇变化检测。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260812] Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling | Sousa Pedro, Tebbutt Will, Jaffer Sadiq, Young Robin, Madhavapeddy Anil, Richard E. Turner | Department of Computer Science, University of Cambridge；Department of Engineering, University of Cambridge | 地球观测嵌入作为亚网格描述符，改进概率天气降尺度性能。 | [#1091](https://github.com/thinson/RS-PaperClaw/issues/1091) |
-| [20260812] Few-Shot Ordinal Learning for Day-Wise Freshness Estimation with Hyperspectral Fish Images | Kazi Nabiul Alam, Pooneh Bagheri Zadeh, Sheikh-Akbari Akbar | School of Built Environment, Engineering and Computing；Leeds Beckett University, Leeds, United Kingdom | 少样本序数学习用于高光谱鱼图像，实现日级新鲜度估计。 | [#1092](https://github.com/thinson/RS-PaperClaw/issues/1092) |
-| [20260812] Domain-Aware Lightweight Spectral-Grouped Convolutions for Hyperspectral Fish Freshness Classification | Kazi Nabiul Alam, Pooneh Bagheri Zadeh, Sheikh-Akbari Akbar | Kazi Nabiul Alam School of Built Environment；Pooneh Bagheri Zadeh Leeds Beckett University | 轻量光谱分组卷积网络，高效分类鱼类新鲜度等级。 | [#1093](https://github.com/thinson/RS-PaperClaw/issues/1093) |
-| [20260812] Remote Sensing and Machine Learning-Based Analysis of Land Use and Vegetation Change in Dhaka District, Bangladesh | Muhammad Masud Tarek, Md. Alamgir Hossain, Md. Samiul Islam, Muntasir Hasan Kanchan | Department of Computer Science and Engineering, State University of Bangladesh, Dhaka, Bangladesh；Department of Computer Science, American International University - Bangladesh, Dhaka, Bangladesh；Skill Morph Research Lab., Skill Morph, Dhaka, Bangladesh | 遥感与机器学习分析达卡地区土地利用与植被变化。 | [#1094](https://github.com/thinson/RS-PaperClaw/issues/1094) |
-| [20260812] A Remote Approach to Cashew Orchard Detection: Leveraging Active Learning with Satellite Imagery in Guinea-Bissau | Miguel, Sofia, Maria, Patrícia, Luke, João | Department of Computer Science, Faculty of Sciences, University of Porto, Rua do Campo Alegre, 4169-007 Porto；Forest Research Centre, School of Agriculture, University of Lisbon, Tapada da Ajuda, 1349-017 Lisbon；CIBIO and BIOPOLIS, InBIO Associated Laboratory, Vairão Campus, University of Porto, Rua do Crasto, 4485-661 Vairão；CMUP and Department of Computer Science, Faculty of Sciences, University of Porto, Rua do Campo Alegre, 4169-007 Porto | 主动学习结合哨兵二号影像，远程检测几内亚比绍腰果果园。 | [#1095](https://github.com/thinson/RS-PaperClaw/issues/1095) |
-| [20260812] Warping Earth Observations for better ice labeling in the Marginal Marginal Ice Zone | Kelly Tom, Martin S. J. Rogers | British Antarctic Survey | 图像配准扭曲地球观测，改善南极边缘冰区冰标注。 | [#1096](https://github.com/thinson/RS-PaperClaw/issues/1096) |
-| [20260812] Dual Modality Prompted Diffusion Priors for Zero Shot Hyperspectral Pansharpening | Xie Pengwei, Zhu Fei, Li Jiajun, Liu Xiangyuan, Liu Xiangyuan, Shen Kangqing, Vivone Gemine | School of Artificial Intelligence, Beijing Normal University, Beijing, China (；School of GeoAI and Hinton STAI Institute, and the Key Laboratory of Geographic Information Science (Ministry of Education), East China Normal University, Shanghai, China (；Peking University, Beijing, China (；the National Center for Applied Mathematics Shenzhen (NCAMS), Southern University of Science and Technology, Shenzhen, China (；Department of Automation, Tsinghua University, Beijing, China (；the National Research Council of Italy, Institute of Integrated Methodologies for Earth Observation (CNR-IMIOT), Tito, Italy ( | 双模态提示扩散先验，实现零样本高光谱全色锐化。 | [#1097](https://github.com/thinson/RS-PaperClaw/issues/1097) |
-| [20260812] Advancing MLLM-based UAV Image Understanding and Reasoning: A Benchmark and a Training-Free Multi-Agent System | Zhang Haoyu, Zhang Shuoxun, Ye Peng, Zhang Lin, Yuan Jiakang, Yi Shenghong, Wang Yuening, Chen Tao | Shanghai Innovation Institute, Shanghai, China (；The Chinese University of Hong Kong, Hong Kong (；College of Future Information Technology, Fudan University, Shanghai, China ( | 提出基准与免训练多智能体系统，提升无人机图像理解。 | [#1098](https://github.com/thinson/RS-PaperClaw/issues/1098) |
-| [20260812] EGM-Det: Entropy-Guided Multimodal Adaptive Fusion for UAV RGB-IR Object Detection | Fan Cunzheng, Yan Dawei, Wang Guanlin, Yang Xingshuo, Jia Yupeng, Yang Jing, Zhang Haokui | School of Cybersecurity, Northwestern Polytechnical University, Xi’an 710072, China；School of Automation and Software Engineering, Shanxi University, Taiyuan 030006, China；Joint utilization of RGB and infrared (IR) information for object detection represents an important research | 熵引导多模态自适应融合，增强无人机RGB-IR目标检测。 | [#1099](https://github.com/thinson/RS-PaperClaw/issues/1099) |
-| [20260812] Zero-OVCD: Bridging Training-Free Foundation Models and Pseudo-Label Learning for Open-Vocabulary Change Detection | Peng Daifeng, Peng Yuanke, Guan Haiyan | School of Remote Sensing and Geomatics Engineering, Nanjing University of Information Science and Technology, Nanjing, China ( | 免训练基础模型与伪标签结合，实现开放词汇变化检测。 | [#1100](https://github.com/thinson/RS-PaperClaw/issues/1100) |
-| [20260812] Transferable Above-Ground Biomass (AGB) Estimation Model from Multi-Sensor Data with Sparse Field Calibration | Pann Thinzar Seint, Atwood Bryan, Chhatkuli Subas | DAI Labs, K.K. | 多传感器数据与稀疏校准，构建可迁移的地上生物量模型。 | [#1101](https://github.com/thinson/RS-PaperClaw/issues/1101) |
-
-## 🔎 观察
-
-- 高光谱成像在食品质量评估中应用增多，结合少样本学习提升实用性。
-- 基础模型与扩散模型在遥感任务中渗透，推动零样本与开放词汇能力发展。
 
 ---
 
