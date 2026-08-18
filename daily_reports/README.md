@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260817](./202608/20260817.md)
+## 📌 今日概况
+
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感研究聚焦于提升模型在标注数据稀缺条件下的性能，涵盖半监督语义分割、高光谱图像分类与植物性状反演。同时，合成数据增强被用于农业灾害检测，而GNSS拒止环境下的跨平台地理配准问题也得到关注。整体趋势显示，深度学习方法与数据增强策略在遥感应用中持续深化。
+
+## ✨ 今日亮点
+
+- 半监督学习结合特征记忆库，提升遥感分割精度。
+- 光谱转图像策略增强2D-CNN植物性状反演能力。
+- 扩散模型合成数据助力战损农田检测与增强。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260817] Bridging the Gap between Labeled and Unlabeled Data via Unified Flow with Feature Memory Bank | Wang Shanwen, Sun Xin, Hong Danfeng, Dong Junyu, Patrick Le Callet | Faculty of Data Science, City University of Macau,, SAR Macao, China；School of Automation, Southeast University, Nanjing,, China；Department of Computer Science and Technology, Ocean University of China, Qingdao, China；Nantes Université, Ecole Centrale Nantes, CAPACITES SAS, CNRS, LS2 N, UMR, Nantes, France | 提出统一流与特征记忆库，弥合半监督分割中标注与未标注数据差距。 | [#1130](https://github.com/thinson/RS-PaperClaw/issues/1130) |
+| [20260817] Turning spectra into images improves plant trait retrieval with 2D-CNNs | Lopatin Javier, Kattenborn Teja, Cherif Eya, Moreno Sebastián | Center for Climate Resilience Research (CR)2, University of Chile, Santiago, Chile, 8370449；Sensor-based Geoinformatics (geosense), University of Freiburg, Freiburg, Breisgau, Germany；Institute for Earth System Science and Remote Sensing, Leipzig University, Germany | 将光谱数据转为图像格式，利用2D-CNN提升植物性状反演精度。 | [#1131](https://github.com/thinson/RS-PaperClaw/issues/1131) |
+| [20260817] Synthetic Data Augmentation for Satellite-Based Analysis of Battle-Damaged Agricultural Fields in Ukraine | Sumyk Marta, Kosovan Oleksandr, Voitsitska Iryna | Ukrainian Catholic University, Lviv, Ukraine | 采用扩散模型生成合成数据，增强卫星影像中战损农田的检测能力。 | [#1132](https://github.com/thinson/RS-PaperClaw/issues/1132) |
+| [20260817] Marker-Constrained Pose-Graph Correction for Cross-Platform Georeferencing in GNSS-Denied Environments | Giberna Marco, Jose Luis Sanchez Lopez, Voos Holger | Automation and Robotics Research Group, Interdisciplinary Centre for Security, Reliability；and Trust (SnT), University of Luxembourg；Faculty of Science, Technology and Medicine, University of Luxembourg, 4365 | 利用标记约束的位姿图校正，实现GNSS拒止环境下的跨平台地理配准。 | [#1133](https://github.com/thinson/RS-PaperClaw/issues/1133) |
+| [20260817] Convolution-Free Holistic Multivariance Decomposition Layer for Efficient Hyperspectral Image Classification Tensor Networks | Tuna Süha, Başar Ülker | aIstanbul Technical University, Informatics Institute；bIstanbul Esenyurt University, Faculty of Business and Management Sciences；Department of Management Information Systems, Esenyurt, 34517, \.Istanbul, Türkiye | 提出无卷积的多元分解层，基于张量网络高效分类高光谱图像。 | [#1134](https://github.com/thinson/RS-PaperClaw/issues/1134) |
+
+## 🔎 观察
+
+- 半监督与数据增强技术成为应对遥感标注稀缺的主流路径。
+- 张量网络与无卷积设计开始应用于高光谱分类，追求效率与精度平衡。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260816](./202608/20260816.md)
 ## 📌 今日概况
 
@@ -68,39 +102,6 @@ Powered by OpenClaw🦞
 
 - 基础模型正从通用遥感向特定领域（如生态水文）深化，强调过程推断能力。
 - 鲁棒性与效率并重，对抗攻击、跨模态融合及模型压缩成为研究热点。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260814](./202608/20260814.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦于弱监督学习、时序预测与多模态理解。Sentinel-1 SAR影像中极地低压的弱监督分割方法，展示了减少标注依赖的潜力。基于Sentinel-2的作物生长预测模型，利用时序数据提升冬小麦叶面积指数预报精度。此外，针对遥感推理分割的细粒度掩码表示方法，以及结合GeoAI与空间建模的城市冠层评估，共同推动了遥感智能解译向精细化、实用化发展。
-
-## ✨ 今日亮点
-
-- 弱监督分割降低SAR极地低压标注成本
-- 时序遥感数据助力作物生长预测
-- 细粒度掩码表示提升推理分割精度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260814] Weakly Supervised Polar Low Segmentation in Sentinel-1 SAR Imagery | Federici Andrea, Grahn Jakob, Boracchi Giacomo, Filippo Maria Bianchi | the Dept. of Mathematics and Statistics, UiT the Arctic University of Norway；NORCE, The Norwegian Research Centre AS | 利用弱监督学习实现Sentinel-1 SAR影像极地低压分割，减少像素级标注需求。 | [#1108](https://github.com/thinson/RS-PaperClaw/issues/1108) |
-| [20260814] Learning to Forecast Crop Growth from Earth Observation Data | Senti Dominik, Mehmet Ozgur Turkoglu, Volpi Michele, Aasen Helge | Earth Observation of Agroecosystems Team, Agroscope, Switzerland Swiss Data Science Center, ETH Zurich and EPFL, Switzerland | 基于Sentinel-2时序数据学习预测冬小麦叶面积指数，支持作物生长监测。 | [#1109](https://github.com/thinson/RS-PaperClaw/issues/1109) |
-| [20260814] FIRM: Fine-Grained Intra-Token Representation of Masks for Remote Sensing Reasoning Segmentation | Tang Weidong, Li Kaiyu, Wang Yikai, Wu Yanan, Gan Haotian, Wang Shihong, Cao Xiangyong | Xi’an Jiaotong University, Xi’an, China；Renmin University of China, Beijing, China；China Agricultural University, Beijing, China；Shaanxi University of Science and Technology, Xi’an, China | 提出FIRM方法，通过细粒度掩码标记增强遥感推理分割的视觉理解能力。 | [#1110](https://github.com/thinson/RS-PaperClaw/issues/1110) |
-| [20260814] From crown candidates to neighborhood screening: integrating optical GeoAI and spatial modeling for urban-canopy assessment in Davis, California | Narimani Mohammadreza, Mitra Shreyan, Farajpoor Parastoo | a Department of Biological and Agricultural Engineering, University of California, Davis, Davis, CA, 95616, USA；b California High School, San Ramon, CA, 94583, USA；pixels and 97.4% of candidate centers agreed with the；homes, active-travel routes, schools, or hot paved surfaces | 集成光学GeoAI与空间模型，实现城市树冠候选检测与邻域筛选评估。 | [#1111](https://github.com/thinson/RS-PaperClaw/issues/1111) |
-
-## 🔎 观察
-
-- 弱监督与多模态方法成为降低遥感标注成本、提升解译精度的双轨趋势。
-- 作物预测与城市评估等应用研究，显示遥感AI正加速落地于农业与城市管理。
 
 ---
 
