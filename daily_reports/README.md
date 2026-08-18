@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260816](./202608/20260816.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究聚焦于高效感知与智能解译，涵盖无人机影像的微小目标检测、裂缝分割及4K视频边缘计算，同时探索遥感基础模型的视觉-语言对齐与边界感知分割，并引入材料发现中的迭代反馈机制，整体呈现从模型精度向轻量化、标签高效与跨域融合发展的趋势。
+
+## ✨ 今日亮点
+
+- 无人机影像感知向边缘计算与标签高效方向深化
+- 遥感分割注重边界感知与层次特征自适应细化
+- 基础模型探索视觉-语言对齐以提升泛化能力
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260816] Synthesizing like a chemist: an iterative, feedback-driven loop for materials discovery | Sheng Fang, Steven B. Torrisi, Volk Amanda, Tran Kevin, Nakano Koki, Brian W. Anthony, Buonassisi Tonio | Department of Mechanical Engineering, Massachusetts Institute of Technology；Toyota Research Institute | 材料发现采用迭代反馈循环，结合语言模型与贝叶斯优化提升合成效率 | [#1123](https://github.com/thinson/RS-PaperClaw/issues/1123) |
+| [20260816] MITE-Net: SWaP-Optimized 4K Video Tiny Target Perception for Embodied Edge SAR | Xu Mingshuo, Hua Mu, Peng Jigen, Wang Qi, Yue Shigang | School of Mathematics and Computing Science, University of Leicester, Leicester LE1 7 RH, UK；the Machine Life and Intelligence Research Center, Guangzhou University, Guangzhou, China | MITE-Net优化SWaP，实现边缘端4K视频微小目标实时感知 | [#1124](https://github.com/thinson/RS-PaperClaw/issues/1124) |
+| [20260816] CrevasseSeg: A Label-Efficient UAV Crevasse Segmentation Framework | Wallace Steven, William D Harcourt, Hann Richard, Durrant Aiden, Sripada Somayajulu, Leontidis Georgios | School of Natural and Computing Sciences, University of Aberdeen, UK；Interdisciplinary Institute, University of Aberdeen, UK；School of Geosciences, University of Aberdeen, UK；Department of Engineering Cybernetics, Norwegian University of Science and Technology, Norway；School of Computing Sciences, University of East Anglia, UK；Department of Physics and Technology, UiT The Arctic University of Norway；(UAV) imagery matters for glaciological research | CrevasseSeg利用自监督学习，减少标注需求实现无人机裂缝分割 | [#1125](https://github.com/thinson/RS-PaperClaw/issues/1125) |
+| [20260816] BASeg: Boundary-Aware Remote Sensing Segmentation with Structural Penalties | Song Yuexi, Sun Kailai, Wang Zhuoyu, He Mingyi, Paul Pu Liang, Wang Shenhao, Zhao Jinhua | National University of Singapore；Singapore-MIT Alliance for Research and Technology；Massachusetts Institute of Technology；University of Florida | BASeg引入结构惩罚损失，增强遥感图像边界感知分割精度 | [#1126](https://github.com/thinson/RS-PaperClaw/issues/1126) |
+| [20260816] Hierarchical Adaptive Feature Refinement Network for VHR Remote Sensing Image Segmentation | Cao Shuaishuai, Tang Meng, Peng Shuwei, Liu Xuan, Huang Min, Chen Jie, Niu Jiacheng, Chen Yong, Akpokodje Edore, Lin Hui | School of Information Science and Technology, Southwest Jiaotong University；School of Computer Science and Artificial Intelligence, Wuhan University of Technology；School of Electronic and Information Engineering, Beihang University；School of Surveying and Geo-Informatics, Shandong Jianzhu University；School of Geography and Environment, Jiangxi Normal University；School of Computer Science and Engineering, University of Electronic Science and Technology of China；School of Computer Science and Technology, Harbin Institute of Technology；School of Computer Science and Engineering, Nanyang Technological University；School of Geography and Remote Sensing, Guangzhou University；Institute of Space and Earth Information Science, The Chinese University of Hong Kong | 层次自适应细化网络结合频率分析，提升超高分辨率影像分割效果 | [#1127](https://github.com/thinson/RS-PaperClaw/issues/1127) |
+| [20260816] AlignJEPA: Predictive Vision-Language Alignment for Remote Sensing Foundation Models | Md Aminur Hossain, Vaghasiya Omkumar, Rajeev Ranjan Dwivedi, Kurmi Vinod, Banerjee Biplab | Vinod Kurmi3, and Biplab Banerjee2；Space Applications Centre, ISRO, Ahmedabad, India；CSRE, Indian Institute of Technology Bombay, India；Indian Institute of Science Education and Research (IISER) Bhopal, India | AlignJEPA通过预测性对齐，增强遥感基础模型的视觉-语言检索能力 | [#1128](https://github.com/thinson/RS-PaperClaw/issues/1128) |
+
+## 🔎 观察
+
+- 研究明显向轻量化与边缘部署倾斜，强调实际应用中的计算约束
+- 标签高效与自监督方法成为热点，反映标注成本对遥感AI的制约
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260815](./202608/20260815.md)
 ## 📌 今日概况
 
@@ -66,39 +101,6 @@ Powered by OpenClaw🦞
 
 - 弱监督与多模态方法成为降低遥感标注成本、提升解译精度的双轨趋势。
 - 作物预测与城市评估等应用研究，显示遥感AI正加速落地于农业与城市管理。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260813](./202608/20260813.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦于视觉-语言模型在地球观测与无人机导航中的应用。LongEarth-R1提出长时序推理基准，DiCoR优化指代分割效率，AirForesight与ARIES-Mission2分别探索跨空间规划与零样本任务生成，整体呈现从感知到推理、从单任务到多模态协同的趋势。
-
-## ✨ 今日亮点
-
-- 长时序遥感推理基准LongEarth-R1发布
-- 指代分割新框架DiCoR提升效率
-- 无人机视觉语言导航与任务生成受关注
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260813] LongEarth-R1: Benchmarking and Aligning Vision-Language Models for Long-Horizon Earth Observation Reasoning | Ding Yupan, Xiao Jing, Zhang Zhenyuan, Chen Chaofeng, Liao Liang, Xia Gui-Song, Wang Mi | School of Artificial Intelligence, Wuhan University, Wuhan, China；School of Computer Science, Wuhan University, Wuhan, China；Xi’an University of Electronic Science and Technology, Xi’an, China；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan | LongEarth-R1构建长时序遥感推理基准并对齐视觉语言模型 | [#1103](https://github.com/thinson/RS-PaperClaw/issues/1103) |
-| [20260813] DiCoR: Decoupled Referent Disambiguation and Contour Recalibration for Efficient Referring Remote Sensing Image Segmentation | Gao Ziyang, Jiang Zhizhuo, Chang Jingjing, Yang Yixin, Pan Yuwen, Mao Yong-Qiang, Liu Yu, Chen Hai-Bao | School of Integrated Circuits, School of Information Science and Electronic Engineering, Shanghai Jiao Tong University, Shanghai, China；College of Computer Science, Nankai University, Tianjin, China；Department of Electronic Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China；Department of Electronic Engineering, Tsinghua University, Beijing, China | DiCoR解耦指代消歧与轮廓重校准，实现高效遥感指代分割 | [#1104](https://github.com/thinson/RS-PaperClaw/issues/1104) |
-| [20260813] AirForesight: Current-to-Future Spatial Map Imagination with Cross-Space Planning Consistency for UAV-VLN | Liu Yutong, Li Xiaojie, Xu Mingzhu, Wu Jianlong | Harbin Institute of Technology, Shenzhen Shenzhen China；Shandong University Jinan China；Harbin Institute of Technology, Shenzhen Shenzhen Loop Area Institute Shenzhen China | AirForesight通过跨空间规划一致性实现无人机视觉语言导航 | [#1105](https://github.com/thinson/RS-PaperClaw/issues/1105) |
-| [20260813] ARIES-Mission2: A Zero-Shot Vision-Language-Action Framework for Fast Large-Scale Aerial Mission Generation | Wei Junhao, Li Yanxiao, Li Haochen, Zhao Yifu, Yao Dexing, Lu Baili, Li Zikun, Wang Yapeng, Im Sio-Kei, Yang Dingcheng, Yang Xu | Faculty of Applied Sciences；Macao Polytechnic University；School of Economics and Management；South China Normal University；Information Engineering School；Nanchang University | ARIES-Mission2零样本生成大规模无人机任务并优化路线 | [#1106](https://github.com/thinson/RS-PaperClaw/issues/1106) |
-
-## 🔎 观察
-
-- 研究从静态感知转向动态推理，长时序与未来预测成新焦点
-- 零样本与高效框架减少标注依赖，推动遥感AI实用化
 
 ---
 
