@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260818](./202608/20260818.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日研究聚焦于高分辨率SAR与光学数据的协同应用，涵盖建筑高度估计、云覆盖下的水体分割、雷达数据压缩对目标检测的影响，以及基于卫星图像时间序列的牧场恢复监测。研究趋势显示，深度学习与地理加权方法在遥感任务中持续深化，同时任务导向的数据质量评估受到关注。
+
+## ✨ 今日亮点
+
+- SAR与光学数据互补用于建筑高度估计
+- 云覆盖下SAR与合成NDWI融合分割水体
+- 任务导向评估雷达数据压缩对检测的影响
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260818] Spatially explicit feature importance for building height estimation using research-access high-resolution SAR and optical sensors | Iablonovski Guilherme, Frison Pierre-Louis, Tatiana Silva da Silva | height estimation using research-access highresolution SAR and optical sensors；Université Gustave Eiffel, Géodata 2nd Pierre-Louis Frison 3rd Tatiana Silva da Silva；Paris, IGN, LASTIG, F-77454 Marne- Université Gustave Eiffel, Géodata Programa de Pós-Graduação em；under scientific research licenses, TerraSAR-X StripMap and；no cost through the DLR science program, and PlanetScope；backscatter and InSAR occupy complementary spatial niches, Research Program, which provide medium-high spatial | 利用高分辨率SAR和光学数据，通过空间显式特征重要性提升建筑高度估计精度。 | [#1136](https://github.com/thinson/RS-PaperClaw/issues/1136) |
+| [20260818] Monitoring Pasture Restoration from Satellite Image Time Series: Caveats and Opportunities | Sartorius Linnea, Randahl Isak, Delia Fano Yela, Andersson Georg, Jamali Sadegh, Pirinen Aleksis | Lund University；RISE Research Institutes of Sweden；Swedish Centre for Impacts of Climate Extremes (CLIMES) | 基于卫星图像时间序列监测牧场恢复，探讨了数据和方法中的注意事项与机遇。 | [#1137](https://github.com/thinson/RS-PaperClaw/issues/1137) |
+| [20260818] To Remove or Not to Remove Clouds: A Comparative Analysis and Fusion of Raw SAR and Synthetic NDWI for Overcast Water Segmentation | Saleh Sakib Ahmed, Nowreen Sara, M. Sohel Rahman | Computer Science and Engineering, Bangladesh University of Engineering and Technology, Palashi；Institute of Water and Flood Management, Bangladesh University of Engineering and Technology；or simply process the raw SAR directly? Focusing on water body segmentation, this research addresses this exact | 比较原始SAR与合成NDWI在阴天水体分割中的表现，提出融合策略。 | [#1138](https://github.com/thinson/RS-PaperClaw/issues/1138) |
+| [20260818] Task-Based Evaluation of Raw Radar Data Compression: A Pre-Registered Study of Where Classical Codecs Fail to Preserve Target Detection, and Why | Eric Michael Chrabot | Air Force Research Laboratory (AFRL) Gotcha ground moving；Force Research Laboratory (AFRL) made this point about | 预注册研究评估原始雷达数据压缩对目标检测的影响，揭示经典编解码器的失效原因。 | [#1139](https://github.com/thinson/RS-PaperClaw/issues/1139) |
+
+## 🔎 观察
+
+- 多传感器融合成为提升遥感反演鲁棒性的主流路径，尤其在地形复杂或天气受限场景。
+- 任务导向的数据压缩评估兴起，强调从下游应用需求出发优化数据链路，而非仅关注保真度。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260817](./202608/20260817.md)
 ## 📌 今日概况
 
@@ -64,44 +97,6 @@ Powered by OpenClaw🦞
 
 - 研究明显向轻量化与边缘部署倾斜，强调实际应用中的计算约束
 - 标签高效与自监督方法成为热点，反映标注成本对遥感AI的制约
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260815](./202608/20260815.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
-
-今日遥感AI研究聚焦于基础模型、鲁棒性与效率优化。多篇论文探索地球观测基础模型在生态水文学中的应用，以及大语言模型在无人机导航中的潜力。同时，研究关注对抗鲁棒性、光学-SAR融合检测、视频去模糊和目标检测等任务。此外，针对大视觉语言模型的token剪枝、SAR去斑和光谱重建等效率与质量提升方法也受到关注。整体趋势显示，模型正朝着更智能、更高效、更鲁棒的方向发展。
-
-## ✨ 今日亮点
-
-- 基础模型与LLM驱动遥感智能分析。
-- 鲁棒性研究覆盖对抗攻击与跨模态融合。
-- 效率优化聚焦token剪枝与去斑算法。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260815] Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference | Yu Yi, Peng Jian, Lin Yucheng, Trevor F. Keenan, Thomas F. A. Bishop | the Precision Agriculture, Hydrology and Geoinformation Science Laboratory, School of Life and Environmental Sciences, The University of Sydney, Eveleigh, NSW, Australia (；Department of Remote Sensing, Helmholtz Centre for Environmental Research--UFZ, Leipzig, Germany；Institute for Earth System Science and Remote Sensing, Leipzig University, Leipzig, Germany (；School of Energy and Environment, City University of Hong Kong, Hong Kong SAR, China (；Department of Environmental Science, Policy, and Management, University of California, Berkeley, Berkeley, CA, USA；the Climate and Ecosystem Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA ( | 综述地球观测基础模型在生态水文学中的表示学习与过程推断。 | [#1113](https://github.com/thinson/RS-PaperClaw/issues/1113) |
-| [20260815] On the Adversarial Robustness of Remote Sensing Semantic Change Detection | Yu Weikang, Xu Yonghao, Ghamisi Pedram | Department of Electrical Engineering, Linköping University | 研究遥感语义变化检测的对抗鲁棒性，关注时间扰动影响。 | [#1114](https://github.com/thinson/RS-PaperClaw/issues/1114) |
-| [20260815] Boundary-Aligned Contribution Routing for Robust Optical--SAR Object Detection | Zhang Haifa, Wang Yijing, Wang Haoyu, Li Zheng, Zuo Zhiqiang | the Tianjin Key Laboratory of Intelligent Unmanned Swarm Technology and System, School of Electrical and Information Engineering, Tianjin University, Tianjin, China (；the Key Laboratory of System Control and Information Processing, Ministry of Education of China, Shanghai, China ( | 提出边界对齐贡献路由方法，提升光学-SAR融合检测鲁棒性。 | [#1115](https://github.com/thinson/RS-PaperClaw/issues/1115) |
-| [20260815] UAV Video Deblurring via Motion-Aware Diffusion: A Path to Robust Target Detection | Hu Zhiqiang, Huang Shouren, Ishikawa Masatoshi | the Research Institute for Science \& Technology, Tokyo University of Science | 利用运动感知扩散实现无人机视频去模糊，增强目标检测。 | [#1116](https://github.com/thinson/RS-PaperClaw/issues/1116) |
-| [20260815] LAPF: LLM-Agent-Based Path Finder Using the UAVScenes Dataset | Emami Yousef, Homaei Mohammadhossein, Zhou Hao, Miguel Gutiérrez Gaitán, Atefeh Hajijamali Arani, Zhang Rui | University of Vigo；University of Auckland；University of Science and Technology of China；University of Toronto；National University of Singapore | 基于LLM智能体与UAVScenes数据集实现自主路径规划。 | [#1117](https://github.com/thinson/RS-PaperClaw/issues/1117) |
-| [20260815] SA-GEM: Scale-Adaptive and Geospatial Evidence-Modulated Token Pruning for Efficient Remote Sensing Large Vision-Language Models | Ma Kexin, Xiao Jing, Xing Bowen, Liao Liang, Lin Chia-Wen | School of Artificial Intelligence, Wuhan University；Hangzhou Institute of Technology, Xidian University；Department of Electrical Engineering, National Tsing Hua University | 提出尺度自适应与地理证据调制的token剪枝，加速遥感大模型。 | [#1118](https://github.com/thinson/RS-PaperClaw/issues/1118) |
-| [20260815] Frequency and Edge-Guided Segment Anything Model for Remote Sensing Image Semantic Segmentation | Gao Feng, Pan Zizhe, Wang Haoting, Hua Ruzhuang, Cao Jingchao, Dong Junyu, Du Qian | State Key Laboratory of Physical Oceanography, SAM’s training data；Department of Electrical and Computer Engineering, land cover types exhibit distinct spatial distributions, leading to Mississippi State University, Starkville, MS USA | 结合频率与边缘引导的SAM模型，提升遥感图像分割精度。 | [#1119](https://github.com/thinson/RS-PaperClaw/issues/1119) |
-| [20260815] Geometry-Calibrated Closed-Form Shrinkage for SAR Despeckling | Hu Xuran, Zhu Mingzhe, Stanković Djordje, Zhu Yujie, Feng Zhenpeng, Ban Yifang, Stanković Ljubiša | School of Electronic Engineering, Xidian University, Xi'an, China；the Kunshan Innovation Institute of Xidian University, Kunshan, China；the EE Department, University of Montenegro, Podgorica, Montenegro；the Division of Geoinformatics, KTH Royal Institute of Technology, Stockholm, Sweden；the Faculty of Science and Engineering, Macquarie University, Sydney, NSW, Australia | 提出几何校准闭式收缩方法，用于SAR图像去斑。 | [#1120](https://github.com/thinson/RS-PaperClaw/issues/1120) |
-| [20260815] Registration-Free Hyperspectral Reconstruction from RGB via a Permutation-Invariant Gram-Matrix Principle | Zhao Jiangsan, Hirafuji Masayuki, Ninomiya Seishi, Geipel Jakob, Guo Wei | Department of Agricultural Technology, Norwegian Institute of Bioeconomy Research (NIBIO), Ås, Norway；Laboratory of Field Phenomics, Graduate School of Agriculture and Life Sciences, The University of Tokyo, Nishitokyo, Tokyo 188-0002；Plant Phenomics Research Center, Nanjing Agricultural University, Nanjing, China | 利用置换不变Gram矩阵实现无配准的高光谱重建。 | [#1121](https://github.com/thinson/RS-PaperClaw/issues/1121) |
-
-## 🔎 观察
-
-- 基础模型正从通用遥感向特定领域（如生态水文）深化，强调过程推断能力。
-- 鲁棒性与效率并重，对抗攻击、跨模态融合及模型压缩成为研究热点。
 
 ---
 
