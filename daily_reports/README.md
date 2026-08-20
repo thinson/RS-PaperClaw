@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260819](./202608/20260819.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究聚焦无人机视觉感知与SAR目标检测。视觉定位方面，GrabVG引入图注意力机制提升无人机图像定位精度；SLAM与视觉里程计评估研究为高空无人机导航提供基准。SAR领域，SED-FOD通过散射感知专家分解解决跨传感器小样本检测。此外，地理空间机器学习应用于电力线资产风险建模，拓展遥感技术行业落地场景。
+
+## ✨ 今日亮点
+
+- 无人机视觉定位结合图注意力机制，提升目标定位精度。
+- SAR跨传感器小样本检测引入散射感知专家分解。
+- 电力线风险建模集成遥感与地理空间机器学习。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260819] GrabVG: Graph-Attentive Binding for Visual Grounding in UAV Imagery | Wang Chaowei, Di Yan, Sun Jingjun, Liu Baozhe, Tian Jiaxu, Li Yuheng, Guo Guangqian, Gao Shan | Northwestern Polytechnical University；Harbin Institute of Technology；The Hong Kong Polytechnic University | 提出GrabVG，用图注意力绑定提升无人机图像视觉定位性能。 | [#1141](https://github.com/thinson/RS-PaperClaw/issues/1141) |
+| [20260819] SED-FOD: Scattering-Aware Expert Decomposition for Few-Shot Cross-Sensor SAR Object Detection | Yang Shu, Chen Zhen, Jiang Zhiyu, Li Yanlei, Liang Xingdong | the National Key Laboratory of Microwave Imaging Technology, Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China；School of Electronic, Electrical and Communication Engineering, University of Chinese Academy of Sciences, Beijing, China | SED-FOD通过散射感知专家分解，实现跨传感器SAR小样本检测。 | [#1142](https://github.com/thinson/RS-PaperClaw/issues/1142) |
+| [20260819] Evaluation of Monocular SLAM Systems on High-Altitude Nadir UAV Footage | Spagnolo Gašper, Dobrevski Matej, Skočaj Danijel | Faculty of Computer and Information Science, University of Ljubljana, Večna pot 113, Ljubljana, Slovenia | 评估单目SLAM在高空正射无人机视频上的表现，提供基准。 | [#1143](https://github.com/thinson/RS-PaperClaw/issues/1143) |
+| [20260819] Evaluation of Image Matching Methods for Visual Odometry on UAVs | Spagnolo Gašper, Luka Čehovin Zajc, Dobrevski Matej | Faculty of Computer and Information Science, University of Ljubljana | 对比多种图像匹配方法用于无人机视觉里程计，分析性能差异。 | [#1144](https://github.com/thinson/RS-PaperClaw/issues/1144) |
+| [20260819] Scalable Geospatial Machine Learning for Power-Line Asset Risk: Integrating Remote Sensing for Lightning and Vegetation Risk Modelling | Sokolovsky Artur, Merai Bhavik, Jafari Moe, Chen Muen | SA Power Networks | 利用遥感与机器学习对电力线雷击和植被风险进行可扩展建模。 | [#1145](https://github.com/thinson/RS-PaperClaw/issues/1145) |
+
+## 🔎 观察
+
+- 无人机视觉研究从单一模型走向系统评估，注重实际部署性能。
+- SAR检测向跨传感器泛化发展，专家分解成为小样本学习新思路。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260818](./202608/20260818.md)
 ## 📌 今日概况
 
@@ -62,41 +96,6 @@ Powered by OpenClaw🦞
 
 - 半监督与数据增强技术成为应对遥感标注稀缺的主流路径。
 - 张量网络与无卷积设计开始应用于高光谱分类，追求效率与精度平衡。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260816](./202608/20260816.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究聚焦于高效感知与智能解译，涵盖无人机影像的微小目标检测、裂缝分割及4K视频边缘计算，同时探索遥感基础模型的视觉-语言对齐与边界感知分割，并引入材料发现中的迭代反馈机制，整体呈现从模型精度向轻量化、标签高效与跨域融合发展的趋势。
-
-## ✨ 今日亮点
-
-- 无人机影像感知向边缘计算与标签高效方向深化
-- 遥感分割注重边界感知与层次特征自适应细化
-- 基础模型探索视觉-语言对齐以提升泛化能力
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260816] Synthesizing like a chemist: an iterative, feedback-driven loop for materials discovery | Sheng Fang, Steven B. Torrisi, Volk Amanda, Tran Kevin, Nakano Koki, Brian W. Anthony, Buonassisi Tonio | Department of Mechanical Engineering, Massachusetts Institute of Technology；Toyota Research Institute | 材料发现采用迭代反馈循环，结合语言模型与贝叶斯优化提升合成效率 | [#1123](https://github.com/thinson/RS-PaperClaw/issues/1123) |
-| [20260816] MITE-Net: SWaP-Optimized 4K Video Tiny Target Perception for Embodied Edge SAR | Xu Mingshuo, Hua Mu, Peng Jigen, Wang Qi, Yue Shigang | School of Mathematics and Computing Science, University of Leicester, Leicester LE1 7 RH, UK；the Machine Life and Intelligence Research Center, Guangzhou University, Guangzhou, China | MITE-Net优化SWaP，实现边缘端4K视频微小目标实时感知 | [#1124](https://github.com/thinson/RS-PaperClaw/issues/1124) |
-| [20260816] CrevasseSeg: A Label-Efficient UAV Crevasse Segmentation Framework | Wallace Steven, William D Harcourt, Hann Richard, Durrant Aiden, Sripada Somayajulu, Leontidis Georgios | School of Natural and Computing Sciences, University of Aberdeen, UK；Interdisciplinary Institute, University of Aberdeen, UK；School of Geosciences, University of Aberdeen, UK；Department of Engineering Cybernetics, Norwegian University of Science and Technology, Norway；School of Computing Sciences, University of East Anglia, UK；Department of Physics and Technology, UiT The Arctic University of Norway；(UAV) imagery matters for glaciological research | CrevasseSeg利用自监督学习，减少标注需求实现无人机裂缝分割 | [#1125](https://github.com/thinson/RS-PaperClaw/issues/1125) |
-| [20260816] BASeg: Boundary-Aware Remote Sensing Segmentation with Structural Penalties | Song Yuexi, Sun Kailai, Wang Zhuoyu, He Mingyi, Paul Pu Liang, Wang Shenhao, Zhao Jinhua | National University of Singapore；Singapore-MIT Alliance for Research and Technology；Massachusetts Institute of Technology；University of Florida | BASeg引入结构惩罚损失，增强遥感图像边界感知分割精度 | [#1126](https://github.com/thinson/RS-PaperClaw/issues/1126) |
-| [20260816] Hierarchical Adaptive Feature Refinement Network for VHR Remote Sensing Image Segmentation | Cao Shuaishuai, Tang Meng, Peng Shuwei, Liu Xuan, Huang Min, Chen Jie, Niu Jiacheng, Chen Yong, Akpokodje Edore, Lin Hui | School of Information Science and Technology, Southwest Jiaotong University；School of Computer Science and Artificial Intelligence, Wuhan University of Technology；School of Electronic and Information Engineering, Beihang University；School of Surveying and Geo-Informatics, Shandong Jianzhu University；School of Geography and Environment, Jiangxi Normal University；School of Computer Science and Engineering, University of Electronic Science and Technology of China；School of Computer Science and Technology, Harbin Institute of Technology；School of Computer Science and Engineering, Nanyang Technological University；School of Geography and Remote Sensing, Guangzhou University；Institute of Space and Earth Information Science, The Chinese University of Hong Kong | 层次自适应细化网络结合频率分析，提升超高分辨率影像分割效果 | [#1127](https://github.com/thinson/RS-PaperClaw/issues/1127) |
-| [20260816] AlignJEPA: Predictive Vision-Language Alignment for Remote Sensing Foundation Models | Md Aminur Hossain, Vaghasiya Omkumar, Rajeev Ranjan Dwivedi, Kurmi Vinod, Banerjee Biplab | Vinod Kurmi3, and Biplab Banerjee2；Space Applications Centre, ISRO, Ahmedabad, India；CSRE, Indian Institute of Technology Bombay, India；Indian Institute of Science Education and Research (IISER) Bhopal, India | AlignJEPA通过预测性对齐，增强遥感基础模型的视觉-语言检索能力 | [#1128](https://github.com/thinson/RS-PaperClaw/issues/1128) |
-
-## 🔎 观察
-
-- 研究明显向轻量化与边缘部署倾斜，强调实际应用中的计算约束
-- 标签高效与自监督方法成为热点，反映标注成本对遥感AI的制约
 
 ---
 
