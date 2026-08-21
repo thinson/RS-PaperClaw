@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260820](./202608/20260820.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦于数据基础设施与安全认证两大方向。一是提出网络中心化的本地部署架构，以应对跨大西洋机构在EO数据访问中的带宽与存储瓶颈，强调可复制性与联邦化。二是探索量子-经典神经网络用于SAR卫星物理层认证，提升信号安全性。三是通过地理隔离策略改进自监督学习，实现可扩展的遥感表征学习，减少对大规模标注数据的依赖。
+
+## ✨ 今日亮点
+
+- 本地化EO数据架构强调网络中心设计，可复制性强。
+- 量子-经典网络为SAR物理层认证提供新思路。
+- 地理隔离自监督学习提升遥感表征可扩展性。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260820] Design and Empirical Evaluation of a Network-Centric, On-Premises Architecture for Earth Observation Data Access | Pinelo João, Gonçalves João, Willett Denis, Ruhela Amit, Steinmoeller Derek, Mendoza Uriel, Pelumi S. Alao, Ronald Soares Lopes, Rogerio Atem de Carvalho, Mattos Pedro | AIR Centre, Azores, Portugal；North Carolina Institute for Climate Studies The dominant response has been migration to public cloud；Texas Advanced Computing Center (TACC), Copernicus Data Space Ecosystem provides cloud-based access；University of Texas at Austin, USA；University of Waterloo, Waterloo, Ontario, Canada Program (NODD) [1] provides；Laboratorio Nacional de Observación de la Tierra；National Space Research and Development Agency；Instituto Federal Fluminense (IFF), Brazil Azores connect to mainland Europe by a single submarine cable；research data federation; infrastructure procurement；exceed the transfer and storage capacity of most institutional；organisations, but institutions across the Atlantic basin face；depends on the bandwidth of the underlying network fabric, a The model is designed to be replicable: an institution that builds；GbE fabric, a of the first operational Atlantic Cloud node: the AIR Data Centre；We characterise the fabric under sustained parallel load, evaluate serve the AIR Centre’s EO programmes — including an Internal；institutions characterise the federation primitive the model | 设计并评估网络中心化本地架构，解决跨大西洋EO数据访问带宽瓶颈。 | [#1147](https://github.com/thinson/RS-PaperClaw/issues/1147) |
+| [20260820] QUASAR: A Quantum-Classical Neural Network for SAR Satellite Physical-Layer Authentication | Sammartino Vincenzo, Denis Nathanael, Roberto Di Pietro | ∗ University of Pisa, Pisa, Italy；King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia；research avenue for physical-layer authentication | 提出量子-经典神经网络，用于SAR卫星物理层认证，增强安全性。 | [#1148](https://github.com/thinson/RS-PaperClaw/issues/1148) |
+| [20260820] Far from the Crowd: Scalable Self-Supervised Learning via Geographic Isolation | Daniele Rege Cambrin, Rossi Francesco, Varile Mattia | AIKO | 利用地理隔离策略实现可扩展自监督学习，减少标注依赖。 | [#1149](https://github.com/thinson/RS-PaperClaw/issues/1149) |
+
+## 🔎 观察
+
+- 研究侧重数据访问基础设施优化，反映遥感数据量增长带来的传输挑战。
+- 量子计算与自监督学习引入遥感，显示跨学科融合趋势增强。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260819](./202608/20260819.md)
 ## 📌 今日概况
 
@@ -62,40 +94,6 @@ Powered by OpenClaw🦞
 
 - 多传感器融合成为提升遥感反演鲁棒性的主流路径，尤其在地形复杂或天气受限场景。
 - 任务导向的数据压缩评估兴起，强调从下游应用需求出发优化数据链路，而非仅关注保真度。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260817](./202608/20260817.md)
-## 📌 今日概况
-
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感研究聚焦于提升模型在标注数据稀缺条件下的性能，涵盖半监督语义分割、高光谱图像分类与植物性状反演。同时，合成数据增强被用于农业灾害检测，而GNSS拒止环境下的跨平台地理配准问题也得到关注。整体趋势显示，深度学习方法与数据增强策略在遥感应用中持续深化。
-
-## ✨ 今日亮点
-
-- 半监督学习结合特征记忆库，提升遥感分割精度。
-- 光谱转图像策略增强2D-CNN植物性状反演能力。
-- 扩散模型合成数据助力战损农田检测与增强。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260817] Bridging the Gap between Labeled and Unlabeled Data via Unified Flow with Feature Memory Bank | Wang Shanwen, Sun Xin, Hong Danfeng, Dong Junyu, Patrick Le Callet | Faculty of Data Science, City University of Macau,, SAR Macao, China；School of Automation, Southeast University, Nanjing,, China；Department of Computer Science and Technology, Ocean University of China, Qingdao, China；Nantes Université, Ecole Centrale Nantes, CAPACITES SAS, CNRS, LS2 N, UMR, Nantes, France | 提出统一流与特征记忆库，弥合半监督分割中标注与未标注数据差距。 | [#1130](https://github.com/thinson/RS-PaperClaw/issues/1130) |
-| [20260817] Turning spectra into images improves plant trait retrieval with 2D-CNNs | Lopatin Javier, Kattenborn Teja, Cherif Eya, Moreno Sebastián | Center for Climate Resilience Research (CR)2, University of Chile, Santiago, Chile, 8370449；Sensor-based Geoinformatics (geosense), University of Freiburg, Freiburg, Breisgau, Germany；Institute for Earth System Science and Remote Sensing, Leipzig University, Germany | 将光谱数据转为图像格式，利用2D-CNN提升植物性状反演精度。 | [#1131](https://github.com/thinson/RS-PaperClaw/issues/1131) |
-| [20260817] Synthetic Data Augmentation for Satellite-Based Analysis of Battle-Damaged Agricultural Fields in Ukraine | Sumyk Marta, Kosovan Oleksandr, Voitsitska Iryna | Ukrainian Catholic University, Lviv, Ukraine | 采用扩散模型生成合成数据，增强卫星影像中战损农田的检测能力。 | [#1132](https://github.com/thinson/RS-PaperClaw/issues/1132) |
-| [20260817] Marker-Constrained Pose-Graph Correction for Cross-Platform Georeferencing in GNSS-Denied Environments | Giberna Marco, Jose Luis Sanchez Lopez, Voos Holger | Automation and Robotics Research Group, Interdisciplinary Centre for Security, Reliability；and Trust (SnT), University of Luxembourg；Faculty of Science, Technology and Medicine, University of Luxembourg, 4365 | 利用标记约束的位姿图校正，实现GNSS拒止环境下的跨平台地理配准。 | [#1133](https://github.com/thinson/RS-PaperClaw/issues/1133) |
-| [20260817] Convolution-Free Holistic Multivariance Decomposition Layer for Efficient Hyperspectral Image Classification Tensor Networks | Tuna Süha, Başar Ülker | aIstanbul Technical University, Informatics Institute；bIstanbul Esenyurt University, Faculty of Business and Management Sciences；Department of Management Information Systems, Esenyurt, 34517, \.Istanbul, Türkiye | 提出无卷积的多元分解层，基于张量网络高效分类高光谱图像。 | [#1134](https://github.com/thinson/RS-PaperClaw/issues/1134) |
-
-## 🔎 观察
-
-- 半监督与数据增强技术成为应对遥感标注稀缺的主流路径。
-- 张量网络与无卷积设计开始应用于高光谱分类，追求效率与精度平衡。
 
 ---
 
