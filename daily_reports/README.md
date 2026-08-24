@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260821](./202608/20260821.md)
+## 📌 今日概况
+
+今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究聚焦于农业、大气、城市感知、多模态检测及红外小目标检测等方向。农业杂草检测关注跨田域分布偏移下的迁移能力；大气遥感利用ADS-B干涉测量折射率时空变化；城市理解通过时空对齐提升语义感知；多模态检测引入专家引导的特征重校准；红外小目标检测提出相对退化感知网络。整体呈现从单一模态向多模态融合、从静态分析向动态感知发展的趋势。
+
+## ✨ 今日亮点
+
+- 农业杂草检测跨田域泛化能力受关注，无监督域适应成关键。
+- ADS-B干涉测量新方法用于大气折射率时空变化遥感。
+- 多模态检测引入专家引导特征重校准，提升融合精度。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260821] On the Transferability of Agricultural Weed Detection Under Cross-Field Distribution Shift | Prabhakar Nikhilesh, Tenali Pranuthi, Wilfredo Abudeye Fernandez, Borah Shekhar, Karanam Athresh, Blasch Erik, Sundaravadivel Prabha, Natarajan Sriraam | University of Texas at Dallas；University of Texas at Tyler；Air Force Research Lab | 研究农业杂草检测在跨田域分布偏移下的迁移能力，采用无监督域适应方法。 | [#1151](https://github.com/thinson/RS-PaperClaw/issues/1151) |
+| [20260821] Remote sensing of the temporal and spatial variability of atmospheric refractivity using ADS-B interferometry (ADSBi) | Lewis Ollie, Brunt Chris, Kitchen Malcolm, Neill E. Bowler, Edmund K. Stone | Department of Physics and Astronomy, University of Exeter, Exeter, United Kingdom；Institute (KNMI) (de Haan and Stoffelen 2012; de Haan et al | 利用ADS-B干涉测量遥感大气折射率，揭示其时空变异性及湿度关联。 | [#1152](https://github.com/thinson/RS-PaperClaw/issues/1152) |
+| [20260821] CoST: Semantic-Aware Urban Understanding via Spatial-Temporal Alignment | Jiang Yutian, Liu Jiabo, Hao Xixuan, Liang Yuxuan | The Hong Kong University of Science and Technology (Guangzhou) Guangzhou China | 提出CoST模型，通过时空对齐实现卫星影像的语义感知城市理解。 | [#1153](https://github.com/thinson/RS-PaperClaw/issues/1153) |
+| [20260821] SuppreSensing: Expert-Guided Feature Recalibration and Discrepancy Augmentation for Multimodal Object Detection | Wu Xin, Gao Zhenyu, Zhang Qiankun, Guo Shaoyong | Beijing University of Posts and Telecommunications Beijing China | SuppreSensing方法结合专家引导特征重校准与差异增强，提升多模态检测性能。 | [#1154](https://github.com/thinson/RS-PaperClaw/issues/1154) |
+| [20260821] RDANet: Relative Degradation Aware Network for Infrared Small Target Detection | Liu Rui, Nie Jing, Fu Ying | School of Computer Science and Technology, Beijing Institute of Technology, Beijing, China (；School of Information and Electronics, Beijing Institute of Technology, Beijing, China ( | RDANet网络通过相对退化感知与多尺度下采样，增强红外小目标检测能力。 | [#1155](https://github.com/thinson/RS-PaperClaw/issues/1155) |
+
+## 🔎 观察
+
+- 跨域泛化问题在农业遥感中凸显，域适应技术成为提升模型实用性的关键。
+- 多模态融合与专家知识结合，正成为提升遥感目标检测鲁棒性的新方向。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260820](./202608/20260820.md)
 ## 📌 今日概况
 
@@ -61,39 +95,6 @@ Powered by OpenClaw🦞
 
 - 无人机视觉研究从单一模型走向系统评估，注重实际部署性能。
 - SAR检测向跨传感器泛化发展，专家分解成为小样本学习新思路。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260818](./202608/20260818.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日研究聚焦于高分辨率SAR与光学数据的协同应用，涵盖建筑高度估计、云覆盖下的水体分割、雷达数据压缩对目标检测的影响，以及基于卫星图像时间序列的牧场恢复监测。研究趋势显示，深度学习与地理加权方法在遥感任务中持续深化，同时任务导向的数据质量评估受到关注。
-
-## ✨ 今日亮点
-
-- SAR与光学数据互补用于建筑高度估计
-- 云覆盖下SAR与合成NDWI融合分割水体
-- 任务导向评估雷达数据压缩对检测的影响
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260818] Spatially explicit feature importance for building height estimation using research-access high-resolution SAR and optical sensors | Iablonovski Guilherme, Frison Pierre-Louis, Tatiana Silva da Silva | height estimation using research-access highresolution SAR and optical sensors；Université Gustave Eiffel, Géodata 2nd Pierre-Louis Frison 3rd Tatiana Silva da Silva；Paris, IGN, LASTIG, F-77454 Marne- Université Gustave Eiffel, Géodata Programa de Pós-Graduação em；under scientific research licenses, TerraSAR-X StripMap and；no cost through the DLR science program, and PlanetScope；backscatter and InSAR occupy complementary spatial niches, Research Program, which provide medium-high spatial | 利用高分辨率SAR和光学数据，通过空间显式特征重要性提升建筑高度估计精度。 | [#1136](https://github.com/thinson/RS-PaperClaw/issues/1136) |
-| [20260818] Monitoring Pasture Restoration from Satellite Image Time Series: Caveats and Opportunities | Sartorius Linnea, Randahl Isak, Delia Fano Yela, Andersson Georg, Jamali Sadegh, Pirinen Aleksis | Lund University；RISE Research Institutes of Sweden；Swedish Centre for Impacts of Climate Extremes (CLIMES) | 基于卫星图像时间序列监测牧场恢复，探讨了数据和方法中的注意事项与机遇。 | [#1137](https://github.com/thinson/RS-PaperClaw/issues/1137) |
-| [20260818] To Remove or Not to Remove Clouds: A Comparative Analysis and Fusion of Raw SAR and Synthetic NDWI for Overcast Water Segmentation | Saleh Sakib Ahmed, Nowreen Sara, M. Sohel Rahman | Computer Science and Engineering, Bangladesh University of Engineering and Technology, Palashi；Institute of Water and Flood Management, Bangladesh University of Engineering and Technology；or simply process the raw SAR directly? Focusing on water body segmentation, this research addresses this exact | 比较原始SAR与合成NDWI在阴天水体分割中的表现，提出融合策略。 | [#1138](https://github.com/thinson/RS-PaperClaw/issues/1138) |
-| [20260818] Task-Based Evaluation of Raw Radar Data Compression: A Pre-Registered Study of Where Classical Codecs Fail to Preserve Target Detection, and Why | Eric Michael Chrabot | Air Force Research Laboratory (AFRL) Gotcha ground moving；Force Research Laboratory (AFRL) made this point about | 预注册研究评估原始雷达数据压缩对目标检测的影响，揭示经典编解码器的失效原因。 | [#1139](https://github.com/thinson/RS-PaperClaw/issues/1139) |
-
-## 🔎 观察
-
-- 多传感器融合成为提升遥感反演鲁棒性的主流路径，尤其在地形复杂或天气受限场景。
-- 任务导向的数据压缩评估兴起，强调从下游应用需求出发优化数据链路，而非仅关注保真度。
 
 ---
 
