@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260822](./202608/20260822.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦于无人机导航与变化检测数据优化两大方向。AirAlign提出几何感知的相对位姿对齐方法，提升无人机末端导航精度；FDC框架则针对变化检测中的标签噪声问题，通过数据剪枝策略平衡保真度、多样性与一致性，以提升模型训练效率与鲁棒性。两项工作分别从感知定位与数据质量角度推动遥感AI的实用化发展。
+
+## ✨ 今日亮点
+
+- 无人机末端导航引入几何感知特征，提升相对位姿估计精度。
+- 变化检测数据剪枝新框架，兼顾保真度、多样性与一致性。
+- 两项研究分别聚焦感知定位与数据质量优化，应用导向明确。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260822] AirAlign: Geometry-Aware Relative Pose Alignment for UAV Last-Meter Navigation | Zhou Jinyi, Feng Shuo, Wu Yufei, Li Piji | Nanjing University of Aeronautics and Astronautics Nanjing China | AirAlign利用几何感知特征对齐相对位姿，优化无人机最后阶段导航精度。 | [#1157](https://github.com/thinson/RS-PaperClaw/issues/1157) |
+| [20260822] Fidelity-Diversity-Consistency (FDC): Data Pruning for Remote Sensing Change Detection | Zhu Dongyao, Ranga Raju Vatsavai | Department of Computer Science；North Carolina State University；EL2 N K-Center；National AI Research Institutes Competitive Award no. 2023-67021-39829. temporal mismatches [22], introducing substantial label noise | FDC数据剪枝方法通过平衡保真度、多样性与一致性，减少遥感变化检测标签噪声影响。 | [#1158](https://github.com/thinson/RS-PaperClaw/issues/1158) |
+
+## 🔎 观察
+
+- 研究趋势偏向于解决实际部署中的细粒度问题，如末端导航与数据噪声。
+- 数据质量与几何信息利用成为提升遥感模型性能的关键切入点。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260821](./202608/20260821.md)
 ## 📌 今日概况
 
@@ -61,40 +92,6 @@ Powered by OpenClaw🦞
 
 - 研究侧重数据访问基础设施优化，反映遥感数据量增长带来的传输挑战。
 - 量子计算与自监督学习引入遥感，显示跨学科融合趋势增强。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260819](./202608/20260819.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究聚焦无人机视觉感知与SAR目标检测。视觉定位方面，GrabVG引入图注意力机制提升无人机图像定位精度；SLAM与视觉里程计评估研究为高空无人机导航提供基准。SAR领域，SED-FOD通过散射感知专家分解解决跨传感器小样本检测。此外，地理空间机器学习应用于电力线资产风险建模，拓展遥感技术行业落地场景。
-
-## ✨ 今日亮点
-
-- 无人机视觉定位结合图注意力机制，提升目标定位精度。
-- SAR跨传感器小样本检测引入散射感知专家分解。
-- 电力线风险建模集成遥感与地理空间机器学习。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260819] GrabVG: Graph-Attentive Binding for Visual Grounding in UAV Imagery | Wang Chaowei, Di Yan, Sun Jingjun, Liu Baozhe, Tian Jiaxu, Li Yuheng, Guo Guangqian, Gao Shan | Northwestern Polytechnical University；Harbin Institute of Technology；The Hong Kong Polytechnic University | 提出GrabVG，用图注意力绑定提升无人机图像视觉定位性能。 | [#1141](https://github.com/thinson/RS-PaperClaw/issues/1141) |
-| [20260819] SED-FOD: Scattering-Aware Expert Decomposition for Few-Shot Cross-Sensor SAR Object Detection | Yang Shu, Chen Zhen, Jiang Zhiyu, Li Yanlei, Liang Xingdong | the National Key Laboratory of Microwave Imaging Technology, Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China；School of Electronic, Electrical and Communication Engineering, University of Chinese Academy of Sciences, Beijing, China | SED-FOD通过散射感知专家分解，实现跨传感器SAR小样本检测。 | [#1142](https://github.com/thinson/RS-PaperClaw/issues/1142) |
-| [20260819] Evaluation of Monocular SLAM Systems on High-Altitude Nadir UAV Footage | Spagnolo Gašper, Dobrevski Matej, Skočaj Danijel | Faculty of Computer and Information Science, University of Ljubljana, Večna pot 113, Ljubljana, Slovenia | 评估单目SLAM在高空正射无人机视频上的表现，提供基准。 | [#1143](https://github.com/thinson/RS-PaperClaw/issues/1143) |
-| [20260819] Evaluation of Image Matching Methods for Visual Odometry on UAVs | Spagnolo Gašper, Luka Čehovin Zajc, Dobrevski Matej | Faculty of Computer and Information Science, University of Ljubljana | 对比多种图像匹配方法用于无人机视觉里程计，分析性能差异。 | [#1144](https://github.com/thinson/RS-PaperClaw/issues/1144) |
-| [20260819] Scalable Geospatial Machine Learning for Power-Line Asset Risk: Integrating Remote Sensing for Lightning and Vegetation Risk Modelling | Sokolovsky Artur, Merai Bhavik, Jafari Moe, Chen Muen | SA Power Networks | 利用遥感与机器学习对电力线雷击和植被风险进行可扩展建模。 | [#1145](https://github.com/thinson/RS-PaperClaw/issues/1145) |
-
-## 🔎 观察
-
-- 无人机视觉研究从单一模型走向系统评估，注重实际部署性能。
-- SAR检测向跨传感器泛化发展，专家分解成为小样本学习新思路。
 
 ---
 
