@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260823](./202608/20260823.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦于多模态大语言模型在遥感图像理解中的应用，提出基于热扩散的语义感知分词方法；同时，光学卫星影像配准通过自校准稠密位移场提升可靠性；低空无人机视觉定位则借助深度引导的共视推理增强匹配精度。整体趋势显示，语义理解与几何配准并重，多模态融合与深度信息利用成为提升性能的关键。
+
+## ✨ 今日亮点
+
+- 热扩散分词提升遥感图像语义理解
+- 自校准位移场优化大影像配准
+- 深度引导共视推理增强无人机定位
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260823] HeatTok: Enhancing Remote Sensing Image Understanding via Thermodiffusion-based Tokenization | Yan Yingying, Tang Jiaqi, Wei Wei, Wang Qianzhou, Wu Jinjian, Geng Botong, Chen Jianmin, Xia Yuyang, Zhang Lei | Northwestern Polytechnical Hong Kong University of Science and Northwestern Polytechnical；University Technology University；University University University | 提出热扩散分词方法，增强多模态大模型对遥感图像的语义理解。 | [#1160](https://github.com/thinson/RS-PaperClaw/issues/1160) |
+| [20260823] Self-Calibrating Dense Displacement Fields for Reliable Co-Registration of Large Optical Satellite Imagery | Sun Shoukun, Wang Zhe, Salati Sanaz, Zhang Jiyin, Wang Hui, Ma Xiaogang | Department of Computer Science, University of Idaho, Moscow, ID USA (；the National Center for Ecological Analysis and Synthesis (NCEAS), University of California, Santa Barbara, CA USA (；Research Computing and Data Services (RCDS), University of Idaho, Moscow, ID USA (；Department of Geography and Planning, Appalachian State University, Boone, NC USA ( | 自校准稠密位移场实现大型光学卫星影像的可靠配准。 | [#1161](https://github.com/thinson/RS-PaperClaw/issues/1161) |
+| [20260823] DECO: Depth-Guided Co-Visibility Reasoning for Low-Altitude UAV Visual Localization | Ye Yibin, Teng Xichao, Chen Shuo, Song Xiaokai, Guan Dongdong, Yu Qifeng, Li Zhang | College of Aerospace Science and Engineering, National University of Defense Technology, Changsha 410073, China | 深度引导共视推理提升低空无人机视觉定位的准确性。 | [#1162](https://github.com/thinson/RS-PaperClaw/issues/1162) |
+
+## 🔎 观察
+
+- 语义感知分词与深度信息结合，反映多模态与几何先验融合趋势。
+- 自校准机制与共视推理均强调鲁棒性，应对复杂遥感场景挑战。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260822](./202608/20260822.md)
 ## 📌 今日概况
 
@@ -60,38 +92,6 @@ Powered by OpenClaw🦞
 
 - 跨域泛化问题在农业遥感中凸显，域适应技术成为提升模型实用性的关键。
 - 多模态融合与专家知识结合，正成为提升遥感目标检测鲁棒性的新方向。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260820](./202608/20260820.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦于数据基础设施与安全认证两大方向。一是提出网络中心化的本地部署架构，以应对跨大西洋机构在EO数据访问中的带宽与存储瓶颈，强调可复制性与联邦化。二是探索量子-经典神经网络用于SAR卫星物理层认证，提升信号安全性。三是通过地理隔离策略改进自监督学习，实现可扩展的遥感表征学习，减少对大规模标注数据的依赖。
-
-## ✨ 今日亮点
-
-- 本地化EO数据架构强调网络中心设计，可复制性强。
-- 量子-经典网络为SAR物理层认证提供新思路。
-- 地理隔离自监督学习提升遥感表征可扩展性。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260820] Design and Empirical Evaluation of a Network-Centric, On-Premises Architecture for Earth Observation Data Access | Pinelo João, Gonçalves João, Willett Denis, Ruhela Amit, Steinmoeller Derek, Mendoza Uriel, Pelumi S. Alao, Ronald Soares Lopes, Rogerio Atem de Carvalho, Mattos Pedro | AIR Centre, Azores, Portugal；North Carolina Institute for Climate Studies The dominant response has been migration to public cloud；Texas Advanced Computing Center (TACC), Copernicus Data Space Ecosystem provides cloud-based access；University of Texas at Austin, USA；University of Waterloo, Waterloo, Ontario, Canada Program (NODD) [1] provides；Laboratorio Nacional de Observación de la Tierra；National Space Research and Development Agency；Instituto Federal Fluminense (IFF), Brazil Azores connect to mainland Europe by a single submarine cable；research data federation; infrastructure procurement；exceed the transfer and storage capacity of most institutional；organisations, but institutions across the Atlantic basin face；depends on the bandwidth of the underlying network fabric, a The model is designed to be replicable: an institution that builds；GbE fabric, a of the first operational Atlantic Cloud node: the AIR Data Centre；We characterise the fabric under sustained parallel load, evaluate serve the AIR Centre’s EO programmes — including an Internal；institutions characterise the federation primitive the model | 设计并评估网络中心化本地架构，解决跨大西洋EO数据访问带宽瓶颈。 | [#1147](https://github.com/thinson/RS-PaperClaw/issues/1147) |
-| [20260820] QUASAR: A Quantum-Classical Neural Network for SAR Satellite Physical-Layer Authentication | Sammartino Vincenzo, Denis Nathanael, Roberto Di Pietro | ∗ University of Pisa, Pisa, Italy；King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia；research avenue for physical-layer authentication | 提出量子-经典神经网络，用于SAR卫星物理层认证，增强安全性。 | [#1148](https://github.com/thinson/RS-PaperClaw/issues/1148) |
-| [20260820] Far from the Crowd: Scalable Self-Supervised Learning via Geographic Isolation | Daniele Rege Cambrin, Rossi Francesco, Varile Mattia | AIKO | 利用地理隔离策略实现可扩展自监督学习，减少标注依赖。 | [#1149](https://github.com/thinson/RS-PaperClaw/issues/1149) |
-
-## 🔎 观察
-
-- 研究侧重数据访问基础设施优化，反映遥感数据量增长带来的传输挑战。
-- 量子计算与自监督学习引入遥感，显示跨学科融合趋势增强。
 
 ---
 
