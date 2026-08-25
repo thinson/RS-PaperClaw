@@ -2,6 +2,44 @@
 
 最近三天日报（最新在前）：
 
+# [20260824](./202608/20260824.md)
+## 📌 今日概况
+
+今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
+
+今日遥感AI研究聚焦于多源数据融合与智能解译，涵盖海洋水色、贫困制图、无人机巡检及通信感知一体化。机器学习方法在色素估算、不确定性量化及图像增强中应用突出，同时无人机自主性与协同计算成为热点，体现了从数据到决策的智能化趋势。
+
+## ✨ 今日亮点
+
+- 机器学习提升海洋色素估算精度
+- 不确定性量化增强贫困制图可靠性
+- 无人机巡检结合视觉语言模型创新
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260824] Beyond chlorophyll: machine learning estimates of diagnostic phytoplankton pigments from multispectral ocean colour data | Moffat David, Laurenson Angus, Martinez-Vicente Victor, Kulk Gemma, Sun Xuerong, Robert J. W. Brewin, Sathyendranath Shubha | Plymouth Marine Laboratory, Plymouth, UK；National Center for Earth Observation, Plymouth Marine Laboratory, UK；Department of Earth and Environmental Sciences, Centre for Geography and；Environmental Science, University of Exeter, Cornwall, United Kingdom | 利用机器学习从多光谱海洋水色数据估算诊断性浮游植物色素，超越传统叶绿素方法。 | [#1164](https://github.com/thinson/RS-PaperClaw/issues/1164) |
+| [20260824] Beyond Point Predictions: Uncertainty-Aware Satellite Poverty Mapping for Public Policy | Markus B. Pettersson, Bailie James, Kakooei Mohammad, Meng Eagon, Daoud Adel | Division of Data Science and AI, Department of Computer Science and Engineering；Chalmers University of Technology and the University of Gothenburg, Gothenburg；Institute for Analytical Sociology, Linköping University, Norrköping, Sweden；AI & Global Development Lab, Linköping University, Norrköping, Sweden；Geomatics, Department of Environmental and Life Sciences, Karlstad University；Department of Electrical Engineering and Computer Science, Massachusetts；Institute of Technology, Cambridge, Massachusetts, USA；Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of；Despite their critical importance for policy and research, high-resolution | 提出不确定性感知的卫星贫困制图方法，结合保形预测为公共政策提供可靠支持。 | [#1165](https://github.com/thinson/RS-PaperClaw/issues/1165) |
+| [20260824] Dual-Orthogonality Waveforms for Integrated Communication and Imaging in Dynamic Multipath Channels | Talignani Edoardo, Linsalata Francesco, Musa Furkan Keskin, Scazzoli Davide, Pourafzal Alireza, Mohammad Mahdi Mojahedian, Wymeersch Henk | Department of Electrical Engineering, Chalmers University of Technology, Gothenburg, Sweden ( | 设计双正交波形用于动态多径信道中的通信与成像集成，提升感知性能。 | [#1166](https://github.com/thinson/RS-PaperClaw/issues/1166) |
+| [20260824] Leveraging UAV Autonomy for Minimum 4D Flight Authorization Volumes | Vitale Christian, Grigoriou Yiannis, Kolios Panayiotis, Ellinas Georgios | Department of Electrical and Computer Engineering and the KIOS Research and Innovation Center of Excellence (KIOS CoE), University of Cyprus, Nicosia, Cyprus；Department of Computer Science and the KIOS CoE, University of Cyprus | 利用无人机自主性生成最小4D飞行授权体积，优化空域资源利用。 | [#1167](https://github.com/thinson/RS-PaperClaw/issues/1167) |
+| [20260824] Bridge Damage Detection from Low-Light UAV Imagery via Degradation-Aware Mixture-of-Experts Enhancement | Wang Hu, Pu Hongxu, Hu Zhiqi, Lin Fangzhou, Wang Wang | School of Computer Science and Engineering, University of Electronic Science and Technology of China；Sustainability X-Lab, The University of Hong Kong；School of Architecture, Building, and Civil Engineering, Loughborough University；Department of Engineering Science, University of Oxford；Department of Civil and Environmental Engineering, The Hong Kong University of Science and Technology | 提出退化感知的混合专家模型，增强低光无人机图像以辅助桥梁损伤检测。 | [#1168](https://github.com/thinson/RS-PaperClaw/issues/1168) |
+| [20260824] Distributed Trajectory Planning and Resource Allocation for Dynamic Multi-UAV Collaborative Computing | Zhang Tiankui, Xu Wenlong, Shi Tianyi, Xu Xiaoxia, Nallanathan Arumugam | School of Information and Communication Engineering, Beijing University of Posts and Telecommunications, Beijing, China (；School of Electronic Engineering and Computer Science, Queen Mary University of London, E1 4 NS London, U.K. (；School of Electronic Engineering and Computer Science, Queen Mary University of London, London；Department of Electronic Engineering, Kyung Hee University, Yongin-si, Gyeonggi-do, Korea ( | 基于Stackelberg博弈实现多无人机协同计算中的分布式轨迹规划与资源分配。 | [#1169](https://github.com/thinson/RS-PaperClaw/issues/1169) |
+| [20260824] SAVER: Selective Auditing of Verbal Evidence for Error Recovery in VLM Change Reasoning | Li Youdi | Panasonic Connect Co., Ltd. | 提出SAVER方法，通过选择性审计言语证据来纠正视觉语言模型的变更推理错误。 | [#1170](https://github.com/thinson/RS-PaperClaw/issues/1170) |
+| [20260824] Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion | Lin Chia-Hsiang, Huang Jian-Kai, Young Si-Sheng, Zheng Wei-Cheng | Department of Electrical Engineering, National Cheng Kung University (NCKU), Tainan, Taiwan (R.O.C.) (；Institute of Computer and Communication Engineering, Department of Electrical Engineering, National Cheng Kung University (NCKU), Tainan, Taiwan (R.O.C.) ( | 开发可解释的Landsat到高光谱双超分辨率网络，避免大矩阵求逆，提升效率。 | [#1171](https://github.com/thinson/RS-PaperClaw/issues/1171) |
+| [20260824] RACO: Reliability-Aware Coarse-Goal Optimization for Inspection-Oriented UAV Vision-Language Navigation | Wang Sen, Sun Yiming, He Jiaxuan, Zhu Pengfei | School of Automation, Southeast University, Nanjing, China；School of Science and the School of Engineering；The Hong Kong University of Science and Technology, Hong Kong | 提出可靠性感知的粗粒度目标优化，用于面向巡检的无人机视觉语言导航。 | [#1172](https://github.com/thinson/RS-PaperClaw/issues/1172) |
+
+## 🔎 观察
+
+- 机器学习与不确定性量化结合成为遥感应用新趋势，提升决策可靠性。
+- 无人机技术向自主化、协同化发展，融合视觉语言模型拓展巡检能力。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260823](./202608/20260823.md)
 ## 📌 今日概况
 
@@ -58,40 +96,6 @@ Powered by OpenClaw🦞
 
 - 研究趋势偏向于解决实际部署中的细粒度问题，如末端导航与数据噪声。
 - 数据质量与几何信息利用成为提升遥感模型性能的关键切入点。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260821](./202608/20260821.md)
-## 📌 今日概况
-
-今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究聚焦于农业、大气、城市感知、多模态检测及红外小目标检测等方向。农业杂草检测关注跨田域分布偏移下的迁移能力；大气遥感利用ADS-B干涉测量折射率时空变化；城市理解通过时空对齐提升语义感知；多模态检测引入专家引导的特征重校准；红外小目标检测提出相对退化感知网络。整体呈现从单一模态向多模态融合、从静态分析向动态感知发展的趋势。
-
-## ✨ 今日亮点
-
-- 农业杂草检测跨田域泛化能力受关注，无监督域适应成关键。
-- ADS-B干涉测量新方法用于大气折射率时空变化遥感。
-- 多模态检测引入专家引导特征重校准，提升融合精度。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260821] On the Transferability of Agricultural Weed Detection Under Cross-Field Distribution Shift | Prabhakar Nikhilesh, Tenali Pranuthi, Wilfredo Abudeye Fernandez, Borah Shekhar, Karanam Athresh, Blasch Erik, Sundaravadivel Prabha, Natarajan Sriraam | University of Texas at Dallas；University of Texas at Tyler；Air Force Research Lab | 研究农业杂草检测在跨田域分布偏移下的迁移能力，采用无监督域适应方法。 | [#1151](https://github.com/thinson/RS-PaperClaw/issues/1151) |
-| [20260821] Remote sensing of the temporal and spatial variability of atmospheric refractivity using ADS-B interferometry (ADSBi) | Lewis Ollie, Brunt Chris, Kitchen Malcolm, Neill E. Bowler, Edmund K. Stone | Department of Physics and Astronomy, University of Exeter, Exeter, United Kingdom；Institute (KNMI) (de Haan and Stoffelen 2012; de Haan et al | 利用ADS-B干涉测量遥感大气折射率，揭示其时空变异性及湿度关联。 | [#1152](https://github.com/thinson/RS-PaperClaw/issues/1152) |
-| [20260821] CoST: Semantic-Aware Urban Understanding via Spatial-Temporal Alignment | Jiang Yutian, Liu Jiabo, Hao Xixuan, Liang Yuxuan | The Hong Kong University of Science and Technology (Guangzhou) Guangzhou China | 提出CoST模型，通过时空对齐实现卫星影像的语义感知城市理解。 | [#1153](https://github.com/thinson/RS-PaperClaw/issues/1153) |
-| [20260821] SuppreSensing: Expert-Guided Feature Recalibration and Discrepancy Augmentation for Multimodal Object Detection | Wu Xin, Gao Zhenyu, Zhang Qiankun, Guo Shaoyong | Beijing University of Posts and Telecommunications Beijing China | SuppreSensing方法结合专家引导特征重校准与差异增强，提升多模态检测性能。 | [#1154](https://github.com/thinson/RS-PaperClaw/issues/1154) |
-| [20260821] RDANet: Relative Degradation Aware Network for Infrared Small Target Detection | Liu Rui, Nie Jing, Fu Ying | School of Computer Science and Technology, Beijing Institute of Technology, Beijing, China (；School of Information and Electronics, Beijing Institute of Technology, Beijing, China ( | RDANet网络通过相对退化感知与多尺度下采样，增强红外小目标检测能力。 | [#1155](https://github.com/thinson/RS-PaperClaw/issues/1155) |
-
-## 🔎 观察
-
-- 跨域泛化问题在农业遥感中凸显，域适应技术成为提升模型实用性的关键。
-- 多模态融合与专家知识结合，正成为提升遥感目标检测鲁棒性的新方向。
 
 ---
 
