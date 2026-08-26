@@ -2,6 +2,43 @@
 
 最近三天日报（最新在前）：
 
+# [20260825](./202608/20260825.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+
+今日遥感AI研究聚焦于月球南极微生物生存潜力、云掩膜超分辨率、城市语义分割、卫星调度优化、无人机通信安全及变化检测数据合成等方向。深度学习与强化学习技术被广泛应用于提升遥感任务效率与精度，同时探索星上计算与联邦学习等新兴范式。
+
+## ✨ 今日亮点
+
+- 月球南极微生物生存潜力受关注
+- 强化学习优化卫星调度成热点
+- 知识引导数据合成助力变化检测
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260825] Potential survivable niches for microbial life on the lunar south pole | Saxena Prabal, Bertone Stefano, Heather V. Graham, Natalie M. Curran, Aaron B. Regberg, Needham Andrew, E. D., Pugel, Noah E. Petro | NASA Goddard Space Flight Center, Greenbelt, MD 20771, USA；University of Maryland, CRESST II, College Park, MD 20742, USA；Catholic University of America, CRESST II, Washington, DC 20064, USA；NASA Johnson Space Center, Houston, TX 77058, USA；National Institute for Astrophysics (INAF), Astrophysical Observatory of Turin | 评估月球南极地形对紫外辐射遮蔽，寻找微生物潜在生存区域 | [#1174](https://github.com/thinson/RS-PaperClaw/issues/1174) |
+| [20260825] Deep Learning Super Resolution for Satellite Cloud Mask Downscaling | Georgakis Angelos, Kanaki Valentina, Giannopoulos Giorgos, Girtsou Stella, Kontogiorgakis Ioannis, Kontoes Charalampos, Philippopoulos Kostas | ∗ BEYOND EO Centre, IAASARS, National Observatory of Athens, Athens, Greece；National and Kapodistrian University of Athens, Faculty of Physics, Section of Environmental Physics and Meteorology；emerged as a central field of research, with crucial impli- | 利用深度学习超分辨率技术提升卫星云掩膜空间分辨率 | [#1175](https://github.com/thinson/RS-PaperClaw/issues/1175) |
+| [20260825] EVEREST:Endogenous Vision-Language Reinforcement Reasoning Exploration for Urban Socio-Semantic Segmentation | Li Qixiu, He Zhongzhi, Zhu Xiang, Li Xiaoyong, Lin Jiarun, Xu Weifeng | National University of Defense Technology；Changchun University of Science and Technology | 提出内生视觉语言强化推理框架用于城市社会语义分割 | [#1176](https://github.com/thinson/RS-PaperClaw/issues/1176) |
+| [20260825] Implicit Q-learning-bootstrapped ant colony optimization for maritime moving-target observation scheduling with agile satellites | Wang He, Wu Junyu, Liu Yeye, Zhou Yifan, Zhang Jie, Li Hui, Song Yanjie, Li Liang | College of Intelligent Science and Engineering, Harbin Engineering University, Harbin 150001, China；School of Electrical and Control Engineering, North University of China, Taiyuan 030051, China；School of Information Science and Technology, Dalian Maritime University, Dalian 116026, China | 结合隐式Q学习与蚁群优化解决海上动目标卫星观测调度 | [#1177](https://github.com/thinson/RS-PaperClaw/issues/1177) |
+| [20260825] Reinforcement Learning-Guided Evolutionary Policy Optimization for Preference-Adjustable Heterogeneous Agile Earth Observation Satellite Scheduling | Wang He, Wu Junyu, Li Hui, Song Yanjie, Pedrycz Witold, Li Liang | College of Intelligent Science and Engineering, Harbin Engineering University, Harbin, China (；School of Information Science and Technology, Dalian Maritime University, Dalian, China( | 强化学习引导进化算法实现偏好可调的异构卫星调度 | [#1178](https://github.com/thinson/RS-PaperClaw/issues/1178) |
+| [20260825] Resource Allocation for Secure Dual-UAV-Assisted ISAC System | Lei Hongjiang, Geng Jianshuo, Park Ki-Hong, Ye Jia, Yang Liang, Miao Xiaqing, Pan Gaofeng | School of Communications and Information Engineering, Chongqing University of Posts and Telecommunications, Chongqing, China (；the CEMSE Division, King Abdullah University of Science and Technology (KAUST), Thuwal -, Saudi Arabia (；State Key Laboratory of Power Transmission Equipment Technology, School of Electrical Engineering, Chongqing University, Chongqing, China (；College of Computer Science and Electronic Engineering, Hunan University, Changsha, China；School of Information Engineering, Changsha Medical University, Changsha, China. (；School of Cyberspace Science and Technology, Beijing Institute of Technology, Beijing, China ( | 研究双无人机辅助通感一体化系统的安全资源分配与轨迹优化 | [#1179](https://github.com/thinson/RS-PaperClaw/issues/1179) |
+| [20260825] Real-World Knowledge-Guided Change Data Synthesis for Remote Sensing | Qi Yaoyi, Weng Xingxing, Pang Chao, Cui Yongkang, Hao Xiangyu, Zhang Xiaokang, Zhu Guibo, Xia Gui-Song | School of Artificial Intelligence, Wuhan University；Wuhan AI Research；Institute of Automation, University of Chinese Academy of Sciences；Institute for Math \& AI, Wuhan | 利用真实世界知识引导合成遥感变化数据以提升检测性能 | [#1180](https://github.com/thinson/RS-PaperClaw/issues/1180) |
+| [20260825] ORBITALIF: An Efficient Spiking Federated Learning Framework for Onboard Cloud Removal | Zhang Bohan, Xu Chenyu, Mao Yijie, Shi Yuanming | School of Information Science and Technology, ShanghaiTech University, Shanghai, China | 提出脉冲联邦学习框架用于星上云去除，兼顾效率与隐私 | [#1181](https://github.com/thinson/RS-PaperClaw/issues/1181) |
+
+## 🔎 观察
+
+- 强化学习在卫星调度与路径规划中应用增多，体现智能决策趋势
+- 知识引导与数据合成方法兴起，缓解遥感标注数据稀缺问题
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260824](./202608/20260824.md)
 ## 📌 今日概况
 
@@ -65,37 +102,6 @@ Powered by OpenClaw🦞
 
 - 语义感知分词与深度信息结合，反映多模态与几何先验融合趋势。
 - 自校准机制与共视推理均强调鲁棒性，应对复杂遥感场景挑战。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260822](./202608/20260822.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦于无人机导航与变化检测数据优化两大方向。AirAlign提出几何感知的相对位姿对齐方法，提升无人机末端导航精度；FDC框架则针对变化检测中的标签噪声问题，通过数据剪枝策略平衡保真度、多样性与一致性，以提升模型训练效率与鲁棒性。两项工作分别从感知定位与数据质量角度推动遥感AI的实用化发展。
-
-## ✨ 今日亮点
-
-- 无人机末端导航引入几何感知特征，提升相对位姿估计精度。
-- 变化检测数据剪枝新框架，兼顾保真度、多样性与一致性。
-- 两项研究分别聚焦感知定位与数据质量优化，应用导向明确。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260822] AirAlign: Geometry-Aware Relative Pose Alignment for UAV Last-Meter Navigation | Zhou Jinyi, Feng Shuo, Wu Yufei, Li Piji | Nanjing University of Aeronautics and Astronautics Nanjing China | AirAlign利用几何感知特征对齐相对位姿，优化无人机最后阶段导航精度。 | [#1157](https://github.com/thinson/RS-PaperClaw/issues/1157) |
-| [20260822] Fidelity-Diversity-Consistency (FDC): Data Pruning for Remote Sensing Change Detection | Zhu Dongyao, Ranga Raju Vatsavai | Department of Computer Science；North Carolina State University；EL2 N K-Center；National AI Research Institutes Competitive Award no. 2023-67021-39829. temporal mismatches [22], introducing substantial label noise | FDC数据剪枝方法通过平衡保真度、多样性与一致性，减少遥感变化检测标签噪声影响。 | [#1158](https://github.com/thinson/RS-PaperClaw/issues/1158) |
-
-## 🔎 观察
-
-- 研究趋势偏向于解决实际部署中的细粒度问题，如末端导航与数据噪声。
-- 数据质量与几何信息利用成为提升遥感模型性能的关键切入点。
 
 ---
 
