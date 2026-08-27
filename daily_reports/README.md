@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260826](./202608/20260826.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦于智能预测、视觉语言模型适配及无人机图像分割。行星预测引擎结合基础模型嵌入实现自主地理空间预测；半监督CLIP适配提升图像分类效率；零样本分割方法针对复杂无人机影像中的通信塔组件识别。整体趋势显示，模型正从单一任务向多模态融合与自动化演进。
+
+## ✨ 今日亮点
+
+- 自主地理空间预测引擎集成基础模型嵌入，提升预测智能化水平。
+- 半监督CLIP适配方法减少标注依赖，增强场景分类泛化能力。
+- 零样本分割结合显著性深度条件，攻克无人机影像复杂目标识别。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260826] Planetary Prediction Engine: Autonomous Geospatial Prediction via Intelligent Data Selection and Foundation Model Embeddings | Ma Evelyn, Rama Kumar Pasumarthi, Shafin Kishwar, Sharma Mandar, Sun Mimi, Sadeghi Hamed, Dav M. Ebengo, Onesime Mbulayi, Solomakhin Rouslan, Wamburu John, Ogallo William, Walcott-Bryant Aisha, Chen Sanxing, Muslim Arbaaz, Mayer Yael, Ho Ronald, Lee Roy, Alcantara Ruth, Diack Abdoulaye, ..., Shetty Shravya | Google Research；Institut National de Recherche Biomédicale, Democratic Republic of Congo | 提出行星预测引擎，通过智能数据选择和基础模型嵌入实现自主地理空间预测。 | [#1183](https://github.com/thinson/RS-PaperClaw/issues/1183) |
+| [20260826] Semi-Supervised Adaptation of Vision-Language Models for Image Classification | Mohamed L. Mekhalfi, Mohamad M. Al Rahhal, Bazi Yakoub, Salah E. Khenfer, Shi Mingdeng, Zou Hua, Zuair Mansour | the Applied Computer Science Department, College of Applied Computer Science, King Saud University,, Riyadh, Saudi Arabia；the Computer Engineering Department, College of Computer and Information Sciences, King Saud University,, Riyadh, Saudi Arabia；the Key Laboratory of Tarim Oasis Agriculture, College of Information Engineering, Tarim University, Aral, China；School of Computer Science, Wuhan University,, Wuhan, China | 采用半监督方式适配视觉语言模型，提升图像分类性能并降低标注成本。 | [#1184](https://github.com/thinson/RS-PaperClaw/issues/1184) |
+| [20260826] Saliency-Depth Conditioning for Zero-Shot Segmentation of Communication-Tower Components in Cluttered UAV Imagery | Lesani Ali, Chul Min Yeum, Kang Su-Min | Computer Vision for Smart Structures (CViSS) Lab, Waterloo, Canada；University of Waterloo, Waterloo, Canada；School of Architecture, Soongsil University, Seoul, South Korea | 利用显著性深度条件引导零样本分割，准确识别无人机图像中的通信塔组件。 | [#1185](https://github.com/thinson/RS-PaperClaw/issues/1185) |
+
+## 🔎 观察
+
+- 基础模型嵌入正成为地理空间预测的核心，推动AI系统向自主化发展。
+- 半监督与零样本技术受关注，旨在缓解遥感领域标注数据稀缺问题。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260825](./202608/20260825.md)
 ## 📌 今日概况
 
@@ -70,38 +102,6 @@ Powered by OpenClaw🦞
 
 - 机器学习与不确定性量化结合成为遥感应用新趋势，提升决策可靠性。
 - 无人机技术向自主化、协同化发展，融合视觉语言模型拓展巡检能力。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260823](./202608/20260823.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦于多模态大语言模型在遥感图像理解中的应用，提出基于热扩散的语义感知分词方法；同时，光学卫星影像配准通过自校准稠密位移场提升可靠性；低空无人机视觉定位则借助深度引导的共视推理增强匹配精度。整体趋势显示，语义理解与几何配准并重，多模态融合与深度信息利用成为提升性能的关键。
-
-## ✨ 今日亮点
-
-- 热扩散分词提升遥感图像语义理解
-- 自校准位移场优化大影像配准
-- 深度引导共视推理增强无人机定位
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260823] HeatTok: Enhancing Remote Sensing Image Understanding via Thermodiffusion-based Tokenization | Yan Yingying, Tang Jiaqi, Wei Wei, Wang Qianzhou, Wu Jinjian, Geng Botong, Chen Jianmin, Xia Yuyang, Zhang Lei | Northwestern Polytechnical Hong Kong University of Science and Northwestern Polytechnical；University Technology University；University University University | 提出热扩散分词方法，增强多模态大模型对遥感图像的语义理解。 | [#1160](https://github.com/thinson/RS-PaperClaw/issues/1160) |
-| [20260823] Self-Calibrating Dense Displacement Fields for Reliable Co-Registration of Large Optical Satellite Imagery | Sun Shoukun, Wang Zhe, Salati Sanaz, Zhang Jiyin, Wang Hui, Ma Xiaogang | Department of Computer Science, University of Idaho, Moscow, ID USA (；the National Center for Ecological Analysis and Synthesis (NCEAS), University of California, Santa Barbara, CA USA (；Research Computing and Data Services (RCDS), University of Idaho, Moscow, ID USA (；Department of Geography and Planning, Appalachian State University, Boone, NC USA ( | 自校准稠密位移场实现大型光学卫星影像的可靠配准。 | [#1161](https://github.com/thinson/RS-PaperClaw/issues/1161) |
-| [20260823] DECO: Depth-Guided Co-Visibility Reasoning for Low-Altitude UAV Visual Localization | Ye Yibin, Teng Xichao, Chen Shuo, Song Xiaokai, Guan Dongdong, Yu Qifeng, Li Zhang | College of Aerospace Science and Engineering, National University of Defense Technology, Changsha 410073, China | 深度引导共视推理提升低空无人机视觉定位的准确性。 | [#1162](https://github.com/thinson/RS-PaperClaw/issues/1162) |
-
-## 🔎 观察
-
-- 语义感知分词与深度信息结合，反映多模态与几何先验融合趋势。
-- 自校准机制与共视推理均强调鲁棒性，应对复杂遥感场景挑战。
 
 ---
 
