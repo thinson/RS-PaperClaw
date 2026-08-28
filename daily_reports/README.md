@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260827](./202608/20260827.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究聚焦于高分辨率影像的精细目标识别、基础模型的时间敏感性分析、自监督扩散模型在高光谱图像修复中的应用、SAR差分相位保持的深度展开网络，以及基于损失对齐的零样本木本清除检测。这些工作展示了深度学习方法在遥感数据解译中的多样化应用，并强调了模型泛化能力与物理约束的融合。
+
+## ✨ 今日亮点
+
+- 高分辨率影像圣诞树种植园检测结合硬负挖掘。
+- Tessera嵌入时间敏感性分析助力土地覆盖制图。
+- 自监督扩散框架实现高光谱图像修复无需预训练。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260827] Detection of Christmas tree plantations from high-resolution aerial imagery. A case study in the French Morvan | Razzano Francesca, Dalsasso Emanuele, Baysse-Lainé Adrien, Silvia Liberata Ullo, Schirinzi Gilda, Chanussot Jocelyn | Engineering Department, University of Naples Parthenope, Naples, Italy；the Engineering Department, University of Sannio, Benevento, Italy；CNRS Délégation Alpes: Grenoble, Auvergne-Rhône-Alpes, France | 利用高分辨率航拍影像和语义分割检测法国莫尔万圣诞树种植园。 | [#1187](https://github.com/thinson/RS-PaperClaw/issues/1187) |
+| [20260827] Temporal Sensitivity Analysis of Tessera Embeddings | Guerrero-Viu Julia, López-Cifuentes Alex, Pérez-Villar Ignacio, Pacifici Fabio | Universidad de Zaragoza；University of California；AI Center, RMS | 评估Tessera嵌入对时间变化的敏感性，用于土地覆盖分类。 | [#1188](https://github.com/thinson/RS-PaperClaw/issues/1188) |
+| [20260827] Hyperspectral Diffusion Equivariant Imaging (HyDiff-EI): A Self-supervised Framework for Hyperspectral Image Inpainting | Li Shuo, Davies Mike, Yaghoobi Mehrdad | Institute for Digital Communications, School of self-supervised diffusion framework and does not require pre- Engineering, University of Edinburgh；School of Engineering, University of Edinburgh. remote sensing or RGB datasets；School of Engineering, University of Edinburgh | 提出自监督扩散等变成像框架，实现高光谱图像修复。 | [#1189](https://github.com/thinson/RS-PaperClaw/issues/1189) |
+| [20260827] DP-JMRNet: A Deep Unfolding Network for Differential Phase Preservation in Sparse Bitemporal SAR Reconstruction | Bao Juncheng, Zhang Zhen, George P. Petropoulos | College of Information Science and Engineering, Hohai University, Changzhou, China (；Department of Geography, Harokopio University of Athens, Athens, Greece ( | 深度展开网络DP-JMRNet保持稀疏双时相SAR差分相位。 | [#1190](https://github.com/thinson/RS-PaperClaw/issues/1190) |
+| [20260827] Learning Woody Clearing With Loss Alignment for Zero-Shot Regrowth and Woody Segmentation | Backman Kal, Wood Jared, Roff Adam | the New South Wales Department of Climate Change, Energy, the Environment and Water, Parramatta,, NSW, Australia | 损失对齐实现零样本木本清除检测与再生长分割。 | [#1191](https://github.com/thinson/RS-PaperClaw/issues/1191) |
+
+## 🔎 观察
+
+- 自监督与零样本方法兴起，减少对标注数据依赖。
+- 物理约束（如相位保持）与深度网络结合成趋势。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260826](./202608/20260826.md)
 ## 📌 今日概况
 
@@ -64,44 +98,6 @@ Powered by OpenClaw🦞
 
 - 强化学习在卫星调度与路径规划中应用增多，体现智能决策趋势
 - 知识引导与数据合成方法兴起，缓解遥感标注数据稀缺问题
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260824](./202608/20260824.md)
-## 📌 今日概况
-
-今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
-
-今日遥感AI研究聚焦于多源数据融合与智能解译，涵盖海洋水色、贫困制图、无人机巡检及通信感知一体化。机器学习方法在色素估算、不确定性量化及图像增强中应用突出，同时无人机自主性与协同计算成为热点，体现了从数据到决策的智能化趋势。
-
-## ✨ 今日亮点
-
-- 机器学习提升海洋色素估算精度
-- 不确定性量化增强贫困制图可靠性
-- 无人机巡检结合视觉语言模型创新
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260824] Beyond chlorophyll: machine learning estimates of diagnostic phytoplankton pigments from multispectral ocean colour data | Moffat David, Laurenson Angus, Martinez-Vicente Victor, Kulk Gemma, Sun Xuerong, Robert J. W. Brewin, Sathyendranath Shubha | Plymouth Marine Laboratory, Plymouth, UK；National Center for Earth Observation, Plymouth Marine Laboratory, UK；Department of Earth and Environmental Sciences, Centre for Geography and；Environmental Science, University of Exeter, Cornwall, United Kingdom | 利用机器学习从多光谱海洋水色数据估算诊断性浮游植物色素，超越传统叶绿素方法。 | [#1164](https://github.com/thinson/RS-PaperClaw/issues/1164) |
-| [20260824] Beyond Point Predictions: Uncertainty-Aware Satellite Poverty Mapping for Public Policy | Markus B. Pettersson, Bailie James, Kakooei Mohammad, Meng Eagon, Daoud Adel | Division of Data Science and AI, Department of Computer Science and Engineering；Chalmers University of Technology and the University of Gothenburg, Gothenburg；Institute for Analytical Sociology, Linköping University, Norrköping, Sweden；AI & Global Development Lab, Linköping University, Norrköping, Sweden；Geomatics, Department of Environmental and Life Sciences, Karlstad University；Department of Electrical Engineering and Computer Science, Massachusetts；Institute of Technology, Cambridge, Massachusetts, USA；Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of；Despite their critical importance for policy and research, high-resolution | 提出不确定性感知的卫星贫困制图方法，结合保形预测为公共政策提供可靠支持。 | [#1165](https://github.com/thinson/RS-PaperClaw/issues/1165) |
-| [20260824] Dual-Orthogonality Waveforms for Integrated Communication and Imaging in Dynamic Multipath Channels | Talignani Edoardo, Linsalata Francesco, Musa Furkan Keskin, Scazzoli Davide, Pourafzal Alireza, Mohammad Mahdi Mojahedian, Wymeersch Henk | Department of Electrical Engineering, Chalmers University of Technology, Gothenburg, Sweden ( | 设计双正交波形用于动态多径信道中的通信与成像集成，提升感知性能。 | [#1166](https://github.com/thinson/RS-PaperClaw/issues/1166) |
-| [20260824] Leveraging UAV Autonomy for Minimum 4D Flight Authorization Volumes | Vitale Christian, Grigoriou Yiannis, Kolios Panayiotis, Ellinas Georgios | Department of Electrical and Computer Engineering and the KIOS Research and Innovation Center of Excellence (KIOS CoE), University of Cyprus, Nicosia, Cyprus；Department of Computer Science and the KIOS CoE, University of Cyprus | 利用无人机自主性生成最小4D飞行授权体积，优化空域资源利用。 | [#1167](https://github.com/thinson/RS-PaperClaw/issues/1167) |
-| [20260824] Bridge Damage Detection from Low-Light UAV Imagery via Degradation-Aware Mixture-of-Experts Enhancement | Wang Hu, Pu Hongxu, Hu Zhiqi, Lin Fangzhou, Wang Wang | School of Computer Science and Engineering, University of Electronic Science and Technology of China；Sustainability X-Lab, The University of Hong Kong；School of Architecture, Building, and Civil Engineering, Loughborough University；Department of Engineering Science, University of Oxford；Department of Civil and Environmental Engineering, The Hong Kong University of Science and Technology | 提出退化感知的混合专家模型，增强低光无人机图像以辅助桥梁损伤检测。 | [#1168](https://github.com/thinson/RS-PaperClaw/issues/1168) |
-| [20260824] Distributed Trajectory Planning and Resource Allocation for Dynamic Multi-UAV Collaborative Computing | Zhang Tiankui, Xu Wenlong, Shi Tianyi, Xu Xiaoxia, Nallanathan Arumugam | School of Information and Communication Engineering, Beijing University of Posts and Telecommunications, Beijing, China (；School of Electronic Engineering and Computer Science, Queen Mary University of London, E1 4 NS London, U.K. (；School of Electronic Engineering and Computer Science, Queen Mary University of London, London；Department of Electronic Engineering, Kyung Hee University, Yongin-si, Gyeonggi-do, Korea ( | 基于Stackelberg博弈实现多无人机协同计算中的分布式轨迹规划与资源分配。 | [#1169](https://github.com/thinson/RS-PaperClaw/issues/1169) |
-| [20260824] SAVER: Selective Auditing of Verbal Evidence for Error Recovery in VLM Change Reasoning | Li Youdi | Panasonic Connect Co., Ltd. | 提出SAVER方法，通过选择性审计言语证据来纠正视觉语言模型的变更推理错误。 | [#1170](https://github.com/thinson/RS-PaperClaw/issues/1170) |
-| [20260824] Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion | Lin Chia-Hsiang, Huang Jian-Kai, Young Si-Sheng, Zheng Wei-Cheng | Department of Electrical Engineering, National Cheng Kung University (NCKU), Tainan, Taiwan (R.O.C.) (；Institute of Computer and Communication Engineering, Department of Electrical Engineering, National Cheng Kung University (NCKU), Tainan, Taiwan (R.O.C.) ( | 开发可解释的Landsat到高光谱双超分辨率网络，避免大矩阵求逆，提升效率。 | [#1171](https://github.com/thinson/RS-PaperClaw/issues/1171) |
-| [20260824] RACO: Reliability-Aware Coarse-Goal Optimization for Inspection-Oriented UAV Vision-Language Navigation | Wang Sen, Sun Yiming, He Jiaxuan, Zhu Pengfei | School of Automation, Southeast University, Nanjing, China；School of Science and the School of Engineering；The Hong Kong University of Science and Technology, Hong Kong | 提出可靠性感知的粗粒度目标优化，用于面向巡检的无人机视觉语言导航。 | [#1172](https://github.com/thinson/RS-PaperClaw/issues/1172) |
-
-## 🔎 观察
-
-- 机器学习与不确定性量化结合成为遥感应用新趋势，提升决策可靠性。
-- 无人机技术向自主化、协同化发展，融合视觉语言模型拓展巡检能力。
 
 ---
 
