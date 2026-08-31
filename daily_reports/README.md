@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260828](./202608/20260828.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究聚焦于多模态融合与生成模型，涉及建筑损伤评估、跨模态图像翻译、无人机三维重建及目标搜索等任务。同时，出现面向变化检测的综合性基准，强调方法评估的可靠性与公平性。整体趋势显示，大语言模型与几何感知机制正逐步融入遥感数据处理流程，推动自动化与智能化水平提升。
+
+## ✨ 今日亮点
+
+- 建筑损伤评估转向文本序列预测，创新建模方式。
+- 跨模态翻译引入目标先验解耦训练，提升生成质量。
+- 无人机感知强调几何对齐，增强多模态融合鲁棒性。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260828] GeBDA: Building Damage Assessment as Text-Based Sequence Prediction | Dietrich Olivier, Sapkota Krishna, Schindler Konrad, Beryozkin Genady | ETH Zurich；Google | 提出GeBDA，将建筑损伤评估转化为自回归文本序列预测任务。 | [#1193](https://github.com/thinson/RS-PaperClaw/issues/1193) |
+| [20260828] Learning the Target Priors Before Image Translation: A Decoupled Training Paradigm for Cross-Modal Image Translation in Remote Sensing | Hu Keyan, Wang Mingtao, Zhou Ziyu, Shi Tiandong, Li Haifeng, Qi Ji, Tao Chao | Central South University, Changsha, China；Wuhan University, Wuhan, China | 提出解耦训练范式，先学习目标先验再用于跨模态图像翻译。 | [#1194](https://github.com/thinson/RS-PaperClaw/issues/1194) |
+| [20260828] GeoFF3D: Coordinate-Anchored Feed-Forward Reconstruction for Large-Scale UAV Mapping | Yang Xiang, Wang Yongli, Zhang Yunsheng | School of Geosciences and Info-Physics, Central South University, Changsha, China；Hunan Engineering Research Center of 3 D Real Scene Construction and Application Technology, Changsha, China；College of Electronic Science and Technology, National University of Defense Technology, Changsha, China | GeoFF3D利用坐标锚定前馈重建，实现大规模无人机地图构建。 | [#1195](https://github.com/thinson/RS-PaperClaw/issues/1195) |
+| [20260828] Spatial-Semantic Reasoning using Large Language Models for Efficient UAV Search Operations | Maletic Marin, Peti Marijana, Petrovic Tamara, Bogdan Stjepan | Authors are with the University of Zagreb Faculty of；Electrical Engineering and Computing, LARICS (Laboratory Rather than solely specifying an object category, L-ZSON | 利用大语言模型进行空间语义推理，提升无人机搜索效率。 | [#1196](https://github.com/thinson/RS-PaperClaw/issues/1196) |
+| [20260828] A comprehensive and trustworthy benchmark of AI methods for change detection in Earth observation | Tomanič Tadej, Baudhuin Alice, Sotošek Jan, Brence Jure, Panov Panče, Simidjievski Nikola, Kocev Dragi | University of Ljubljana, Faculty of Mathematics and Physics；Department of Knowledge Technologies, Jo zef Stefan Institute；Télécom Paris, Institut Polytechnique de Paris | 构建变化检测AI方法综合基准，强调评估的全面性与可信度。 | [#1197](https://github.com/thinson/RS-PaperClaw/issues/1197) |
+| [20260828] GAAT: Geometry-Aware Alignment Transformer for Multimodal UAV Perception | Yang Jingpu, Tang Debin, Sun Yilin, Ji Fengxian, Zhu Jiahua, Ding Wenrui, Wang Yufeng | systems often provide only global or image-center alignment；center consistency under synchronized view transformations；transfer performance, establishing GAAT as a state-of-the-art Residual patch-center misalignment affects both contrastive；Patch-Center Alignment, Geometry-Aware Alignment, UAVMeta；Beihang University, Beijing, China；Zhongguancun Academy, Beijing, China | GAAT通过几何感知对齐Transformer，改善无人机多模态感知。 | [#1198](https://github.com/thinson/RS-PaperClaw/issues/1198) |
+
+## 🔎 观察
+
+- 文本序列预测与生成先验的引入，反映遥感任务向语言模型融合的趋势。
+- 几何对齐与空间推理的强调，表明无人机应用对位置信息准确性的高要求。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260827](./202608/20260827.md)
 ## 📌 今日概况
 
@@ -61,43 +96,6 @@ Powered by OpenClaw🦞
 
 - 基础模型嵌入正成为地理空间预测的核心，推动AI系统向自主化发展。
 - 半监督与零样本技术受关注，旨在缓解遥感领域标注数据稀缺问题。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260825](./202608/20260825.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究聚焦于月球南极微生物生存潜力、云掩膜超分辨率、城市语义分割、卫星调度优化、无人机通信安全及变化检测数据合成等方向。深度学习与强化学习技术被广泛应用于提升遥感任务效率与精度，同时探索星上计算与联邦学习等新兴范式。
-
-## ✨ 今日亮点
-
-- 月球南极微生物生存潜力受关注
-- 强化学习优化卫星调度成热点
-- 知识引导数据合成助力变化检测
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260825] Potential survivable niches for microbial life on the lunar south pole | Saxena Prabal, Bertone Stefano, Heather V. Graham, Natalie M. Curran, Aaron B. Regberg, Needham Andrew, E. D., Pugel, Noah E. Petro | NASA Goddard Space Flight Center, Greenbelt, MD 20771, USA；University of Maryland, CRESST II, College Park, MD 20742, USA；Catholic University of America, CRESST II, Washington, DC 20064, USA；NASA Johnson Space Center, Houston, TX 77058, USA；National Institute for Astrophysics (INAF), Astrophysical Observatory of Turin | 评估月球南极地形对紫外辐射遮蔽，寻找微生物潜在生存区域 | [#1174](https://github.com/thinson/RS-PaperClaw/issues/1174) |
-| [20260825] Deep Learning Super Resolution for Satellite Cloud Mask Downscaling | Georgakis Angelos, Kanaki Valentina, Giannopoulos Giorgos, Girtsou Stella, Kontogiorgakis Ioannis, Kontoes Charalampos, Philippopoulos Kostas | ∗ BEYOND EO Centre, IAASARS, National Observatory of Athens, Athens, Greece；National and Kapodistrian University of Athens, Faculty of Physics, Section of Environmental Physics and Meteorology；emerged as a central field of research, with crucial impli- | 利用深度学习超分辨率技术提升卫星云掩膜空间分辨率 | [#1175](https://github.com/thinson/RS-PaperClaw/issues/1175) |
-| [20260825] EVEREST:Endogenous Vision-Language Reinforcement Reasoning Exploration for Urban Socio-Semantic Segmentation | Li Qixiu, He Zhongzhi, Zhu Xiang, Li Xiaoyong, Lin Jiarun, Xu Weifeng | National University of Defense Technology；Changchun University of Science and Technology | 提出内生视觉语言强化推理框架用于城市社会语义分割 | [#1176](https://github.com/thinson/RS-PaperClaw/issues/1176) |
-| [20260825] Implicit Q-learning-bootstrapped ant colony optimization for maritime moving-target observation scheduling with agile satellites | Wang He, Wu Junyu, Liu Yeye, Zhou Yifan, Zhang Jie, Li Hui, Song Yanjie, Li Liang | College of Intelligent Science and Engineering, Harbin Engineering University, Harbin 150001, China；School of Electrical and Control Engineering, North University of China, Taiyuan 030051, China；School of Information Science and Technology, Dalian Maritime University, Dalian 116026, China | 结合隐式Q学习与蚁群优化解决海上动目标卫星观测调度 | [#1177](https://github.com/thinson/RS-PaperClaw/issues/1177) |
-| [20260825] Reinforcement Learning-Guided Evolutionary Policy Optimization for Preference-Adjustable Heterogeneous Agile Earth Observation Satellite Scheduling | Wang He, Wu Junyu, Li Hui, Song Yanjie, Pedrycz Witold, Li Liang | College of Intelligent Science and Engineering, Harbin Engineering University, Harbin, China (；School of Information Science and Technology, Dalian Maritime University, Dalian, China( | 强化学习引导进化算法实现偏好可调的异构卫星调度 | [#1178](https://github.com/thinson/RS-PaperClaw/issues/1178) |
-| [20260825] Resource Allocation for Secure Dual-UAV-Assisted ISAC System | Lei Hongjiang, Geng Jianshuo, Park Ki-Hong, Ye Jia, Yang Liang, Miao Xiaqing, Pan Gaofeng | School of Communications and Information Engineering, Chongqing University of Posts and Telecommunications, Chongqing, China (；the CEMSE Division, King Abdullah University of Science and Technology (KAUST), Thuwal -, Saudi Arabia (；State Key Laboratory of Power Transmission Equipment Technology, School of Electrical Engineering, Chongqing University, Chongqing, China (；College of Computer Science and Electronic Engineering, Hunan University, Changsha, China；School of Information Engineering, Changsha Medical University, Changsha, China. (；School of Cyberspace Science and Technology, Beijing Institute of Technology, Beijing, China ( | 研究双无人机辅助通感一体化系统的安全资源分配与轨迹优化 | [#1179](https://github.com/thinson/RS-PaperClaw/issues/1179) |
-| [20260825] Real-World Knowledge-Guided Change Data Synthesis for Remote Sensing | Qi Yaoyi, Weng Xingxing, Pang Chao, Cui Yongkang, Hao Xiangyu, Zhang Xiaokang, Zhu Guibo, Xia Gui-Song | School of Artificial Intelligence, Wuhan University；Wuhan AI Research；Institute of Automation, University of Chinese Academy of Sciences；Institute for Math \& AI, Wuhan | 利用真实世界知识引导合成遥感变化数据以提升检测性能 | [#1180](https://github.com/thinson/RS-PaperClaw/issues/1180) |
-| [20260825] ORBITALIF: An Efficient Spiking Federated Learning Framework for Onboard Cloud Removal | Zhang Bohan, Xu Chenyu, Mao Yijie, Shi Yuanming | School of Information Science and Technology, ShanghaiTech University, Shanghai, China | 提出脉冲联邦学习框架用于星上云去除，兼顾效率与隐私 | [#1181](https://github.com/thinson/RS-PaperClaw/issues/1181) |
-
-## 🔎 观察
-
-- 强化学习在卫星调度与路径规划中应用增多，体现智能决策趋势
-- 知识引导与数据合成方法兴起，缓解遥感标注数据稀缺问题
 
 ---
 
