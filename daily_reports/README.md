@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260830](./202608/20260830.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究聚焦于多模态数据融合与高效模型设计。人口估算结合序列模型，海事分割推出新数据集，显著性检测采用Mamba架构，地理基础模型通过对比学习增强语义，视觉语言模型探索地理定位。整体呈现从传统视觉任务向复杂场景理解与跨模态应用拓展的趋势。
+
+## ✨ 今日亮点
+
+- 序列模型用于人口估算，提升行政单元精度
+- 海事数据集助力卫星与航拍图像实例分割
+- Mamba网络应用于光学遥感显著性检测
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260830] A Hybrid State-Space Approach for Census-Tract Population Estimation | Jackson R. Ye, Alexandre V. Morozov | Rutgers University New Brunswick NJ USA | 混合状态空间模型用于人口普查区人口估算，结合卫星影像提升精度 | [#1203](https://github.com/thinson/RS-PaperClaw/issues/1203) |
+| [20260830] MariSat: A Maritime Dataset for Instance Segmentation of Objects in Satellite and Aerial Images | Abbes Amir, Harrabi Ines, Lucas Justin Yirepoa Kinda, Trabelsi Rim, Cabani Adnane, Abdelkefi Fatma | University of Carthage, SUP'COM, LR11 TIC05, MEDIATRON, 2083, Ariana, Tunisia；University of Gabes, Hatem Bettaher IResCoMath Laboratory, Gabes, Tunisia；University of Rouen Normandie, ESIGELEC, IRSEEM | 发布MariSat数据集，支持卫星与航拍图像中海上目标实例分割 | [#1204](https://github.com/thinson/RS-PaperClaw/issues/1204) |
+| [20260830] Tensor Orthogonal Subspace Split: Theory and Applications | Miao Jifei, Han Juan, Michael K. Ng, Kit Ian Kou | School of Mathematics and Statistics, Yunnan University, Kunming, Yunnan,, China (；School of Mathematics and Physics, Anhui Jianzhu University, Hefei, Anhui,, China (；Department of Mathematics, Hong Kong Baptist University, Kowloon Tong, Hong Kong, China (；Department of Mathematics, Faculty of Science and Technology, University of Macau, Macau, China ( | 提出张量正交子空间分割理论，应用于多维数据分解与近似 | [#1205](https://github.com/thinson/RS-PaperClaw/issues/1205) |
+| [20260830] SPLG-Mamba: Structure-Preserving Local-Global Mamba Network for Salient Object Detection in Optical Remote Sensing Images | Xu Yi, Hou Ruichao, Ren Tongwei, Wu Gangshan | State Key Laboratory for Novel Software Technology, Nanjing University, Nanjing,, Jiangsu, China (；School of Elite Biomedical Engineers and the Institute for Interdisciplinary Intelligent Pharmacy, China Pharmaceutical University, Nanjing, China ( | SPLG-Mamba网络保持结构信息，实现光学遥感图像显著性目标检测 | [#1206](https://github.com/thinson/RS-PaperClaw/issues/1206) |
+| [20260830] BEACON: Behavioral and Semantic Enrichment of AlphaEarth Embeddings through Tri-Modal Contrastive Learning | Tian Hao, Cai Heng, Yang Yifan | Department of Geography Department of Geography Department of Geography；Texas A&M University Texas A&M University Texas A&M University；College Station, TX, USA College Station, TX, USA College Station, TX, USA；Earth observation to human-centered urban analytics；built environment, institutional functions, and mobility behaviors；SIGSPATIAL ’26, Riverside, CA, USA Point-of-Interests (POIs) information provide human-centered | BEACON通过三模态对比学习丰富地理嵌入，增强城市功能理解 | [#1207](https://github.com/thinson/RS-PaperClaw/issues/1207) |
+| [20260830] GeoAgent: Evaluating VLM Geolocalization Through Embodied Navigation | Mukherjee Arka, Roy Soham, Trivedi Kartikeya, Ghosh Shreya | KIIT Bhubaneswar；IIT Bhubaneswar | GeoAgent基准评估视觉语言模型在具身导航中的地理定位能力 | [#1208](https://github.com/thinson/RS-PaperClaw/issues/1208) |
+
+## 🔎 观察
+
+- 研究向跨模态融合演进，如结合卫星影像与POI数据，提升城市分析语义深度
+- 高效架构如Mamba和状态空间模型受关注，平衡精度与计算效率
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260829](./202608/20260829.md)
 ## 📌 今日概况
 
@@ -61,40 +96,6 @@ Powered by OpenClaw🦞
 
 - 文本序列预测与生成先验的引入，反映遥感任务向语言模型融合的趋势。
 - 几何对齐与空间推理的强调，表明无人机应用对位置信息准确性的高要求。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260827](./202608/20260827.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究聚焦于高分辨率影像的精细目标识别、基础模型的时间敏感性分析、自监督扩散模型在高光谱图像修复中的应用、SAR差分相位保持的深度展开网络，以及基于损失对齐的零样本木本清除检测。这些工作展示了深度学习方法在遥感数据解译中的多样化应用，并强调了模型泛化能力与物理约束的融合。
-
-## ✨ 今日亮点
-
-- 高分辨率影像圣诞树种植园检测结合硬负挖掘。
-- Tessera嵌入时间敏感性分析助力土地覆盖制图。
-- 自监督扩散框架实现高光谱图像修复无需预训练。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260827] Detection of Christmas tree plantations from high-resolution aerial imagery. A case study in the French Morvan | Razzano Francesca, Dalsasso Emanuele, Baysse-Lainé Adrien, Silvia Liberata Ullo, Schirinzi Gilda, Chanussot Jocelyn | Engineering Department, University of Naples Parthenope, Naples, Italy；the Engineering Department, University of Sannio, Benevento, Italy；CNRS Délégation Alpes: Grenoble, Auvergne-Rhône-Alpes, France | 利用高分辨率航拍影像和语义分割检测法国莫尔万圣诞树种植园。 | [#1187](https://github.com/thinson/RS-PaperClaw/issues/1187) |
-| [20260827] Temporal Sensitivity Analysis of Tessera Embeddings | Guerrero-Viu Julia, López-Cifuentes Alex, Pérez-Villar Ignacio, Pacifici Fabio | Universidad de Zaragoza；University of California；AI Center, RMS | 评估Tessera嵌入对时间变化的敏感性，用于土地覆盖分类。 | [#1188](https://github.com/thinson/RS-PaperClaw/issues/1188) |
-| [20260827] Hyperspectral Diffusion Equivariant Imaging (HyDiff-EI): A Self-supervised Framework for Hyperspectral Image Inpainting | Li Shuo, Davies Mike, Yaghoobi Mehrdad | Institute for Digital Communications, School of self-supervised diffusion framework and does not require pre- Engineering, University of Edinburgh；School of Engineering, University of Edinburgh. remote sensing or RGB datasets；School of Engineering, University of Edinburgh | 提出自监督扩散等变成像框架，实现高光谱图像修复。 | [#1189](https://github.com/thinson/RS-PaperClaw/issues/1189) |
-| [20260827] DP-JMRNet: A Deep Unfolding Network for Differential Phase Preservation in Sparse Bitemporal SAR Reconstruction | Bao Juncheng, Zhang Zhen, George P. Petropoulos | College of Information Science and Engineering, Hohai University, Changzhou, China (；Department of Geography, Harokopio University of Athens, Athens, Greece ( | 深度展开网络DP-JMRNet保持稀疏双时相SAR差分相位。 | [#1190](https://github.com/thinson/RS-PaperClaw/issues/1190) |
-| [20260827] Learning Woody Clearing With Loss Alignment for Zero-Shot Regrowth and Woody Segmentation | Backman Kal, Wood Jared, Roff Adam | the New South Wales Department of Climate Change, Energy, the Environment and Water, Parramatta,, NSW, Australia | 损失对齐实现零样本木本清除检测与再生长分割。 | [#1191](https://github.com/thinson/RS-PaperClaw/issues/1191) |
-
-## 🔎 观察
-
-- 自监督与零样本方法兴起，减少对标注数据依赖。
-- 物理约束（如相位保持）与深度网络结合成趋势。
 
 ---
 
