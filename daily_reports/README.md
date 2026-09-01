@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260829](./202608/20260829.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦于InSAR相位恢复与跨视角定位两大方向。前者提出几何感知的伪监督方法，实现大规模时序InSAR堆栈的零样本泛化，提升形变监测精度；后者探索地面到卫星的定位技术，用于无约束图像集合的3D场景重建，增强地理空间感知能力。两项工作均体现了深度学习与遥感数据的深度融合，推动自动化、高精度的地表观测应用。
+
+## ✨ 今日亮点
+
+- InSAR相位恢复迈向零样本泛化，提升时序监测效率
+- 跨视角定位助力3D重建，增强无约束场景适应性
+- 伪监督与几何感知结合，减少标注依赖
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260829] FiLM-GPNet: Geometry-Aware Pseudo-Supervised Phase Restoration with Zero-Shot Generalization for Large Temporal InSAR Stacks | Demil Getnet, Muhammad Farhan Humayun, Westerlund Tomi, Heikkonen Jukka, Oussalah Mourad | University of Oulu；University of Turku | 提出FiLM-GPNet，利用几何感知伪监督实现大规模InSAR堆栈相位恢复的零样本泛化 | [#1200](https://github.com/thinson/RS-PaperClaw/issues/1200) |
+| [20260829] Ground-to-Satellite Localization in Unconstrained Image Collections for 3D Scene Reconstruction | Daruna Angel, Southall Ben, Niluthpol Chowdhury Mithun, Minhas Kshitij, Meegan Nicholas, Wang Qiao, Matei Bogdan, Samarasekera Supun, Kumar Rakesh | Center for Vision Technologies, SRI International, Princeton, NJ, USA | 提出地面到卫星定位方法，用于无约束图像集合的3D场景重建，提升跨视角匹配精度 | [#1201](https://github.com/thinson/RS-PaperClaw/issues/1201) |
+
+## 🔎 观察
+
+- 研究趋势偏向利用伪监督和几何先验减少对人工标注的依赖，提升模型泛化能力
+- 跨视角定位与3D重建结合，显示遥感与计算机视觉技术融合加深，应用场景更广
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260828](./202608/20260828.md)
 ## 📌 今日概况
 
@@ -64,38 +95,6 @@ Powered by OpenClaw🦞
 
 - 自监督与零样本方法兴起，减少对标注数据依赖。
 - 物理约束（如相位保持）与深度网络结合成趋势。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260826](./202608/20260826.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦于智能预测、视觉语言模型适配及无人机图像分割。行星预测引擎结合基础模型嵌入实现自主地理空间预测；半监督CLIP适配提升图像分类效率；零样本分割方法针对复杂无人机影像中的通信塔组件识别。整体趋势显示，模型正从单一任务向多模态融合与自动化演进。
-
-## ✨ 今日亮点
-
-- 自主地理空间预测引擎集成基础模型嵌入，提升预测智能化水平。
-- 半监督CLIP适配方法减少标注依赖，增强场景分类泛化能力。
-- 零样本分割结合显著性深度条件，攻克无人机影像复杂目标识别。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260826] Planetary Prediction Engine: Autonomous Geospatial Prediction via Intelligent Data Selection and Foundation Model Embeddings | Ma Evelyn, Rama Kumar Pasumarthi, Shafin Kishwar, Sharma Mandar, Sun Mimi, Sadeghi Hamed, Dav M. Ebengo, Onesime Mbulayi, Solomakhin Rouslan, Wamburu John, Ogallo William, Walcott-Bryant Aisha, Chen Sanxing, Muslim Arbaaz, Mayer Yael, Ho Ronald, Lee Roy, Alcantara Ruth, Diack Abdoulaye, ..., Shetty Shravya | Google Research；Institut National de Recherche Biomédicale, Democratic Republic of Congo | 提出行星预测引擎，通过智能数据选择和基础模型嵌入实现自主地理空间预测。 | [#1183](https://github.com/thinson/RS-PaperClaw/issues/1183) |
-| [20260826] Semi-Supervised Adaptation of Vision-Language Models for Image Classification | Mohamed L. Mekhalfi, Mohamad M. Al Rahhal, Bazi Yakoub, Salah E. Khenfer, Shi Mingdeng, Zou Hua, Zuair Mansour | the Applied Computer Science Department, College of Applied Computer Science, King Saud University,, Riyadh, Saudi Arabia；the Computer Engineering Department, College of Computer and Information Sciences, King Saud University,, Riyadh, Saudi Arabia；the Key Laboratory of Tarim Oasis Agriculture, College of Information Engineering, Tarim University, Aral, China；School of Computer Science, Wuhan University,, Wuhan, China | 采用半监督方式适配视觉语言模型，提升图像分类性能并降低标注成本。 | [#1184](https://github.com/thinson/RS-PaperClaw/issues/1184) |
-| [20260826] Saliency-Depth Conditioning for Zero-Shot Segmentation of Communication-Tower Components in Cluttered UAV Imagery | Lesani Ali, Chul Min Yeum, Kang Su-Min | Computer Vision for Smart Structures (CViSS) Lab, Waterloo, Canada；University of Waterloo, Waterloo, Canada；School of Architecture, Soongsil University, Seoul, South Korea | 利用显著性深度条件引导零样本分割，准确识别无人机图像中的通信塔组件。 | [#1185](https://github.com/thinson/RS-PaperClaw/issues/1185) |
-
-## 🔎 观察
-
-- 基础模型嵌入正成为地理空间预测的核心，推动AI系统向自主化发展。
-- 半监督与零样本技术受关注，旨在缓解遥感领域标注数据稀缺问题。
 
 ---
 
