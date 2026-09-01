@@ -2,6 +2,46 @@
 
 最近三天日报（最新在前）：
 
+# [20260831](./202608/20260831.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 11 篇。
+
+今日遥感AI研究聚焦于基础模型、智能体与三维建模。多篇论文探索了基础模型在农业、地学中的应用及预训练新框架，同时智能体系统（如HiRS-Agent、SimCRAFT）推动长时序任务自动化。三维高斯泼溅、散射建模及多光谱数据集的提出，展示了从底层建模到应用数据的全面创新。
+
+## ✨ 今日亮点
+
+- 基础模型与智能体成热点，推动遥感任务自动化。
+- 三维高斯泼溅与散射建模提升目标表征精度。
+- 多光谱与高光谱数据集助力特定场景应用。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260831] BRF-GS: Hyperspectral Bidirectional Reflectance Factor Modeling and Image Generation Based on 3D Gaussian Splatting | Yao Yiling, Zhang Wenjuan, Wang Bowen, Li Bocheng, Song Wentao, Zhang Bing | Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100094, China；International Research Center of Big Data for Sustainable Development Goals, Beijing 100094, China；University of Chinese Academy of Sciences, Beijing 100049, China | 提出基于3D高斯泼溅的高光谱双向反射因子建模与图像生成方法。 | [#1210](https://github.com/thinson/RS-PaperClaw/issues/1210) |
+| [20260831] Intrinsic Scatterer Representation for Forward Scattering Modeling of Complex Radar Targets | Yue Ziyu, Xu Feng | The authors are with the Key Laboratory of Information Science of；Electromagnetic Waves (Ministry of Education), Fudan University, Shanghai stead of meaningful structural entities such as “wings,” “nose,” | 引入内在散射体表示，用于复杂雷达目标前向散射建模。 | [#1211](https://github.com/thinson/RS-PaperClaw/issues/1211) |
+| [20260831] A Composition-Aware Pretraining Framework for Geospatial Foundation Models | Aryan Kashyap Naveen, Srinivas Abhishek, Moothedath Pranav, Bhattacharjee Shrutilipi | National Institute of Technology, Karnataka Visa Inc；Greenlight National Institute of Technology, Karnataka | 提出成分感知预训练框架，增强地理空间基础模型的地表覆盖表征。 | [#1212](https://github.com/thinson/RS-PaperClaw/issues/1212) |
+| [20260831] HiRS-Agent: A Hierarchical Multi-Agent System for Reliable Long-Horizon Remote Sensing Task Solving | Mu Boyang, Wei Zhiwei, Peng Mugen, Xu Wenjia | Beijing University of Posts Hunan Normal University Beijing University of Posts Beijing University of Posts；and Telecommunications School of Geographic；State Key Laboratory of Sciences State Key Laboratory of State Key Laboratory of | 设计层级多智能体系统HiRS-Agent，解决长时序遥感任务。 | [#1213](https://github.com/thinson/RS-PaperClaw/issues/1213) |
+| [20260831] Quantum-Grassmann-Plucker Token Mixing for Deep Learning-Based Post-Disaster Damage Assessment | Farahkhah Kooroush, Lagap Umut, Rezaei Taha, Ghaffarian Saman | Independent Researcher, Tabriz, Iran；Centre for Urban Resilience and Analytics (CURA), Georgia Institute of Technology (Georgia；Department of Civil and Environmental Engineering, University of Exeter, Exeter, UK；Department of Risk and Disaster Reduction (RDR), University College London (UCL), UK | 结合量子Grassmann-Plucker几何，改进灾后损害评估的token混合。 | [#1214](https://github.com/thinson/RS-PaperClaw/issues/1214) |
+| [20260831] Minerals in the Wild: A Hyperspectral-XRF Dataset for Elemental Composition Estimation | Tetoula-Tsonga Eleftheria, Arvanitakis George, Giannakas Theodoros | Institute of Communication and Computer Systems, Athens, Greece | 发布高光谱-XRF数据集，用于矿物元素组成估计。 | [#1215](https://github.com/thinson/RS-PaperClaw/issues/1215) |
+| [20260831] Foundation Models Meet Agriculture: Challenges Beyond Pretraining | Nedungadi Vishal, Xiong Xingguo, Rußwurm Marc, Ioannis N. Athanasiadis | Artificial Intelligence and Plant Science Group Institute of Digital Agriculture；Wageningen University and Research Zhejiang Academy of Agricultural Sciences；University of Bonn Wageningen University and Research | 探讨基础模型在农业应用中的挑战，超越预训练阶段。 | [#1216](https://github.com/thinson/RS-PaperClaw/issues/1216) |
+| [20260831] Seeing the Unseen: Camouflaged Object Detection Beyond the Visible Spectrum | Gupta Avi, Gupta Trasha | Indraprastha Institute of Information Technology, Delhi；Delhi Technological University, Delhi | 研究可见光谱之外的伪装目标检测，利用多光谱成像。 | [#1217](https://github.com/thinson/RS-PaperClaw/issues/1217) |
+| [20260831] SimCRAFT: Distilling Remote Sensing Agents via Synthetic Trajectories and Contextual Retrieval-Augmented Fine-Tuning | Wang Haoran, Yao Jing, Yang Xu, Wang Zeqing, Zhang Yang, Ghamisi Pedram, Chen Zhengchao | State Key Laboratory of Remote Sensing and Digital Earth；Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100101, China；University of Chinese Academy of Sciences, Beijing 100049, China；The Hong Kong University of Science and Technology (Guangzhou), Guangzhou 511453, China | 通过合成轨迹和检索增强微调，蒸馏遥感智能体SimCRAFT。 | [#1218](https://github.com/thinson/RS-PaperClaw/issues/1218) |
+| [20260831] Site-specific Channel Modeling Based on Remote-Sensing Maps for 6G Space--Air--Ground Digital Twins | Liu Peijie, Tang Pan, Zhang Jianhua, Tian Lei, Ao Bin, He Boyang, Zheng Hao | State Key Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications, Beijing, China ( | 基于遥感地图的站点特定信道建模，支持6G空天地数字孪生。 | [#1219](https://github.com/thinson/RS-PaperClaw/issues/1219) |
+| [20260831] CedarCypress3D: an annotated UAV-LiDAR dataset of individual trees in planted cedar and cypress forests | Shimizu Katsuto, Kitahara Fumiaki, Nishizono Tomohiro, Saito Hideki, Takahashi Masayoshi, Obata Shingo, Tei Shunsuke, Furuya Naoyuki, Goto Tomoya, Kodani Eiji, Yamada Yusuke | Shikoku Research Center, Forestry and Forest Products Research Institute；Department of Forest Management, Forestry and Forest Products Research Institute；Forestry and Forest Products Research Institute；Hokkaido Research Center, Forestry and Forest Products Research Institute；Graduate School of Bioagricultural Sciences, Nagoya University, Furo-cho | 发布杉柏人工林单木的UAV-LiDAR标注数据集CedarCypress3D。 | [#1220](https://github.com/thinson/RS-PaperClaw/issues/1220) |
+
+## 🔎 观察
+
+- 三维建模与散射表征技术向高精度、物理驱动发展，提升遥感解译能力。
+- 智能体与基础模型结合，正从静态分析转向动态任务规划与执行。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260830](./202608/20260830.md)
 ## 📌 今日概况
 
@@ -61,41 +101,6 @@ Powered by OpenClaw🦞
 
 - 研究趋势偏向利用伪监督和几何先验减少对人工标注的依赖，提升模型泛化能力
 - 跨视角定位与3D重建结合，显示遥感与计算机视觉技术融合加深，应用场景更广
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260828](./202608/20260828.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究聚焦于多模态融合与生成模型，涉及建筑损伤评估、跨模态图像翻译、无人机三维重建及目标搜索等任务。同时，出现面向变化检测的综合性基准，强调方法评估的可靠性与公平性。整体趋势显示，大语言模型与几何感知机制正逐步融入遥感数据处理流程，推动自动化与智能化水平提升。
-
-## ✨ 今日亮点
-
-- 建筑损伤评估转向文本序列预测，创新建模方式。
-- 跨模态翻译引入目标先验解耦训练，提升生成质量。
-- 无人机感知强调几何对齐，增强多模态融合鲁棒性。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260828] GeBDA: Building Damage Assessment as Text-Based Sequence Prediction | Dietrich Olivier, Sapkota Krishna, Schindler Konrad, Beryozkin Genady | ETH Zurich；Google | 提出GeBDA，将建筑损伤评估转化为自回归文本序列预测任务。 | [#1193](https://github.com/thinson/RS-PaperClaw/issues/1193) |
-| [20260828] Learning the Target Priors Before Image Translation: A Decoupled Training Paradigm for Cross-Modal Image Translation in Remote Sensing | Hu Keyan, Wang Mingtao, Zhou Ziyu, Shi Tiandong, Li Haifeng, Qi Ji, Tao Chao | Central South University, Changsha, China；Wuhan University, Wuhan, China | 提出解耦训练范式，先学习目标先验再用于跨模态图像翻译。 | [#1194](https://github.com/thinson/RS-PaperClaw/issues/1194) |
-| [20260828] GeoFF3D: Coordinate-Anchored Feed-Forward Reconstruction for Large-Scale UAV Mapping | Yang Xiang, Wang Yongli, Zhang Yunsheng | School of Geosciences and Info-Physics, Central South University, Changsha, China；Hunan Engineering Research Center of 3 D Real Scene Construction and Application Technology, Changsha, China；College of Electronic Science and Technology, National University of Defense Technology, Changsha, China | GeoFF3D利用坐标锚定前馈重建，实现大规模无人机地图构建。 | [#1195](https://github.com/thinson/RS-PaperClaw/issues/1195) |
-| [20260828] Spatial-Semantic Reasoning using Large Language Models for Efficient UAV Search Operations | Maletic Marin, Peti Marijana, Petrovic Tamara, Bogdan Stjepan | Authors are with the University of Zagreb Faculty of；Electrical Engineering and Computing, LARICS (Laboratory Rather than solely specifying an object category, L-ZSON | 利用大语言模型进行空间语义推理，提升无人机搜索效率。 | [#1196](https://github.com/thinson/RS-PaperClaw/issues/1196) |
-| [20260828] A comprehensive and trustworthy benchmark of AI methods for change detection in Earth observation | Tomanič Tadej, Baudhuin Alice, Sotošek Jan, Brence Jure, Panov Panče, Simidjievski Nikola, Kocev Dragi | University of Ljubljana, Faculty of Mathematics and Physics；Department of Knowledge Technologies, Jo zef Stefan Institute；Télécom Paris, Institut Polytechnique de Paris | 构建变化检测AI方法综合基准，强调评估的全面性与可信度。 | [#1197](https://github.com/thinson/RS-PaperClaw/issues/1197) |
-| [20260828] GAAT: Geometry-Aware Alignment Transformer for Multimodal UAV Perception | Yang Jingpu, Tang Debin, Sun Yilin, Ji Fengxian, Zhu Jiahua, Ding Wenrui, Wang Yufeng | systems often provide only global or image-center alignment；center consistency under synchronized view transformations；transfer performance, establishing GAAT as a state-of-the-art Residual patch-center misalignment affects both contrastive；Patch-Center Alignment, Geometry-Aware Alignment, UAVMeta；Beihang University, Beijing, China；Zhongguancun Academy, Beijing, China | GAAT通过几何感知对齐Transformer，改善无人机多模态感知。 | [#1198](https://github.com/thinson/RS-PaperClaw/issues/1198) |
-
-## 🔎 观察
-
-- 文本序列预测与生成先验的引入，反映遥感任务向语言模型融合的趋势。
-- 几何对齐与空间推理的强调，表明无人机应用对位置信息准确性的高要求。
 
 ---
 
