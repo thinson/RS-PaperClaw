@@ -2,6 +2,44 @@
 
 最近三天日报（最新在前）：
 
+# [20260901](./202609/20260901.md)
+## 📌 今日概况
+
+今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
+
+今日遥感AI研究聚焦于多模态与智能体技术，涵盖卫星降水伪影检测、野火分割、高光谱解混、SAR-EO翻译、滑坡理解等应用。同时，多篇工作探索基础模型与视觉语言模型在遥感中的适配与评估，以及事件相机与残差学习在UAV预测中的应用。研究趋势显示，模型正从专用走向通用，强调自适应与推理能力。
+
+## ✨ 今日亮点
+
+- 多篇工作引入视觉语言模型与智能体框架，推动遥感任务自动化。
+- 研究关注模型自适应与增量学习，以应对传感器差异与动态环境。
+- 基础模型评估与零样本分割成为热点，探索通用遥感智能。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260901] A Sensor-Adaptive Incremental Learning Framework for Artifact Detection in Satellite Precipitation Data | Andres F. Monsalve, Hernan A. Moreno, Christian D. Kummerow | University of Texas at El Paso, El Paso, TX, overall scores or binary indicators, but do not identify the USA；University of Texas at El Paso, El Paso, TX, USA；Colorado State University, Fort Collins, CO, USA. an image and remain highly limited when adapting to novel | 提出传感器自适应增量学习框架，用于卫星降水数据伪影检测。 | [#1222](https://github.com/thinson/RS-PaperClaw/issues/1222) |
+| [20260901] Scale-based Approach for Active Wildfire Segmentation on Satellite Imagery | Matheus F. Kovaleski, Premebida Cristiano, João Ruivo Paulo | ∗ Institute of Systems and Robotics, Department of Electrical and Computer Engineering, University of Coimbra, Portugal；detection and monitoring, recent research has also explored | 基于尺度方法实现主动野火分割，利用卫星多光谱图像。 | [#1223](https://github.com/thinson/RS-PaperClaw/issues/1223) |
+| [20260901] Agentic Multimodal Models for Environmental Hyperspectral Unmixing | Cholewa Michał, Ciampi Luca, Messina Nicola, Głomb Przemysław, Amato Giuseppe | IITiS-PAS；ISTI-CNR | 智能体多模态模型用于环境高光谱解混，提取端元。 | [#1224](https://github.com/thinson/RS-PaperClaw/issues/1224) |
+| [20260901] ReFlowSET: Representation-Aligned Latent Flow Matching for SAR-to-EO Image Translation | Do Jeonghyeok, Lee Seungchul, Kim Munchurl | KAIST；Stellarvision Inc. | ReFlowSET采用表示对齐潜流匹配，实现SAR到光学图像转换。 | [#1225](https://github.com/thinson/RS-PaperClaw/issues/1225) |
+| [20260901] Residual Kalman Dynamics for Event-Based UAV Forecasting | Nyblom Per, Ovrén Hannes, Gustafsson David | Swedish Defence Research Agency (FOI), Linköping, Sweden；Kalman filter over a full center-size box state as a strong physical baseline, and train a residual model to predict acceleration-like corrections | 残差卡尔曼动力学用于事件相机UAV轨迹预测。 | [#1226](https://github.com/thinson/RS-PaperClaw/issues/1226) |
+| [20260901] RingMoClaw: An Experience-Inspired Multi-Agent Framework for Self-Evolving Research in Remote Sensing | Kang Kaiyue, He Qixuan, Wang Peijin, Feng Yingchao, Ren Chao, Wang Kangxin, Diao Wenhui, Wang Yixiao, Zhao Liangjin, Wei Kaiwen, Liu Nayu, Sun Xian | Self-Evolving Research in Remote Sensing；toward continuous research driven model evolution in remote The capabilities of large language models (LLMs) in comsensing；Remote sensing earth observation is an essential means Squad [21], and GeoColab [22] extend the scope of agents in；Aerospace Information Research Institute, Chinese Academy of Sciences, cross modal earth observation reasoning, procedural knowl-；Beijing 100190, China, also with the School of Electronic, Electrical and；Communication Engineering, University of Chinese Academy of Sciences；Beijing 100190, China, also with the University of Chinese Academy of Sci- management, and strengthen the reasoning and scheduling；Research Institute, Chinese Academy of Sciences, Beijing 100190, China. upon the OpenClaw research agent paradigm [25], OpenEarth-；Aerospace Information Research Institute, Chinese Academy of Sciences, and enables agents to dynamically generate dedicated tools for；Beijing 100190, China, and also with the National Key Laboratory of | RingMoClaw多智能体框架驱动遥感自进化研究。 | [#1227](https://github.com/thinson/RS-PaperClaw/issues/1227) |
+| [20260901] EarthLD: Towards Unified Open-World Landslide Understanding via Vision-Language Guided Diffusion Models | Su Yuanchao, Gao Lianru, Jiang Mengying, Chen Jiangyi, Cheng Jiaxin, Zhou Yicong | Department of Computer and Information Science, University of Macau, Macao 999078, China；College of Geomatics, Xi’an University of Science and Technology, Xi’an 710054, China | EarthLD利用视觉语言引导扩散模型实现开放世界滑坡理解。 | [#1228](https://github.com/thinson/RS-PaperClaw/issues/1228) |
+| [20260901] Do Satellites See Commuters? A Critical Benchmark of Vision Foundation Models | Ashiq Shukoor Iqbal, Wongso Wilson, Flora D. Salim | University of New South Wales Sydney NSW Australia | 基准测试评估视觉基础模型在通勤起讫点识别中的能力。 | [#1229](https://github.com/thinson/RS-PaperClaw/issues/1229) |
+| [20260901] Restrict, Don't Retrain: Inference-Time VLM Guidance for Zero-Shot Aerial Segmentation | DiMeola Teresa, Walter Charles, Xiao Hong | University of Mississippi | 推理时视觉语言模型引导实现零样本航空影像分割。 | [#1230](https://github.com/thinson/RS-PaperClaw/issues/1230) |
+
+## 🔎 观察
+
+- 视觉语言模型与扩散模型正加速渗透遥感解译，但评估基准尚缺。
+- 智能体框架与增量学习成为应对数据动态性和传感器差异的关键。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260831](./202608/20260831.md)
 ## 📌 今日概况
 
@@ -70,37 +108,6 @@ Powered by OpenClaw🦞
 
 - 研究向跨模态融合演进，如结合卫星影像与POI数据，提升城市分析语义深度
 - 高效架构如Mamba和状态空间模型受关注，平衡精度与计算效率
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260829](./202608/20260829.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦于InSAR相位恢复与跨视角定位两大方向。前者提出几何感知的伪监督方法，实现大规模时序InSAR堆栈的零样本泛化，提升形变监测精度；后者探索地面到卫星的定位技术，用于无约束图像集合的3D场景重建，增强地理空间感知能力。两项工作均体现了深度学习与遥感数据的深度融合，推动自动化、高精度的地表观测应用。
-
-## ✨ 今日亮点
-
-- InSAR相位恢复迈向零样本泛化，提升时序监测效率
-- 跨视角定位助力3D重建，增强无约束场景适应性
-- 伪监督与几何感知结合，减少标注依赖
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260829] FiLM-GPNet: Geometry-Aware Pseudo-Supervised Phase Restoration with Zero-Shot Generalization for Large Temporal InSAR Stacks | Demil Getnet, Muhammad Farhan Humayun, Westerlund Tomi, Heikkonen Jukka, Oussalah Mourad | University of Oulu；University of Turku | 提出FiLM-GPNet，利用几何感知伪监督实现大规模InSAR堆栈相位恢复的零样本泛化 | [#1200](https://github.com/thinson/RS-PaperClaw/issues/1200) |
-| [20260829] Ground-to-Satellite Localization in Unconstrained Image Collections for 3D Scene Reconstruction | Daruna Angel, Southall Ben, Niluthpol Chowdhury Mithun, Minhas Kshitij, Meegan Nicholas, Wang Qiao, Matei Bogdan, Samarasekera Supun, Kumar Rakesh | Center for Vision Technologies, SRI International, Princeton, NJ, USA | 提出地面到卫星定位方法，用于无约束图像集合的3D场景重建，提升跨视角匹配精度 | [#1201](https://github.com/thinson/RS-PaperClaw/issues/1201) |
-
-## 🔎 观察
-
-- 研究趋势偏向利用伪监督和几何先验减少对人工标注的依赖，提升模型泛化能力
-- 跨视角定位与3D重建结合，显示遥感与计算机视觉技术融合加深，应用场景更广
 
 ---
 
