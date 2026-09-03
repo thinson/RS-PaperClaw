@@ -2,6 +2,49 @@
 
 最近三天日报（最新在前）：
 
+# [20260902](./202609/20260902.md)
+## 📌 今日概况
+
+今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 5 篇。
+
+今日研究聚焦遥感图像理解与跨模态应用，涵盖红外车辆检测、SAR超分辨率、多光谱理解、变化检测及热带气旋预测。趋势上，轻量化适配、零样本学习与物理一致性建模成为热点，旨在提升模型泛化能力与物理可靠性。
+
+## ✨ 今日亮点
+
+- 跨域红外车辆检测引入RGB到IR翻译，提升无人机场景泛化。
+- SAR超分辨率采用语义原型离散建模，增强物理一致性。
+- 零样本多模态气旋预测结合卫星与大气场，拓展预报能力。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260902] RGB-to-IR image translation for infrared vehicle detection in unseen UAV domains | Thijs A. Eker, Ella P. Fokkinga, Jan Erik van Woerden, Elfi I. S. Hofmeijer, Sebastiaan P. Snel, Schutte Klamer, Friso G. Heslinga | TNO - Intelligent Imaging | 通过RGB到红外图像翻译，提升无人机未知域红外车辆检测性能。 | [#1232](https://github.com/thinson/RS-PaperClaw/issues/1232) |
+| [20260902] ProSR: Semantic-Prototype-Guided Discrete Modeling for Physically Consistent SAR Super-Resolution | Kim Byoungwoo, Kim Munchurl | Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea | 提出语义原型引导的离散建模，实现物理一致的SAR图像超分辨率。 | [#1233](https://github.com/thinson/RS-PaperClaw/issues/1233) |
+| [20260902] Lightweight Adaptation of General-Purpose VLMs for Multispectral and SAR Image Understanding | Liu Shanji, Yao Kelu, Xue Junxiao, Lv Chenghui, Miao Xiangyang, Huang Yekai, Chen Yaying, Li Chao | Zhejiang University；Zhejiang Lab | 轻量化适配通用视觉语言模型，用于多光谱与SAR图像理解。 | [#1234](https://github.com/thinson/RS-PaperClaw/issues/1234) |
+| [20260902] Progressive Pseudo-Label Optimization for Point-Supervised Change Detection | Ning Hailong, Wang Hao, Wang Yimeng, Lei Tao, Dian Renwei, Asoke K. Nandi | Xi’an University of Posts and Telecommunications；Dalian Maritime University；School of Electronic Information and Artificial Intelligence, Shaanxi University of Science and Technology；School of Robotics, Hunan University；Department of Electronic and Electrical Engineering, Brunel University of London | 渐进式伪标签优化方法，用于点监督的双时相变化检测。 | [#1235](https://github.com/thinson/RS-PaperClaw/issues/1235) |
+| [20260902] TC-Next: Zero-Shot Multimodal Cyclone Forecasting | Wang Zhe, Chen Sijie, Luo Yiming, Kim Daehyun, Chang Chien-Yi | Carnegie Mellon University；Seoul National University；Durham University | 零样本多模态深度学习框架，结合卫星与大气场预测热带气旋。 | [#1236](https://github.com/thinson/RS-PaperClaw/issues/1236) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Genesis: A Generative Engine for Hierarchical Satellite Image Synthesis | [2609.02683v1](https://arxiv.org/abs/2609.02683v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 跨模态翻译与轻量化适配成为提升遥感模型泛化的主流手段。
+- 物理一致性建模与零样本学习在遥感应用中日益受到重视。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260901](./202609/20260901.md)
 ## 📌 今日概况
 
@@ -73,41 +116,6 @@ Powered by OpenClaw🦞
 
 - 三维建模与散射表征技术向高精度、物理驱动发展，提升遥感解译能力。
 - 智能体与基础模型结合，正从静态分析转向动态任务规划与执行。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260830](./202608/20260830.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究聚焦于多模态数据融合与高效模型设计。人口估算结合序列模型，海事分割推出新数据集，显著性检测采用Mamba架构，地理基础模型通过对比学习增强语义，视觉语言模型探索地理定位。整体呈现从传统视觉任务向复杂场景理解与跨模态应用拓展的趋势。
-
-## ✨ 今日亮点
-
-- 序列模型用于人口估算，提升行政单元精度
-- 海事数据集助力卫星与航拍图像实例分割
-- Mamba网络应用于光学遥感显著性检测
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260830] A Hybrid State-Space Approach for Census-Tract Population Estimation | Jackson R. Ye, Alexandre V. Morozov | Rutgers University New Brunswick NJ USA | 混合状态空间模型用于人口普查区人口估算，结合卫星影像提升精度 | [#1203](https://github.com/thinson/RS-PaperClaw/issues/1203) |
-| [20260830] MariSat: A Maritime Dataset for Instance Segmentation of Objects in Satellite and Aerial Images | Abbes Amir, Harrabi Ines, Lucas Justin Yirepoa Kinda, Trabelsi Rim, Cabani Adnane, Abdelkefi Fatma | University of Carthage, SUP'COM, LR11 TIC05, MEDIATRON, 2083, Ariana, Tunisia；University of Gabes, Hatem Bettaher IResCoMath Laboratory, Gabes, Tunisia；University of Rouen Normandie, ESIGELEC, IRSEEM | 发布MariSat数据集，支持卫星与航拍图像中海上目标实例分割 | [#1204](https://github.com/thinson/RS-PaperClaw/issues/1204) |
-| [20260830] Tensor Orthogonal Subspace Split: Theory and Applications | Miao Jifei, Han Juan, Michael K. Ng, Kit Ian Kou | School of Mathematics and Statistics, Yunnan University, Kunming, Yunnan,, China (；School of Mathematics and Physics, Anhui Jianzhu University, Hefei, Anhui,, China (；Department of Mathematics, Hong Kong Baptist University, Kowloon Tong, Hong Kong, China (；Department of Mathematics, Faculty of Science and Technology, University of Macau, Macau, China ( | 提出张量正交子空间分割理论，应用于多维数据分解与近似 | [#1205](https://github.com/thinson/RS-PaperClaw/issues/1205) |
-| [20260830] SPLG-Mamba: Structure-Preserving Local-Global Mamba Network for Salient Object Detection in Optical Remote Sensing Images | Xu Yi, Hou Ruichao, Ren Tongwei, Wu Gangshan | State Key Laboratory for Novel Software Technology, Nanjing University, Nanjing,, Jiangsu, China (；School of Elite Biomedical Engineers and the Institute for Interdisciplinary Intelligent Pharmacy, China Pharmaceutical University, Nanjing, China ( | SPLG-Mamba网络保持结构信息，实现光学遥感图像显著性目标检测 | [#1206](https://github.com/thinson/RS-PaperClaw/issues/1206) |
-| [20260830] BEACON: Behavioral and Semantic Enrichment of AlphaEarth Embeddings through Tri-Modal Contrastive Learning | Tian Hao, Cai Heng, Yang Yifan | Department of Geography Department of Geography Department of Geography；Texas A&M University Texas A&M University Texas A&M University；College Station, TX, USA College Station, TX, USA College Station, TX, USA；Earth observation to human-centered urban analytics；built environment, institutional functions, and mobility behaviors；SIGSPATIAL ’26, Riverside, CA, USA Point-of-Interests (POIs) information provide human-centered | BEACON通过三模态对比学习丰富地理嵌入，增强城市功能理解 | [#1207](https://github.com/thinson/RS-PaperClaw/issues/1207) |
-| [20260830] GeoAgent: Evaluating VLM Geolocalization Through Embodied Navigation | Mukherjee Arka, Roy Soham, Trivedi Kartikeya, Ghosh Shreya | KIIT Bhubaneswar；IIT Bhubaneswar | GeoAgent基准评估视觉语言模型在具身导航中的地理定位能力 | [#1208](https://github.com/thinson/RS-PaperClaw/issues/1208) |
-
-## 🔎 观察
-
-- 研究向跨模态融合演进，如结合卫星影像与POI数据，提升城市分析语义深度
-- 高效架构如Mamba和状态空间模型受关注，平衡精度与计算效率
 
 ---
 
