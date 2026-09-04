@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260903](./202609/20260903.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日研究聚焦遥感AI与农业、导航及树种的交叉应用。农业方面，利用相机植被指数映射系统估算作物生长，结合RTK-GNSS提升精度。导航领域，提出空地协同的鸟瞰图视觉语言导航方法，增强无人系统协作。树种制图比较了光谱时序特征与地理空间基础模型嵌入的性能。此外，探索了CLIP在多源遥感数据中的潜力，推动多传感器融合与基础模型应用。整体趋势显示，基础模型与多模态数据融合正成为遥感分析的重要方向。
+
+## ✨ 今日亮点
+
+- 农业遥感结合相机与GNSS实现作物生长估算。
+- 空地协同导航利用鸟瞰图提升视觉语言理解。
+- 基础模型嵌入在树种制图中展现潜力。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260903] Plant Growth Estimation with a Camera-Based Vegetation Index Mapping System for Agricultural Ground Vehicles | Pindl Lukas, Maier Michael, Oksanen Timo | Professorship for Agrimechatronics, Technical University of Munich；Munich Institute of Robotics and Machine Intelligence (MIRMI) | 基于相机植被指数映射系统，用于农业地面车辆作物生长估算。 | [#1238](https://github.com/thinson/RS-PaperClaw/issues/1238) |
+| [20260903] Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps | Zhang Shuning, Li Liang, Wang Yunheng, Wang Tao, Kang Yihang, Xu Renjing | the Robotics and Autonomous Systems Thrust, Systems Hub, The Hong Kong University of Science and Technology (Guangzhou), China；School of Communications and Information Engineering, Nanjing University of Posts and Telecommunications, China | 空地协同视觉语言导航，通过共享鸟瞰图实现无人机与地面车协作。 | [#1239](https://github.com/thinson/RS-PaperClaw/issues/1239) |
+| [20260903] Tree species mapping in Denmark: A comparison of spectral-temporal features with geospatial foundation model embeddings | Koukos Alkiviadis, Kondylatos Spyros, Nord-Larsen Thomas, Nyborg Lotte, Tøttrup Christian, Grogan Kenneth | EO Centre of Excellence, DHI | 丹麦树种制图比较光谱时序特征与地理空间基础模型嵌入性能。 | [#1240](https://github.com/thinson/RS-PaperClaw/issues/1240) |
+| [20260903] Exploring the Potential of Contrastive Language-Image Pre-training for Multi-Source Remote Sensing Data | Miao Xiangyang, Yao Kelu, Huang Yekai, Xu Xiaogang, Xue Junxiao, Shen Minjun, Lv Chenghui, Liu Shanji, Chen Yaying, Li Chao | School of Computer Science and Technology, Zhejiang University；Space-based Computing System Research Center, Zhejiang Lab | 探索CLIP预训练模型在多源遥感数据中的潜力，支持多传感器融合。 | [#1241](https://github.com/thinson/RS-PaperClaw/issues/1241) |
+
+## 🔎 观察
+
+- 基础模型嵌入正逐步替代传统手工特征，提升遥感分类精度。
+- 多源数据融合与空地协同成为提升遥感系统自主性的关键趋势。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260902](./202609/20260902.md)
 ## 📌 今日概况
 
@@ -76,46 +109,6 @@ Powered by OpenClaw🦞
 
 - 视觉语言模型与扩散模型正加速渗透遥感解译，但评估基准尚缺。
 - 智能体框架与增量学习成为应对数据动态性和传感器差异的关键。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260831](./202608/20260831.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 11 篇。
-
-今日遥感AI研究聚焦于基础模型、智能体与三维建模。多篇论文探索了基础模型在农业、地学中的应用及预训练新框架，同时智能体系统（如HiRS-Agent、SimCRAFT）推动长时序任务自动化。三维高斯泼溅、散射建模及多光谱数据集的提出，展示了从底层建模到应用数据的全面创新。
-
-## ✨ 今日亮点
-
-- 基础模型与智能体成热点，推动遥感任务自动化。
-- 三维高斯泼溅与散射建模提升目标表征精度。
-- 多光谱与高光谱数据集助力特定场景应用。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260831] BRF-GS: Hyperspectral Bidirectional Reflectance Factor Modeling and Image Generation Based on 3D Gaussian Splatting | Yao Yiling, Zhang Wenjuan, Wang Bowen, Li Bocheng, Song Wentao, Zhang Bing | Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100094, China；International Research Center of Big Data for Sustainable Development Goals, Beijing 100094, China；University of Chinese Academy of Sciences, Beijing 100049, China | 提出基于3D高斯泼溅的高光谱双向反射因子建模与图像生成方法。 | [#1210](https://github.com/thinson/RS-PaperClaw/issues/1210) |
-| [20260831] Intrinsic Scatterer Representation for Forward Scattering Modeling of Complex Radar Targets | Yue Ziyu, Xu Feng | The authors are with the Key Laboratory of Information Science of；Electromagnetic Waves (Ministry of Education), Fudan University, Shanghai stead of meaningful structural entities such as “wings,” “nose,” | 引入内在散射体表示，用于复杂雷达目标前向散射建模。 | [#1211](https://github.com/thinson/RS-PaperClaw/issues/1211) |
-| [20260831] A Composition-Aware Pretraining Framework for Geospatial Foundation Models | Aryan Kashyap Naveen, Srinivas Abhishek, Moothedath Pranav, Bhattacharjee Shrutilipi | National Institute of Technology, Karnataka Visa Inc；Greenlight National Institute of Technology, Karnataka | 提出成分感知预训练框架，增强地理空间基础模型的地表覆盖表征。 | [#1212](https://github.com/thinson/RS-PaperClaw/issues/1212) |
-| [20260831] HiRS-Agent: A Hierarchical Multi-Agent System for Reliable Long-Horizon Remote Sensing Task Solving | Mu Boyang, Wei Zhiwei, Peng Mugen, Xu Wenjia | Beijing University of Posts Hunan Normal University Beijing University of Posts Beijing University of Posts；and Telecommunications School of Geographic；State Key Laboratory of Sciences State Key Laboratory of State Key Laboratory of | 设计层级多智能体系统HiRS-Agent，解决长时序遥感任务。 | [#1213](https://github.com/thinson/RS-PaperClaw/issues/1213) |
-| [20260831] Quantum-Grassmann-Plucker Token Mixing for Deep Learning-Based Post-Disaster Damage Assessment | Farahkhah Kooroush, Lagap Umut, Rezaei Taha, Ghaffarian Saman | Independent Researcher, Tabriz, Iran；Centre for Urban Resilience and Analytics (CURA), Georgia Institute of Technology (Georgia；Department of Civil and Environmental Engineering, University of Exeter, Exeter, UK；Department of Risk and Disaster Reduction (RDR), University College London (UCL), UK | 结合量子Grassmann-Plucker几何，改进灾后损害评估的token混合。 | [#1214](https://github.com/thinson/RS-PaperClaw/issues/1214) |
-| [20260831] Minerals in the Wild: A Hyperspectral-XRF Dataset for Elemental Composition Estimation | Tetoula-Tsonga Eleftheria, Arvanitakis George, Giannakas Theodoros | Institute of Communication and Computer Systems, Athens, Greece | 发布高光谱-XRF数据集，用于矿物元素组成估计。 | [#1215](https://github.com/thinson/RS-PaperClaw/issues/1215) |
-| [20260831] Foundation Models Meet Agriculture: Challenges Beyond Pretraining | Nedungadi Vishal, Xiong Xingguo, Rußwurm Marc, Ioannis N. Athanasiadis | Artificial Intelligence and Plant Science Group Institute of Digital Agriculture；Wageningen University and Research Zhejiang Academy of Agricultural Sciences；University of Bonn Wageningen University and Research | 探讨基础模型在农业应用中的挑战，超越预训练阶段。 | [#1216](https://github.com/thinson/RS-PaperClaw/issues/1216) |
-| [20260831] Seeing the Unseen: Camouflaged Object Detection Beyond the Visible Spectrum | Gupta Avi, Gupta Trasha | Indraprastha Institute of Information Technology, Delhi；Delhi Technological University, Delhi | 研究可见光谱之外的伪装目标检测，利用多光谱成像。 | [#1217](https://github.com/thinson/RS-PaperClaw/issues/1217) |
-| [20260831] SimCRAFT: Distilling Remote Sensing Agents via Synthetic Trajectories and Contextual Retrieval-Augmented Fine-Tuning | Wang Haoran, Yao Jing, Yang Xu, Wang Zeqing, Zhang Yang, Ghamisi Pedram, Chen Zhengchao | State Key Laboratory of Remote Sensing and Digital Earth；Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100101, China；University of Chinese Academy of Sciences, Beijing 100049, China；The Hong Kong University of Science and Technology (Guangzhou), Guangzhou 511453, China | 通过合成轨迹和检索增强微调，蒸馏遥感智能体SimCRAFT。 | [#1218](https://github.com/thinson/RS-PaperClaw/issues/1218) |
-| [20260831] Site-specific Channel Modeling Based on Remote-Sensing Maps for 6G Space--Air--Ground Digital Twins | Liu Peijie, Tang Pan, Zhang Jianhua, Tian Lei, Ao Bin, He Boyang, Zheng Hao | State Key Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications, Beijing, China ( | 基于遥感地图的站点特定信道建模，支持6G空天地数字孪生。 | [#1219](https://github.com/thinson/RS-PaperClaw/issues/1219) |
-| [20260831] CedarCypress3D: an annotated UAV-LiDAR dataset of individual trees in planted cedar and cypress forests | Shimizu Katsuto, Kitahara Fumiaki, Nishizono Tomohiro, Saito Hideki, Takahashi Masayoshi, Obata Shingo, Tei Shunsuke, Furuya Naoyuki, Goto Tomoya, Kodani Eiji, Yamada Yusuke | Shikoku Research Center, Forestry and Forest Products Research Institute；Department of Forest Management, Forestry and Forest Products Research Institute；Forestry and Forest Products Research Institute；Hokkaido Research Center, Forestry and Forest Products Research Institute；Graduate School of Bioagricultural Sciences, Nagoya University, Furo-cho | 发布杉柏人工林单木的UAV-LiDAR标注数据集CedarCypress3D。 | [#1220](https://github.com/thinson/RS-PaperClaw/issues/1220) |
-
-## 🔎 观察
-
-- 三维建模与散射表征技术向高精度、物理驱动发展，提升遥感解译能力。
-- 智能体与基础模型结合，正从静态分析转向动态任务规划与执行。
 
 ---
 
