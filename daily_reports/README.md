@@ -2,6 +2,42 @@
 
 最近三天日报（最新在前）：
 
+# [20260904](./202609/20260904.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日遥感AI研究呈现多模态融合与量子计算等前沿方向。MEOX提出紧凑多模态专家混合模型，提升地观测表征学习；量子生成模型应用于SAR/InSAR变化检测，探索量子优势。高光谱超分、跨视角定位、甲烷检测及SAR-光学翻译等任务均引入新架构或几何线索，推动感知精度与效率提升。
+
+## ✨ 今日亮点
+
+- 多模态专家混合模型MEOX提升地观测表征学习效率。
+- 量子生成模型首次用于SAR/InSAR变化检测，探索量子优势。
+- 高光谱超分结合隐式神经表示与张量网络，实现精细重建。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260904] MEOX: Compact Multimodal Mixture-of-Experts for Earth Observation | Albughdadi Mohanad | European Centre for Medium-Range Weather Forecasts | MEOX提出紧凑多模态专家混合模型，用于高效地观测表征学习。 | [#1243](https://github.com/thinson/RS-PaperClaw/issues/1243) |
+| [20260904] SAR and InSAR Change Detection with Quantum Generative Models | Samwel K. Sekwao, De Shaunak, Hocken Alexis, Staniewicz Scott, Epifanovsky Evgeny, Stringham Craig, Farquharson Gordon, Roetteler Martin, Panagiotis Kl. Barkoutsos, Iaconis Jason | Campus Drive, College Park, MD 20740, USA | 量子生成模型应用于SAR/InSAR变化检测，探索量子机器学习潜力。 | [#1244](https://github.com/thinson/RS-PaperClaw/issues/1244) |
+| [20260904] Learning Spatial-Spectral Refinement and Calibrating Complementary Observations for Hyperspectral Image Super-Resolution | Yang Liqian, Chen Xingchi, Gui Xinfeng, Cao Xiangyong, Yi Qianxin | School of Management, Zhengzhou University, Zhengzhou,, China；School of Computer Science and Technology, Xi'an Jiaotong University, Xi'an,, China | 高光谱超分方法结合空间光谱细化与互补观测校准，提升重建质量。 | [#1245](https://github.com/thinson/RS-PaperClaw/issues/1245) |
+| [20260904] ARC-Loc: Leveraging Azimuthal Ray Convergence as a Geometric Cue for Direct Cross-View Localization | Kim Hyeongsik, Kim Mincheol, Moon Heejoon, Je Hyeong Hong | Dept. of Artificial Intelligence Semiconductor Engineering, Hanyang University；Dept. of Artificial Intelligence, Hanyang University, Republic of Korea；Dept. of Electronic Engineering, Hanyang University, Republic of Korea | ARC-Loc利用方位角射线收敛作为几何线索，实现直接跨视角定位。 | [#1246](https://github.com/thinson/RS-PaperClaw/issues/1246) |
+| [20260904] Methane Detection On Board Satellites from Unorthorectified Imagery | Marini Luca, Chen Maggie, Lamdouar Hala, Martínez-Ferrer Laura, Dr C. P. Bridges, Acciarini Giacomo | University of Oxford, Oxford, United Kingdom；Delft University of Technology, Delft, The Netherlands；Universitat de València, València, Spain；University of Surrey, Guildford, United Kingdom | 研究非正射影像上的星载甲烷检测，采用U-Net机器学习方法。 | [#1247](https://github.com/thinson/RS-PaperClaw/issues/1247) |
+| [20260904] 3D Radar Imaging from the UAV Nadir | S. Hamed Javadi, Sahli Hichem, Bourdoux André | Interuniversity Micro-Electronics Center (IMEC), Kapeldreef 75, B- Leuven, Belgium；Informatics Dept., Vrije Universiteit Brussel (VUB), Pleinlaan 2, Brussels, Belgium. ( | 提出无人机下视3D雷达成像方法，结合干涉与MIMO技术。 | [#1248](https://github.com/thinson/RS-PaperClaw/issues/1248) |
+| [20260904] Bridging Modalities and Tasks: A Unified Hierarchical ViT for SAR-to-Optical Translation and Semantic Segmentation | Liu Siyuan, Zhang Xuze, Wang Yongshun, Pan Licong, Liu Hang, Li Huihui | School of Automation, Northwestern Polytechnical University, Xi'an, China (；School of Cybersecurity, Northwestern Polytechnical University, Xi'an, China ( | 统一层次ViT同时处理SAR到光学翻译与语义分割，实现多任务学习。 | [#1249](https://github.com/thinson/RS-PaperClaw/issues/1249) |
+
+## 🔎 观察
+
+- 多模态融合与统一架构成为趋势，旨在提升跨传感器泛化能力。
+- 量子计算与遥感结合初现，但尚处早期，需验证实际增益。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260903](./202609/20260903.md)
 ## 📌 今日概况
 
@@ -71,44 +107,6 @@ Powered by OpenClaw🦞
 
 - 跨模态翻译与轻量化适配成为提升遥感模型泛化的主流手段。
 - 物理一致性建模与零样本学习在遥感应用中日益受到重视。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260901](./202609/20260901.md)
-## 📌 今日概况
-
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
-
-今日遥感AI研究聚焦于多模态与智能体技术，涵盖卫星降水伪影检测、野火分割、高光谱解混、SAR-EO翻译、滑坡理解等应用。同时，多篇工作探索基础模型与视觉语言模型在遥感中的适配与评估，以及事件相机与残差学习在UAV预测中的应用。研究趋势显示，模型正从专用走向通用，强调自适应与推理能力。
-
-## ✨ 今日亮点
-
-- 多篇工作引入视觉语言模型与智能体框架，推动遥感任务自动化。
-- 研究关注模型自适应与增量学习，以应对传感器差异与动态环境。
-- 基础模型评估与零样本分割成为热点，探索通用遥感智能。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260901] A Sensor-Adaptive Incremental Learning Framework for Artifact Detection in Satellite Precipitation Data | Andres F. Monsalve, Hernan A. Moreno, Christian D. Kummerow | University of Texas at El Paso, El Paso, TX, overall scores or binary indicators, but do not identify the USA；University of Texas at El Paso, El Paso, TX, USA；Colorado State University, Fort Collins, CO, USA. an image and remain highly limited when adapting to novel | 提出传感器自适应增量学习框架，用于卫星降水数据伪影检测。 | [#1222](https://github.com/thinson/RS-PaperClaw/issues/1222) |
-| [20260901] Scale-based Approach for Active Wildfire Segmentation on Satellite Imagery | Matheus F. Kovaleski, Premebida Cristiano, João Ruivo Paulo | ∗ Institute of Systems and Robotics, Department of Electrical and Computer Engineering, University of Coimbra, Portugal；detection and monitoring, recent research has also explored | 基于尺度方法实现主动野火分割，利用卫星多光谱图像。 | [#1223](https://github.com/thinson/RS-PaperClaw/issues/1223) |
-| [20260901] Agentic Multimodal Models for Environmental Hyperspectral Unmixing | Cholewa Michał, Ciampi Luca, Messina Nicola, Głomb Przemysław, Amato Giuseppe | IITiS-PAS；ISTI-CNR | 智能体多模态模型用于环境高光谱解混，提取端元。 | [#1224](https://github.com/thinson/RS-PaperClaw/issues/1224) |
-| [20260901] ReFlowSET: Representation-Aligned Latent Flow Matching for SAR-to-EO Image Translation | Do Jeonghyeok, Lee Seungchul, Kim Munchurl | KAIST；Stellarvision Inc. | ReFlowSET采用表示对齐潜流匹配，实现SAR到光学图像转换。 | [#1225](https://github.com/thinson/RS-PaperClaw/issues/1225) |
-| [20260901] Residual Kalman Dynamics for Event-Based UAV Forecasting | Nyblom Per, Ovrén Hannes, Gustafsson David | Swedish Defence Research Agency (FOI), Linköping, Sweden；Kalman filter over a full center-size box state as a strong physical baseline, and train a residual model to predict acceleration-like corrections | 残差卡尔曼动力学用于事件相机UAV轨迹预测。 | [#1226](https://github.com/thinson/RS-PaperClaw/issues/1226) |
-| [20260901] RingMoClaw: An Experience-Inspired Multi-Agent Framework for Self-Evolving Research in Remote Sensing | Kang Kaiyue, He Qixuan, Wang Peijin, Feng Yingchao, Ren Chao, Wang Kangxin, Diao Wenhui, Wang Yixiao, Zhao Liangjin, Wei Kaiwen, Liu Nayu, Sun Xian | Self-Evolving Research in Remote Sensing；toward continuous research driven model evolution in remote The capabilities of large language models (LLMs) in comsensing；Remote sensing earth observation is an essential means Squad [21], and GeoColab [22] extend the scope of agents in；Aerospace Information Research Institute, Chinese Academy of Sciences, cross modal earth observation reasoning, procedural knowl-；Beijing 100190, China, also with the School of Electronic, Electrical and；Communication Engineering, University of Chinese Academy of Sciences；Beijing 100190, China, also with the University of Chinese Academy of Sci- management, and strengthen the reasoning and scheduling；Research Institute, Chinese Academy of Sciences, Beijing 100190, China. upon the OpenClaw research agent paradigm [25], OpenEarth-；Aerospace Information Research Institute, Chinese Academy of Sciences, and enables agents to dynamically generate dedicated tools for；Beijing 100190, China, and also with the National Key Laboratory of | RingMoClaw多智能体框架驱动遥感自进化研究。 | [#1227](https://github.com/thinson/RS-PaperClaw/issues/1227) |
-| [20260901] EarthLD: Towards Unified Open-World Landslide Understanding via Vision-Language Guided Diffusion Models | Su Yuanchao, Gao Lianru, Jiang Mengying, Chen Jiangyi, Cheng Jiaxin, Zhou Yicong | Department of Computer and Information Science, University of Macau, Macao 999078, China；College of Geomatics, Xi’an University of Science and Technology, Xi’an 710054, China | EarthLD利用视觉语言引导扩散模型实现开放世界滑坡理解。 | [#1228](https://github.com/thinson/RS-PaperClaw/issues/1228) |
-| [20260901] Do Satellites See Commuters? A Critical Benchmark of Vision Foundation Models | Ashiq Shukoor Iqbal, Wongso Wilson, Flora D. Salim | University of New South Wales Sydney NSW Australia | 基准测试评估视觉基础模型在通勤起讫点识别中的能力。 | [#1229](https://github.com/thinson/RS-PaperClaw/issues/1229) |
-| [20260901] Restrict, Don't Retrain: Inference-Time VLM Guidance for Zero-Shot Aerial Segmentation | DiMeola Teresa, Walter Charles, Xiao Hong | University of Mississippi | 推理时视觉语言模型引导实现零样本航空影像分割。 | [#1230](https://github.com/thinson/RS-PaperClaw/issues/1230) |
-
-## 🔎 观察
-
-- 视觉语言模型与扩散模型正加速渗透遥感解译，但评估基准尚缺。
-- 智能体框架与增量学习成为应对数据动态性和传感器差异的关键。
 
 ---
 
