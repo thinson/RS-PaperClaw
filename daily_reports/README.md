@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260909](./202609/20260909.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究覆盖弱监督分割、高光谱降维、小目标检测、视觉语言变化检测、多传感器甲烷羽流探测与开放世界目标检测等方向。趋势上，弱监督与提示引导结合提升高分辨率多光谱水体分割精度；Mamba结构被引入遥感小目标检测以扩大感知范围；四叉树掩码编码将变化检测转化为层级序列生成，衔接视觉语言模型；多传感器异构融合与部分传感器缺失场景受到关注；双曲几何被用于开放世界增量检测以建模未知类别。整体呈现多模态融合、结构化生成与几何表示学习并进的态势。
+
+## ✨ 今日亮点
+
+- 弱监督水体分割引入提示引导局部细化，缓解标签噪声。
+- Mamba与YOLO结合，内外扩展感知范围以提升小目标检测。
+- 四叉树掩码编码将变化检测转为层级序列，衔接视觉语言模型。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260909] Beyond Weak Labels: Prompt-Guided Local Refinement for Weakly Supervised Water Segmentation in High-Resolution Multispectral Imagery | Muhammad Farhan Humayun, Imangholiloo Mohammad, Shah Afifah, Westerlund Tomi, Heikkonen Jukka | Department of Computing, University of Turku, Finland；Department of Geoinformatics and Cartography, Finnish Geospatial Research Institute | 提出提示引导局部细化方法，用于高分辨率多光谱影像弱监督水体分割，缓解弱标签噪声。 | [#1262](https://github.com/thinson/RS-PaperClaw/issues/1262) |
+| [20260909] Dimensionality Reduction for Hyperspectral Image Classification | Cherifi Mohamed, Mesloub Ammar, Mohammed Nabil El Korso, Touhami Tayeb, Abdennour Hacine Gharbi | Laboratoire Traitement du Signal Laboratoire Antennes et Dispositifs Micro-Ondes Université Paris-Saclay；Laboratoire Antennes et Dispositifs Micro-Ondes Université de Bordj-Bou-Ariridj | 比较PCA与LDA等降维方法在高光谱图像分类中的效果，结合监督分类器评估性能。 | [#1263](https://github.com/thinson/RS-PaperClaw/issues/1263) |
+| [20260909] ScopeMamba-YOLO: Widening the Perceptual Scope Inward and Outward for Small Object Detection in Remote Sensing Imagery | Fan Junjie, Mai Yijun, Wei Linduo, Rao Jiayu, Bao Junmin, Jin Qiushi, Li Guijia, Qi Yong | School of Intellectual Property, Nanjing University of Science and Technology, Nanjing, China (；School of Computer Science and Engineering, Nanjing University of Science and Technology, Nanjing, China (；School of Economics and Management, Nanjing University of Science and Technology, Nanjing, China ( | 提出ScopeMamba-YOLO，通过选择性扫描内外扩展感知范围，提升遥感小目标检测。 | [#1264](https://github.com/thinson/RS-PaperClaw/issues/1264) |
+| [20260909] From Pixels to Hierarchical Sequences: Quadtree Mask Encoding for Vision-Language Binary Change Detection | An Xiao, Zhang Ruikang, Zhong Chen, Shen Xuli, Sun Jiaxing, Wu Jiang, He Wei | Wuhan University；Peking University；Shanghai Artificial Intelligence Laboratory | 提出四叉树掩码编码，将二值变化检测转为层级序列生成，结合视觉语言模型。 | [#1265](https://github.com/thinson/RS-PaperClaw/issues/1265) |
+| [20260909] MethaneFuse: Learning from Multi-Sensor Satellite Observations for Methane Plume Detection | Wang Yuyao, Juliana Y. Leung, Niu Di | Department of Electrical and；University of Alberta；Department of Civil and | 提出MethaneFuse，融合多传感器卫星观测并应对部分传感器缺失，检测甲烷羽流。 | [#1266](https://github.com/thinson/RS-PaperClaw/issues/1266) |
+| [20260909] Hyperbolic Geometry for Open-World Object Detection in Remote Sensing Imagery | Li Wuzhou, Zhou Jiawei, Wang Shenghang, Li Xiang | School of Computer Science and Artificial Intelligence, Wuhan Textile University, Wuhan, China (；the Electronic Information School, Wuhan University, Wuhan, China (；the Electrical and Computer Engineering, Ohio State University, Columbus, OH, USA (；School of Artificial Intelligence, Wuhan University, Wuhan, China ( | 将双曲几何引入开放世界遥感目标检测，支持增量学习与未知目标发现。 | [#1267](https://github.com/thinson/RS-PaperClaw/issues/1267) |
+
+## 🔎 观察
+
+- 弱监督与提示学习结合成为高分辨率分割的务实路径，降低像素级标注依赖。
+- 多传感器融合与开放世界设定并行推进，反映遥感模型对数据缺失与未知类别的鲁棒性需求。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260908](./202609/20260908.md)
 ## 📌 今日概况
 
@@ -41,24 +76,6 @@ Powered by OpenClaw🦞
 ---
 
 # [20260907](./202609/20260907.md)
-## 📌 今日概况
-
-今日共检索候选论文 0 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 0 篇。
-
-当日未检索到符合条件并纳入日报的论文。
-
-## 🔎 观察
-
-- 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
-- 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260906](./202609/20260906.md)
 ## 📌 今日概况
 
 今日共检索候选论文 0 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 0 篇。
