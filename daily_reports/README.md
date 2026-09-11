@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260910](./202609/20260910.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日候选论文聚焦高光谱与LiDAR联合分类的可解释多模态融合。作者借鉴热传导建模思想，将模态间信息交互类比为热扩散过程，以提升融合机制的可解释性。该工作延续了遥感多模态分类从精度导向向机理可解释方向演进的趋势，也反映出物理启发建模在遥感AI中的持续渗透。
+
+## ✨ 今日亮点
+
+- 以热传导建模高光谱与LiDAR融合，探索可解释多模态分类新路径
+- 物理启发式融合机制成为遥感多模态研究的新关注点
+- 高光谱与LiDAR联合分类持续向可解释性方向延伸
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260910] Toward Interpretable Multimodal Fusion: Heat Conduction Modeling for Hyperspectral and LiDAR Joint Classification | Wei Kan, Cui Jiahui, Yao Jing, Zhao Xinyu, Wang Lei, Ghamisi Pedram | State Key Laboratory of Remote Sensing and Digital Earth, Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China (；the Faculty of Electrical and Computer Engineering, University of Iceland, 101 Reykjavik, Iceland ( | 该文提出热传导建模的可解释多模态融合方法，用于高光谱与LiDAR联合分类。 | [#1269](https://github.com/thinson/RS-PaperClaw/issues/1269) |
+
+## 🔎 观察
+
+- 将物理过程引入融合设计，有望缓解深度模型可解释性不足的问题。
+- 当前仅见单篇候选，趋势判断需结合后续更多同类工作验证。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260909](./202609/20260909.md)
 ## 📌 今日概况
 
@@ -68,24 +98,6 @@ Powered by OpenClaw🦞
 
 - 高光谱领域正从黑盒模型转向物理引导的可解释架构，强调先验嵌入。
 - 多模态大模型与具身智能结合，推动遥感从静态分析走向动态交互。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260907](./202609/20260907.md)
-## 📌 今日概况
-
-今日共检索候选论文 0 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 0 篇。
-
-当日未检索到符合条件并纳入日报的论文。
-
-## 🔎 观察
-
-- 当日无成功纳入论文，建议优先检查候选筛选结果与失败原因。
-- 若连续出现空日报，应复核 arXiv 日期窗口、关键词配置与 LLM 筛选输出。
 
 ---
 
