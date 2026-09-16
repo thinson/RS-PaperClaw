@@ -36,6 +36,37 @@ Powered by OpenClaw🦞
 
 ---
 
+# [20260912](./202609/20260912.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦于基础模型适配与高效检测架构两个方向。一方面，针对多模态基础模型在遥感领域的迁移，研究者提出基于域感知松弛正交子空间的参数高效微调方法，试图在低秩适配框架下缓解域差异。另一方面，面向无人机航拍等场景，有工作将状态空间建模与高频增强结合到YOLO12中，以提升小目标检测效率。整体趋势显示，遥感AI正从通用大模型直接迁移转向领域定制化适配，同时轻量化与频域信息利用成为检测任务的重要优化手段。
+
+## ✨ 今日亮点
+
+- 多模态基础模型遥感适配引入域感知松弛正交子空间，提升参数高效微调效果。
+- YOLO12-MambaScan融合高频增强与状态空间建模，面向无人机小目标检测。
+- 两项工作分别代表基础模型领域适配与检测架构轻量化两条技术路线。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260912] Multimodal Foundation Models Adaptation based on Domain-Aware Relaxed Orthogonal Subspace for Remote Sensing | Luo Han, Yang Ruoyu, Liu Yinhe, Zhong Yanfei | State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan, China ( | 提出域感知松弛正交子空间方法，实现遥感多模态基础模型的参数高效领域适配。 | [#1284](https://github.com/thinson/RS-PaperClaw/issues/1284) |
+| [20260912] YOLO12-MambaScan: An Efficient Object Detector with High-Frequency Enhancement and State-Space Modeling | Wang Hao | BDNRC | 设计YOLO12-MambaScan检测器，结合高频增强与状态空间建模提升无人机小目标检测。 | [#1285](https://github.com/thinson/RS-PaperClaw/issues/1285) |
+
+## 🔎 观察
+
+- 遥感基础模型适配正从简单微调转向结构化子空间约束，以平衡泛化与域特化。
+- 状态空间模型与频域增强结合，反映检测任务对计算效率与细粒度信息保留的双重需求。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260911](./202609/20260911.md)
 ## 📌 今日概况
 
@@ -64,36 +95,6 @@ Powered by OpenClaw🦞
 
 - 星上AI与边缘计算正从实验走向业务化，Φsat-2案例表明遥感处理重心向数据源头迁移。
 - 大模型智能体开始渗透对地观测全链路，Earth-Agent-Pro预示任务级自动化成为新竞争点。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260910](./202609/20260910.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日候选论文聚焦高光谱与LiDAR联合分类的可解释多模态融合。作者借鉴热传导建模思想，将模态间信息交互类比为热扩散过程，以提升融合机制的可解释性。该工作延续了遥感多模态分类从精度导向向机理可解释方向演进的趋势，也反映出物理启发建模在遥感AI中的持续渗透。
-
-## ✨ 今日亮点
-
-- 以热传导建模高光谱与LiDAR融合，探索可解释多模态分类新路径
-- 物理启发式融合机制成为遥感多模态研究的新关注点
-- 高光谱与LiDAR联合分类持续向可解释性方向延伸
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260910] Toward Interpretable Multimodal Fusion: Heat Conduction Modeling for Hyperspectral and LiDAR Joint Classification | Wei Kan, Cui Jiahui, Yao Jing, Zhao Xinyu, Wang Lei, Ghamisi Pedram | State Key Laboratory of Remote Sensing and Digital Earth, Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China (；the Faculty of Electrical and Computer Engineering, University of Iceland, 101 Reykjavik, Iceland ( | 该文提出热传导建模的可解释多模态融合方法，用于高光谱与LiDAR联合分类。 | [#1269](https://github.com/thinson/RS-PaperClaw/issues/1269) |
-
-## 🔎 观察
-
-- 将物理过程引入融合设计，有望缓解深度模型可解释性不足的问题。
-- 当前仅见单篇候选，趋势判断需结合后续更多同类工作验证。
 
 ---
 
