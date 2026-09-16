@@ -36,6 +36,46 @@ Powered by OpenClaw🦞
 
 ---
 
+# [20260913](./202609/20260913.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 2 篇。
+
+今日两篇论文分别聚焦星上图像恢复与遥感变化视觉问答。前者提出无注意力机制的紧凑编码器，结合脉冲神经网络与神经形态计算，旨在降低星上处理功耗并保留信息，推动在轨实时恢复。后者面向双时相遥感影像的变化视觉问答，引入选择性工具调用策略，让视觉语言模型按需调用外部工具，提升复杂变化推理的准确性。整体看，研究趋势从单纯提升精度转向轻量化、低功耗与智能体式推理，强调在资源受限场景下的实用部署。
+
+## ✨ 今日亮点
+
+- 星上图像恢复探索无注意力紧凑编码器与脉冲神经网络，兼顾低功耗与信息保留。
+- 遥感变化视觉问答引入选择性工具调用，让视觉语言模型按需借助外部工具推理。
+- 两篇工作均关注资源受限场景，推动遥感AI向轻量化与智能体化方向发展。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260913] LIMODENet: Attention-Free Compact Encoders for Information-Preserving Onboard Satellite Image Restoration | Le Thanh-Dung, Vu Nguyen Ha, Ti Ti Nguyen, Chatzinotas Symeon | Texas A\&M University - Corpus Christi, TX, USA；University of Luxembourg, Kirchberg, Luxembourg | 提出LIMODENet，用无注意力紧凑编码器与脉冲神经网络实现信息保留的星上卫星图像恢复。 | [#1287](https://github.com/thinson/RS-PaperClaw/issues/1287) |
+| [20260913] Selective Tool Use for Agentic Change Visual Question Answering in Remote Sensing | Bazi Yakoub, Mohamad M. Al Rahhal, Mohamed A. Mekhtiche, Zuair Mansour | the Computer Engineering Department, College of Computer and Information Sciences, King Saud University, Riyadh, Saudi Arabia (；the Applied Computer Science Department, College of Applied Computer Science, King Saud University, Riyadh, Saudi Arabia ( | 面向双时相遥感变化视觉问答，提出选择性工具调用策略增强视觉语言模型的推理能力。 | [#1288](https://github.com/thinson/RS-PaperClaw/issues/1288) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Small Object Detection in Drone Aerial Imagery with LAF-YOLOv10 | [2609.14560v1](https://arxiv.org/abs/2609.14560v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 星上处理与变化问答均强调资源约束，轻量化与按需计算成为遥感AI落地的关键方向。
+- 无注意力编码器与工具调用分别代表架构精简和智能体推理两条技术路线，值得持续关注。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260912](./202609/20260912.md)
 ## 📌 今日概况
 
@@ -60,41 +100,6 @@ Powered by OpenClaw🦞
 
 - 遥感基础模型适配正从简单微调转向结构化子空间约束，以平衡泛化与域特化。
 - 状态空间模型与频域增强结合，反映检测任务对计算效率与细粒度信息保留的双重需求。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260911](./202609/20260911.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日论文覆盖遥感AI从平台接口、星上部署到多模态分割与智能体全链路。openEO数据立方体机器学习API降低开发门槛，Φsat-2星上浊度监测体现边缘计算趋势。火星滑坡分割与无人机RGB-热融合分别拓展多模态与跨域应用，Earth-Agent-Pro则推动大模型驱动的端到端对地观测工作流。
-
-## ✨ 今日亮点
-
-- openEO数据立方体机器学习API，降低遥感AI开发门槛
-- Φsat-2星上AI实现海岸带浊度实时监测
-- Earth-Agent-Pro探索大模型驱动全链路对地观测
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260911] A Machine Learning API for Earth Observation Data Cubes Based on openEO | Pondi Brian, Hurst Jonas, Simoes Rolf, Starke Jonas, Appel Marius, Pebesma Edzer | Institute for Geoinformatics, University of Münster, Heisenbergstr. 2, Münster, 48149；Bochum University of Applied Sciences, Am Hochschulcampus 1, Bochum, 44801 | 基于openEO构建机器学习API，简化地球观测数据立方体的模型训练与推理流程。 | [#1277](https://github.com/thinson/RS-PaperClaw/issues/1277) |
-| [20260911] AquaCubeAI-Powered Monitoring Turbidity on-board Φsat-2 | Pietro Di Stasio, Razzano Francesca, Liparulo Elisa, Meoni Gabriele, Longépé Nicolas, Tapete Deodato, Gamba Paolo, Schirinzi Gilda, Silvia Liberata Ullo | Department of Engineering, University of Sannio, Benevento, Italy (；Department of Electrical, Computer and Biomedical Engineering, University of Pavia, Pavia, Italy ( | 在Φsat-2卫星上部署AI模型，实现海岸带水体浊度的星上实时监测。 | [#1278](https://github.com/thinson/RS-PaperClaw/issues/1278) |
-| [20260911] Global-Local Contextual Progressive Expansion Network for Martian Landslide Segmentation in Multimodal Remote Sensing Imagery | Leo Thomas Ramos, Paheding Sidike, Abel A. Reyes-Angulo, A. Rajaneesh, Sajinkumar K. S., Angel D. Sappa, Oommen Thomas | Department of Geology, University of Kerala, Thiruvananthapuram, Kerala, India ( )；the Computer Vision Center, Universitat Autònoma de Barcelona, Barcelona,, Spain | 提出全局-局部上下文渐进扩展网络，用于多模态火星滑坡分割。 | [#1279](https://github.com/thinson/RS-PaperClaw/issues/1279) |
-| [20260911] Earth-Agent-Pro: Towards Real-World Full-Chain Earth Observation with Agents | Lv Zhutao, Dang Chenhao, Feng Yi, Gong Yanpei, Wang Xiaolei, Ye Junyan, He Conghui, Li Weijia | Tsinghua Shenzhen International Graduate School, Tsinghua University；Sun Yat-Sen University；Shanghai Jiao Tong University；Shanghai Artificial Intelligence Laboratory；Tianjin University；Harbin Institute of Technology | Earth-Agent-Pro利用大语言模型智能体，实现全链条对地观测任务规划与执行。 | [#1280](https://github.com/thinson/RS-PaperClaw/issues/1280) |
-| [20260911] Aligned Radiometric RGB-Thermal Fusion for UAV Facade Anomaly Screening | Yang Yuan, Li Shulei, Liang Haobo | the Hong Kong Center for Con- distinguish. struction Robotics, Hong Kong SAR, China (；the Hong Kong Center for Construction Robotics, Hong Kong SAR, China ( | 面向无人机立面异常筛查，提出辐射对齐的RGB-热红外融合方法。 | [#1281](https://github.com/thinson/RS-PaperClaw/issues/1281) |
-| [20260911] PATH: Continuous Target Sensing among Autonomous Cooperative Drones | Kim Heegyeong, James Alice, Seth Avishkar, Kuantama Endrowednes, Williamson Jane, Feng Yimeng, Han Richard | School of Computing, Macquarie University, Sydney, NSW, Australia (；School of Natural Sciences, Macquarie University, Sydney, NSW, Australia | 面向自主协作无人机，提出PATH方法实现连续目标感知与交接。 | [#1282](https://github.com/thinson/RS-PaperClaw/issues/1282) |
-
-## 🔎 观察
-
-- 星上AI与边缘计算正从实验走向业务化，Φsat-2案例表明遥感处理重心向数据源头迁移。
-- 大模型智能体开始渗透对地观测全链路，Earth-Agent-Pro预示任务级自动化成为新竞争点。
 
 ---
 
