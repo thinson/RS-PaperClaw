@@ -36,6 +36,41 @@ Powered by OpenClaw🦞
 
 ---
 
+# [20260911](./202609/20260911.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日论文覆盖遥感AI从平台接口、星上部署到多模态分割与智能体全链路。openEO数据立方体机器学习API降低开发门槛，Φsat-2星上浊度监测体现边缘计算趋势。火星滑坡分割与无人机RGB-热融合分别拓展多模态与跨域应用，Earth-Agent-Pro则推动大模型驱动的端到端对地观测工作流。
+
+## ✨ 今日亮点
+
+- openEO数据立方体机器学习API，降低遥感AI开发门槛
+- Φsat-2星上AI实现海岸带浊度实时监测
+- Earth-Agent-Pro探索大模型驱动全链路对地观测
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260911] A Machine Learning API for Earth Observation Data Cubes Based on openEO | Pondi Brian, Hurst Jonas, Simoes Rolf, Starke Jonas, Appel Marius, Pebesma Edzer | Institute for Geoinformatics, University of Münster, Heisenbergstr. 2, Münster, 48149；Bochum University of Applied Sciences, Am Hochschulcampus 1, Bochum, 44801 | 基于openEO构建机器学习API，简化地球观测数据立方体的模型训练与推理流程。 | [#1277](https://github.com/thinson/RS-PaperClaw/issues/1277) |
+| [20260911] AquaCubeAI-Powered Monitoring Turbidity on-board Φsat-2 | Pietro Di Stasio, Razzano Francesca, Liparulo Elisa, Meoni Gabriele, Longépé Nicolas, Tapete Deodato, Gamba Paolo, Schirinzi Gilda, Silvia Liberata Ullo | Department of Engineering, University of Sannio, Benevento, Italy (；Department of Electrical, Computer and Biomedical Engineering, University of Pavia, Pavia, Italy ( | 在Φsat-2卫星上部署AI模型，实现海岸带水体浊度的星上实时监测。 | [#1278](https://github.com/thinson/RS-PaperClaw/issues/1278) |
+| [20260911] Global-Local Contextual Progressive Expansion Network for Martian Landslide Segmentation in Multimodal Remote Sensing Imagery | Leo Thomas Ramos, Paheding Sidike, Abel A. Reyes-Angulo, A. Rajaneesh, Sajinkumar K. S., Angel D. Sappa, Oommen Thomas | Department of Geology, University of Kerala, Thiruvananthapuram, Kerala, India ( )；the Computer Vision Center, Universitat Autònoma de Barcelona, Barcelona,, Spain | 提出全局-局部上下文渐进扩展网络，用于多模态火星滑坡分割。 | [#1279](https://github.com/thinson/RS-PaperClaw/issues/1279) |
+| [20260911] Earth-Agent-Pro: Towards Real-World Full-Chain Earth Observation with Agents | Lv Zhutao, Dang Chenhao, Feng Yi, Gong Yanpei, Wang Xiaolei, Ye Junyan, He Conghui, Li Weijia | Tsinghua Shenzhen International Graduate School, Tsinghua University；Sun Yat-Sen University；Shanghai Jiao Tong University；Shanghai Artificial Intelligence Laboratory；Tianjin University；Harbin Institute of Technology | Earth-Agent-Pro利用大语言模型智能体，实现全链条对地观测任务规划与执行。 | [#1280](https://github.com/thinson/RS-PaperClaw/issues/1280) |
+| [20260911] Aligned Radiometric RGB-Thermal Fusion for UAV Facade Anomaly Screening | Yang Yuan, Li Shulei, Liang Haobo | the Hong Kong Center for Con- distinguish. struction Robotics, Hong Kong SAR, China (；the Hong Kong Center for Construction Robotics, Hong Kong SAR, China ( | 面向无人机立面异常筛查，提出辐射对齐的RGB-热红外融合方法。 | [#1281](https://github.com/thinson/RS-PaperClaw/issues/1281) |
+| [20260911] PATH: Continuous Target Sensing among Autonomous Cooperative Drones | Kim Heegyeong, James Alice, Seth Avishkar, Kuantama Endrowednes, Williamson Jane, Feng Yimeng, Han Richard | School of Computing, Macquarie University, Sydney, NSW, Australia (；School of Natural Sciences, Macquarie University, Sydney, NSW, Australia | 面向自主协作无人机，提出PATH方法实现连续目标感知与交接。 | [#1282](https://github.com/thinson/RS-PaperClaw/issues/1282) |
+
+## 🔎 观察
+
+- 星上AI与边缘计算正从实验走向业务化，Φsat-2案例表明遥感处理重心向数据源头迁移。
+- 大模型智能体开始渗透对地观测全链路，Earth-Agent-Pro预示任务级自动化成为新竞争点。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260910](./202609/20260910.md)
 ## 📌 今日概况
 
@@ -59,41 +94,6 @@ Powered by OpenClaw🦞
 
 - 将物理过程引入融合设计，有望缓解深度模型可解释性不足的问题。
 - 当前仅见单篇候选，趋势判断需结合后续更多同类工作验证。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260909](./202609/20260909.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究覆盖弱监督分割、高光谱降维、小目标检测、视觉语言变化检测、多传感器甲烷羽流探测与开放世界目标检测等方向。趋势上，弱监督与提示引导结合提升高分辨率多光谱水体分割精度；Mamba结构被引入遥感小目标检测以扩大感知范围；四叉树掩码编码将变化检测转化为层级序列生成，衔接视觉语言模型；多传感器异构融合与部分传感器缺失场景受到关注；双曲几何被用于开放世界增量检测以建模未知类别。整体呈现多模态融合、结构化生成与几何表示学习并进的态势。
-
-## ✨ 今日亮点
-
-- 弱监督水体分割引入提示引导局部细化，缓解标签噪声。
-- Mamba与YOLO结合，内外扩展感知范围以提升小目标检测。
-- 四叉树掩码编码将变化检测转为层级序列，衔接视觉语言模型。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260909] Beyond Weak Labels: Prompt-Guided Local Refinement for Weakly Supervised Water Segmentation in High-Resolution Multispectral Imagery | Muhammad Farhan Humayun, Imangholiloo Mohammad, Shah Afifah, Westerlund Tomi, Heikkonen Jukka | Department of Computing, University of Turku, Finland；Department of Geoinformatics and Cartography, Finnish Geospatial Research Institute | 提出提示引导局部细化方法，用于高分辨率多光谱影像弱监督水体分割，缓解弱标签噪声。 | [#1262](https://github.com/thinson/RS-PaperClaw/issues/1262) |
-| [20260909] Dimensionality Reduction for Hyperspectral Image Classification | Cherifi Mohamed, Mesloub Ammar, Mohammed Nabil El Korso, Touhami Tayeb, Abdennour Hacine Gharbi | Laboratoire Traitement du Signal Laboratoire Antennes et Dispositifs Micro-Ondes Université Paris-Saclay；Laboratoire Antennes et Dispositifs Micro-Ondes Université de Bordj-Bou-Ariridj | 比较PCA与LDA等降维方法在高光谱图像分类中的效果，结合监督分类器评估性能。 | [#1263](https://github.com/thinson/RS-PaperClaw/issues/1263) |
-| [20260909] ScopeMamba-YOLO: Widening the Perceptual Scope Inward and Outward for Small Object Detection in Remote Sensing Imagery | Fan Junjie, Mai Yijun, Wei Linduo, Rao Jiayu, Bao Junmin, Jin Qiushi, Li Guijia, Qi Yong | School of Intellectual Property, Nanjing University of Science and Technology, Nanjing, China (；School of Computer Science and Engineering, Nanjing University of Science and Technology, Nanjing, China (；School of Economics and Management, Nanjing University of Science and Technology, Nanjing, China ( | 提出ScopeMamba-YOLO，通过选择性扫描内外扩展感知范围，提升遥感小目标检测。 | [#1264](https://github.com/thinson/RS-PaperClaw/issues/1264) |
-| [20260909] From Pixels to Hierarchical Sequences: Quadtree Mask Encoding for Vision-Language Binary Change Detection | An Xiao, Zhang Ruikang, Zhong Chen, Shen Xuli, Sun Jiaxing, Wu Jiang, He Wei | Wuhan University；Peking University；Shanghai Artificial Intelligence Laboratory | 提出四叉树掩码编码，将二值变化检测转为层级序列生成，结合视觉语言模型。 | [#1265](https://github.com/thinson/RS-PaperClaw/issues/1265) |
-| [20260909] MethaneFuse: Learning from Multi-Sensor Satellite Observations for Methane Plume Detection | Wang Yuyao, Juliana Y. Leung, Niu Di | Department of Electrical and；University of Alberta；Department of Civil and | 提出MethaneFuse，融合多传感器卫星观测并应对部分传感器缺失，检测甲烷羽流。 | [#1266](https://github.com/thinson/RS-PaperClaw/issues/1266) |
-| [20260909] Hyperbolic Geometry for Open-World Object Detection in Remote Sensing Imagery | Li Wuzhou, Zhou Jiawei, Wang Shenghang, Li Xiang | School of Computer Science and Artificial Intelligence, Wuhan Textile University, Wuhan, China (；the Electronic Information School, Wuhan University, Wuhan, China (；the Electrical and Computer Engineering, Ohio State University, Columbus, OH, USA (；School of Artificial Intelligence, Wuhan University, Wuhan, China ( | 将双曲几何引入开放世界遥感目标检测，支持增量学习与未知目标发现。 | [#1267](https://github.com/thinson/RS-PaperClaw/issues/1267) |
-
-## 🔎 观察
-
-- 弱监督与提示学习结合成为高分辨率分割的务实路径，降低像素级标注依赖。
-- 多传感器融合与开放世界设定并行推进，反映遥感模型对数据缺失与未知类别的鲁棒性需求。
 
 ---
 
