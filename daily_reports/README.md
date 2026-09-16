@@ -36,6 +36,44 @@ Powered by OpenClaw🦞
 
 ---
 
+# [20260914](./202609/20260914.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
+
+今日论文覆盖遥感与AI交叉的多个应用方向：从海冰类型预测、野火分割与葡萄园火灾韧性分析，到屋顶光伏统计审计、海洋污染检测和雪崩活动预测。方法上，弱监督多标签比例学习、贝叶斯推断、Mamba分割框架和Transformer时序建模等被用于处理标签不完整、数据分布差异和复杂时空依赖。同时，视觉语言模型与不确定性估计开始进入无人机导航，迁移学习也被用于社会经济估计。整体呈现任务驱动、多源融合与模型适配并重的趋势。
+
+## ✨ 今日亮点
+
+- 弱监督与贝叶斯方法被用于海冰和光伏统计中的不完整标签问题
+- Mamba与Transformer分别进入海洋污染分割和雪崩活动预测任务
+- 视觉语言模型结合不确定性估计用于越野导航路径规划
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260914] UDAV: Uncertainty-Driven Adaptive VLM Waypoint Planner | Farhani Ghazal, Shabani Shabnam | the Automotive and Surface Transportation Research Centre, National Research Council Canada, London, Ontario, Canada | 提出不确定性驱动的自适应视觉语言模型航点规划器，用于无人机引导地面车辆越野导航。 | [#1290](https://github.com/thinson/RS-PaperClaw/issues/1290) |
+| [20260914] Multi-Label Proportion Learning for Sea-Ice Type Prediction | Samira Alkaee Taleghan, Koo Younghyun, Andrew P. Barrett, Banaei-Kashani Farnoush | University of Colorado Denver National Snow and Ice Data Center (NSIDC), CIRES；Denver, Colorado, USA University of Colorado Boulder；National Snow and Ice Data Center (NSIDC), CIRES, University of Colorado Denver；University of Colorado Boulder Denver, Colorado, USA；atures and ERA5 reanalysis data through modality-guided auxiliary Danish Meteorological Institute (DMI) overlaid on a Sentinel-1 SAR | 面向海冰类型预测，研究多标签比例学习以应对弱监督和标签比例信息。 | [#1291](https://github.com/thinson/RS-PaperClaw/issues/1291) |
+| [20260914] Nationally Consistent, Locally Incomplete: A Bayesian Remote-Sensing Audit of Rooftop Photovoltaic Registries | Kasmi Gabriel, Saint-Drenan Yves-Marie, Dubus Laurent, Blanc Philippe | Centre Observation Impacts Energie (O.I.E.), MINES Paris, Université PSL, Sophia-Antipolis, France | 用贝叶斯遥感审计方法评估法国屋顶光伏注册数据，揭示全国一致但局部缺失问题。 | [#1292](https://github.com/thinson/RS-PaperClaw/issues/1292) |
+| [20260914] A Sentinel-2 benchmark dataset for deep-learning active-fire segmentation across 25 California wildfires | Mitra Shreyan, Narimani Mohammadreza, Farajpoor Parastoo | California High School；Department of Biological and Agricultural Engineering, University of California, Davis | 发布基于Sentinel-2的加州25场野火主动火线分割基准数据集，服务深度学习评测。 | [#1293](https://github.com/thinson/RS-PaperClaw/issues/1293) |
+| [20260914] Multisource Remote Sensing and Geospatial Analysis of Vineyard Wildfire Impacts and Resilience: The 2019 Kincade Fire | Farajpoor Parastoo, Mahla Ardebili Pour, Mohammad Bagher Ghiasi, Narimani Mohammadreza | Department of Biological and Agricultural Engineering, University of California, Davis；Department of Civil and Environmental Engineering, University of California, Davis；Department of Electrical and Computer Engineering, University of California, Davis | 结合多源遥感和地理空间分析，评估2019年Kincade火灾对葡萄园的影响与恢复力。 | [#1294](https://github.com/thinson/RS-PaperClaw/issues/1294) |
+| [20260914] Transfer Learning for Socioeconomic Estimation in Forced-Displacement Settings | Ndung'u Steven, Daoud Adel, Ismael Yacoubou Djima, Hai-Anh H. Dang, Patrick Michael Brock | Chalmers University, Sweden | 在被迫流离失所场景中探索迁移学习，利用地球观测估计社会经济状况。 | [#1295](https://github.com/thinson/RS-PaperClaw/issues/1295) |
+| [20260914] MambaMPD: A Mamba-Driven Segmentation Framework for Marine Pollution Detection from Remote Sensing Imagery | Chen Shuaiyu, Han Wei, Ren Peng, Luo Chunbo, Fu Zeyu | aDepartment of Computer Science, University of Exeter, Exeter, United Kingdom；bSchool of Computer Science, China University of Geosciences, Wuhan, China；cCollege of Oceanography and Space Informatics, China University of Petroleum (East China), Qingdao, China | 提出Mamba驱动的海洋污染检测分割框架，结合频率感知增强处理遥感影像。 | [#1296](https://github.com/thinson/RS-PaperClaw/issues/1296) |
+| [20260914] Data-driven Prediction of Satellite-observed Avalanche Activity from Snowpack Simulations | Grahn Jakob, Filippo Maria Bianchi, Kruyt Bert, Müller Karsten | NORCE Research, Troms, Norway；UiT The Arctic University of Norway, Troms, Norway | 利用雪包模拟数据驱动预测卫星观测的雪崩活动，采用Transformer建模时序关系。 | [#1297](https://github.com/thinson/RS-PaperClaw/issues/1297) |
+| [20260914] EECTracker: Swarm Motion Prior-Guided Feature Compensation for Airborne Optical UAV Swarm Tracking | Chu Zhaochen, Song Tao, Jin Ren, Jia Mingdong, Lin Defu | China-UAE Belt and Road Joint Laboratory on Intelligent Unmanned Systems, then be guided toward these regions to supplement weakened；School of Aerospace Engineering, Beijing Institute of Technology, Beijing | 提出EECTracker，利用群体运动先验引导特征补偿，用于机载光学无人机集群跟踪。 | [#1298](https://github.com/thinson/RS-PaperClaw/issues/1298) |
+
+## 🔎 观察
+
+- 弱监督、标签不完整和域偏移是今日多篇论文的共同挑战，方法上倾向贝叶斯推断与迁移学习。
+- 应用场景明显向灾害与能源倾斜，野火、雪崩、海冰和光伏统计占据多数，强调可操作监测。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260913](./202609/20260913.md)
 ## 📌 今日概况
 
@@ -69,37 +107,6 @@ Powered by OpenClaw🦞
 
 - 星上处理与变化问答均强调资源约束，轻量化与按需计算成为遥感AI落地的关键方向。
 - 无注意力编码器与工具调用分别代表架构精简和智能体推理两条技术路线，值得持续关注。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260912](./202609/20260912.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦于基础模型适配与高效检测架构两个方向。一方面，针对多模态基础模型在遥感领域的迁移，研究者提出基于域感知松弛正交子空间的参数高效微调方法，试图在低秩适配框架下缓解域差异。另一方面，面向无人机航拍等场景，有工作将状态空间建模与高频增强结合到YOLO12中，以提升小目标检测效率。整体趋势显示，遥感AI正从通用大模型直接迁移转向领域定制化适配，同时轻量化与频域信息利用成为检测任务的重要优化手段。
-
-## ✨ 今日亮点
-
-- 多模态基础模型遥感适配引入域感知松弛正交子空间，提升参数高效微调效果。
-- YOLO12-MambaScan融合高频增强与状态空间建模，面向无人机小目标检测。
-- 两项工作分别代表基础模型领域适配与检测架构轻量化两条技术路线。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260912] Multimodal Foundation Models Adaptation based on Domain-Aware Relaxed Orthogonal Subspace for Remote Sensing | Luo Han, Yang Ruoyu, Liu Yinhe, Zhong Yanfei | State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan, China ( | 提出域感知松弛正交子空间方法，实现遥感多模态基础模型的参数高效领域适配。 | [#1284](https://github.com/thinson/RS-PaperClaw/issues/1284) |
-| [20260912] YOLO12-MambaScan: An Efficient Object Detector with High-Frequency Enhancement and State-Space Modeling | Wang Hao | BDNRC | 设计YOLO12-MambaScan检测器，结合高频增强与状态空间建模提升无人机小目标检测。 | [#1285](https://github.com/thinson/RS-PaperClaw/issues/1285) |
-
-## 🔎 观察
-
-- 遥感基础模型适配正从简单微调转向结构化子空间约束，以平衡泛化与域特化。
-- 状态空间模型与频域增强结合，反映检测任务对计算效率与细粒度信息保留的双重需求。
 
 ---
 
