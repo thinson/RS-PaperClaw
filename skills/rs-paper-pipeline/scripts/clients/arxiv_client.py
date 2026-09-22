@@ -37,17 +37,54 @@ def _retry_after_seconds(headers) -> int | None:
     return None
 
 
+def _arxiv_api_candidates(api_url: str) -> list[str]:
+    """Return the configured API endpoint followed by the official host fallback."""
+    parsed = urllib.parse.urlsplit(api_url)
+    fallback_hosts = {
+        "export.arxiv.org": "arxiv.org",
+        "arxiv.org": "export.arxiv.org",
+    }
+    fallback_host = fallback_hosts.get(parsed.hostname or "")
+    if not fallback_host:
+        return [api_url]
+
+    fallback_netloc = fallback_host
+    if parsed.port:
+        fallback_netloc = f"{fallback_host}:{parsed.port}"
+    fallback_url = urllib.parse.urlunsplit(parsed._replace(netloc=fallback_netloc))
+    return [api_url, fallback_url] if fallback_url != api_url else [api_url]
+
+
+def _http_error_body(exc: HTTPError, limit: int = 300) -> str:
+    try:
+        body = exc.read(limit).decode("utf-8", errors="replace")
+    except Exception:
+        return ""
+    return " ".join(body.split())
+
+
 def fetch_url_with_retry(url: str, retries: int = 6, timeout: int = 90) -> str:
     backoff = [5, 15, 30, 60, 120, 240]
     rate_limit_backoff = [60, 120, 240, 360, 600, 900]
     last_err = None
     for i in range(retries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": CONFIG.arxiv_user_agent})
+            req = urllib.request.Request(
+                url,
+                headers={
+                    "User-Agent": CONFIG.arxiv_user_agent,
+                    "Accept": "application/atom+xml, application/xml;q=0.9, */*;q=0.8",
+                },
+            )
             with urllib.request.urlopen(req, timeout=timeout) as response:
                 return response.read().decode("utf-8", errors="ignore")
         except HTTPError as exc:
             last_err = exc
+            if exc.code == 406:
+                detail = _http_error_body(exc)
+                suffix = f" | {detail}" if detail else ""
+                print(f"  [arXiv] HTTP 406 from {urllib.parse.urlsplit(url).netloc}{suffix}")
+                raise
             if exc.code in (429, 503):
                 wait_s = max(
                     _retry_after_seconds(exc.headers) or 0,
@@ -65,6 +102,30 @@ def fetch_url_with_retry(url: str, retries: int = 6, timeout: int = 90) -> str:
                 break
             time.sleep(backoff[min(i, len(backoff) - 1)])
     raise last_err
+
+
+def fetch_query_with_fallback(params: dict[str, object], retries: int = 6, timeout: int = 90) -> str:
+    endpoints = _arxiv_api_candidates(CONFIG.arxiv_api)
+    last_err: Exception | None = None
+    for index, endpoint in enumerate(endpoints):
+        url = f"{endpoint}?{urllib.parse.urlencode(params)}"
+        try:
+            return fetch_url_with_retry(url, retries=retries, timeout=timeout)
+        except HTTPError as exc:
+            last_err = exc
+            if exc.code != 406 or index == len(endpoints) - 1:
+                raise
+            next_endpoint = endpoints[index + 1]
+            print(f"  [arXiv] endpoint rejected request; fallback to {next_endpoint}")
+        except Exception as exc:
+            last_err = exc
+            if index == len(endpoints) - 1:
+                raise
+            next_endpoint = endpoints[index + 1]
+            print(f"  [arXiv] endpoint unavailable ({exc}); fallback to {next_endpoint}")
+    if last_err is not None:
+        raise last_err
+    raise RuntimeError("No arXiv API endpoint configured")
 
 
 def fetch_recent_candidates(
@@ -101,8 +162,7 @@ def fetch_recent_candidates(
                 "sortBy": "submittedDate",
                 "sortOrder": "descending",
             }
-            url = f"{CONFIG.arxiv_api}?{urllib.parse.urlencode(params)}"
-            xml_text = fetch_url_with_retry(url, retries=6, timeout=90)
+            xml_text = fetch_query_with_fallback(params, retries=6, timeout=90)
 
             root = ET.fromstring(xml_text)
             entries = root.findall("atom:entry", namespace)
