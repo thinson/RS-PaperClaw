@@ -2,6 +2,46 @@
 
 最近三天日报（最新在前）：
 
+# [20260919](./202609/20260919.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 2 篇。
+
+今日两篇论文聚焦无人机遥感感知与重建。一篇面向无人机小目标检测，将状态空间建模与YOLO框架结合，引入自适应空间语义注意力融合与多尺度特征聚合，以提升效率与精度；另一篇针对航空大场景重建，提出可见性驱动的3D高斯泼溅方法，优化大规模场景下的表示与渲染。整体趋势显示，Mamba/状态空间模型与3D高斯泼溅正加速向遥感任务渗透，强调效率、尺度适应与几何一致性。
+
+## ✨ 今日亮点
+
+- 状态空间模型与YOLO结合，提升无人机小目标检测效率
+- 可见性驱动3D高斯泼溅，面向航空大场景重建优化
+- 两篇工作均强调多尺度与几何/语义融合的协同设计
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260919] HDMamba-YOLO: Efficient State-Space Perception and Local Spatial Reconstruction for UAV Small Object Detection | Wei Linduo, Fan Junjie, Mai Yijun, Chen Xiao, Zhang Guiyang, Qi Yong | School of Economics and Management, Nanjing University of Science and Technology；School of Intellectual Property, Nanjing University of Science and Technology；School of Computer Science and Engineering, Nanjing University of Science and Technology | 提出HDMamba-YOLO，融合状态空间感知与局部空间重建，用于无人机小目标检测。 | [#1317](https://github.com/thinson/RS-PaperClaw/issues/1317) |
+| [20260919] VDGS: Visibility-Driven Large-Scale 3D Gaussian Splatting for Aerial Scene Reconstruction | Yu Haolin, Tang Jiadong, Wang YiXian, Gao Yu, He Shi, Lai Zhilin, Yang Yi, Fu Mengyin | the Beijing Institute of Technology, Beijing, China, * | 提出VDGS，以可见性驱动大规模3D高斯泼溅，实现航空场景重建。 | [#1318](https://github.com/thinson/RS-PaperClaw/issues/1318) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| SatOV: Restoring Spatial Priors for Training-Free Open-Vocabulary Segmentation in Remote Sensing Imagery | [2609.22834v1](https://arxiv.org/abs/2609.22834v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 状态空间模型正从通用视觉向遥感小目标检测迁移，效率与长程建模是主要卖点。
+- 3D高斯泼溅在航空大场景中需解决可见性与尺度问题，可见性驱动是合理切入点。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260918](./202609/20260918.md)
 ## 📌 今日概况
 
@@ -70,50 +110,6 @@ Powered by OpenClaw🦞
 
 - 低信噪比与任务导向通信的交叉研究增多，反映遥感系统正从单纯成像向语义高效传输演进。
 - 事件视觉与持久记忆机制在无人机场景中互补，有望缓解动态环境下的目标丢失与语义漂移问题。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260916](./202609/20260916.md)
-## 📌 今日概况
-
-今日共检索候选论文 21 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 6 篇。
-
-今日研究覆盖高光谱分类、叶绿素反演、ISAC-SAR、星上烟火检测、无人机广域感知与跨视角地理定位。趋势上，可解释AI与降维结合用于高光谱分类，符号回归探索叶绿素反演所需波段，轻量化弱监督模型推动星上实时推理，多视角专家与视觉语言重排提升跨视角定位鲁棒性。整体呈现模型轻量化、任务专用化与多模态融合并进的特点。
-
-## ✨ 今日亮点
-
-- 可解释AI驱动高光谱降维，兼顾分类精度与特征可解释性
-- 符号回归量化叶绿素反演所需高光谱信息，挑战全波段依赖
-- 轻量弱监督模型实现星上烟火检测，推动在轨实时响应
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260916] Dimensionality reduction for AI based hyperspectral image classification based on XAI | Zeljković Vladimir, Stojanović Branka, Ganster Harald, Nešković Aleksandar | University of Belgrade School of Electrical Engineering；JOANNEUM RESEARCH Forschungsgesellschaft mbH；This study, as part of a large research initiative [9], uti-；This research addresses the challenge of limited mate- lizes AI for different materials classification based on hyrial recycling in wood recycling processes by leveraging | 基于可解释AI的高光谱降维方法，用于木材回收材料分类，缓解标注数据有限问题。 | [#1300](https://github.com/thinson/RS-PaperClaw/issues/1300) |
-| [20260916] How Much Hyperspectral Information Does Chlorophyll Retrieval Really Need? | Hammoud Abed, Sun Xuerong, Champenois Bianca, Robert J.W. Brewin | Civil and Environmental Engineering, Princeton University, Princeton, New Jersey 08540, USA；Centre for Geography and Environmental Science, Department of Earth and Environmental Sciences；Faculty of Environment, Science and Economy, University of Exeter, Exeter, Cornwall, UK；High Meadows Environmental Institute, Princeton University, Princeton, New Jersey 08540, USA | 利用符号回归探究叶绿素反演真正需要多少高光谱信息，面向PACE等任务。 | [#1301](https://github.com/thinson/RS-PaperClaw/issues/1301) |
-| [20260916] Imaging-Communication Trade-off in VLEO ISAC-SAR Using CP-OFDM | Lee In-Hyeok, Han Kawon | Ulsan National Institute of Science and Technology, Ulsan, Korea | 研究VLEO下ISAC-SAR采用CP-OFDM的成像与通信权衡关系。 | [#1302](https://github.com/thinson/RS-PaperClaw/issues/1302) |
-| [20260916] WISE: A Lightweight, Weakly-Supervised Model for Onboard Fire Smoke Detection and Localization | Lu Sha, Sun Yu, Zhao Liang, Liu Jixue, Liu Lin, Li Jiuyong, A. K. Qin, Mousist Alejandro, Peters Stefan | Adelaide University, Adelaide, SA 5000, Australia；Swinburne University of Technology, Hawthorn, VIC 3122, Australia | 提出轻量弱监督WISE模型，实现星上火灾烟雾检测与定位。 | [#1303](https://github.com/thinson/RS-PaperClaw/issues/1303) |
-| [20260916] Understanding Dynamic Scenes at Gigapixel Scale: Wide-Area Spatio-Temporal Perception from UAVs | Zhu Yuhang, Zhu Meiyi, Dang Yunkai, Li Zhangnan, Wang Yuxuan, Li Wenbin, Pan Hongbing | Nanjing University | 面向无人机十亿像素级广域动态场景，构建时空感知数据集与方法。 | [#1304](https://github.com/thinson/RS-PaperClaw/issues/1304) |
-| [20260916] Multi-View Mixture-of-Experts with Vision-Language Reranking for Cross-View Object Geo-Localization | Fan Xuyu, Ming Qi, Han Zhu, Wang Liuqian, Cao Si-Yuan, Zhang Xiaohan, Zhao Xudong, Zhao Mingjing, Zhang Yuhan | College of Computer Science, Beijing University of Technology；Zhengzhou University；Zhejiang University；Beijing Institute of Technology；Beijing Electronic Science and Technology Institute；Intelligent Science & Technology Academy of CASIC；jing University of Technology | 多视角专家混合结合视觉语言重排，提升跨视角目标地理定位性能。 | [#1305](https://github.com/thinson/RS-PaperClaw/issues/1305) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| PDA++: Field-Aligned Planning and Scene-Adaptive Insertion in Remote Sensing | [2609.18329v2](https://arxiv.org/abs/2609.18329v2) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 高光谱与叶绿素研究共同指向信息冗余问题，降维与波段选择成为提升效率的关键路径。
-- 星上推理与无人机广域感知强调轻量化与弱监督，反映遥感AI向边缘部署加速迁移。
 
 ---
 
