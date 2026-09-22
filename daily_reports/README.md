@@ -2,6 +2,45 @@
 
 最近三天日报（最新在前）：
 
+# [20260918](./202609/20260918.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 1 篇。
+
+今日候选论文聚焦无人机遥感影像中的重叠植物识别问题，提出将目标检测与几何感知聚类相结合的技术路线。该方法先通过目标检测定位植物个体，再利用几何信息引导K-Means聚类以区分相互重叠的植株，试图缓解密集植被场景下检测框重叠导致的个体混淆。整体来看，研究延续了遥感AI中检测与聚类融合的思路，强调几何先验在实例区分中的作用，面向农业与植被监测的精细化管理需求。
+
+## ✨ 今日亮点
+
+- 目标检测与几何感知聚类结合，应对无人机影像中植物重叠难题
+- 利用几何信息引导K-Means，提升重叠植株的个体区分能力
+- 面向农业植被精细监测，强调实例级识别而非仅计数
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260918] Combining Object Detection with Geometry-Aware Clustering to Distinguish Overlapping Plants in UAV Imagery | Ik Jae Lee, Hieu D. Nguyen, Meenar Mahbubur, Carlos Morrison Martinez, Connelly Cameron | Department of Mathematics, Rowan University；Department of Geography, Planning, and Sustainability, Rowan University；Department of Computer Science, Rowan University | 将目标检测与几何感知聚类结合，用K-Means区分无人机影像中相互重叠的植物个体。 | [#1315](https://github.com/thinson/RS-PaperClaw/issues/1315) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| AgenticSwarm: Semantic Perception and Adaptive Task Allocation for Heterogeneous Multi-UAV Missions | [2609.21716v1](https://arxiv.org/abs/2609.21716v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 检测加聚类的两阶段思路，适合处理密集植被中检测框难以分离的实例区分问题。
+- 几何先验的引入表明，单纯依赖外观特征在重叠场景下仍有局限，结构信息值得重视。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260917](./202609/20260917.md)
 ## 📌 今日概况
 
@@ -75,40 +114,6 @@ Powered by OpenClaw🦞
 
 - 高光谱与叶绿素研究共同指向信息冗余问题，降维与波段选择成为提升效率的关键路径。
 - 星上推理与无人机广域感知强调轻量化与弱监督，反映遥感AI向边缘部署加速迁移。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260915](./202609/20260915.md)
-## 📌 今日概况
-
-今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日论文聚焦遥感基础模型与下游任务的衔接，涵盖标签效率、时序迁移与跨域泛化。多篇工作探索将预训练嵌入或语言模型迁移至农田制图、光谱时序预测和指代分割，强调独立验证与因果建模。同时，三维重建与多模态时空预测引入风险图引导和异步耦合机制，提升复杂场景下的鲁棒性。整体趋势显示，遥感AI正从单一精度追求转向可迁移、可解释与跨域基准构建。
-
-## ✨ 今日亮点
-
-- 基础模型嵌入用于农田制图，关注标签效率与时间迁移性。
-- 光谱时序学习引入因果潜在预测，支持多视野地球表征。
-- 指代遥感分割提出跨域基准，评估视觉语言模型泛化能力。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260915] From Foundation Embeddings to Cropland Maps: Label Efficiency, Temporal Transferability and Independent Human Validation | Mohammad Ammar Mughees, Montefoschi Giovanni, Chen Zhongxin, Maria Antonia Brovelli | Department of Civil and Environmental Engineering, Politecnico di Milano, Milan, Italy | 评估基础嵌入在农田制图中的标签效率、时序迁移性，并引入独立人工验证。 | [#1271](https://github.com/thinson/RS-PaperClaw/issues/1271) |
-| [20260915] SPEAR NeXT Causal Latent Forecasting Across Multiple Horizons for Spectral Temporal Earth Representation Learning | Ranjan Rajiv, Singh Udaiveer, Tamaskar Shashank, Saraswat Dharmendra | Plaksha University；Purdue University | 提出SPEAR NeXT，用因果潜在预测实现多视野光谱时序地球表征学习。 | [#1272](https://github.com/thinson/RS-PaperClaw/issues/1272) |
-| [20260915] HLC-GS: Risk-Map-Guided Height-Layer Consistency Gaussian Splatting for DSM Reconstruction from Optical Satellite Imagery | Yang Jie, Pi Yingdong, Luo Qiyan, Wang Xiaoyu, Wen Lekang, Wang Mi | State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；Hubei Luojia Laboratory；School of Computer Science, Wuhan University | HLC-GS利用风险图引导高度层一致性高斯泼溅，从光学卫星影像重建DSM。 | [#1273](https://github.com/thinson/RS-PaperClaw/issues/1273) |
-| [20260915] AsyncCouple-Flow: Asynchronous Cross-Modal Coupling and Flow Matching for Spatio-Temporal Forecasting | Wu Zhixiang, Liu Yining, Zhao Bo, Chen Szu-Yu, Duan Huiran, Lin Chu, Yang Chuanguang | Institute of Computing Technology, Chinese Academy of Sciences, China；Emory University, USA；University of California, Berkeley, USA；Yale University, USA；Stevens Institute of Technology, USA；City University of New York, USA | AsyncCouple-Flow通过异步跨模态耦合与流匹配，处理时空预测中的缺失模态。 | [#1274](https://github.com/thinson/RS-PaperClaw/issues/1274) |
-| [20260915] VPRef: A Cross-Domain Benchmark for Referring Remote Sensing Image Segmentation | Liu Quanwei, Huang Tao, Yang Jiaqi, Xiang Wei | College of Science and Engineering, James Cook University, Cairns,, Australia (；College of Science and Engineering, James Cook University, Cairns QLD, Australia and the Center for AI and Data Science Innovation, James Cook University, Cairns QLD, Australia (；Department of Forest and Wildlife Ecology, University of Wisconsin-Madison, Madison, WI USA (；School of Computing, Engineering and Mathematical Sciences, La Trobe University, Melbourne, VIC, Australia ( | VPRef构建跨域基准，评估指代遥感图像分割中视觉语言模型的域适应能力。 | [#1275](https://github.com/thinson/RS-PaperClaw/issues/1275) |
-
-## 🔎 观察
-
-- 基础模型落地更重标签效率与迁移验证，而非单纯追求精度提升。
-- 跨域基准与因果建模成为提升遥感模型泛化与可解释性的关键路径。
 
 ---
 
