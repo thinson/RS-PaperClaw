@@ -419,7 +419,7 @@ def _process_date(date_str: str, notify: bool, force: bool = False):
     max_sync_attempts = 3
     try:
         for attempt in range(1, max_sync_attempts + 1):
-            run(["python3", "scripts/sync_daily_reports_to_repo.py"])
+            run(["python3", "scripts/sync_daily_reports_to_repo.py", "--date", date_str])
             if daily_report_file_exists(_get_repo(), date_str):
                 break
             if attempt < max_sync_attempts:
@@ -431,7 +431,7 @@ def _process_date(date_str: str, notify: bool, force: bool = False):
             "failed",
             {
                 "reason": _format_exc(exc),
-                "failed_command": "python3 scripts/sync_daily_reports_to_repo.py",
+                "failed_command": f"python3 scripts/sync_daily_reports_to_repo.py --date {date_str}",
             },
         )
         raise

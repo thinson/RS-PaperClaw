@@ -5,6 +5,7 @@
 - daily_reports/README.md（展示最新一天日报）
 """
 
+import argparse
 import re
 
 from clients.github_ops import cleanup_legacy_daily_reports, upsert_repo_file
@@ -14,11 +15,11 @@ CONFIG = load_config()
 BASE_DIR = "daily_reports"
 
 
-def main():
+def main(target_date: str | None = None):
     repo = get_repo(CONFIG)
 
     digest_issues = []
-    for it in repo.get_issues(state="open"):
+    for it in repo.get_issues(state="open", labels=["日报"]):
         m = re.fullmatch(r"日报\s*(\d{8})", (it.title or "").strip())
         if m:
             digest_issues.append((m.group(1), it))
@@ -29,7 +30,13 @@ def main():
 
     digest_issues.sort(key=lambda x: x[0])
 
-    for date, issue in digest_issues:
+    reports_to_sync = digest_issues
+    if target_date:
+        reports_to_sync = [(date, issue) for date, issue in digest_issues if date == target_date]
+        if not reports_to_sync:
+            raise RuntimeError(f"digest issue not found for {target_date}")
+
+    for date, issue in reports_to_sync:
         ym = date[:6]
         path = f"{BASE_DIR}/{ym}/{date}.md"
         body = (issue.body or "").strip() + "\n"
@@ -62,4 +69,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--date", dest="date", help="仅同步指定日期日报，格式 YYYYMMDD")
+    args = parser.parse_args()
+    main(target_date=args.date)
