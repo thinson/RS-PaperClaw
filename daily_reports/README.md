@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260921](./202609/20260921.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究趋势聚焦于遥感领域的轻量化、基础模型与跨模态定位。三篇论文分别针对SAR舰船检测的模型压缩、森林点云的基础模型构建以及基于音频的无人机定位，体现了从专用检测到通用表征、从视觉到多模态融合的演进。其中知识蒸馏与剪枝结合、自监督学习用于点云、强化学习处理时序对应，均反映了提升效率与泛化能力的共同目标。
+
+## ✨ 今日亮点
+
+- DTKDP框架结合双教师蒸馏与剪枝，实现轻量SAR舰船检测。
+- 森林点云基础模型探索自监督学习与语义分割。
+- 音频无人机定位引入强化学习实现自适应时序对应。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260921] DTKDP: A Dual Teacher Knowledge Distillation and Pruning Framework for Lightweight Oriented SAR Ship Detection | Li Yuming, Zhang Fan, Alin M. Achim | Visual Information Labs, University of Bristol, Bristol BS1 | 提出双教师知识蒸馏与剪枝框架，用于轻量化定向SAR舰船检测。 | [#1325](https://github.com/thinson/RS-PaperClaw/issues/1325) |
+| [20260921] Toward a foundation model for forest point clouds | Yue Yuanwen, Puliti Stefano, Robert Damien, Topaloğlu Atakan, Xiang Binbin, Wielgosz Maciej, Jan Dirk Wegner, Astrup Rasmus, Rupprecht Christian, Schindler Konrad | University of Oxford；Norwegian Institute of Bioeconomy Research (NIBIO)；University of Zurich | 探索森林点云基础模型，结合自监督学习与语义分割。 | [#1326](https://github.com/thinson/RS-PaperClaw/issues/1326) |
+| [20260921] Audio-based UAV Localization with Adaptive Temporal Correspondence via Reinforcement Learning | Lei Haoxiang, Feng Mingzheng, Wang Daotong, Yuan Shenghai | at the window center to reduce motion-induced mismatch | 利用强化学习实现音频无人机定位中的自适应时序对应。 | [#1327](https://github.com/thinson/RS-PaperClaw/issues/1327) |
+
+## 🔎 观察
+
+- 轻量化与基础模型并行发展，分别应对边缘部署与通用表征需求。
+- 多模态与自监督方法正渗透至遥感细分任务，提升鲁棒性。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260920](./202609/20260920.md)
 ## 📌 今日概况
 
@@ -68,45 +100,6 @@ Powered by OpenClaw🦞
 
 - 状态空间模型正从通用视觉向遥感小目标检测迁移，效率与长程建模是主要卖点。
 - 3D高斯泼溅在航空大场景中需解决可见性与尺度问题，可见性驱动是合理切入点。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260918](./202609/20260918.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 1 篇。
-
-今日候选论文聚焦无人机遥感影像中的重叠植物识别问题，提出将目标检测与几何感知聚类相结合的技术路线。该方法先通过目标检测定位植物个体，再利用几何信息引导K-Means聚类以区分相互重叠的植株，试图缓解密集植被场景下检测框重叠导致的个体混淆。整体来看，研究延续了遥感AI中检测与聚类融合的思路，强调几何先验在实例区分中的作用，面向农业与植被监测的精细化管理需求。
-
-## ✨ 今日亮点
-
-- 目标检测与几何感知聚类结合，应对无人机影像中植物重叠难题
-- 利用几何信息引导K-Means，提升重叠植株的个体区分能力
-- 面向农业植被精细监测，强调实例级识别而非仅计数
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260918] Combining Object Detection with Geometry-Aware Clustering to Distinguish Overlapping Plants in UAV Imagery | Ik Jae Lee, Hieu D. Nguyen, Meenar Mahbubur, Carlos Morrison Martinez, Connelly Cameron | Department of Mathematics, Rowan University；Department of Geography, Planning, and Sustainability, Rowan University；Department of Computer Science, Rowan University | 将目标检测与几何感知聚类结合，用K-Means区分无人机影像中相互重叠的植物个体。 | [#1315](https://github.com/thinson/RS-PaperClaw/issues/1315) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| AgenticSwarm: Semantic Perception and Adaptive Task Allocation for Heterogeneous Multi-UAV Missions | [2609.21716v1](https://arxiv.org/abs/2609.21716v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 检测加聚类的两阶段思路，适合处理密集植被中检测框难以分离的实例区分问题。
-- 几何先验的引入表明，单纯依赖外观特征在重叠场景下仍有局限，结构信息值得重视。
 
 ---
 
