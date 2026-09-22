@@ -2,6 +2,42 @@
 
 最近三天日报（最新在前）：
 
+# [20260917](./202609/20260917.md)
+## 📌 今日概况
+
+今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日论文呈现遥感智能处理向多模态信号融合与任务导向设计演进的趋势。一方面，研究关注低信噪比条件下的语义特征传输与声学信号处理，强调信号层面的预处理与通信效率；另一方面，事件视觉、持久语义记忆与主动地理定位等方向推动无人机与卫星平台在动态环境中的感知鲁棒性。此外，时序InSAR与地表异常免疫监测等研究延续了对地观测中形变与变化检测的精细化需求，整体体现从数据驱动向任务与信号协同优化的转变。
+
+## ✨ 今日亮点
+
+- 信号中心与任务导向通信成为低信噪比遥感的新优化路径
+- 事件视觉与持久语义记忆提升无人机动态感知鲁棒性
+- 主动地理定位与时序InSAR推动跨视角与形变监测精细化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260917] Signal-Centric Remote Sensing via Alternative Preprocessing and Acoustic Processing for ML-Driven Applications | Luna Logan, Jansen-Sánchez Sirio, Demirkiran Ilteris, Ghelarducci Leo | School of Computer Science, College of Computing, Georgia Institute of Technology, Atlanta, GA USA (；Embry-Riddle Aeronautical University | 提出以信号为中心的处理框架，结合替代预处理与声学方法提升低信噪比遥感ML应用性能。 | [#1307](https://github.com/thinson/RS-PaperClaw/issues/1307) |
+| [20260917] Earth Surface Immune System for Rapid Monitoring of Unknown Anomalies | Li Jingtao, Zhu Qian, Wang Xinyu, Li Deren, Zhang Liangpei, Zhong Yanfei | State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；School of Remote Sensing and Information Engineering, Wuhan University | 借鉴免疫系统机制构建地表异常快速监测框架，实现未知异常的即时发现与响应。 | [#1308](https://github.com/thinson/RS-PaperClaw/issues/1308) |
+| [20260917] Multi-Track Time-Series Burst-Overlap Interferometry for Resolving Horizontal Deformation in Earthquake-Cycle Studies | Li Xing, Gao Zhuang, Chen Han, Ma Zhangfeng, Chen Yangkang, Savvaidis Alexandros | Bureau of Economic Geology, Jackson School of Geosciences, University of Texas at Austin；Department of Earth and Space Sciences, Southern University of Science and Technology；State Key Laboratory of Earthquake Dynamics and Forecasting, Institute of Geology, China；Earth Observatory of Singapore, Nanyang Technological University, Singapore, 639798 | 利用多轨时序burst-overlap干涉测量，解析地震周期中的水平形变信号。 | [#1309](https://github.com/thinson/RS-PaperClaw/issues/1309) |
+| [20260917] Task-Oriented Semantic Feature Transmission for Multi-Task Satellite Remote Sensing over Low-SNR Channels | Sun Shuoyuan, Wang Hongyu, Peng Mugen, Xu Wenjia | State Key Laboratory of Networking and Switching Technology；Beijing University of Posts and Telecommunications | 面向多任务卫星遥感，设计低信噪比信道下的语义特征传输与任务导向通信方案。 | [#1310](https://github.com/thinson/RS-PaperClaw/issues/1310) |
+| [20260917] PointEvent: Rethinking Event-based Tiny Object Detection via Serialized Motion Evidence Accumulation | Wu Zongze, Jia Baofeng, Yan Weiqi, Zhang Jingyuan, Zang Yu, Chen Xiaoyu, Han Jing | State key Lab of Extreme Environment Optoelectronic Dynamic Testing Technology and Instrument, Nanjing University of；Jiangsu Key Lab of Visual Sensing and Intelligent Perception, Nanjing University of Science and Technology, China；Fujian Key Laboratory of Urban Intelligent Sensing and Computing, Xiamen University, China | 提出PointEvent方法，通过序列化运动证据积累改进事件相机微小目标检测。 | [#1311](https://github.com/thinson/RS-PaperClaw/issues/1311) |
+| [20260917] Towards Active Cross-View Object Geo-Localization | Yao Shunyu, Zhang Xiaohan, Yang Zhuoran, Lai Haoqi, Ming Qi, Hu Xiaoxi, Shen Hui-Liang, Cao Si-Yuan | College of Information Science and Electronic Engineering；Zhejiang University, Hangzhou 310027, China；College of Computer Science；Beijing University of Technology, Beijing 100124, China；State Key Laboratory of Intelligent Green Vehicle and Mobility；Tsinghua University, Beijing 100084, China；Ningbo Global Innovation Center；Zhejiang University, Ningbo 315100, China；Jinhua Institute of Zhejiang University | 构建主动跨视角目标地理定位框架，融合多视角提示保持与轨迹引导策略初始化。 | [#1312](https://github.com/thinson/RS-PaperClaw/issues/1312) |
+| [20260917] PerSeM: Persistent Semantic Memory for Long-Horizon Open-Vocabulary UAV Mapping | Saurbh Singh Jamwal, Ramakrishnan Ganesh | Department of Computer Science and Engineering；Indian Institute of Technology Bombay | 提出持久语义记忆机制，支持长时程开放词汇无人机建图中的时序一致性。 | [#1313](https://github.com/thinson/RS-PaperClaw/issues/1313) |
+
+## 🔎 观察
+
+- 低信噪比与任务导向通信的交叉研究增多，反映遥感系统正从单纯成像向语义高效传输演进。
+- 事件视觉与持久记忆机制在无人机场景中互补，有望缓解动态环境下的目标丢失与语义漂移问题。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260916](./202609/20260916.md)
 ## 📌 今日概况
 
@@ -73,44 +109,6 @@ Powered by OpenClaw🦞
 
 - 基础模型落地更重标签效率与迁移验证，而非单纯追求精度提升。
 - 跨域基准与因果建模成为提升遥感模型泛化与可解释性的关键路径。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260914](./202609/20260914.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
-
-今日论文覆盖遥感与AI交叉的多个应用方向：从海冰类型预测、野火分割与葡萄园火灾韧性分析，到屋顶光伏统计审计、海洋污染检测和雪崩活动预测。方法上，弱监督多标签比例学习、贝叶斯推断、Mamba分割框架和Transformer时序建模等被用于处理标签不完整、数据分布差异和复杂时空依赖。同时，视觉语言模型与不确定性估计开始进入无人机导航，迁移学习也被用于社会经济估计。整体呈现任务驱动、多源融合与模型适配并重的趋势。
-
-## ✨ 今日亮点
-
-- 弱监督与贝叶斯方法被用于海冰和光伏统计中的不完整标签问题
-- Mamba与Transformer分别进入海洋污染分割和雪崩活动预测任务
-- 视觉语言模型结合不确定性估计用于越野导航路径规划
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260914] UDAV: Uncertainty-Driven Adaptive VLM Waypoint Planner | Farhani Ghazal, Shabani Shabnam | the Automotive and Surface Transportation Research Centre, National Research Council Canada, London, Ontario, Canada | 提出不确定性驱动的自适应视觉语言模型航点规划器，用于无人机引导地面车辆越野导航。 | [#1290](https://github.com/thinson/RS-PaperClaw/issues/1290) |
-| [20260914] Multi-Label Proportion Learning for Sea-Ice Type Prediction | Samira Alkaee Taleghan, Koo Younghyun, Andrew P. Barrett, Banaei-Kashani Farnoush | University of Colorado Denver National Snow and Ice Data Center (NSIDC), CIRES；Denver, Colorado, USA University of Colorado Boulder；National Snow and Ice Data Center (NSIDC), CIRES, University of Colorado Denver；University of Colorado Boulder Denver, Colorado, USA；atures and ERA5 reanalysis data through modality-guided auxiliary Danish Meteorological Institute (DMI) overlaid on a Sentinel-1 SAR | 面向海冰类型预测，研究多标签比例学习以应对弱监督和标签比例信息。 | [#1291](https://github.com/thinson/RS-PaperClaw/issues/1291) |
-| [20260914] Nationally Consistent, Locally Incomplete: A Bayesian Remote-Sensing Audit of Rooftop Photovoltaic Registries | Kasmi Gabriel, Saint-Drenan Yves-Marie, Dubus Laurent, Blanc Philippe | Centre Observation Impacts Energie (O.I.E.), MINES Paris, Université PSL, Sophia-Antipolis, France | 用贝叶斯遥感审计方法评估法国屋顶光伏注册数据，揭示全国一致但局部缺失问题。 | [#1292](https://github.com/thinson/RS-PaperClaw/issues/1292) |
-| [20260914] A Sentinel-2 benchmark dataset for deep-learning active-fire segmentation across 25 California wildfires | Mitra Shreyan, Narimani Mohammadreza, Farajpoor Parastoo | California High School；Department of Biological and Agricultural Engineering, University of California, Davis | 发布基于Sentinel-2的加州25场野火主动火线分割基准数据集，服务深度学习评测。 | [#1293](https://github.com/thinson/RS-PaperClaw/issues/1293) |
-| [20260914] Multisource Remote Sensing and Geospatial Analysis of Vineyard Wildfire Impacts and Resilience: The 2019 Kincade Fire | Farajpoor Parastoo, Mahla Ardebili Pour, Mohammad Bagher Ghiasi, Narimani Mohammadreza | Department of Biological and Agricultural Engineering, University of California, Davis；Department of Civil and Environmental Engineering, University of California, Davis；Department of Electrical and Computer Engineering, University of California, Davis | 结合多源遥感和地理空间分析，评估2019年Kincade火灾对葡萄园的影响与恢复力。 | [#1294](https://github.com/thinson/RS-PaperClaw/issues/1294) |
-| [20260914] Transfer Learning for Socioeconomic Estimation in Forced-Displacement Settings | Ndung'u Steven, Daoud Adel, Ismael Yacoubou Djima, Hai-Anh H. Dang, Patrick Michael Brock | Chalmers University, Sweden | 在被迫流离失所场景中探索迁移学习，利用地球观测估计社会经济状况。 | [#1295](https://github.com/thinson/RS-PaperClaw/issues/1295) |
-| [20260914] MambaMPD: A Mamba-Driven Segmentation Framework for Marine Pollution Detection from Remote Sensing Imagery | Chen Shuaiyu, Han Wei, Ren Peng, Luo Chunbo, Fu Zeyu | aDepartment of Computer Science, University of Exeter, Exeter, United Kingdom；bSchool of Computer Science, China University of Geosciences, Wuhan, China；cCollege of Oceanography and Space Informatics, China University of Petroleum (East China), Qingdao, China | 提出Mamba驱动的海洋污染检测分割框架，结合频率感知增强处理遥感影像。 | [#1296](https://github.com/thinson/RS-PaperClaw/issues/1296) |
-| [20260914] Data-driven Prediction of Satellite-observed Avalanche Activity from Snowpack Simulations | Grahn Jakob, Filippo Maria Bianchi, Kruyt Bert, Müller Karsten | NORCE Research, Troms, Norway；UiT The Arctic University of Norway, Troms, Norway | 利用雪包模拟数据驱动预测卫星观测的雪崩活动，采用Transformer建模时序关系。 | [#1297](https://github.com/thinson/RS-PaperClaw/issues/1297) |
-| [20260914] EECTracker: Swarm Motion Prior-Guided Feature Compensation for Airborne Optical UAV Swarm Tracking | Chu Zhaochen, Song Tao, Jin Ren, Jia Mingdong, Lin Defu | China-UAE Belt and Road Joint Laboratory on Intelligent Unmanned Systems, then be guided toward these regions to supplement weakened；School of Aerospace Engineering, Beijing Institute of Technology, Beijing | 提出EECTracker，利用群体运动先验引导特征补偿，用于机载光学无人机集群跟踪。 | [#1298](https://github.com/thinson/RS-PaperClaw/issues/1298) |
-
-## 🔎 观察
-
-- 弱监督、标签不完整和域偏移是今日多篇论文的共同挑战，方法上倾向贝叶斯推断与迁移学习。
-- 应用场景明显向灾害与能源倾斜，野火、雪崩、海冰和光伏统计占据多数，强调可操作监测。
 
 ---
 
