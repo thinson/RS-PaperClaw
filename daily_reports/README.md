@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260920](./202609/20260920.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日四篇论文覆盖贫困制图、火烧迹地制图、多光谱波段选择与视觉基础模型评测。整体趋势显示，遥感AI正从单纯提升精度转向面向决策的评估、多时相数据构建、成像链路优化以及退化条件下的鲁棒性基准测试。其中，社会应用与模型可靠性成为共同关注点，数据集和评测框架类工作占据主导。
+
+## ✨ 今日亮点
+
+- 贫困制图引入决策中心评估，强调模型对下游决策的实际影响
+- 巴西塞拉多构建多时相火烧迹地数据集，服务区域监测
+- RSPDBench面向物理退化评测视觉基础模型，关注鲁棒性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260920] Decision-Centered Evaluation of Machine Learning Poverty Maps Using Mobile Phone and Satellite Data | Algama Chanuka, Chandana Merl, Dias Viren, Amarasinghe Kasun | Carnegie Mellon University | 结合手机与卫星数据，以决策为中心评估机器学习贫困地图的实际效用。 | [#1320](https://github.com/thinson/RS-PaperClaw/issues/1320) |
+| [20260920] A multi-temporal dataset for mapping burned areas in the Brazilian Cerrado using time series of remote sensing imagery | Alisson Cleiton de Oliveira, Thales Sehn Körting | Earth Observation and Geoinformatics Division (DIOTG), National Institute for Space；Research (INPE), São José dos Campos, SP, Brazil；Geoinformatics Division (DIOTG), National Institute for Space Research (INPE), São José dos | 基于遥感时间序列构建巴西塞拉多火烧迹地多时相数据集，并采用随机森林制图。 | [#1321](https://github.com/thinson/RS-PaperClaw/issues/1321) |
+| [20260920] HIERARCHICAL FILTER BAND SELECTION FOR MULTISPECTRAL OBJECT CLASSIFICATION | Kossira Katja, Seiler Jürgen, Kaup André | Friedrich-Alexander-Universität Erlangen-Nürnberg | 提出层次化滤波波段选择方法，用于多光谱目标分类并优化图像采集。 | [#1322](https://github.com/thinson/RS-PaperClaw/issues/1322) |
+| [20260920] RSPDBench: Benchmarking Vision Foundation Models on Earth Observation Tasks Under Physically Grounded Remote-Sensing Product Degradations | Tanjim Bin Faruk, Khondaker Masfiq Reza, Pallickara Shrideep, Sangmi Lee Pallickara | Colorado State University | 构建RSPDBench，在物理退化条件下评测视觉基础模型的地球观测任务表现。 | [#1323](https://github.com/thinson/RS-PaperClaw/issues/1323) |
+
+## 🔎 观察
+
+- 评测类工作从精度指标转向决策效用与物理退化鲁棒性，反映应用导向增强。
+- 多时相数据集与波段选择研究并行，说明数据构建和成像链路优化仍受重视。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260919](./202609/20260919.md)
 ## 📌 今日概况
 
@@ -74,42 +107,6 @@ Powered by OpenClaw🦞
 
 - 检测加聚类的两阶段思路，适合处理密集植被中检测框难以分离的实例区分问题。
 - 几何先验的引入表明，单纯依赖外观特征在重叠场景下仍有局限，结构信息值得重视。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260917](./202609/20260917.md)
-## 📌 今日概况
-
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日论文呈现遥感智能处理向多模态信号融合与任务导向设计演进的趋势。一方面，研究关注低信噪比条件下的语义特征传输与声学信号处理，强调信号层面的预处理与通信效率；另一方面，事件视觉、持久语义记忆与主动地理定位等方向推动无人机与卫星平台在动态环境中的感知鲁棒性。此外，时序InSAR与地表异常免疫监测等研究延续了对地观测中形变与变化检测的精细化需求，整体体现从数据驱动向任务与信号协同优化的转变。
-
-## ✨ 今日亮点
-
-- 信号中心与任务导向通信成为低信噪比遥感的新优化路径
-- 事件视觉与持久语义记忆提升无人机动态感知鲁棒性
-- 主动地理定位与时序InSAR推动跨视角与形变监测精细化
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260917] Signal-Centric Remote Sensing via Alternative Preprocessing and Acoustic Processing for ML-Driven Applications | Luna Logan, Jansen-Sánchez Sirio, Demirkiran Ilteris, Ghelarducci Leo | School of Computer Science, College of Computing, Georgia Institute of Technology, Atlanta, GA USA (；Embry-Riddle Aeronautical University | 提出以信号为中心的处理框架，结合替代预处理与声学方法提升低信噪比遥感ML应用性能。 | [#1307](https://github.com/thinson/RS-PaperClaw/issues/1307) |
-| [20260917] Earth Surface Immune System for Rapid Monitoring of Unknown Anomalies | Li Jingtao, Zhu Qian, Wang Xinyu, Li Deren, Zhang Liangpei, Zhong Yanfei | State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；School of Remote Sensing and Information Engineering, Wuhan University | 借鉴免疫系统机制构建地表异常快速监测框架，实现未知异常的即时发现与响应。 | [#1308](https://github.com/thinson/RS-PaperClaw/issues/1308) |
-| [20260917] Multi-Track Time-Series Burst-Overlap Interferometry for Resolving Horizontal Deformation in Earthquake-Cycle Studies | Li Xing, Gao Zhuang, Chen Han, Ma Zhangfeng, Chen Yangkang, Savvaidis Alexandros | Bureau of Economic Geology, Jackson School of Geosciences, University of Texas at Austin；Department of Earth and Space Sciences, Southern University of Science and Technology；State Key Laboratory of Earthquake Dynamics and Forecasting, Institute of Geology, China；Earth Observatory of Singapore, Nanyang Technological University, Singapore, 639798 | 利用多轨时序burst-overlap干涉测量，解析地震周期中的水平形变信号。 | [#1309](https://github.com/thinson/RS-PaperClaw/issues/1309) |
-| [20260917] Task-Oriented Semantic Feature Transmission for Multi-Task Satellite Remote Sensing over Low-SNR Channels | Sun Shuoyuan, Wang Hongyu, Peng Mugen, Xu Wenjia | State Key Laboratory of Networking and Switching Technology；Beijing University of Posts and Telecommunications | 面向多任务卫星遥感，设计低信噪比信道下的语义特征传输与任务导向通信方案。 | [#1310](https://github.com/thinson/RS-PaperClaw/issues/1310) |
-| [20260917] PointEvent: Rethinking Event-based Tiny Object Detection via Serialized Motion Evidence Accumulation | Wu Zongze, Jia Baofeng, Yan Weiqi, Zhang Jingyuan, Zang Yu, Chen Xiaoyu, Han Jing | State key Lab of Extreme Environment Optoelectronic Dynamic Testing Technology and Instrument, Nanjing University of；Jiangsu Key Lab of Visual Sensing and Intelligent Perception, Nanjing University of Science and Technology, China；Fujian Key Laboratory of Urban Intelligent Sensing and Computing, Xiamen University, China | 提出PointEvent方法，通过序列化运动证据积累改进事件相机微小目标检测。 | [#1311](https://github.com/thinson/RS-PaperClaw/issues/1311) |
-| [20260917] Towards Active Cross-View Object Geo-Localization | Yao Shunyu, Zhang Xiaohan, Yang Zhuoran, Lai Haoqi, Ming Qi, Hu Xiaoxi, Shen Hui-Liang, Cao Si-Yuan | College of Information Science and Electronic Engineering；Zhejiang University, Hangzhou 310027, China；College of Computer Science；Beijing University of Technology, Beijing 100124, China；State Key Laboratory of Intelligent Green Vehicle and Mobility；Tsinghua University, Beijing 100084, China；Ningbo Global Innovation Center；Zhejiang University, Ningbo 315100, China；Jinhua Institute of Zhejiang University | 构建主动跨视角目标地理定位框架，融合多视角提示保持与轨迹引导策略初始化。 | [#1312](https://github.com/thinson/RS-PaperClaw/issues/1312) |
-| [20260917] PerSeM: Persistent Semantic Memory for Long-Horizon Open-Vocabulary UAV Mapping | Saurbh Singh Jamwal, Ramakrishnan Ganesh | Department of Computer Science and Engineering；Indian Institute of Technology Bombay | 提出持久语义记忆机制，支持长时程开放词汇无人机建图中的时序一致性。 | [#1313](https://github.com/thinson/RS-PaperClaw/issues/1313) |
-
-## 🔎 观察
-
-- 低信噪比与任务导向通信的交叉研究增多，反映遥感系统正从单纯成像向语义高效传输演进。
-- 事件视觉与持久记忆机制在无人机场景中互补，有望缓解动态环境下的目标丢失与语义漂移问题。
 
 ---
 
