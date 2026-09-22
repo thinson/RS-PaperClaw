@@ -2,6 +2,50 @@
 
 最近三天日报（最新在前）：
 
+# [20260916](./202609/20260916.md)
+## 📌 今日概况
+
+今日共检索候选论文 21 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 6 篇。
+
+今日研究覆盖高光谱分类、叶绿素反演、ISAC-SAR、星上烟火检测、无人机广域感知与跨视角地理定位。趋势上，可解释AI与降维结合用于高光谱分类，符号回归探索叶绿素反演所需波段，轻量化弱监督模型推动星上实时推理，多视角专家与视觉语言重排提升跨视角定位鲁棒性。整体呈现模型轻量化、任务专用化与多模态融合并进的特点。
+
+## ✨ 今日亮点
+
+- 可解释AI驱动高光谱降维，兼顾分类精度与特征可解释性
+- 符号回归量化叶绿素反演所需高光谱信息，挑战全波段依赖
+- 轻量弱监督模型实现星上烟火检测，推动在轨实时响应
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260916] Dimensionality reduction for AI based hyperspectral image classification based on XAI | Zeljković Vladimir, Stojanović Branka, Ganster Harald, Nešković Aleksandar | University of Belgrade School of Electrical Engineering；JOANNEUM RESEARCH Forschungsgesellschaft mbH；This study, as part of a large research initiative [9], uti-；This research addresses the challenge of limited mate- lizes AI for different materials classification based on hyrial recycling in wood recycling processes by leveraging | 基于可解释AI的高光谱降维方法，用于木材回收材料分类，缓解标注数据有限问题。 | [#1300](https://github.com/thinson/RS-PaperClaw/issues/1300) |
+| [20260916] How Much Hyperspectral Information Does Chlorophyll Retrieval Really Need? | Hammoud Abed, Sun Xuerong, Champenois Bianca, Robert J.W. Brewin | Civil and Environmental Engineering, Princeton University, Princeton, New Jersey 08540, USA；Centre for Geography and Environmental Science, Department of Earth and Environmental Sciences；Faculty of Environment, Science and Economy, University of Exeter, Exeter, Cornwall, UK；High Meadows Environmental Institute, Princeton University, Princeton, New Jersey 08540, USA | 利用符号回归探究叶绿素反演真正需要多少高光谱信息，面向PACE等任务。 | [#1301](https://github.com/thinson/RS-PaperClaw/issues/1301) |
+| [20260916] Imaging-Communication Trade-off in VLEO ISAC-SAR Using CP-OFDM | Lee In-Hyeok, Han Kawon | Ulsan National Institute of Science and Technology, Ulsan, Korea | 研究VLEO下ISAC-SAR采用CP-OFDM的成像与通信权衡关系。 | [#1302](https://github.com/thinson/RS-PaperClaw/issues/1302) |
+| [20260916] WISE: A Lightweight, Weakly-Supervised Model for Onboard Fire Smoke Detection and Localization | Lu Sha, Sun Yu, Zhao Liang, Liu Jixue, Liu Lin, Li Jiuyong, A. K. Qin, Mousist Alejandro, Peters Stefan | Adelaide University, Adelaide, SA 5000, Australia；Swinburne University of Technology, Hawthorn, VIC 3122, Australia | 提出轻量弱监督WISE模型，实现星上火灾烟雾检测与定位。 | [#1303](https://github.com/thinson/RS-PaperClaw/issues/1303) |
+| [20260916] Understanding Dynamic Scenes at Gigapixel Scale: Wide-Area Spatio-Temporal Perception from UAVs | Zhu Yuhang, Zhu Meiyi, Dang Yunkai, Li Zhangnan, Wang Yuxuan, Li Wenbin, Pan Hongbing | Nanjing University | 面向无人机十亿像素级广域动态场景，构建时空感知数据集与方法。 | [#1304](https://github.com/thinson/RS-PaperClaw/issues/1304) |
+| [20260916] Multi-View Mixture-of-Experts with Vision-Language Reranking for Cross-View Object Geo-Localization | Fan Xuyu, Ming Qi, Han Zhu, Wang Liuqian, Cao Si-Yuan, Zhang Xiaohan, Zhao Xudong, Zhao Mingjing, Zhang Yuhan | College of Computer Science, Beijing University of Technology；Zhengzhou University；Zhejiang University；Beijing Institute of Technology；Beijing Electronic Science and Technology Institute；Intelligent Science & Technology Academy of CASIC；jing University of Technology | 多视角专家混合结合视觉语言重排，提升跨视角目标地理定位性能。 | [#1305](https://github.com/thinson/RS-PaperClaw/issues/1305) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| PDA++: Field-Aligned Planning and Scene-Adaptive Insertion in Remote Sensing | [2609.18329v2](https://arxiv.org/abs/2609.18329v2) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 高光谱与叶绿素研究共同指向信息冗余问题，降维与波段选择成为提升效率的关键路径。
+- 星上推理与无人机广域感知强调轻量化与弱监督，反映遥感AI向边缘部署加速迁移。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260915](./202609/20260915.md)
 ## 📌 今日概况
 
@@ -67,46 +111,6 @@ Powered by OpenClaw🦞
 
 - 弱监督、标签不完整和域偏移是今日多篇论文的共同挑战，方法上倾向贝叶斯推断与迁移学习。
 - 应用场景明显向灾害与能源倾斜，野火、雪崩、海冰和光伏统计占据多数，强调可操作监测。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260913](./202609/20260913.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 2 篇。
-
-今日两篇论文分别聚焦星上图像恢复与遥感变化视觉问答。前者提出无注意力机制的紧凑编码器，结合脉冲神经网络与神经形态计算，旨在降低星上处理功耗并保留信息，推动在轨实时恢复。后者面向双时相遥感影像的变化视觉问答，引入选择性工具调用策略，让视觉语言模型按需调用外部工具，提升复杂变化推理的准确性。整体看，研究趋势从单纯提升精度转向轻量化、低功耗与智能体式推理，强调在资源受限场景下的实用部署。
-
-## ✨ 今日亮点
-
-- 星上图像恢复探索无注意力紧凑编码器与脉冲神经网络，兼顾低功耗与信息保留。
-- 遥感变化视觉问答引入选择性工具调用，让视觉语言模型按需借助外部工具推理。
-- 两篇工作均关注资源受限场景，推动遥感AI向轻量化与智能体化方向发展。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260913] LIMODENet: Attention-Free Compact Encoders for Information-Preserving Onboard Satellite Image Restoration | Le Thanh-Dung, Vu Nguyen Ha, Ti Ti Nguyen, Chatzinotas Symeon | Texas A\&M University - Corpus Christi, TX, USA；University of Luxembourg, Kirchberg, Luxembourg | 提出LIMODENet，用无注意力紧凑编码器与脉冲神经网络实现信息保留的星上卫星图像恢复。 | [#1287](https://github.com/thinson/RS-PaperClaw/issues/1287) |
-| [20260913] Selective Tool Use for Agentic Change Visual Question Answering in Remote Sensing | Bazi Yakoub, Mohamad M. Al Rahhal, Mohamed A. Mekhtiche, Zuair Mansour | the Computer Engineering Department, College of Computer and Information Sciences, King Saud University, Riyadh, Saudi Arabia (；the Applied Computer Science Department, College of Applied Computer Science, King Saud University, Riyadh, Saudi Arabia ( | 面向双时相遥感变化视觉问答，提出选择性工具调用策略增强视觉语言模型的推理能力。 | [#1288](https://github.com/thinson/RS-PaperClaw/issues/1288) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Small Object Detection in Drone Aerial Imagery with LAF-YOLOv10 | [2609.14560v1](https://arxiv.org/abs/2609.14560v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 星上处理与变化问答均强调资源约束，轻量化与按需计算成为遥感AI落地的关键方向。
-- 无注意力编码器与工具调用分别代表架构精简和智能体推理两条技术路线，值得持续关注。
 
 ---
 
