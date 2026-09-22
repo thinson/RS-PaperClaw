@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 import time
 import urllib.parse
 import urllib.request
@@ -63,6 +64,34 @@ def _http_error_body(exc: HTTPError, limit: int = 300) -> str:
     return " ".join(body.split())
 
 
+def fetch_url_with_curl(url: str, timeout: int = 90) -> str:
+    """Use curl as a transport fallback for networks that reject urllib clients."""
+    result = subprocess.run(
+        [
+            "curl",
+            "--silent",
+            "--show-error",
+            "--fail-with-body",
+            "--location",
+            "--max-time",
+            str(timeout),
+            "--header",
+            f"User-Agent: {CONFIG.arxiv_user_agent}",
+            "--header",
+            "Accept: application/atom+xml, application/xml;q=0.9, */*;q=0.8",
+            url,
+        ],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode == 0:
+        return result.stdout
+
+    detail = " ".join((result.stderr or result.stdout).split())[:300]
+    raise RuntimeError(f"curl request failed with exit code {result.returncode}: {detail}")
+
+
 def fetch_url_with_retry(url: str, retries: int = 6, timeout: int = 90) -> str:
     backoff = [5, 15, 30, 60, 120, 240]
     rate_limit_backoff = [60, 120, 240, 360, 600, 900]
@@ -113,16 +142,26 @@ def fetch_query_with_fallback(params: dict[str, object], retries: int = 6, timeo
             return fetch_url_with_retry(url, retries=retries, timeout=timeout)
         except HTTPError as exc:
             last_err = exc
-            if exc.code != 406 or index == len(endpoints) - 1:
+            if exc.code != 406:
                 raise
-            next_endpoint = endpoints[index + 1]
-            print(f"  [arXiv] endpoint rejected request; fallback to {next_endpoint}")
+            if index < len(endpoints) - 1:
+                next_endpoint = endpoints[index + 1]
+                print(f"  [arXiv] endpoint rejected request; fallback to {next_endpoint}")
         except Exception as exc:
             last_err = exc
-            if index == len(endpoints) - 1:
-                raise
-            next_endpoint = endpoints[index + 1]
-            print(f"  [arXiv] endpoint unavailable ({exc}); fallback to {next_endpoint}")
+            if index < len(endpoints) - 1:
+                next_endpoint = endpoints[index + 1]
+                print(f"  [arXiv] endpoint unavailable ({exc}); fallback to {next_endpoint}")
+
+    print("  [arXiv] urllib endpoints unavailable; retry with curl transport")
+    for index, endpoint in enumerate(endpoints):
+        url = f"{endpoint}?{urllib.parse.urlencode(params)}"
+        try:
+            return fetch_url_with_curl(url, timeout=timeout)
+        except Exception as exc:
+            last_err = exc
+            if index < len(endpoints) - 1:
+                print(f"  [arXiv] curl endpoint unavailable ({exc}); try next endpoint")
     if last_err is not None:
         raise last_err
     raise RuntimeError("No arXiv API endpoint configured")

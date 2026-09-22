@@ -50,8 +50,9 @@ class ArxivClientTest(unittest.TestCase):
         request = urlopen.call_args.args[0]
         self.assertIn("application/atom+xml", request.get_header("Accept"))
 
+    @patch.object(arxiv_client, "fetch_url_with_curl")
     @patch.object(arxiv_client, "fetch_url_with_retry")
-    def test_query_falls_back_to_second_official_host_after_406(self, fetch):
+    def test_query_falls_back_to_second_official_host_after_406(self, fetch, curl):
         fetch.side_effect = [
             HTTPError(
                 "https://export.arxiv.org/api/query",
@@ -69,8 +70,38 @@ class ArxivClientTest(unittest.TestCase):
 
         self.assertEqual(result, "<feed />")
         self.assertEqual(fetch.call_count, 2)
+        curl.assert_not_called()
         self.assertTrue(fetch.call_args_list[0].args[0].startswith("https://export.arxiv.org/"))
         self.assertTrue(fetch.call_args_list[1].args[0].startswith("https://arxiv.org/"))
+
+    @patch.object(arxiv_client, "fetch_url_with_curl", return_value="<feed />")
+    @patch.object(arxiv_client, "fetch_url_with_retry")
+    def test_query_uses_curl_after_both_urllib_hosts_return_406(self, fetch, curl):
+        fetch.side_effect = [
+            HTTPError(
+                "https://export.arxiv.org/api/query",
+                406,
+                "Not Acceptable",
+                {},
+                io.BytesIO(b"request rejected"),
+            ),
+            HTTPError(
+                "https://arxiv.org/api/query",
+                406,
+                "Not Acceptable",
+                {},
+                io.BytesIO(b"request rejected"),
+            ),
+        ]
+
+        result = arxiv_client.fetch_query_with_fallback(
+            {"search_query": "all:SAR", "start": 0, "max_results": 1}
+        )
+
+        self.assertEqual(result, "<feed />")
+        self.assertEqual(fetch.call_count, 2)
+        self.assertEqual(curl.call_count, 1)
+        self.assertTrue(curl.call_args.args[0].startswith("https://export.arxiv.org/"))
 
 
 if __name__ == "__main__":
