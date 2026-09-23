@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260922](./202609/20260922.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日三篇论文分别聚焦地球观测基础模型嵌入、开放提示遥感检测与三维重建。首篇验证年度嵌入对野火扰动的编码能力，推动简化火烧区制图；第二篇提出层次感知的开放提示检测框架，提升跨层级一致性；第三篇结合智能体与高斯泼溅实现可审计的城市DSM重建。整体趋势显示，遥感AI正从单一任务模型向可解释、可审计的基础表征与三维结构化理解演进。
+
+## ✨ 今日亮点
+
+- 年度地球观测嵌入可编码野火扰动，支持简化火烧区制图
+- 层次感知开放提示检测提升遥感图像跨层级一致性
+- 智能体与高斯泼溅结合实现可审计城市DSM重建
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260922] Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping | Knezevic Jovana, Atzberger Clement, Feng Zhengpeng, Adam F. A. Pellegrini, Keshav Srinivasan, Coomes David | Conservation Research Institute, University of Cambridge, Cambridge, United Kingdom；Department of Plant Sciences, University of Cambridge, Cambridge, United Kingdom；Department of Computer Science and Technology, University of Cambridge, Cambridge, United Kingdom；Department of Earth System Science, Stanford University, Stanford, CA, USA | 验证年度地球观测嵌入能编码野火扰动，并支持简化火烧区制图流程。 | [#1329](https://github.com/thinson/RS-PaperClaw/issues/1329) |
+| [20260922] Hi-OPD: Hierarchy-Aware Open-Prompt Detection for Remote Sensing Images | Hu Jinlong, Zhang Yi, Xia Zhiqi, Zhou Yikang, Ji Shunping | Wuhan University；Institute of Seismology, China Earthquake Administration | 提出层次感知开放提示检测框架，增强遥感图像跨层级一致性与负采样。 | [#1330](https://github.com/thinson/RS-PaperClaw/issues/1330) |
+| [20260922] Agentic Building-Aware Satellite Gaussian Splatting for Auditable Urban DSM Reconstruction | Sun Wentao, Xu Zhengsen, Chen Yiping, John S. Zelek, Li Jonathan | University of Waterloo, Department of Systems Design Engineering, Waterloo, Canada；University of Calgary, Department of Geomatics Engineering, Calgary, Canada；Sun Yat-sen University, School of Geospatial Engineering and Science, Zhuhai, China | 融合智能体与卫星高斯泼溅，实现建筑感知且可审计的城市DSM重建。 | [#1331](https://github.com/thinson/RS-PaperClaw/issues/1331) |
+
+## 🔎 观察
+
+- 基础模型嵌入正从通用表征走向特定扰动编码，降低下游制图对标注的依赖。
+- 开放提示检测与三维重建均强调可解释性，反映遥感AI向可审计方向演进。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260921](./202609/20260921.md)
 ## 📌 今日概况
 
@@ -60,46 +92,6 @@ Powered by OpenClaw🦞
 
 - 评测类工作从精度指标转向决策效用与物理退化鲁棒性，反映应用导向增强。
 - 多时相数据集与波段选择研究并行，说明数据构建和成像链路优化仍受重视。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260919](./202609/20260919.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 2 篇。
-
-今日两篇论文聚焦无人机遥感感知与重建。一篇面向无人机小目标检测，将状态空间建模与YOLO框架结合，引入自适应空间语义注意力融合与多尺度特征聚合，以提升效率与精度；另一篇针对航空大场景重建，提出可见性驱动的3D高斯泼溅方法，优化大规模场景下的表示与渲染。整体趋势显示，Mamba/状态空间模型与3D高斯泼溅正加速向遥感任务渗透，强调效率、尺度适应与几何一致性。
-
-## ✨ 今日亮点
-
-- 状态空间模型与YOLO结合，提升无人机小目标检测效率
-- 可见性驱动3D高斯泼溅，面向航空大场景重建优化
-- 两篇工作均强调多尺度与几何/语义融合的协同设计
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260919] HDMamba-YOLO: Efficient State-Space Perception and Local Spatial Reconstruction for UAV Small Object Detection | Wei Linduo, Fan Junjie, Mai Yijun, Chen Xiao, Zhang Guiyang, Qi Yong | School of Economics and Management, Nanjing University of Science and Technology；School of Intellectual Property, Nanjing University of Science and Technology；School of Computer Science and Engineering, Nanjing University of Science and Technology | 提出HDMamba-YOLO，融合状态空间感知与局部空间重建，用于无人机小目标检测。 | [#1317](https://github.com/thinson/RS-PaperClaw/issues/1317) |
-| [20260919] VDGS: Visibility-Driven Large-Scale 3D Gaussian Splatting for Aerial Scene Reconstruction | Yu Haolin, Tang Jiadong, Wang YiXian, Gao Yu, He Shi, Lai Zhilin, Yang Yi, Fu Mengyin | the Beijing Institute of Technology, Beijing, China, * | 提出VDGS，以可见性驱动大规模3D高斯泼溅，实现航空场景重建。 | [#1318](https://github.com/thinson/RS-PaperClaw/issues/1318) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| SatOV: Restoring Spatial Priors for Training-Free Open-Vocabulary Segmentation in Remote Sensing Imagery | [2609.22834v1](https://arxiv.org/abs/2609.22834v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 状态空间模型正从通用视觉向遥感小目标检测迁移，效率与长程建模是主要卖点。
-- 3D高斯泼溅在航空大场景中需解决可见性与尺度问题，可见性驱动是合理切入点。
 
 ---
 
