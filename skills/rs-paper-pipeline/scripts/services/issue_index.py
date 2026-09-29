@@ -21,6 +21,11 @@ def _extract_arxiv_id(body: str) -> str | None:
     return match.group(1).strip() if match else None
 
 
+def issue_matches_arxiv(issue, arxiv_id: str) -> bool:
+    actual = _extract_arxiv_id(issue.body or "")
+    return bool(actual) and re.sub(r"v\d+$", "", actual) == re.sub(r"v\d+$", "", arxiv_id)
+
+
 def load_index(repo) -> dict[str, dict]:
     """Load the index from the repo file. Returns {} if not found."""
     try:
@@ -65,11 +70,14 @@ def ensure_index(repo) -> dict[str, dict]:
 
 def lookup_issue(repo, index: dict[str, dict], arxiv_id: str):
     """Fetch a single issue by number from the index. Returns None if not found."""
-    entry = index.get(arxiv_id)
+    base = re.sub(r"v\d+$", "", arxiv_id)
+    matches = [value for key, value in index.items() if re.sub(r"v\d+$", "", key) == base]
+    entry = min(matches, key=lambda value: value["number"]) if matches else None
     if not entry:
         return None
     try:
-        return repo.get_issue(entry["number"])
+        issue = repo.get_issue(entry["number"])
+        return issue if issue_matches_arxiv(issue, arxiv_id) else None
     except Exception:
         return None
 

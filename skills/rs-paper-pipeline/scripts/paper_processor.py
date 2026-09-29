@@ -15,7 +15,9 @@ from pathlib import Path
 from datetime import datetime
 import json
 
-from clients.arxiv_client import download_pdf, download_source, extract_abs_info
+from clients.arxiv_client import download_pdf, download_source, extract_abs_info, fetch_url_with_curl
+from services.author_block import author_block_has_no_affiliation
+from services.issue_index import issue_matches_arxiv
 from pipeline_config import get_repo, load_config
 from services.paper_analysis import (
     extract_institutions_from_first_page,
@@ -153,6 +155,13 @@ def process_paper(arxiv_id: str, issue_number: int | None = None, dry_run: bool 
         info["institutions"] = source_institutions
     elif is_valid_institution_text(pdf_institutions):
         info["institutions"] = pdf_institutions
+    if not is_valid_institution_text(info.get("institutions", "")):
+        try:
+            html = fetch_url_with_curl(f"https://arxiv.org/html/{arxiv_id}")
+            if author_block_has_no_affiliation(html):
+                info["institutions"] = "原文作者栏未列出单位"
+        except Exception as exc:
+            log_step("AUTHOR-HTML", "UNAVAILABLE", type(exc).__name__)
     log_step("STEP-1", "OK", f"institutions={info['institutions'][:60] if info['institutions'] else 'EMPTY'}")
 
     # 1.3 处理图片（PDF前三页转JPG并上传）
@@ -307,12 +316,12 @@ Powered by OpenClaw🦞
             return None, f"指定 Issue #{issue_number} 不存在"
     else:
         for issue in repo.get_issues(state='all'):
-            if info['title'][:30] in issue.title:
+            if issue_matches_arxiv(issue, arxiv_id):
                 target_issue = issue
                 break
 
     if target_issue is not None:
-        # 保留现有 issue 的日期标签，避免 arXiv API 日期漂移导致日报引用错乱
+        # 明确指定业务日期时统一标题、正文和标签；否则沿用现有日期标签。
         existing_labels = [l for l in target_issue.labels]
         existing_date_label = None
         for label in existing_labels:
@@ -323,7 +332,7 @@ Powered by OpenClaw🦞
             if re.fullmatch(r"\d{8}", name):
                 existing_date_label = name
                 break
-        final_date = existing_date_label or title_date
+        final_date = title_date if target_date else (existing_date_label or title_date)
         target_issue.edit(
             title=f"[{final_date}] {info['title'][:200]}",
             body=report,

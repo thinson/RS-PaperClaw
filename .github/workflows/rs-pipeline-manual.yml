@@ -14,8 +14,9 @@ on:
           - reconcile
           - doctor
           - arxiv_diagnose
+          - replay_no_notify
       date:
-        description: "Optional target date in YYYYMMDD"
+        description: "Target YYYYMMDD; replay_no_notify also accepts comma-separated dates"
         required: false
         type: string
 
@@ -94,6 +95,9 @@ jobs:
               ;;
             arxiv_diagnose)
               python3 scripts/diagnose_arxiv.py
+              ;;
+            replay_no_notify)
+              python3 scripts/replay_dates.py "${DISPATCH_DATE}"
               ;;
             reconcile)
               if [[ -z "${DISPATCH_DATE:-}" ]]; then

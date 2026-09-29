@@ -55,7 +55,7 @@ def run(cmd: list[str], retries: int = 4):
             subprocess.run(cmd, cwd=CONFIG.root_dir, check=True, env=env)
             return
         except subprocess.CalledProcessError as exc:
-            if exc.returncode == 75 or i == retries - 1:
+            if exc.returncode in (65, 75) or i == retries - 1:
                 raise
             wait_s = backoff[min(i, len(backoff) - 1)]
             print(f"[retry] attempt={i+1}/{retries} failed, sleep={wait_s}s")
@@ -511,17 +511,19 @@ def main(target_date: str | None = None, notify: bool | None = None, force: bool
         if not target_date:
             target_dates = missing_report_dates(_get_repo(), target_dates)
         failures = []
+        last_failure = None
         for date_str in target_dates:
             try:
                 _process_date(date_str, notify and date_str in scheduled_dates, force=force)
             except Exception as exc:
+                last_failure = exc
                 failures.append(date_str)
                 print(f"FAILED {date_str}: {_format_exc(exc)}", flush=True)
                 if isinstance(exc, subprocess.CalledProcessError) and exc.returncode == 75:
                     print("arXiv unavailable; defer remaining dates to the next scheduled run", flush=True)
                     break
         if failures:
-            raise RuntimeError(f"Pipeline failed for dates: {', '.join(failures)}")
+            raise RuntimeError(f"Pipeline failed for dates: {', '.join(failures)}") from last_failure
 
 
 if __name__ == "__main__":

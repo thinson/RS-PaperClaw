@@ -1,10 +1,11 @@
 """Official OAI-PMH metadata source for recent submission recovery.
 
 OAI datestamps are modification dates. Harvest from the earliest requested day
-through the present, then filter on the original created date, never datestamp.
+through the present, then filter on arXivRaw v1 dates, never created/datestamp.
 Only complete harvests are cached; partial pages must not become empty reports.
 """
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 import gzip
 from http.client import IncompleteRead
 import json
@@ -19,7 +20,31 @@ from pipeline_config import load_config
 
 CONFIG = load_config()
 BASE = "https://oaipmh.arxiv.org/oai"
-NS = {"o": "http://www.openarchives.org/OAI/2.0/", "a": "http://arxiv.org/OAI/arXiv/"}
+NS = {"o": "http://www.openarchives.org/OAI/2.0/", "a": "http://arxiv.org/OAI/arXiv/",
+      "r": "http://arxiv.org/OAI/arXivRaw/"}
+
+
+def parse_original_dates(xml):
+    root = ET.fromstring(xml)
+    error = root.find("o:error", NS)
+    if error is not None and error.get("code") == "noRecordsMatch":
+        return {}, ""
+    if root.find("o:ListRecords", NS) is None or error is not None:
+        raise RuntimeError("Invalid OAI version-history response")
+    dates = {}
+    for record in root.findall("o:ListRecords/o:record", NS):
+        header = record.find("o:header", NS)
+        if header is not None and header.get("status") == "deleted":
+            continue
+        node = record.find("o:metadata/r:arXivRaw", NS)
+        if node is None:
+            raise RuntimeError("Missing OAI version history")
+        aid = node.findtext("r:id", namespaces=NS)
+        first = node.find("r:version[@version='v1']/r:date", NS)
+        if not aid or first is None or not first.text:
+            raise RuntimeError(f"Missing original submission date: {aid}")
+        dates[aid] = parsedate_to_datetime(first.text).astimezone(timezone.utc).date().isoformat()
+    return dates, (root.findtext("o:ListRecords/o:resumptionToken", default="", namespaces=NS) or "").strip()
 
 
 def parse_page(xml):
@@ -86,6 +111,9 @@ def _fetch(params):
                     return body
                 if marker and status.strip() in {b"429", b"503"}:
                     raise HTTPError(url, int(status.strip()), "OAI upstream unavailable", {}, None)
+                if result.returncode != 0 and attempt < 2:
+                    time.sleep(10 * (attempt + 1))
+                    continue
                 raise RuntimeError(f"OAI curl failed: HTTP {status.decode(errors='replace').strip()}; "
                                    f"{result.stderr.decode(errors='replace')[:200]}") from exc
             time.sleep(10 * (attempt + 1))
@@ -98,7 +126,7 @@ def harvest_since(start: str, signal_match):
         try:
             saved = json.loads(cache.read_text(encoding="utf-8"))
             age = now.timestamp() - saved["fetched_at"]
-            if saved["from"] <= start and 0 <= age < 21600:
+            if saved.get("schema_version") == 2 and saved["from"] <= start and 0 <= age < 21600:
                 return saved["items"]
         except (ValueError, KeyError, TypeError):
             pass
@@ -121,10 +149,37 @@ def harvest_since(start: str, signal_match):
         params = {"verb": "ListRecords", "resumptionToken": token}
     else:
         raise RuntimeError("OAI harvest exceeded 200 pages; refusing partial results")
-    result = list(items.values())
+    # The normal arXiv format's `created` can describe a replacement version.
+    # Only arXivRaw v1 history is authoritative for the original submission.
+    params = {"verb": "ListRecords", "metadataPrefix": "arXivRaw", "from": start}
+    seen_tokens = set()
+    original_dates = {}
+    for page in range(200):
+        time.sleep(4)
+        dates, token = parse_original_dates(_fetch(params))
+        original_dates.update(dates)
+        print(f"  [OAI history] page={page + 1} records={len(dates)} more={bool(token)}", flush=True)
+        if not token:
+            break
+        if token in seen_tokens:
+            raise RuntimeError("Repeated OAI history pagination token")
+        seen_tokens.add(token)
+        params = {"verb": "ListRecords", "resumptionToken": token}
+    else:
+        raise RuntimeError("OAI version history incomplete")
+    result = []
+    for aid, item in items.items():
+        if aid not in original_dates:
+            raise RuntimeError(f"Original submission date unavailable: {aid}")
+        item["latest_published"] = item["published"]
+        item["published"] = original_dates[aid]
+        if item["published"] >= start:
+            result.append(item)
     cache.parent.mkdir(parents=True, exist_ok=True)
     temporary = cache.with_suffix(".tmp")
-    temporary.write_text(json.dumps({"from": start, "fetched_at": now.timestamp(), "items": result}, ensure_ascii=False), encoding="utf-8")
+    temporary.write_text(json.dumps({"schema_version": 2, "from": start, "fetched_at": now.timestamp(),
+                                    "original_submission_dates": {aid: original_dates[aid] for aid in items},
+                                    "items": result}, ensure_ascii=False), encoding="utf-8")
     temporary.replace(cache)
     return result
 
@@ -134,7 +189,7 @@ def cached_metadata(arxiv_id):
     if not cache.exists():
         return None
     data = json.loads(cache.read_text(encoding="utf-8"))
-    if time.time() - data["fetched_at"] >= 21600:
+    if data.get("schema_version") != 2 or time.time() - data["fetched_at"] >= 21600:
         return None
     base_id = arxiv_id.split("v")[0]
     return next((item for item in data["items"] if item["arxiv_id"] == base_id), None)
