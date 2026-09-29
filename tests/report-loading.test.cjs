@@ -16,7 +16,7 @@ function setup(fetch, search = '') {
     querySelector: () => node(), querySelectorAll: () => [],
     setAttribute(key, value) { this.attrs[key] = value; },
     append(...children) { this.children.push(...children); },
-    classList: { contains: () => false },
+    classList: { contains: () => false, toggle() {} },
   });
   const storage = new Map();
   const context = vm.createContext({ console, URL, URLSearchParams, AbortController,

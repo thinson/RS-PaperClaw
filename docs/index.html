@@ -1160,8 +1160,9 @@
       }
     </style>
     <link rel="stylesheet" href="./reading.css" />
+    <link rel="stylesheet" href="./classic.css" />
   </head>
-  <body>
+  <body id="appBody">
     <main class="shell">
       <section class="hero">
         <div class="hero-brand">
@@ -1177,9 +1178,13 @@
                 decoding="async"
               />
             </div>
-            <p>
-              遥感论文追踪 · 每日研究速览
-            </p>
+            <div class="hero-subtitle-row">
+              <p>遥感论文追踪 · 每日研究速览</p>
+              <button id="viewToggle" class="view-toggle" type="button" role="switch" aria-checked="false" aria-label="经典版">
+                <span class="view-option view-reading" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M8 3.5C6 2.3 3.8 2.3 1.5 3v10c2.3-.7 4.5-.7 6.5.5 2-1.2 4.2-1.2 6.5-.5V3C12.2 2.3 10 2.3 8 3.5Z"/><path d="M8 3.5v10"/></svg>阅读版</span>
+                <span class="view-option view-classic" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1.5" y="2" width="13" height="12" rx="2"/><path d="M2 6h12M6 6v8"/></svg>经典版</span>
+              </button>
+            </div>
           </div>
         </div>
         <div class="hero-actions">
@@ -1270,6 +1275,22 @@
 
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script>
+      // Change presentation in place so date, search, and loaded content survive.
+      const viewToggle = document.getElementById("viewToggle");
+      function applyViewMode(mode) {
+        const classic = mode === "classic";
+        document.getElementById("appBody").classList.toggle("classic-view", classic);
+        viewToggle.setAttribute("aria-checked", String(classic));
+        viewToggle.setAttribute("title", classic ? "当前为经典版，点击切换阅读版" : "当前为阅读版，点击切换经典版");
+      }
+      let viewMode = "reading";
+      try { viewMode = localStorage.getItem("rs-paperclaw:view-mode") === "classic" ? "classic" : "reading"; } catch {}
+      applyViewMode(viewMode);
+      viewToggle.addEventListener("click", () => {
+        viewMode = viewMode === "classic" ? "reading" : "classic";
+        applyViewMode(viewMode);
+        try { localStorage.setItem("rs-paperclaw:view-mode", viewMode); } catch {}
+      });
       const loadSummary = document.getElementById("loadSummary");
       const reportList = document.getElementById("reportList");
       const reportDetail = document.getElementById("reportDetail");
