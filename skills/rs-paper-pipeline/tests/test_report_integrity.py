@@ -7,7 +7,7 @@ from unittest.mock import Mock, patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from services.author_block import author_block_has_no_affiliation
-from services.issue_index import lookup_issue
+from services.issue_index import lookup_issue, issue_matches_arxiv
 import daily_digest_llm_upgrade as digest
 import daily_arxiv_cross_filter as cross_filter
 
@@ -41,8 +41,17 @@ class IntegrityTest(unittest.TestCase):
 
     def test_version_alias_uses_original_issue(self):
         repo = Mock()
+        repo.get_issue.return_value.body = "https://arxiv.org/abs/2609.12345v1"
         lookup_issue(repo, {"2609.12345v1": {"number": 5}, "2609.12345": {"number": 9}}, "2609.12345v12")
         repo.get_issue.assert_called_once_with(5)
+
+    def test_similar_title_cannot_match_a_different_arxiv_id(self):
+        issue = SimpleNamespace(title="Implicit Neural Representation for Hyperspectral", body="[abs](https://arxiv.org/abs/2609.12345v2)")
+        self.assertTrue(issue_matches_arxiv(issue, "2609.12345"))
+        self.assertFalse(issue_matches_arxiv(issue, "2609.25454"))
+        repo = Mock()
+        repo.get_issue.return_value = issue
+        self.assertIsNone(lookup_issue(repo, {"2609.25454": {"number": 5}}, "2609.25454"))
 
     @patch.object(digest, "ensure_index", return_value={})
     @patch.object(digest, "lookup_issue")

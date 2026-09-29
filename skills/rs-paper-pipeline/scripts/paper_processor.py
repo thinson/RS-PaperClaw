@@ -17,6 +17,7 @@ import json
 
 from clients.arxiv_client import download_pdf, download_source, extract_abs_info, fetch_url_with_curl
 from services.author_block import author_block_has_no_affiliation
+from services.issue_index import issue_matches_arxiv
 from pipeline_config import get_repo, load_config
 from services.paper_analysis import (
     extract_institutions_from_first_page,
@@ -315,7 +316,7 @@ Powered by OpenClaw🦞
             return None, f"指定 Issue #{issue_number} 不存在"
     else:
         for issue in repo.get_issues(state='all'):
-            if info['title'][:30] in issue.title:
+            if issue_matches_arxiv(issue, arxiv_id):
                 target_issue = issue
                 break
 
