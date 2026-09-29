@@ -3,6 +3,8 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from types import SimpleNamespace
+from urllib.error import HTTPError
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -20,6 +22,24 @@ def page(created="2026-09-23", token="", identifier="2609.12345"):
 
 
 class OaiTest(unittest.TestCase):
+    @patch.object(arxiv_oai.subprocess, "run")
+    @patch.object(arxiv_oai.urllib.request, "urlopen")
+    def test_406_uses_compressed_curl_and_removes_status_marker(self, urlopen, run):
+        urlopen.side_effect = HTTPError("url", 406, "Not Acceptable", {}, None)
+        run.return_value = SimpleNamespace(returncode=0, stdout=page().encode() + b"\nRS_HTTP_STATUS:200", stderr=b"")
+        self.assertEqual(arxiv_oai._fetch({"verb": "ListRecords"}), page().encode())
+        self.assertIn("--compressed", run.call_args.args[0])
+
+    @patch.object(arxiv_oai.subprocess, "run")
+    @patch.object(arxiv_oai.urllib.request, "urlopen")
+    def test_curl_rate_limit_is_not_retried(self, urlopen, run):
+        urlopen.side_effect = HTTPError("url", 406, "Not Acceptable", {}, None)
+        run.return_value = SimpleNamespace(returncode=0, stdout=b"Rate exceeded.\nRS_HTTP_STATUS:429", stderr=b"")
+        with self.assertRaises(HTTPError) as caught:
+            arxiv_oai._fetch({"verb": "ListRecords"})
+        self.assertEqual(caught.exception.code, 429)
+        self.assertEqual(run.call_count, 1)
+
     def test_original_submission_date_and_authors(self):
         items, token = arxiv_oai.parse_page(page())
         self.assertEqual(items[0]["published"], "2026-09-23")

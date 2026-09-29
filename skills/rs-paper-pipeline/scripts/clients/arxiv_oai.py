@@ -7,11 +7,12 @@ Only complete harvests are cached; partial pages must not become empty reports.
 from datetime import datetime, timezone
 import gzip
 import json
-from pathlib import Path
+import subprocess
 import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from urllib.error import HTTPError
 
 from pipeline_config import load_config
 
@@ -69,6 +70,21 @@ def _fetch(params):
                     data = gzip.decompress(data)
             return data
         except Exception as exc:
+            if getattr(exc, "code", None) == 406:
+                # Some networks reject urllib while the same official request
+                # succeeds with curl. Keep compression for multi-MB OAI pages.
+                result = subprocess.run([
+                    "curl", "--silent", "--show-error", "--compressed", "--location",
+                    "--max-time", "60", "--user-agent", CONFIG.arxiv_user_agent,
+                    "--write-out", "\nRS_HTTP_STATUS:%{http_code}", url,
+                ], capture_output=True, check=False)
+                body, marker, status = result.stdout.rpartition(b"\nRS_HTTP_STATUS:")
+                if result.returncode == 0 and marker and status.strip() == b"200":
+                    return body
+                if marker and status.strip() in {b"429", b"503"}:
+                    raise HTTPError(url, int(status.strip()), "OAI upstream unavailable", {}, None)
+                raise RuntimeError(f"OAI curl failed: HTTP {status.decode(errors='replace').strip()}; "
+                                   f"{result.stderr.decode(errors='replace')[:200]}") from exc
             if getattr(exc, "code", None) in (429, 503) or attempt == 2:
                 raise
             time.sleep(10 * (attempt + 1))
