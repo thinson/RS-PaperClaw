@@ -15,7 +15,8 @@ from pathlib import Path
 from datetime import datetime
 import json
 
-from clients.arxiv_client import download_pdf, download_source, extract_abs_info
+from clients.arxiv_client import download_pdf, download_source, extract_abs_info, fetch_url_with_curl
+from services.author_block import author_block_has_no_affiliation
 from pipeline_config import get_repo, load_config
 from services.paper_analysis import (
     extract_institutions_from_first_page,
@@ -153,6 +154,13 @@ def process_paper(arxiv_id: str, issue_number: int | None = None, dry_run: bool 
         info["institutions"] = source_institutions
     elif is_valid_institution_text(pdf_institutions):
         info["institutions"] = pdf_institutions
+    if not is_valid_institution_text(info.get("institutions", "")):
+        try:
+            html = fetch_url_with_curl(f"https://arxiv.org/html/{arxiv_id}")
+            if author_block_has_no_affiliation(html):
+                info["institutions"] = "原文作者栏未列出单位"
+        except Exception as exc:
+            log_step("AUTHOR-HTML", "UNAVAILABLE", type(exc).__name__)
     log_step("STEP-1", "OK", f"institutions={info['institutions'][:60] if info['institutions'] else 'EMPTY'}")
 
     # 1.3 处理图片（PDF前三页转JPG并上传）

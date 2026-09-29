@@ -65,7 +65,9 @@ def ensure_index(repo) -> dict[str, dict]:
 
 def lookup_issue(repo, index: dict[str, dict], arxiv_id: str):
     """Fetch a single issue by number from the index. Returns None if not found."""
-    entry = index.get(arxiv_id)
+    base = re.sub(r"v\d+$", "", arxiv_id)
+    matches = [value for key, value in index.items() if re.sub(r"v\d+$", "", key) == base]
+    entry = min(matches, key=lambda value: value["number"]) if matches else None
     if not entry:
         return None
     try:

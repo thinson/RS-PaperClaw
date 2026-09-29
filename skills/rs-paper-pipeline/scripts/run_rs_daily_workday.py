@@ -55,7 +55,7 @@ def run(cmd: list[str], retries: int = 4):
             subprocess.run(cmd, cwd=CONFIG.root_dir, check=True, env=env)
             return
         except subprocess.CalledProcessError as exc:
-            if exc.returncode == 75 or i == retries - 1:
+            if exc.returncode in (65, 75) or i == retries - 1:
                 raise
             wait_s = backoff[min(i, len(backoff) - 1)]
             print(f"[retry] attempt={i+1}/{retries} failed, sleep={wait_s}s")

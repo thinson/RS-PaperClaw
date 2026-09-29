@@ -232,6 +232,9 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
             Path(stats_out).write_text(json.dumps(stats, ensure_ascii=False), encoding="utf-8")
 
     save_index(repo, index)
+    if stats["failed_arxiv_ids"]:
+        print(f"INCOMPLETE: {len(stats['failed_arxiv_ids'])} selected papers failed; refusing to publish digest")
+        raise SystemExit(65)
     print("[5/5] 完成")
 
 

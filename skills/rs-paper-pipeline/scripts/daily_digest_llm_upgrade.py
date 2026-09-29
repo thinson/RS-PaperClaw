@@ -71,12 +71,14 @@ def _load_stats_map(stats_json: str | None) -> dict[str, dict]:
 
 
 def _augment_papers_from_stats(repo, papers: list[dict], stats: dict | None) -> list[dict]:
-    if not stats:
+    if stats is None:
         return papers
 
+    if stats.get("failed_arxiv_ids") or set(stats.get("selected_arxiv_ids", [])) != set(stats.get("successful_selected_arxiv_ids", [])):
+        raise RuntimeError("Selected paper processing is incomplete; refusing partial digest")
     selected_ids = stats.get("successful_selected_arxiv_ids") or []
     if not selected_ids:
-        return papers
+        return []
 
     index = ensure_index(repo)
     by_issue_number = {
@@ -84,16 +86,17 @@ def _augment_papers_from_stats(repo, papers: list[dict], stats: dict | None) -> 
         for paper in papers
         if _paper_key(paper) is not None
     }
-    merged = list(papers)
+    merged = []
 
     for arxiv_id in selected_ids:
         issue = lookup_issue(repo, index, arxiv_id)
         if issue is None:
-            continue
+            raise RuntimeError(f"Selected paper missing from issue index: {arxiv_id}")
 
         raw = issue_data(issue)
         number = _paper_key(raw)
         if number is not None and number in by_issue_number:
+            _merge_paper(merged, by_issue_number[number])
             continue
         _merge_paper(merged, raw)
         if number is not None:

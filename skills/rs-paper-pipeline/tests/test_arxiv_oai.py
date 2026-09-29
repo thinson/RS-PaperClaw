@@ -22,6 +22,13 @@ def page(created="2026-09-23", token="", identifier="2609.12345"):
     </arXiv></metadata></record><resumptionToken>{token}</resumptionToken></ListRecords></OAI-PMH>'''
 
 
+def history(date="Wed, 23 Sep 2026 10:00:00 GMT", identifier="2609.12345", token=""):
+    return f'''<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"><ListRecords>
+    <record><metadata><arXivRaw xmlns="http://arxiv.org/OAI/arXivRaw/">
+    <id>{identifier}</id><version version="v1"><date>{date}</date></version>
+    </arXivRaw></metadata></record><resumptionToken>{token}</resumptionToken></ListRecords></OAI-PMH>'''
+
+
 class OaiTest(unittest.TestCase):
     @patch.object(arxiv_oai.subprocess, "run")
     @patch.object(arxiv_oai.urllib.request, "urlopen")
@@ -65,13 +72,29 @@ class OaiTest(unittest.TestCase):
     @patch.object(arxiv_oai, "_fetch")
     def test_full_pagination_filters_old_updates_and_reuses_cache(self, fetch, sleep):
         with tempfile.TemporaryDirectory() as directory, patch.object(arxiv_oai, "CONFIG", replace(arxiv_oai.CONFIG, memory_dir=Path(directory))):
-            fetch.side_effect = [page(created="2020-01-01", token="next"), page()]
+            fetch.side_effect = [page(created="2020-01-01", token="next"), page(), history()]
             result = arxiv_oai.harvest_since("2026-09-22", lambda text: True)
             self.assertEqual(len(result), 1)
-            self.assertEqual(fetch.call_args.args[0], {"verb": "ListRecords", "resumptionToken": "next"})
+            self.assertEqual(fetch.call_args.args[0]["metadataPrefix"], "arXivRaw")
             arxiv_oai.harvest_since("2026-09-23", lambda text: True)
-            self.assertEqual(fetch.call_count, 2)
+            self.assertEqual(fetch.call_count, 3)
             self.assertEqual(arxiv_oai.cached_metadata("2609.12345v1")["title"], "Remote sensing")
+
+    @patch.object(arxiv_oai.time, "sleep")
+    @patch.object(arxiv_oai, "_fetch")
+    def test_replacement_created_date_is_not_original_submission(self, fetch, sleep):
+        with tempfile.TemporaryDirectory() as directory, patch.object(arxiv_oai, "CONFIG", replace(arxiv_oai.CONFIG, memory_dir=Path(directory))):
+            fetch.side_effect = [page(identifier="2409.19648"), history("Sun, 29 Sep 2024 10:36:33 GMT", "2409.19648")]
+            self.assertEqual(arxiv_oai.harvest_since("2026-09-23", lambda text: True), [])
+
+    @patch.object(arxiv_oai.time, "sleep")
+    @patch.object(arxiv_oai, "_fetch")
+    def test_incomplete_history_never_caches_metadata(self, fetch, sleep):
+        with tempfile.TemporaryDirectory() as directory, patch.object(arxiv_oai, "CONFIG", replace(arxiv_oai.CONFIG, memory_dir=Path(directory))):
+            fetch.side_effect = [page(), history(token="next"), RuntimeError("network")]
+            with self.assertRaises(RuntimeError):
+                arxiv_oai.harvest_since("2026-09-23", lambda text: True)
+            self.assertFalse((Path(directory) / "arxiv_oai_recent.json").exists())
 
     @patch.object(arxiv_oai.time, "sleep")
     @patch.object(arxiv_oai, "_fetch")
