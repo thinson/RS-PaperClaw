@@ -15,6 +15,18 @@ import run_rs_daily_workday as runner
 
 class RecoveryTest(unittest.TestCase):
     @patch.object(runner.time, "sleep")
+    @patch.object(runner, "_write_state")
+    @patch.object(runner, "_run_step")
+    @patch.object(runner, "run")
+    @patch.object(runner, "_get_repo")
+    @patch.object(runner, "daily_report_file_exists", return_value=False)
+    def test_missing_archive_cannot_finish_successfully(self, exists, repo, run, step, state, sleep):
+        with self.assertRaisesRegex(RuntimeError, "archive still missing"):
+            runner._process_date("20260923", False, force=True)
+        self.assertEqual(run.call_count, 3)
+        self.assertEqual(state.call_args.args[:3], ("20260923", "sync", "failed"))
+
+    @patch.object(runner.time, "sleep")
     @patch.object(runner.subprocess, "run")
     def test_upstream_exit_is_not_retried(self, run, sleep):
         run.side_effect = subprocess.CalledProcessError(75, ["filter"])

@@ -425,6 +425,8 @@ def _process_date(date_str: str, notify: bool, force: bool = False):
                 break
             if attempt < max_sync_attempts:
                 time.sleep(6)
+        else:
+            raise RuntimeError(f"Daily report archive still missing after {max_sync_attempts} sync attempts: {date_str}")
     except Exception as exc:
         _write_state(
             date_str,

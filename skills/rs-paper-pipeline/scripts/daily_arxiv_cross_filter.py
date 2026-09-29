@@ -8,6 +8,7 @@ from __future__ import annotations
 """
 
 import re
+import os
 import json
 from datetime import datetime
 from pathlib import Path
@@ -165,6 +166,7 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
 
     stats = {
         "date": target_date or datetime.now().strftime("%Y%m%d"),
+        "metadata_source": os.environ.get("ARXIV_SOURCE", "api"),
         "candidate_count": cand_count,
         "llm_selected_count": selected_count,
         "existing_count": existing_count,
