@@ -7,6 +7,9 @@
 
 import argparse
 import re
+import json
+
+from build_report_site import report_index
 
 from clients.github_ops import cleanup_legacy_daily_reports, upsert_repo_file
 from pipeline_config import get_repo, load_config
@@ -41,6 +44,19 @@ def main(target_date: str | None = None):
         path = f"{BASE_DIR}/{ym}/{date}.md"
         body = (issue.body or "").strip() + "\n"
         upsert_repo_file(repo, path, body, f"sync daily report {date}")
+        upsert_repo_file(repo, f"docs/{path}", body, f"publish daily report {date}")
+
+    # Publish the index after the bodies; preserve archived dates on targeted syncs.
+    published_dates = set()
+    try:
+        existing = repo.get_contents("docs/daily_reports/index.json")
+        published_dates.update(json.loads(existing.decoded_content)["dates"])
+    except Exception as error:
+        if getattr(error, "status", None) != 404:
+            raise
+    published_dates.update(date for date, _ in reports_to_sync)
+    upsert_repo_file(repo, "docs/daily_reports/index.json", report_index(published_dates),
+                     "update website report index")
 
     # 根目录 README 仅展示最近三天（最新在前）
     top3 = sorted(digest_issues, key=lambda x: x[0], reverse=True)[:3]

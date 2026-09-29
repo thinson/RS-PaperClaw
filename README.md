@@ -26,6 +26,15 @@ English version: **[README_EN.md](./README_EN.md)**
 
 ## 🖼️ 界面预览
 
+本地预览：在仓库根目录运行 `python -m http.server 8000`，打开
+[本地日报页面](http://localhost:8000/docs/)。直接双击 HTML 无法读取日报数据。
+
+网页从同域 `docs/daily_reports/index.json` 获取日期目录，只下载当前选中的日报；
+历史列表每次展开 15 天。请求超过 10 秒会显示重试入口，重新打开时可先展示上次缓存的日报。
+正常的日报同步流程会自动更新 `docs/daily_reports/`；若手动修改了归档，运行
+`python skills/rs-paper-pipeline/scripts/build_report_site.py` 重新生成网页数据，并一并提交。
+加载逻辑回归测试：`node --test tests/report-loading.test.cjs`。
+
 | 电脑端 UI | 移动端 UI |
 |---|---|
 | <img src="./docs/screenshots/ui-desktop.jpg" alt="RS-PaperClaw Desktop UI" height="260" /> | <img src="./docs/screenshots/ui-mobile.jpg" alt="RS-PaperClaw Mobile UI" height="260" /> |
