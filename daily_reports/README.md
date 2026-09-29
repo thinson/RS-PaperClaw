@@ -2,6 +2,45 @@
 
 最近三天日报（最新在前）：
 
+# [20260926](./202609/20260926.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 10 篇。
+
+今日遥感AI研究呈现三条主线：一是面向SAR与地球观测的基础模型持续深化，SARATR-X-v2强调尺度感知与散斑不变性预训练，Reuse or Relearn则从谱空间诊断基础模型微调策略；二是多模态融合与跨任务统一趋势明显，GeoCR利用SAR引导通用去云，区域Copula证据融合推进异源变化检测，统一框架尝试解决旋转目标视觉定位；三是评测基准与训练策略受到重视，USAI-Quant和PolyTopoBench分别面向定量推理与复杂多边形生成，RefineFly探索失败感知的后训练范式。
+
+## ✨ 今日亮点
+
+- SAR基础模型预训练引入尺度感知与散斑不变性，提升表征鲁棒性
+- 地球观测基础模型微调策略获谱空间诊断，回答复用还是重学
+- 遥感视觉语言模型评测向定量推理与复杂矢量生成延伸
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260926] SARATR-X-v2: Scale-Aware Structural Pre-Training for SAR Foundation Models | Li Weijie, Song Yafei, Liu Yongxiang, Peng Bowen, Zhou Jie, Xia Jingyuan, Yang Wei, Liu Tianpeng, Liu Zhen, Liu Li | College of Electronic Science and Technology, National University of Defense Technology, Changsha, China ( | 提出尺度感知结构预训练框架，增强SAR基础模型对多尺度目标与散斑噪声的鲁棒表征。 | [#964](https://github.com/thinson/RS-PaperClaw/issues/964) |
+| [20260926] DiCoR: Decoupled Referent Disambiguation and Contour Recalibration for Efficient Referring Remote Sensing Image Segmentation | Gao Ziyang, Jiang Zhizhuo, Chang Jingjing, Yang Yixin, Pan Yuwen, Mao Yong-Qiang, Liu Yu, Chen Hai-Bao | School of Integrated Circuits, School of Information Science and Electronic Engineering, Shanghai Jiao Tong University, Shanghai, China (；College of Computer Science, Nankai University, Tianjin, China (；Department of Electronic Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China (；Department of Electronic Engineering, Tsinghua University, Beijing, China ( | 解耦指代消歧与轮廓重校准，提升遥感指代图像分割的效率与边界精度。 | [#1104](https://github.com/thinson/RS-PaperClaw/issues/1104) |
+| [20260926] RefineFly: Failure-Aware Post-Training for Aerial Vision-Language Navigation | Wang Boxiong, Kang Hui, Sun Geng, Li Jiahui, Yu Chao, Tian Daxin | Jilin University；Tsinghua University；Beihang University；Zhongguancun Academy | 面向空中视觉语言导航，利用失败感知后训练与PPO提升无人机导航鲁棒性。 | [#1370](https://github.com/thinson/RS-PaperClaw/issues/1370) |
+| [20260926] Bandwidth, Not FLOPS: FFT Kernels, Matrix Units and SAR Imaging on Apple M6 | Mohamed Amine Bergach | Illumina | 在Apple M6上分析FFT核与矩阵单元，指出SAR成像性能瓶颈在带宽而非FLOPS。 | [#1371](https://github.com/thinson/RS-PaperClaw/issues/1371) |
+| [20260926] GeoCR: Learning a Generalist Cloud Removal Prior from Heterogeneous Observations | Do Jeonghyeok, Kim Munchurl | Korea Advanced Institute of Science and Technology (KAIST) | 从异源观测中学习通用去云先验，借助SAR引导实现多光谱影像云去除。 | [#1372](https://github.com/thinson/RS-PaperClaw/issues/1372) |
+| [20260926] Region-Local Copula Evidence Fusion for Heterogeneous Remote Sensing Change Detection | Ji Zhiyuan, Yin Junjun, Yang Jian | Department of Electronic Engineering, Tsinghua University, Beijing, P.R；School of Computer and Communication Engineering, University of Science and Technology Beijing, P.R | 提出区域局部Copula证据融合方法，用于异源遥感影像变化检测。 | [#1373](https://github.com/thinson/RS-PaperClaw/issues/1373) |
+| [20260926] Reuse or Relearn? A Spectral View of Earth Observation Foundation Models | Mehmet Ozgur Turkoglu, Marsocci Valerio, Dominik J. Mühlematter, Senti Dominik, Schindler Konrad, Aasen Helge | ESA, -lab | 从谱空间诊断地球观测基础模型，分析微调时特征复用与重学习的选择。 | [#1374](https://github.com/thinson/RS-PaperClaw/issues/1374) |
+| [20260926] A Unified Framework and Dataset for Oriented Object Visual Grounding in Remote Sensing | Ding Zeyu, Zhou Yong, Zhao Jiaqi, Du Wen-Liang, Li Xixi, Zhu Hancheng, Yao Rui, Abdulmotaleb El Saddik | representation by explicitly modeling the object center, size；Zhu, and Rui Yao are with the School of Computer Science and Existing remote sensing visual grounding (RSVG) methods；Technology/School of Artificial Intelligence, the Mine Digitization；Engineering Research Center of the Ministry of Education, and Jiangsu；and Emergency IoT in Underground Space, China University of Mining and；Computer Science, University of Ottawa, Ottawa, ON K1 N 6 N5, Canada ( | 构建统一框架与数据集，面向遥感旋转目标视觉定位建模中心与尺寸。 | [#1375](https://github.com/thinson/RS-PaperClaw/issues/1375) |
+| [20260926] USAI-Quant: A Quantitative Reasoning Benchmark for Vision-Language Models in Built Environments | Wang Dongdong, Song Qingqi, Chen Yuzhou, Balakrishnan Deepak, Ravi Shankar Srinivasan, Wang Shenhao | University of Florida University of Florida University of Florida University of Florida；University of Florida University of Florida | 提出USAI-Quant基准，评估视觉语言模型在建成环境中的定量推理能力。 | [#1376](https://github.com/thinson/RS-PaperClaw/issues/1376) |
+| [20260926] PolyTopoBench: A Benchmark for Complex Vector Polygon Generation from Remote Sensing Imagery | Liu Zeping, Lao Ni, Sun Weiwei, Wolff Gil, Xie Yiqun, Zhao Liang, Jiao Junfeng, Mai Gengchen | University of Texas at Austin；University of Maryland；Emory University | 发布PolyTopoBench基准，评测遥感影像生成复杂矢量多边形的拓扑保持能力。 | [#1377](https://github.com/thinson/RS-PaperClaw/issues/1377) |
+
+## 🔎 观察
+
+- SAR与地球观测基础模型正从通用预训练转向领域特性注入，尺度、散斑与谱诊断成为关键设计维度。
+- 评测基准密集出现，反映遥感AI从模型创新向可复现、可量化的能力评估阶段过渡。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260925](./202609/20260925.md)
 ## 📌 今日概况
 
@@ -74,52 +113,6 @@ Powered by OpenClaw🦞
 
 - 基础模型嵌入的隐私与表征偏差问题开始被系统审视，地理位置恢复和城市变异压缩提示需加强嵌入安全与公平性评估。
 - 边缘部署与高效推理成为遥感AI落地关键，VLM冗余剪枝和跨尺度蒸馏分别从模型压缩与知识迁移角度提供可行路径。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260923](./202609/20260923.md)
-## 📌 今日概况
-
-今日共检索候选论文 24 篇；关键词+LLM 智能匹配遥感交叉论文 17 篇；最终纳入日报 17 篇。
-
-今日研究聚焦遥感基础模型评测与多模态理解。多篇工作构建基准，覆盖物理退化、高光谱解混与无人机巡检，强调真实退化与分辨率公平性。视觉语言模型向统一嵌入、自然语言交互与超高分主动聚焦发展。变化检测、红外复原、SAR ATR等任务引入弱监督、解耦与频域增强。合成数据与几何定位继续支撑三维重建和GNSS拒止导航。
-
-## ✨ 今日亮点
-
-- 基础模型评测密集出现，强调物理退化与分辨率公平
-- 视觉语言模型向统一嵌入和自然语言交互演进
-- 弱监督与解耦学习用于变化检测和红外复原
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260923] RSPDBench: Benchmarking Vision Foundation Models on Earth Observation Tasks Under Physically Grounded Remote-Sensing Product Degradations | Tanjim Bin Faruk, Khondaker Masfiq Reza, Pallickara Shrideep, Sangmi Lee Pallickara | Colorado State University | 构建物理退化下地球观测任务的视觉基础模型基准，评估鲁棒性。 | [#1323](https://github.com/thinson/RS-PaperClaw/issues/1323) |
-| [20260923] Tackling fluffy clouds: robust agricultural field boundary delineation from Sentinel-1 and Sentinel-2 satellite image time series | Foivos I. Diakogiannis, Zhou Zheng-Shu, Wang Jeff, Mata Gonzalo, Henry Dave, Lawes Roger, Parker Amy, Caccetta Peter, Furby Suzanne, Ibata Rodrigo, Hlinka Ondrej, Richetti Jonathan, Batchelor Kathryn, Herrmann Chris, Toovey Andrew, Taylor John | University of Strasbourg, France；Australian National University, School of Computing, ACT, Australia | 利用Sentinel-1/2时间序列与3D视觉Transformer，实现多云区农田边界稳健提取。 | [#1333](https://github.com/thinson/RS-PaperClaw/issues/1333) |
-| [20260923] Strip Convolution and Direction-Aware Exclusion Loss for Oriented Ship Detection | Chen Bin, Liu Yuanyuan, Yang Peng, Lu Chao | School of Information and Software Engineering, East China Jiaotong University, Nanchang 330013, China；Jiangxi Vocational University of Foreign Studies, Nanchang 330099, China | 提出条带卷积与方向感知排除损失，抑制有向舰船检测重复框。 | [#1334](https://github.com/thinson/RS-PaperClaw/issues/1334) |
-| [20260923] Breaking Weather-Content Coupling: Type-Severity Guided Progressive Disentanglement for All-in-One Infrared Restoration | Wang Xinyao, He Lijun, Ren Zhihan, Li Fan | Shaanxi Key Laboratory of Deep Space Exploration Intelligent Information Technology, School of Information and Communications Engineering, Xi’an；Jiaotong University, Xi’an, 710049, Shaanxi, China | 类型-严重度引导渐进解耦，实现红外图像全天候一体化复原。 | [#1335](https://github.com/thinson/RS-PaperClaw/issues/1335) |
-| [20260923] SatUnreal: A High-Precision Synthetic Dataset for Satellite Stereo Matching via Unreal Engine | Kim Han-Gyeol, Park JaeWan, Park Junmin, Kwon Darongsae | To address these issues, research on synthetic data utiliz- | 基于虚幻引擎构建高精度卫星立体匹配合成数据集，含遮挡标签。 | [#1336](https://github.com/thinson/RS-PaperClaw/issues/1336) |
-| [20260923] Beyond Balanced Accuracy: A Resolution and Parity-Controlled Benchmark for Vision-Language and Vision-Only Defect Assessment in UAV Power-Line Inspection | Zhang Linghao, Xiang Siyu, Kuang Junwei, Yi Peiyu | State Grid Sichuan Electric Power Research Institute, Chengdu 610041, China；Power System Security and Operation Key Laboratory of Sichuan Province | 面向无人机电力线巡检，构建分辨率与类别均衡受控的缺陷评估基准。 | [#1337](https://github.com/thinson/RS-PaperClaw/issues/1337) |
-| [20260923] Copy-Move Forgery Detection and Question Answering for Remote Sensing Image | Zhang Ze, Zhao Enyuan, Niu Di, Nie Jie, Liang Xinyue, Huang Lei | the Faculty of Information Science and Engineering, Ocean University of China, Qingdao,, China；the Hangzhou Institute for Advanced Study, University of Chinese Academy of Sciences, Hangzhou,, China | 面向遥感图像复制-移动伪造检测，构建检测与问答联合任务。 | [#1338](https://github.com/thinson/RS-PaperClaw/issues/1338) |
-| [20260923] VLM2GeoVec: Toward Universal Multimodal Embeddings for Remote Sensing | Emanuel Sánchez Aimar, Zhambulova Gulnaz, Fahad Shahbaz Khan, Xu Yonghao, Felsberg Michael | Linköping University；Mohamed bin Zayed University of AI | 提出VLM2GeoVec，学习遥感通用多模态嵌入以支持跨模态检索。 | [#1339](https://github.com/thinson/RS-PaperClaw/issues/1339) |
-| [20260923] FSCE: A Target-Aware Frequency-Spatial Collaborative Enhancement Framework for Noise-Resilient SAR ATR | Lin Yansong, Cheng Zihan, Yang Ziyue, Wang Xinming, Wang Jielei, Lu Guoming, Cui Zongyong | the In- stitute of Automation, Chinese Academy of Sciences, China (wangxin- | 频率-空间协同增强框架，提升SAR自动目标识别抗斑点噪声能力。 | [#1340](https://github.com/thinson/RS-PaperClaw/issues/1340) |
-| [20260923] From Change Captions to Change Detection: Semantic-Appearance Agreement Framework for Remote Sensing Change Detection | Qian Yuan, Ma Jie | School of Information Science and Technology, Beijing Foreign Studies University, Beijing, China ( | 利用变化描述作为弱监督，通过语义-外观一致性生成变化掩膜。 | [#1342](https://github.com/thinson/RS-PaperClaw/issues/1342) |
-| [20260923] Geospatial embeddings detect old-growth forests but buffered spatial validation narrows their advantage over Sentinel features | Ratsakatika Thomas, Zotta Mihai, Keshav Srinivasan, Emily R. Lines | Department of Geography, University of Cambridge, Downing Place, Cambridge, CB2；Department of Computer Science and Technology, University of Cambridge | 地理空间嵌入可检测老龄林，但缓冲空间验证缩小其相对Sentinel特征优势。 | [#1343](https://github.com/thinson/RS-PaperClaw/issues/1343) |
-| [20260923] Large-Scale Geometric Map-Based Localization of UAVs in GNSS-Denied Urban Environments | Terlizzi Garth, Fathian Kaveh | Department of Computer Science, Colorado School of Mines | GNSS拒止城市环境下，基于几何地图与建筑轮廓匹配实现无人机定位。 | [#1344](https://github.com/thinson/RS-PaperClaw/issues/1344) |
-| [20260923] Benchmarking Hyperspectral Foundation Models for Hyperspectral Unmixing | Dabier Edgard, Kervazo Christophe, Gori Pietro, Tupin Florence | LTCI, Télécom Paris, Institut Polytechnique de Paris, Palaiseau, France；Despite this scarcity of annotated HSU images, researchers | 系统评测高光谱基础模型在解混任务中的表现，关注特征分辨率。 | [#1345](https://github.com/thinson/RS-PaperClaw/issues/1345) |
-| [20260923] Spatial-Spectral Trade-offs in Metasurface-Based Snapshot Hyperspectral Imaging | Fitzpatrick Liam, Molesky Sean, Wang Kai | Department of Physics and McGill Quantum Centre, McGill University；rue University, Montréal, Québec H3 A 2 T8, Canada；Department of Engineering Physics, Polytechnique Montréal, Montréal, Québec H3 T 1 J4, Canada | 分析超表面快照高光谱成像中空间-光谱权衡关系。 | [#1346](https://github.com/thinson/RS-PaperClaw/issues/1346) |
-| [20260923] Token Clustering and Semantic Sequence Mamba for Hyperspectral Image Classification | Zhu Yimin, Elahi Mahmood, Lincoln Linlin Xu | Department of Geomatics Engineering, University of Calgary, Canada (；Department of Electrical and Software Engineering, University of Calgary, Canada ( | 结合令牌聚类与语义序列Mamba，提升高光谱图像分类性能。 | [#1347](https://github.com/thinson/RS-PaperClaw/issues/1347) |
-| [20260923] GeoNLI - A Natural Language Interpreter for Satellite Imagery | Gandhe Ashutosh, Rawat Anupam, Sethi Geet, Nasiruddin Kabir, Kotecha Madhav, Shah Panav, Sawarn Rakshit, Nayak Soumitra | Indian Institute of Technology, Bombay | GeoNLI构建卫星图像自然语言解释器，支持视觉定位与问答。 | [#1348](https://github.com/thinson/RS-PaperClaw/issues/1348) |
-| [20260923] The Earth in One Gaze: Training-Free Active Focus for UHR Remote Sensing Understanding | Zhang Yao, Dai Pengyu, Guo Wei, Liang Jian, Song Jian, Ou Yafei, Chen Hongruixuan, Yokoya Naoto | Wuhan University；University of Tokyo | 免训练主动聚焦框架，面向超高分辨率遥感图像理解。 | [#1349](https://github.com/thinson/RS-PaperClaw/issues/1349) |
-
-## 🔎 观察
-
-- 评测类工作从单一精度转向物理退化与分辨率公平，推动基础模型可信评估。
-- 视觉语言模型正从任务专用走向统一嵌入与免训练交互，降低标注依赖。
 
 ---
 
