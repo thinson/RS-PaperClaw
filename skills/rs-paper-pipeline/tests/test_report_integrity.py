@@ -13,6 +13,10 @@ import daily_arxiv_cross_filter as cross_filter
 
 
 class IntegrityTest(unittest.TestCase):
+    def test_valid_metadata_with_wrong_report_date_requires_refresh(self):
+        issue = SimpleNamespace(body="# [20260928] Paper", labels=[SimpleNamespace(name="20260928")])
+        self.assertFalse(cross_filter.issue_has_valid_metadata(issue, "20260925"))
+
     def test_failed_selected_paper_stops_publication(self):
         candidate = {"arxiv_id": "2609.12345", "published": "2026-09-23", "title": "Satellite AI"}
         with patch.object(cross_filter, "CONFIG", replace(cross_filter.CONFIG, github_token="test", llm_api_key="test")), \
