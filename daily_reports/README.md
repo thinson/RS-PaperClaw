@@ -2,6 +2,52 @@
 
 最近三天日报（最新在前）：
 
+# [20260923](./202609/20260923.md)
+## 📌 今日概况
+
+今日共检索候选论文 24 篇；关键词+LLM 智能匹配遥感交叉论文 17 篇；最终纳入日报 17 篇。
+
+今日研究聚焦遥感基础模型评测与多模态理解。多篇工作构建基准，覆盖物理退化、高光谱解混与无人机巡检，强调真实退化与分辨率公平性。视觉语言模型向统一嵌入、自然语言交互与超高分主动聚焦发展。变化检测、红外复原、SAR ATR等任务引入弱监督、解耦与频域增强。合成数据与几何定位继续支撑三维重建和GNSS拒止导航。
+
+## ✨ 今日亮点
+
+- 基础模型评测密集出现，强调物理退化与分辨率公平
+- 视觉语言模型向统一嵌入和自然语言交互演进
+- 弱监督与解耦学习用于变化检测和红外复原
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260923] RSPDBench: Benchmarking Vision Foundation Models on Earth Observation Tasks Under Physically Grounded Remote-Sensing Product Degradations | Tanjim Bin Faruk, Khondaker Masfiq Reza, Pallickara Shrideep, Sangmi Lee Pallickara | Colorado State University | 构建物理退化下地球观测任务的视觉基础模型基准，评估鲁棒性。 | [#1323](https://github.com/thinson/RS-PaperClaw/issues/1323) |
+| [20260923] Tackling fluffy clouds: robust agricultural field boundary delineation from Sentinel-1 and Sentinel-2 satellite image time series | Foivos I. Diakogiannis, Zhou Zheng-Shu, Wang Jeff, Mata Gonzalo, Henry Dave, Lawes Roger, Parker Amy, Caccetta Peter, Furby Suzanne, Ibata Rodrigo, Hlinka Ondrej, Richetti Jonathan, Batchelor Kathryn, Herrmann Chris, Toovey Andrew, Taylor John | University of Strasbourg, France；Australian National University, School of Computing, ACT, Australia | 利用Sentinel-1/2时间序列与3D视觉Transformer，实现多云区农田边界稳健提取。 | [#1333](https://github.com/thinson/RS-PaperClaw/issues/1333) |
+| [20260923] Strip Convolution and Direction-Aware Exclusion Loss for Oriented Ship Detection | Chen Bin, Liu Yuanyuan, Yang Peng, Lu Chao | School of Information and Software Engineering, East China Jiaotong University, Nanchang 330013, China；Jiangxi Vocational University of Foreign Studies, Nanchang 330099, China | 提出条带卷积与方向感知排除损失，抑制有向舰船检测重复框。 | [#1334](https://github.com/thinson/RS-PaperClaw/issues/1334) |
+| [20260923] Breaking Weather-Content Coupling: Type-Severity Guided Progressive Disentanglement for All-in-One Infrared Restoration | Wang Xinyao, He Lijun, Ren Zhihan, Li Fan | Shaanxi Key Laboratory of Deep Space Exploration Intelligent Information Technology, School of Information and Communications Engineering, Xi’an；Jiaotong University, Xi’an, 710049, Shaanxi, China | 类型-严重度引导渐进解耦，实现红外图像全天候一体化复原。 | [#1335](https://github.com/thinson/RS-PaperClaw/issues/1335) |
+| [20260923] SatUnreal: A High-Precision Synthetic Dataset for Satellite Stereo Matching via Unreal Engine | Kim Han-Gyeol, Park JaeWan, Park Junmin, Kwon Darongsae | To address these issues, research on synthetic data utiliz- | 基于虚幻引擎构建高精度卫星立体匹配合成数据集，含遮挡标签。 | [#1336](https://github.com/thinson/RS-PaperClaw/issues/1336) |
+| [20260923] Beyond Balanced Accuracy: A Resolution and Parity-Controlled Benchmark for Vision-Language and Vision-Only Defect Assessment in UAV Power-Line Inspection | Zhang Linghao, Xiang Siyu, Kuang Junwei, Yi Peiyu | State Grid Sichuan Electric Power Research Institute, Chengdu 610041, China；Power System Security and Operation Key Laboratory of Sichuan Province | 面向无人机电力线巡检，构建分辨率与类别均衡受控的缺陷评估基准。 | [#1337](https://github.com/thinson/RS-PaperClaw/issues/1337) |
+| [20260923] Copy-Move Forgery Detection and Question Answering for Remote Sensing Image | Zhang Ze, Zhao Enyuan, Niu Di, Nie Jie, Liang Xinyue, Huang Lei | the Faculty of Information Science and Engineering, Ocean University of China, Qingdao,, China；the Hangzhou Institute for Advanced Study, University of Chinese Academy of Sciences, Hangzhou,, China | 面向遥感图像复制-移动伪造检测，构建检测与问答联合任务。 | [#1338](https://github.com/thinson/RS-PaperClaw/issues/1338) |
+| [20260923] VLM2GeoVec: Toward Universal Multimodal Embeddings for Remote Sensing | Emanuel Sánchez Aimar, Zhambulova Gulnaz, Fahad Shahbaz Khan, Xu Yonghao, Felsberg Michael | Linköping University；Mohamed bin Zayed University of AI | 提出VLM2GeoVec，学习遥感通用多模态嵌入以支持跨模态检索。 | [#1339](https://github.com/thinson/RS-PaperClaw/issues/1339) |
+| [20260923] FSCE: A Target-Aware Frequency-Spatial Collaborative Enhancement Framework for Noise-Resilient SAR ATR | Lin Yansong, Cheng Zihan, Yang Ziyue, Wang Xinming, Wang Jielei, Lu Guoming, Cui Zongyong | the In- stitute of Automation, Chinese Academy of Sciences, China (wangxin- | 频率-空间协同增强框架，提升SAR自动目标识别抗斑点噪声能力。 | [#1340](https://github.com/thinson/RS-PaperClaw/issues/1340) |
+| [20260923] From Change Captions to Change Detection: Semantic-Appearance Agreement Framework for Remote Sensing Change Detection | Qian Yuan, Ma Jie | School of Information Science and Technology, Beijing Foreign Studies University, Beijing, China ( | 利用变化描述作为弱监督，通过语义-外观一致性生成变化掩膜。 | [#1342](https://github.com/thinson/RS-PaperClaw/issues/1342) |
+| [20260923] Geospatial embeddings detect old-growth forests but buffered spatial validation narrows their advantage over Sentinel features | Ratsakatika Thomas, Zotta Mihai, Keshav Srinivasan, Emily R. Lines | Department of Geography, University of Cambridge, Downing Place, Cambridge, CB2；Department of Computer Science and Technology, University of Cambridge | 地理空间嵌入可检测老龄林，但缓冲空间验证缩小其相对Sentinel特征优势。 | [#1343](https://github.com/thinson/RS-PaperClaw/issues/1343) |
+| [20260923] Large-Scale Geometric Map-Based Localization of UAVs in GNSS-Denied Urban Environments | Terlizzi Garth, Fathian Kaveh | Department of Computer Science, Colorado School of Mines | GNSS拒止城市环境下，基于几何地图与建筑轮廓匹配实现无人机定位。 | [#1344](https://github.com/thinson/RS-PaperClaw/issues/1344) |
+| [20260923] Benchmarking Hyperspectral Foundation Models for Hyperspectral Unmixing | Dabier Edgard, Kervazo Christophe, Gori Pietro, Tupin Florence | LTCI, Télécom Paris, Institut Polytechnique de Paris, Palaiseau, France；Despite this scarcity of annotated HSU images, researchers | 系统评测高光谱基础模型在解混任务中的表现，关注特征分辨率。 | [#1345](https://github.com/thinson/RS-PaperClaw/issues/1345) |
+| [20260923] Spatial-Spectral Trade-offs in Metasurface-Based Snapshot Hyperspectral Imaging | Fitzpatrick Liam, Molesky Sean, Wang Kai | Department of Physics and McGill Quantum Centre, McGill University；rue University, Montréal, Québec H3 A 2 T8, Canada；Department of Engineering Physics, Polytechnique Montréal, Montréal, Québec H3 T 1 J4, Canada | 分析超表面快照高光谱成像中空间-光谱权衡关系。 | [#1346](https://github.com/thinson/RS-PaperClaw/issues/1346) |
+| [20260923] Token Clustering and Semantic Sequence Mamba for Hyperspectral Image Classification | Zhu Yimin, Elahi Mahmood, Lincoln Linlin Xu | Department of Geomatics Engineering, University of Calgary, Canada (；Department of Electrical and Software Engineering, University of Calgary, Canada ( | 结合令牌聚类与语义序列Mamba，提升高光谱图像分类性能。 | [#1347](https://github.com/thinson/RS-PaperClaw/issues/1347) |
+| [20260923] GeoNLI - A Natural Language Interpreter for Satellite Imagery | Gandhe Ashutosh, Rawat Anupam, Sethi Geet, Nasiruddin Kabir, Kotecha Madhav, Shah Panav, Sawarn Rakshit, Nayak Soumitra | Indian Institute of Technology, Bombay | GeoNLI构建卫星图像自然语言解释器，支持视觉定位与问答。 | [#1348](https://github.com/thinson/RS-PaperClaw/issues/1348) |
+| [20260923] The Earth in One Gaze: Training-Free Active Focus for UHR Remote Sensing Understanding | Zhang Yao, Dai Pengyu, Guo Wei, Liang Jian, Song Jian, Ou Yafei, Chen Hongruixuan, Yokoya Naoto | Wuhan University；University of Tokyo | 免训练主动聚焦框架，面向超高分辨率遥感图像理解。 | [#1349](https://github.com/thinson/RS-PaperClaw/issues/1349) |
+
+## 🔎 观察
+
+- 评测类工作从单一精度转向物理退化与分辨率公平，推动基础模型可信评估。
+- 视觉语言模型正从任务专用走向统一嵌入与免训练交互，降低标注依赖。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260922](./202609/20260922.md)
 ## 📌 今日概况
 
@@ -59,39 +105,6 @@ Powered by OpenClaw🦞
 
 - 轻量化与基础模型并行发展，分别应对边缘部署与通用表征需求。
 - 多模态与自监督方法正渗透至遥感细分任务，提升鲁棒性。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260920](./202609/20260920.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日四篇论文覆盖贫困制图、火烧迹地制图、多光谱波段选择与视觉基础模型评测。整体趋势显示，遥感AI正从单纯提升精度转向面向决策的评估、多时相数据构建、成像链路优化以及退化条件下的鲁棒性基准测试。其中，社会应用与模型可靠性成为共同关注点，数据集和评测框架类工作占据主导。
-
-## ✨ 今日亮点
-
-- 贫困制图引入决策中心评估，强调模型对下游决策的实际影响
-- 巴西塞拉多构建多时相火烧迹地数据集，服务区域监测
-- RSPDBench面向物理退化评测视觉基础模型，关注鲁棒性
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260920] Decision-Centered Evaluation of Machine Learning Poverty Maps Using Mobile Phone and Satellite Data | Algama Chanuka, Chandana Merl, Dias Viren, Amarasinghe Kasun | Carnegie Mellon University | 结合手机与卫星数据，以决策为中心评估机器学习贫困地图的实际效用。 | [#1320](https://github.com/thinson/RS-PaperClaw/issues/1320) |
-| [20260920] A multi-temporal dataset for mapping burned areas in the Brazilian Cerrado using time series of remote sensing imagery | Alisson Cleiton de Oliveira, Thales Sehn Körting | Earth Observation and Geoinformatics Division (DIOTG), National Institute for Space；Research (INPE), São José dos Campos, SP, Brazil；Geoinformatics Division (DIOTG), National Institute for Space Research (INPE), São José dos | 基于遥感时间序列构建巴西塞拉多火烧迹地多时相数据集，并采用随机森林制图。 | [#1321](https://github.com/thinson/RS-PaperClaw/issues/1321) |
-| [20260920] HIERARCHICAL FILTER BAND SELECTION FOR MULTISPECTRAL OBJECT CLASSIFICATION | Kossira Katja, Seiler Jürgen, Kaup André | Friedrich-Alexander-Universität Erlangen-Nürnberg | 提出层次化滤波波段选择方法，用于多光谱目标分类并优化图像采集。 | [#1322](https://github.com/thinson/RS-PaperClaw/issues/1322) |
-| [20260920] RSPDBench: Benchmarking Vision Foundation Models on Earth Observation Tasks Under Physically Grounded Remote-Sensing Product Degradations | Tanjim Bin Faruk, Khondaker Masfiq Reza, Pallickara Shrideep, Sangmi Lee Pallickara | Colorado State University | 构建RSPDBench，在物理退化条件下评测视觉基础模型的地球观测任务表现。 | [#1323](https://github.com/thinson/RS-PaperClaw/issues/1323) |
-
-## 🔎 观察
-
-- 评测类工作从精度指标转向决策效用与物理退化鲁棒性，反映应用导向增强。
-- 多时相数据集与波段选择研究并行，说明数据构建和成像链路优化仍受重视。
 
 ---
 
