@@ -2,6 +2,48 @@
 
 最近三天日报（最新在前）：
 
+# [20260927](./202609/20260927.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 4 篇。
+
+今日论文覆盖遥感目标检测、语义变化解析、在轨模型适配与经济遥感分析。研究趋势显示，端到端Transformer与查询引导范式正逐步替代传统类别名提示和锚框流程；同时，面向星上部署的参数高效微调与带宽约束更新受到关注。夜间灯光影像被进一步用于细粒度地方经济分析，体现遥感从地物识别向社会经济感知延伸。整体上，方法创新与资源受限场景适配并重。
+
+## ✨ 今日亮点
+
+- 查询引导语义变化解析突破类别名提示限制
+- 端到端Transformer实现遥感旋转目标检测
+- 资源感知参数高效适配面向星上高维数据
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260927] QSCP: Beyond Class-Name Prompts for Query-Guided Semantic Change Parsing | Qian Yuan, Ma Jie | School of Information Science and Technology, Beijing Foreign Studies University, Beijing, China ( | 提出查询引导语义变化解析，超越类别名提示，支持指代变化检测与意图解析。 | [#1379](https://github.com/thinson/RS-PaperClaw/issues/1379) |
+| [20260927] OrientedFormer: An End-to-End Transformer-Based Oriented Object Detector in Remote Sensing Images | Ding Zeyu, Zhou Yong, Zhao Jiaqi, Zhu Hancheng, Du Wen-Liang, Yao Rui, Abdulmotaleb El Saddik | School of Electrical Engineering and Computer Science, University of Ottawa, Ottawa, ON K1 N 6 N5, Canada ( | 提出OrientedFormer，基于端到端Transformer与高斯位置编码的遥感旋转目标检测器。 | [#1380](https://github.com/thinson/RS-PaperClaw/issues/1380) |
+| [20260927] Resource-Aware Parameter-Efficient Model Adaptation for Onboard High-Dimensional Data | Zhang Qiyang, Li Xinhao, Shi Lei, Lin Zheng, Wen Jinfeng, Zhou Ao, Wang Shangguang | Beijing University of Posts and Telecommunications；Wuhan University；Communication University of China；University of Luxembourg | 面向星上高维数据，研究资源感知的参数高效模型适配与带宽受限更新。 | [#1381](https://github.com/thinson/RS-PaperClaw/issues/1381) |
+| [20260927] The Potential of Nighttime Light Imagery for Detailed Local Economic Analysis | Otomo Shoichi | seasonal weather patterns, regional institutional calendars (such as holiday periods), and origindestination population flows | 探讨夜间灯光影像在地方经济细粒度分析中的潜力，涉及旅游经济与空间处理。 | [#1382](https://github.com/thinson/RS-PaperClaw/issues/1382) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Correlation Between Nighttime Light and Various Statistical Indicators in Japan | [2609.33861](https://arxiv.org/abs/2609.33861) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 遥感检测与变化解析正从固定类别提示转向查询引导和端到端范式，交互性增强。
+- 星上部署需求推动参数高效适配研究，带宽与资源约束成为方法设计关键变量。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260926](./202609/20260926.md)
 ## 📌 今日概况
 
@@ -70,49 +112,6 @@ Powered by OpenClaw🦞
 
 - 高光谱与SAR等遥感模态的压缩和转换研究，正从重建精度转向下游任务稳定性与效率。
 - 智能体与基准数据集建设同步推进，表明遥感AI开始重视长时程交互与真实场景可扩展性。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260924](./202609/20260924.md)
-## 📌 今日概况
-
-今日共检索候选论文 19 篇；关键词+LLM 智能匹配遥感交叉论文 14 篇；最终纳入日报 14 篇。
-
-今日遥感AI研究呈现三条主线：一是基础模型与嵌入的可解释性分析，如AlphaEarth城市表征压缩、EO嵌入地理位置信息恢复；二是面向边缘与高效推理的轻量化方法，包括VLM冗余剪枝、跨尺度蒸馏小目标检测；三是地理空间预测与不确定性建模，涵盖自主预测引擎、连续处理因果推断及隐式神经表示。此外，开放数据与基准构建持续活跃，涉及SAR视觉定位、无人机垃圾检测等应用。
-
-## ✨ 今日亮点
-
-- 基础模型嵌入分析成热点，关注城市表征偏差与地理位置信息泄露
-- 边缘智能与轻量化推理受重视，VLM冗余剪枝和跨尺度蒸馏并行推进
-- 地理空间预测向自主化与不确定性量化发展，隐式神经表示可调尺度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260924] Open-access model for detecting openly dumped dispersed municipal solid waste from crowdsourced UAV imagery in Sub-Saharan Africa | Knoblauch Steffen, Ram Kumar Muthusamy, Luis M. A. Bettencourt, Velis Costas, Chrzanowski Pierre, Edward Charles Anderson, Masters Pete, Maholi Innocent, Inguane Antonio, Szamek Levi, Zipf Alexander | HeiGIT at Heidelberg University, Heidelberg, Germany；Interdisciplinary Centre of Scientific Computing (IWR), Heidelberg University, Heidelberg, Germany；GIScience Research Group, Heidelberg University, Heidelberg, Germany；Urban Science Laboratory, Department of Ecology and Evolution, The University of Chicago, Chicago, IL, USA；e Santa Fe Institute, Santa Fe, NM, USA；g Department of Civil and Environmental Engineering, Imperial College London, London, United Kingdom | 基于众包无人机影像的开放获取模型，用于检测撒哈拉以南非洲露天倾倒的分散城市固废。 | [#463](https://github.com/thinson/RS-PaperClaw/issues/463) |
-| [20260924] Bringing Agentic Search to Earth Observation Data Discovery | Yu Minghan, Sun Youran, Yi Chugang, Wen Yixin, Yang Haizhao | Department of Mathematics Department of Mathematics Department of Mathematics；University of Maryland, College Park University of Maryland, College Park University of Maryland, College Park；College Park, MD, USA College Park, MD, USA College Park, MD, USA；School of Marine and Atmospheric Department of Mathematics；Sciences University of Maryland, College Park；Stony Brook University College Park, MD, USA；Stony Brook, NY, USA Department of Computer Science；College Park, MD, USA；NASA and its data centers hold thousands of geoscience datasets Earth-observation data discovery is less a problem of data scarcity | 将智能体搜索引入地球观测数据发现，利用大语言模型与知识图谱提升检索效率。 | [#833](https://github.com/thinson/RS-PaperClaw/issues/833) |
-| [20260924] Planetary Prediction Engine: Autonomous Geospatial Prediction via Intelligent Data Selection and Foundation Model Embeddings | Ma Evelyn, Rama Kumar Pasumarthi, Shafin Kishwar, Sharma Mandar, Sun Mimi, Sadeghi Hamed, Dav M. Ebengo, Onesime Mbulayi, Judge Ciara, Solomakhin Rouslan, Wamburu John, Ogallo William, Walcott-Bryant Aisha, Chen Sanxing, Muslim Arbaaz, Mayer Yael, Ho Ronald, Lee Roy, Alcantara Ruth, ..., Shetty Shravya | Google Research；Institut National de Recherche Biomédicale, Democratic Republic of Congo；University of Oxford | 行星预测引擎通过智能数据选择与基础模型嵌入，实现自主地理空间预测。 | [#1183](https://github.com/thinson/RS-PaperClaw/issues/1183) |
-| [20260924] OptiSAR-Net++: A Large-Scale Benchmark and Transformer-Free Framework for Cross-Domain Remote Sensing Visual Grounding | Tang Xiaoyu, Dong Jun, Cheng Jintao, Fan Rui | School of Electronics and Information Engineering, and Xingzhi College, South China Normal University, Foshan, China. (；Department of Electronic and Computer Engineering, Hong Kong University of Science and Technology, Hong Kong SAR, China. ( | OptiSAR-Net++构建大规模基准与无Transformer框架，用于跨域遥感视觉定位。 | [#1351](https://github.com/thinson/RS-PaperClaw/issues/1351) |
-| [20260924] GeoDose-CP: Graph-Local Conformal Inference for Continuous-Treatment Earth Observation | Md Khalid Hasan Sakib, Datta Dristi, Paul Manoranjan, White Davina | Department of Computer Science and Engineering, Uttara University, Dhaka, Bangladesh (；School of Computing, Mathematics and Engineering, Charles Sturt University, Bathurst, NSW, Australia；School of Computing, Mathematics and Engineering, Charles Sturt University, Bathurst, NSW, Australia ( | GeoDose-CP提出图局部保形推断，面向连续处理地球观测的不确定性量化。 | [#1352](https://github.com/thinson/RS-PaperClaw/issues/1352) |
-| [20260924] Passive LWIR Hyperspectral Ranging via Transmittance Extraction and Distance Alignment | Chen Zhihe, Fan Chen, Liu Shuo, Huang Xiaolin, He Yunze, He Xiaofeng, Zhang Lilian | College of Intelligence Science and Technology, National University of Defense Technology, Changsha, Hunan, China (；College of Electrical and Information Engineering, Hunan University, Changsha, China | 利用透射率提取与距离对齐，实现被动长波红外高光谱测距。 | [#1353](https://github.com/thinson/RS-PaperClaw/issues/1353) |
-| [20260924] Exploiting answer-invariant redundancies in satellite imagery for efficient VLM inference on edge | Janveja Ishani, Zhang Davis, Oh Seoyul, Vasisht Deepak | University of Illinois Urbana-Champaign | 挖掘卫星影像中答案不变冗余，提升边缘端视觉语言模型推理效率。 | [#1354](https://github.com/thinson/RS-PaperClaw/issues/1354) |
-| [20260924] Recoverable Geographic Location Information in Earth-Observation Embeddings | Zhang Peiwen, Hu Kristie, Knezevic Jovana, Yin Shunde, Gao Kyle | University of Waterloo；University of Cambridge；Aalto University | 研究地球观测嵌入中可恢复的地理位置信息，揭示基础模型位置泄露风险。 | [#1355](https://github.com/thinson/RS-PaperClaw/issues/1355) |
-| [20260924] Graph-Based Semi-Supervised Hyperspectral Image Classification with Distance-Aware Spatial Measure | Sérgio J. M. Almeida, José C. M. Bermudez | a Catholic University of Pelotas, Center for Social and Technological Sciences, Pelotas, RS, Brazil；b Federal University of Santa Catarina, Department of Electrical and Electronic Engineering, Florianópolis, SC, Brazil | 基于图半监督学习与距离感知空间度量，提升高光谱图像分类性能。 | [#1356](https://github.com/thinson/RS-PaperClaw/issues/1356) |
-| [20260924] Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision | Shi Zekai, Zhang Meng, Zhang Haokun, Zhang Bo | School of Human Settlements and Civil Engineering, Xi'an Jiaotong University；School of Artificial Intelligence, Optics and Electronics (iOPEN), Northwestern Polytechnical University | 在有限目标分辨率监督下，实现高效连续DEM重建与几何引导融合。 | [#1357](https://github.com/thinson/RS-PaperClaw/issues/1357) |
-| [20260924] AlphaEarth distinguishes cities but compresses urban variation | Renninger Andrew | School of Geographical & Earth Sciences, University of Glasgow；dispersion within urban centres is 14.1% greater per standard deviation of national development, even；Urban environments vary within cities, between Earth embeddings—which represent raster imcities and over time, and comparative research | AlphaEarth嵌入能区分城市但压缩城市内部变异，揭示表征偏差。 | [#1358](https://github.com/thinson/RS-PaperClaw/issues/1358) |
-| [20260924] Below-ground Fungal Biodiversity Can be Monitored Using Self-Supervised Learning Satellite Features | Young Robin, Michael E. Van Nuland, E. Toby Kiers, Větrovský Tomáš, Kohout Petr, Baldrian Petr, Keshav Srinivasan | Department of Computer Science and Technology, University of；Amsterdam Institute for Life and Environment (A-LIFE), Section；Ecology & Evolution, Vrije Universiteit Amsterdam, Amsterdam, The；Institute of Microbiology, Czech Academy of Sciences, Videnska 1083；Laboratory of Microbial Ecology and Biogeography, Institute of；Microbiology, Czech Academy of Sciences, Videnska 1083, Prague | 利用自监督学习卫星特征，监测地下真菌生物多样性。 | [#1359](https://github.com/thinson/RS-PaperClaw/issues/1359) |
-| [20260924] MIND the Gap: A Geographic Implicit Neural Representation with Adjustable Spatial Scale | Corley Isaac, Rao Arjun, Rolf Esther, Klemmer Konstantin, Shelhamer Evan, Lehmann Nils, Rußwurm Marc, Mai Gengchen, Jacobs Nathan, Kerner Hannah | University of British Columbia；University of Colorado Boulder；University College London；Vector Institute；Technical University of Munich；University of Bonn；University of Texas at Austin；Washington University in Saint Louis；Arizona State University；research.taylorgeospatial.org/mind | MIND提出可调空间尺度的地理隐式神经表示，支持稀疏标签建模。 | [#1360](https://github.com/thinson/RS-PaperClaw/issues/1360) |
-| [20260924] CSCWD: Cross-Scale Channel-wise Knowledge Distillation for Lightweight Tiny Object Detection on Edge Devices | Zamani Amir, Ghasemi-Naraghi Zeinab | Department of Computer Engineering, Islamic Revolution Comprehensive University, Tehran, Iran | CSCWD通过跨尺度通道知识蒸馏，实现边缘设备轻量小目标检测。 | [#1361](https://github.com/thinson/RS-PaperClaw/issues/1361) |
-
-## 🔎 观察
-
-- 基础模型嵌入的隐私与表征偏差问题开始被系统审视，地理位置恢复和城市变异压缩提示需加强嵌入安全与公平性评估。
-- 边缘部署与高效推理成为遥感AI落地关键，VLM冗余剪枝和跨尺度蒸馏分别从模型压缩与知识迁移角度提供可行路径。
 
 ---
 
