@@ -26,15 +26,6 @@ English version: **[README_EN.md](./README_EN.md)**
 
 ## 🖼️ 界面预览
 
-本地预览：在仓库根目录运行 `python -m http.server 8000`，打开
-[本地日报页面](http://localhost:8000/docs/)。直接双击 HTML 无法读取日报数据。
-
-网页从同域 `docs/daily_reports/index.json` 获取日期目录，只下载当前选中的日报；
-历史列表每次展开 15 天。请求超过 10 秒会显示重试入口，重新打开时可先展示上次缓存的日报。
-正常的日报同步流程会自动更新 `docs/daily_reports/`；若手动修改了归档，运行
-`python skills/rs-paper-pipeline/scripts/build_report_site.py` 重新生成网页数据，并一并提交。
-加载逻辑回归测试：`node --test tests/report-loading.test.cjs`。
-
 | 电脑端 UI | 移动端 UI |
 |---|---|
 | <img src="./docs/screenshots/ui-desktop.jpg" alt="RS-PaperClaw Desktop UI" height="260" /> | <img src="./docs/screenshots/ui-mobile.jpg" alt="RS-PaperClaw Mobile UI" height="260" /> |
@@ -43,6 +34,7 @@ English version: **[README_EN.md](./README_EN.md)**
 
 ## 📰 News
 
+- `2026-09-29`: 优化网页 UI、日报加载和阅读体验，更新桌面端与移动端预览。
 - `2026-05-27`: 默认 LLM 已切换为 `deepseek-v4-flash`；同时支持其他 OpenAI-like Chat Completions 兼容模型，可通过 `LLM_MODEL` 与 `LLM_API_URL` 自定义。
 - `2026-04-24`: 新增 CVPR 2026 GeoAI 论文合集页面，收录 139 篇论文（9 Oral + 20 Highlight + 110 Poster），按主题标签分类浏览。
 - `2026-04-20`: README 补充项目进展时间线，便于快速了解当前维护状态。
