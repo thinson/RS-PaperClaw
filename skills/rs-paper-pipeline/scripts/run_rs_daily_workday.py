@@ -511,17 +511,19 @@ def main(target_date: str | None = None, notify: bool | None = None, force: bool
         if not target_date:
             target_dates = missing_report_dates(_get_repo(), target_dates)
         failures = []
+        last_failure = None
         for date_str in target_dates:
             try:
                 _process_date(date_str, notify and date_str in scheduled_dates, force=force)
             except Exception as exc:
+                last_failure = exc
                 failures.append(date_str)
                 print(f"FAILED {date_str}: {_format_exc(exc)}", flush=True)
                 if isinstance(exc, subprocess.CalledProcessError) and exc.returncode == 75:
                     print("arXiv unavailable; defer remaining dates to the next scheduled run", flush=True)
                     break
         if failures:
-            raise RuntimeError(f"Pipeline failed for dates: {', '.join(failures)}")
+            raise RuntimeError(f"Pipeline failed for dates: {', '.join(failures)}") from last_failure
 
 
 if __name__ == "__main__":

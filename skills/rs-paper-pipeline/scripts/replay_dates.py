@@ -18,6 +18,8 @@ def replay(value):
         except Exception as exc:
             print(f"REPLAY FAILED {date}: {exc}", flush=True)
             failures.append(date)
+            if getattr(exc.__cause__, "returncode", None) == 75:
+                break
     if failures:
         raise RuntimeError(f"Incomplete dates: {failures}")
 

@@ -61,12 +61,10 @@ def _load_stats_map(stats_json: str | None) -> dict[str, dict]:
     stats_map: dict[str, dict] = {}
     if not stats_json:
         return stats_map
-    try:
-        obj = json.loads(Path(stats_json).read_text(encoding="utf-8"))
-        if isinstance(obj, dict) and obj.get("date"):
-            stats_map[obj["date"]] = obj
-    except Exception:
-        pass
+    obj = json.loads(Path(stats_json).read_text(encoding="utf-8"))
+    if not isinstance(obj, dict) or not obj.get("date"):
+        raise ValueError("Invalid selection statistics")
+    stats_map[obj["date"]] = obj
     return stats_map
 
 
