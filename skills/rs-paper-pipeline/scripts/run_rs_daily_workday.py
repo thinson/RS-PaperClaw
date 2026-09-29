@@ -19,6 +19,7 @@ from datetime import datetime, timedelta, timezone
 from clients.github_ops import daily_report_file_exists, get_today_digest_issue
 from clients.notify_client import has_available_notify_channel, send_dingtalk_markdown, send_feishu_message
 from pipeline_config import build_runtime_env, get_repo, load_config
+from services.catchup import missing_report_dates
 
 CONFIG = load_config()
 BEIJING_TZ = timezone(timedelta(hours=8))
@@ -50,8 +51,8 @@ def run(cmd: list[str], retries: int = 4):
         try:
             subprocess.run(cmd, cwd=CONFIG.root_dir, check=True, env=env)
             return
-        except subprocess.CalledProcessError:
-            if i == retries - 1:
+        except subprocess.CalledProcessError as exc:
+            if exc.returncode == 75 or i == retries - 1:
                 raise
             wait_s = backoff[min(i, len(backoff) - 1)]
             print(f"[retry] attempt={i+1}/{retries} failed, sleep={wait_s}s")
@@ -479,6 +480,7 @@ def main(target_date: str | None = None, notify: bool | None = None, force: bool
         target_dates = [target_date]
     else:
         target_dates = resolve_target_dates()
+    scheduled_dates = set(target_dates)
 
     # 默认仅“自动定时模式”发送通知；手动回放/追跑默认不通知
     if notify is None:
@@ -501,8 +503,20 @@ def main(target_date: str | None = None, notify: bool | None = None, force: bool
                     {"reason": "GitHub connectivity check failed"},
                 )
             raise RuntimeError("GitHub 连通性检查失败，请切换代理节点后重试")
+        if not target_date:
+            target_dates = missing_report_dates(_get_repo(), target_dates)
+        failures = []
         for date_str in target_dates:
-            _process_date(date_str, notify, force=force)
+            try:
+                _process_date(date_str, notify and date_str in scheduled_dates, force=force)
+            except Exception as exc:
+                failures.append(date_str)
+                print(f"FAILED {date_str}: {_format_exc(exc)}", flush=True)
+                if isinstance(exc, subprocess.CalledProcessError) and exc.returncode == 75:
+                    print("arXiv unavailable; defer remaining dates to the next scheduled run", flush=True)
+                    break
+        if failures:
+            raise RuntimeError(f"Pipeline failed for dates: {', '.join(failures)}")
 
 
 if __name__ == "__main__":

@@ -13,13 +13,14 @@ on:
           - run_notify
           - reconcile
           - doctor
+          - arxiv_diagnose
       date:
         description: "Optional target date in YYYYMMDD"
         required: false
         type: string
 
 concurrency:
-  group: rs-pipeline-manual
+  group: rs-pipeline
   cancel-in-progress: false
 
 jobs:
@@ -37,6 +38,7 @@ jobs:
       GITHUB_TIMEOUT: ${{ vars.GITHUB_TIMEOUT }}
       GITHUB_RETRY: ${{ vars.GITHUB_RETRY }}
       ARXIV_API_URL: ${{ vars.ARXIV_API_URL }}
+      ARXIV_SOURCE: ${{ vars.ARXIV_SOURCE || 'oai' }}
       ARXIV_USER_AGENT: ${{ vars.ARXIV_USER_AGENT }}
       DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
       FEISHU_TARGET: ${{ vars.FEISHU_TARGET }}
@@ -85,6 +87,8 @@ jobs:
           case "${DISPATCH_COMMAND:-run_no_notify}" in
             doctor)
               python3 scripts/cli.py doctor
+              ;;
+            arxiv_diagnose)
               python3 scripts/diagnose_arxiv.py
               ;;
             reconcile)

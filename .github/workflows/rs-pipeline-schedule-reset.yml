@@ -6,7 +6,7 @@ on:
     - cron: "30 1,4,7 * * 1-5"
 
 concurrency:
-  group: rs-pipeline-schedule
+  group: rs-pipeline
   cancel-in-progress: false
 
 jobs:
@@ -24,6 +24,7 @@ jobs:
       GITHUB_TIMEOUT: ${{ vars.GITHUB_TIMEOUT }}
       GITHUB_RETRY: ${{ vars.GITHUB_RETRY }}
       ARXIV_API_URL: ${{ vars.ARXIV_API_URL }}
+      ARXIV_SOURCE: ${{ vars.ARXIV_SOURCE || 'oai' }}
       ARXIV_USER_AGENT: ${{ vars.ARXIV_USER_AGENT }}
       DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
       FEISHU_TARGET: ${{ vars.FEISHU_TARGET }}

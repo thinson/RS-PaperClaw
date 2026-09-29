@@ -12,7 +12,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from clients.arxiv_client import fetch_recent_candidates, has_remote_sensing_signal
+from clients.arxiv_client import ArxivUnavailableError, fetch_recent_candidates, has_remote_sensing_signal
 from clients.llm_client import call_llm
 from paper_processor import process_paper
 from pipeline_config import get_repo, load_config
@@ -243,4 +243,8 @@ if __name__ == "__main__":
     parser.add_argument("--stats-out", dest="stats_out", help="输出统计 JSON 文件路径")
     args = parser.parse_args()
 
-    main(dry_run=args.dry_run, days_back=args.days, stats_out=args.stats_out, target_date=args.date)
+    try:
+        main(dry_run=args.dry_run, days_back=args.days, stats_out=args.stats_out, target_date=args.date)
+    except ArxivUnavailableError as exc:
+        print(f"UPSTREAM_UNAVAILABLE: {exc}", flush=True)
+        raise SystemExit(75)
