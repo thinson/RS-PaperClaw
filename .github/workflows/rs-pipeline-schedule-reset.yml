@@ -58,6 +58,10 @@ jobs:
           python3 -m pip install --upgrade pip
           python3 -m pip install -r requirements.txt
 
+      - name: Run regression tests
+        working-directory: skills/rs-paper-pipeline
+        run: python3 -m unittest discover -s tests
+
       - name: Doctor
         working-directory: skills/rs-paper-pipeline
         run: python3 scripts/cli.py doctor
