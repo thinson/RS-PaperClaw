@@ -19,6 +19,7 @@ from datetime import datetime, timedelta, timezone
 from clients.github_ops import daily_report_file_exists, get_today_digest_issue
 from clients.notify_client import has_available_notify_channel, send_dingtalk_markdown, send_feishu_message
 from pipeline_config import build_runtime_env, get_repo, load_config
+from services.catchup import missing_report_dates
 
 CONFIG = load_config()
 BEIJING_TZ = timezone(timedelta(hours=8))
@@ -31,15 +32,18 @@ def _env_with_proxy() -> dict:
 
 
 def check_github_connectivity() -> bool:
-    cmd = [
-        "curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
-        f"https://api.github.com/repos/{CONFIG.github_repo}",
-    ]
-    try:
-        out = subprocess.check_output(cmd, cwd=CONFIG.root_dir, env=_env_with_proxy(), timeout=20).decode().strip()
-        return out == "200"
-    except Exception:
-        return False
+    # Hosted runners share unauthenticated rate limits. Check using the same
+    # credential/client as the actual pipeline, without placing tokens in argv.
+    for attempt in range(3):
+        try:
+            return _get_repo().full_name.casefold() == CONFIG.github_repo.casefold()
+        except Exception as exc:
+            status = getattr(exc, "status", None)
+            print(f"GitHub precheck attempt={attempt + 1}: {type(exc).__name__} status={status}", flush=True)
+            if status == 401 or attempt == 2:
+                return False
+            time.sleep(2 * (attempt + 1))
+    return False
 
 
 def run(cmd: list[str], retries: int = 4):
@@ -50,8 +54,8 @@ def run(cmd: list[str], retries: int = 4):
         try:
             subprocess.run(cmd, cwd=CONFIG.root_dir, check=True, env=env)
             return
-        except subprocess.CalledProcessError:
-            if i == retries - 1:
+        except subprocess.CalledProcessError as exc:
+            if exc.returncode == 75 or i == retries - 1:
                 raise
             wait_s = backoff[min(i, len(backoff) - 1)]
             print(f"[retry] attempt={i+1}/{retries} failed, sleep={wait_s}s")
@@ -424,6 +428,8 @@ def _process_date(date_str: str, notify: bool, force: bool = False):
                 break
             if attempt < max_sync_attempts:
                 time.sleep(6)
+        else:
+            raise RuntimeError(f"Daily report archive still missing after {max_sync_attempts} sync attempts: {date_str}")
     except Exception as exc:
         _write_state(
             date_str,
@@ -479,6 +485,7 @@ def main(target_date: str | None = None, notify: bool | None = None, force: bool
         target_dates = [target_date]
     else:
         target_dates = resolve_target_dates()
+    scheduled_dates = set(target_dates)
 
     # 默认仅“自动定时模式”发送通知；手动回放/追跑默认不通知
     if notify is None:
@@ -500,9 +507,21 @@ def main(target_date: str | None = None, notify: bool | None = None, force: bool
                     "failed",
                     {"reason": "GitHub connectivity check failed"},
                 )
-            raise RuntimeError("GitHub 连通性检查失败，请切换代理节点后重试")
+            raise RuntimeError("GitHub API 检查失败，请检查上述认证、限流或网络错误")
+        if not target_date:
+            target_dates = missing_report_dates(_get_repo(), target_dates)
+        failures = []
         for date_str in target_dates:
-            _process_date(date_str, notify, force=force)
+            try:
+                _process_date(date_str, notify and date_str in scheduled_dates, force=force)
+            except Exception as exc:
+                failures.append(date_str)
+                print(f"FAILED {date_str}: {_format_exc(exc)}", flush=True)
+                if isinstance(exc, subprocess.CalledProcessError) and exc.returncode == 75:
+                    print("arXiv unavailable; defer remaining dates to the next scheduled run", flush=True)
+                    break
+        if failures:
+            raise RuntimeError(f"Pipeline failed for dates: {', '.join(failures)}")
 
 
 if __name__ == "__main__":

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import re
+import os
 import subprocess
 import time
 import urllib.parse
@@ -25,6 +26,10 @@ ATOM_NAMESPACE = {
     "atom": "http://www.w3.org/2005/Atom",
     "arxiv": "http://arxiv.org/schemas/atom",
 }
+
+
+class ArxivUnavailableError(RuntimeError):
+    """Upstream fetch exhausted its retries; callers must not retry whole batches."""
 
 
 def has_remote_sensing_signal(text: str) -> bool:
@@ -75,6 +80,8 @@ def fetch_url_with_curl(url: str, timeout: int = 90) -> str:
             "--location",
             "--max-time",
             str(timeout),
+            "--write-out",
+            "\nRS_HTTP_STATUS:%{http_code}",
             "--header",
             f"User-Agent: {CONFIG.arxiv_user_agent}",
             "--header",
@@ -85,10 +92,14 @@ def fetch_url_with_curl(url: str, timeout: int = 90) -> str:
         text=True,
         check=False,
     )
+    body, marker, status = result.stdout.rpartition("\nRS_HTTP_STATUS:")
     if result.returncode == 0:
-        return result.stdout
+        return body if marker else result.stdout
 
-    detail = " ".join((result.stderr or result.stdout).split())[:300]
+    if marker and status.strip() in {"429", "503"}:
+        raise ArxivUnavailableError(f"arXiv API HTTP {status.strip()}: {' '.join(body.split())[:300]}")
+
+    detail = " ".join(f"{result.stderr or ''} {result.stdout or ''}".split())[:1000]
     raise RuntimeError(f"curl request failed with exit code {result.returncode}: {detail}")
 
 
@@ -143,7 +154,7 @@ def fetch_query_with_fallback(params: dict[str, object], retries: int = 6, timeo
         except HTTPError as exc:
             last_err = exc
             if exc.code != 406:
-                raise
+                raise ArxivUnavailableError(f"arXiv API unavailable: HTTP {exc.code}") from exc
             if index < len(endpoints) - 1:
                 next_endpoint = endpoints[index + 1]
                 print(f"  [arXiv] endpoint rejected request; fallback to {next_endpoint}")
@@ -158,12 +169,14 @@ def fetch_query_with_fallback(params: dict[str, object], retries: int = 6, timeo
         url = f"{endpoint}?{urllib.parse.urlencode(params)}"
         try:
             return fetch_url_with_curl(url, timeout=timeout)
+        except ArxivUnavailableError:
+            raise
         except Exception as exc:
             last_err = exc
             if index < len(endpoints) - 1:
                 print(f"  [arXiv] curl endpoint unavailable ({exc}); try next endpoint")
     if last_err is not None:
-        raise last_err
+        raise ArxivUnavailableError(f"arXiv API unavailable: {last_err}") from last_err
     raise RuntimeError("No arXiv API endpoint configured")
 
 
@@ -172,6 +185,17 @@ def fetch_recent_candidates(
     days_back: int = 2,
     target_date: str | None = None,
 ) -> list[dict[str, str]]:
+    if os.environ.get("ARXIV_SOURCE", "api") == "oai":
+        from clients.arxiv_oai import harvest_since
+        if target_date:
+            days = {datetime.strptime(target_date, "%Y%m%d").date()}
+        else:
+            days = {datetime.now().date() - timedelta(days=i) for i in range(days_back)}
+        try:
+            items = harvest_since(min(days).isoformat(), has_remote_sensing_signal)
+            return [item for item in items if item["published"] in {day.isoformat() for day in days}]
+        except Exception as exc:
+            raise ArxivUnavailableError(f"OAI metadata unavailable: {exc}") from exc
     query_parts = []
     for keyword in RS_QUERY_TERMS:
         if " " in keyword:
@@ -381,9 +405,13 @@ def format_affiliations(affiliations: list[str]) -> str:
 
 
 def fetch_paper_metadata(arxiv_id: str) -> tuple[list[str], list[str], str, str, str] | None:
+    if os.environ.get("ARXIV_SOURCE", "api") == "oai":
+        from clients.arxiv_oai import cached_metadata
+        item = cached_metadata(arxiv_id)
+        if item:
+            return item["authors"], item["affiliations"], item["title"], item["abstract"], item["published"]
     params = {"id_list": arxiv_id}
-    url = f"{CONFIG.arxiv_api}?{urllib.parse.urlencode(params)}"
-    xml_text = fetch_url_with_retry(url, retries=4, timeout=90)
+    xml_text = fetch_query_with_fallback(params, retries=4, timeout=90)
     root = ET.fromstring(xml_text)
     entry = root.find("atom:entry", ATOM_NAMESPACE)
     if entry is None:

@@ -115,6 +115,10 @@ curl -s "https://api.github.com/repos/thinson/RS-PaperClaw/issues?state=all&per_
 ```
 
 ## 8) 故障排查
+- `ARXIV_SOURCE=oai` 使用官方 `https://oaipmh.arxiv.org/oai` 元数据接口；`api` 使用原查询接口。Actions 默认使用 `oai`，可通过同名仓库 Variable 覆盖。
+- OAI 的更新时间不是投稿日期：脚本完整分页抓取从目标日起至当前的更新，再按 `created` 过滤。它提供最新版本元数据；最近完整结果缓存 6 小时，单篇处理复用作者与摘要。分页失败会报错，不会发布部分抓取结果。
+- 自动运行检查最近 7 天的缺失归档，补跑较早日期时关闭通知。超过窗口的缺报仍需指定 `--date`。遇到上游不可用会停止本批次，等待下一次调度。
+- 手动工作流 `arxiv_diagnose` 只检查查询 API 连通性，遇到 429/503 即停止；它不会生成日报。
 - GitHub SSL EOF：先切 Clash 节点后重跑
 - 历史追跑建议统一加 `--no-notify`，避免无关推送
 - 如果筛选质量异常，先检查 `scripts/config/filter_keywords.json` 和 `scripts/prompts/filter_cross_prompt.md`
