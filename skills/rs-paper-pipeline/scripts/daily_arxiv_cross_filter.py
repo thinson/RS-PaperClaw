@@ -99,8 +99,13 @@ def compact_item(item: dict[str, str]) -> dict[str, str]:
     }
 
 
-def issue_has_valid_metadata(issue) -> bool:
+def issue_has_valid_metadata(issue, target_date: str | None = None) -> bool:
     body = issue.body or ""
+    if target_date:
+        body_date = re.search(r"^#\s*\[(\d{8})\]", body)
+        labels = {getattr(label, "name", label) for label in issue.labels}
+        if not body_date or body_date.group(1) != target_date or target_date not in labels:
+            return False
     authors = extract_author(body)
     institution = extract_institution(body)
     return (
@@ -153,7 +158,7 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
         if issue is None:
             todo.append({"candidate": item, "issue_number": None, "reason": "missing"})
             continue
-        if issue_has_valid_metadata(issue):
+        if issue_has_valid_metadata(issue, target_date):
             keep.append(item)
         else:
             refresh.append(item)

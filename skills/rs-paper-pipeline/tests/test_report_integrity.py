@@ -1,4 +1,5 @@
 from pathlib import Path
+from dataclasses import replace
 import sys
 import unittest
 from types import SimpleNamespace
@@ -8,9 +9,23 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from services.author_block import author_block_has_no_affiliation
 from services.issue_index import lookup_issue
 import daily_digest_llm_upgrade as digest
+import daily_arxiv_cross_filter as cross_filter
 
 
 class IntegrityTest(unittest.TestCase):
+    def test_failed_selected_paper_stops_publication(self):
+        candidate = {"arxiv_id": "2609.12345", "published": "2026-09-23", "title": "Satellite AI"}
+        with patch.object(cross_filter, "CONFIG", replace(cross_filter.CONFIG, github_token="test", llm_api_key="test")), \
+             patch.object(cross_filter, "get_repo"), patch.object(cross_filter, "ensure_index", return_value={}), \
+             patch.object(cross_filter, "fetch_recent_candidates", return_value=[candidate]), \
+             patch.object(cross_filter, "llm_cross_filter", return_value=[candidate]), \
+             patch.object(cross_filter, "lookup_issue", return_value=None), \
+             patch.object(cross_filter, "process_paper", return_value=(None, "quality gate")), \
+             patch.object(cross_filter, "save_index"):
+            with self.assertRaises(SystemExit) as caught:
+                cross_filter.main(target_date="20260923")
+            self.assertEqual(caught.exception.code, 65)
+
     def test_author_block_requires_positive_complete_evidence(self):
         author = '<div class="ltx_authors"><span class="ltx_personname">Shoichi Otomo</span>{}</div>'
         self.assertTrue(author_block_has_no_affiliation(author.format("")))

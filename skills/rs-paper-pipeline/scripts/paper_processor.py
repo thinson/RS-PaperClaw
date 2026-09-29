@@ -320,7 +320,7 @@ Powered by OpenClaw🦞
                 break
 
     if target_issue is not None:
-        # 保留现有 issue 的日期标签，避免 arXiv API 日期漂移导致日报引用错乱
+        # 明确指定业务日期时统一标题、正文和标签；否则沿用现有日期标签。
         existing_labels = [l for l in target_issue.labels]
         existing_date_label = None
         for label in existing_labels:
@@ -331,7 +331,7 @@ Powered by OpenClaw🦞
             if re.fullmatch(r"\d{8}", name):
                 existing_date_label = name
                 break
-        final_date = existing_date_label or title_date
+        final_date = title_date if target_date else (existing_date_label or title_date)
         target_issue.edit(
             title=f"[{final_date}] {info['title'][:200]}",
             body=report,
