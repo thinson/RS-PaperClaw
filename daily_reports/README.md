@@ -102,35 +102,30 @@ Powered by OpenClaw🦞
 # [20260926](./202609/20260926.md)
 ## 📌 今日概况
 
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 10 篇。
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
 
-今日遥感AI研究呈现三条主线：一是面向SAR与地球观测的基础模型持续深化，SARATR-X-v2强调尺度感知与散斑不变性预训练，Reuse or Relearn则从谱空间诊断基础模型微调策略；二是多模态融合与跨任务统一趋势明显，GeoCR利用SAR引导通用去云，区域Copula证据融合推进异源变化检测，统一框架尝试解决旋转目标视觉定位；三是评测基准与训练策略受到重视，USAI-Quant和PolyTopoBench分别面向定量推理与复杂多边形生成，RefineFly探索失败感知的后训练范式。
+今日论文聚焦遥感基础模型与评测基准两大方向。一方面，云去除、变化检测等任务引入通用先验、Copula证据融合等新方法，提升异构观测下的鲁棒性；另一方面，光谱诊断分析基础模型微调策略，同时出现面向建筑环境定量推理与复杂矢量多边形生成的基准，推动视觉语言模型与拓扑保持评估。整体趋势显示，研究正从单一任务模型转向通用化、可解释与标准化评测。
 
 ## ✨ 今日亮点
 
-- SAR基础模型预训练引入尺度感知与散斑不变性，提升表征鲁棒性
-- 地球观测基础模型微调策略获谱空间诊断，回答复用还是重学
-- 遥感视觉语言模型评测向定量推理与复杂矢量生成延伸
+- 云去除提出通用先验，利用异构观测与SAR引导提升泛化。
+- 变化检测引入区域局部Copula证据融合，增强异构数据鲁棒性。
+- 新基准关注视觉语言定量推理与复杂多边形拓扑生成。
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260926] SARATR-X-v2: Scale-Aware Structural Pre-Training for SAR Foundation Models | Li Weijie, Song Yafei, Liu Yongxiang, Peng Bowen, Zhou Jie, Xia Jingyuan, Yang Wei, Liu Tianpeng, Liu Zhen, Liu Li | College of Electronic Science and Technology, National University of Defense Technology, Changsha, China ( | 提出尺度感知结构预训练框架，增强SAR基础模型对多尺度目标与散斑噪声的鲁棒表征。 | [#964](https://github.com/thinson/RS-PaperClaw/issues/964) |
-| [20260926] DiCoR: Decoupled Referent Disambiguation and Contour Recalibration for Efficient Referring Remote Sensing Image Segmentation | Gao Ziyang, Jiang Zhizhuo, Chang Jingjing, Yang Yixin, Pan Yuwen, Mao Yong-Qiang, Liu Yu, Chen Hai-Bao | School of Integrated Circuits, School of Information Science and Electronic Engineering, Shanghai Jiao Tong University, Shanghai, China (；College of Computer Science, Nankai University, Tianjin, China (；Department of Electronic Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China (；Department of Electronic Engineering, Tsinghua University, Beijing, China ( | 解耦指代消歧与轮廓重校准，提升遥感指代图像分割的效率与边界精度。 | [#1104](https://github.com/thinson/RS-PaperClaw/issues/1104) |
-| [20260926] RefineFly: Failure-Aware Post-Training for Aerial Vision-Language Navigation | Wang Boxiong, Kang Hui, Sun Geng, Li Jiahui, Yu Chao, Tian Daxin | Jilin University；Tsinghua University；Beihang University；Zhongguancun Academy | 面向空中视觉语言导航，利用失败感知后训练与PPO提升无人机导航鲁棒性。 | [#1370](https://github.com/thinson/RS-PaperClaw/issues/1370) |
-| [20260926] Bandwidth, Not FLOPS: FFT Kernels, Matrix Units and SAR Imaging on Apple M6 | Mohamed Amine Bergach | Illumina | 在Apple M6上分析FFT核与矩阵单元，指出SAR成像性能瓶颈在带宽而非FLOPS。 | [#1371](https://github.com/thinson/RS-PaperClaw/issues/1371) |
-| [20260926] GeoCR: Learning a Generalist Cloud Removal Prior from Heterogeneous Observations | Do Jeonghyeok, Kim Munchurl | Korea Advanced Institute of Science and Technology (KAIST) | 从异源观测中学习通用去云先验，借助SAR引导实现多光谱影像云去除。 | [#1372](https://github.com/thinson/RS-PaperClaw/issues/1372) |
-| [20260926] Region-Local Copula Evidence Fusion for Heterogeneous Remote Sensing Change Detection | Ji Zhiyuan, Yin Junjun, Yang Jian | Department of Electronic Engineering, Tsinghua University, Beijing, P.R；School of Computer and Communication Engineering, University of Science and Technology Beijing, P.R | 提出区域局部Copula证据融合方法，用于异源遥感影像变化检测。 | [#1373](https://github.com/thinson/RS-PaperClaw/issues/1373) |
-| [20260926] Reuse or Relearn? A Spectral View of Earth Observation Foundation Models | Mehmet Ozgur Turkoglu, Marsocci Valerio, Dominik J. Mühlematter, Senti Dominik, Schindler Konrad, Aasen Helge | ESA, -lab | 从谱空间诊断地球观测基础模型，分析微调时特征复用与重学习的选择。 | [#1374](https://github.com/thinson/RS-PaperClaw/issues/1374) |
-| [20260926] A Unified Framework and Dataset for Oriented Object Visual Grounding in Remote Sensing | Ding Zeyu, Zhou Yong, Zhao Jiaqi, Du Wen-Liang, Li Xixi, Zhu Hancheng, Yao Rui, Abdulmotaleb El Saddik | representation by explicitly modeling the object center, size；Zhu, and Rui Yao are with the School of Computer Science and Existing remote sensing visual grounding (RSVG) methods；Technology/School of Artificial Intelligence, the Mine Digitization；Engineering Research Center of the Ministry of Education, and Jiangsu；and Emergency IoT in Underground Space, China University of Mining and；Computer Science, University of Ottawa, Ottawa, ON K1 N 6 N5, Canada ( | 构建统一框架与数据集，面向遥感旋转目标视觉定位建模中心与尺寸。 | [#1375](https://github.com/thinson/RS-PaperClaw/issues/1375) |
-| [20260926] USAI-Quant: A Quantitative Reasoning Benchmark for Vision-Language Models in Built Environments | Wang Dongdong, Song Qingqi, Chen Yuzhou, Balakrishnan Deepak, Ravi Shankar Srinivasan, Wang Shenhao | University of Florida University of Florida University of Florida University of Florida；University of Florida University of Florida | 提出USAI-Quant基准，评估视觉语言模型在建成环境中的定量推理能力。 | [#1376](https://github.com/thinson/RS-PaperClaw/issues/1376) |
-| [20260926] PolyTopoBench: A Benchmark for Complex Vector Polygon Generation from Remote Sensing Imagery | Liu Zeping, Lao Ni, Sun Weiwei, Wolff Gil, Xie Yiqun, Zhao Liang, Jiao Junfeng, Mai Gengchen | University of Texas at Austin；University of Maryland；Emory University | 发布PolyTopoBench基准，评测遥感影像生成复杂矢量多边形的拓扑保持能力。 | [#1377](https://github.com/thinson/RS-PaperClaw/issues/1377) |
+| [20260926] GeoCR: Learning a Generalist Cloud Removal Prior from Heterogeneous Observations | Do Jeonghyeok, Kim Munchurl | Korea Advanced Institute of Science and Technology (KAIST) | 提出GeoCR，从异构观测中学习通用云去除先验，并利用SAR引导提升泛化能力。 | [#1372](https://github.com/thinson/RS-PaperClaw/issues/1372) |
+| [20260926] Region-Local Copula Evidence Fusion for Heterogeneous Remote Sensing Change Detection | Ji Zhiyuan, Yin Junjun, Yang Jian | Department of Electronic Engineering, Tsinghua University, Beijing, P.R；School of Computer and Communication Engineering, University of Science and Technology Beijing, P.R | 提出区域局部Copula证据融合方法，用于异构遥感变化检测，提升融合鲁棒性。 | [#1373](https://github.com/thinson/RS-PaperClaw/issues/1373) |
+| [20260926] Reuse or Relearn? A Spectral View of Earth Observation Foundation Models | Mehmet Ozgur Turkoglu, Marsocci Valerio, Dominik J. Mühlematter, Senti Dominik, Schindler Konrad, Aasen Helge | ESA, -lab | 从光谱视角诊断地球观测基础模型，分析微调与重用的奇异子空间差异。 | [#1374](https://github.com/thinson/RS-PaperClaw/issues/1374) |
+| [20260926] USAI-Quant: A Quantitative Reasoning Benchmark for Vision-Language Models in Built Environments | Wang Dongdong, Song Qingqi, Chen Yuzhou, Balakrishnan Deepak, Ravi Shankar Srinivasan, Wang Shenhao | University of Florida University of Florida University of Florida University of Florida；University of Florida University of Florida | 构建USAI-Quant基准，评估视觉语言模型在建筑环境中的定量推理能力。 | [#1376](https://github.com/thinson/RS-PaperClaw/issues/1376) |
+| [20260926] PolyTopoBench: A Benchmark for Complex Vector Polygon Generation from Remote Sensing Imagery | Liu Zeping, Lao Ni, Sun Weiwei, Wolff Gil, Xie Yiqun, Zhao Liang, Jiao Junfeng, Mai Gengchen | University of Texas at Austin；University of Maryland；Emory University | 提出PolyTopoBench基准，评估从遥感影像生成复杂矢量多边形的拓扑保持能力。 | [#1377](https://github.com/thinson/RS-PaperClaw/issues/1377) |
 
 ## 🔎 观察
 
-- SAR与地球观测基础模型正从通用预训练转向领域特性注入，尺度、散斑与谱诊断成为关键设计维度。
-- 评测基准密集出现，反映遥感AI从模型创新向可复现、可量化的能力评估阶段过渡。
+- 通用先验与证据融合成为提升异构遥感任务鲁棒性的共同思路。
+- 评测基准密集出现，反映领域对标准化定量评估的迫切需求。
 
 ---
 
