@@ -85,6 +85,7 @@ jobs:
           case "${DISPATCH_COMMAND:-run_no_notify}" in
             doctor)
               python3 scripts/cli.py doctor
+              python3 scripts/diagnose_arxiv.py
               ;;
             reconcile)
               if [[ -z "${DISPATCH_DATE:-}" ]]; then
