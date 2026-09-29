@@ -1,4 +1,5 @@
 from dataclasses import replace
+from http.client import IncompleteRead
 from pathlib import Path
 import sys
 import tempfile
@@ -39,6 +40,13 @@ class OaiTest(unittest.TestCase):
             arxiv_oai._fetch({"verb": "ListRecords"})
         self.assertEqual(caught.exception.code, 429)
         self.assertEqual(run.call_count, 1)
+
+    @patch.object(arxiv_oai.subprocess, "run")
+    @patch.object(arxiv_oai.urllib.request, "urlopen")
+    def test_truncated_response_uses_complete_curl_response(self, urlopen, run):
+        urlopen.return_value.__enter__.return_value.read.side_effect = IncompleteRead(b"partial", 100)
+        run.return_value = SimpleNamespace(returncode=0, stdout=page().encode() + b"\nRS_HTTP_STATUS:200", stderr=b"")
+        self.assertEqual(arxiv_oai._fetch({"verb": "ListRecords"}), page().encode())
 
     def test_original_submission_date_and_authors(self):
         items, token = arxiv_oai.parse_page(page())

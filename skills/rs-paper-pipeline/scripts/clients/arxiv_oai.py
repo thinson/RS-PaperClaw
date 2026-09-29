@@ -6,6 +6,7 @@ Only complete harvests are cached; partial pages must not become empty reports.
 """
 from datetime import datetime, timezone
 import gzip
+from http.client import IncompleteRead
 import json
 import subprocess
 import time
@@ -70,7 +71,9 @@ def _fetch(params):
                     data = gzip.decompress(data)
             return data
         except Exception as exc:
-            if getattr(exc, "code", None) == 406:
+            if getattr(exc, "code", None) in (429, 503):
+                raise
+            if getattr(exc, "code", None) == 406 or isinstance(exc, IncompleteRead) or attempt == 2:
                 # Some networks reject urllib while the same official request
                 # succeeds with curl. Keep compression for multi-MB OAI pages.
                 result = subprocess.run([
@@ -85,8 +88,6 @@ def _fetch(params):
                     raise HTTPError(url, int(status.strip()), "OAI upstream unavailable", {}, None)
                 raise RuntimeError(f"OAI curl failed: HTTP {status.decode(errors='replace').strip()}; "
                                    f"{result.stderr.decode(errors='replace')[:200]}") from exc
-            if getattr(exc, "code", None) in (429, 503) or attempt == 2:
-                raise
             time.sleep(10 * (attempt + 1))
 
 
