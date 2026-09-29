@@ -32,15 +32,18 @@ def _env_with_proxy() -> dict:
 
 
 def check_github_connectivity() -> bool:
-    cmd = [
-        "curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
-        f"https://api.github.com/repos/{CONFIG.github_repo}",
-    ]
-    try:
-        out = subprocess.check_output(cmd, cwd=CONFIG.root_dir, env=_env_with_proxy(), timeout=20).decode().strip()
-        return out == "200"
-    except Exception:
-        return False
+    # Hosted runners share unauthenticated rate limits. Check using the same
+    # credential/client as the actual pipeline, without placing tokens in argv.
+    for attempt in range(3):
+        try:
+            return _get_repo().full_name.casefold() == CONFIG.github_repo.casefold()
+        except Exception as exc:
+            status = getattr(exc, "status", None)
+            print(f"GitHub precheck attempt={attempt + 1}: {type(exc).__name__} status={status}", flush=True)
+            if status == 401 or attempt == 2:
+                return False
+            time.sleep(2 * (attempt + 1))
+    return False
 
 
 def run(cmd: list[str], retries: int = 4):
@@ -504,7 +507,7 @@ def main(target_date: str | None = None, notify: bool | None = None, force: bool
                     "failed",
                     {"reason": "GitHub connectivity check failed"},
                 )
-            raise RuntimeError("GitHub 连通性检查失败，请切换代理节点后重试")
+            raise RuntimeError("GitHub API 检查失败，请检查上述认证、限流或网络错误")
         if not target_date:
             target_dates = missing_report_dates(_get_repo(), target_dates)
         failures = []

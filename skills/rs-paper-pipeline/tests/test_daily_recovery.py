@@ -14,6 +14,18 @@ import run_rs_daily_workday as runner
 
 
 class RecoveryTest(unittest.TestCase):
+    @patch.object(runner, "_get_repo")
+    def test_precheck_uses_authenticated_repository_client(self, repo):
+        repo.return_value.full_name = runner.CONFIG.github_repo
+        self.assertTrue(runner.check_github_connectivity())
+
+    @patch.object(runner.time, "sleep")
+    @patch.object(runner, "_get_repo")
+    def test_precheck_recovers_from_transient_network_failure(self, repo, sleep):
+        repo.side_effect = [OSError("temporary outage"), SimpleNamespace(full_name=runner.CONFIG.github_repo)]
+        self.assertTrue(runner.check_github_connectivity())
+        self.assertEqual(repo.call_count, 2)
+
     @patch.object(runner.time, "sleep")
     @patch.object(runner, "_write_state")
     @patch.object(runner, "_run_step")
