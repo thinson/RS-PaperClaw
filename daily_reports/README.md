@@ -2,6 +2,42 @@
 
 最近三天日报（最新在前）：
 
+# [20260925](./202609/20260925.md)
+## 📌 今日概况
+
+今日共检索候选论文 16 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日论文聚焦遥感数据的高效表征、跨模态转换与智能体应用。高光谱视频压缩引入隐式神经表示，波段选择稳定性研究关注语义分割可靠性；扩散模型与流匹配被用于数字表面模型增强和SAR到光学图像翻译，强调多模态条件与单步生成。同时，面向超高分辨率影像的工具路由智能体、长时无人机视觉语言导航基准以及人机回环地理标注系统，反映出遥感AI向自动化、交互式与可扩展数据集构建方向演进。
+
+## ✨ 今日亮点
+
+- 隐式神经表示拓展至高光谱视频压缩，兼顾时空谱冗余。
+- 流匹配与对比学习结合，实现单步SAR到光学图像翻译。
+- 长时无人机视觉语言导航基准与工具路由智能体并进。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260925] Implicit Neural Representation for Hyperspectral Video Compression | Scalera Alfredo, Murray Paul, Zabalza Jaime | University of Strathclyde；Department of Electronic | 提出隐式神经表示方法用于高光谱视频压缩，以Bjøntegaard Delta评估压缩效率。 | [#1360](https://github.com/thinson/RS-PaperClaw/issues/1360) |
+| [20260925] Band-Selection Stability and Semantic Segmentation Performance: A Study on Hyperspectral City | Li Jiarong, Imad Ali Shah, Ward Enda, Glavin Martin, Jones Edward, Deegan Brian | School of Engineering and Ryan Institute, University of Galway, Ireland | 研究高光谱城市语义分割中波段选择稳定性与分割性能的关系。 | [#1363](https://github.com/thinson/RS-PaperClaw/issues/1363) |
+| [20260925] Enhancing Photogrammetric Digital Surface Models with Pretrained Diffusion Models and Multimodal Conditioning | Lorentz Antoine, May Stéphane, Bellet Valentine, Derksen Dawa, Nespoulous Bastien | Centre National d’Études Spatiales (CNES) | 利用预训练扩散模型和多模态条件增强摄影测量数字表面模型。 | [#1364](https://github.com/thinson/RS-PaperClaw/issues/1364) |
+| [20260925] WeaveAgent: A Two-Stage Tool-Routing Agent for Ultra-High-Resolution Remote Sensing Imagery | Pang Zhongyu | Department of Electronics, National University of Defense Technology | 提出两阶段工具路由智能体，处理超高分辨率遥感影像的视觉令牌压缩与调用。 | [#1365](https://github.com/thinson/RS-PaperClaw/issues/1365) |
+| [20260925] ContraFM-S2O: Flow Matching-Based One-step SAR-to-Optical Image Translation Model with Contrastive Learning | Yu Mingqian, Chiang Wei-kuan, Wang Qiurui, Zhao Peilin | Institute of Automation, Chinese Academy of Sciences, Beijing, China；Department of Computer Science, The University of Manchester, Manchester, UK；Institute of Artificial Intelligence in Sports, Capital University of Physical Education And Sports, Beijing, China；School of Artificial Intelligence, Shanghai Jiao Tong University, Shanghai, China | 结合流匹配与对比学习，构建单步SAR到光学图像翻译模型。 | [#1366](https://github.com/thinson/RS-PaperClaw/issues/1366) |
+| [20260925] SatNav: A Scalable Benchmark for Long-Horizon UAV Vision-Language Navigation from Satellite Imagery | Jiang Jiajun, Hua Chunliang, Chen Zichun, Wu Yanxing, Yang Zeyuan, Song Jie, Hu Xiao | The Hong Kong University of Science and Technology (Guangzhou)；Low Altitude Space Economy Research Center；International Digital Economy Academy (IDEA)；The Hong Kong University of Science and Technology | 基于卫星影像构建可扩展长时无人机视觉语言导航基准SatNav。 | [#1367](https://github.com/thinson/RS-PaperClaw/issues/1367) |
+| [20260925] Human-in-the-Loop Geospatial Annotation for Rapid Dataset Construction in Field-Deployed UAV Systems | Masters Morgan, Korycki Adam, Bender Nikolaas, T. Luca Altaffer, Josephson Colleen, McGuire Steve | Department of Electrical and Computer Engineering, University of California Santa Cruz；time-consuming and costly [9], forcing research communities to rely on large-scale, internet-hosted；As a consequence, researchers and practitioners working in specialized domains—such as field | 设计人机回环地理标注流程，支持野外部署无人机系统快速构建数据集。 | [#1368](https://github.com/thinson/RS-PaperClaw/issues/1368) |
+
+## 🔎 观察
+
+- 高光谱与SAR等遥感模态的压缩和转换研究，正从重建精度转向下游任务稳定性与效率。
+- 智能体与基准数据集建设同步推进，表明遥感AI开始重视长时程交互与真实场景可扩展性。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260924](./202609/20260924.md)
 ## 📌 今日概况
 
@@ -84,38 +120,6 @@ Powered by OpenClaw🦞
 
 - 评测类工作从单一精度转向物理退化与分辨率公平，推动基础模型可信评估。
 - 视觉语言模型正从任务专用走向统一嵌入与免训练交互，降低标注依赖。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260922](./202609/20260922.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日三篇论文分别聚焦地球观测基础模型嵌入、开放提示遥感检测与三维重建。首篇验证年度嵌入对野火扰动的编码能力，推动简化火烧区制图；第二篇提出层次感知的开放提示检测框架，提升跨层级一致性；第三篇结合智能体与高斯泼溅实现可审计的城市DSM重建。整体趋势显示，遥感AI正从单一任务模型向可解释、可审计的基础表征与三维结构化理解演进。
-
-## ✨ 今日亮点
-
-- 年度地球观测嵌入可编码野火扰动，支持简化火烧区制图
-- 层次感知开放提示检测提升遥感图像跨层级一致性
-- 智能体与高斯泼溅结合实现可审计城市DSM重建
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260922] Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping | Knezevic Jovana, Atzberger Clement, Feng Zhengpeng, Adam F. A. Pellegrini, Keshav Srinivasan, Coomes David | Conservation Research Institute, University of Cambridge, Cambridge, United Kingdom；Department of Plant Sciences, University of Cambridge, Cambridge, United Kingdom；Department of Computer Science and Technology, University of Cambridge, Cambridge, United Kingdom；Department of Earth System Science, Stanford University, Stanford, CA, USA | 验证年度地球观测嵌入能编码野火扰动，并支持简化火烧区制图流程。 | [#1329](https://github.com/thinson/RS-PaperClaw/issues/1329) |
-| [20260922] Hi-OPD: Hierarchy-Aware Open-Prompt Detection for Remote Sensing Images | Hu Jinlong, Zhang Yi, Xia Zhiqi, Zhou Yikang, Ji Shunping | Wuhan University；Institute of Seismology, China Earthquake Administration | 提出层次感知开放提示检测框架，增强遥感图像跨层级一致性与负采样。 | [#1330](https://github.com/thinson/RS-PaperClaw/issues/1330) |
-| [20260922] Agentic Building-Aware Satellite Gaussian Splatting for Auditable Urban DSM Reconstruction | Sun Wentao, Xu Zhengsen, Chen Yiping, John S. Zelek, Li Jonathan | University of Waterloo, Department of Systems Design Engineering, Waterloo, Canada；University of Calgary, Department of Geomatics Engineering, Calgary, Canada；Sun Yat-sen University, School of Geospatial Engineering and Science, Zhuhai, China | 融合智能体与卫星高斯泼溅，实现建筑感知且可审计的城市DSM重建。 | [#1331](https://github.com/thinson/RS-PaperClaw/issues/1331) |
-
-## 🔎 观察
-
-- 基础模型嵌入正从通用表征走向特定扰动编码，降低下游制图对标注的依赖。
-- 开放提示检测与三维重建均强调可解释性，反映遥感AI向可审计方向演进。
 
 ---
 
