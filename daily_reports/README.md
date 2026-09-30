@@ -2,6 +2,43 @@
 
 最近三天日报（最新在前）：
 
+# [20260929](./202609/20260929.md)
+## 📌 今日概况
+
+今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+
+今日论文覆盖多模态感知、基础模型、星上处理与地物制图等方向。VesselBench-800K构建大规模多模态船舶感知基准，HyperSAM将可提示分割扩展至高光谱，Planetary Feature Fields探索可扩展地球表示。同时，星上数据缩减、多源建筑制图、像素级Transformer冠层高度回归及超高分VQA自蒸馏等研究，体现遥感AI向高效化、统一化与任务专用化并进的趋势。
+
+## ✨ 今日亮点
+
+- 大规模多模态船舶感知基准发布，覆盖检测、计数与密度估计
+- 高光谱可提示基础模型HyperSAM，推动分割大模型跨模态适配
+- 星上双时相建筑损毁评估，兼顾精度与数据缩减效率
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260929] VesselBench-800K: A Large-scale Perception Benchmark for Multimodal Vessel Detection, Counting, and Density Estimation | Hong Danfeng, Li Chenyu, Chanussot Jocelyn | School of Automation, Southeast University, Nanjing, China. (；Univ | 构建80万级多模态船舶感知基准，统一检测、计数与密度估计任务。 | [#1409](https://github.com/thinson/RS-PaperClaw/issues/1409) |
+| [20260929] Embedded Bi-Temporal Building Damage Assessment for On-Board Data Reduction | Goudemant Thomas, Francesconi Benjamin, Bellizzi Marjorie, Dorise Adrien | IRT Saint Exupéry；CNES | 面向星上部署的双时相建筑损毁评估，用Siamese检测器实现数据缩减。 | [#1410](https://github.com/thinson/RS-PaperClaw/issues/1410) |
+| [20260929] UniBuild: Unified Building Mapping From Multi-Source Optical Remote Sensing Imagery With Detail Decoding and Geometry Regularization | Huang Wei, Liu Chenying, Shi Yilei, Xiao Xiang Zhu | the Chair of Data Science in Earth Observation, Technical University of Munich, Munich, Germany; Chenying Liu and Xiao Xiang Zhu are also with Fig. 1 | 提出统一多源光学影像建筑制图框架，结合细节解码与几何正则化。 | [#1411](https://github.com/thinson/RS-PaperClaw/issues/1411) |
+| [20260929] HyperSAM: A Promptable Foundation Model for Hyperspectral Remote Sensing | Pang Li, Wu Xinqiao, Yao Jing, Ghamisi Pedram, Zhou Jun, Chen Zhengchao, Meng Deyu, Cao Xiangyong | School of Mathematics and Statistics, Xi'an Jiaotong University, Xi'an, China (；the Faculty of Electronic and Information Engineering, Xi'an Jiaotong University, Xi'an, China (；State Key Laboratory of Remote Sensing and Digital Earth, Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China (；Faculty of Electrical and Computer Engineering, University of Iceland, 101 Reykjavik, Iceland (；School of Information and Communication Technology, Griffith University, Nathan, QLD, Australia (；School of Computer Science and Technology, Xi'an Jiaotong University, Xi'an, China ( | 将可提示分割基础模型扩展至高光谱，引入数据合成与光谱适配。 | [#1412](https://github.com/thinson/RS-PaperClaw/issues/1412) |
+| [20260929] Planetary Feature Fields are Scalable Earth Representations | Rao Arjun, Loeschcke Sebastian, Fuller Anthony, Corley Isaac, Lang Nico, Shelhamer Evan | University of British Columbia &；University of Copenhagen &；Carleton University；University of Copenhagen && Vector Institute；Vector Institute &&；University of British Columbia；&& Vector Institute | 提出行星特征场作为可扩展地球表示，探索神经场与数据压缩结合。 | [#1413](https://github.com/thinson/RS-PaperClaw/issues/1413) |
+| [20260929] Pixel-Level Transformers in Remote Sensing: A Canopy Height Case Study | Ligensa Sven, Pauls Jan, Schrödter Karsten, Fayad Ibrahim, Gieseke Fabian | University of Münster University of Münster University of Münster；Laboratoire des Sciences du Climat et University of Münster | 以冠层高度为案例，系统评估像素级Transformer在遥感稠密回归中的表现。 | [#1414](https://github.com/thinson/RS-PaperClaw/issues/1414) |
+| [20260929] RS-OPSD: Reliable Privileged On-Policy-Self-Distillation for Ultra-High-Resolution Remote Sensing VQA | Jiang Chengjie, Zhou Yunqi, Yan Jiafeng, Zhao Sihang, Yuan Chun, Li Jing | Tsinghua University；Zhejiang University；Central University of Finance and Economics；East China Normal University；Key Laboratory of Geographic Information Science | 面向超高分遥感VQA，提出可靠特权在线自蒸馏方法提升推理稳定性。 | [#1415](https://github.com/thinson/RS-PaperClaw/issues/1415) |
+| [20260929] Cropland PAtteRNS: Parallel Dimensional Attention Networks and Attention to Dataset Disparity for Crop Segmentation in Satellite Imagery Time Series Data | Metcalfe Joseph, Sharifzadeh Sara, Caraffini Fabio | Department of Computer Science, Swansea University | 针对卫星时序作物分割，提出并行维度注意力网络并关注数据集差异。 | [#1416](https://github.com/thinson/RS-PaperClaw/issues/1416) |
+
+## 🔎 观察
+
+- 基础模型与可提示分割正从自然图像向高光谱、多模态遥感迁移，适配策略成为关键。
+- 星上处理与数据缩减研究增多，反映遥感AI在轨部署对轻量化与实时性的迫切需求。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260928](./202609/20260928.md)
 ## 📌 今日概况
 
@@ -61,40 +98,6 @@ Powered by OpenClaw🦞
 
 - 基础模型与遥感任务结合持续增强，评测与推理能力成为关键。
 - 多数工作关注算法有效性与泛化，而非硬件实现。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260926](./202609/20260926.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日论文聚焦遥感基础模型与评测基准两大方向。一方面，云去除、变化检测等任务引入通用先验、Copula证据融合等新方法，提升异构观测下的鲁棒性；另一方面，光谱诊断分析基础模型微调策略，同时出现面向建筑环境定量推理与复杂矢量多边形生成的基准，推动视觉语言模型与拓扑保持评估。整体趋势显示，研究正从单一任务模型转向通用化、可解释与标准化评测。
-
-## ✨ 今日亮点
-
-- 云去除提出通用先验，利用异构观测与SAR引导提升泛化。
-- 变化检测引入区域局部Copula证据融合，增强异构数据鲁棒性。
-- 新基准关注视觉语言定量推理与复杂多边形拓扑生成。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260926] GeoCR: Learning a Generalist Cloud Removal Prior from Heterogeneous Observations | Do Jeonghyeok, Kim Munchurl | Korea Advanced Institute of Science and Technology (KAIST) | 提出GeoCR，从异构观测中学习通用云去除先验，并利用SAR引导提升泛化能力。 | [#1372](https://github.com/thinson/RS-PaperClaw/issues/1372) |
-| [20260926] Region-Local Copula Evidence Fusion for Heterogeneous Remote Sensing Change Detection | Ji Zhiyuan, Yin Junjun, Yang Jian | Department of Electronic Engineering, Tsinghua University, Beijing, P.R；School of Computer and Communication Engineering, University of Science and Technology Beijing, P.R | 提出区域局部Copula证据融合方法，用于异构遥感变化检测，提升融合鲁棒性。 | [#1373](https://github.com/thinson/RS-PaperClaw/issues/1373) |
-| [20260926] Reuse or Relearn? A Spectral View of Earth Observation Foundation Models | Mehmet Ozgur Turkoglu, Marsocci Valerio, Dominik J. Mühlematter, Senti Dominik, Schindler Konrad, Aasen Helge | ESA, -lab | 从光谱视角诊断地球观测基础模型，分析微调与重用的奇异子空间差异。 | [#1374](https://github.com/thinson/RS-PaperClaw/issues/1374) |
-| [20260926] USAI-Quant: A Quantitative Reasoning Benchmark for Vision-Language Models in Built Environments | Wang Dongdong, Song Qingqi, Chen Yuzhou, Balakrishnan Deepak, Ravi Shankar Srinivasan, Wang Shenhao | University of Florida University of Florida University of Florida University of Florida；University of Florida University of Florida | 构建USAI-Quant基准，评估视觉语言模型在建筑环境中的定量推理能力。 | [#1376](https://github.com/thinson/RS-PaperClaw/issues/1376) |
-| [20260926] PolyTopoBench: A Benchmark for Complex Vector Polygon Generation from Remote Sensing Imagery | Liu Zeping, Lao Ni, Sun Weiwei, Wolff Gil, Xie Yiqun, Zhao Liang, Jiao Junfeng, Mai Gengchen | University of Texas at Austin；University of Maryland；Emory University | 提出PolyTopoBench基准，评估从遥感影像生成复杂矢量多边形的拓扑保持能力。 | [#1377](https://github.com/thinson/RS-PaperClaw/issues/1377) |
-
-## 🔎 观察
-
-- 通用先验与证据融合成为提升异构遥感任务鲁棒性的共同思路。
-- 评测基准密集出现，反映领域对标准化定量评估的迫切需求。
 
 ---
 
