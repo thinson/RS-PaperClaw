@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20261001](./202610/20261001.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究呈现多维度协同优化趋势。无人机领域关注部分可观测条件下的在线规划与稀疏地面目标搜索，同时摄影测量参数对高精度测量的影响受到系统评估。卫星星座优化则引入两阶段方法与QUBO建模，兼顾经典优化与量子计算潜力。整体上，研究从单一算法创新转向任务规划、参数校准与星座设计的联合优化，强调实际部署中的精度与效率平衡。
+
+## ✨ 今日亮点
+
+- 无人机稀疏目标搜索引入在线规划与部分可观测建模
+- 摄影测量处理参数对高精度测量影响获系统评估
+- 卫星星座优化提出两阶段经典与QUBO混合方法
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261001] Online Planning for Sparse Ground Target Search from a High-Altitude UAV under Partial Observability | Ashik E Rasul, Yoon Hyung-Jin | Department of Mechanical and Nuclear Engineering；Tennessee Technological University | 面向高空无人机部分可观测场景，提出稀疏地面目标在线搜索规划方法，结合PTZ相机主动搜索。 | [#1425](https://github.com/thinson/RS-PaperClaw/issues/1425) |
+| [20261001] The Impact of Processing Parameters on High-Accuracy Measurements in UAV Photogrammetry | Ćwiąkała Paweł, Puniach Edyta, Pastucha Elżbieta, Gruszczyński Wojciech | The Mærsk Mc-Kinney Møller Institute, University of Southern Denmark, Campusvej 55, DK-5230 | 系统评估无人机摄影测量中处理参数对高精度测量的影响，涉及相机标定与光束法平差。 | [#1426](https://github.com/thinson/RS-PaperClaw/issues/1426) |
+| [20261001] A two-stage approach to satellite constellation optimization: classical and QUBO formulations | Novara Carlo | Department of Electronics | 提出卫星星座优化两阶段方法，融合经典优化与QUBO建模，面向低轨对地观测覆盖。 | [#1427](https://github.com/thinson/RS-PaperClaw/issues/1427) |
+
+## 🔎 观察
+
+- 无人机研究正从感知算法转向任务级在线规划，部分可观测与稀疏目标成为关键约束。
+- 卫星星座优化引入QUBO显示量子计算与遥感任务设计交叉，但落地仍需验证。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260930](./202609/20260930.md)
 ## 📌 今日概况
 
@@ -67,44 +99,6 @@ Powered by OpenClaw🦞
 
 - 基础模型与可提示分割正从自然图像向高光谱、多模态遥感迁移，适配策略成为关键。
 - 星上处理与数据缩减研究增多，反映遥感AI在轨部署对轻量化与实时性的迫切需求。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260928](./202609/20260928.md)
-## 📌 今日概况
-
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
-
-今日论文呈现三条主线：一是面向星上/在轨场景的轻量化与协同推理，包括SAR Level-0原始数据直接分类、卫星-地面DNN分割与资源分配；二是遥感基础模型与迁移学习的适用边界，涉及冻结嵌入跨 wildfire 迁移失效问题；三是多模态与生成式方法向遥感任务渗透，如开放词汇分割、视频问答、稀疏视角3D高斯泼溅与高光谱跟踪。整体看，研究更强调物理约束、数据特性与部署可行性，而非单纯堆叠模型规模。
-
-## ✨ 今日亮点
-
-- 星上智能与协同推理成为热点，关注原始数据直接处理与资源受限部署。
-- 迁移学习研究开始反思冻结嵌入的跨域失效，强调本地增益难以泛化。
-- 多模态与生成式方法加速进入遥感，覆盖视频问答、3D重建与高光谱跟踪。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260928] Stacked Intelligent Metasurface-Diffractive Deep Neural Networks for Onboard Terrain Classification from SAR Level-0 Raw Data | Liu Mengbing, Li Xin, An Jiancheng, Yuen Chau | School of Electrical and Electronics Engineering, Nanyang Technological University, Singapore (e-mails:; ) | 提出堆叠智能超表面与衍射深度神经网络，直接从SAR Level-0原始数据进行在轨地形分类。 | [#1388](https://github.com/thinson/RS-PaperClaw/issues/1388) |
-| [20260928] Preference-Guided Adaptation for Open-Vocabulary Semantic Segmentation via Prompt Disagreement | Jang Hyun-Kurl, Kim Jihun, Yoon Kuk-Jin | Visual Intelligence Lab | 利用提示不一致性进行偏好引导自适应，提升开放词汇语义分割的跨域表现。 | [#1389](https://github.com/thinson/RS-PaperClaw/issues/1389) |
-| [20260928] Joint DNN Partitioning and Resource Allocation for Satellite-Terrestrial Collaborative Inference Systems | Liang Wenyu, Fei Zesong, Liu Peng, Wang Xinyi, Zeng Ming | School of Information and Electronics, Beijing Institute of Technology, Beijing, China ( | 面向卫星-地面协同推理，联合优化DNN分割与资源分配以适配LEO卫星约束。 | [#1390](https://github.com/thinson/RS-PaperClaw/issues/1390) |
-| [20260928] Temporal Modelling for Burn Scars on Sentinel-3 | Barco Luca, Arnaudo Edoardo, Bragagnolo Andrea, Rossi Claudio, Garza Paolo | Up funded by the Italian Space Agency and the Ministry of University and；Research - Contract No. 2024-5-E.0 - CUP No. I53 D24000060005 | 基于Sentinel-3 OLCI构建时序建模方法，用于火烧迹地语义分割与损伤评估。 | [#1391](https://github.com/thinson/RS-PaperClaw/issues/1391) |
-| [20260928] When local gains fail to transfer: Frozen Earth-observation embeddings across wildfires | Stark Philipp, Sopasakis Alexandros, Hall Ola | Department of Human Geography Centre for Mathematical Sciences；Lund University Lund University；Department of Human Geography；Lund University | 发现冻结地球观测嵌入在跨wildfire任务中本地增益无法迁移，揭示迁移局限。 | [#1392](https://github.com/thinson/RS-PaperClaw/issues/1392) |
-| [20260928] Spectral Super-Resolution using Spatial-Spectral Residual Operator Networks | Chin Seokhyun | California Institute of Technology | 提出空间-光谱残差算子网络，实现多光谱卫星影像的零样本光谱超分辨率。 | [#1395](https://github.com/thinson/RS-PaperClaw/issues/1395) |
-| [20260928] ReVA: A Scene-Centric Dataset Beyond Repetition for Remote Sensing Video Question Answering | Yao Zhen, Wang Likai, Yang Yuming, Zheng Zhihao, Lang Bo, Tang Qiuyu, Sheng Jialu, Xu Jingqi, Yang Yuehai, Barker Jumal, Ying Xiaowen, Mooi Choo Chuah | Lehigh University；University of Southern California；Qualcomm AI Research | 发布场景中心遥感视频问答数据集ReVA，缓解重复样本并强化时空推理评测。 | [#1398](https://github.com/thinson/RS-PaperClaw/issues/1398) |
-| [20260928] Remote Sensing Sparse-View 3D Gaussian Splatting via Depth Image-Based Rendering | Kang Jiaming, Zou Zhengxia, Shi Zhenwei | Beihang University | 结合深度图像渲染与3D高斯泼溅，改善遥感稀疏视角的新视角合成质量。 | [#1399](https://github.com/thinson/RS-PaperClaw/issues/1399) |
-| [20260928] HyperDAM: Hyperspectral Distractor-Aware Memory with Amodal Expansion for SAM 3 Tracking | Yuzawa Ryoga, Takagi Tasuku | 原文作者栏未列出单位 | 为SAM 3跟踪引入高光谱干扰感知记忆与无模态扩展，提升高光谱视频跟踪鲁棒性。 | [#1405](https://github.com/thinson/RS-PaperClaw/issues/1405) |
-
-## 🔎 观察
-
-- 星上处理与协同推理研究正从算法精度转向原始数据、通信与算力约束下的系统级权衡。
-- 迁移学习与基础模型应用出现反思信号：冻结特征并非通用，跨域评估需更严格。
 
 ---
 
