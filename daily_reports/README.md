@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20261003](./202610/20261003.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日两篇论文分别聚焦遥感开放词汇语义分割与无人机位姿估计。前者针对几何变换导致的特征流形失真，提出基于二面体群D4的特征自适应流形修复方法，以提升开放词汇分割鲁棒性。后者利用自监督DINOv2构建ViT模型，探索合成到真实的域适应，用于非合作无人机位姿估计。整体趋势显示，遥感与视觉基础模型的结合正从封闭类别向开放词汇、从理想数据向跨域场景延伸，几何先验与自监督表征成为应对域偏移的关键手段。
+
+## ✨ 今日亮点
+
+- 开放词汇分割引入几何变换流形修复，提升遥感特征鲁棒性。
+- DINOv2自监督ViT用于非合作无人机位姿估计，缩小合成真实域差。
+- 两篇工作均关注域偏移问题，分别从几何先验与自监督预训练切入。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261003] A Geometric-Transformation Feature-Adaptive Manifold Restoration Method for Open-Vocabulary Semantic Segmentation of Remote Sensing Images | Wang Jianzheng, Ni Huan, Niu Xiaonan, Hong Danfeng, Guan Haiyan | School of Remote Sensing and Geomatics Engineering, Nanjing University of Information Science and Technology, China；Nanjing Center, China Geological Survey；School of Automation, Southeast University | 提出几何变换特征自适应流形修复方法，利用D4群增强开放词汇遥感语义分割的鲁棒性。 | [#1433](https://github.com/thinson/RS-PaperClaw/issues/1433) |
+| [20261003] Synthetic-to-Real ViT-Based Pose Estimation of a Noncooperative UAV | Srinivas Krishnanujam, Acharla Hanish, Agrawal Brij, Herrera Leonardo | sign Center, Department of Mechanical and Aerospace Engineering, Naval based on the self-supervised DINOv2 [11] and is trained；Postgraduate School, Monterey | 基于DINOv2的ViT位姿估计模型，通过合成到真实域适应实现非合作无人机姿态估计。 | [#1434](https://github.com/thinson/RS-PaperClaw/issues/1434) |
+
+## 🔎 观察
+
+- 遥感开放词汇分割开始关注几何变换引起的特征流形失真，D4群等先验被用于修复。
+- 非合作无人机位姿估计借助自监督ViT与合成数据，域适应仍是落地关键瓶颈。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261002](./202610/20261002.md)
 ## 📌 今日概况
 
@@ -59,41 +90,6 @@ Powered by OpenClaw🦞
 
 - 无人机研究正从感知算法转向任务级在线规划，部分可观测与稀疏目标成为关键约束。
 - 卫星星座优化引入QUBO显示量子计算与遥感任务设计交叉，但落地仍需验证。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260930](./202609/20260930.md)
-## 📌 今日概况
-
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日论文聚焦遥感定位、计数、高程变化与高光谱处理等方向。卫星-地面定位通过几何语义约束BEV表示缓解歧义；遥感计数探索无需目标域训练的新范式；UAV摄影测量结合异方差深度学习估计垂直位移；高光谱领域涌现模型综述与跨传感器超分方法；城市区域识别则利用可见光影像与植被指数。整体趋势显示，跨域泛化、几何与语义融合、以及不确定性建模正成为遥感AI的重要关注点。
-
-## ✨ 今日亮点
-
-- 几何语义约束BEV学习，缓解卫星地面定位歧义。
-- 源域训练目标域计数，无需目标数据的新范式。
-- 异方差深度学习提升UAV垂直位移估计可靠性。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260930] How to Reduce Localization Ambiguity? Geometry-Semantic Constrained BEV Representation Learning for Satellite-Ground Localization | Feng Junming, Xia Panwang, Wu Qiong, Lu Xudong, Jiao Zeyu, Lv Kun, Wu Zherong, Wan Yi, Ma Peifeng, Hsu Li-Ta, Zheng Zhi | The Hong Kong Polytechnic University, Hong Kong；Southern University of Science and Technology；Wuhan University, Wuhan, China；The Chinese University of Hong Kong, Hong Kong, China | 提出几何-语义约束的BEV表示学习，减少卫星-地面定位中的局部歧义。 | [#1418](https://github.com/thinson/RS-PaperClaw/issues/1418) |
-| [20260930] COBICount: Separating Object and Background Responses for Remote Sensing Object Counting Without Training on Target Data | Zheng Junjing, Zhou Zhiyi, Yang Ningrui, Meng Hongying | School of International Studies, Chongqing University of Posts and Telecommunications, Chongqing, China, When training and deployment images differ in object；Brunel University London, Uxbridge UB8 3 PH, U.K. (；School of International Studies, Chongqing Uni- versity of Posts and Telecommunications, Chongqing, China；School of International Studies, Chongqing University of Posts and Telecommunications, Chongqing, China；Department of Electronic and Electri- cal Engineering, College of Engineering, Design and Physical Sciences, Brunel University of London, Uxbridge UB8 3 PH, U.K. ( | COBICount分离目标与背景响应，实现无需目标域训练的遥感目标计数。 | [#1419](https://github.com/thinson/RS-PaperClaw/issues/1419) |
-| [20260930] Determining Vertical Displacement of Agricultural Areas Using UAV-Photogrammetry and a Heteroscedastic Deep Learning Model | Gruszczyński Wojciech, Puniach Edyta, Ćwiąkała Paweł, Matwij Wojciech | AGH University of Krakow, Faculty of Geo-Data Science, Geodesy, and Environmental Engineering | 结合UAV摄影测量与异方差深度学习模型，测定农业区域垂直位移。 | [#1420](https://github.com/thinson/RS-PaperClaw/issues/1420) |
-| [20260930] Hyperspectral Image Models: Technical Report | Rachamalla Tanishq, Das Aryan, Kaushik Srishti, Swalpa Kumar Roy | Department of Information Technology；Siddhartha Academy of Higher Education；Department of Computer Science and Engineering；Vellore Institute of Technology；Department of Computer and Information Sciences；Indira Gandhi National Open University；Tezpur University | 综述高光谱图像模型，涵盖Mamba、ViT及光谱-空间CNN等技术。 | [#1421](https://github.com/thinson/RS-PaperClaw/issues/1421) |
-| [20260930] Super-Resolving Unseen Hyperspectral Sensors at Any Scale via Spatial Operators | He Ji-Xuan, Zhuang Guohang, Junge Bo, Li Tingyi, Lingchen, Cai Miaomiao, Qiao Yanan, Liu Xiujin, Fang Junfeng | Xi'an Jiaotong University；Hefei University of Technology；National University of Singapore；University of Michigan | 利用空间算子实现跨传感器、任意尺度的高光谱图像超分辨率。 | [#1422](https://github.com/thinson/RS-PaperClaw/issues/1422) |
-| [20260930] Recognition of Urbanized Areas in UAV-Derived Very-High-Resolution Visible-Light Imagery | Puniach Edyta, Gruszczyński Wojciech, Ćwiąkała Paweł, Strząbała Katarzyna, Pastucha Elżbieta | AGH University of Krakow, Faculty of Geo-Data Science, Geodesy, and Environmental Engineering, Mickiewicza 30, 30-059 Krakow, Poland；The Mærsk Mc-Kinney Møller Institute, University of Southern Denmark, Campusvej 55, DK-5230 Odense | 基于UAV可见光影像与植被指数，识别城市化区域。 | [#1423](https://github.com/thinson/RS-PaperClaw/issues/1423) |
-
-## 🔎 观察
-
-- 跨域泛化成为遥感AI热点，多篇工作探索无需目标域数据的迁移方法。
-- 几何与语义约束、不确定性建模被用于提升定位与高程估计的可靠性。
 
 ---
 
