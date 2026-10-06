@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20261004](./202610/20261004.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究呈现三条并行主线：一是面向遥感智能体的可靠性机制，通过工具观测验证抑制误差传播；二是低光无人机场景下的RGB-红外差分融合与方向车辆检测，强调可靠性条件学习；三是多源卫星数据分析与LLM报告生成的全流程自动化，覆盖地表温度与Landsat数据处理。整体看，研究从单纯提升感知精度转向系统级可靠性与自动化闭环，智能体与生成式方法加速融入遥感工作流。
+
+## ✨ 今日亮点
+
+- 遥感智能体引入工具观测验证，抑制误差传播提升可靠性
+- RGB-红外差分学习用于低光无人机方向车辆检测
+- LLM驱动多源卫星数据分析与自动报告生成框架
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261004] RSure-Agent: Reliable Use of Tool Observations for Remote Sensing Agents | Liu Fuyuan, Liu Nayu, Yu Wenhao, Wang Peijin, Feng Yingchao, Yao Fanglong, Wan Liang, Feng Wei | School of Computer Science and Technology, Tianjin University, Tianjin, China (；the Key Laboratory of Target Cognition and Application Technology (TCAT), Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China ( | 提出RSure-Agent，通过验证工具观测的可靠性来抑制遥感智能体中的误差传播。 | [#1436](https://github.com/thinson/RS-PaperClaw/issues/1436) |
+| [20261004] ReDiffNet: Differential RGB-Infrared Learning for Low-Light UAV Oriented Vehicle Detection | Zhang Qifan, Zhou Ziran, Li Ruijie, Tang Jincheng, Wang Hao, Qiao Qihao, Wang Chunliu | Dalian Maritime University, Dalian, China；The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China；Hubei University of Economics, Wuhan, China | 提出ReDiffNet，以差分RGB-红外学习实现低光无人机场景下的方向车辆检测。 | [#1437](https://github.com/thinson/RS-PaperClaw/issues/1437) |
+| [20261004] A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation | Hind Yousif Alhammadi, Isam Mashhour Al Jawarneh | Department of Applied Physics and Astronomy, University of Sharjah, Sharjah, UAE；Department of Computer Science, University of Sharjah, P.O.Box | 构建多源卫星数据分析与LLM报告生成框架，支持地表温度与Landsat自动化处理。 | [#1438](https://github.com/thinson/RS-PaperClaw/issues/1438) |
+
+## 🔎 观察
+
+- 遥感智能体研究开始关注工具观测的可靠性验证，而非仅追求任务完成率。
+- 低光无人机检测与多源自动化分析并行推进，显示场景驱动与流程驱动并重。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261003](./202610/20261003.md)
 ## 📌 今日概况
 
@@ -58,38 +90,6 @@ Powered by OpenClaw🦞
 
 - 遥感异常检测正从离线分析转向近实时与星上处理，以降低延迟和传输压力。
 - LLM智能体进入遥感任务后，感知-推理接口安全成为系统鲁棒性的新焦点。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261001](./202610/20261001.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究呈现多维度协同优化趋势。无人机领域关注部分可观测条件下的在线规划与稀疏地面目标搜索，同时摄影测量参数对高精度测量的影响受到系统评估。卫星星座优化则引入两阶段方法与QUBO建模，兼顾经典优化与量子计算潜力。整体上，研究从单一算法创新转向任务规划、参数校准与星座设计的联合优化，强调实际部署中的精度与效率平衡。
-
-## ✨ 今日亮点
-
-- 无人机稀疏目标搜索引入在线规划与部分可观测建模
-- 摄影测量处理参数对高精度测量影响获系统评估
-- 卫星星座优化提出两阶段经典与QUBO混合方法
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261001] Online Planning for Sparse Ground Target Search from a High-Altitude UAV under Partial Observability | Ashik E Rasul, Yoon Hyung-Jin | Department of Mechanical and Nuclear Engineering；Tennessee Technological University | 面向高空无人机部分可观测场景，提出稀疏地面目标在线搜索规划方法，结合PTZ相机主动搜索。 | [#1425](https://github.com/thinson/RS-PaperClaw/issues/1425) |
-| [20261001] The Impact of Processing Parameters on High-Accuracy Measurements in UAV Photogrammetry | Ćwiąkała Paweł, Puniach Edyta, Pastucha Elżbieta, Gruszczyński Wojciech | The Mærsk Mc-Kinney Møller Institute, University of Southern Denmark, Campusvej 55, DK-5230 | 系统评估无人机摄影测量中处理参数对高精度测量的影响，涉及相机标定与光束法平差。 | [#1426](https://github.com/thinson/RS-PaperClaw/issues/1426) |
-| [20261001] A two-stage approach to satellite constellation optimization: classical and QUBO formulations | Novara Carlo | Department of Electronics | 提出卫星星座优化两阶段方法，融合经典优化与QUBO建模，面向低轨对地观测覆盖。 | [#1427](https://github.com/thinson/RS-PaperClaw/issues/1427) |
-
-## 🔎 观察
-
-- 无人机研究正从感知算法转向任务级在线规划，部分可观测与稀疏目标成为关键约束。
-- 卫星星座优化引入QUBO显示量子计算与遥感任务设计交叉，但落地仍需验证。
 
 ---
 
