@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20261005](./202610/20261005.md)
+## 📌 今日概况
+
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日论文聚焦遥感基础模型与自监督表征学习，涵盖时序预测架构、公平性评估及多任务部分监督。SAR方向出现扩散模型与展开优化结合的重建方法，以及弱监督水体映射。图像恢复引入智能体与视觉语言模型应对复合退化。整体趋势显示，遥感AI正从单一任务向多任务、跨模态和鲁棒性评估演进，同时强调实际部署中的偏差与退化问题。
+
+## ✨ 今日亮点
+
+- 时序联合嵌入预测架构提升遥感表征学习能力
+- 生物群系感知基准揭示遥感基础模型公平性缺陷
+- 扩散模型与展开优化结合改进压缩SAR重建
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261005] T-JEPA: A Temporal Joint-Embedding Predictive Architecture for Learning Better Remote Sensing Representations | Peng Bowen, Liu Li, Liu Yongxiang, Li Weijie, Zhou Jie, Liu Zhen | National University of Defense Technology, Changsha, China | 提出T-JEPA时序联合嵌入预测架构，利用时间信息学习更优遥感表征。 | [#1440](https://github.com/thinson/RS-PaperClaw/issues/1440) |
+| [20261005] FairRSFM: A Biome-Aware Benchmark and Debiasing Framework for Remote Sensing Foundation Models | Md Aminur Hossain, Vaghasiya Omkumar, Rajeev Ranjan Dwivedi, Kurmi Vinod, Banerjee Biplab | Biplab Banerjee 2；Space Applications Centre, ISRO, Ahmedabad, India；Indian Institute of Technology Bombay, India；Indian Institute of Science Education and Research Bhopal | 构建生物群系感知基准与去偏框架，评估并提升遥感基础模型公平性。 | [#1441](https://github.com/thinson/RS-PaperClaw/issues/1441) |
+| [20261005] Diffusion Meets Unrolling: Compressive SAR Image Reconstruction with Interleaved Learned Corrections | Pappas Odysseas, Andrew C. M. Austin, Mayo Perla, Golbabaee Mohammad, Achim Alin | VI Labs, School of Computer Science, University of Bristol；School of Electrical, Electronic, and Mechanical Engineering, University of Bristol；School of Engineering Mathematics and Technology, University of Bristol | 将扩散模型与展开优化交织，实现压缩SAR图像的高质量重建。 | [#1442](https://github.com/thinson/RS-PaperClaw/issues/1442) |
+| [20261005] EORestore-Agent: Fidelity-Guided Agentic Restoration of Remote Sensing Images with Composite Degradations | Qi Heli, Zhou Zeqi, Yi Jingjun, Liu Kunyi, Lihe Ziyang, Wang Junjue, Yoshie Osamu, Yokoya Naoto | the Graduate School of Information, Production and Systems, Waseda University, Kitakyushu, Fukuoka 808-, Japan；the Graduate School of Frontier Sciences, The University of Tokyo, Kashiwa, Chiba 277-, Japan；the Informatics Institute, University of Amsterdam, Amsterdam XH, The Netherlands；Wuhan University, Wuhan, China | 提出保真度引导的智能体恢复框架，处理遥感图像复合退化。 | [#1443](https://github.com/thinson/RS-PaperClaw/issues/1443) |
+| [20261005] Multi-Task Partially Supervised Learning for Super-Resolution and Semantic Segmentation on Earth Observation data | Lê Hoàng-Ân, Pham Minh-Tan, Lemai-Chenevier Solange, Greslou Daniel | Université Bretagne Sud, IRISA, UMR 6074, Vannes, France；Centre National d’Etudes Spatiales (CNES), Toulouse, France | 面向地球观测数据，研究超分辨率与语义分割的多任务部分监督学习。 | [#1444](https://github.com/thinson/RS-PaperClaw/issues/1444) |
+| [20261005] Extending Dynamic World Surface Water Mapping to Sentinel-1 with AlphaEarth Embeddings | Mukherjee Rohit, Policelli Frederick, Tellman Beth, Chakraborty TC, Giezendanner Jonathan, Jonathan A. Sullivan, Sun Ning | Pacific Northwest National Laboratory, Richland, WA USA (；NASA Goddard Space Flight Center, Greenbelt, MD USA；Fujitsu Research of America, Santa Clara, CA USA；University of Wisconsin--Madison, Madison, WI USA | 利用AlphaEarth嵌入将动态世界地表水映射扩展至Sentinel-1。 | [#1445](https://github.com/thinson/RS-PaperClaw/issues/1445) |
+
+## 🔎 观察
+
+- 遥感基础模型研究正从性能提升转向公平性、鲁棒性等可信维度评估。
+- 扩散模型与经典优化结合，成为SAR重建等逆问题的新兴技术路线。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261004](./202610/20261004.md)
 ## 📌 今日概况
 
@@ -58,38 +93,6 @@ Powered by OpenClaw🦞
 
 - 遥感开放词汇分割开始关注几何变换引起的特征流形失真，D4群等先验被用于修复。
 - 非合作无人机位姿估计借助自监督ViT与合成数据，域适应仍是落地关键瓶颈。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261002](./202610/20261002.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日论文聚焦遥感时序异常检测与智能体系统安全。森林监测方向利用Sentinel-1 SAR时序构建两阶段级联，实现近实时异常发现；海洋环境监测则强调星上自监督异常检测，以降低下传与算力压力。同时，LLM驱动的无人机集群研究关注感知-推理接口的对抗攻击与纵深防御，体现遥感AI从单一算法向系统级鲁棒性延伸。
-
-## ✨ 今日亮点
-
-- SAR时序两阶段级联用于近实时森林异常检测
-- 星上自监督异常检测提升海洋监测效率
-- LLM无人机集群感知-推理接口纵深防御
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261002] A Two-Stage Cascade for Near-Real-Time Forest Anomaly Detection from Sentinel-1 SAR Time Series | Pann Thinzar Seint, Chhatkuli Subas, Atwood Bryan | DAI Labs, K.K. | 基于Sentinel-1 SAR时序构建两阶段级联，实现森林异常近实时检测。 | [#1429](https://github.com/thinson/RS-PaperClaw/issues/1429) |
-| [20261002] Defense-in-Depth at the Perception-Reasoning Interface of LLM-Centric Agentic UAV Swarms | Homaei Mohammadhossein, Emami Yousef, Homayoun Sajad, Taheri Rahim, Zhou Hao, Miguel Gutierrez Gaitan, Wei Bo | University of Oulu；University of Turku；University of York；University of Houston；University of Melbourne；Northumbria University | 针对LLM无人机集群感知-推理接口，提出纵深防御以抵御对抗攻击。 | [#1430](https://github.com/thinson/RS-PaperClaw/issues/1430) |
-| [20261002] On-Board Anomaly Detection for Efficient Marine Environmental Monitoring | Goudemant Thomas, Szywala Clotilde, Francesconi Benjamin, Aubrun Michelle, Bobichon Yves, Bellizzi Marjorie, Girard Adrien | Institut de Recherche Technologique Saint Exupéry；Current research often targets specific threats through methods like water quality assessment [3], [4], monitoring | 利用自监督学习在星上开展异常检测，提升海洋环境监测效率。 | [#1431](https://github.com/thinson/RS-PaperClaw/issues/1431) |
-
-## 🔎 观察
-
-- 遥感异常检测正从离线分析转向近实时与星上处理，以降低延迟和传输压力。
-- LLM智能体进入遥感任务后，感知-推理接口安全成为系统鲁棒性的新焦点。
 
 ---
 
