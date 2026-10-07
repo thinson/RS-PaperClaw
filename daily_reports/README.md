@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20261006](./202610/20261006.md)
+## 📌 今日概况
+
+今日共检索候选论文 16 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究呈现三条主线：一是跨域迁移与泛化边界，CETUS探索地球表征向土星SAR的迁移，剑桥工作则从空间依赖性出发重新审视样本独立性与泛化界；二是数据泄漏与评估可靠性，高光谱分类中patch重叠导致的泄漏被量化，提示现有精度可能被高估；三是面向实际难题的方法改进，RBMatch针对半监督建筑提取的类别不平衡提出双层重平衡，RSJEV则利用多模态大模型增强场景判别。整体看，社区对评估严谨性和跨域可靠性的关注明显上升。
+
+## ✨ 今日亮点
+
+- 跨域迁移从地球走向土星SAR，检验表征的普适边界
+- 空间依赖与patch重叠被量化，数据泄漏问题受重视
+- 半监督与多模态大模型分别应对类别不平衡和场景判别
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261006] CETUS: How Far Do Representations Trained on Earth Transfer to Cassini SAR of Titan? | Lee Kevin | University of California at Los Angeles, Los Angeles, CA；NASA Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA | 评估地球预训练表征迁移至土星Cassini SAR的可行性，面向行星地形分类。 | [#1447](https://github.com/thinson/RS-PaperClaw/issues/1447) |
+| [20261006] RBMatch: Dual-Level Class Rebalancing for Semi-Supervised Building Footprint Extraction | Akil Ahmad Taki, Shaikh Anowarul Fattah | Department of EEE, Bangladesh University of Engineering and Technology(BUET)；Department of EEE, University of Asia Pacific ( | 提出双层类别重平衡的半监督方法，缓解建筑足迹提取中的不平衡问题。 | [#1448](https://github.com/thinson/RS-PaperClaw/issues/1448) |
+| [20261006] How Many Independent Samples Does a Satellite Image Contain? Generalization Bounds for Spatially Dependent Data | Young Robin | Department of Computer Science and Technology；University of Cambridge, UK | 针对空间依赖数据推导泛化界，讨论卫星图像有效独立样本数。 | [#1449](https://github.com/thinson/RS-PaperClaw/issues/1449) |
+| [20261006] RSJEV: Discriminative Remote Sensing Scene Classification with Multimodal Large Language Models | Si Dongchen, Wang Di, Xu Mingzhen, Zhang Jing, Du Bo, Zhang Liangpei | School of Computer Science, Wuhan University, Wuhan, China (；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan, China ( | 利用多模态大语言模型进行遥感场景分类，强调判别性决策。 | [#1450](https://github.com/thinson/RS-PaperClaw/issues/1450) |
+| [20261006] Data Leakage in Patch-Based Hyperspectral Image Classification: Quantifying the Impact of Spatial Overlap | Mohammed Q. Alkhatib | College of Engineering and IT, University of Dubai, Dubai, 14143, UAE | 量化patch空间重叠导致的数据泄漏，揭示高光谱分类评估偏差。 | [#1451](https://github.com/thinson/RS-PaperClaw/issues/1451) |
+
+## 🔎 观察
+
+- 多篇工作指向同一隐患：空间自相关使样本非独立，评估与泛化结论需重新校准。
+- 跨域迁移与泄漏量化表明，遥感AI正从追求精度转向追问精度是否可信。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261005](./202610/20261005.md)
 ## 📌 今日概况
 
@@ -62,37 +96,6 @@ Powered by OpenClaw🦞
 
 - 遥感智能体研究开始关注工具观测的可靠性验证，而非仅追求任务完成率。
 - 低光无人机检测与多源自动化分析并行推进，显示场景驱动与流程驱动并重。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261003](./202610/20261003.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日两篇论文分别聚焦遥感开放词汇语义分割与无人机位姿估计。前者针对几何变换导致的特征流形失真，提出基于二面体群D4的特征自适应流形修复方法，以提升开放词汇分割鲁棒性。后者利用自监督DINOv2构建ViT模型，探索合成到真实的域适应，用于非合作无人机位姿估计。整体趋势显示，遥感与视觉基础模型的结合正从封闭类别向开放词汇、从理想数据向跨域场景延伸，几何先验与自监督表征成为应对域偏移的关键手段。
-
-## ✨ 今日亮点
-
-- 开放词汇分割引入几何变换流形修复，提升遥感特征鲁棒性。
-- DINOv2自监督ViT用于非合作无人机位姿估计，缩小合成真实域差。
-- 两篇工作均关注域偏移问题，分别从几何先验与自监督预训练切入。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261003] A Geometric-Transformation Feature-Adaptive Manifold Restoration Method for Open-Vocabulary Semantic Segmentation of Remote Sensing Images | Wang Jianzheng, Ni Huan, Niu Xiaonan, Hong Danfeng, Guan Haiyan | School of Remote Sensing and Geomatics Engineering, Nanjing University of Information Science and Technology, China；Nanjing Center, China Geological Survey；School of Automation, Southeast University | 提出几何变换特征自适应流形修复方法，利用D4群增强开放词汇遥感语义分割的鲁棒性。 | [#1433](https://github.com/thinson/RS-PaperClaw/issues/1433) |
-| [20261003] Synthetic-to-Real ViT-Based Pose Estimation of a Noncooperative UAV | Srinivas Krishnanujam, Acharla Hanish, Agrawal Brij, Herrera Leonardo | sign Center, Department of Mechanical and Aerospace Engineering, Naval based on the self-supervised DINOv2 [11] and is trained；Postgraduate School, Monterey | 基于DINOv2的ViT位姿估计模型，通过合成到真实域适应实现非合作无人机姿态估计。 | [#1434](https://github.com/thinson/RS-PaperClaw/issues/1434) |
-
-## 🔎 观察
-
-- 遥感开放词汇分割开始关注几何变换引起的特征流形失真，D4群等先验被用于修复。
-- 非合作无人机位姿估计借助自监督ViT与合成数据，域适应仍是落地关键瓶颈。
 
 ---
 
