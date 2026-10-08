@@ -2,6 +2,44 @@
 
 最近三天日报（最新在前）：
 
+# [20261007](./202610/20261007.md)
+## 📌 今日概况
+
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
+
+今日论文覆盖去雾、基础模型、无人机自主搜索与调度、点云地形监测、多模态数据集及水质预测等方向。研究趋势显示：脉冲神经网络与语义监督被引入遥感底层视觉与跨模态预训练；世界模型和LLM开始用于无人机任务规划与调度；多模态数据与无监督聚类推动地表过程与语义感知；进化架构搜索则用于水质参数反演，整体呈现多任务、跨模态与自主化倾向。
+
+## ✨ 今日亮点
+
+- 脉冲神经网络与阈值调制用于遥感图像去雾，探索低功耗底层视觉。
+- SAR-EO基础模型引入解耦语义监督，提升跨模态掩码重建表示。
+- 世界模型与LLM分别用于无人机目标搜索和调度，推动自主任务规划。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261007] EM-SNN: Efficiently Modulated Spiking Neural Network for Remote Sensing Image Dehazing | Shao Jie, Ma Jiaqi, Min Wenwen, Song Beihang, Chen Ning, Liu Youfa, Wan Jun | Zhongnan University of Economics and Law, Wuhan, China；Mohamed bin Zayed University of Artificial Intelligence, Abu Dhabi, UAE；Yunnan University, Kunming, China；National Institute of Natural Hazards, Ministry of Emergency Management of China, Beijing, China；Wuhan University, Wuhan, China | 提出EM-SNN，用阈值调制LIF和Spike Sobel调制实现高效遥感图像去雾。 | [#1453](https://github.com/thinson/RS-PaperClaw/issues/1453) |
+| [20261007] SAREO-FM: Decoupled Semantic Supervision for SAR-EO Foundation Models | Do Jeonghyeok, Kim Munchurl | Korea Advanced Institute of Science and Technology (KAIST) | SAREO-FM通过语义查询解耦监督，增强SAR与光学基础模型的跨模态表示。 | [#1454](https://github.com/thinson/RS-PaperClaw/issues/1454) |
+| [20261007] SearchWorld: Spatial Value-Grounded Imagination for UAV Object Search via World Models | Ji Yatai, Zhu Zhengqiu, Zhao Yong, Hu Yue, Yao Fanglong, Gao Chen, Zhu Pengfei, Yin Quanjun | National Key Laboratory of Digital Intelligent Modeling and Simulation, National；University of Defense Technology；College of Systems Engineering, National University of Defense Technology；Aerospace Information Research Institute, Chinese Academy of Sciences；BNRist, Tsinghua University；Southeast University | SearchWorld利用空间价值引导的世界模型想象，提升无人机目标搜索效率。 | [#1455](https://github.com/thinson/RS-PaperClaw/issues/1455) |
+| [20261007] IVG-UAV: An Intelligent Voice-Guided UAV System for Autonomous Ripe Fruit Harvesting with Vision-Based Classification and Adaptive Path Planning | Dinh Trung Duong | School of Computing；SUNY Binghamton University | IVG-UAV集成语音引导、视觉分类与自适应路径规划，实现自主采摘成熟果实。 | [#1456](https://github.com/thinson/RS-PaperClaw/issues/1456) |
+| [20261007] LLM-Enabled UAV Dispatch: A System-Level Survey and Taxonomy | Han Xiao, Quan Aoyang, Zhao Xiangyu, Kong Xiangjie, Shen Guojiang | School of Computer Science, Zhejiang University of Technology, China ( | 系统综述LLM赋能无人机调度，提出语义编排与调度范式的分类体系。 | [#1457](https://github.com/thinson/RS-PaperClaw/issues/1457) |
+| [20261007] DeepTopoClustering: Unsupervised Derivation of Surface Process Taxonomy from 4D Point Clouds for Topographic Monitoring | Wang Jiapan, Hulskemper Daan, Letard Mathilde, Lindenbergh Roderik, Anders Katharina | Remote Sensing Applications, TUM School of Engineering and Design, Technical University of Munich；Department of Geoscience \& Remote Sensing, Delft University of Technology | DeepTopoClustering从4D点云无监督推导地表过程分类，用于地形监测。 | [#1458](https://github.com/thinson/RS-PaperClaw/issues/1458) |
+| [20261007] Borrowed Eyes: Markerless Nano-UAV Flight with an Active Quadruped Observer | Alejandro Lorite Mora, Arapis Dimitrios, Faíña Andrés | Helix Lab and Novo Nordisk A/S, Denmark | 借眼方案让纳米无人机在无GNSS环境下由四足机器人主动观测定位飞行。 | [#1459](https://github.com/thinson/RS-PaperClaw/issues/1459) |
+| [20261007] MultiFly: A Real-World Multimodal Aerial Dataset with Annotation-Efficient Label Transfer and Cross-Modal Semantic Consistency | Gross Markus, Greiner Andreas, Kim Taehyoung, Subbiah Sivasubiramaniam, Cotič Tomaž, Sai Bharadwaj Matha, Christoph Conrad, Dhaouadi Oussema, Zieher Simon, Surya Vijaya Kumar, Elger Gordon, Meeß Henri, Wysocki Olaf, Spannaus Paul, Cremers Daniel | Autonomous Aerial Systems, Fraunhofer Institute IVI；Computer Vision Group, Technical University of Munich；Computer Vision for Digital Twins, University of Cambridge；Institute of Innovative Mobility, Univ. of Applied Sciences Ingolstadt | MultiFly发布多模态航空数据集，支持标注高效迁移与跨模态语义一致性。 | [#1460](https://github.com/thinson/RS-PaperClaw/issues/1460) |
+| [20261007] Evolutionary Architecture Search for Chlorophyll-$a$ Prediction in Lakes using Sentinel-2 | Komurcu Kursat, Petkevicius Linas | Vilnius University, Institute of Computer Science, Artificial Intelligence Methods Lab；IRISA, Universite Bretagne Sud；European Commission Joint Research Center；This research has received funding from the Research Council of Lithuania (LMTLT), agreement No S-ITP-25-3 | 用进化架构搜索基于Sentinel-2预测湖泊叶绿素a，优化多层感知机结构。 | [#1461](https://github.com/thinson/RS-PaperClaw/issues/1461) |
+
+## 🔎 观察
+
+- 脉冲神经网络与基础模型分别从低功耗和跨模态监督切入，反映遥感底层视觉与预训练并进。
+- 无人机研究从单机感知转向世界模型、LLM调度与异构协同，自主任务规划成为热点。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261006](./202610/20261006.md)
 ## 📌 今日概况
 
@@ -64,38 +102,6 @@ Powered by OpenClaw🦞
 
 - 遥感基础模型研究正从性能提升转向公平性、鲁棒性等可信维度评估。
 - 扩散模型与经典优化结合，成为SAR重建等逆问题的新兴技术路线。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261004](./202610/20261004.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究呈现三条并行主线：一是面向遥感智能体的可靠性机制，通过工具观测验证抑制误差传播；二是低光无人机场景下的RGB-红外差分融合与方向车辆检测，强调可靠性条件学习；三是多源卫星数据分析与LLM报告生成的全流程自动化，覆盖地表温度与Landsat数据处理。整体看，研究从单纯提升感知精度转向系统级可靠性与自动化闭环，智能体与生成式方法加速融入遥感工作流。
-
-## ✨ 今日亮点
-
-- 遥感智能体引入工具观测验证，抑制误差传播提升可靠性
-- RGB-红外差分学习用于低光无人机方向车辆检测
-- LLM驱动多源卫星数据分析与自动报告生成框架
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261004] RSure-Agent: Reliable Use of Tool Observations for Remote Sensing Agents | Liu Fuyuan, Liu Nayu, Yu Wenhao, Wang Peijin, Feng Yingchao, Yao Fanglong, Wan Liang, Feng Wei | School of Computer Science and Technology, Tianjin University, Tianjin, China (；the Key Laboratory of Target Cognition and Application Technology (TCAT), Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China ( | 提出RSure-Agent，通过验证工具观测的可靠性来抑制遥感智能体中的误差传播。 | [#1436](https://github.com/thinson/RS-PaperClaw/issues/1436) |
-| [20261004] ReDiffNet: Differential RGB-Infrared Learning for Low-Light UAV Oriented Vehicle Detection | Zhang Qifan, Zhou Ziran, Li Ruijie, Tang Jincheng, Wang Hao, Qiao Qihao, Wang Chunliu | Dalian Maritime University, Dalian, China；The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China；Hubei University of Economics, Wuhan, China | 提出ReDiffNet，以差分RGB-红外学习实现低光无人机场景下的方向车辆检测。 | [#1437](https://github.com/thinson/RS-PaperClaw/issues/1437) |
-| [20261004] A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation | Hind Yousif Alhammadi, Isam Mashhour Al Jawarneh | Department of Applied Physics and Astronomy, University of Sharjah, Sharjah, UAE；Department of Computer Science, University of Sharjah, P.O.Box | 构建多源卫星数据分析与LLM报告生成框架，支持地表温度与Landsat自动化处理。 | [#1438](https://github.com/thinson/RS-PaperClaw/issues/1438) |
-
-## 🔎 观察
-
-- 遥感智能体研究开始关注工具观测的可靠性验证，而非仅追求任务完成率。
-- 低光无人机检测与多源自动化分析并行推进，显示场景驱动与流程驱动并重。
 
 ---
 
