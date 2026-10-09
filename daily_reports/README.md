@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20261008](./202610/20261008.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日论文聚焦遥感视觉定位、多模态配准与星上智能处理三大方向。无人机单张斜视影像在卫星地图中的绝对定位受到关注，跨视角地理定位与位姿估计成为关键。多模态遥感影像配准综述系统梳理了深度学习方法与挑战。星上AI方面，海洋异常检测与海事目标检测均强调在轨部署与数据缩减，自监督学习与嵌入式硬件成为实现手段，显示遥感AI正从地面算法向星载实时应用加速迁移。
+
+## ✨ 今日亮点
+
+- 无人机单张斜视影像实现卫星地图绝对视觉定位
+- 多模态遥感影像配准综述梳理深度学习进展与挑战
+- 星上AI海洋异常与海事目标检测完成在轨验证
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261008] SatFix: Absolute Visual Localization of UAVs in Satellite Maps from a Single Oblique Image | Zeng Jiarui, Shi Kun, Vong Chiman, Zheng Zhedong | Department of Computer and Information Science, Faculty of Information Science and Computing, University of Macau, Macao SAR, China；Institute of Artificial Intelligence and Brain Sciences, University of Macau, Macao SAR, China | 提出SatFix方法，利用单张无人机斜视影像在卫星地图中实现绝对视觉定位与位姿估计。 | [#1463](https://github.com/thinson/RS-PaperClaw/issues/1463) |
+| [20261008] Multimodal Remote Sensing Image Registration: A Comprehensive Review, Challenges and Prospects | Han Zhiqiang, Ye Yuanxin, Wu Qiuyun, Chen Jinhao, Zhu Bai, Hao Siyuan | the Faculty of Geosciences and Engineering, Southwest Jiaotong University；School of Software Engineering, Beijing Jiaotong University | 系统综述多模态遥感影像配准的深度学习方法，归纳特征与区域方法并展望未来挑战。 | [#1464](https://github.com/thinson/RS-PaperClaw/issues/1464) |
+| [20261008] Onboard Marine Anomaly Detection on $Φ$sat-2: From Simulation-Based Development to In-Orbit Demonstration | Szywala Clotilde, Goudemant Thomas, Bellizzi Marjorie, Francesconi Benjamin, Girard Adrien | Institut de Recherche Technologique Saint Exupéry | 在Φsat-2卫星上实现海洋异常检测，从仿真开发到在轨演示验证自监督学习方案。 | [#1465](https://github.com/thinson/RS-PaperClaw/issues/1465) |
+| [20261008] AI-Based On-Board Maritime Object Detection for Earth Observation Payload Data Reduction on Versal Embedded Hardware | Goudemant Thomas, Bobey Aurélien, Hlimi Omar, Bellizzi Marjorie | IRT Saint Exupéry | 面向地球观测载荷数据缩减，在Versal嵌入式硬件上实现基于AI的海事目标在轨检测。 | [#1466](https://github.com/thinson/RS-PaperClaw/issues/1466) |
+
+## 🔎 观察
+
+- 星上AI从算法验证走向在轨部署，自监督学习与嵌入式硬件结合成为降低下行数据量的关键路径。
+- 跨视角地理定位与多模态配准均面临模态差异挑战，单图绝对定位和统一配准框架是当前研究热点。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261007](./202610/20261007.md)
 ## 📌 今日概况
 
@@ -67,41 +100,6 @@ Powered by OpenClaw🦞
 
 - 多篇工作指向同一隐患：空间自相关使样本非独立，评估与泛化结论需重新校准。
 - 跨域迁移与泄漏量化表明，遥感AI正从追求精度转向追问精度是否可信。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261005](./202610/20261005.md)
-## 📌 今日概况
-
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日论文聚焦遥感基础模型与自监督表征学习，涵盖时序预测架构、公平性评估及多任务部分监督。SAR方向出现扩散模型与展开优化结合的重建方法，以及弱监督水体映射。图像恢复引入智能体与视觉语言模型应对复合退化。整体趋势显示，遥感AI正从单一任务向多任务、跨模态和鲁棒性评估演进，同时强调实际部署中的偏差与退化问题。
-
-## ✨ 今日亮点
-
-- 时序联合嵌入预测架构提升遥感表征学习能力
-- 生物群系感知基准揭示遥感基础模型公平性缺陷
-- 扩散模型与展开优化结合改进压缩SAR重建
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261005] T-JEPA: A Temporal Joint-Embedding Predictive Architecture for Learning Better Remote Sensing Representations | Peng Bowen, Liu Li, Liu Yongxiang, Li Weijie, Zhou Jie, Liu Zhen | National University of Defense Technology, Changsha, China | 提出T-JEPA时序联合嵌入预测架构，利用时间信息学习更优遥感表征。 | [#1440](https://github.com/thinson/RS-PaperClaw/issues/1440) |
-| [20261005] FairRSFM: A Biome-Aware Benchmark and Debiasing Framework for Remote Sensing Foundation Models | Md Aminur Hossain, Vaghasiya Omkumar, Rajeev Ranjan Dwivedi, Kurmi Vinod, Banerjee Biplab | Biplab Banerjee 2；Space Applications Centre, ISRO, Ahmedabad, India；Indian Institute of Technology Bombay, India；Indian Institute of Science Education and Research Bhopal | 构建生物群系感知基准与去偏框架，评估并提升遥感基础模型公平性。 | [#1441](https://github.com/thinson/RS-PaperClaw/issues/1441) |
-| [20261005] Diffusion Meets Unrolling: Compressive SAR Image Reconstruction with Interleaved Learned Corrections | Pappas Odysseas, Andrew C. M. Austin, Mayo Perla, Golbabaee Mohammad, Achim Alin | VI Labs, School of Computer Science, University of Bristol；School of Electrical, Electronic, and Mechanical Engineering, University of Bristol；School of Engineering Mathematics and Technology, University of Bristol | 将扩散模型与展开优化交织，实现压缩SAR图像的高质量重建。 | [#1442](https://github.com/thinson/RS-PaperClaw/issues/1442) |
-| [20261005] EORestore-Agent: Fidelity-Guided Agentic Restoration of Remote Sensing Images with Composite Degradations | Qi Heli, Zhou Zeqi, Yi Jingjun, Liu Kunyi, Lihe Ziyang, Wang Junjue, Yoshie Osamu, Yokoya Naoto | the Graduate School of Information, Production and Systems, Waseda University, Kitakyushu, Fukuoka 808-, Japan；the Graduate School of Frontier Sciences, The University of Tokyo, Kashiwa, Chiba 277-, Japan；the Informatics Institute, University of Amsterdam, Amsterdam XH, The Netherlands；Wuhan University, Wuhan, China | 提出保真度引导的智能体恢复框架，处理遥感图像复合退化。 | [#1443](https://github.com/thinson/RS-PaperClaw/issues/1443) |
-| [20261005] Multi-Task Partially Supervised Learning for Super-Resolution and Semantic Segmentation on Earth Observation data | Lê Hoàng-Ân, Pham Minh-Tan, Lemai-Chenevier Solange, Greslou Daniel | Université Bretagne Sud, IRISA, UMR 6074, Vannes, France；Centre National d’Etudes Spatiales (CNES), Toulouse, France | 面向地球观测数据，研究超分辨率与语义分割的多任务部分监督学习。 | [#1444](https://github.com/thinson/RS-PaperClaw/issues/1444) |
-| [20261005] Extending Dynamic World Surface Water Mapping to Sentinel-1 with AlphaEarth Embeddings | Mukherjee Rohit, Policelli Frederick, Tellman Beth, Chakraborty TC, Giezendanner Jonathan, Jonathan A. Sullivan, Sun Ning | Pacific Northwest National Laboratory, Richland, WA USA (；NASA Goddard Space Flight Center, Greenbelt, MD USA；Fujitsu Research of America, Santa Clara, CA USA；University of Wisconsin--Madison, Madison, WI USA | 利用AlphaEarth嵌入将动态世界地表水映射扩展至Sentinel-1。 | [#1445](https://github.com/thinson/RS-PaperClaw/issues/1445) |
-
-## 🔎 观察
-
-- 遥感基础模型研究正从性能提升转向公平性、鲁棒性等可信维度评估。
-- 扩散模型与经典优化结合，成为SAR重建等逆问题的新兴技术路线。
 
 ---
 
