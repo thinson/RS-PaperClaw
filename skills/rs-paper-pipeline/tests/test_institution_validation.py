@@ -52,6 +52,8 @@ class InstitutionValidationTest(unittest.TestCase):
                  "scription quality and pixel-level flood segmentation perfor- Existing flood research remains flood-segmentation-centric；"
                  "the existing remote sensing research on floods primarily synthetic aperture radar (SAR) images")
         self.assertFalse(is_valid_institution_text(value))
+        self.assertFalse(is_valid_institution_text(
+            "University of Maryland；The ongoing expansion of satellite broadband, Earth- Recent remote-sensing research"))
 
     def test_accepts_common_affiliation_list(self):
         value = (

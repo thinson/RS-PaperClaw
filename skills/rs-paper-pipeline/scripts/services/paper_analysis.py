@@ -195,7 +195,7 @@ def is_valid_institution_text(text: str) -> bool:
         r"paper|propos(?:e|ed|es|ing)|method|approach|dataset|"
         r"experiments?|results?|capture|learn(?:ing)?|strategy|benchmark|supported|grants?|"
         r"tasks?|inference|applying|transformers?|tokens?|speeds?|impractical|"
-        r"foundation|funds?|project|computational|constraints?|resources?|existing|remains|primarily"
+        r"foundation|funds?|project|computational|constraints?|resources?|existing|remains|primarily|ongoing"
         r")\b",
         re.IGNORECASE,
     )
