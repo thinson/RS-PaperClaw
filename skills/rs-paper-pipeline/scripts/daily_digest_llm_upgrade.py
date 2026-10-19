@@ -17,9 +17,12 @@ def issue_data(issue) -> dict:
     return getattr(issue, "_rawData", None) or {}
 
 
-def load_open_issues(repo):
+def load_open_issues(repo, target_date: str | None = None):
     issues = []
-    for issue in repo.get_issues(state="open"):
+    kwargs = {"state": "open"}
+    if target_date:
+        kwargs["labels"] = [target_date]
+    for issue in repo.get_issues(**kwargs):
         raw_data = getattr(issue, "_rawData", None) or {}
         if "pull_request" in raw_data:
             continue
@@ -113,7 +116,7 @@ def main(target_date: str | None = None, stats_json: str | None = None):
 
     stats_map = _load_stats_map(stats_json)
 
-    issues = load_open_issues(repo)
+    issues = load_open_issues(repo, target_date)
     paper_by_date, digest_issue_by_date = collect_papers_by_date(issues)
 
     out_dir = CONFIG.temp_dir / "RS-PaperClaw" / "daily_reports"
