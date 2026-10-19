@@ -23,6 +23,10 @@ class IntegrityTest(unittest.TestCase):
             self.assertFalse(cross_filter.candidate_is_in_scope(candidate))
         included = {"title": "UAV Visual Navigation with Satellite Maps", "abstract": "A deep learning method for geospatial localization."}
         self.assertTrue(cross_filter.candidate_is_in_scope(included))
+        # The LLM still decides the AI/CV intersection. Legitimate vision
+        # papers do not always contain a literal model-family keyword.
+        self.assertTrue(cross_filter.candidate_is_in_scope({
+            "title": "Remote Sensing Visual Grounding", "abstract": "A teacher-student framework for open-set image-query localization."}))
 
     def test_valid_metadata_with_wrong_report_date_requires_refresh(self):
         issue = SimpleNamespace(body="# [20260928] Paper", labels=[SimpleNamespace(name="20260928")])

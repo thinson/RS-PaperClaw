@@ -46,9 +46,10 @@
   ],
   "non_rs_application_patterns": [
     "(?i)\\b(?:navigation|obstacle avoidance|autonomous exploration|indoor environments?)\\b",
-    "(?i)\\b(?:occluded objects?|near[- ]field|close[- ]range)\\b"
+    "(?i)\\b(?:occluded objects?|near[- ]field|close[- ]range)\\b",
+    "(?i)\\b(?:photonic|optical) (?:crystal )?(?:fiber|fibre).*\\bsensor\\b"
   ],
   "explicit_rs_application_patterns": [
-    "(?i)\\b(?:remote sensing|earth observation|satellite (?:images?|imagery|maps?)|aerial imagery|airborne|geospatial|land[- ]cover|environmental monitoring)\\b"
+    "(?i)\\b(?:earth observation|satellite (?:images?|imagery|maps?)|aerial imagery|airborne|geospatial|land[- ]cover|environmental monitoring)\\b"
   ]
 }

@@ -34,7 +34,7 @@ def has_ai_signal(text: str) -> bool:
 
 def candidate_is_in_scope(candidate: dict) -> bool:
     text = f"{candidate['title']}\n{candidate['abstract']}"
-    if not has_remote_sensing_signal(text) or not has_ai_signal(text):
+    if not has_remote_sensing_signal(text):
         return False
     if any(pattern.search(text) for pattern in NON_RS_APPLICATION_PATTERNS):
         return any(pattern.search(text) for pattern in EXPLICIT_RS_APPLICATION_PATTERNS)
@@ -97,7 +97,7 @@ def llm_cross_filter(candidates):
     out_items = []
     for c in candidates:
         text = f"{c['title']}\n{c['abstract']}"
-        if candidate_is_in_scope(c):
+        if candidate_is_in_scope(c) and has_ai_signal(text):
             out_items.append(c)
     print(f"  [关键词降级] 命中 {len(out_items)} 篇")
     return out_items
