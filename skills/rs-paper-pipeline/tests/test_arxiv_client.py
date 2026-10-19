@@ -14,6 +14,18 @@ from clients import arxiv_client
 
 
 class ArxivClientTest(unittest.TestCase):
+    @patch.object(arxiv_client.subprocess, "run", return_value=SimpleNamespace(returncode=1))
+    @patch.object(arxiv_client.urllib.request, "urlopen")
+    def test_pdf_mirrors_returning_html_are_rejected(self, urlopen, run):
+        import tempfile
+        from dataclasses import replace
+        response = urlopen.return_value.__enter__.return_value
+        response.getheaders.return_value = []
+        response.read.return_value = b"<html>Abstract page, not a PDF</html>"
+        with tempfile.TemporaryDirectory() as directory, patch.object(arxiv_client, "CONFIG", replace(arxiv_client.CONFIG, temp_dir=Path(directory))):
+            self.assertEqual(arxiv_client.download_pdf("2610.23733v1"), (None, False))
+            self.assertFalse((Path(directory) / "2610.23733v1.pdf").exists())
+
     @patch.object(arxiv_client.subprocess, "run")
     def test_curl_preserves_error_body_and_stops_on_rate_limit(self, run):
         run.return_value = SimpleNamespace(returncode=22, stderr="curl error", stdout="Rate exceeded.\nRS_HTTP_STATUS:429")

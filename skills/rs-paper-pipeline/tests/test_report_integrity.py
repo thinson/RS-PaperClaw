@@ -13,6 +13,17 @@ import daily_arxiv_cross_filter as cross_filter
 
 
 class IntegrityTest(unittest.TestCase):
+    def test_generic_sensing_and_robot_navigation_do_not_pass_rs_ai_filter(self):
+        excluded = [
+            {"title": "Sapphire Photonic Crystal Fiber Sensor", "abstract": "Remote sensing of furnace temperature with an optical fiber."},
+            {"title": "Semantic-Aware Autonomous Exploration for UAVs in Unknown Indoor Environments", "abstract": "Neural networks for indoor navigation with an RGB-D camera."},
+            {"title": "Material Cues for Occluded Object Localization in Single Hyperspectral Images", "abstract": "Object detection in indoor scenes from two laboratory cameras."},
+        ]
+        for candidate in excluded:
+            self.assertFalse(cross_filter.candidate_is_in_scope(candidate))
+        included = {"title": "UAV Visual Navigation with Satellite Maps", "abstract": "A deep learning method for geospatial localization."}
+        self.assertTrue(cross_filter.candidate_is_in_scope(included))
+
     def test_valid_metadata_with_wrong_report_date_requires_refresh(self):
         issue = SimpleNamespace(body="# [20260928] Paper", labels=[SimpleNamespace(name="20260928")])
         self.assertFalse(cross_filter.issue_has_valid_metadata(issue, "20260925"))

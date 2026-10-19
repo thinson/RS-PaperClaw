@@ -40,6 +40,15 @@
     "(?i)\\bmamba\\b",
     "(?i)\\btransformer(s)?\\b",
     "(?i)\\bmultimodal\\b",
-    "(?i)\\bagent(ic)?\\b"
+    "(?i)\\bagent(ic)?\\b",
+    "(?i)\\b(?:machine|deep|reinforcement|self-supervised) learning\\b",
+    "(?i)\\b(?:neural networks?|convolutional|diffusion|segmentation|classification|object detection|denoising|image restoration)\\b"
+  ],
+  "non_rs_application_patterns": [
+    "(?i)\\b(?:navigation|obstacle avoidance|autonomous exploration|indoor environments?)\\b",
+    "(?i)\\b(?:occluded objects?|near[- ]field|close[- ]range)\\b"
+  ],
+  "explicit_rs_application_patterns": [
+    "(?i)\\b(?:remote sensing|earth observation|satellite (?:images?|imagery|maps?)|aerial imagery|airborne|geospatial|land[- ]cover|environmental monitoring)\\b"
   ]
 }

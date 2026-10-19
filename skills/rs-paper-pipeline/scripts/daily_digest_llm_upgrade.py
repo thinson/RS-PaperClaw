@@ -155,11 +155,19 @@ def main(target_date: str | None = None, stats_json: str | None = None):
         title = f"日报 {date}"
         labels = [date, "日报"]
         if date in digest_issue_by_date:
-            digest_issue_by_date[date].edit(body=md, title=title, labels=labels)
-            print(f"UPDATED digest issue {date} -> #{digest_issue_by_date[date].number}")
+            published = digest_issue_by_date[date]
+            published.edit(body=md, title=title, labels=labels)
+            print(f"UPDATED digest issue {date} -> #{published.number}")
         else:
-            ni = repo.create_issue(title=title, body=md, labels=labels)
-            print(f"CREATED digest issue {date} -> #{ni.number}")
+            published = repo.create_issue(title=title, body=md, labels=labels)
+            print(f"CREATED digest issue {date} -> #{published.number}")
+        # Newly created issues may not be visible in label-filtered listings.
+        # Give the sync step a direct issue number rather than relying on that
+        # eventually consistent listing immediately after publication.
+        CONFIG.memory_dir.mkdir(parents=True, exist_ok=True)
+        receipt = CONFIG.memory_dir / f"digest_issue_{date}.json"
+        receipt.write_text(json.dumps({"repo": CONFIG.github_repo, "date": date,
+                                       "number": published.number}), encoding="utf-8")
 
 
 if __name__ == "__main__":

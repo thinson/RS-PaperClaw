@@ -299,6 +299,7 @@ def download_pdf(arxiv_id: str) -> tuple[Path | None, bool]:
     CONFIG.temp_dir.mkdir(parents=True, exist_ok=True)
     output = CONFIG.temp_dir / f"{arxiv_id}.pdf"
     mirrors = [
+        f"https://arxiv.org/pdf/{arxiv_id}",
         f"https://arxiv.org/pdf/{arxiv_id}.pdf",
         f"https://export.arxiv.org/pdf/{arxiv_id}.pdf",
         f"https://ar5iv.org/pdf/{arxiv_id}",
@@ -338,7 +339,7 @@ def download_pdf(arxiv_id: str) -> tuple[Path | None, bool]:
                     data_parts[idx] = part
 
             output.write_bytes(b"".join(data_parts))
-            return output.exists() and output.stat().st_size > 0
+            return output.read_bytes().startswith(b"%PDF-")
         except Exception:
             return False
 
@@ -348,11 +349,12 @@ def download_pdf(arxiv_id: str) -> tuple[Path | None, bool]:
                 return output, True
             with urllib.request.urlopen(url, timeout=60) as response:
                 output.write_bytes(response.read())
-            if output.exists() and output.stat().st_size > 0:
+            if output.read_bytes().startswith(b"%PDF-"):
                 return output, True
         except Exception:
             continue
 
+    output.unlink(missing_ok=True)
     return None, False
 
 

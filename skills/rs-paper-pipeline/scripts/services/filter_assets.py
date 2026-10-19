@@ -41,6 +41,8 @@ def load_filter_keywords() -> dict[str, list[str]]:
         "rs_query_terms": _load_string_list(data, "rs_query_terms", CONFIG.filter_keywords_path),
         "rs_signal_patterns": _load_string_list(data, "rs_signal_patterns", CONFIG.filter_keywords_path),
         "ai_signal_patterns": _load_string_list(data, "ai_signal_patterns", CONFIG.filter_keywords_path),
+        "non_rs_application_patterns": data.get("non_rs_application_patterns", []),
+        "explicit_rs_application_patterns": data.get("explicit_rs_application_patterns", []),
     }
 
 
@@ -65,6 +67,13 @@ def load_rs_signal_patterns() -> list[re.Pattern[str]]:
 @lru_cache(maxsize=1)
 def load_ai_signal_patterns() -> list[re.Pattern[str]]:
     return [re.compile(pattern) for pattern in load_filter_keywords()["ai_signal_patterns"]]
+
+
+def load_application_patterns(key: str) -> list[re.Pattern[str]]:
+    values = load_filter_keywords()[key]
+    if not isinstance(values, list) or not all(isinstance(value, str) for value in values):
+        raise RuntimeError(f"Invalid filter pattern list: {key}")
+    return [re.compile(pattern) for pattern in values]
 
 
 def render_filter_prompt(candidate_lines: list[str]) -> str:

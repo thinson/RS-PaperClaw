@@ -18,6 +18,19 @@ CONFIG = load_config()
 BASE_DIR = "daily_reports"
 
 
+def load_digest_receipt(repo, date: str):
+    path = CONFIG.memory_dir / f"digest_issue_{date}.json"
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("repo") != CONFIG.github_repo or data.get("date") != date:
+        return None
+    issue = repo.get_issue(int(data["number"]))
+    if (issue.title or "").strip() != f"日报 {date}":
+        raise RuntimeError(f"Digest receipt refers to the wrong issue: {date}")
+    return issue
+
+
 def main(target_date: str | None = None):
     repo = get_repo(CONFIG)
 
@@ -26,6 +39,12 @@ def main(target_date: str | None = None):
         m = re.fullmatch(r"日报\s*(\d{8})", (it.title or "").strip())
         if m:
             digest_issues.append((m.group(1), it))
+
+    if target_date:
+        published = load_digest_receipt(repo, target_date)
+        if published:
+            digest_issues = [(date, issue) for date, issue in digest_issues if date != target_date]
+            digest_issues.append((target_date, published))
 
     if not digest_issues:
         print("NO_DIGEST_ISSUES")

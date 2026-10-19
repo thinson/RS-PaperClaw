@@ -31,6 +31,22 @@ class RecoveryTest(unittest.TestCase):
                                        SimpleNamespace(decoded_content=b"new digest\n")]
         self.assertTrue(daily_report_matches_digest(repo, "20261009", "new digest"))
 
+    def test_sync_uses_direct_receipt_when_new_digest_is_not_in_listing(self):
+        import json
+        import sync_daily_reports_to_repo as sync
+        with tempfile.TemporaryDirectory() as directory:
+            config = replace(sync.CONFIG, memory_dir=Path(directory))
+            Path(directory, "digest_issue_20261009.json").write_text(json.dumps(
+                {"repo": config.github_repo, "date": "20261009", "number": 1501}))
+            repo = Mock()
+            issue = SimpleNamespace(number=1501, title="日报 20261009")
+            repo.get_issue.return_value = issue
+            with patch.object(sync, "CONFIG", config):
+                self.assertIs(sync.load_digest_receipt(repo, "20261009"), issue)
+                issue.title = "Different paper"
+                with self.assertRaises(RuntimeError):
+                    sync.load_digest_receipt(repo, "20261009")
+
     @patch.object(runner, "_get_repo")
     def test_precheck_uses_authenticated_repository_client(self, repo):
         repo.return_value.full_name = runner.CONFIG.github_repo

@@ -17,17 +17,28 @@ from clients.arxiv_client import ArxivUnavailableError, fetch_recent_candidates,
 from clients.llm_client import call_llm
 from paper_processor import process_paper
 from pipeline_config import get_repo, load_config
-from services.filter_assets import load_ai_signal_patterns, render_filter_prompt
+from services.filter_assets import load_ai_signal_patterns, load_application_patterns, render_filter_prompt
 from services.digest_builder import extract_author, extract_institution, is_invalid_digest_field, is_invalid_digest_institution
 from services.issue_index import ensure_index, lookup_issue, update_index_from_issue, save_index
 from services.report_status import empty_result_is_settled
 
 CONFIG = load_config()
 AI_MATCH_PATTERNS = load_ai_signal_patterns()
+NON_RS_APPLICATION_PATTERNS = load_application_patterns("non_rs_application_patterns")
+EXPLICIT_RS_APPLICATION_PATTERNS = load_application_patterns("explicit_rs_application_patterns")
 
 
 def has_ai_signal(text: str) -> bool:
     return any(pattern.search(text) for pattern in AI_MATCH_PATTERNS)
+
+
+def candidate_is_in_scope(candidate: dict) -> bool:
+    text = f"{candidate['title']}\n{candidate['abstract']}"
+    if not has_remote_sensing_signal(text) or not has_ai_signal(text):
+        return False
+    if any(pattern.search(text) for pattern in NON_RS_APPLICATION_PATTERNS):
+        return any(pattern.search(text) for pattern in EXPLICIT_RS_APPLICATION_PATTERNS)
+    return True
 
 
 def _parse_llm_ids(raw_output: str) -> set[str] | None:
@@ -77,7 +88,7 @@ def llm_cross_filter(candidates):
 
     if keep_ids is not None:
         selected = [c for c in candidates if _match_id(c["arxiv_id"], keep_ids)]
-        result = [c for c in selected if has_remote_sensing_signal(f"{c['title']}\n{c['abstract']}")]
+        result = [c for c in selected if candidate_is_in_scope(c)]
         print(f"  [LLM 解析] 成功，命中 {len(result)} 篇")
         return result
 
@@ -86,7 +97,7 @@ def llm_cross_filter(candidates):
     out_items = []
     for c in candidates:
         text = f"{c['title']}\n{c['abstract']}"
-        if has_remote_sensing_signal(text) and has_ai_signal(text):
+        if candidate_is_in_scope(c):
             out_items.append(c)
     print(f"  [关键词降级] 命中 {len(out_items)} 篇")
     return out_items
