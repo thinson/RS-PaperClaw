@@ -15,6 +15,23 @@ import run_rs_daily_workday as runner
 
 class RecoveryTest(unittest.TestCase):
     @patch.object(runner, "_get_repo")
+    @patch.object(runner, "get_today_digest_issue")
+    @patch.object(runner, "daily_report_matches_digest", return_value=False)
+    def test_populated_issue_with_stale_empty_archive_is_not_skipped(self, matches, digest, repo):
+        digest.return_value = SimpleNamespace(number=1, body="https://github.com/example/repo/issues/2")
+        self.assertFalse(runner._date_already_completed("20261009")[0])
+
+    def test_archive_and_website_must_both_match_current_issue(self):
+        from clients.github_ops import daily_report_matches_digest
+        repo = Mock()
+        repo.get_contents.side_effect = [SimpleNamespace(decoded_content=b"new digest\n"),
+                                       SimpleNamespace(decoded_content=b"old empty digest\n")]
+        self.assertFalse(daily_report_matches_digest(repo, "20261009", "new digest"))
+        repo.get_contents.side_effect = [SimpleNamespace(decoded_content=b"new digest\n"),
+                                       SimpleNamespace(decoded_content=b"new digest\n")]
+        self.assertTrue(daily_report_matches_digest(repo, "20261009", "new digest"))
+
+    @patch.object(runner, "_get_repo")
     def test_precheck_uses_authenticated_repository_client(self, repo):
         repo.return_value.full_name = runner.CONFIG.github_repo
         self.assertTrue(runner.check_github_connectivity())

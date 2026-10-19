@@ -16,7 +16,7 @@ import re
 import subprocess
 from datetime import datetime, timedelta, timezone
 
-from clients.github_ops import daily_report_file_exists, get_today_digest_issue
+from clients.github_ops import daily_report_file_exists, daily_report_matches_digest, get_today_digest_issue
 from clients.notify_client import has_available_notify_channel, send_dingtalk_markdown, send_feishu_message
 from pipeline_config import build_runtime_env, get_repo, load_config
 from services.catchup import missing_report_dates
@@ -118,8 +118,8 @@ def _date_already_completed(date_str: str) -> tuple[bool, str]:
     if digest_issue is None:
         return False, "digest issue missing"
 
-    if not daily_report_file_exists(repo, date_str):
-        return False, "daily report file missing"
+    if not daily_report_matches_digest(repo, date_str, digest_issue.body or ""):
+        return False, "daily report archive or website copy missing/stale"
 
     linked_issue_numbers = _extract_digest_issue_numbers(digest_issue.body or "")
     if not linked_issue_numbers:

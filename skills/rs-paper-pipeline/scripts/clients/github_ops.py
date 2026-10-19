@@ -20,10 +20,25 @@ def extract_arxiv_id_from_issue(issue) -> str | None:
 
 def get_today_digest_issue(repo, date_str: str):
     title = f"日报 {date_str}"
-    for issue in repo.get_issues(state="open"):
+    for issue in repo.get_issues(state="open", labels=[date_str, "日报"]):
         if issue.title.strip() == title:
-            return issue
+            return repo.get_issue(issue.number)
     return None
+
+
+def daily_report_matches_digest(repo, date_str: str, body: str) -> bool:
+    """Both the archive and the website copy must contain the current digest."""
+    for prefix in ("daily_reports", "docs/daily_reports"):
+        path = f"{prefix}/{date_str[:6]}/{date_str}.md"
+        try:
+            archived = repo.get_contents(path).decoded_content.decode("utf-8")
+        except Exception as exc:
+            if getattr(exc, "status", None) == 404:
+                return False
+            raise
+        if archived.strip() != (body or "").strip():
+            return False
+    return True
 
 
 def daily_report_file_exists(repo, date_str: str) -> bool:
