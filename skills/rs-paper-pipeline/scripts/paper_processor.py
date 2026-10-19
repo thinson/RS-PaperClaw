@@ -21,6 +21,7 @@ from services.issue_index import issue_matches_arxiv
 from pipeline_config import get_repo, load_config
 from services.paper_analysis import (
     extract_institutions_from_first_page,
+    extract_institutions_from_author_biographies,
     extract_institutions_from_latex_source,
     extract_tags,
     format_answer_md,
@@ -156,9 +157,23 @@ def process_paper(arxiv_id: str, issue_number: int | None = None, dry_run: bool 
     elif is_valid_institution_text(pdf_institutions):
         info["institutions"] = pdf_institutions
     if not is_valid_institution_text(info.get("institutions", "")):
+        # Journal author biographies can be on the last page, beyond the
+        # first 30 pages used for the regular paper summary.
+        try:
+            result = subprocess.run(
+                ["pdftotext", "-layout", str(pdf_path), "-"],
+                capture_output=True, text=True, timeout=60,
+            )
+            if result.returncode == 0:
+                biographies = extract_institutions_from_author_biographies(info["authors"], result.stdout)
+                if is_valid_institution_text(biographies):
+                    info["institutions"] = biographies
+        except Exception as exc:
+            log_step("AUTHOR-BIO", "UNAVAILABLE", type(exc).__name__)
+    if not is_valid_institution_text(info.get("institutions", "")):
         try:
             html = fetch_url_with_curl(f"https://arxiv.org/html/{arxiv_id}")
-            if author_block_has_no_affiliation(html):
+            if author_block_has_no_affiliation(html, info["authors"]):
                 info["institutions"] = "原文作者栏未列出单位"
         except Exception as exc:
             log_step("AUTHOR-HTML", "UNAVAILABLE", type(exc).__name__)

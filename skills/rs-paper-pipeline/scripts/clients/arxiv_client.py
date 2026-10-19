@@ -185,7 +185,10 @@ def fetch_recent_candidates(
     days_back: int = 2,
     target_date: str | None = None,
 ) -> list[dict[str, str]]:
-    if os.environ.get("ARXIV_SOURCE", "api") == "oai":
+    # A whole-history OAI harvest for a single old gap can exceed the run
+    # budget. The date-scoped query API is bounded for historical recovery.
+    historical = target_date and (datetime.now().date() - datetime.strptime(target_date, "%Y%m%d").date()).days > 14
+    if os.environ.get("ARXIV_SOURCE", "api") == "oai" and not historical:
         from clients.arxiv_oai import harvest_since
         if target_date:
             days = {datetime.strptime(target_date, "%Y%m%d").date()}
@@ -228,7 +231,19 @@ def fetch_recent_candidates(
             xml_text = fetch_query_with_fallback(params, retries=6, timeout=90)
 
             root = ET.fromstring(xml_text)
+            if root.tag != f"{{{namespace['atom']}}}feed":
+                raise ArxivUnavailableError("Invalid arXiv query response")
             entries = root.findall("atom:entry", namespace)
+            if any("arxiv.org/api/errors" in (entry.findtext("atom:id", default="", namespaces=namespace) or "") for entry in entries):
+                raise ArxivUnavailableError("arXiv returned a query error")
+            total_text = root.findtext("{http://a9.com/-/spec/opensearch/1.1/}totalResults")
+            if target_date:
+                if total_text is None or not total_text.isdigit():
+                    raise ArxivUnavailableError("Date query is missing a valid totalResults count")
+                if int(total_text) > max_scan:
+                    raise ArxivUnavailableError(f"Date query exceeds scan limit: {total_text} > {max_scan}")
+                if not entries and int(total_text) > start:
+                    raise ArxivUnavailableError("Date query returned an incomplete page")
             if not entries:
                 break
 
@@ -268,15 +283,14 @@ def fetch_recent_candidates(
 
             if target_date and min_page_date and min_page_date < next(iter(valid_days)):
                 break
+            if total_text is not None and start + len(entries) >= int(total_text):
+                break
 
         return items
 
     if target_date:
         scoped_query = f"({base_query}) AND submittedDate:[{target_date}0000 TO {target_date}2359]"
-        items = run_query(scoped_query, max_scan=max_results, page_size=min(max_results, 100))
-        if items:
-            return items
-        print("  [arXiv] 日期限定查询返回 0，回退到提交时间扫描")
+        return run_query(scoped_query, max_scan=max_results, page_size=min(max_results, 100))
 
     return run_query(base_query, max_scan=3000, page_size=min(max_results, 100 if target_date else 200))
 
@@ -405,17 +419,25 @@ def format_affiliations(affiliations: list[str]) -> str:
 
 
 def fetch_paper_metadata(arxiv_id: str) -> tuple[list[str], list[str], str, str, str] | None:
+    cached = None
     if os.environ.get("ARXIV_SOURCE", "api") == "oai":
         from clients.arxiv_oai import cached_metadata
         item = cached_metadata(arxiv_id)
         if item:
-            return item["authors"], item["affiliations"], item["title"], item["abstract"], item["published"]
+            cached = (item["authors"], item["affiliations"], item["title"], item["abstract"], item["published"])
+            if item["affiliations"]:
+                return cached
     params = {"id_list": arxiv_id}
-    xml_text = fetch_query_with_fallback(params, retries=4, timeout=90)
-    root = ET.fromstring(xml_text)
+    try:
+        xml_text = fetch_query_with_fallback(params, retries=2 if cached else 4, timeout=30 if cached else 90)
+        root = ET.fromstring(xml_text)
+    except Exception:
+        if cached:
+            return cached
+        raise
     entry = root.find("atom:entry", ATOM_NAMESPACE)
     if entry is None:
-        return None
+        return cached
 
     title = (entry.findtext("atom:title", default="", namespaces=ATOM_NAMESPACE) or "").replace("\n", " ").strip()
     abstract_en = (
@@ -436,6 +458,10 @@ def fetch_paper_metadata(arxiv_id: str) -> tuple[list[str], list[str], str, str,
         if affiliation and affiliation.strip():
             affiliations.append(affiliation.strip())
 
+    if cached:
+        # OAI supplies authoritative original dates and full author metadata;
+        # the query API may contain affiliation fields omitted by OAI.
+        return cached[0], affiliations or cached[1], cached[2], cached[3], cached[4]
     return authors, affiliations, title, abstract_en, published
 
 

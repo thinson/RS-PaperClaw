@@ -40,12 +40,21 @@ class AuthorBlock(HTMLParser):
             self.text.append(data)
 
 
-def author_block_has_no_affiliation(html: str) -> bool:
+def author_block_has_no_affiliation(html: str, authors: str = "") -> bool:
     parser = AuthorBlock()
     parser.feed(html)
-    if not parser.complete or not parser.names or parser.has_affiliation:
+    if not parser.complete or not parser.names:
         return False
     residual = " ".join(parser.text)
+    # LaTeXML sometimes interprets the final names in an \author command as
+    # an affiliation. Accept this only when every remaining word is a known
+    # author name; an actual organization must still fail this check.
+    if parser.has_affiliation:
+        words = re.findall(r"[^\W\d_]+", residual.casefold())
+        name_words = set(re.findall(r"[^\W\d_]+", authors.casefold()))
+        return bool(name_words and words and any(w in name_words for w in words)) and all(
+            w in name_words or w in {"affiliation", "and"} for w in words
+        )
     residual = re.sub(r"[\w.+-]+\s*(?:@|\bat\b)\s*[\w.-]+\.[a-zA-Z]{2,}", "", residual)
     residual = re.sub(r"\b(?:thanks|e-mail|email)\s*:", "", residual, flags=re.I)
     return not re.search(r"\w", residual)

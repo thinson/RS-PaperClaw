@@ -68,3 +68,15 @@ class RecoveryTest(unittest.TestCase):
 
     def test_upstream_failure_defers_remaining_dates(self):
         self.assertEqual(len(self.exercise(subprocess.CalledProcessError(75, ["filter"]))), 1)
+
+    def test_unpublished_empty_date_is_deferred_while_other_dates_continue(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with patch.object(runner, "CONFIG", replace(runner.CONFIG, github_token="test", llm_api_key="test")), \
+                 patch.object(runner, "LOCK_FILE", Path(directory) / "lock"), \
+                 patch.object(runner, "check_github_connectivity", return_value=True), \
+                 patch.object(runner, "resolve_target_dates", return_value=["20260928"]), \
+                 patch.object(runner, "_get_repo"), \
+                 patch.object(runner, "missing_report_dates", return_value=["20260926", "20260928"]), \
+                 patch.object(runner, "_process_date", side_effect=[subprocess.CalledProcessError(76, ["filter"]), None]) as process:
+                runner.main(notify=False)
+                self.assertEqual(process.call_count, 2)

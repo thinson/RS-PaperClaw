@@ -114,6 +114,18 @@ cat memory/rs_daily_stats_20260312.json
 curl -s "https://api.github.com/repos/thinson/RS-PaperClaw/issues?state=all&per_page=10" | python3 -c "import sys,json;d=json.load(sys.stdin);[print(f'#{x[\"number\"]}: {x[\"title\"]}') for x in d]"
 ```
 
+### 缺失和空日报恢复
+
+自动运行会检查从最早归档到本次目标日期的缺口，并重新抓取未经复核的空日报。
+候选/筛选结果为 0 时，距离目标日期不足 4 个 UTC 日的结果只记为 `deferred`，不发布空日报；
+后续定时运行会重新抓取。经延迟复核确认无匹配论文后，日报末尾保存机器可读的来源、
+核查时间和数量，避免反复补跑真正的空日报。
+
+超过 14 天的历史日期使用有范围和完整性检查的查询 API，避免为一个旧缺口抓取数月 OAI 数据。
+单篇报告仍必须全部通过质检才发布日报。单位信息按元数据、首页、LaTeX、末页作者简介、
+官方 HTML 作者栏逐步回退；仅在官方作者栏有明确证据时记录“原文作者栏未列出单位”。
+历史修复继续使用 `--no-notify`，完成后核对 issue、Markdown 归档和在线阅读副本。
+
 ## 8) 故障排查
 - `ARXIV_SOURCE=oai` 使用官方 `https://oaipmh.arxiv.org/oai` 元数据接口；`api` 使用原查询接口。Actions 默认使用 `oai`，可通过同名仓库 Variable 覆盖。
 - OAI 的更新时间和普通格式 `created` 都不能可靠代表首次投稿：脚本完整分页抓取普通元数据及 `arXivRaw` 版本历史，只按 `v1` 日期归档。它提供最新版本正文元数据；完整结果缓存 6 小时，单篇处理复用作者与摘要。任一分页失败会报错，不会发布部分结果。

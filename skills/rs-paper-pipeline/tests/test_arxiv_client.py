@@ -35,6 +35,17 @@ class ArxivClientTest(unittest.TestCase):
         self.assertEqual(arxiv_client.fetch_paper_metadata("2609.12345")[2], "Title")
         fetch.assert_called_once_with({"id_list": "2609.12345"}, retries=4, timeout=90)
 
+    @patch.object(arxiv_client, "fetch_query_with_fallback")
+    def test_oai_keeps_original_date_and_supplements_missing_affiliations(self, fetch):
+        cached = {"authors": ["A B"], "affiliations": [], "title": "Title", "abstract": "Abstract", "published": "2026-09-23"}
+        fetch.return_value = '<feed xmlns="http://www.w3.org/2005/Atom" xmlns:a="http://arxiv.org/schemas/atom"><entry><published>2026-09-28</published><author><name>A B</name><a:affiliation>First Institute of Oceanography</a:affiliation></author></entry></feed>'
+        with patch.dict("os.environ", {"ARXIV_SOURCE": "oai"}), patch("clients.arxiv_oai.cached_metadata", return_value=cached):
+            result = arxiv_client.fetch_paper_metadata("2609.12345")
+            self.assertEqual(result[1], ["First Institute of Oceanography"])
+            self.assertEqual(result[4], "2026-09-23")
+            fetch.side_effect = arxiv_client.ArxivUnavailableError("temporarily unavailable")
+            self.assertEqual(arxiv_client.fetch_paper_metadata("2609.12345")[0], ["A B"])
+
     def test_official_endpoint_candidates_preserve_path(self):
         self.assertEqual(
             arxiv_client._arxiv_api_candidates("https://export.arxiv.org/api/query"),

@@ -163,7 +163,7 @@ def get_github_client(config: PipelineConfig | None = None) -> Any:
         from github import Auth, Github
     except ModuleNotFoundError as exc:
         raise RuntimeError("Missing Python dependency: PyGithub") from exc
-    return Github(auth=Auth.Token(cfg.github_token), timeout=cfg.github_timeout, retry=cfg.github_retry)
+    return Github(auth=Auth.Token(cfg.github_token), timeout=cfg.github_timeout, retry=cfg.github_retry, per_page=100)
 
 
 def get_repo(config: PipelineConfig | None = None):

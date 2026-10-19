@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 import tarfile
 import gzip
 from pathlib import Path
@@ -211,7 +212,10 @@ def is_valid_institution_text(text: str) -> bool:
             return False
         if len(part) > 180:
             return False
-        if strong_prose_pattern.search(part):
+        # "Resources" is also part of official organization names. Remove
+        # only the named ministry phrase before checking for body-text bleed.
+        prose_check = re.sub(r"\bMinistry of Natural Resources\b", "", part, flags=re.I)
+        if strong_prose_pattern.search(prose_check):
             return False
         if domain_prose_pattern.search(part) and not INSTITUTION_KEYWORD_PATTERN.search(part):
             return False
@@ -568,6 +572,9 @@ def _read_latex_sources(source_path: Path) -> list[str]:
                     sources.append((member.name, text))
         else:
             raw = source_path.read_bytes()
+            # arXiv returns the PDF itself for PDF-only submissions.
+            if raw.startswith(b"%PDF-"):
+                return []
             try:
                 raw = gzip.decompress(raw)
             except Exception:
@@ -611,6 +618,15 @@ def extract_institutions_from_latex_source(source_path: Path | None) -> str:
     return "；".join(_dedupe_institutions(institutions))
 
 
+def institution_has_text_evidence(institution: str, context: str) -> bool:
+    def words(value):
+        value = unicodedata.normalize("NFKD", value.casefold())
+        value = "".join(c for c in value if not unicodedata.combining(c))
+        return set(re.findall(r"[^\W\d_]{3,}", value))
+    tokens = words(institution) - {"the", "and", "for", "of"}
+    return bool(tokens) and tokens <= words(context)
+
+
 def extract_institutions_from_first_page(title: str, authors: str, first_page_text: str) -> str:
     if not first_page_text.strip():
         return ""
@@ -652,12 +668,53 @@ def extract_institutions_from_first_page(title: str, authors: str, first_page_te
             try:
                 data = json.loads(match.group(0))
                 if isinstance(data, list):
-                    institutions = [str(item) for item in data if isinstance(item, str)]
+                    institutions = [item for item in data if isinstance(item, str)
+                                    and institution_has_text_evidence(item, first_page_text)]
             except Exception:
                 institutions = []
 
     institutions = _dedupe_institutions(institutions)
     return "；".join(institutions)
+
+
+def extract_institutions_from_author_biographies(authors: str, pdf_text: str) -> str:
+    """Use author biographies at the end of journal articles as a fallback.
+
+    Keep the original column layout: it separates biographies from references
+    and body text in magazine templates. Require an author name and role before
+    asking the model to extract affiliations from the final pages.
+    """
+    tail = "\f".join((pdf_text or "").split("\f")[-4:])[-18000:]
+    names = [name.strip() for name in (authors or "").split(",") if name.strip()]
+    has_author = any(
+        len(words := re.findall(r"[^\W\d_]+", name, re.UNICODE)) >= 2
+        and all(re.search(rf"\b{re.escape(word)}\b", tail, re.I) for word in words[:2])
+        for name in names
+    )
+    if not has_author or not re.search(
+        r"\b(?:is (?:an? |the )?(?:senior |principal |associate |assistant |full |global )?"
+        r"(?:software engineer|scientist|professor|researcher|manager)|"
+        r"(?:analyst|manager|professor|scientist|engineer) (?:at|with))\b", tail, re.I
+    ):
+        return ""
+    prompt = (
+        "从论文末页的作者简介中提取作者所属单位。只依据明确的作者简介，不从正文、"
+        "参考文献或致谢推断单位；不要输出职位、邮箱或作者姓名。去重后只返回严格 JSON 数组，"
+        "无法可靠提取时返回 []。\n"
+        f"作者：{authors}\n论文末页（保留分栏）：\n{tail}"
+    )
+    output = call_llm(prompt, max_tokens=600, timeout=120) or ""
+    match = re.search(r"\[[\s\S]*\]", output)
+    if not match:
+        return ""
+    try:
+        values = json.loads(match.group(0))
+    except (ValueError, TypeError):
+        return ""
+    if not isinstance(values, list):
+        return ""
+    return "；".join(_dedupe_institutions([v for v in values if isinstance(v, str)
+                                         and institution_has_text_evidence(v, tail)]))
 
 
 def extract_abstract_from_pdf_text(pdf_text: str) -> str:

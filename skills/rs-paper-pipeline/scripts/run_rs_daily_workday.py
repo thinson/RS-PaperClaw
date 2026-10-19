@@ -20,6 +20,7 @@ from clients.github_ops import daily_report_file_exists, get_today_digest_issue
 from clients.notify_client import has_available_notify_channel, send_dingtalk_markdown, send_feishu_message
 from pipeline_config import build_runtime_env, get_repo, load_config
 from services.catchup import missing_report_dates
+from services.report_status import is_verified_empty
 
 CONFIG = load_config()
 BEIJING_TZ = timezone(timedelta(hours=8))
@@ -55,7 +56,7 @@ def run(cmd: list[str], retries: int = 4):
             subprocess.run(cmd, cwd=CONFIG.root_dir, check=True, env=env)
             return
         except subprocess.CalledProcessError as exc:
-            if exc.returncode in (65, 75) or i == retries - 1:
+            if exc.returncode in (65, 75, 76) or i == retries - 1:
                 raise
             wait_s = backoff[min(i, len(backoff) - 1)]
             print(f"[retry] attempt={i+1}/{retries} failed, sleep={wait_s}s")
@@ -122,6 +123,8 @@ def _date_already_completed(date_str: str) -> tuple[bool, str]:
 
     linked_issue_numbers = _extract_digest_issue_numbers(digest_issue.body or "")
     if not linked_issue_numbers:
+        if is_verified_empty(digest_issue.body or "", date_str):
+            return True, f"digest=#{digest_issue.number} verified empty after metadata delay"
         return False, "digest issue has no linked paper issues"
 
     return True, f"digest=#{digest_issue.number} papers={len(linked_issue_numbers)}"
@@ -356,10 +359,11 @@ def _run_step(date_str: str, step: str, cmd: list[str], ok_extra: dict | None = 
     try:
         run(cmd)
     except Exception as exc:
+        deferred = isinstance(exc, subprocess.CalledProcessError) and exc.returncode == 76
         _write_state(
             date_str,
             step,
-            "failed",
+            "deferred" if deferred else "failed",
             {
                 "reason": _format_exc(exc),
                 "failed_command": " ".join(cmd),
@@ -516,6 +520,9 @@ def main(target_date: str | None = None, notify: bool | None = None, force: bool
             try:
                 _process_date(date_str, notify and date_str in scheduled_dates, force=force)
             except Exception as exc:
+                if isinstance(exc, subprocess.CalledProcessError) and exc.returncode == 76:
+                    print(f"DEFERRED {date_str}: waiting for metadata publication; will retry", flush=True)
+                    continue
                 last_failure = exc
                 failures.append(date_str)
                 print(f"FAILED {date_str}: {_format_exc(exc)}", flush=True)

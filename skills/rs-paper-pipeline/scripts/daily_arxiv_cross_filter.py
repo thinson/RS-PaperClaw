@@ -10,7 +10,7 @@ from __future__ import annotations
 import re
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from clients.arxiv_client import ArxivUnavailableError, fetch_recent_candidates, has_remote_sensing_signal
@@ -20,6 +20,7 @@ from pipeline_config import get_repo, load_config
 from services.filter_assets import load_ai_signal_patterns, render_filter_prompt
 from services.digest_builder import extract_author, extract_institution, is_invalid_digest_field, is_invalid_digest_institution
 from services.issue_index import ensure_index, lookup_issue, update_index_from_issue, save_index
+from services.report_status import empty_result_is_settled
 
 CONFIG = load_config()
 AI_MATCH_PATTERNS = load_ai_signal_patterns()
@@ -171,7 +172,12 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
 
     stats = {
         "date": target_date or datetime.now().strftime("%Y%m%d"),
-        "metadata_source": os.environ.get("ARXIV_SOURCE", "api"),
+        "metadata_source": (
+            "api" if target_date and (datetime.now().date() - datetime.strptime(target_date, "%Y%m%d").date()).days > 14
+            else os.environ.get("ARXIV_SOURCE", "api")
+        ),
+        "source_complete": True,
+        "source_checked_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "candidate_count": cand_count,
         "llm_selected_count": selected_count,
         "existing_count": existing_count,
@@ -210,6 +216,10 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
                 f"reason={x['reason']} | {item['title'][:90]}"
             )
         return
+
+    if not selected and target_date and not empty_result_is_settled(target_date, stats["source_checked_at"]):
+        print(f"DEFERRED_EMPTY: {target_date} metadata may not be public yet; will recheck before publishing")
+        raise SystemExit(76)
 
     print("[4/5] 提交 issue（不重复）...")
     for task in todo:

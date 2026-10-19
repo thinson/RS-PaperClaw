@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from services.digest_builder import build_digest_with_llm, is_invalid_digest_institution
 from services.paper_analysis import (
+    extract_institutions_from_author_biographies,
     extract_institutions_from_first_page,
     extract_institutions_from_latex_source,
     is_valid_institution_text,
@@ -17,6 +18,26 @@ from services.paper_analysis import (
 
 
 class InstitutionValidationTest(unittest.TestCase):
+    def test_ministry_of_natural_resources_is_an_institution(self):
+        self.assertTrue(is_valid_institution_text("First Institute of Oceanography, Ministry of Natural Resources"))
+        self.assertFalse(is_valid_institution_text("University of Somewhere computational resources"))
+
+    def test_extracts_author_affiliation_from_final_page_biography(self):
+        from unittest.mock import patch
+        text = "Body text\fNoora Al-Emadi is a senior software engineer at Qatar\nComputing Research Institute, Hamad Bin Khalifa\nUniversity, Qatar."
+        with patch("services.paper_analysis.call_llm", return_value='["Qatar Computing Research Institute, Hamad Bin Khalifa University"]') as llm:
+            self.assertIn("Hamad Bin Khalifa University", extract_institutions_from_author_biographies("Al-Emadi Noora", text))
+            self.assertIn(text, llm.call_args.args[0])
+        with patch("services.paper_analysis.call_llm") as llm:
+            self.assertEqual(extract_institutions_from_author_biographies("Al-Emadi Noora", "Unrelated reference: University of Somewhere"), "")
+            llm.assert_not_called()
+
+    def test_llm_cannot_infer_a_known_authors_institution_without_text_evidence(self):
+        from unittest.mock import patch
+        page = "Revisiting Building Damage Assessment\nAnthony Cioppa, Marc Van Droogenbroeck\nAbstract\nSatellite image analysis."
+        with patch("services.paper_analysis.call_llm", return_value='["University of Liège"]'):
+            self.assertEqual(extract_institutions_from_first_page("Building Damage", "Cioppa Anthony", page), "")
+
     def test_rejects_body_text_bleed_in_institution(self):
         value = (
             "Shen Yuan Honors College, Beihang University；"

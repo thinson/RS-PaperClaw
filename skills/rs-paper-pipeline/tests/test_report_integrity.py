@@ -45,6 +45,12 @@ class IntegrityTest(unittest.TestCase):
         lookup_issue(repo, {"2609.12345v1": {"number": 5}, "2609.12345": {"number": 9}}, "2609.12345v12")
         repo.get_issue.assert_called_once_with(5)
 
+    def test_html_affiliation_containing_only_known_author_names(self):
+        html = '<div class="ltx_authors"><span class="ltx_personname">Anthony Cioppa</span><span class="ltx_affiliation">Affiliation: Pietro Ceccato and Marc Van Droogenbroeck</span></div>'
+        authors = "Cioppa Anthony, Ceccato Pietro, Van Droogenbroeck Marc"
+        self.assertTrue(author_block_has_no_affiliation(html, authors))
+        self.assertFalse(author_block_has_no_affiliation(html.replace("Pietro Ceccato", "University of Liege"), authors))
+
     def test_similar_title_cannot_match_a_different_arxiv_id(self):
         issue = SimpleNamespace(title="Implicit Neural Representation for Hyperspectral", body="[abs](https://arxiv.org/abs/2609.12345v2)")
         self.assertTrue(issue_matches_arxiv(issue, "2609.12345"))
