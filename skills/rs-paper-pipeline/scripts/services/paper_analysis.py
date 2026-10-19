@@ -147,6 +147,8 @@ def _dedupe_institutions(institutions: list[str]) -> list[str]:
             continue
         if re.search(r"@", text):
             continue
+        if not is_valid_institution_text(text):
+            continue
         lowered = text.casefold()
         if lowered in seen:
             continue
@@ -157,10 +159,17 @@ def _dedupe_institutions(institutions: list[str]) -> list[str]:
 
 INSTITUTION_KEYWORD_PATTERN = re.compile(
     r"(universit|univ\b|college|school|institut|academy|laborator|centre|center|"
-    r"department|hospital|faculty|laboratory|lab\b|research|hochschule|fraunhofer|"
+    r"department|hospital|faculty|laboratory|lab\b|hochschule|fraunhofer|"
     r"dlr\b|cnrs\b|enpc\b|国家|大学|学院|研究所|实验室|中心|医院)",
     re.IGNORECASE,
 )
+NAMED_RESEARCH_ORG_PATTERN = re.compile(
+    r"^[A-Z][A-Za-z&.-]*(?:\s+[A-Z][A-Za-z&.-]*){0,3}\s+Research(?:\s*[-–]+\s*|\s+)?(?:[A-Z][A-Za-z&.-]*)?$"
+)
+
+
+def _has_institution_signal(text: str) -> bool:
+    return bool(INSTITUTION_KEYWORD_PATTERN.search(text) or NAMED_RESEARCH_ORG_PATTERN.fullmatch(text))
 
 
 def _strip_email_tail(text: str) -> str:
@@ -208,6 +217,10 @@ def is_valid_institution_text(text: str) -> bool:
         part = re.sub(r"\s+", " ", chunk).strip(" ,;:，；：")
         if not part:
             continue
+        if re.match(r"(?i)^(?:for|these|this|we|our|however|therefore)\b", part):
+            return False
+        if re.search(r"(?i)\b(?:is|are|was|were)\s+(?:(?:a|an|the)\s+)?(?:graduates?|students?|professors?|scientists?|engineers?)\b", part):
+            return False
         if re.search(r"https?://|www\.|github\.com|arxiv\.org", part, re.IGNORECASE):
             return False
         if len(part) > 180:
@@ -257,7 +270,7 @@ def _looks_like_institution_candidate(text: str) -> bool:
         return False
     if re.search(r"\b(?:project\s+page|github|corresponding\s+author)\b", cleaned, re.IGNORECASE):
         return False
-    if not INSTITUTION_KEYWORD_PATTERN.search(cleaned):
+    if not _has_institution_signal(cleaned):
         return False
     return is_valid_institution_text(cleaned)
 
@@ -298,7 +311,7 @@ def _heuristic_institutions(first_page_text: str) -> list[str]:
         if re.search(r"^(abstract|摘要|keywords?|index terms|introduction)\b", line, re.IGNORECASE):
             continue
         line = _strip_email_tail(line)
-        if INSTITUTION_KEYWORD_PATTERN.search(line) and not re.search(r"@", line):
+        if _has_institution_signal(_clean_institution_candidate(line)) and not re.search(r"@", line):
             parts = re.split(r"\s+(?=\d+\s+[A-Z])", line)
             for part in parts:
                 cleaned = _clean_institution_candidate(re.sub(r"^\d+\s*", "", part).strip(" ."))

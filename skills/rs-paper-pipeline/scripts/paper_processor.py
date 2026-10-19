@@ -143,7 +143,19 @@ def process_paper(arxiv_id: str, issue_number: int | None = None, dry_run: bool 
     info["abstract_en"] = recovered["abstract_en"] or info.get("abstract_en", "")
     log_step("STEP-1", "OK", f"recovered_title={info['title'][:40]} | recovered_authors={info['authors'][:30]}")
 
-    pdf_institutions = extract_institutions_from_first_page(info["title"], info["authors"], first_page_text)
+    # Raw reading order keeps IEEE footnotes separate from the adjacent body
+    # column. Layout text can join each affiliation line to unrelated prose.
+    affiliation_page_text = first_page_text
+    try:
+        raw_page = subprocess.run(
+            ["pdftotext", "-raw", "-f", "1", "-l", "1", str(pdf_path), "-"],
+            capture_output=True, text=True, timeout=30,
+        )
+        if raw_page.returncode == 0 and raw_page.stdout.strip():
+            affiliation_page_text = raw_page.stdout
+    except Exception:
+        pass
+    pdf_institutions = extract_institutions_from_first_page(info["title"], info["authors"], affiliation_page_text)
     source_institutions = ""
     if not is_valid_institution_text(info.get("institutions", "")):
         source_path = download_source(arxiv_id)

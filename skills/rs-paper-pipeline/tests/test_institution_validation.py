@@ -55,6 +55,15 @@ class InstitutionValidationTest(unittest.TestCase):
         self.assertFalse(is_valid_institution_text(
             "University of Maryland；The ongoing expansion of satellite broadband, Earth- Recent remote-sensing research"))
 
+    def test_research_prose_is_not_an_affiliation_but_named_research_org_is(self):
+        from services.paper_analysis import _heuristic_institutions, _dedupe_institutions
+        text = "These early findings indicate an active but fragmented research\nfor advancing hyperspectral aquatic research in the cloud-computing era"
+        self.assertEqual(_heuristic_institutions(text), [])
+        self.assertFalse(is_valid_institution_text(text))
+        self.assertFalse(is_valid_institution_text("Hossain are graduates of North South University, Dhaka, Bangladesh"))
+        self.assertEqual(_heuristic_institutions("IBM Research -- Europe"), ["IBM Research -- Europe"])
+        self.assertEqual(_dedupe_institutions(["University of Maryland", text]), ["University of Maryland"])
+
     def test_accepts_common_affiliation_list(self):
         value = (
             "Faculty of Applied Sciences, Macao Polytechnic University；"
