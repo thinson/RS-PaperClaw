@@ -159,6 +159,11 @@ def get_github_client(config: PipelineConfig | None = None) -> Any:
     cfg = config or load_config()
     if not cfg.github_token:
         raise RuntimeError("Missing required environment variable: GITHUB_TOKEN")
+    # PyGithub uses requests, which does not read macOS system proxy settings.
+    # Apply the explicitly configured runtime proxy to the parent process too,
+    # including prechecks and direct CLI calls that do not launch a subprocess.
+    for scheme, proxy_url in get_proxy_map().items():
+        os.environ.setdefault(f"{scheme}_proxy", proxy_url)
     try:
         from github import Auth, Github
     except ModuleNotFoundError as exc:

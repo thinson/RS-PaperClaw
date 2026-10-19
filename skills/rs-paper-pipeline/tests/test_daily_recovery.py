@@ -14,6 +14,14 @@ import run_rs_daily_workday as runner
 
 
 class RecoveryTest(unittest.TestCase):
+    def test_github_client_honors_configured_runtime_proxy(self):
+        import os
+        from pipeline_config import get_github_client
+        with patch.dict(os.environ, {"RS_PROXY_URL": "http://127.0.0.1:9999"}, clear=True):
+            client = get_github_client(replace(runner.CONFIG, github_token="test"))
+            self.assertEqual(os.environ["https_proxy"], "http://127.0.0.1:9999")
+            client.close()
+
     @patch.object(runner, "_get_repo")
     @patch.object(runner, "get_today_digest_issue")
     @patch.object(runner, "daily_report_matches_digest", return_value=False)
