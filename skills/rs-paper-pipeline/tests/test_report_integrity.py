@@ -80,6 +80,9 @@ class IntegrityTest(unittest.TestCase):
         lookup.return_value = SimpleNamespace(_rawData={"number": 2})
         stats = {"selected_arxiv_ids": ["2609.12345"], "successful_selected_arxiv_ids": ["2609.12345"]}
         self.assertEqual(digest._augment_papers_from_stats(Mock(), [{"number": 1}, {"number": 2}], stats), [{"number": 2}])
+        lookup.return_value = SimpleNamespace(_rawData={"number": 2, "body": "fresh metadata"})
+        self.assertEqual(digest._augment_papers_from_stats(Mock(), [{"number": 2, "body": "stale metadata"}], stats),
+                         [{"number": 2, "body": "fresh metadata"}])
         self.assertEqual(digest._augment_papers_from_stats(Mock(), [{"number": 1}], {"selected_arxiv_ids": []}), [])
         with self.assertRaises(RuntimeError):
             digest._augment_papers_from_stats(Mock(), [], {"selected_arxiv_ids": ["2609.12345"]})

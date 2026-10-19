@@ -82,11 +82,6 @@ def _augment_papers_from_stats(repo, papers: list[dict], stats: dict | None) -> 
         return []
 
     index = ensure_index(repo)
-    by_issue_number = {
-        _paper_key(paper): paper
-        for paper in papers
-        if _paper_key(paper) is not None
-    }
     merged = []
 
     for arxiv_id in selected_ids:
@@ -95,13 +90,9 @@ def _augment_papers_from_stats(repo, papers: list[dict], stats: dict | None) -> 
             raise RuntimeError(f"Selected paper missing from issue index: {arxiv_id}")
 
         raw = issue_data(issue)
-        number = _paper_key(raw)
-        if number is not None and number in by_issue_number:
-            _merge_paper(merged, by_issue_number[number])
-            continue
+        # Direct lookups reflect just-refreshed metadata sooner than issue
+        # listings. Never replace the fresh body with the listing's old copy.
         _merge_paper(merged, raw)
-        if number is not None:
-            by_issue_number[number] = raw
 
     return merged
 

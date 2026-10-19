@@ -219,7 +219,7 @@ def is_valid_institution_text(text: str) -> bool:
             continue
         if re.match(r"(?i)^(?:for|these|this|we|our|however|therefore)\b", part):
             return False
-        if re.search(r"(?i)\b(?:is|are|was|were)\s+(?:(?:a|an|the)\s+)?(?:graduates?|students?|professors?|scientists?|engineers?)\b", part):
+        if re.search(r"(?i)\b(?:is|are|was|were)\s+(?:(?:a|an|the)\s+)?(?:(?:senior|principal|associate|assistant|full|global|adjunct|visiting|research)\s+)*(?:graduates?|students?|professors?|scientists?|engineers?|researchers?|managers?|analysts?)\b", part):
             return False
         if re.search(r"https?://|www\.|github\.com|arxiv\.org", part, re.IGNORECASE):
             return False

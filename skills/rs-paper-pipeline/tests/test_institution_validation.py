@@ -61,6 +61,7 @@ class InstitutionValidationTest(unittest.TestCase):
         self.assertEqual(_heuristic_institutions(text), [])
         self.assertFalse(is_valid_institution_text(text))
         self.assertFalse(is_valid_institution_text("Hossain are graduates of North South University, Dhaka, Bangladesh"))
+        self.assertFalse(is_valid_institution_text("Shafin Rahman is an Associate Professor with the Department of Electrical and Computer Engineering, North South University"))
         self.assertEqual(_heuristic_institutions("IBM Research -- Europe"), ["IBM Research -- Europe"])
         self.assertEqual(_dedupe_institutions(["University of Maryland", text]), ["University of Maryland"])
 
