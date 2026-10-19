@@ -47,6 +47,12 @@ class InstitutionValidationTest(unittest.TestCase):
         self.assertFalse(is_valid_institution_text(value))
         self.assertTrue(is_invalid_digest_institution(value))
 
+    def test_rejects_two_column_flood_article_prose_as_affiliations(self):
+        value = ("Tsinghua University；National Disaster Reduction Center；"
+                 "scription quality and pixel-level flood segmentation perfor- Existing flood research remains flood-segmentation-centric；"
+                 "the existing remote sensing research on floods primarily synthetic aperture radar (SAR) images")
+        self.assertFalse(is_valid_institution_text(value))
+
     def test_accepts_common_affiliation_list(self):
         value = (
             "Faculty of Applied Sciences, Macao Polytechnic University；"
