@@ -2,6 +2,43 @@
 
 最近三天日报（最新在前）：
 
+# [20261027](./202610/20261027.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日研究覆盖遥感图像文本检索、作物分类、知识蒸馏、边缘推理、SAR辐射定标与卫星条件扩散生成。趋势上，高效检索与轻量化部署受关注，如无交互召回与量化边缘推理；农业遥感侧重跨区域泛化与地面-卫星知识迁移；生成式方法开始用于无重建新视角合成。整体体现从模型性能向效率、鲁棒性与实际部署的平衡。
+
+## ✨ 今日亮点
+
+- 无交互召回加文本引导重排，提升遥感图文检索效率。
+- 评估AlphaEarth嵌入的作物可分性与跨区域迁移能力。
+- 地面到卫星知识蒸馏，应对作物分类时空偏移。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261027] Efficient Remote Sensing Image-Text Retrieval via Interaction-Free Recall and Text-Guided Reranking | Chen Xi, Chen Xu, Jia Xiamgyang, Wang Wei, Zhang Xu, Shun Zhenyuan | XI CHEN, School of Computer Science, Wuhan University, China；XU CHEN∗, School of Computer Science, Wuhan University, China；XIANGYANG JIA, School of Computer Science, Wuhan University, China；WEI WANG, Beijing Institute for General Artificial Intelligence (BIGAI), China；XU ZHANG, School of Computer Science, Wuhan University, China；ZHENYUAN SUN, School of Computer Science, Wuhan University, China；Institute for General Artificial Intelligence (BIGAI), Beijing, China; Xu Zhang；Science, Wuhan University, Wuhan, China; Zhenyuan Sun；University, Wuhan, China | 提出无交互召回与文本引导重排的遥感图文检索流程，兼顾效率与精度。 | [#1582](https://github.com/thinson/RS-PaperClaw/issues/1582) |
+| [20261027] Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability | Goyal Priyanka, Sar Maitreyee, Mitra Adway, Sinha Manjira | Department of Artificial Intelligence, Indian Institute of Technology Kharagpur, West Bengal, India；Centre for Atmospheric Sciences, Indian Institute of Technology Delhi, India | 系统评估AlphaEarth嵌入在作物分类中的可分性、时序动态与跨区域迁移性。 | [#1583](https://github.com/thinson/RS-PaperClaw/issues/1583) |
+| [20261027] Ground-to-Satellite Knowledge Distillation for Crop Classification under Temporal and Geographic Shift | Miranda Miro, Sedona Rocco, Marsocci Valerio, Cavallaro Gabriele, Paris Claudia | Jülich Supercomputing Centre；University of Iceland, Iceland；University of Twente (ITC), the Netherlands | 利用地面照片到卫星时序的知识蒸馏，提升作物分类在时空偏移下的表现。 | [#1584](https://github.com/thinson/RS-PaperClaw/issues/1584) |
+| [20261027] Quantized Edge Inference of a Self-Supervised SAR-Optical Encoder on Commodity x86 Hardware | Sanchez-Leon Christian, Chen Dongming | the Software College, Northeastern University, Shenyang, China ( | 在商用x86硬件上量化部署自监督SAR-光学编码器，实现边缘推理。 | [#1585](https://github.com/thinson/RS-PaperClaw/issues/1585) |
+| [20261027] Assessing BIOMASS Radiometric Stability using Permanent Scatterers | Manzoni Marco, Salvaterra Francesco, Claudio Maria Prati, Tebaldini Stefano | Politecnico di Milano | 利用永久散射体评估BIOMASS任务P波段SAR的辐射稳定性。 | [#1586](https://github.com/thinson/RS-PaperClaw/issues/1586) |
+| [20261027] GroundControl: Satellite-Conditioned Multi-View Diffusion for Reconstruction-Free Novel View Synthesis | Krishnan Akshay, Turkulainen Matias, Wynn Jamie, Qureshi Zawar, Sayed Mohamed, Garcia-Hernando Guillermo, Vicente Sara, Hays James, Firman Michael, Turmukhambetov Daniyar | Georgia Institute of Technology；Aalto University | 提出卫星条件多视角扩散模型，无需重建即可合成新视角。 | [#1587](https://github.com/thinson/RS-PaperClaw/issues/1587) |
+
+## 🔎 观察
+
+- 检索与部署研究强调效率，无交互召回和量化推理反映落地导向。
+- 农业遥感关注跨区域与时空偏移，评估与蒸馏成为提升泛化的手段。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261027", "source": "oai", "checked_at": "2026-10-28T10:48:50+00:00", "source_complete": true, "candidate_count": 10, "paper_count": 6} -->
+
+---
+
 # [20261025](./202610/20261025.md)
 ## 📌 今日概况
 
@@ -65,36 +102,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261024", "source": "oai", "checked_at": "2026-10-27T10:00:58+00:00", "source_complete": true, "candidate_count": 5, "paper_count": 3} -->
-
----
-
-# [20261023](./202610/20261023.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日论文总体呈现出遥感与AI交叉深化趋势。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261023] DS-BiCA-Net: Pair-Preserving Cross-Temporal Modeling for Remote Sensing Change Captioning | Zhang Licheng, Akhtar Naveed, Lam Siew-Kei | School of Computing and Information Systems, the University of Melbourne, Victoria, Australia. (；Nanyang Technological University, Singapore | 聚焦Remote Sensing、State-Space Model，给出可复现的模型与评测方案。 | [#1561](https://github.com/thinson/RS-PaperClaw/issues/1561) |
-| [20261023] OlmoEarth v1.3: Embeddings | Tseng Gabriel, Bastani Favyen, Patrick Alan Johnson, Zhang Yawen, Wolters Piper, Shah Ando, Sablon Hadrien, Redmon Joseph, DeHaven Heather, Ratner Rachel, Levy Sasha, Steward Jordan, Midgley Katrina, Howe Andrew, Pitelka Hunter, Schmitt Ted | Allen Institute for AI | 聚焦Remote Sensing、Earth Observation，给出可复现的模型与评测方案。 | [#1562](https://github.com/thinson/RS-PaperClaw/issues/1562) |
-| [20261023] GeoLEON-CLIP: Graph-Anchored Multimodal Contrastive Learning for Geographic Region Representation | Malek Radoslaw, Soltysiak Szymon, Kawala-Sterniuk Aleksandra, Szymanski Piotr | Wroc aw University of Science and Technology Department of Artificial Intelligence Wroc aw Poland；Wrocław University of Science and Technology Department of Artificial Intelligence Wrocław Poland | 聚焦Graph-Anchored Contrastive Learning、Multimodal Geographic Representation，给出可复现的模型与评测方案。 | [#1563](https://github.com/thinson/RS-PaperClaw/issues/1563) |
-| [20261023] Reuse, Don't Retrain: Efficient, Modality-Versatile Geospatial Foundation Models through Feature Distillation | Hamon Mario, Adorni Pierre, Pham Minh-Tan | Université Bretagne Sud, UMR 6074 | 聚焦Vision Transformers、Multispectral Imagery，给出可复现的模型与评测方案。 | [#1564](https://github.com/thinson/RS-PaperClaw/issues/1564) |
-| [20261023] SCDM-HTD: Spectral-Wise Conditional Diffusion Model for Hyperspectral Target Detection | Shen Dunbin, Kong Wenfeng, Liu Jianjun, Ma Xiaorui, Wang Hongyu | School of Information and Communication Engineering, Dalian University of Technology, Dalian, China (；School of Artificial Intelligence and Computer Science, Jiangnan University, Wuxi, China ( | 聚焦Hyperspectral Target Detection、Spectral-Wise Conditional Diffusion Model，给出可复现的模型与评测方案。 | [#1565](https://github.com/thinson/RS-PaperClaw/issues/1565) |
-| [20261023] LoCA: Enabling Multi-Modality in Geospatial Location Encoders | Koromilas Panagiotis, Vali Eleanna, Antonopoulos Diogenis, Saka Eleni, Christofis Dimitris, Nikolaos Ioannis Bountos, Klemmer Konstantin, Papoutsis Ioannis, Panagakis Yannis, Mihalis A. Nicolaou | University of Athens；The Cyprus Institute；Archimedes, Athena Research Center；National Technical University of Athens；Harokopio University；University College London；University of Cyprus | 聚焦Multimodal Learning、Contrastive Learning，给出可复现的模型与评测方案。 | [#1566](https://github.com/thinson/RS-PaperClaw/issues/1566) |
-
-## 🔎 观察
-
-- 基础模型与遥感任务结合持续增强，评测与推理能力成为关键。
-- 多数工作关注算法有效性与泛化，而非硬件实现。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261023", "source": "oai", "checked_at": "2026-10-26T10:25:09+00:00", "source_complete": true, "candidate_count": 11, "paper_count": 6} -->
 
 ---
