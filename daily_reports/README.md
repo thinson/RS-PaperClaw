@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20261028](./202610/20261028.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日两篇论文分别聚焦遥感深度学习可解释性与贝叶斯统计建模。前者诊断超高分辨率建筑损毁评估中的邻域捷径问题，并提出建筑证据插件以抑制虚假关联；后者针对多类别数据构建贝叶斯差异模型，分析五大湖高维水陆转换。研究趋势显示，遥感AI正从单纯提升精度转向模型可靠性诊断与不确定性量化，同时统计方法在高维遥感数据中的应用受到关注。
+
+## ✨ 今日亮点
+
+- 诊断建筑损毁评估中的邻域捷径，提出证据插件抑制虚假关联。
+- 构建贝叶斯差异模型，分析五大湖高维水陆转换多类别数据。
+- 两篇工作分别从模型诊断与统计建模提升遥感分析可靠性。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261028] Neighbourhood shortcuts in building damage assessment from very-high-resolution satellite imagery: diagnosis and a building-evidence plug-in | Guo JianChong, Wan YuTing, Li Kefan, Ma AiLong, Zhong YanFei | State Key Laboratory of Information Engineering in Surveying, Mapping, and Remote Sensing；Wuhan University, 430079, China | 诊断超高分辨率建筑损毁评估中的邻域捷径问题，并提出建筑证据插件以抑制虚假关联。 | [#1589](https://github.com/thinson/RS-PaperClaw/issues/1589) |
+| [20261028] An Analysis of High-Dimensional Land-Water Transitions in the Great Lakes via a Bayesian Discrepancy Model for Multinomial Data | Lee Seulki, Jonathan R. Bradley | Department of Statistics and Data Science, University of Missouri | 针对多类别数据构建贝叶斯差异模型，分析五大湖高维水陆转换的统计特征。 | [#1590](https://github.com/thinson/RS-PaperClaw/issues/1590) |
+
+## 🔎 观察
+
+- 遥感深度学习研究开始重视捷径学习诊断，模型可靠性正成为与精度并重的评估维度。
+- 贝叶斯高维建模为遥感多类别转换分析提供不确定性量化路径，但计算扩展性仍需验证。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261028", "source": "oai", "checked_at": "2026-10-30T11:03:54+00:00", "source_complete": true, "candidate_count": 6, "paper_count": 2} -->
+
+---
+
 # [20261027](./202610/20261027.md)
 ## 📌 今日概况
 
@@ -68,39 +101,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261025", "source": "oai", "checked_at": "2026-10-27T10:04:17+00:00", "source_complete": true, "candidate_count": 5, "paper_count": 1} -->
-
----
-
-# [20261024](./202610/20261024.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究趋势呈现多模态与高效计算并进。少样本遥感场景分类关注方向不变性，通过组件池化与非负分解提升泛化；指代分割引入跨尺度稀疏注意力，强化视觉语言对齐与多尺度特征融合；SAR成像则聚焦开源实现，在CPU、GPU与TPU上追求高吞吐高保真。整体体现遥感AI向轻量化、跨模态与硬件适配方向发展。
-
-## ✨ 今日亮点
-
-- 少样本场景分类利用组件池化实现方向不变性
-- 指代分割采用跨尺度稀疏注意力增强多尺度融合
-- SAR成像开源实现覆盖CPU、GPU与TPU加速
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261024] Component Pooling Trained Across Orientations for Few-Shot Remote Sensing Scene Classification | Yan Bingchen, Guo Wenheng, Zhou Yuye | School of Computer Science and Information Security；Guilin University of Electronic Technology, Guilin, 541004, China；School of Information Engineering；Institute of Disaster Prevention, Langfang, 065201, China；School of Computing & Technology；Asia Pacific University of Technology & Innovation, Kuala Lumpur, 57000, Malaysia | 提出跨方向训练的组件池化方法，结合非负分解提升少样本遥感场景分类性能。 | [#1568](https://github.com/thinson/RS-PaperClaw/issues/1568) |
-| [20261024] Cross-Scale Sparse Attention for Referring Segmentation in Remote Sensing | Li Yuxi, Si Lu, Liao Xia, Shen Yidong, Wei Zheng, Zhang Jun, Yuan Xin | aWestlake Institute for Advanced Study, Hangzhou, Zhejiang, China；bSchool of Engineering, Westlake University, Hangzhou, Zhejiang, China；cBeijing National Research Center for Information Science and Technology (BNRist), Tsinghua；University, Beijing, China；dSchool of Computer Science, Beijing University of Posts and Telecommunications, Beijing, China；eDepartment of Automation, Tsinghua University, Beijing, China | 设计跨尺度稀疏注意力机制，用于遥感指代分割中的视觉语言对齐与多尺度特征融合。 | [#1569](https://github.com/thinson/RS-PaperClaw/issues/1569) |
-| [20261024] FastSAR: High-Throughput, High-Fidelity Open-Source SAR Image Formation on CPUs, GPUs and TPUs | Singerman Paul, Braun Tom | Penn State University | 发布FastSAR开源SAR成像框架，在CPU、GPU和TPU上实现高吞吐高保真处理。 | [#1570](https://github.com/thinson/RS-PaperClaw/issues/1570) |
-
-## 🔎 观察
-
-- 少样本分类与指代分割均强调多尺度与方向适应性，反映遥感视觉任务对几何变换的持续关注。
-- SAR成像开源框架适配多种硬件，表明遥感数据处理正重视可复现性与计算效率的平衡。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261024", "source": "oai", "checked_at": "2026-10-27T10:00:58+00:00", "source_complete": true, "candidate_count": 5, "paper_count": 3} -->
 
 ---
