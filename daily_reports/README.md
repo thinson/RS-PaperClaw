@@ -2,6 +2,42 @@
 
 最近三天日报（最新在前）：
 
+# [20261029](./202610/20261029.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日研究呈现多学科交叉趋势：量子测量与量子启发计算被引入高光谱小目标检测和伪标签生成，提升遥感数据利用效率；无人机视角与视觉强化学习结合，推动交通信号控制的可泛化策略；计算神经科学方法用于解析地球观测嵌入的可解释性；因果推断约束深度学习，增强热带气旋快速增强预警的物理一致性。整体上，遥感AI正从单纯精度提升转向物理机理融合与可解释性增强。
+
+## ✨ 今日亮点
+
+- 量子测量设计突破无人机高光谱小目标检测的直接成像局限。
+- 无人机鸟瞰视角结合视觉强化学习实现可泛化交通信号控制。
+- 因果先验约束深度学习提升热带气旋快速增强预警可靠性。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261029] Beyond Direct Imaging: Quantum Measurement Design for Small-Target Detection in UAV Hyperspectral Sensing | Qian Qipeng, Jin Jialiang, Wang Shihao, Qian Yuntao | College of Artificial Intelligence, Zhejiang University, Hangzhou, China；Department of Computer Science, Whiting School of Engineering, Johns Hopkins University, Baltimore, MD, USA (；Department of Mathematics, University of Wisconsin-Madison, Madison, WI, USA (；College of Artificial Intelligence, Zhejiang University, Hangzhou, China ( | 提出量子测量设计方法，用于无人机高光谱小目标检测，超越直接成像限制。 | [#1592](https://github.com/thinson/RS-PaperClaw/issues/1592) |
+| [20261029] BEVLight: Generalizable Traffic Signal Control from UAV Bird's-Eye Views | Wang Maonan, Cai Yuxin, Liu Junming, Huang Zhengyan, Yu Yi, Wang Ding, Zhang Yifeng, Chen Yirong | The Chinese University of Hong Kong, Shenzhen；Shanghai AI Lab；Nanyang Technological University；National University of Singapore | 利用无人机鸟瞰视角和视觉强化学习，学习可泛化的交通信号控制策略。 | [#1593](https://github.com/thinson/RS-PaperClaw/issues/1593) |
+| [20261029] Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data | Singh Abhishek, Cuozzo Giovanni, Jacob Alexander, Notarnicola Claudia | Institute for Earth Observation, Eurac Research, Bolzano, Italy | 设计量子启发卷积网络，从多模态地球观测数据生成高分辨率伪标签。 | [#1594](https://github.com/thinson/RS-PaperClaw/issues/1594) |
+| [20261029] NeurEO: dissecting Earth observation embeddings with computational neuroscience | Thijs L van der Plas, Jacob JW Bakermans, Ioannis N Athanasiadis | Wageningen University \& Research, NL；University College London, UK | 借鉴计算神经科学方法，解析AlphaEarth地球观测嵌入的表征机制。 | [#1595](https://github.com/thinson/RS-PaperClaw/issues/1595) |
+| [20261029] Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones | Li Xinrui, Jin Yijun, Dong Yifan, Shu Shoujuan | Department of Atmospheric Sciences, School of Earth Sciences, Zhejiang University, Hangzhou, 310058, China；School of Mathematical Sciences, Zhejiang University, Hangzhou, 310058, China | 引入因果先验约束深度学习，实现西北太平洋热带气旋快速增强预警。 | [#1596](https://github.com/thinson/RS-PaperClaw/issues/1596) |
+
+## 🔎 观察
+
+- 量子概念在遥感中从理论走向应用，但当前工作多属启发式借鉴，实际量子优势尚待验证。
+- 可解释性与物理约束成为遥感AI新焦点，反映领域从黑箱精度向可信决策的范式转变。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261029", "source": "oai", "checked_at": "2026-10-30T11:06:04+00:00", "source_complete": true, "candidate_count": 9, "paper_count": 5} -->
+
+---
+
 # [20261028](./202610/20261028.md)
 ## 📌 今日概况
 
@@ -69,37 +105,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261027", "source": "oai", "checked_at": "2026-10-28T10:48:50+00:00", "source_complete": true, "candidate_count": 10, "paper_count": 6} -->
-
----
-
-# [20261025](./202610/20261025.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日仅一篇论文，聚焦多用户对地观测卫星调度的加权公平性问题。该研究将公平性从传统单目标优化中独立出来，引入加权机制以平衡不同用户需求，反映了卫星资源分配从效率优先向兼顾公平的精细化方向演进。由于样本单一，趋势判断受限，但可见调度研究正关注多利益相关方场景下的分配正义。
-
-## ✨ 今日亮点
-
-- 提出多用户对地观测卫星调度中的加权公平性建模方法
-- 将公平性作为独立优化目标，区别于传统效率导向调度
-- 机构合作体现法国在卫星调度与多智能体公平分配领域的积累
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261025] Weighted Fairness in Multi-User Earth Observation Satellite Scheduling | Lucet Maxime, Benabbou Nawal, Beynier Aurélie, Maudet Nicolas, Picard Gauthier | LIP6, CNRS, Sorbonne Université, Paris, France；ONERA, DTIS, Université de Toulouse, Toulouse, France | 针对多用户对地观测卫星调度，提出加权公平性框架，在资源分配中兼顾不同用户权重与公平性。 | [#1572](https://github.com/thinson/RS-PaperClaw/issues/1572) |
-
-## 🔎 观察
-
-- 该研究将公平性引入卫星调度，暗示多用户共享星座场景下分配正义正成为独立研究维度。
-- 仅单篇论文且偏理论建模，尚难判断加权公平性在真实星座规模下的计算可行性与收益。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261025", "source": "oai", "checked_at": "2026-10-27T10:04:17+00:00", "source_complete": true, "candidate_count": 5, "paper_count": 1} -->
 
 ---
