@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20261030](./202610/20261030.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究趋势聚焦于遥感数据的高效利用与领域自适应。一方面，有工作探索直接从卫星影像端到端学习屋顶太阳能潜力，绕过显式几何建模，简化流程并降低对辅助数据的依赖；另一方面，针对SAR时间序列作物分类，提出物理引导的自监督预训练方法，结合极化特征与BERT架构，提升标签稀缺场景下的分类性能。两项研究均体现了减少人工特征工程、增强模型自主表征能力的倾向。
+
+## ✨ 今日亮点
+
+- 端到端学习屋顶太阳能潜力，无需显式几何建模。
+- 物理引导自监督预训练，融合极化特征与BERT。
+- 两项研究均致力于降低对人工特征和标签的依赖。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261030] An Empirical Study on Learning Rooftop Solar Potential from Satellite Imagery Directly Without Explicit Geometry | Lee Joshua | Skyline High School | 实证研究直接从卫星影像端到端学习屋顶太阳能潜力，避免显式几何建模。 | [#1598](https://github.com/thinson/RS-PaperClaw/issues/1598) |
+| [20261030] SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification | Wang Jieqiu, Zhang Yuhan, Zheng Bo, Zhang Shaoming | College of Surveying and Geo-Informatics, Tongji University, Shanghai, China ( | 提出物理引导自监督预训练SAR-TS-BERT，结合极化特征提升作物分类。 | [#1599](https://github.com/thinson/RS-PaperClaw/issues/1599) |
+
+## 🔎 观察
+
+- 端到端学习减少中间几何建模误差，但可解释性与泛化性仍需验证。
+- 自监督预训练结合物理特征，有望缓解SAR作物分类标签稀缺问题。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261030", "source": "oai", "checked_at": "2026-11-02T12:51:57+00:00", "source_complete": true, "candidate_count": 5, "paper_count": 2} -->
+
+---
+
 # [20261029](./202610/20261029.md)
 ## 📌 今日概况
 
@@ -68,42 +101,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261028", "source": "oai", "checked_at": "2026-10-30T11:03:54+00:00", "source_complete": true, "candidate_count": 6, "paper_count": 2} -->
-
----
-
-# [20261027](./202610/20261027.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日研究覆盖遥感图像文本检索、作物分类、知识蒸馏、边缘推理、SAR辐射定标与卫星条件扩散生成。趋势上，高效检索与轻量化部署受关注，如无交互召回与量化边缘推理；农业遥感侧重跨区域泛化与地面-卫星知识迁移；生成式方法开始用于无重建新视角合成。整体体现从模型性能向效率、鲁棒性与实际部署的平衡。
-
-## ✨ 今日亮点
-
-- 无交互召回加文本引导重排，提升遥感图文检索效率。
-- 评估AlphaEarth嵌入的作物可分性与跨区域迁移能力。
-- 地面到卫星知识蒸馏，应对作物分类时空偏移。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261027] Efficient Remote Sensing Image-Text Retrieval via Interaction-Free Recall and Text-Guided Reranking | Chen Xi, Chen Xu, Jia Xiamgyang, Wang Wei, Zhang Xu, Shun Zhenyuan | XI CHEN, School of Computer Science, Wuhan University, China；XU CHEN∗, School of Computer Science, Wuhan University, China；XIANGYANG JIA, School of Computer Science, Wuhan University, China；WEI WANG, Beijing Institute for General Artificial Intelligence (BIGAI), China；XU ZHANG, School of Computer Science, Wuhan University, China；ZHENYUAN SUN, School of Computer Science, Wuhan University, China；Institute for General Artificial Intelligence (BIGAI), Beijing, China; Xu Zhang；Science, Wuhan University, Wuhan, China; Zhenyuan Sun；University, Wuhan, China | 提出无交互召回与文本引导重排的遥感图文检索流程，兼顾效率与精度。 | [#1582](https://github.com/thinson/RS-PaperClaw/issues/1582) |
-| [20261027] Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability | Goyal Priyanka, Sar Maitreyee, Mitra Adway, Sinha Manjira | Department of Artificial Intelligence, Indian Institute of Technology Kharagpur, West Bengal, India；Centre for Atmospheric Sciences, Indian Institute of Technology Delhi, India | 系统评估AlphaEarth嵌入在作物分类中的可分性、时序动态与跨区域迁移性。 | [#1583](https://github.com/thinson/RS-PaperClaw/issues/1583) |
-| [20261027] Ground-to-Satellite Knowledge Distillation for Crop Classification under Temporal and Geographic Shift | Miranda Miro, Sedona Rocco, Marsocci Valerio, Cavallaro Gabriele, Paris Claudia | Jülich Supercomputing Centre；University of Iceland, Iceland；University of Twente (ITC), the Netherlands | 利用地面照片到卫星时序的知识蒸馏，提升作物分类在时空偏移下的表现。 | [#1584](https://github.com/thinson/RS-PaperClaw/issues/1584) |
-| [20261027] Quantized Edge Inference of a Self-Supervised SAR-Optical Encoder on Commodity x86 Hardware | Sanchez-Leon Christian, Chen Dongming | the Software College, Northeastern University, Shenyang, China ( | 在商用x86硬件上量化部署自监督SAR-光学编码器，实现边缘推理。 | [#1585](https://github.com/thinson/RS-PaperClaw/issues/1585) |
-| [20261027] Assessing BIOMASS Radiometric Stability using Permanent Scatterers | Manzoni Marco, Salvaterra Francesco, Claudio Maria Prati, Tebaldini Stefano | Politecnico di Milano | 利用永久散射体评估BIOMASS任务P波段SAR的辐射稳定性。 | [#1586](https://github.com/thinson/RS-PaperClaw/issues/1586) |
-| [20261027] GroundControl: Satellite-Conditioned Multi-View Diffusion for Reconstruction-Free Novel View Synthesis | Krishnan Akshay, Turkulainen Matias, Wynn Jamie, Qureshi Zawar, Sayed Mohamed, Garcia-Hernando Guillermo, Vicente Sara, Hays James, Firman Michael, Turmukhambetov Daniyar | Georgia Institute of Technology；Aalto University | 提出卫星条件多视角扩散模型，无需重建即可合成新视角。 | [#1587](https://github.com/thinson/RS-PaperClaw/issues/1587) |
-
-## 🔎 观察
-
-- 检索与部署研究强调效率，无交互召回和量化推理反映落地导向。
-- 农业遥感关注跨区域与时空偏移，评估与蒸馏成为提升泛化的手段。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261027", "source": "oai", "checked_at": "2026-10-28T10:48:50+00:00", "source_complete": true, "candidate_count": 10, "paper_count": 6} -->
 
 ---
