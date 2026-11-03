@@ -2,6 +2,48 @@
 
 最近三天日报（最新在前）：
 
+# [20261102](./202611/20261102.md)
+## 📌 今日概况
+
+今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 11 篇。
+
+今日研究聚焦多源遥感数据融合与视觉语言模型在遥感中的应用。高光谱分类与跟踪引入测试时训练和光谱提示，多源分类强调共享模式与频率感知融合。视觉语言模型向决策与文本定位拓展，域泛化与增量变化检测受到关注。超分辨与水下图像恢复侧重数据合成与保真度评估。
+
+## ✨ 今日亮点
+
+- 视觉测试时训练与光谱提示用于高光谱分类和跟踪
+- 多源遥感分类强调共享模式与频率感知跨层融合
+- 视觉语言模型拓展至地球观测决策与阿拉伯地理文本定位
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261102] Spectral-spatial vision test-time training for hyperspectral image classification | Zhao Xiang | College of Mathematical Sciences, Harbin Engineering University | 提出光谱-空间视觉测试时训练方法，用于高光谱图像分类。 | [#1614](https://github.com/thinson/RS-PaperClaw/issues/1614) |
+| [20261102] Latent Spectral Prompting for Multimodal Hyperspectral Object Tracking | Cai Wangshu, Zhou Jun, Wang Lei, Mohammad Aminul Islam, Han Xu, Paliwal Kuldip | Griffith University, Australia；East China Normal University, China；Bangladesh Agricultural University, Bangladesh | 引入潜在光谱提示，缓解RGB与高光谱域差异以提升多模态跟踪。 | [#1615](https://github.com/thinson/RS-PaperClaw/issues/1615) |
+| [20261102] Performance evaluation of super-resolution techniques for characterization and phenotyping of commodity crops using multispectral imagery | Karukayil Abhiram, João F. C. Mota, Vásquez-Guevara Mateo, Arevalo-Ramirez Tito, Fernando Auat Cheein | School of Engineering and Physical Sciences, Heriot-Watt University, Edinburgh, UK；Department of Electrical Engineering, Department of Mechanical Engineering and Metallurgy, School of Engineering, Faculty of；School of Mathematical and Computer Sciences, Heriot-Watt University, Edinburgh, UK；Harper Adams University, England, UK | 评估超分辨技术对多光谱作物表征与表型分析性能的影响。 | [#1616](https://github.com/thinson/RS-PaperClaw/issues/1616) |
+| [20261102] Bridging Low-Level Image Fusion and High-Level Semantic Understanding | Dong Guangyuan, Shen Lingdong, Zhang Xudong, Jing Haodong, Wang Haoyu, Li Zihao, Ying Zonghao, Song Ziyu, Liu Shenghao, Luo Jiachen, Zhang Hao | Peking University；Xi'an Jiaotong University；Nankai University；Institute of Automation, Chinese Academy of Sciences | 连接低层图像融合与高层语义理解，结合对比学习和视觉语言模型。 | [#1617](https://github.com/thinson/RS-PaperClaw/issues/1617) |
+| [20261102] Shared-Pattern Collaborative Network for Multi-Source Remote Sensing Data Classification | Yang Chenfang, Gong Chuanzheng, Gao Feng, Dong Junyu, Du Qian | State Key Laboratory of Physical Oceanography, Ocean University of China, Qingdao, China. (；Department of Electrical and Computer Engineering, Mississippi State University, Starkville, MS USA | 提出共享模式协作网络，用于多源遥感数据分类与跨模态学习。 | [#1618](https://github.com/thinson/RS-PaperClaw/issues/1618) |
+| [20261102] Cross-Layer Refinement and Frequency-aware Fusion Network for Multi-Source Remote Sensing Image Classification | Xiao Wenhan, Gong Chuanzheng, Gao Feng, Dong Junyu, Du Qian | State Key Laboratory of Physical Oceanography, Ocean University of China, Qingdao, China；Department of Electrical and Computer Engineering, Mississippi State University, Starkville, MS USA. and elevation information [4] | 设计跨层细化与频率感知融合网络，提升多源遥感图像分类。 | [#1619](https://github.com/thinson/RS-PaperClaw/issues/1619) |
+| [20261102] KAUSTics-Net: Diffusion-Based Through-Water UAV Restoration with a Semi-Synthetic Dataset | Scilla Dario, Omar A. Lopez, Johansen Kasper, Brian O. Nieuwenhuis, Matthew F. McCabe | and Livability Initiative, King Abdullah University of Science and Technology；Red Sea Research Center, Biological and Environmental Science and；Engineering Division, King Abdullah University of Science and Technology | 基于扩散模型和半合成数据集，恢复浅水环境无人机水下图像。 | [#1620](https://github.com/thinson/RS-PaperClaw/issues/1620) |
+| [20261102] HyperFlow: Class-Incremental Semantic Change Detection via Hyperbolic Flow | Béchaz Manon, Buecher Léo, Dalsasso Emanuele, Tomoiaga Ciprian, Jayet Patrick, Detyniecki Marcin, Chapel Laetitia, Drumetz Lucas, Courty Nicolas, Tuia Devis | University of the Witwatersrand；Université de Bretagne Sud, France；Institut Agro Rennes-Angers, France；Lab-STICC | 利用双曲流实现类增量语义变化检测，建模地物覆盖转变。 | [#1621](https://github.com/thinson/RS-PaperClaw/issues/1621) |
+| [20261102] EO-Jev: Decision Model for Earth Observation | Mohamed Atef Abouelhadid, Diaa Addeen Abuhani, Muhammad Akhtar Munir, Fahad Shahbaz Khan, Khan Salman | Mohamed Bin Zayed University of Artificial Intelligence；Massachusetts Institute of Technology；Australian National University；Linköping University Sweden | 构建地球观测决策模型，结合视觉语言模型与低秩微调校准。 | [#1622](https://github.com/thinson/RS-PaperClaw/issues/1622) |
+| [20261102] ArabGeoText: Tool-Augmented Vision-Language Models for Arabic Geospatial Text Spotting | Bazi Yakoub, Alsaleh Sarah, Mohamad M. Al Rahhal, Mohamed A. Mekhtiche, Zuair Mansour | the Computer Engineering Department, College of Computer and Information Sciences, King Saud University, Riyadh, Saudi Arabia (；the Applied Computer Science Department, College of Applied Computer Science, King Saud University, Riyadh, Saudi Arabia ( | 提出工具增强视觉语言模型与基准数据集，用于阿拉伯地理文本定位。 | [#1623](https://github.com/thinson/RS-PaperClaw/issues/1623) |
+| [20261102] ASCoR: Asymmetric Semantic-Spatial Learning for Remote Sensing Domain Generalization | Wang Zitong, Lyu Shuchang, Li Meng, Wang Qiang, Cheng Guangliang, Shi Zhenwei | Beihang University；University of Science and Technology Beijing；University of Liverpool；Guangdong Electronic Information Engineering Research Institute, University of Electronic Science and Technology of China | 采用非对称语义-空间学习，提升遥感语义分割域泛化能力。 | [#1624](https://github.com/thinson/RS-PaperClaw/issues/1624) |
+
+## 🔎 观察
+
+- 高光谱与多源融合研究正从单一特征提取转向测试时适应和跨模态提示，强调域差异缓解。
+- 视觉语言模型在遥感中从描述生成走向决策与文本定位，工具增强和校准成为新关注点。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261102", "source": "oai", "checked_at": "2026-11-03T12:40:22+00:00", "source_complete": true, "candidate_count": 14, "paper_count": 11} -->
+
+---
+
 # [20261101](./202611/20261101.md)
 ## 📌 今日概况
 
@@ -72,38 +114,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261031", "source": "oai", "checked_at": "2026-11-03T12:20:24+00:00", "source_complete": true, "candidate_count": 10, "paper_count": 8} -->
-
----
-
-# [20261030](./202610/20261030.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究趋势聚焦于遥感数据的高效利用与领域自适应。一方面，有工作探索直接从卫星影像端到端学习屋顶太阳能潜力，绕过显式几何建模，简化流程并降低对辅助数据的依赖；另一方面，针对SAR时间序列作物分类，提出物理引导的自监督预训练方法，结合极化特征与BERT架构，提升标签稀缺场景下的分类性能。两项研究均体现了减少人工特征工程、增强模型自主表征能力的倾向。
-
-## ✨ 今日亮点
-
-- 端到端学习屋顶太阳能潜力，无需显式几何建模。
-- 物理引导自监督预训练，融合极化特征与BERT。
-- 两项研究均致力于降低对人工特征和标签的依赖。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261030] An Empirical Study on Learning Rooftop Solar Potential from Satellite Imagery Directly Without Explicit Geometry | Lee Joshua | Skyline High School | 实证研究直接从卫星影像端到端学习屋顶太阳能潜力，避免显式几何建模。 | [#1598](https://github.com/thinson/RS-PaperClaw/issues/1598) |
-| [20261030] SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification | Wang Jieqiu, Zhang Yuhan, Zheng Bo, Zhang Shaoming | College of Surveying and Geo-Informatics, Tongji University, Shanghai, China ( | 提出物理引导自监督预训练SAR-TS-BERT，结合极化特征提升作物分类。 | [#1599](https://github.com/thinson/RS-PaperClaw/issues/1599) |
-
-## 🔎 观察
-
-- 端到端学习减少中间几何建模误差，但可解释性与泛化性仍需验证。
-- 自监督预训练结合物理特征，有望缓解SAR作物分类标签稀缺问题。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261030", "source": "oai", "checked_at": "2026-11-02T12:51:57+00:00", "source_complete": true, "candidate_count": 5, "paper_count": 2} -->
 
 ---
