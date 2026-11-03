@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20261101](./202611/20261101.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦遥感基础模型与多模态推理。SpecUltra提出统一光谱图像基础模型，强调跨传感器迁移；EarthJev探索视觉语言模型在Sentinel-2土地覆盖问答中的校准非生成式回答；第三篇则转向嵌入空间预测地表变化，利用Transformer与基础模型表征。整体趋势显示，遥感AI正从单一任务模型向统一表征、跨模态对齐与可解释问答演进，同时注重模型校准与嵌入空间动态建模。
+
+## ✨ 今日亮点
+
+- SpecUltra统一异构光谱图像基础模型，支持跨传感器迁移。
+- EarthJev实现Sentinel-2土地覆盖的自然语言校准问答。
+- 嵌入空间预测地表变化，探索基础模型动态表征能力。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261101] SpecUltra: A Unified Foundation Model for Heterogeneous Spectral Images | Kong Weili, Liu Baisen, Bi Xiaojun, Pei Jiaming | School of Information and Communication Engineering, Harbin Engineering University, Harbin 150001, China；School of Electronic and Information Engineering, Heilongjiang Institute of Technology, Harbin 150050, China；School of Information Engineering, Minzu University of China, Beijing 100081, China；School of Computer Science, The University of Sydney, Sydney, NSW 2006, Australia | 提出SpecUltra统一基础模型，面向高光谱与多光谱异构图像，强调跨传感器迁移能力。 | [#1610](https://github.com/thinson/RS-PaperClaw/issues/1610) |
+| [20261101] EarthJev: Calibrated, Non-Generative Answers to Natural-Language Questions about Sentinel-2 Land Cover | Benfenati Domenico, Antonio Maria Rinaldi, Tommasino Cristian | Department of Electrical Engineering and Information Technology (DIETI), University of Naples Federico II, Via Claudio, 21, Naples, 80125, Italy | EarthJev针对Sentinel-2土地覆盖，提供校准且非生成式的自然语言问答方法。 | [#1611](https://github.com/thinson/RS-PaperClaw/issues/1611) |
+| [20261101] Forecasting Earth Surface Change in Embedding Space | Li Jingtao, Jaffer Sadiq, Madhavapeddy Anil, Sousa Pedro, Ortiz Anthony, Gao Kyle, Feng Zhengpeng, Zhong Yanfei, White Kevin, Keshav Srinivasan | Department of Computer Science, University of Cambridge；Microsoft AI for Good Research Lab；Aalto University；Wuhan University | 在嵌入空间预测地球表面变化，结合Transformer与基础模型表征进行动态建模。 | [#1612](https://github.com/thinson/RS-PaperClaw/issues/1612) |
+
+## 🔎 观察
+
+- 光谱基础模型趋向统一异构传感器，跨传感器迁移成为关键评估维度。
+- 遥感问答强调校准与非生成式，反映对可靠性与可解释性的需求上升。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261101", "source": "oai", "checked_at": "2026-11-03T12:28:18+00:00", "source_complete": true, "candidate_count": 8, "paper_count": 3} -->
+
+---
+
 # [20261031](./202610/20261031.md)
 ## 📌 今日概况
 
@@ -71,41 +105,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261030", "source": "oai", "checked_at": "2026-11-02T12:51:57+00:00", "source_complete": true, "candidate_count": 5, "paper_count": 2} -->
-
----
-
-# [20261029](./202610/20261029.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日研究呈现多学科交叉趋势：量子测量与量子启发计算被引入高光谱小目标检测和伪标签生成，提升遥感数据利用效率；无人机视角与视觉强化学习结合，推动交通信号控制的可泛化策略；计算神经科学方法用于解析地球观测嵌入的可解释性；因果推断约束深度学习，增强热带气旋快速增强预警的物理一致性。整体上，遥感AI正从单纯精度提升转向物理机理融合与可解释性增强。
-
-## ✨ 今日亮点
-
-- 量子测量设计突破无人机高光谱小目标检测的直接成像局限。
-- 无人机鸟瞰视角结合视觉强化学习实现可泛化交通信号控制。
-- 因果先验约束深度学习提升热带气旋快速增强预警可靠性。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261029] Beyond Direct Imaging: Quantum Measurement Design for Small-Target Detection in UAV Hyperspectral Sensing | Qian Qipeng, Jin Jialiang, Wang Shihao, Qian Yuntao | College of Artificial Intelligence, Zhejiang University, Hangzhou, China；Department of Computer Science, Whiting School of Engineering, Johns Hopkins University, Baltimore, MD, USA (；Department of Mathematics, University of Wisconsin-Madison, Madison, WI, USA (；College of Artificial Intelligence, Zhejiang University, Hangzhou, China ( | 提出量子测量设计方法，用于无人机高光谱小目标检测，超越直接成像限制。 | [#1592](https://github.com/thinson/RS-PaperClaw/issues/1592) |
-| [20261029] BEVLight: Generalizable Traffic Signal Control from UAV Bird's-Eye Views | Wang Maonan, Cai Yuxin, Liu Junming, Huang Zhengyan, Yu Yi, Wang Ding, Zhang Yifeng, Chen Yirong | The Chinese University of Hong Kong, Shenzhen；Shanghai AI Lab；Nanyang Technological University；National University of Singapore | 利用无人机鸟瞰视角和视觉强化学习，学习可泛化的交通信号控制策略。 | [#1593](https://github.com/thinson/RS-PaperClaw/issues/1593) |
-| [20261029] Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data | Singh Abhishek, Cuozzo Giovanni, Jacob Alexander, Notarnicola Claudia | Institute for Earth Observation, Eurac Research, Bolzano, Italy | 设计量子启发卷积网络，从多模态地球观测数据生成高分辨率伪标签。 | [#1594](https://github.com/thinson/RS-PaperClaw/issues/1594) |
-| [20261029] NeurEO: dissecting Earth observation embeddings with computational neuroscience | Thijs L van der Plas, Jacob JW Bakermans, Ioannis N Athanasiadis | Wageningen University \& Research, NL；University College London, UK | 借鉴计算神经科学方法，解析AlphaEarth地球观测嵌入的表征机制。 | [#1595](https://github.com/thinson/RS-PaperClaw/issues/1595) |
-| [20261029] Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones | Li Xinrui, Jin Yijun, Dong Yifan, Shu Shoujuan | Department of Atmospheric Sciences, School of Earth Sciences, Zhejiang University, Hangzhou, 310058, China；School of Mathematical Sciences, Zhejiang University, Hangzhou, 310058, China | 引入因果先验约束深度学习，实现西北太平洋热带气旋快速增强预警。 | [#1596](https://github.com/thinson/RS-PaperClaw/issues/1596) |
-
-## 🔎 观察
-
-- 量子概念在遥感中从理论走向应用，但当前工作多属启发式借鉴，实际量子优势尚待验证。
-- 可解释性与物理约束成为遥感AI新焦点，反映领域从黑箱精度向可信决策的范式转变。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261029", "source": "oai", "checked_at": "2026-10-30T11:06:04+00:00", "source_complete": true, "candidate_count": 9, "paper_count": 5} -->
 
 ---
