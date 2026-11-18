@@ -83,35 +83,34 @@ Powered by OpenClaw🦞
 
 ---
 
-# [20261108](./202611/20261108.md)
+# [20261115](./202611/20261115.md)
 ## 📌 今日概况
 
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
 
-今日研究聚焦遥感数据的高效利用与模型可解释性。一方面，利用多光谱卫星数据直接进行地表太阳辐射临近预报，结合时序注意力机制提升预测精度；另一方面，探索稀疏自编码器分解地球观测基础模型嵌入特征，以增强可解释性。两项工作分别从应用与理论层面推动遥感AI发展，体现了对实时预测与模型透明度的共同关注。
-
-## ✨ 今日亮点
-
-- 多光谱卫星数据直接用于地表太阳辐射临近预报，结合时序注意力提升精度。
-- 稀疏自编码器分解地球嵌入特征，增强基础模型可解释性。
-- 研究覆盖应用预测与理论解释，体现遥感AI多维度发展。
+今日论文总体呈现出遥感与AI交叉深化趋势。
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261108] Direct Multispectral Satellite Nowcasting of Gridded Surface Solar Radiation | Xie Tianyu, Zeng Zhaoliang, Liang Zhehao, Gui Ke, Zhang Xutao, Wang Yaqiang, Guan Dabo, Che Huizheng | ¹ State Key Laboratory of Severe Weather Meteorological Science and Technology, Chinese Academy；² Xiong'an Institute of Meteorological Artificial Intelligence, Xiong'an, Hebei, China；Department of Earth System Sciences, Tsinghua University, Beijing 10084, China；The Bartlett School of Sustainable Construction, University College London, London WC1 E 7 HB | 利用Himawari-8多光谱卫星数据与时序注意力，直接临近预报网格化地表太阳辐射。 | [#1626](https://github.com/thinson/RS-PaperClaw/issues/1626) |
-| [20261108] Decomposing Earth Embeddings with Sparse Autoencoders | Benson Vitus, Yang Fanny, Reichstein Markus | Max Planck Institute for Biogeochemistry, Jena, Germany | 采用稀疏自编码器分解地球观测基础模型嵌入，提升特征可解释性。 | [#1627](https://github.com/thinson/RS-PaperClaw/issues/1627) |
+| [20261115] GeoReVis: Learning Selective Revision and Evidence Consolidation for Remote Sensing Segmentation | An Ke, Chen Liang, Wang Yupei | Beijing Institute of Technology | 聚焦Remote Sensing Segmentation、Language-Guided Segmentation，给出可复现的模型与评测方案。 | [#1664](https://github.com/thinson/RS-PaperClaw/issues/1664) |
+| [20261115] Spatial phase coherence and its applications to masking and adaptive neighborhood sizing in multitemporal InSAR | Heimpel Magnus, Hajnsek Irena, Frey Othmar | Institute of Environmental Engineering, ETH Zurich；Microwaves and Radar Institute, German Aerospace Center (DLR)；center, and the set of averaged pixels the ensemble | 聚焦Spatial Phase Coherence、Multitemporal InSAR，给出可复现的模型与评测方案。 | [#1665](https://github.com/thinson/RS-PaperClaw/issues/1665) |
+| [20261115] MARLIN: Multiscale And Directional Sparse Representation Learning for Imbalanced SAR Ship Classification | Hosseiny Benyamin, Kamirul Kamirul, Pappas Odysseas, Achim Alin | the VI-Labs, University of Bristol, BS1 6 AZ Bristol, U.K. ( | 聚焦SAR Ship Classification、Imbalanced Learning，给出可复现的模型与评测方案。 | [#1666](https://github.com/thinson/RS-PaperClaw/issues/1666) |
+| [20261115] Machine Learning for Near Real-Time Identification of Wildfire Burned Areas | Nguyen Khoi, Adam W. Bargteil, Halem Milton | Department of Computer Science and Electrical Engineering；University of Maryland, Baltimore County | 聚焦Machine Learning、Satellite Images，给出可复现的模型与评测方案。 | [#1667](https://github.com/thinson/RS-PaperClaw/issues/1667) |
+| [20261115] Illusion of Explainability: A Sanity Check for Spectral Band Attribution in Satellite Time-Series Crop Classification | Tahiliani Sumit, Mathur Avi, Agarwal Sandarbh, Sathish Rakshith, Nambiar Ashwathi | Shiv Nadar University | 聚焦Multispectral Remote Sensing、Crop Classification，给出可复现的模型与评测方案。 | [#1668](https://github.com/thinson/RS-PaperClaw/issues/1668) |
+| [20261115] SemLite-GS: Semantic-Selective Parallel Gaussian Splatting for Lightweight Building Reconstruction from UAV Oblique Imagery | Wang Tengfei, Wang Xin, Li Zihan, Ji Quanjian, Yu Yifei, Lin Dong, Zhan Zongqian | School of Geodesy and Geomatics, Wuhan University；Space Engineering University | 聚焦3D Gaussian Splatting、UAV Oblique Imagery，给出可复现的模型与评测方案。 | [#1669](https://github.com/thinson/RS-PaperClaw/issues/1669) |
+| [20261115] Real-Time Air Pollution Monitoring and Tracking via Adaptive Density-Driven Multi-UAV Coordination | Martinez Julian, Singh Ruchika, Afrazi Mohammad, Lee Kooktae | Department of Mechanical and Aerospace Engineering, Texas Tech University, Lubbock, TX USA (；Department of Mechanical Engineering and Materials Science, Duke University, Durham, NC USA ( | 聚焦Multi-UAV Coordination、Air Pollution Monitoring，给出可复现的模型与评测方案。 | [#1670](https://github.com/thinson/RS-PaperClaw/issues/1670) |
 
 ## 🔎 观察
 
-- 临近预报与可解释性成为遥感AI热点，分别对应实时应用与模型信任需求。
-- 多光谱数据与基础模型结合，显示遥感AI向数据驱动与解释并重演进。
+- 基础模型与遥感任务结合持续增强，评测与推理能力成为关键。
+- 多数工作关注算法有效性与泛化，而非硬件实现。
 
 ---
 
 Powered by OpenClaw🦞
 
-<!-- rs-pipeline: {"date": "20261108", "source": "api", "checked_at": "2026-11-12T04:16:17+00:00", "source_complete": true, "candidate_count": 4, "paper_count": 2} -->
+<!-- rs-pipeline: {"date": "20261115", "source": "api", "checked_at": "2026-11-18T10:41:49+00:00", "source_complete": true, "candidate_count": 8, "paper_count": 7} -->
 
 ---
