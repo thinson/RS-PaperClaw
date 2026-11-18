@@ -2,6 +2,45 @@
 
 最近三天日报（最新在前）：
 
+# [20261117](./202611/20261117.md)
+## 📌 今日概况
+
+今日共检索候选论文 16 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+
+今日研究趋势呈现多模态融合与生成式方法在遥感中的深化应用。SWIR波段合成与高光谱-LiDAR分类均强调跨模态特征校正与可靠性驱动学习；超分辨率工作引入2D高斯泼溅实现任意尺度重建；SAR基础模型适配多模态大语言模型成为新方向。此外，无训练变化检测与事件相机海上搜救检测拓展了遥感应用边界，极化SAR统计建模与高海拔小目标数据集则夯实了基础方法与数据支撑。
+
+## ✨ 今日亮点
+
+- SWIR-cGAN利用条件GAN与注意力U-Net从VNIR影像合成短波红外波段，缓解数据稀缺。
+- 2D高斯泼溅结合亚像素偏移帧实现任意尺度遥感超分，仅需一次编码。
+- Sarvia快速适配MLLM中已有的SAR基础模型，降低SAR多模态应用门槛。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261117] SWIR-cGAN: Synthesizing SWIR Bands Using VNIR Imagery from CBERS and AMAZONIA-1 | Alisson Cleiton de Oliveira, Rennan de Freitas Bezerra Marujo, Thales Sehn Körting | 原文作者栏未列出单位 | 提出SWIR-cGAN，用条件GAN和注意力U-Net从CBERS与AMAZONIA-1的VNIR影像合成SWIR波段。 | [#1643](https://github.com/thinson/RS-PaperClaw/issues/1643) |
+| [20261117] You Only Encode Once: Sub-Pixel-Shifted Frames for Arbitrary-Scale Remote Sensing Super-Resolution with 2D Gaussian Splatting | Liu Canjie, Wang Liuqian, Ming Qi, Lu Wei, Hao Xiaohan, Wu Yuefei, Chao Wentao, Shi Lei | Zhengzhou University；Beijing University of Technology；Anhui University | 提出仅编码一次框架，利用亚像素偏移帧与2D高斯泼溅实现任意尺度遥感多帧超分辨率。 | [#1644](https://github.com/thinson/RS-PaperClaw/issues/1644) |
+| [20261117] Reliability-Driven Feature Correction for Hyperspectral and LiDAR Classification | Zhang Lianming, Wang Xiaolu, Song Qiya, Liu Jinyang, Dian Renwei, Kang Xudong | School of Information Science and Engineering, Hunan Normal University, Changsha, China | 面向高光谱与LiDAR分类，设计可靠性驱动特征校正模块与类原型库以融合跨模态信息。 | [#1645](https://github.com/thinson/RS-PaperClaw/issues/1645) |
+| [20261117] SARVIA: Fast-Adapting the Strong SAR Foundation Models That Are Already in Your MLLMs | Li Yuxuan, Tian Zichen, Sun Qianru | Singapore Management University | Sarvia快速适配多模态大语言模型中已有的强SAR基础模型，实现自适应后预训练。 | [#1646](https://github.com/thinson/RS-PaperClaw/issues/1646) |
+| [20261117] Event-Based Person Detection for Maritime UAV Search | Ning Zijie, Vandewalle Patrick | EAVISE-PSI, ESAT, KU Leuven | 面向海上无人机搜救，构建基于事件相机的人员检测方法以应对动态视觉挑战。 | [#1647](https://github.com/thinson/RS-PaperClaw/issues/1647) |
+| [20261117] Training-Free Building Change Detection with Example-Induced Discriminants | Lu Zhi, Hong Bin, Peng Zhenming | University of Electronic Science | 提出无训练建筑物变化检测框架，利用示例诱导线性判别与特征对比实现ViT特征迁移。 | [#1648](https://github.com/thinson/RS-PaperClaw/issues/1648) |
+| [20261117] Generation of Sample Complex Wishart Distributed Matrices and Change Detection in Polarimetric SAR Data | Allan A. Nielsen, Skriver Henning, Conradsen Knut | pt Technical University of Denmark；pt b DTU Space -- National Space Institute | 研究极化SAR样本复Wishart矩阵生成及基于检验统计量的变化检测方法。 | [#1649](https://github.com/thinson/RS-PaperClaw/issues/1649) |
+| [20261117] A tiny object detection dataset for high-altitude open-water search and rescue | Xu Hui, Hou Chenfei, Wei Henglai, Wang Hao, Jin Yidong, Niu Xiulin, Zhang Haoyang, Zhang Hui, Xu Tianshi | School of Transportation Science and Engineering, Beihang University, Beijing 100191, China；Hangzhou International Innovation Institute of Beihang University, Beihang University | 发布高海拔开阔水域搜救小目标检测数据集，聚焦救生圈等微小目标识别。 | [#1650](https://github.com/thinson/RS-PaperClaw/issues/1650) |
+
+## 🔎 观察
+
+- 生成式与基础模型适配成为遥感新增长点，但合成波段与模型迁移的物理一致性仍需验证。
+- 无训练与轻量化方法在变化检测和超分中兴起，反映对标注依赖和计算成本的持续关注。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261117", "source": "api", "checked_at": "2026-11-18T10:22:54+00:00", "source_complete": true, "candidate_count": 16, "paper_count": 8} -->
+
+---
+
 # [20261108](./202611/20261108.md)
 ## 📌 今日概况
 
@@ -74,39 +113,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261102", "source": "oai", "checked_at": "2026-11-03T12:40:22+00:00", "source_complete": true, "candidate_count": 14, "paper_count": 11} -->
-
----
-
-# [20261101](./202611/20261101.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦遥感基础模型与多模态推理。SpecUltra提出统一光谱图像基础模型，强调跨传感器迁移；EarthJev探索视觉语言模型在Sentinel-2土地覆盖问答中的校准非生成式回答；第三篇则转向嵌入空间预测地表变化，利用Transformer与基础模型表征。整体趋势显示，遥感AI正从单一任务模型向统一表征、跨模态对齐与可解释问答演进，同时注重模型校准与嵌入空间动态建模。
-
-## ✨ 今日亮点
-
-- SpecUltra统一异构光谱图像基础模型，支持跨传感器迁移。
-- EarthJev实现Sentinel-2土地覆盖的自然语言校准问答。
-- 嵌入空间预测地表变化，探索基础模型动态表征能力。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261101] SpecUltra: A Unified Foundation Model for Heterogeneous Spectral Images | Kong Weili, Liu Baisen, Bi Xiaojun, Pei Jiaming | School of Information and Communication Engineering, Harbin Engineering University, Harbin 150001, China；School of Electronic and Information Engineering, Heilongjiang Institute of Technology, Harbin 150050, China；School of Information Engineering, Minzu University of China, Beijing 100081, China；School of Computer Science, The University of Sydney, Sydney, NSW 2006, Australia | 提出SpecUltra统一基础模型，面向高光谱与多光谱异构图像，强调跨传感器迁移能力。 | [#1610](https://github.com/thinson/RS-PaperClaw/issues/1610) |
-| [20261101] EarthJev: Calibrated, Non-Generative Answers to Natural-Language Questions about Sentinel-2 Land Cover | Benfenati Domenico, Antonio Maria Rinaldi, Tommasino Cristian | Department of Electrical Engineering and Information Technology (DIETI), University of Naples Federico II, Via Claudio, 21, Naples, 80125, Italy | EarthJev针对Sentinel-2土地覆盖，提供校准且非生成式的自然语言问答方法。 | [#1611](https://github.com/thinson/RS-PaperClaw/issues/1611) |
-| [20261101] Forecasting Earth Surface Change in Embedding Space | Li Jingtao, Jaffer Sadiq, Madhavapeddy Anil, Sousa Pedro, Ortiz Anthony, Gao Kyle, Feng Zhengpeng, Zhong Yanfei, White Kevin, Keshav Srinivasan | Department of Computer Science, University of Cambridge；Microsoft AI for Good Research Lab；Aalto University；Wuhan University | 在嵌入空间预测地球表面变化，结合Transformer与基础模型表征进行动态建模。 | [#1612](https://github.com/thinson/RS-PaperClaw/issues/1612) |
-
-## 🔎 观察
-
-- 光谱基础模型趋向统一异构传感器，跨传感器迁移成为关键评估维度。
-- 遥感问答强调校准与非生成式，反映对可靠性与可解释性的需求上升。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261101", "source": "oai", "checked_at": "2026-11-03T12:28:18+00:00", "source_complete": true, "candidate_count": 8, "paper_count": 3} -->
 
 ---
