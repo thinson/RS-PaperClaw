@@ -259,8 +259,16 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
 
     save_index(repo, index)
     if stats["failed_arxiv_ids"]:
-        print(f"INCOMPLETE: {len(stats['failed_arxiv_ids'])} selected papers failed; refusing to publish digest")
-        raise SystemExit(65)
+        allow_partial = os.environ.get("RS_PUBLISH_INCOMPLETE", "").strip().lower() in {"1", "true", "yes"}
+        if not allow_partial:
+            print(f"INCOMPLETE: {len(stats['failed_arxiv_ids'])} selected papers failed; refusing to publish digest")
+            raise SystemExit(65)
+        print(
+            f"WARN INCOMPLETE: {len(stats['failed_arxiv_ids'])} selected papers failed QC; "
+            "publishing digest with the rest (RS_PUBLISH_INCOMPLETE=1)"
+        )
+        for item in stats.get("failed_items", []):
+            print(f"  skipped {item.get('arxiv_id')}: {item.get('error')}")
     print("[5/5] 完成")
 
 

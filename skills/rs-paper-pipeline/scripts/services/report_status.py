@@ -1,6 +1,7 @@
 """Durable evidence for completed empty reports, shared by recovery and skip checks."""
 from datetime import datetime, timedelta, timezone
 import json
+import os
 import re
 
 
@@ -22,11 +23,17 @@ def completion_marker(date: str, stats: dict | None, paper_count: int) -> str:
         return ""
     selected = stats.get("selected_arxiv_ids", [])
     successful = stats.get("successful_selected_arxiv_ids", [])
-    if stats.get("failed_arxiv_ids") or set(selected) != set(successful) or len(set(selected)) != paper_count:
+    failed = stats.get("failed_arxiv_ids") or []
+    incomplete = bool(failed) or set(selected) != set(successful) or len(set(selected)) != paper_count
+    allow_partial = os.environ.get("RS_PUBLISH_INCOMPLETE", "").strip().lower() in {"1", "true", "yes"}
+    if incomplete and not allow_partial:
         raise ValueError("Cannot mark an incomplete report as completed")
     evidence = {"date": date, "source": stats.get("metadata_source"),
                 "checked_at": stats["source_checked_at"], "source_complete": True,
                 "candidate_count": stats["candidate_count"], "paper_count": paper_count}
+    if incomplete:
+        evidence["partial"] = True
+        evidence["skipped_arxiv_ids"] = sorted(failed)
     if not paper_count and not empty_result_is_settled(date, evidence["checked_at"]):
         raise ValueError("Empty result is too recent to finalize")
     return "\n\n<!-- rs-pipeline: " + json.dumps(evidence, ensure_ascii=False) + " -->"

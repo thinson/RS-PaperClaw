@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import os
 import re
 import json
 from collections import defaultdict
@@ -76,7 +77,15 @@ def _augment_papers_from_stats(repo, papers: list[dict], stats: dict | None) -> 
         return papers
 
     if stats.get("failed_arxiv_ids") or set(stats.get("selected_arxiv_ids", [])) != set(stats.get("successful_selected_arxiv_ids", [])):
-        raise RuntimeError("Selected paper processing is incomplete; refusing partial digest")
+        allow_partial = os.environ.get("RS_PUBLISH_INCOMPLETE", "").strip().lower() in {"1", "true", "yes"}
+        if not allow_partial:
+            raise RuntimeError("Selected paper processing is incomplete; refusing partial digest")
+        failed = stats.get("failed_arxiv_ids") or []
+        print(
+            "WARN PARTIAL DIGEST: "
+            f"{len(failed)} selected papers failed QC ({', '.join(failed)}); "
+            "publishing digest with the rest (RS_PUBLISH_INCOMPLETE=1)"
+        )
     selected_ids = stats.get("successful_selected_arxiv_ids") or []
     if not selected_ids:
         return []
