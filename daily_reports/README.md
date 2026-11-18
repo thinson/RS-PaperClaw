@@ -41,6 +41,48 @@ Powered by OpenClaw🦞
 
 ---
 
+# [20261116](./202611/20261116.md)
+## 📌 今日概况
+
+今日共检索候选论文 22 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 11 篇。
+
+今日研究覆盖SAR目标识别、遥感图像生成评估、灾害风险与应急响应、超高分遥感视觉语言模型、SAR层析与洪泛区监测等方向。趋势上，多篇工作反思模型可靠性：SAR识别关注背景捷径与角度缺口，生成评估引入人类偏好基准，灾害筛查开展回溯失败分析。同时，多模态融合与交互式分割推动三维场景理解，无人机影像中的冗余检测抑制与多类别重识别基准受到关注。
+
+## ✨ 今日亮点
+
+- SAR车辆识别研究揭示背景捷径与角度缺口对性能的影响，强调评估需控制混杂因素。
+- 遥感感知相似性研究引入多层注意力评分与人类偏好基准，推动生成质量评估更贴近人眼。
+- 多篇灾害相关研究聚焦应急场景：野火风险评估、洪泛区监测与无人机冗余检测抑制。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261116] How Much of SAR Vehicle Recognition Is the Vehicle? Background Shortcuts, Angle Gaps and Partial Libraries on MSTAR and ATRNet-STAR | Shaya Mousa | Arizona State University, Tempe, AZ, USA ( | 分析MSTAR与ATRNet-STAR上SAR车辆识别中的背景捷径、角度缺口与部分库问题，反思性能来源。 | [#1652](https://github.com/thinson/RS-PaperClaw/issues/1652) |
+| [20261116] Rethinking Perceptual Similarity for Remote Sensing: Multi-Layer Attention Scoring and Human Preference Benchmarking | Underwood Eli, Bosch Marc, Joshi Neil, Wen Jeffrey, Brown Myron | Johns Hopkins University Applied Physics Laboratory；Duke University | 针对遥感图像生成提出多层注意力感知相似性评分，并构建人类偏好基准以校准评估。 | [#1653](https://github.com/thinson/RS-PaperClaw/issues/1653) |
+| [20261116] Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment | Ho Yu-Hsuan, Xiao Yiming, Lai Hao-En, Mostafavi Ali, Samuel D. Brody | Urban Resilience.AI Lab, Zachry Department of Civil and Environmental Engineering；Texas A&M University, College Station, TX；Artie McFerrin Department of Chemical Engineering；Institute for Disaster Resilient Texas, Texas A&M University, Houston, TX | 提出地理定位感知的多模态融合方法，结合视觉语言模型评估建筑级野火风险。 | [#1654](https://github.com/thinson/RS-PaperClaw/issues/1654) |
+| [20261116] Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing | Tang Meng, Du Siyuan, Liu Yuxin, Cao Shuaishuai, Wang Di, Guo Haonan | aberAberystwyth University；njuNanjing University；pkuPeking University；csuCentral South University；whuWuhan University | 面向超高分遥感问答，提出紧凑视觉潜记忆以在压缩令牌的同时保留局部证据。 | [#1655](https://github.com/thinson/RS-PaperClaw/issues/1655) |
+| [20261116] From very fine Vertical Resolution to Range Super-Resolution on BIOMASS P-BAND SAR Data | Yu Yanghai, Tebaldini Stefano, Lei Yang, Rocca Fabio | RIDE Lab, Dipartimento di Elettronica, Informazione e Bioingegneria, Politecnico di Milano；National Space Science Center, Chinese Academy of Sciences | 利用BIOMASS P波段SAR数据，从精细垂直分辨率出发实现距离向超分辨与层析分析。 | [#1656](https://github.com/thinson/RS-PaperClaw/issues/1656) |
+| [20261116] Model-based neural network for global floodplains analysis | Audisio Pierre, Belletti Barbara, Pustelnik Nelly | ENS de Lyon, CNRS, Laboratoire de Physique, F-69342 Lyon, France；Université Jean Monnet, CNRS, UMR | 提出基于模型的神经网络，融合多光谱超分辨开展全球洪泛区分析。 | [#1657](https://github.com/thinson/RS-PaperClaw/issues/1657) |
+| [20261116] Counting What Matters: Reducing Redundant Object Detections in Overlapping UAV Mapping Imagery for Disaster Response | Schulte Max, Surmann Hartmut, Meine Julien | Westphalian University of Applied Sciences (WH) Gelsenkirchen, Germany | 针对重叠无人机测绘影像，减少灾害响应目标检测中的冗余重复计数。 | [#1658](https://github.com/thinson/RS-PaperClaw/issues/1658) |
+| [20261116] Deep Learning for Satellite-Based Mountain Hazard Screening: A Retrospective Failure Analysis on the 2021 Chamoli Rock-Ice Avalanche | Rakshit Snigdhajyoti | School of Computing Science and Engineering, VIT Bhopal University, India | 对2021 Chamoli岩冰崩开展卫星深度学习筛查的回溯失败分析，揭示筛查局限。 | [#1659](https://github.com/thinson/RS-PaperClaw/issues/1659) |
+| [20261116] STARS: Stage-Adaptive Responsibility Separation for Shadow Removal in Remote Sensing Images | Song Gaoliang, Li Chengjie, Liu Pengju, Chang Chenchen, You Jinhao, Zhang Hongzhi | Harbin Institute of Technology；Northeast Forestry University | 提出阶段自适应责任分离的级联架构，用于遥感图像阴影去除。 | [#1660](https://github.com/thinson/RS-PaperClaw/issues/1660) |
+| [20261116] InterRSGaussian: Interactive Multi-view Instance Segmentation for 3D Remote Sensing Scenes | Qi Zipeng, Zou Zhengxia, Shi Zhenwei | aSchool of Astronautics, Beihang University, Beijing, 100191, China；bKey Laboratory of Spacecraft Design Optimization and Dynamic Simulation Technologies, Ministry of Education, Beihang；University, Beijing, 100191, China | 基于3D高斯开展交互式多视图实例分割，面向三维遥感场景理解。 | [#1661](https://github.com/thinson/RS-PaperClaw/issues/1661) |
+| [20261116] VisDrone-ReID: A Unified Multi-Category Object Re-Identification Benchmark | Asmau Lawal Bilbis, Nathanael L. Baisa, Jayavel Amudhavel | School of Computer Science and Informatics；De montfort University | 构建VisDrone-ReID统一多类别目标重识别基准，支持无人机影像留一评估。 | [#1662](https://github.com/thinson/RS-PaperClaw/issues/1662) |
+
+## 🔎 观察
+
+- 今日多篇工作从追求精度转向审视评估可靠性，背景捷径、失败回溯与人类偏好基准成为共同关切。
+- 灾害与应急应用密集出现，方法覆盖多模态融合、冗余检测抑制与筛查失败分析，强调落地约束。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261116", "source": "api", "checked_at": "2026-11-18T10:28:26+00:00", "source_complete": true, "candidate_count": 22, "paper_count": 11} -->
+
+---
+
 # [20261108](./202611/20261108.md)
 ## 📌 今日概况
 
@@ -71,47 +113,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261108", "source": "api", "checked_at": "2026-11-12T04:16:17+00:00", "source_complete": true, "candidate_count": 4, "paper_count": 2} -->
-
----
-
-# [20261102](./202611/20261102.md)
-## 📌 今日概况
-
-今日共检索候选论文 14 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 11 篇。
-
-今日研究聚焦多源遥感数据融合与视觉语言模型在遥感中的应用。高光谱分类与跟踪引入测试时训练和光谱提示，多源分类强调共享模式与频率感知融合。视觉语言模型向决策与文本定位拓展，域泛化与增量变化检测受到关注。超分辨与水下图像恢复侧重数据合成与保真度评估。
-
-## ✨ 今日亮点
-
-- 视觉测试时训练与光谱提示用于高光谱分类和跟踪
-- 多源遥感分类强调共享模式与频率感知跨层融合
-- 视觉语言模型拓展至地球观测决策与阿拉伯地理文本定位
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261102] Spectral-spatial vision test-time training for hyperspectral image classification | Zhao Xiang | College of Mathematical Sciences, Harbin Engineering University | 提出光谱-空间视觉测试时训练方法，用于高光谱图像分类。 | [#1614](https://github.com/thinson/RS-PaperClaw/issues/1614) |
-| [20261102] Latent Spectral Prompting for Multimodal Hyperspectral Object Tracking | Cai Wangshu, Zhou Jun, Wang Lei, Mohammad Aminul Islam, Han Xu, Paliwal Kuldip | Griffith University, Australia；East China Normal University, China；Bangladesh Agricultural University, Bangladesh | 引入潜在光谱提示，缓解RGB与高光谱域差异以提升多模态跟踪。 | [#1615](https://github.com/thinson/RS-PaperClaw/issues/1615) |
-| [20261102] Performance evaluation of super-resolution techniques for characterization and phenotyping of commodity crops using multispectral imagery | Karukayil Abhiram, João F. C. Mota, Vásquez-Guevara Mateo, Arevalo-Ramirez Tito, Fernando Auat Cheein | School of Engineering and Physical Sciences, Heriot-Watt University, Edinburgh, UK；Department of Electrical Engineering, Department of Mechanical Engineering and Metallurgy, School of Engineering, Faculty of；School of Mathematical and Computer Sciences, Heriot-Watt University, Edinburgh, UK；Harper Adams University, England, UK | 评估超分辨技术对多光谱作物表征与表型分析性能的影响。 | [#1616](https://github.com/thinson/RS-PaperClaw/issues/1616) |
-| [20261102] Bridging Low-Level Image Fusion and High-Level Semantic Understanding | Dong Guangyuan, Shen Lingdong, Zhang Xudong, Jing Haodong, Wang Haoyu, Li Zihao, Ying Zonghao, Song Ziyu, Liu Shenghao, Luo Jiachen, Zhang Hao | Peking University；Xi'an Jiaotong University；Nankai University；Institute of Automation, Chinese Academy of Sciences | 连接低层图像融合与高层语义理解，结合对比学习和视觉语言模型。 | [#1617](https://github.com/thinson/RS-PaperClaw/issues/1617) |
-| [20261102] Shared-Pattern Collaborative Network for Multi-Source Remote Sensing Data Classification | Yang Chenfang, Gong Chuanzheng, Gao Feng, Dong Junyu, Du Qian | State Key Laboratory of Physical Oceanography, Ocean University of China, Qingdao, China. (；Department of Electrical and Computer Engineering, Mississippi State University, Starkville, MS USA | 提出共享模式协作网络，用于多源遥感数据分类与跨模态学习。 | [#1618](https://github.com/thinson/RS-PaperClaw/issues/1618) |
-| [20261102] Cross-Layer Refinement and Frequency-aware Fusion Network for Multi-Source Remote Sensing Image Classification | Xiao Wenhan, Gong Chuanzheng, Gao Feng, Dong Junyu, Du Qian | State Key Laboratory of Physical Oceanography, Ocean University of China, Qingdao, China；Department of Electrical and Computer Engineering, Mississippi State University, Starkville, MS USA. and elevation information [4] | 设计跨层细化与频率感知融合网络，提升多源遥感图像分类。 | [#1619](https://github.com/thinson/RS-PaperClaw/issues/1619) |
-| [20261102] KAUSTics-Net: Diffusion-Based Through-Water UAV Restoration with a Semi-Synthetic Dataset | Scilla Dario, Omar A. Lopez, Johansen Kasper, Brian O. Nieuwenhuis, Matthew F. McCabe | and Livability Initiative, King Abdullah University of Science and Technology；Red Sea Research Center, Biological and Environmental Science and；Engineering Division, King Abdullah University of Science and Technology | 基于扩散模型和半合成数据集，恢复浅水环境无人机水下图像。 | [#1620](https://github.com/thinson/RS-PaperClaw/issues/1620) |
-| [20261102] HyperFlow: Class-Incremental Semantic Change Detection via Hyperbolic Flow | Béchaz Manon, Buecher Léo, Dalsasso Emanuele, Tomoiaga Ciprian, Jayet Patrick, Detyniecki Marcin, Chapel Laetitia, Drumetz Lucas, Courty Nicolas, Tuia Devis | University of the Witwatersrand；Université de Bretagne Sud, France；Institut Agro Rennes-Angers, France；Lab-STICC | 利用双曲流实现类增量语义变化检测，建模地物覆盖转变。 | [#1621](https://github.com/thinson/RS-PaperClaw/issues/1621) |
-| [20261102] EO-Jev: Decision Model for Earth Observation | Mohamed Atef Abouelhadid, Diaa Addeen Abuhani, Muhammad Akhtar Munir, Fahad Shahbaz Khan, Khan Salman | Mohamed Bin Zayed University of Artificial Intelligence；Massachusetts Institute of Technology；Australian National University；Linköping University Sweden | 构建地球观测决策模型，结合视觉语言模型与低秩微调校准。 | [#1622](https://github.com/thinson/RS-PaperClaw/issues/1622) |
-| [20261102] ArabGeoText: Tool-Augmented Vision-Language Models for Arabic Geospatial Text Spotting | Bazi Yakoub, Alsaleh Sarah, Mohamad M. Al Rahhal, Mohamed A. Mekhtiche, Zuair Mansour | the Computer Engineering Department, College of Computer and Information Sciences, King Saud University, Riyadh, Saudi Arabia (；the Applied Computer Science Department, College of Applied Computer Science, King Saud University, Riyadh, Saudi Arabia ( | 提出工具增强视觉语言模型与基准数据集，用于阿拉伯地理文本定位。 | [#1623](https://github.com/thinson/RS-PaperClaw/issues/1623) |
-| [20261102] ASCoR: Asymmetric Semantic-Spatial Learning for Remote Sensing Domain Generalization | Wang Zitong, Lyu Shuchang, Li Meng, Wang Qiang, Cheng Guangliang, Shi Zhenwei | Beihang University；University of Science and Technology Beijing；University of Liverpool；Guangdong Electronic Information Engineering Research Institute, University of Electronic Science and Technology of China | 采用非对称语义-空间学习，提升遥感语义分割域泛化能力。 | [#1624](https://github.com/thinson/RS-PaperClaw/issues/1624) |
-
-## 🔎 观察
-
-- 高光谱与多源融合研究正从单一特征提取转向测试时适应和跨模态提示，强调域差异缓解。
-- 视觉语言模型在遥感中从描述生成走向决策与文本定位，工具增强和校准成为新关注点。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261102", "source": "oai", "checked_at": "2026-11-03T12:40:22+00:00", "source_complete": true, "candidate_count": 14, "paper_count": 11} -->
 
 ---
