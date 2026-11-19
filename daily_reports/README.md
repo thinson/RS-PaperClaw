@@ -2,6 +2,44 @@
 
 最近三天日报（最新在前）：
 
+# [20261118](./202611/20261118.md)
+## 📌 今日概况
+
+今日共检索候选论文 16 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日研究呈现三条主线：一是生成式模型与数据合成用于缓解标注稀缺，如高光谱解混训练与森林单木检测；二是多模态大模型与语义锚点结合，推动变化检测与描述、地质解译基准的可解释性评估；三是遥感数据重建与指数构建，涵盖Landsat地表温度重建和基于地理空间数据的次区级经济进展指数。整体趋势表明，研究者正从单纯提升精度转向数据效率、推理可靠性与跨任务协同。
+
+## ✨ 今日亮点
+
+- 生成式模型合成高光谱数据，支撑低成本作物残茬覆盖制图。
+- 语义锚点联合变化检测与描述，增强视觉证据可解释性。
+- 多模态大模型地质解译基准，关注推理可靠性与光谱判别。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261118] Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping | Artan Ege, Chen Shuo, Peng Andrew, Sammuel Aldrich Karya, Thiha Kyaw | University of Toronto Scarborough, Univ. of Toronto；Faculty of Arts and Science, University of Toronto；Space Systems, University of Toronto Aerospace Team；King’s College Road；University of Toronto Aerospace Team’s (UTAT) Space | 利用生成模型合成高光谱数据，训练解混方法以低成本制图作物残茬覆盖。 | [#1748](https://github.com/thinson/RS-PaperClaw/issues/1748) |
+| [20261118] Anchoring with Visual Evidence: Explicit Semantic Anchors for Joint Change Detection and Captioning | Zheng Kai, Dong Hang-Cheng, Fang Puyi, Pan Junjia, Wu Zhenkai, Zhang Wei | Zhejiang University；Harbin Institute of Technology；Harbin Institute of Technology Suzhou Research Institute；Zhejiang Gongshang University | 引入显式语义锚点，联合进行遥感变化检测与图像描述生成。 | [#1749](https://github.com/thinson/RS-PaperClaw/issues/1749) |
+| [20261118] Reliable Tree Recruitment from Scarce Annotations for Forest Inventory Expansion | Luiz Fernando Souza Luz, Pedro J. Soto Vega, Matheus Pinheiro Ferreira, Laura Elena Cué la Rosa, Hudson Franklin Pessoa Veras, Ernandes Macedo da Cunha Neto, Evandro Orfanó Figueiredo, Ana Paula Dalla Corte, Carlos Roberto Sanquetta, José Matheus Segre Moneva Viveiros, Matheus Santos Fuza, Heitor Eduardo Ferreira Campos Morato Filpi, Cristiano Vinícius Vidal, Vinícius Moura Costa, Débora Nascimento Rosário, Danilo Roberti Alves de Almeida, Paulo Guilherme Molin, Dário Augusto Borges Oliveira | Department of Forest Sciences, “Luiz de Queiroz” College of Agriculture, University of São Paulo (USP/ESALQ), Piracicaba, SP, Brazil；Laboratory of Geo-Information Science and Remote Sensing, Wageningen University and Research, Wageningen, The Netherlands；the Instituto Federal do Acre, Rio Branco, AC, Brazil；Department of Forest Science, Federal University of Paraná (UFPR), Curitiba, PR, Brazil；Department of Forest Sciences, University of São Paulo (USP/ESALQ), Piracicaba, SP, Brazil；Department of Agricultural Engineer, Federal University of Viçosa, Viçosa, Brazil；the Center for Natural Sciences, Universidade Federal de São Carlos, Buri, Brazil | 面向稀缺标注的森林清查扩展，采用多任务学习与自训练检测树冠。 | [#1750](https://github.com/thinson/RS-PaperClaw/issues/1750) |
+| [20261118] End-to-End Landsat Land Surface Temperature Reconstruction with AlphaEarth Embeddings | Liu Shengjie | University of Southern California, Los Angeles, CA, USA | 基于AlphaEarth嵌入与U-Net，端到端重建Landsat地表温度。 | [#1751](https://github.com/thinson/RS-PaperClaw/issues/1751) |
+| [20261118] Monitoring Unplanned Construction Using Satellite Change Detection | Kashyap Harsh, Wasu Taranum | Thapar Institute of Engineering and Technology, Patiala, India | 利用卫星变化检测与神经网络，监测城市违规建设。 | [#1752](https://github.com/thinson/RS-PaperClaw/issues/1752) |
+| [20261118] Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation | Wang Jun, Li Fengpeng, Han Wei, Li Yuxuan, Huang Tianjin, Yan Jining, Wang Sheng, Sun Kan, Wang Lizhe | School of Computer Science and Artificial Intelligence, China University of Geosciences；PRADA Lab, King Abdullah University of Science and Technology；Department of Computer Science, University of Exeter；School of Mathematics and Computer Science, Wuhan Polytechnic University；Tsinghua Shenzhen International Graduate School, Tsinghua University | 构建遥感地质图像解译基准，评估多模态大模型推理与光谱判别。 | [#1753](https://github.com/thinson/RS-PaperClaw/issues/1753) |
+| [20261118] Developing a Subdistrict-Level Economic Progress Index Using Geospatial Data | Mohan Meenu, Chattopadhyay Siddhartha | Indian Institute of Technology Kharagpur, Kharagpur, India | 基于地理空间数据与主成分分析，构建次区级经济进展指数。 | [#1754](https://github.com/thinson/RS-PaperClaw/issues/1754) |
+
+## 🔎 观察
+
+- 数据合成与自训练成为应对标注稀缺的主流策略，覆盖高光谱与森林清查场景。
+- 多模态大模型评估从精度转向推理可靠性与先验证据对比，强调可解释性。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261118", "source": "api", "checked_at": "2026-11-19T04:35:57+00:00", "source_complete": true, "candidate_count": 16, "paper_count": 7} -->
+
+---
+
 # [20261117](./202611/20261117.md)
 ## 📌 今日概况
 
@@ -80,37 +118,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261116", "source": "api", "checked_at": "2026-11-18T10:28:26+00:00", "source_complete": true, "candidate_count": 22, "paper_count": 11} -->
-
----
-
-# [20261115](./202611/20261115.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日论文总体呈现出遥感与AI交叉深化趋势。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261115] GeoReVis: Learning Selective Revision and Evidence Consolidation for Remote Sensing Segmentation | An Ke, Chen Liang, Wang Yupei | Beijing Institute of Technology | 聚焦Remote Sensing Segmentation、Language-Guided Segmentation，给出可复现的模型与评测方案。 | [#1664](https://github.com/thinson/RS-PaperClaw/issues/1664) |
-| [20261115] Spatial phase coherence and its applications to masking and adaptive neighborhood sizing in multitemporal InSAR | Heimpel Magnus, Hajnsek Irena, Frey Othmar | Institute of Environmental Engineering, ETH Zurich；Microwaves and Radar Institute, German Aerospace Center (DLR)；center, and the set of averaged pixels the ensemble | 聚焦Spatial Phase Coherence、Multitemporal InSAR，给出可复现的模型与评测方案。 | [#1665](https://github.com/thinson/RS-PaperClaw/issues/1665) |
-| [20261115] MARLIN: Multiscale And Directional Sparse Representation Learning for Imbalanced SAR Ship Classification | Hosseiny Benyamin, Kamirul Kamirul, Pappas Odysseas, Achim Alin | the VI-Labs, University of Bristol, BS1 6 AZ Bristol, U.K. ( | 聚焦SAR Ship Classification、Imbalanced Learning，给出可复现的模型与评测方案。 | [#1666](https://github.com/thinson/RS-PaperClaw/issues/1666) |
-| [20261115] Machine Learning for Near Real-Time Identification of Wildfire Burned Areas | Nguyen Khoi, Adam W. Bargteil, Halem Milton | Department of Computer Science and Electrical Engineering；University of Maryland, Baltimore County | 聚焦Machine Learning、Satellite Images，给出可复现的模型与评测方案。 | [#1667](https://github.com/thinson/RS-PaperClaw/issues/1667) |
-| [20261115] Illusion of Explainability: A Sanity Check for Spectral Band Attribution in Satellite Time-Series Crop Classification | Tahiliani Sumit, Mathur Avi, Agarwal Sandarbh, Sathish Rakshith, Nambiar Ashwathi | Shiv Nadar University | 聚焦Multispectral Remote Sensing、Crop Classification，给出可复现的模型与评测方案。 | [#1668](https://github.com/thinson/RS-PaperClaw/issues/1668) |
-| [20261115] SemLite-GS: Semantic-Selective Parallel Gaussian Splatting for Lightweight Building Reconstruction from UAV Oblique Imagery | Wang Tengfei, Wang Xin, Li Zihan, Ji Quanjian, Yu Yifei, Lin Dong, Zhan Zongqian | School of Geodesy and Geomatics, Wuhan University；Space Engineering University | 聚焦3D Gaussian Splatting、UAV Oblique Imagery，给出可复现的模型与评测方案。 | [#1669](https://github.com/thinson/RS-PaperClaw/issues/1669) |
-| [20261115] Real-Time Air Pollution Monitoring and Tracking via Adaptive Density-Driven Multi-UAV Coordination | Martinez Julian, Singh Ruchika, Afrazi Mohammad, Lee Kooktae | Department of Mechanical and Aerospace Engineering, Texas Tech University, Lubbock, TX USA (；Department of Mechanical Engineering and Materials Science, Duke University, Durham, NC USA ( | 聚焦Multi-UAV Coordination、Air Pollution Monitoring，给出可复现的模型与评测方案。 | [#1670](https://github.com/thinson/RS-PaperClaw/issues/1670) |
-
-## 🔎 观察
-
-- 基础模型与遥感任务结合持续增强，评测与推理能力成为关键。
-- 多数工作关注算法有效性与泛化，而非硬件实现。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261115", "source": "api", "checked_at": "2026-11-18T10:41:49+00:00", "source_complete": true, "candidate_count": 8, "paper_count": 7} -->
 
 ---
