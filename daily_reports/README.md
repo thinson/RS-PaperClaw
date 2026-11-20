@@ -2,6 +2,51 @@
 
 最近三天日报（最新在前）：
 
+# [20261119](./202611/20261119.md)
+## 📌 今日概况
+
+今日共检索候选论文 19 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 5 篇。
+
+今日研究覆盖极化SAR分解、多模态树种分类、红外小目标检测、语言引导路径生成与SAR多模态持续学习。趋势上，传统极化分解方法被重新审视，深度学习继续向多模态融合与结构先验设计深入；同时，面向遥感视觉语言模型和持续学习的研究开始关注零样本迁移与灾难性遗忘问题，验证机制与知识蒸馏成为提升可靠性的关键手段。
+
+## ✨ 今日亮点
+
+- 极化SAR分解方法再审视，Cloude/van Zyl分解适配全极化数据。
+- 多模态CNN与结构掩码Transformer融合用于亚像元树种制图。
+- SAR多模态大模型持续学习引入历史在线策略蒸馏。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261119] A version of the Cloude/van Zyl decomposition for full/quad pol synthetic aperture radar data | Allan Aasbjerg Nielsen, Paul Jacques Connetable, Skriver Henning, Conradsen Knut | bDTU Space -- National Space Institute, Building 348；Technical University of Denmark, DK-2800 Lyngby, Denmark | 提出适用于全/四极化SAR的Cloude/van Zyl分解版本，用于散射机制与熵分析。 | [#1756](https://github.com/thinson/RS-PaperClaw/issues/1756) |
+| [20261119] Fusing Multimodal CNN Features with Structurally-Masked Transformers for Hierarchical Sub-Pixel Tree Species Mapping | Ferrari Mattia, Bruzzone Lorenzo | Department of Information Engineering and Computer Science, University of Trento, Trento, Italy ( | 融合多模态CNN特征与结构掩码Transformer，实现分层亚像元树种分类。 | [#1757](https://github.com/thinson/RS-PaperClaw/issues/1757) |
+| [20261119] Verifying Before Enhancing: Target Evidence Chain Verification for Infrared Small Target Detection | Zuo Jiayi, Pei Songwei, Wang Shuhuai, Wu Yifei, Wang Shangguang | Beijing University of Posts and Telecommunications | 提出目标证据链验证机制，在增强前验证红外小目标检测的可靠性。 | [#1758](https://github.com/thinson/RS-PaperClaw/issues/1758) |
+| [20261119] RemoteVLPG: How to Obtain a Specific VLM for Language-Guided Path Generation on Remote Sensing Images? | Dang Junzhe, Zhang Mengmeng, Zhang Yuxiang, Li Wei | Beijing Institute of Technology, Zhuhai, Guangdong, China. (；the Jockey Club STEM Laboratory of Quantitative Remote Sensing, Department of Geography, the University of Hong Kong, Hong Kong, China. ( | 面向遥感图像语言引导路径生成，探索如何获得专用视觉语言模型。 | [#1759](https://github.com/thinson/RS-PaperClaw/issues/1759) |
+| [20261119] HOPD: Historical On-Policy Distillation for SAR MLLM Continual Learning | Li Yuxuan, Derrick Goh Xin Deik, Duan Zheng-Peng, Sun Qianru, Li Weijie | Singapore Management University；Nanyang Technological University；Nankai University；Xi'an Jiaotong University | 提出历史在线策略蒸馏方法，缓解SAR多模态大模型持续学习中的遗忘。 | [#1760](https://github.com/thinson/RS-PaperClaw/issues/1760) |
+
+## ⚠️ 未纳入日报的匹配论文
+
+以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
+
+| 标题 | arXiv | 失败原因 |
+|------|-------|----------|
+| Does It Depend on the Split? Frozen Satellite Features vs. Fine-Tuned CNNs for Tree Species Mapping | [2611.25902v1](https://arxiv.org/abs/2611.25902v1) | 质检未通过: 单位为空或无效 |
+
+
+## 🔎 观察
+
+- 极化SAR分解研究仍具活力，经典方法针对全极化数据的适配与可解释性受到关注。
+- 遥感视觉语言模型与持续学习结合增多，验证与蒸馏成为提升可靠性的共性思路。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261119", "source": "api", "checked_at": "2026-11-20T04:30:37+00:00", "source_complete": true, "candidate_count": 19, "paper_count": 5, "partial": true, "skipped_arxiv_ids": ["2611.25902v1"]} -->
+
+---
+
 # [20261118](./202611/20261118.md)
 ## 📌 今日概况
 
@@ -76,47 +121,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261117", "source": "api", "checked_at": "2026-11-18T10:22:54+00:00", "source_complete": true, "candidate_count": 16, "paper_count": 8} -->
-
----
-
-# [20261116](./202611/20261116.md)
-## 📌 今日概况
-
-今日共检索候选论文 22 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 11 篇。
-
-今日研究覆盖SAR目标识别、遥感图像生成评估、灾害风险与应急响应、超高分遥感视觉语言模型、SAR层析与洪泛区监测等方向。趋势上，多篇工作反思模型可靠性：SAR识别关注背景捷径与角度缺口，生成评估引入人类偏好基准，灾害筛查开展回溯失败分析。同时，多模态融合与交互式分割推动三维场景理解，无人机影像中的冗余检测抑制与多类别重识别基准受到关注。
-
-## ✨ 今日亮点
-
-- SAR车辆识别研究揭示背景捷径与角度缺口对性能的影响，强调评估需控制混杂因素。
-- 遥感感知相似性研究引入多层注意力评分与人类偏好基准，推动生成质量评估更贴近人眼。
-- 多篇灾害相关研究聚焦应急场景：野火风险评估、洪泛区监测与无人机冗余检测抑制。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261116] How Much of SAR Vehicle Recognition Is the Vehicle? Background Shortcuts, Angle Gaps and Partial Libraries on MSTAR and ATRNet-STAR | Shaya Mousa | Arizona State University, Tempe, AZ, USA ( | 分析MSTAR与ATRNet-STAR上SAR车辆识别中的背景捷径、角度缺口与部分库问题，反思性能来源。 | [#1652](https://github.com/thinson/RS-PaperClaw/issues/1652) |
-| [20261116] Rethinking Perceptual Similarity for Remote Sensing: Multi-Layer Attention Scoring and Human Preference Benchmarking | Underwood Eli, Bosch Marc, Joshi Neil, Wen Jeffrey, Brown Myron | Johns Hopkins University Applied Physics Laboratory；Duke University | 针对遥感图像生成提出多层注意力感知相似性评分，并构建人类偏好基准以校准评估。 | [#1653](https://github.com/thinson/RS-PaperClaw/issues/1653) |
-| [20261116] Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment | Ho Yu-Hsuan, Xiao Yiming, Lai Hao-En, Mostafavi Ali, Samuel D. Brody | Urban Resilience.AI Lab, Zachry Department of Civil and Environmental Engineering；Texas A&M University, College Station, TX；Artie McFerrin Department of Chemical Engineering；Institute for Disaster Resilient Texas, Texas A&M University, Houston, TX | 提出地理定位感知的多模态融合方法，结合视觉语言模型评估建筑级野火风险。 | [#1654](https://github.com/thinson/RS-PaperClaw/issues/1654) |
-| [20261116] Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing | Tang Meng, Du Siyuan, Liu Yuxin, Cao Shuaishuai, Wang Di, Guo Haonan | aberAberystwyth University；njuNanjing University；pkuPeking University；csuCentral South University；whuWuhan University | 面向超高分遥感问答，提出紧凑视觉潜记忆以在压缩令牌的同时保留局部证据。 | [#1655](https://github.com/thinson/RS-PaperClaw/issues/1655) |
-| [20261116] From very fine Vertical Resolution to Range Super-Resolution on BIOMASS P-BAND SAR Data | Yu Yanghai, Tebaldini Stefano, Lei Yang, Rocca Fabio | RIDE Lab, Dipartimento di Elettronica, Informazione e Bioingegneria, Politecnico di Milano；National Space Science Center, Chinese Academy of Sciences | 利用BIOMASS P波段SAR数据，从精细垂直分辨率出发实现距离向超分辨与层析分析。 | [#1656](https://github.com/thinson/RS-PaperClaw/issues/1656) |
-| [20261116] Model-based neural network for global floodplains analysis | Audisio Pierre, Belletti Barbara, Pustelnik Nelly | ENS de Lyon, CNRS, Laboratoire de Physique, F-69342 Lyon, France；Université Jean Monnet, CNRS, UMR | 提出基于模型的神经网络，融合多光谱超分辨开展全球洪泛区分析。 | [#1657](https://github.com/thinson/RS-PaperClaw/issues/1657) |
-| [20261116] Counting What Matters: Reducing Redundant Object Detections in Overlapping UAV Mapping Imagery for Disaster Response | Schulte Max, Surmann Hartmut, Meine Julien | Westphalian University of Applied Sciences (WH) Gelsenkirchen, Germany | 针对重叠无人机测绘影像，减少灾害响应目标检测中的冗余重复计数。 | [#1658](https://github.com/thinson/RS-PaperClaw/issues/1658) |
-| [20261116] Deep Learning for Satellite-Based Mountain Hazard Screening: A Retrospective Failure Analysis on the 2021 Chamoli Rock-Ice Avalanche | Rakshit Snigdhajyoti | School of Computing Science and Engineering, VIT Bhopal University, India | 对2021 Chamoli岩冰崩开展卫星深度学习筛查的回溯失败分析，揭示筛查局限。 | [#1659](https://github.com/thinson/RS-PaperClaw/issues/1659) |
-| [20261116] STARS: Stage-Adaptive Responsibility Separation for Shadow Removal in Remote Sensing Images | Song Gaoliang, Li Chengjie, Liu Pengju, Chang Chenchen, You Jinhao, Zhang Hongzhi | Harbin Institute of Technology；Northeast Forestry University | 提出阶段自适应责任分离的级联架构，用于遥感图像阴影去除。 | [#1660](https://github.com/thinson/RS-PaperClaw/issues/1660) |
-| [20261116] InterRSGaussian: Interactive Multi-view Instance Segmentation for 3D Remote Sensing Scenes | Qi Zipeng, Zou Zhengxia, Shi Zhenwei | aSchool of Astronautics, Beihang University, Beijing, 100191, China；bKey Laboratory of Spacecraft Design Optimization and Dynamic Simulation Technologies, Ministry of Education, Beihang；University, Beijing, 100191, China | 基于3D高斯开展交互式多视图实例分割，面向三维遥感场景理解。 | [#1661](https://github.com/thinson/RS-PaperClaw/issues/1661) |
-| [20261116] VisDrone-ReID: A Unified Multi-Category Object Re-Identification Benchmark | Asmau Lawal Bilbis, Nathanael L. Baisa, Jayavel Amudhavel | School of Computer Science and Informatics；De montfort University | 构建VisDrone-ReID统一多类别目标重识别基准，支持无人机影像留一评估。 | [#1662](https://github.com/thinson/RS-PaperClaw/issues/1662) |
-
-## 🔎 观察
-
-- 今日多篇工作从追求精度转向审视评估可靠性，背景捷径、失败回溯与人类偏好基准成为共同关切。
-- 灾害与应急应用密集出现，方法覆盖多模态融合、冗余检测抑制与筛查失败分析，强调落地约束。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261116", "source": "api", "checked_at": "2026-11-18T10:28:26+00:00", "source_complete": true, "candidate_count": 22, "paper_count": 11} -->
 
 ---
