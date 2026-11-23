@@ -2,6 +2,44 @@
 
 最近三天日报（最新在前）：
 
+# [20261120](./202611/20261120.md)
+## 📌 今日概况
+
+今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日研究呈现多模态融合与评测基准并进态势。WINSO构建大规模风机与光伏数据集，FM4SAR-Bench推动SAR基础模型公平评测，SAM-3适配分析揭示参数高效微调特性。RemoteEvolver探索智能体工具进化，机载高光谱异常检测面向野外搜救，物理驱动SAR-光学融合去云与无人机风机叶片三维重建体现方法创新。
+
+## ✨ 今日亮点
+
+- WINSO发布超高清遥感数据集，支撑风机检测与光伏分割。
+- FM4SAR-Bench建立SAR基础模型分层公平评测框架。
+- RemoteEvolver以智能体工具进化扩展对地观测能力。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261120] WINSO: A Large-Size Very-High-Resolution Remote Sensing Dataset for Wind Turbine Detection and Solar Panel Segmentation | Wang Di, Li Ke, Li Zhaokun, Ni Weiping, Wu Junzheng, Liu Yahu, Wang Quan, Gao Xinbo | Xidian University；Northwest Institute of Nuclear Technology；Northwestern Polytechnical University | 构建超高清遥感数据集WINSO，面向风机检测与光伏板分割任务。 | [#1762](https://github.com/thinson/RS-PaperClaw/issues/1762) |
+| [20261120] FM4SAR-Bench 1.0: Towards A Fair Benchmark for Evaluating Foundation Models for SAR Image Interpretation | Chen Mingyao, Liu Yongxiang, Liu Tianpeng, Yong Yuchen, Zhou Jie, Yang Zhenhao, Huang Pinyi, Li Weijie, Zhang Jiehua, Peng Bowen, Peng Zhimao, Zhang Zhiyuan, Liu Li | College of Electronic Science and Technology, National University of Defense Technology (NUDT), Changsha, China | 提出FM4SAR-Bench基准，分层公平评测SAR图像解译基础模型。 | [#1763](https://github.com/thinson/RS-PaperClaw/issues/1763) |
+| [20261120] How Does SAM-3 Adapt? Capacity, Update Geometry, and Domain Transfer | Kazakov Allan, Javat Abdurrahman, Cakir Duygu | Bahcesehir University, Istanbul, Turkey | 分析SAM-3容量、更新几何与域迁移，揭示参数高效微调特性。 | [#1764](https://github.com/thinson/RS-PaperClaw/issues/1764) |
+| [20261120] RemoteEvolver: Expanding Earth Observation Capabilities through Agent Harness Evolution | Xu Shengxiang, Yao Liang, Chen Shuyi, Wang Yishu, Di Shimin, Liu Fan, Yao Bishun, Guo Hanghui, Liu Xinyu, Liang Chengye, Luo Yuyu, Zhang Min-Ling | Southeast University；Hohai University；The Hong Kong University of Science and Technology (Guangzhou) | 提出RemoteEvolver，通过智能体工具进化扩展对地观测工作流。 | [#1765](https://github.com/thinson/RS-PaperClaw/issues/1765) |
+| [20261120] Real-Time On-Drone Hyperspectral Anomaly Detection for Wilderness Search and Rescue | Liu Jacqueline, Kyere Gyabaah, Liu Chengyan, Chiu Kenneth, Marie Lynn, Church, Gleason Sean, Boubin Jayson | School of Computing, Binghamton University, Binghamton, NY USA (；the Mathematics and Computer Science Department, Hampden-Sydney College, Hampden-Sydney, VA USA ( | 实现无人机机载高光谱实时异常检测，服务野外搜救任务。 | [#1766](https://github.com/thinson/RS-PaperClaw/issues/1766) |
+| [20261120] PIU-CR: Physics-Informed Deep Unfolding with SAR-Optical Image Fusion for Cloud Removal | Fan Gengque, Xu Han, Li Junxi, Zhang Hao, Liu Guangcan, Ma Jiayi | School of Automation, Southeast University, Nanjing, China；School of Instrument Science and Engineering, Southeast University, Nanjing, China；Electronic Information School, Wuhan University, Wuhan, China；School of Robotics, Wuhan University, Wuhan, China | 提出物理驱动深度展开与SAR-光学融合去云方法PIU-CR。 | [#1767](https://github.com/thinson/RS-PaperClaw/issues/1767) |
+| [20261120] BladeR: Scalable, Shape-Guided 3D Reconstruction of Wind Turbine Blades from UAV Imagery | Sterckx Jonathan, Vlaminck Michiel, Luong Hiep | IPI-URC-imec, Ghent University, Sint-Pietersnieuwstraat 41, Ghent, Belgium；A scalable preprocessing pipeline that uses automated segmentation and blade-centered tiling to | 提出BladeR，从无人机影像可扩展重建风机叶片三维形状。 | [#1768](https://github.com/thinson/RS-PaperClaw/issues/1768) |
+
+## 🔎 观察
+
+- 数据集与基准建设并行推进，反映遥感AI从模型创新转向可复现评测。
+- 物理模型与智能体方法同时受关注，表明领域知识融合成为新趋势。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261120", "source": "oai", "checked_at": "2026-11-23T05:40:30+00:00", "source_complete": true, "candidate_count": 15, "paper_count": 7} -->
+
+---
+
 # [20261119](./202611/20261119.md)
 ## 📌 今日概况
 
@@ -82,44 +120,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261118", "source": "api", "checked_at": "2026-11-19T04:35:57+00:00", "source_complete": true, "candidate_count": 16, "paper_count": 7} -->
-
----
-
-# [20261117](./202611/20261117.md)
-## 📌 今日概况
-
-今日共检索候选论文 16 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
-
-今日研究趋势呈现多模态融合与生成式方法在遥感中的深化应用。SWIR波段合成与高光谱-LiDAR分类均强调跨模态特征校正与可靠性驱动学习；超分辨率工作引入2D高斯泼溅实现任意尺度重建；SAR基础模型适配多模态大语言模型成为新方向。此外，无训练变化检测与事件相机海上搜救检测拓展了遥感应用边界，极化SAR统计建模与高海拔小目标数据集则夯实了基础方法与数据支撑。
-
-## ✨ 今日亮点
-
-- SWIR-cGAN利用条件GAN与注意力U-Net从VNIR影像合成短波红外波段，缓解数据稀缺。
-- 2D高斯泼溅结合亚像素偏移帧实现任意尺度遥感超分，仅需一次编码。
-- Sarvia快速适配MLLM中已有的SAR基础模型，降低SAR多模态应用门槛。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261117] SWIR-cGAN: Synthesizing SWIR Bands Using VNIR Imagery from CBERS and AMAZONIA-1 | Alisson Cleiton de Oliveira, Rennan de Freitas Bezerra Marujo, Thales Sehn Körting | 原文作者栏未列出单位 | 提出SWIR-cGAN，用条件GAN和注意力U-Net从CBERS与AMAZONIA-1的VNIR影像合成SWIR波段。 | [#1643](https://github.com/thinson/RS-PaperClaw/issues/1643) |
-| [20261117] You Only Encode Once: Sub-Pixel-Shifted Frames for Arbitrary-Scale Remote Sensing Super-Resolution with 2D Gaussian Splatting | Liu Canjie, Wang Liuqian, Ming Qi, Lu Wei, Hao Xiaohan, Wu Yuefei, Chao Wentao, Shi Lei | Zhengzhou University；Beijing University of Technology；Anhui University | 提出仅编码一次框架，利用亚像素偏移帧与2D高斯泼溅实现任意尺度遥感多帧超分辨率。 | [#1644](https://github.com/thinson/RS-PaperClaw/issues/1644) |
-| [20261117] Reliability-Driven Feature Correction for Hyperspectral and LiDAR Classification | Zhang Lianming, Wang Xiaolu, Song Qiya, Liu Jinyang, Dian Renwei, Kang Xudong | School of Information Science and Engineering, Hunan Normal University, Changsha, China | 面向高光谱与LiDAR分类，设计可靠性驱动特征校正模块与类原型库以融合跨模态信息。 | [#1645](https://github.com/thinson/RS-PaperClaw/issues/1645) |
-| [20261117] SARVIA: Fast-Adapting the Strong SAR Foundation Models That Are Already in Your MLLMs | Li Yuxuan, Tian Zichen, Sun Qianru | Singapore Management University | Sarvia快速适配多模态大语言模型中已有的强SAR基础模型，实现自适应后预训练。 | [#1646](https://github.com/thinson/RS-PaperClaw/issues/1646) |
-| [20261117] Event-Based Person Detection for Maritime UAV Search | Ning Zijie, Vandewalle Patrick | EAVISE-PSI, ESAT, KU Leuven | 面向海上无人机搜救，构建基于事件相机的人员检测方法以应对动态视觉挑战。 | [#1647](https://github.com/thinson/RS-PaperClaw/issues/1647) |
-| [20261117] Training-Free Building Change Detection with Example-Induced Discriminants | Lu Zhi, Hong Bin, Peng Zhenming | University of Electronic Science | 提出无训练建筑物变化检测框架，利用示例诱导线性判别与特征对比实现ViT特征迁移。 | [#1648](https://github.com/thinson/RS-PaperClaw/issues/1648) |
-| [20261117] Generation of Sample Complex Wishart Distributed Matrices and Change Detection in Polarimetric SAR Data | Allan A. Nielsen, Skriver Henning, Conradsen Knut | pt Technical University of Denmark；pt b DTU Space -- National Space Institute | 研究极化SAR样本复Wishart矩阵生成及基于检验统计量的变化检测方法。 | [#1649](https://github.com/thinson/RS-PaperClaw/issues/1649) |
-| [20261117] A tiny object detection dataset for high-altitude open-water search and rescue | Xu Hui, Hou Chenfei, Wei Henglai, Wang Hao, Jin Yidong, Niu Xiulin, Zhang Haoyang, Zhang Hui, Xu Tianshi | School of Transportation Science and Engineering, Beihang University, Beijing 100191, China；Hangzhou International Innovation Institute of Beihang University, Beihang University | 发布高海拔开阔水域搜救小目标检测数据集，聚焦救生圈等微小目标识别。 | [#1650](https://github.com/thinson/RS-PaperClaw/issues/1650) |
-
-## 🔎 观察
-
-- 生成式与基础模型适配成为遥感新增长点，但合成波段与模型迁移的物理一致性仍需验证。
-- 无训练与轻量化方法在变化检测和超分中兴起，反映对标注依赖和计算成本的持续关注。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261117", "source": "api", "checked_at": "2026-11-18T10:22:54+00:00", "source_complete": true, "candidate_count": 16, "paper_count": 8} -->
 
 ---
