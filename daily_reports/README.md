@@ -2,6 +2,51 @@
 
 最近三天日报（最新在前）：
 
+# [20261123](./202611/20261123.md)
+## 📌 今日概况
+
+今日共检索候选论文 20 篇；关键词+LLM 智能匹配遥感交叉论文 14 篇；最终纳入日报 14 篇。
+
+今日论文覆盖高光谱分割与分类、遥感基础模型鲁棒性、跨视角定位、多模态检索与变化检测等方向。高光谱领域出现免训练开放词汇分割与不确定性感知融合方法；标签噪声与地理偏差受到关注，涉及基础模型评测和作物分类。光学计算与Mamba架构被引入卫星分类和洪水检测，UAV基准数据集与视频文本检索任务进一步丰富。整体趋势显示，研究更重视数据缺陷下的可靠性、多源信息融合以及轻量化部署。
+
+## ✨ 今日亮点
+
+- 高光谱分割提出免训练谱路由，降低开放词汇迁移成本。
+- 基础模型评测引入校准标签错误，关注噪声下鲁棒性。
+- Mamba与光学网络拓展遥感分类和变化检测范式。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261123] SpectralRoute: Adaptive Spectral Routing for Training-Free Open-Vocabulary Hyperspectral Segmentation | Li Qingmei, Fan Xiaoya, Zheng Juepeng, Huang Jianxi, Fu Haohuan | Tsinghua Shenzhen International Graduate School；Southwest University；Sun Yat-sen University；National Supercomputing Center in Shenzhen；Southwest Jiaotong University；China Agricultural University；Guangxi University of Science and Technology | 提出免训练谱路由框架，实现开放词汇高光谱分割。 | [#1776](https://github.com/thinson/RS-PaperClaw/issues/1776) |
+| [20261123] KGLP-Net: Kalman-Reliable Global--Local Learning With Group Fisher Pruning for Hyperspectral Image Classification | Deng Wenshuai, Xie Wen, Abdel Hamid Soliman, Zhao Qianzheng | School of Communications and Information Engineering, Xi'an University of Posts and Telecommunications, Xi'an, China (；School of Digital, Technology, Innovation, and Business, University of Staffordshire, Stoke-on-Trent ST4 2 DE, U.K. ( | 结合卡尔曼可靠融合与组Fisher剪枝进行高光谱分类。 | [#1777](https://github.com/thinson/RS-PaperClaw/issues/1777) |
+| [20261123] Designing Incoherent Multispectral Diffractive Optical Networks for Satellite Image Classification | Yang Xilin, Md Sadman Sakib Rahman, Lee Ryan, Ozcan Aydogan | Electrical and Computer Engineering Department, University of California, Los Angeles, CA；Bioengineering Department, University of California, Los Angeles, CA, 90095, USA；California NanoSystems Institute (CNSI), University of California, Los Angeles, CA, 90095 | 设计非相干多光谱衍射光学网络用于卫星图像分类。 | [#1778](https://github.com/thinson/RS-PaperClaw/issues/1778) |
+| [20261123] Benchmarking Geospatial Foundation Models under Calibrated Label Errors | Mollah Md Saif, Rahman Showrin, Majumder Anindya, Rahman Sowad, Md. Golam Rabiul Alam | Department of Computer Science and Engineering, BRAC University, Dhaka, Bangladesh | 在校准标签错误下系统评测地理空间基础模型。 | [#1779](https://github.com/thinson/RS-PaperClaw/issues/1779) |
+| [20261123] OCCA-Seg: Object and Channel Context Aggregation for Semantic Segmentation of Remote Sensing Images | Yang Gang, Chen Si, Zhou Quan, Li Jiangchuan | Beijing Key Laboratory of Urban Spatial Intelligent Sensing and Digital Governance, Beijing Institute of Survey and Mapping, Beijing, China ( | 聚合对象与通道上下文提升遥感图像语义分割。 | [#1780](https://github.com/thinson/RS-PaperClaw/issues/1780) |
+| [20261123] RigidAnchor: Cross-View Geo-Localization for UAV via Iterative Planar Rigid Alignment | Wang Bo, Zhu Dekang, Li Jian, Meng Zhipeng, Wang Bo, Hu Dewen | National Innovation Institute of Defense Technology；College of Intelligence Science and Technology, National University of Defense Technology；School of Future Technology, National University of Defense Technology | 通过迭代平面刚性对齐实现UAV跨视角地理定位。 | [#1781](https://github.com/thinson/RS-PaperClaw/issues/1781) |
+| [20261123] AirVT-15k: A Query-Diverse UAV Video-Text Dataset and Query-Adaptive Evidence Alignment Network for Retrieval | Chen Xi, Chen Xu, Jia Xiangyang, Gan Ting, Zhang Xu, Wei Shuquan | 原文作者栏未列出单位 | 构建查询多样UAV视频文本数据集并提出自适应对齐检索网络。 | [#1782](https://github.com/thinson/RS-PaperClaw/issues/1782) |
+| [20261123] Cross-calibration of Hera/HyperScout-H with MRO/CRISM and MEx/OMEGA based on Mars observations | Farina A., Popescu M., Lazzarin M., J. de León, Prodan G., B. A. Dumitru, F. La Forgia, Poggiali G., Küppers M., Kovács G., B. V. Nagy, Grieger B., Barnouin O., Tatsumi E., Karatekin Ö., Michel P. | Dipartimento di Fisica e Astronomia, Padova University；Institute of Space Science – INFLPR Subsidiary；University of Craiova；Instituto de Astrofísica de Canarias；Department of Astrophysics, University of La Laguna；ESA, European Space Astronomy Centre (ESAC)；Department of Mechatronics, Optics and Engineering Informatics, Budapest University of Technology and Economics；Space Exploration Sector, Johns Hopkins University Applied Physics Laboratory；Royal Belgian Institute for Space Aeronomy；Université Côte d'Azur, Observatoire de la Côte d'Azur, CNRS, Laboratoire Lagrange | 基于火星观测交叉校准Hera/HyperScout-H与CRISM、OMEGA。 | [#1783](https://github.com/thinson/RS-PaperClaw/issues/1783) |
+| [20261123] Field-Level Crop Classification via Similarity-Induced Supervision from Imperfect Labels | Raul Lomonte Figueiredo, João Rebouças Dorea, Dário Augusto Borges Oliveira | Animal Sciences Department, University of Wisconsin-Madison | 利用不完美标签的相似性监督进行田块级作物分类。 | [#1784](https://github.com/thinson/RS-PaperClaw/issues/1784) |
+| [20261123] Seeing Is Locating: Spatial Awareness and Geographic Bias in Decision Language Models | Wongso Wilson, Hada Melino Muhammad, Lin Xiachong, Xue Hao, Flora D. Salim | University of New South Wales, Sydney, NSW, Australia；Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China | 构建多模态基准揭示决策语言模型的空间意识与地理偏差。 | [#1785](https://github.com/thinson/RS-PaperClaw/issues/1785) |
+| [20261123] Sequential Monitoring of Image Streams Using Energy Statistics | Bhuniya Shreetama, De Sourav, Roy Anik, Partha Sarathi Mukherjee | Indian Statistical Institute, Kolkata；Emory University, Atlanta, USA | 使用能量统计对图像流进行序贯监控与边界检测。 | [#1786](https://github.com/thinson/RS-PaperClaw/issues/1786) |
+| [20261123] A High-Resolution UAV Benchmark Dataset and Baseline Evaluation for Teak Crown Segmentation in Western Ghats Tropical Forests | Anand S Sahadevan, Arya Sunita, Anup Kumar Das, Bimal Kumar Bhattacharya, S Manthira Moorthi | Space Applications Centre | 发布高分辨率UAV柚木冠层分割基准数据集与基线评估。 | [#1787](https://github.com/thinson/RS-PaperClaw/issues/1787) |
+| [20261123] SIAMBA: A Pseudo-Siamese Mamba-based Deep Learning Network for Multimodal Flood Change Detection | Muhammad Fasih Ishfaq, Weikmann Giulio, Bruzzone Lorenzo | Department of Information Engineering and Computer Science, University of Trento, Via Sommarive, 5, I-38123 Trento, Italy | 提出伪孪生Mamba网络用于多模态洪水变化检测。 | [#1788](https://github.com/thinson/RS-PaperClaw/issues/1788) |
+| [20261123] SRCWDNet: Semantic-Relational Cross-Window Dual-Graph Network for Multi-Label Remote Sensing Scene Classification | Amir Fareeha | Department of Computer Science, National University of Modern Languages, Islamabad, Pakistan ( | 构建语义关系跨窗口双图网络进行多标签场景分类。 | [#1789](https://github.com/thinson/RS-PaperClaw/issues/1789) |
+
+## 🔎 观察
+
+- 免训练与标签噪声鲁棒性成为遥感模型落地前的关键评估维度。
+- 光学计算和状态空间模型开始进入遥感分类与变化检测任务。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261123", "source": "oai", "checked_at": "2026-11-24T15:11:02+00:00", "source_complete": true, "candidate_count": 20, "paper_count": 14} -->
+
+---
+
 # [20261122](./202611/20261122.md)
 ## 📌 今日概况
 
@@ -65,43 +110,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261121", "source": "api", "checked_at": "2026-11-24T04:30:33+00:00", "source_complete": true, "candidate_count": 7, "paper_count": 2} -->
-
----
-
-# [20261120](./202611/20261120.md)
-## 📌 今日概况
-
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日研究呈现多模态融合与评测基准并进态势。WINSO构建大规模风机与光伏数据集，FM4SAR-Bench推动SAR基础模型公平评测，SAM-3适配分析揭示参数高效微调特性。RemoteEvolver探索智能体工具进化，机载高光谱异常检测面向野外搜救，物理驱动SAR-光学融合去云与无人机风机叶片三维重建体现方法创新。
-
-## ✨ 今日亮点
-
-- WINSO发布超高清遥感数据集，支撑风机检测与光伏分割。
-- FM4SAR-Bench建立SAR基础模型分层公平评测框架。
-- RemoteEvolver以智能体工具进化扩展对地观测能力。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261120] WINSO: A Large-Size Very-High-Resolution Remote Sensing Dataset for Wind Turbine Detection and Solar Panel Segmentation | Wang Di, Li Ke, Li Zhaokun, Ni Weiping, Wu Junzheng, Liu Yahu, Wang Quan, Gao Xinbo | Xidian University；Northwest Institute of Nuclear Technology；Northwestern Polytechnical University | 构建超高清遥感数据集WINSO，面向风机检测与光伏板分割任务。 | [#1762](https://github.com/thinson/RS-PaperClaw/issues/1762) |
-| [20261120] FM4SAR-Bench 1.0: Towards A Fair Benchmark for Evaluating Foundation Models for SAR Image Interpretation | Chen Mingyao, Liu Yongxiang, Liu Tianpeng, Yong Yuchen, Zhou Jie, Yang Zhenhao, Huang Pinyi, Li Weijie, Zhang Jiehua, Peng Bowen, Peng Zhimao, Zhang Zhiyuan, Liu Li | College of Electronic Science and Technology, National University of Defense Technology (NUDT), Changsha, China | 提出FM4SAR-Bench基准，分层公平评测SAR图像解译基础模型。 | [#1763](https://github.com/thinson/RS-PaperClaw/issues/1763) |
-| [20261120] How Does SAM-3 Adapt? Capacity, Update Geometry, and Domain Transfer | Kazakov Allan, Javat Abdurrahman, Cakir Duygu | Bahcesehir University, Istanbul, Turkey | 分析SAM-3容量、更新几何与域迁移，揭示参数高效微调特性。 | [#1764](https://github.com/thinson/RS-PaperClaw/issues/1764) |
-| [20261120] RemoteEvolver: Expanding Earth Observation Capabilities through Agent Harness Evolution | Xu Shengxiang, Yao Liang, Chen Shuyi, Wang Yishu, Di Shimin, Liu Fan, Yao Bishun, Guo Hanghui, Liu Xinyu, Liang Chengye, Luo Yuyu, Zhang Min-Ling | Southeast University；Hohai University；The Hong Kong University of Science and Technology (Guangzhou) | 提出RemoteEvolver，通过智能体工具进化扩展对地观测工作流。 | [#1765](https://github.com/thinson/RS-PaperClaw/issues/1765) |
-| [20261120] Real-Time On-Drone Hyperspectral Anomaly Detection for Wilderness Search and Rescue | Liu Jacqueline, Kyere Gyabaah, Liu Chengyan, Chiu Kenneth, Marie Lynn, Church, Gleason Sean, Boubin Jayson | School of Computing, Binghamton University, Binghamton, NY USA (；the Mathematics and Computer Science Department, Hampden-Sydney College, Hampden-Sydney, VA USA ( | 实现无人机机载高光谱实时异常检测，服务野外搜救任务。 | [#1766](https://github.com/thinson/RS-PaperClaw/issues/1766) |
-| [20261120] PIU-CR: Physics-Informed Deep Unfolding with SAR-Optical Image Fusion for Cloud Removal | Fan Gengque, Xu Han, Li Junxi, Zhang Hao, Liu Guangcan, Ma Jiayi | School of Automation, Southeast University, Nanjing, China；School of Instrument Science and Engineering, Southeast University, Nanjing, China；Electronic Information School, Wuhan University, Wuhan, China；School of Robotics, Wuhan University, Wuhan, China | 提出物理驱动深度展开与SAR-光学融合去云方法PIU-CR。 | [#1767](https://github.com/thinson/RS-PaperClaw/issues/1767) |
-| [20261120] BladeR: Scalable, Shape-Guided 3D Reconstruction of Wind Turbine Blades from UAV Imagery | Sterckx Jonathan, Vlaminck Michiel, Luong Hiep | IPI-URC-imec, Ghent University, Sint-Pietersnieuwstraat 41, Ghent, Belgium；A scalable preprocessing pipeline that uses automated segmentation and blade-centered tiling to | 提出BladeR，从无人机影像可扩展重建风机叶片三维形状。 | [#1768](https://github.com/thinson/RS-PaperClaw/issues/1768) |
-
-## 🔎 观察
-
-- 数据集与基准建设并行推进，反映遥感AI从模型创新转向可复现评测。
-- 物理模型与智能体方法同时受关注，表明领域知识融合成为新趋势。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261120", "source": "oai", "checked_at": "2026-11-23T05:40:30+00:00", "source_complete": true, "candidate_count": 15, "paper_count": 7} -->
 
 ---
