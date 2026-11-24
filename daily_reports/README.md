@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20261122](./202611/20261122.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦于地理定位与地理嵌入的精细化建模。一方面，针对无人机跨视角定位，提出基于神经场的连续位姿推断方法，突破离散匹配局限；另一方面，借鉴地图投影中的Tissot指示图形概念，系统刻画学习型地理嵌入的局部畸变与各向异性。两项工作均强调对空间连续性与几何保真度的关注，反映出遥感AI正从粗粒度匹配向连续、可解释的空间表示演进。
+
+## ✨ 今日亮点
+
+- ContinuLoc利用神经场实现无人机连续位姿推断，提升跨视角定位精度。
+- 提出Tissot指示图形分析地理嵌入局部畸变，揭示各向异性特征。
+- 两项工作共同关注空间连续表示与几何保真度，推动定位可解释性。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261122] ContinuLoc: Continuous Pose Inference over Neural Fields for UAV Geo-Localization | Zhou Weikun, Lin Jinliang, Zang Yu, Xie Lin, Fu Haiqing, Ao Sheng, Yu Shangshu, Luo Zhiming, Wang Cheng | Fujian Key Laboratory of Urban Intelligent Sensing and Computing；Xiamen University, Xiamen, China；Key Laboratory of Multimedia Trusted Perception and Efficient Computing；Ministry of Education of China, Xiamen University, Xiamen, China；The Belt and Road Research Institute, Xiamen University, Xiamen, China；School of Computer Science and Engineering, Northeastern University, Shenyang 110819, China | 提出ContinuLoc，基于神经场在语义特征空间实现无人机连续位姿推断，用于跨视角地理定位。 | [#1773](https://github.com/thinson/RS-PaperClaw/issues/1773) |
+| [20261122] Tissot indicatrix for location encoders: Characterizing local distortion in learned geographic embeddings | Cao Guofeng, Mai Gengchen | aDepartment of Geography, University of Colorado Boulder, Boulder, CO, USA; bDepartment of Geography and the Environment, University of Texas at Austin, Austin, TX, USA | 将Tissot指示图形引入学习型地理嵌入分析，量化位置编码器的局部畸变与各向异性。 | [#1774](https://github.com/thinson/RS-PaperClaw/issues/1774) |
+
+## 🔎 观察
+
+- 连续位姿推断与嵌入畸变分析均指向对空间表示几何性质的精细刻画，或成新趋势。
+- 地理嵌入的可解释性评估尚处起步，Tissot类工具为编码器设计提供几何诊断视角。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261122", "source": "api", "checked_at": "2026-11-24T04:33:29+00:00", "source_complete": true, "candidate_count": 6, "paper_count": 2} -->
+
+---
+
 # [20261121](./202611/20261121.md)
 ## 📌 今日概况
 
@@ -70,50 +103,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261120", "source": "oai", "checked_at": "2026-11-23T05:40:30+00:00", "source_complete": true, "candidate_count": 15, "paper_count": 7} -->
-
----
-
-# [20261119](./202611/20261119.md)
-## 📌 今日概况
-
-今日共检索候选论文 19 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 5 篇。
-
-今日研究覆盖极化SAR分解、多模态树种分类、红外小目标检测、语言引导路径生成与SAR多模态持续学习。趋势上，传统极化分解方法被重新审视，深度学习继续向多模态融合与结构先验设计深入；同时，面向遥感视觉语言模型和持续学习的研究开始关注零样本迁移与灾难性遗忘问题，验证机制与知识蒸馏成为提升可靠性的关键手段。
-
-## ✨ 今日亮点
-
-- 极化SAR分解方法再审视，Cloude/van Zyl分解适配全极化数据。
-- 多模态CNN与结构掩码Transformer融合用于亚像元树种制图。
-- SAR多模态大模型持续学习引入历史在线策略蒸馏。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261119] A version of the Cloude/van Zyl decomposition for full/quad pol synthetic aperture radar data | Allan Aasbjerg Nielsen, Paul Jacques Connetable, Skriver Henning, Conradsen Knut | bDTU Space -- National Space Institute, Building 348；Technical University of Denmark, DK-2800 Lyngby, Denmark | 提出适用于全/四极化SAR的Cloude/van Zyl分解版本，用于散射机制与熵分析。 | [#1756](https://github.com/thinson/RS-PaperClaw/issues/1756) |
-| [20261119] Fusing Multimodal CNN Features with Structurally-Masked Transformers for Hierarchical Sub-Pixel Tree Species Mapping | Ferrari Mattia, Bruzzone Lorenzo | Department of Information Engineering and Computer Science, University of Trento, Trento, Italy ( | 融合多模态CNN特征与结构掩码Transformer，实现分层亚像元树种分类。 | [#1757](https://github.com/thinson/RS-PaperClaw/issues/1757) |
-| [20261119] Verifying Before Enhancing: Target Evidence Chain Verification for Infrared Small Target Detection | Zuo Jiayi, Pei Songwei, Wang Shuhuai, Wu Yifei, Wang Shangguang | Beijing University of Posts and Telecommunications | 提出目标证据链验证机制，在增强前验证红外小目标检测的可靠性。 | [#1758](https://github.com/thinson/RS-PaperClaw/issues/1758) |
-| [20261119] RemoteVLPG: How to Obtain a Specific VLM for Language-Guided Path Generation on Remote Sensing Images? | Dang Junzhe, Zhang Mengmeng, Zhang Yuxiang, Li Wei | Beijing Institute of Technology, Zhuhai, Guangdong, China. (；the Jockey Club STEM Laboratory of Quantitative Remote Sensing, Department of Geography, the University of Hong Kong, Hong Kong, China. ( | 面向遥感图像语言引导路径生成，探索如何获得专用视觉语言模型。 | [#1759](https://github.com/thinson/RS-PaperClaw/issues/1759) |
-| [20261119] HOPD: Historical On-Policy Distillation for SAR MLLM Continual Learning | Li Yuxuan, Derrick Goh Xin Deik, Duan Zheng-Peng, Sun Qianru, Li Weijie | Singapore Management University；Nanyang Technological University；Nankai University；Xi'an Jiaotong University | 提出历史在线策略蒸馏方法，缓解SAR多模态大模型持续学习中的遗忘。 | [#1760](https://github.com/thinson/RS-PaperClaw/issues/1760) |
-
-## ⚠️ 未纳入日报的匹配论文
-
-以下论文通过关键词/LLM 筛选，但在处理过程中失败未纳入日报。点击 arXiv 链接可查看原文。
-
-| 标题 | arXiv | 失败原因 |
-|------|-------|----------|
-| Does It Depend on the Split? Frozen Satellite Features vs. Fine-Tuned CNNs for Tree Species Mapping | [2611.25902v1](https://arxiv.org/abs/2611.25902v1) | 质检未通过: 单位为空或无效 |
-
-
-## 🔎 观察
-
-- 极化SAR分解研究仍具活力，经典方法针对全极化数据的适配与可解释性受到关注。
-- 遥感视觉语言模型与持续学习结合增多，验证与蒸馏成为提升可靠性的共性思路。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261119", "source": "api", "checked_at": "2026-11-20T04:30:37+00:00", "source_complete": true, "candidate_count": 19, "paper_count": 5, "partial": true, "skipped_arxiv_ids": ["2611.25902v1"]} -->
 
 ---
