@@ -2,6 +2,45 @@
 
 最近三天日报（最新在前）：
 
+# [20261124](./202611/20261124.md)
+## 📌 今日概况
+
+今日共检索候选论文 18 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+
+今日研究聚焦视觉语言模型与遥感任务的深度结合，涵盖建筑损毁评估、灾害时序定位与开放词汇分割，强调实例自适应与多粒度监督。同时，全色锐化领域出现基础重构与测试时参数选择新思路，超分辨助力小目标检测。零样本云分割能力边界得到系统评估，遥感与机器学习结合拓展至浸出金属危害制图。整体呈现从静态语义向动态自适应、从封闭类别向开放词汇演进的趋势。
+
+## ✨ 今日亮点
+
+- 视觉语言对齐从静态语义转向实例自适应，提升建筑损毁评估精细化水平。
+- 全色锐化研究反思基础设定，并探索测试时实例级参数选择策略。
+- 零样本开放词汇云分割能力与局限获系统评估，推动可靠应用边界认知。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261124] Beyond Static Semantics: Instance-Adaptive Vision-Language Alignment for Building Damage Assessment | Yin Hang, Li Jiepan, Chen Hongruixuan, Yang Guangyi, He Wei | School of Electronic Information, Wuhan University；LIESMARS, Wuhan University；University of Tokyo | 提出实例自适应视觉语言对齐方法，突破静态语义限制，提升双时相建筑损毁评估精度。 | [#1791](https://github.com/thinson/RS-PaperClaw/issues/1791) |
+| [20261124] Change the Base, Change the Game: Rethinking Pan-sharpening | Do Jeonghyeok, Youk Geunhyuk, Kim Munchurl | KAIST | 重新审视全色锐化的基础设定，提出改变基座以革新融合性能的研究视角。 | [#1792](https://github.com/thinson/RS-PaperClaw/issues/1792) |
+| [20261124] Beyond Before-and-After Images: Evaluating Temporal Grounding in a Lightweight VLM for Disaster Assessment | Garg Shubh, Arora Pratham, Ghosh Debabrata | Thapar Institute of Engineering \& Technology | 评估轻量视觉语言模型在灾害评估中的时序定位能力，超越简单前后图像对比。 | [#1793](https://github.com/thinson/RS-PaperClaw/issues/1793) |
+| [20261124] Adaptive and Detection-Aware Super-Resolution for Small Object Detection | Luncanu Cezica-Elena, Spînu Stelian | the Faculty of Information Systems and Cyber Security, Military Technical Academy “Ferdinand I”, Bucharest, Romania ( | 设计自适应且检测感知的超分辨率方法，针对小目标检测提升特征表达。 | [#1794](https://github.com/thinson/RS-PaperClaw/issues/1794) |
+| [20261124] Which Parameters to Update? An Instance-Specific Adaptation Framework for Real-World Pansharpening | Xiao Jin-Liang, Deng Liang-Jian, Zhang Yu-Xuan, Meng Hua, Zhou Zhengchun | Southwest Jiaotong University, Chengdu, China；University of Electronic Science and Technology of China, Chengdu, China | 面向真实全色锐化提出实例特定参数选择框架，实现测试时自适应更新。 | [#1795](https://github.com/thinson/RS-PaperClaw/issues/1795) |
+| [20261124] An Integrated Remote Sensing and Machine Learning Framework for Mapping Hazard Associated with Leached Metals | Karim Salman, Nojabaei Bahareh, Foroutan Hosein | Department of Mining & Minerals Engineering, Virginia Tech, Blacksburg, VA, USA；Department of Civil & Environmental Engineering, Virginia Tech, Blacksburg, VA, USA | 集成遥感与机器学习框架，用于浸出金属相关危害的制图与监测。 | [#1796](https://github.com/thinson/RS-PaperClaw/issues/1796) |
+| [20261124] HS-OVSeg: Multi-Granularity Open-Vocabulary Semantic Segmentation in Remote Sensing via Heterogeneous Supervision | Huang Wei, Liu Chenying, Kang Xudong, Xiao Xiang Zhu | Technical University of Munich (TUM), Germany；Hunan University, China；School Playground | 利用异构监督实现遥感多粒度开放词汇语义分割，生成伪标签辅助学习。 | [#1797](https://github.com/thinson/RS-PaperClaw/issues/1797) |
+| [20261124] On the Capabilities and Limitations of Zero-Shot Open-Vocabulary Cloud Segmentation | Sosa Jose, Gillet Thomas, Sleimi Rim, Abello Albert | Hydrosat | 系统评估零样本开放词汇云分割的能力与局限，揭示视觉语言模型适用边界。 | [#1798](https://github.com/thinson/RS-PaperClaw/issues/1798) |
+
+## 🔎 观察
+
+- 视觉语言模型在遥感中正从通用对齐走向实例级自适应，损毁评估与灾害定位成为验证新范式的重要场景。
+- 全色锐化研究同时出现基础重构与测试时自适应两条路径，反映对真实场景泛化与部署灵活性的双重追求。
+
+---
+
+Powered by OpenClaw🦞
+
+<!-- rs-pipeline: {"date": "20261124", "source": "oai", "checked_at": "2026-11-25T14:50:43+00:00", "source_complete": true, "candidate_count": 18, "paper_count": 8} -->
+
+---
+
 # [20261123](./202611/20261123.md)
 ## 📌 今日概况
 
@@ -77,38 +116,5 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 <!-- rs-pipeline: {"date": "20261122", "source": "api", "checked_at": "2026-11-24T04:33:29+00:00", "source_complete": true, "candidate_count": 6, "paper_count": 2} -->
-
----
-
-# [20261121](./202611/20261121.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日论文聚焦遥感视觉任务中的结构引导与质量感知。一篇面向无人机RGB-T微小行人检测，引入模态质量评估引导跨模态协同优化，以应对模态退化问题；另一篇利用中心线先验进行多类路面分割，将中心线特征与概率作为条件，结合分支结构处理规则路段、交叉口与立交，并估计双侧宽度。两篇均强调先验或质量信息对下游任务的引导作用，体现从单纯融合向条件化、可解释建模的转变。
-
-## ✨ 今日亮点
-
-- 模态质量引导协同优化用于无人机RGB-T微小行人检测
-- 中心线先验条件化多类路面分割，分支处理交叉口与立交
-- 两篇均以结构化先验或质量评估引导遥感视觉下游任务
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261121] MQCODet: Modality Quality-Guided Collaborative Optimization for UAV-Based RGB-T Tiny Pedestrian Detection | Li Hui, Ma Jianbo, Luo Hui, Qi Guanglin, Wang Zhixing, Zuo Haorui, Zhang Jianlin | State Key Laboratory of Optical Field Manipulation Science and Technology, Institute of；Optics and Electronics, Chinese Academy of Sciences, Chengdu 610209, China；School of Electronic, Electrical and Communication Engineering, University of Chinese；Academy of Sciences, Beijing 100049, China | 提出MQCODet，利用模态质量评估引导RGB-T跨模态协同优化，提升无人机微小行人检测鲁棒性。 | [#1770](https://github.com/thinson/RS-PaperClaw/issues/1770) |
-| [20261121] Centerline-Guided Multi-Class Road Surface Segmentation | Ouyang Xu, Gan Lin, Ma Di, Chen Sonnie, Boddhu Sanjay | Centerline-Guided Multi-Class Road Surface Segmentation；centerline features and probabilities condition regular, intersection；segmentation with our centerline-guided regular, intersection, and overpass branches, two-sided width estimation, and；centerline features and soft probabilities guide downstream；the regular branch, coupling transverse extent with centerline guidance instead of treating width as an independent | 提出中心线引导的多类路面分割方法，用中心线特征与概率条件化分支，并估计道路双侧宽度。 | [#1771](https://github.com/thinson/RS-PaperClaw/issues/1771) |
-
-## 🔎 观察
-
-- 两篇工作均将辅助信息作为条件引导主任务，反映遥感视觉从端到端融合转向结构化先验建模。
-- 模态质量与中心线先验分别针对退化与拓扑难题，说明任务特定先验仍是提升鲁棒性的有效途径。
-
----
-
-Powered by OpenClaw🦞
-
-<!-- rs-pipeline: {"date": "20261121", "source": "api", "checked_at": "2026-11-24T04:30:33+00:00", "source_complete": true, "candidate_count": 7, "paper_count": 2} -->
 
 ---
